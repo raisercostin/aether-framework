@@ -148,7 +148,7 @@ public abstract class StorageService extends CloudService {
 		try {
 			// TODO checkeo de directorio existente y si es directorio
 			Collection<File> listFiles = FileUtils.listFiles(localDirectory, null, true);
-			String basePath = localDirectory.getCanonicalPath();
+			String basePath = FilenameUtils.getFullPathNoEndSeparator(localDirectory.getCanonicalPath());
 
 			for (File file : listFiles) {
 				if (file.isFile()) {
