@@ -13,13 +13,26 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-
+	
+    <repositories>
+        <repository>
+            <id>jclouds</id>
+            <url>https://oss.sonatype.org/content/repositories/releases</url>
+        </repository>
+    </repositories>
+    
 	<dependencies>
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>5.14</version>
 			<scope>test</scope>
+			<exclusions>
+				<exclusion>
+					<artifactId>guice</artifactId>
+					<groupId>com.google.inject</groupId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.google.guava</groupId>
@@ -37,10 +50,10 @@
 			<artifactId>commons-io</artifactId>
 			<version>2.0.1</version>
 		</dependency>
-		<dependency>
-			<groupId>org.jclouds</groupId>
-			<artifactId>jclouds-aws</artifactId>
-			<version>1.0-beta-8</version>
-		</dependency>
+        <dependency>
+            <groupId>org.jclouds</groupId>
+            <artifactId>jclouds-aws</artifactId>
+            <version>1.0-beta-8</version>
+        </dependency>
 	</dependencies>
 </project>

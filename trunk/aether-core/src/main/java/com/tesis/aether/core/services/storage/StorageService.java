@@ -6,7 +6,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.URI;
-import java.net.URL;
 import java.util.Collection;
 import java.util.Date;
 import java.util.List;
@@ -172,7 +171,60 @@ public abstract class StorageService extends CloudService {
 	public abstract void uploadSingleFile(File localFile, String remoteDirectory) throws UploadException, MethodNotSupportedException, FileNotExistsException;
 
 	// SISTEMA DE ARCHIVOS
-	public abstract void delete(String remotePathFile, boolean recursive) throws DeleteException, MethodNotSupportedException;
+	public void delete(String remotePathFile, boolean recursive) throws DeleteException {
+		try {
+
+			if (checkFileExists(remotePathFile)) {
+				deleteFile(remotePathFile);
+			} else if (checkDirectoryExists(remotePathFile)) {
+				List<StorageObjectMetadata> listFiles = listFiles(remotePathFile, false);
+				
+				if(recursive) {
+					for(StorageObjectMetadata childrenFile: listFiles) {
+						delete(childrenFile, true);
+					}
+				}
+				
+				boolean isEmpty = listFiles.size() == 0;			
+				if (isEmpty || recursive) {
+					deleteFolder(remotePathFile);
+				} else {
+					throw new DeleteException(remotePathFile + " is not empty and recursive deletion is disabled.");
+				}
+			}
+		} catch (Exception e) {
+			throw new DeleteException(remotePathFile + " could not be deleted.");
+		}
+	}
+	
+	private void delete(StorageObjectMetadata file, boolean recursive) throws DeleteException {
+		try {
+			if (file.isFile()) {
+				deleteFile(file.getPathAndName());
+			} else if (file.isDirectory()) {
+				List<StorageObjectMetadata> listFiles = listFiles(file.getPathAndName(), false);
+				
+				if(recursive) {
+					for(StorageObjectMetadata childrenFile: listFiles) {
+						delete(childrenFile, true);
+					}
+				}
+				
+				boolean isEmpty = listFiles.size() == 0;			
+				if (isEmpty || recursive) {
+					deleteFolder(file.getPathAndName());
+				} else {
+					throw new DeleteException(file.getPathAndName() + " is not empty and recursive deletion is disabled.");
+				}
+			}
+		} catch (Exception e) {
+			throw new DeleteException(file.getPathAndName() + " could not be deleted.");
+		}
+	}
+
+	public abstract void deleteFile(String remotePathFile) throws DeleteException;
+	
+	public abstract void deleteFolder(String remotePath) throws DeleteException;
 
 	public abstract void createFolder(String remotePath) throws FolderCreationException, MethodNotSupportedException;
 
@@ -200,5 +252,5 @@ public abstract class StorageService extends CloudService {
 	public void migrateData(String startingPath, StorageService target) throws FileNotExistsException {
 
 	}
-
+	
 }

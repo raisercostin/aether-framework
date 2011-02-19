@@ -42,24 +42,6 @@ public class LocalStorageService extends StorageService {
 	}
 
 	@Override
-	public void delete(String remotePathFile, boolean recursive) throws DeleteException, MethodNotSupportedException {
-
-		File remotePath = initRemoteFile(remotePathFile);
-
-		if (recursive) {
-			boolean success = FileUtils.deleteQuietly(remotePath);
-			if (!success) {
-				throw new DeleteException(remotePathFile + " contains blocked files which were not deleted.");
-			}
-		} else {
-			boolean success = remotePath.delete();
-			if (!success) {
-				throw new DeleteException(remotePathFile + " is blocked or not empty.");
-			}
-		}
-	}
-
-	@Override
 	public void createFolder(String remotePath) throws FolderCreationException, MethodNotSupportedException {
 		try {
 			File remotePathFile = initRemoteFile(remotePath);
@@ -194,6 +176,28 @@ public class LocalStorageService extends StorageService {
 		}
 
 		return metadata;
+	}
+
+	@Override
+	public void deleteFile(String remotePath) throws DeleteException {
+		File remotePathFile = initRemoteFile(remotePath);
+		
+		boolean success = remotePathFile.delete();
+		if (!success) {
+			throw new DeleteException(remotePath + " is blocked or not empty.");
+		}
+		
+	}
+
+	@Override
+	public void deleteFolder(String remotePath) throws DeleteException {
+		File remotePathFile = initRemoteFile(remotePath);
+		
+		boolean success = remotePathFile.delete();
+		if (!success) {
+			throw new DeleteException(remotePath + " is blocked or not empty.");
+		}
+		
 	}
 
 }

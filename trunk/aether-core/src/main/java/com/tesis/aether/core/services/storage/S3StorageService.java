@@ -22,7 +22,6 @@ import org.jclouds.blobstore.options.ListContainerOptions;
 import com.google.common.base.Splitter;
 import com.tesis.aether.core.auth.authenticator.Authenticator;
 import com.tesis.aether.core.exception.ConnectionException;
-import com.tesis.aether.core.exception.DeleteException;
 import com.tesis.aether.core.exception.DisconnectionException;
 import com.tesis.aether.core.exception.FileNotExistsException;
 import com.tesis.aether.core.exception.FolderCreationException;
@@ -91,39 +90,33 @@ public class S3StorageService extends StorageService {
 
 	@Override
 	public void uploadSingleFile(File localFile, String remoteDirectory) throws UploadException, MethodNotSupportedException, FileNotExistsException {
-		if (!checkObjectExists(remoteDirectory)) {
+		String sanitizedPath = sanitizeRemotePath(remoteDirectory);
+		
+		if (!checkObjectExists(sanitizedPath)) {
 			try {
-				createFolder(remoteDirectory);
+				createFolder(sanitizedPath);
 			} catch (FolderCreationException e) {
 				throw new UploadException("Destination path could not be created.");
 			}
 		}
 
-		Blob blob = blobStore.newBlob(remoteDirectory + "/" + localFile.getName());
+		Blob blob = blobStore.newBlob(sanitizedPath + "/" + localFile.getName());
 		blob.setPayload(localFile);
 		blobStore.putBlob(getServiceProperty(StorageServiceConstants.S3_BUCKET), blob);
 	}
 
 	@Override
-	public void delete(String remotePathFile, boolean recursive) throws DeleteException, MethodNotSupportedException {
-		try {
-			String sanitizedPath = sanitizeRemotePath(remotePathFile);
-
-			if (checkFileExists(sanitizedPath)) {
-				blobStore.removeBlob(getServiceProperty(StorageServiceConstants.S3_BUCKET), sanitizedPath);
-			} else if (checkDirectoryExists(sanitizedPath)) {
-				boolean isEmpty = listFiles(sanitizedPath, false).size() == 0;
-				if (isEmpty || recursive) {
-					blobStore.deleteDirectory(getServiceProperty(StorageServiceConstants.S3_BUCKET), sanitizedPath);
-				} else {
-					throw new DeleteException(remotePathFile + " is not empty and recursive deletion is disabled.");
-				}
-			}
-		} catch (Exception e) {
-			throw new DeleteException(remotePathFile + " could not be deleted.");
-		}
+	public void deleteFile(String remotePathFile) {
+		String sanitizedPath = sanitizeRemotePath(remotePathFile);
+		blobStore.removeBlob(getServiceProperty(StorageServiceConstants.S3_BUCKET), sanitizedPath);
 	}
 
+	@Override
+	public void deleteFolder(String remotePath) {
+		String sanitizedPath = sanitizeRemotePath(remotePath);
+		blobStore.deleteDirectory(getServiceProperty(StorageServiceConstants.S3_BUCKET), sanitizedPath);
+	}
+	
 	@Override
 	public void createFolder(String remotePath) throws FolderCreationException, MethodNotSupportedException {
 
