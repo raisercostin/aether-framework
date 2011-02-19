@@ -57,6 +57,7 @@ public abstract class StorageServiceTest {
 	public void cleanUpAfterMethod() {
 		try {
 			service.delete("resources", true);
+			service.delete("resources1", true);
 		} catch (Exception e) {
 		}
 		
@@ -103,7 +104,7 @@ public abstract class StorageServiceTest {
 
 	@Test
 	public void copyFileTest() {
-		
+		assert false;
 	}
 
 	@Test
@@ -144,16 +145,56 @@ public abstract class StorageServiceTest {
 
 	@Test
 	public void downloadDirectoryToDirectoryTest() {
+
+		try {
+			File localFile = new File("resources/Downloaded_1/");
+			assert !localFile.exists();
+			service.upload(new File("resources"), "");
+			service.downloadDirectoryToDirectory("resources", localFile);
+			assert new File("resources/Downloaded_1/resources/test.1").exists();
+			assert new File("resources/Downloaded_1/resources/TEST_FOLDER/test.2").exists();
+		} catch(Exception e) {
+			assert false;
+		}
 		
 	}
 
 	@Test
 	public void downloadFileToDirectoryTest() {
-		
+		try {
+			File localFile = new File("resources/Downloaded_2/test.2");
+			assert !localFile.exists();
+			service.uploadSingleFile(new File("resources/TEST_FOLDER/test.2"), "resources/TEST_FOLDER/");
+			service.downloadFileToDirectory("resources/TEST_FOLDER/test.2", new File("resources/Downloaded_2"));
+			assert localFile.exists();
+		} catch(Exception e) {
+			assert false;
+		}					
 	}
 
 	@Test
 	public void downloadToDirectoryTest() {
+
+		try {
+			File localFile = new File("resources/Downloaded_1/");
+			assert !localFile.exists();
+			service.upload(new File("resources"), "");
+			service.downloadToDirectory("resources", localFile);
+			assert new File("resources/Downloaded_1/resources/test.1").exists();
+			assert new File("resources/Downloaded_1/resources/TEST_FOLDER/test.2").exists();
+		} catch(Exception e) {
+			assert false;
+		}
+		
+		try {
+			File localFile = new File("resources/Downloaded_2/test.2");
+			assert !localFile.exists();
+			service.uploadSingleFile(new File("resources/TEST_FOLDER/test.2"), "resources/TEST_FOLDER/");
+			service.downloadToDirectory("resources/TEST_FOLDER/test.2", new File("resources/Downloaded_2"));
+			assert localFile.exists();
+		} catch(Exception e) {
+			assert false;
+		}
 		
 	}
 
@@ -236,12 +277,12 @@ public abstract class StorageServiceTest {
 
 	@Test
 	public void migrateDataTest() {
-		
+		assert false;		
 	}
 
 	@Test
 	public void moveFileTest() {
-		
+		assert false;		
 	}
 
 	@Test

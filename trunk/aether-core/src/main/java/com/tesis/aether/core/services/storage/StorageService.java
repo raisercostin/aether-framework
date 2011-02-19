@@ -76,7 +76,7 @@ public abstract class StorageService extends CloudService {
 		StorageObject storageObject = new StorageObject();
 		storageObject.setStream(getInputStream(remotePathFile));
 		storageObject.setMetadata(getMetadataForObject(remotePathFile));
-		
+
 		return storageObject;
 	}
 
@@ -96,6 +96,11 @@ public abstract class StorageService extends CloudService {
 		OutputStream out = null;
 
 		try {
+
+			if (!localDirectory.exists()) {
+				FileUtils.forceMkdir(localDirectory);
+			}
+
 			out = new FileOutputStream(new File(localDirectory + "/" + storageObject.getMetadata().getName()));
 
 			int read = 0;
@@ -124,9 +129,10 @@ public abstract class StorageService extends CloudService {
 	public void downloadDirectoryToDirectory(String remotePathFile, File localDirectory) throws FileNotExistsException, DownloadException, MethodNotSupportedException {
 		try {
 			List<StorageObjectMetadata> listFiles = listFiles(remotePathFile, true);
+			String basePath = FilenameUtils.getFullPathNoEndSeparator(remotePathFile);
 			for (StorageObjectMetadata file : listFiles) {
 				if (file.getType().equals(StorageObjectConstants.FILE_TYPE)) {
-					String pathToDownload = localDirectory.getCanonicalPath() + FilenameUtils.getPath(file.getPath().replace(remotePathFile, ""));
+					String pathToDownload = localDirectory.getCanonicalPath() + "/" + file.getPath().replace(basePath, "");
 					downloadFileToDirectory(file.getPathAndName(), new File(pathToDownload));
 				}
 			}
