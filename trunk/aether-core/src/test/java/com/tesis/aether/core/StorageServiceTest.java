@@ -104,7 +104,16 @@ public abstract class StorageServiceTest {
 
 	@Test
 	public void copyFileTest() {
-		assert false;
+
+		try {
+			assert !service.checkObjectExists("resources1");
+			service.upload(new File("resources"), "");
+			service.copyFile("resources", "resources1");
+			assert service.checkObjectExists("resources1/resources/TEST_FOLDER/test.2");
+			assert service.checkObjectExists("resources1/resources/test.1");
+		} catch(Exception e) {
+			assert false;
+		}
 	}
 
 	@Test
@@ -282,7 +291,20 @@ public abstract class StorageServiceTest {
 
 	@Test
 	public void moveFileTest() {
-		assert false;		
+
+		try {
+			assert !service.checkObjectExists("resources1");
+			service.upload(new File("resources"), "");
+			service.moveFile("resources", "resources1");
+			assert !service.checkObjectExists("resources/TEST_FOLDER/test.2");
+			assert !service.checkObjectExists("resources/test.1");
+			assert !service.checkObjectExists("resources");
+			assert service.checkObjectExists("resources1/resources/TEST_FOLDER/test.2");
+			assert service.checkObjectExists("resources1/resources/test.1");
+		} catch(Exception e) {
+			assert false;
+		}
+		
 	}
 
 	@Test

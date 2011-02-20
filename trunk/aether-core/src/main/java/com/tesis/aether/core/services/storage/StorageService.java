@@ -1,6 +1,8 @@
 package com.tesis.aether.core.services.storage;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -168,8 +170,16 @@ public abstract class StorageService extends CloudService {
 		}
 	}
 
-	public abstract void uploadSingleFile(File localFile, String remoteDirectory) throws UploadException, MethodNotSupportedException, FileNotExistsException;
+	public void uploadSingleFile(File localFile, String remoteDirectory) throws UploadException, MethodNotSupportedException, FileNotExistsException {
+		try {
+			uploadInputStream(new FileInputStream(localFile), remoteDirectory, localFile.getName(), localFile.length());
+		} catch (FileNotFoundException e) {
+			throw new UploadException("The file you are trying to upload doesn't exist");
+		} 
+	}
 
+	public abstract void uploadInputStream(InputStream stream, String remoteDirectory, String filename, Long contentLength) throws UploadException, MethodNotSupportedException, FileNotExistsException;
+	
 	// SISTEMA DE ARCHIVOS
 	public void delete(String remotePathFile, boolean recursive) throws DeleteException {
 		try {
@@ -229,12 +239,35 @@ public abstract class StorageService extends CloudService {
 	public abstract void createFolder(String remotePath) throws FolderCreationException, MethodNotSupportedException;
 
 	public void copyFile(String from, String toDirectory) throws CopyFileException {
+		try {
+			List<StorageObjectMetadata> listFiles = listFiles(from, false);
+			
+			String finalDirectory = toDirectory + "/" + FilenameUtils.getName(from);
 
+			createFolder(finalDirectory);
+			
+			for(StorageObjectMetadata file: listFiles) {
+				if(file.isFile()) {					
+					InputStream stream = getInputStream(file.getPathAndName());
+					uploadInputStream(stream, finalDirectory, file.getName(), file.getLength());					
+				} else if(file.isDirectory()) {
+					copyFile(from + "/" + file.getName(), finalDirectory);
+				}
+			}
+		} catch (Exception e) {
+			throw new CopyFileException(from + " could not be copied to " + toDirectory);
+		}
 	}
 
 	public void moveFile(String from, String toDirectory) throws MoveFileException {
-
+		try {
+			copyFile(from, toDirectory);
+			delete(from, true);
+		} catch (Exception e) {
+			throw new MoveFileException("Error while moving file " + from);
+		}
 	}
+		
 
 	public abstract boolean checkFileExists(String remotePath) throws MethodNotSupportedException;
 

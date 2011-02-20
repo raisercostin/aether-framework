@@ -1,6 +1,6 @@
 package com.tesis.aether.core.services.storage;
 
-import java.io.File;
+import java.io.IOException;
 import java.io.InputStream;
 import java.net.URI;
 import java.util.ArrayList;
@@ -14,9 +14,11 @@ import org.jclouds.blobstore.BlobStoreContext;
 import org.jclouds.blobstore.BlobStoreContextFactory;
 import org.jclouds.blobstore.domain.Blob;
 import org.jclouds.blobstore.domain.BlobMetadata;
+import org.jclouds.blobstore.domain.MutableBlobMetadata;
 import org.jclouds.blobstore.domain.PageSet;
 import org.jclouds.blobstore.domain.StorageMetadata;
 import org.jclouds.blobstore.domain.StorageType;
+import org.jclouds.blobstore.domain.internal.BlobMetadataImpl;
 import org.jclouds.blobstore.options.ListContainerOptions;
 
 import com.google.common.base.Splitter;
@@ -89,7 +91,7 @@ public class S3StorageService extends StorageService {
 	}
 
 	@Override
-	public void uploadSingleFile(File localFile, String remoteDirectory) throws UploadException, MethodNotSupportedException, FileNotExistsException {
+	public void uploadInputStream(InputStream stream, String remoteDirectory, String filename, Long contentLength) throws UploadException, MethodNotSupportedException, FileNotExistsException {
 		String sanitizedPath = sanitizeRemotePath(remoteDirectory);
 		
 		if (!checkObjectExists(sanitizedPath)) {
@@ -99,10 +101,18 @@ public class S3StorageService extends StorageService {
 				throw new UploadException("Destination path could not be created.");
 			}
 		}
-
-		Blob blob = blobStore.newBlob(sanitizedPath + "/" + localFile.getName());
-		blob.setPayload(localFile);
+		
+		Blob blob = blobStore.newBlob(sanitizedPath + "/" + filename);
+		blob.setPayload(stream);
+		blob.getPayload().getContentMetadata().setContentLength(contentLength);
 		blobStore.putBlob(getServiceProperty(StorageServiceConstants.S3_BUCKET), blob);
+		
+		if(stream != null) {
+			try {
+				stream.close();
+			} catch (IOException e) {
+			}
+		}
 	}
 
 	@Override
@@ -193,6 +203,7 @@ public class S3StorageService extends StorageService {
 		metadata.setPathAndName(path + "/" + name);
 		if(blobMetadata.getType().equals(StorageType.BLOB)) {
 			metadata.setType(StorageObjectConstants.FILE_TYPE);
+			metadata.setLength(((MutableBlobMetadata)blobMetadata).getContentMetadata().getContentLength());
 		} else {
 			metadata.setType(StorageObjectConstants.DIRECTORY_TYPE);			
 		}
