@@ -3,8 +3,10 @@ package com.tesis.aether.core.services.storage;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.OutputStream;
 import java.net.URI;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -102,23 +104,38 @@ public class LocalStorageService extends StorageService {
 	}
 
 	@Override
-	public void uploadSingleFile(File localFile, String remoteDirectory) throws UploadException, MethodNotSupportedException, FileNotExistsException {
+	public void uploadInputStream(InputStream inputStream, String remoteDirectory, String filename, Long contentLength) throws UploadException, MethodNotSupportedException, FileNotExistsException {
 		
-		File toDirectoryFile = initRemoteFile(remoteDirectory);
+		File toFileFile = initRemoteFile(remoteDirectory + "/" + filename);
+		
+		OutputStream out = null;
 
 		try {
+			
 			createFolder(remoteDirectory);
-		} catch (FolderCreationException e1) {
-		}
 
-		try {
-			if (localFile.isFile()) {
-				FileUtils.copyFileToDirectory(localFile, toDirectoryFile);
-			} else {
-				throw new UploadException(localFile.getPath() + " could not be copied to " + remoteDirectory + " because it's not a file");				
+			out = new FileOutputStream(toFileFile);
+
+			int read = 0;
+			byte[] bytes = new byte[1024];
+
+			while ((read = inputStream.read(bytes)) != -1) {
+				out.write(bytes, 0, read);
 			}
-		} catch (IOException e) {
-			throw new UploadException(localFile.getPath() + " could not be copied to " + remoteDirectory);
+		} catch (Exception e) {
+			throw new UploadException("Stream could not be uploaded to " + remoteDirectory + " with name " + filename);
+		} finally {
+			try {
+				inputStream.close();
+			} catch (Exception e) {
+			}
+			try {
+				if (out != null) {
+					out.flush();
+					out.close();
+				}
+			} catch (Exception e) {
+			}
 		}
 	}
 
