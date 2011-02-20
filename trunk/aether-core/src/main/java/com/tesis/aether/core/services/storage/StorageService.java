@@ -22,6 +22,7 @@ import com.tesis.aether.core.exception.FileNotExistsException;
 import com.tesis.aether.core.exception.FolderCreationException;
 import com.tesis.aether.core.exception.MetadataFetchingException;
 import com.tesis.aether.core.exception.MethodNotSupportedException;
+import com.tesis.aether.core.exception.MigrationException;
 import com.tesis.aether.core.exception.MoveFileException;
 import com.tesis.aether.core.exception.URLExtractionException;
 import com.tesis.aether.core.exception.UploadException;
@@ -282,8 +283,25 @@ public abstract class StorageService extends CloudService {
 	}
 
 	// INTERACCION CON OTROS SERVICIOS
-	public void migrateData(String startingPath, StorageService target) throws FileNotExistsException {
+	public void migrateData(String startingPath, StorageService target, String targetPath) throws MigrationException {
+		try {
+			List<StorageObjectMetadata> listFiles = listFiles(startingPath, false);
+			
+			String finalDirectory = targetPath + "/" + FilenameUtils.getName(startingPath);
 
+			target.createFolder(finalDirectory);
+			
+			for(StorageObjectMetadata file: listFiles) {
+				if(file.isFile()) {					
+					InputStream stream = getInputStream(file.getPathAndName());
+					target.uploadInputStream(stream, finalDirectory, file.getName(), file.getLength());					
+				} else if(file.isDirectory()) {
+					migrateData(startingPath + "/" + file.getName(), target, finalDirectory);
+				}
+			}
+		} catch (Exception e) {
+			throw new MigrationException("Error while migrating data");
+		}
 	}
 	
 }

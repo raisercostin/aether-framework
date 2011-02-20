@@ -11,7 +11,10 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import com.tesis.aether.core.factory.ServiceAccountProperties;
+import com.tesis.aether.core.services.storage.LocalStorageService;
 import com.tesis.aether.core.services.storage.StorageService;
+import com.tesis.aether.core.services.storage.constants.StorageServiceConstants;
 import com.tesis.aether.core.services.storage.object.StorageObject;
 import com.tesis.aether.core.services.storage.object.StorageObjectMetadata;
 import com.tesis.aether.core.services.storage.object.constants.StorageObjectConstants;
@@ -286,7 +289,26 @@ public abstract class StorageServiceTest {
 
 	@Test
 	public void migrateDataTest() {
-		assert false;		
+		ServiceAccountProperties properties = new ServiceAccountProperties();
+		String tempDirectory = System.getProperty("java.io.tmpdir") + "/REMOTE_MOCK_MIGRATE/";
+		properties.putProperty(StorageServiceConstants.LOCAL_BASE_FOLDER, tempDirectory);
+		
+		StorageService migrateService = new LocalStorageService();
+		migrateService.setServiceProperties(properties);
+
+		try {
+			assert !service.checkObjectExists("resources");
+			assert !migrateService.checkObjectExists("resources");
+			service.upload(new File("resources"), "");
+			service.migrateData("resources", migrateService, "");
+			assert migrateService.checkObjectExists("resources/TEST_FOLDER/test.2");
+			assert migrateService.checkObjectExists("resources/test.1");
+			migrateService.delete("resources", true);
+		} catch(Exception e) {
+			assert false;
+		}
+		
+		new File(tempDirectory).delete();
 	}
 
 	@Test
