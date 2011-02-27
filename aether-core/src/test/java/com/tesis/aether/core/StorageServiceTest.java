@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 
 import com.tesis.aether.core.factory.ServiceAccountProperties;
 import com.tesis.aether.core.services.storage.LocalStorageService;
-import com.tesis.aether.core.services.storage.StorageService;
+import com.tesis.aether.core.services.storage.ExtendedStorageService;
 import com.tesis.aether.core.services.storage.constants.StorageServiceConstants;
 import com.tesis.aether.core.services.storage.object.StorageObject;
 import com.tesis.aether.core.services.storage.object.StorageObjectMetadata;
@@ -21,7 +21,7 @@ import com.tesis.aether.core.services.storage.object.constants.StorageObjectCons
 
 public abstract class StorageServiceTest {
 
-	private StorageService service;
+	private ExtendedStorageService service;
 
 	@BeforeClass
 	public void initialize() {		
@@ -293,7 +293,7 @@ public abstract class StorageServiceTest {
 		String tempDirectory = System.getProperty("java.io.tmpdir") + "/REMOTE_MOCK_MIGRATE/";
 		properties.putProperty(StorageServiceConstants.LOCAL_BASE_FOLDER, tempDirectory);
 		
-		StorageService migrateService = new LocalStorageService();
+		ExtendedStorageService migrateService = new LocalStorageService();
 		migrateService.setServiceProperties(properties);
 
 		try {
@@ -384,6 +384,6 @@ public abstract class StorageServiceTest {
 		}		
 	}
 	
-	protected abstract StorageService getStorageService();
+	protected abstract ExtendedStorageService getStorageService();
 	
 }
