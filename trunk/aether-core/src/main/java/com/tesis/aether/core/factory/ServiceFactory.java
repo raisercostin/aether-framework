@@ -7,7 +7,7 @@ import com.tesis.aether.core.exception.ServiceCreationException;
 import com.tesis.aether.core.exception.WrongServiceTypeException;
 import com.tesis.aether.core.factory.builder.ServiceBuilder;
 import com.tesis.aether.core.services.CloudServiceConstants;
-import com.tesis.aether.core.services.storage.StorageService;
+import com.tesis.aether.core.services.storage.BaseStorageService;
 
 public class ServiceFactory {
 
@@ -20,7 +20,7 @@ public class ServiceFactory {
 	protected ServiceFactory() {			
 	}
 	
-	public StorageService getStorageService(ServiceRequest request) throws MissingConfigurationItemsException, ServiceCreationException {
+	public BaseStorageService getStorageService(ServiceRequest request) throws MissingConfigurationItemsException, ServiceCreationException {
 		if(request.size() == 1) {
 			String serviceType = request.getServices().iterator().next();
 			int accountNumber = request.getAccountsForService(serviceType).iterator().next();
@@ -41,14 +41,14 @@ public class ServiceFactory {
 			
 	}
 	
-	public StorageService getStorageService(String serviceKey, int accountNumber) throws MissingConfigurationItemsException, ServiceCreationException {
+	public BaseStorageService getStorageService(String serviceKey, int accountNumber) throws MissingConfigurationItemsException, ServiceCreationException {
 		
 		try {
 			ServiceBuilder serviceBuilder = getServiceBuilders().get(serviceKey);
 			if(!serviceBuilder.getServiceKind().equals(CloudServiceConstants.STORAGE_KIND)) {
 				throw new WrongServiceTypeException("Service " + serviceKey + " is not a storage service");
 			}
-			return (StorageService)serviceBuilder.createService(accountNumber);
+			return (BaseStorageService)serviceBuilder.createService(accountNumber);
 		} catch (MissingConfigurationItemsException e) {
 			throw e;
 		} catch(Exception e) {
@@ -58,7 +58,7 @@ public class ServiceFactory {
 
 	}
 	
-	public StorageService getStorageService(String serviceKey) throws MissingConfigurationItemsException, ServiceCreationException {
+	public BaseStorageService getStorageService(String serviceKey) throws MissingConfigurationItemsException, ServiceCreationException {
 		return getStorageService(serviceKey, 1);
 	}
 

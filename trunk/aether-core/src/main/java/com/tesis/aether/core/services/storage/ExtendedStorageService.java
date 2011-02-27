@@ -7,9 +7,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.net.URI;
 import java.util.Collection;
-import java.util.Date;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
@@ -19,21 +17,18 @@ import com.tesis.aether.core.exception.CopyFileException;
 import com.tesis.aether.core.exception.DeleteException;
 import com.tesis.aether.core.exception.DownloadException;
 import com.tesis.aether.core.exception.FileNotExistsException;
-import com.tesis.aether.core.exception.FolderCreationException;
-import com.tesis.aether.core.exception.MetadataFetchingException;
 import com.tesis.aether.core.exception.MethodNotSupportedException;
 import com.tesis.aether.core.exception.MigrationException;
 import com.tesis.aether.core.exception.MoveFileException;
-import com.tesis.aether.core.exception.URLExtractionException;
 import com.tesis.aether.core.exception.UploadException;
-import com.tesis.aether.core.services.CloudService;
 import com.tesis.aether.core.services.storage.object.StorageObject;
 import com.tesis.aether.core.services.storage.object.StorageObjectMetadata;
 import com.tesis.aether.core.services.storage.object.constants.StorageObjectConstants;
 
-public abstract class StorageService extends CloudService {
+public abstract class ExtendedStorageService extends BaseStorageService {
 
 	// METADATA
+	@Override
 	public StorageObjectMetadata getMetadataForObject(String remotePathFile) {
 
 		String name = FilenameUtils.getName(remotePathFile);
@@ -63,17 +58,7 @@ public abstract class StorageService extends CloudService {
 		return metadata;
 	}
 
-	public abstract URI getPublicURLForPath(String remotePath) throws FileNotExistsException, MethodNotSupportedException, URLExtractionException;
-
-	public abstract List<StorageObjectMetadata> listFiles(String remotePath, boolean recursive) throws MethodNotSupportedException;
-
-	public abstract Long sizeOf(String remotePath) throws MetadataFetchingException, MethodNotSupportedException, FileNotExistsException;
-
-	public abstract Date lastModified(String remotePath) throws MetadataFetchingException, MethodNotSupportedException, FileNotExistsException;
-
-	// BAJADA
-	public abstract InputStream getInputStream(String remotePathFile) throws FileNotExistsException;
-
+	@Override
 	public StorageObject getStorageObject(String remotePathFile) throws FileNotExistsException {
 		StorageObject storageObject = new StorageObject();
 		storageObject.setStream(getInputStream(remotePathFile));
@@ -82,6 +67,8 @@ public abstract class StorageService extends CloudService {
 		return storageObject;
 	}
 
+	//DOWNLOAD
+	@Override
 	public void downloadToDirectory(String remotePathFile, File localDirectory) throws MethodNotSupportedException, FileNotExistsException, DownloadException {
 		if (checkFileExists(remotePathFile)) {
 			downloadFileToDirectory(remotePathFile, localDirectory);
@@ -90,6 +77,7 @@ public abstract class StorageService extends CloudService {
 		}
 	}
 
+	@Override
 	public void downloadFileToDirectory(String remotePathFile, File localDirectory) throws FileNotExistsException, DownloadException {
 
 		StorageObject storageObject = getStorageObject(remotePathFile);
@@ -128,6 +116,7 @@ public abstract class StorageService extends CloudService {
 		}
 	}
 
+	@Override
 	public void downloadDirectoryToDirectory(String remotePathFile, File localDirectory) throws FileNotExistsException, DownloadException, MethodNotSupportedException {
 		try {
 			List<StorageObjectMetadata> listFiles = listFiles(remotePathFile, true);
@@ -144,6 +133,7 @@ public abstract class StorageService extends CloudService {
 	}
 
 	// SUBIDA
+	@Override
 	public void upload(File localPath, String remoteDirectory) throws UploadException, MethodNotSupportedException, FileNotExistsException {
 		if (localPath.isDirectory()) {
 			uploadDirectory(localPath, remoteDirectory);
@@ -152,6 +142,7 @@ public abstract class StorageService extends CloudService {
 		}
 	}
 
+	@Override
 	public void uploadDirectory(File localDirectory, String remoteDirectory) throws UploadException, MethodNotSupportedException, FileNotExistsException {
 		try {
 			// TODO checkeo de directorio existente y si es directorio
@@ -171,6 +162,7 @@ public abstract class StorageService extends CloudService {
 		}
 	}
 
+	@Override
 	public void uploadSingleFile(File localFile, String remoteDirectory) throws UploadException, MethodNotSupportedException, FileNotExistsException {
 		try {
 			uploadInputStream(new FileInputStream(localFile), remoteDirectory, localFile.getName(), localFile.length());
@@ -179,9 +171,8 @@ public abstract class StorageService extends CloudService {
 		} 
 	}
 
-	public abstract void uploadInputStream(InputStream stream, String remoteDirectory, String filename, Long contentLength) throws UploadException, MethodNotSupportedException, FileNotExistsException;
-	
 	// SISTEMA DE ARCHIVOS
+	@Override
 	public void delete(String remotePathFile, boolean recursive) throws DeleteException {
 		try {
 
@@ -207,8 +198,9 @@ public abstract class StorageService extends CloudService {
 			throw new DeleteException(remotePathFile + " could not be deleted.");
 		}
 	}
-	
-	private void delete(StorageObjectMetadata file, boolean recursive) throws DeleteException {
+
+	@Override
+	public void delete(StorageObjectMetadata file, boolean recursive) throws DeleteException {
 		try {
 			if (file.isFile()) {
 				deleteFile(file.getPathAndName());
@@ -233,12 +225,7 @@ public abstract class StorageService extends CloudService {
 		}
 	}
 
-	public abstract void deleteFile(String remotePathFile) throws DeleteException;
-	
-	public abstract void deleteFolder(String remotePath) throws DeleteException;
-
-	public abstract void createFolder(String remotePath) throws FolderCreationException, MethodNotSupportedException;
-
+	@Override
 	public void copyFile(String from, String toDirectory) throws CopyFileException {
 		try {
 			List<StorageObjectMetadata> listFiles = listFiles(from, false);
@@ -260,6 +247,7 @@ public abstract class StorageService extends CloudService {
 		}
 	}
 
+	@Override
 	public void moveFile(String from, String toDirectory) throws MoveFileException {
 		try {
 			copyFile(from, toDirectory);
@@ -268,12 +256,8 @@ public abstract class StorageService extends CloudService {
 			throw new MoveFileException("Error while moving file " + from);
 		}
 	}
-		
 
-	public abstract boolean checkFileExists(String remotePath) throws MethodNotSupportedException;
-
-	public abstract boolean checkDirectoryExists(String remotePath) throws MethodNotSupportedException;
-
+	@Override
 	public boolean checkObjectExists(String remotePath) throws MethodNotSupportedException {
 		if (checkFileExists(remotePath) || checkDirectoryExists(remotePath)) {
 			return true;
@@ -283,7 +267,8 @@ public abstract class StorageService extends CloudService {
 	}
 
 	// INTERACCION CON OTROS SERVICIOS
-	public void migrateData(String startingPath, StorageService target, String targetPath) throws MigrationException {
+	@Override
+	public void migrateData(String startingPath, ExtendedStorageService target, String targetPath) throws MigrationException {
 		try {
 			List<StorageObjectMetadata> listFiles = listFiles(startingPath, false);
 			

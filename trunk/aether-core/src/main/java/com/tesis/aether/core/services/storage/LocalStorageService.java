@@ -30,7 +30,7 @@ import com.tesis.aether.core.services.storage.constants.StorageServiceConstants;
 import com.tesis.aether.core.services.storage.object.StorageObjectMetadata;
 import com.tesis.aether.core.services.storage.object.constants.StorageObjectConstants;
 
-public class LocalStorageService extends StorageService {
+public class LocalStorageService extends ExtendedStorageService {
 
 	@Override
 	public URI getPublicURLForPath(String remotePath) throws FileNotExistsException, MethodNotSupportedException, URLExtractionException {
