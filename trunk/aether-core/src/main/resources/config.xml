@@ -1,0 +1,10 @@
+<storageServices>
+	<storageService type="s3" alias="">
+		<maxConnections></maxConnections>
+		<secretKey></secretKey>
+		<accessKey></accessKey>
+	</storageService>
+	<storageService type="local" alias="">
+		<localBaseFolder></localBaseFolder>
+	</storageService>
+</storageServices>
