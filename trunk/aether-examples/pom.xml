@@ -17,6 +17,7 @@
 
 	<modules>
 		<module>remote-monitor</module>
+		<module>text-editor</module>
 	</modules>
 
 </project>
