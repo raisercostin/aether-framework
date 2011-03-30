@@ -18,6 +18,7 @@
 	<modules>
 		<module>remote-monitor</module>
 		<module>text-editor</module>
+		<module>tree-viewer</module>
 	</modules>
 
 </project>
