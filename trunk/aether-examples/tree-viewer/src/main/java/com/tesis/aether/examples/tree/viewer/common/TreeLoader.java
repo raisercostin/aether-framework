@@ -25,7 +25,7 @@ public class TreeLoader {
         		actual.remove(0);
             DefaultMutableTreeNode treeNode = new  DefaultMutableTreeNode(name);
             treeNode.setAllowsChildren(true);
-            treeNode.add(new DefaultMutableTreeNode());
+            treeNode.add(new DefaultMutableTreeNode("(Empty)"));
             actual.add(treeNode);
     	} catch (java.lang.IllegalStateException ise) {
     		System.out.println ("El elemento '" + actual.toString() + "' no permite hijos.");
@@ -34,7 +34,7 @@ public class TreeLoader {
 
 	public void addArchive(String name){
     	try {
-        	if (actual.getChildCount() > 0 && actual.getChildAt(0).toString() == null)
+        	if (actual.getChildCount() > 0 && actual.getChildAt(0).toString() == "(Empty)")
         		actual.remove(0);
             DefaultMutableTreeNode treeNode = new  DefaultMutableTreeNode(name);
             treeNode.setAllowsChildren(false);
@@ -61,7 +61,28 @@ public class TreeLoader {
 	public DefaultMutableTreeNode gerRoot() {
 		return raiz;
 	}
+	
+	public boolean existDirectory(String name) {
+		if (name == null) {
+			return false;
+		}
+		int childrens = actual.getChildCount();
+		TreeNode object = null;
+		for (int i = 0; i < childrens; i++) {
+			object = actual.getChildAt(i);
+			if (object.getAllowsChildren()) {
+				if (name.equals(object.toString())) {
+					return true;
+				}
+			}
+		}
+		return false;
+	}
 
+	public void leaveToRoot() {
+		actual = raiz;
+	}
+	
     private DefaultMutableTreeNode getNode(String name, DefaultMutableTreeNode root){
     	DefaultMutableTreeNode ret = null;
     	@SuppressWarnings("unchecked")
