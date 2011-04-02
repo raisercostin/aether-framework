@@ -109,6 +109,7 @@ public abstract class TreeViewerUI extends javax.swing.JFrame {
         } catch (Exception ex) {
             ex.printStackTrace();
         }
+        tree.setModel(new javax.swing.tree.DefaultTreeModel(treeLoader.gerRoot()));
         tree.updateUI();
     }//GEN-LAST:event_cmdRefreshActionPerformed
 
