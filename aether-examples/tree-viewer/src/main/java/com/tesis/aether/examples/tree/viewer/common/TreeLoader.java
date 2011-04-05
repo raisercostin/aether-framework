@@ -21,12 +21,12 @@ public class TreeLoader {
 
 	public void addDirectory(String name){
     	try{
-        	if (actual.getChildCount() > 0 && actual.getChildAt(0).toString() == null)
-        		actual.remove(0);
             DefaultMutableTreeNode treeNode = new  DefaultMutableTreeNode(name);
             treeNode.setAllowsChildren(true);
             treeNode.add(new DefaultMutableTreeNode("(Empty)"));
             actual.add(treeNode);
+        	if (actual.getChildCount() > 0 && "(Empty)".equals(actual.getChildAt(0).toString()))
+        		actual.remove(0);
     	} catch (java.lang.IllegalStateException ise) {
     		System.out.println ("El elemento '" + actual.toString() + "' no permite hijos.");
     	}
@@ -34,11 +34,11 @@ public class TreeLoader {
 
 	public void addArchive(String name){
     	try {
-        	if (actual.getChildCount() > 0 && actual.getChildAt(0).toString() == "(Empty)")
-        		actual.remove(0);
             DefaultMutableTreeNode treeNode = new  DefaultMutableTreeNode(name);
             treeNode.setAllowsChildren(false);
             actual.add(treeNode);
+        	if (actual.getChildCount() > 0 && actual.getChildAt(0).toString() == "(Empty)")
+        		actual.remove(0);
     	} catch (java.lang.IllegalStateException ise) {
     		System.out.println ("El elemento '" + actual.toString() + "' no permite hijos.");
     	}

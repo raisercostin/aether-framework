@@ -37,13 +37,18 @@ public class JCloudsTreeViewer implements TreeFileViewer {
 					"Error en la conexion. s3Context y/o blobStore no disponible.");
 
 		TreeLoader tl = new TreeLoader();
-		loadTree(tl, bucket);
+		loadTree(tl, bucket, "");
 		return tl;
 	}
 
-	private void loadTree(TreeLoader tl, String bucket) {
-		PageSet<? extends StorageMetadata> list = blobStore.list(bucket,
-				ListContainerOptions.NONE);
+	private void loadTree(TreeLoader tl, String bucket, String directory) {
+		PageSet<? extends StorageMetadata> list = null;
+		if (!"".equals(directory)) {
+			list = blobStore.list(bucket, 
+					ListContainerOptions.Builder.inDirectory(directory));
+		} else {
+			list = blobStore.list(bucket);
+		}
 		for (StorageMetadata object : list) {
 			if (object.getType().equals(StorageType.BLOB)) {
 				tl.addArchive(FilenameUtils.getName(object.getName()));
@@ -51,10 +56,13 @@ public class JCloudsTreeViewer implements TreeFileViewer {
 				String name = FilenameUtils.getName(object.getName());
 				String path = FilenameUtils.getPathNoEndSeparator(object
 						.getName());
-				tl.addDirectory(name);
-				tl.enterDirectory(name);
-				loadTree(tl, path + "/" + name);
-				tl.leaveDirectory();
+				String next = path + (!"".equals(path)?"/":"") + name;
+				if (!next.equals(directory)) {
+					tl.addDirectory(name);
+					tl.enterDirectory(name);
+					loadTree(tl, bucket, path + (!"".equals(path)?"/":"") + name);
+					tl.leaveDirectory();
+				}
 			}
 		}
 	}
