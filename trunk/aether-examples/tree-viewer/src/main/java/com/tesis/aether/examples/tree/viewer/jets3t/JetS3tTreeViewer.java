@@ -44,14 +44,14 @@ public class JetS3tTreeViewer implements TreeFileViewer {
 		}
 		TreeLoader tl = new TreeLoader();
 		for (int o = 0; o < objects.length; o++) {
-			processObject(objects[o].getName(), objects[o].isDirectoryPlaceholder(), tl);
+			processObject(objects[o].getName(), tl);
 			tl.leaveToRoot();
 		}
 		return tl;
 	}
 	
-	public void processObject(String object, boolean isContainer, TreeLoader tl) {
-		System.out.println("Objecto: " + object + "  isContainer: " + isContainer);
+	public void processObject(String object, TreeLoader tl) {
+		System.out.println("Adding object: " + object);
 		String[] directories = getDirectories(object);
 		String name = getName(object);
 		for (int i = 0; i < directories.length; i++){

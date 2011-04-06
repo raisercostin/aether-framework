@@ -1,8 +1,9 @@
 package com.tesis.aether.examples.tree.viewer.dasein;
 
-import org.dasein.cloud.CloudException;
+import java.util.Locale;
+import java.util.Vector;
+
 import org.dasein.cloud.CloudProvider;
-import org.dasein.cloud.InternalException;
 import org.dasein.cloud.ProviderContext;
 import org.dasein.cloud.aws.AWSCloud;
 import org.dasein.cloud.storage.BlobStoreSupport;
@@ -16,6 +17,7 @@ public class DaseinTreeViewer implements TreeFileViewer {
 	private BlobStoreSupport blobStoreSupport = null;
 
 	public void connect(String accessKey, String secretKey) {
+    	Locale.setDefault(Locale.US);
 		CloudProvider provider = new AWSCloud();
 		ProviderContext ctx = new ProviderContext();
 		ctx.setAccessKeys(accessKey.getBytes(), secretKey.getBytes());
@@ -37,28 +39,55 @@ public class DaseinTreeViewer implements TreeFileViewer {
 					"Error en la conexion. blobStoreSupport no disponible.");
 
 		TreeLoader tl = new TreeLoader();
-		loadTree(tl, bucket);
+		Iterable<CloudStoreObject> listFiles = blobStoreSupport.listFiles(bucket);
+		for (CloudStoreObject object : listFiles) {
+			processObject(object.getName(), tl);
+			tl.leaveToRoot();
+		}
 		return tl;
 	}
 
-	private void loadTree(TreeLoader tl, String path) {
-		try {
-			Iterable<CloudStoreObject> listFiles = blobStoreSupport
-					.listFiles(path);
-			for (CloudStoreObject object : listFiles) {
-				if (object.isContainer()) {
-					tl.addDirectory(object.getName());
-					tl.enterDirectory(object.getName());
-					loadTree(tl, path + "/" + object.getName());
-					tl.leaveDirectory();
-				} else {
-					tl.addArchive(object.getName());
-				}
+	public void processObject(String object, TreeLoader tl) {
+		System.out.println("Adding object: " + object);
+		String[] directories = getDirectories(object);
+		String name = getName(object);
+		for (int i = 0; i < directories.length; i++){
+			if (tl.existDirectory(directories[i])){
+				tl.enterDirectory(directories[i]);
+			} else {
+				tl.addDirectory(directories[i]);
+				tl.enterDirectory(directories[i]);
 			}
-		} catch (InternalException e) {
-			e.printStackTrace();
-		} catch (CloudException e) {
-			e.printStackTrace();
+		}
+		if (!name.equals("")) {
+			tl.addArchive(name);
 		}
 	}
+
+	private String getName(String object) {
+		String aux = object.replace("/", "/*/");
+		String[] st = aux.split("/");
+		if (st.length > 0 && !st[st.length - 1].equals("*")) {
+			if (st.length > 1) {
+				return st[st.length -1];
+			} else {
+				return st[st.length - 1];
+			}
+		} else {
+			return "";
+		}
+	}
+
+	private String[] getDirectories(String object) {
+		String aux = object.replace("/", "/*/");
+		String[] st = aux.split("/");
+		Vector<String> directories = new Vector<String>();
+		if (st.length > 1) {
+			for (int i = 1; i < st.length; i = i + 2) {
+				directories.add(st[i-1]);
+			}
+		}
+		return directories.toArray(new String[]{});
+	}
+
 }
