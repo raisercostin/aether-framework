@@ -18,6 +18,7 @@ import com.tesis.aether.core.exception.MoveFileException;
 import com.tesis.aether.core.exception.URLExtractionException;
 import com.tesis.aether.core.exception.UploadException;
 import com.tesis.aether.core.services.CloudService;
+import com.tesis.aether.core.services.CloudServiceConstants;
 import com.tesis.aether.core.services.storage.object.StorageObject;
 import com.tesis.aether.core.services.storage.object.StorageObjectMetadata;
 
@@ -25,6 +26,7 @@ public abstract class BaseStorageService extends CloudService {
 
 	public BaseStorageService() {
 		super();
+		setKind(CloudServiceConstants.STORAGE_KIND);
 	}
 
 	public abstract URI getPublicURLForPath(String remotePath) throws FileNotExistsException, MethodNotSupportedException, URLExtractionException;
