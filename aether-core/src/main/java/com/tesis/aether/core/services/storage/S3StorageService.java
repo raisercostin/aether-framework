@@ -18,7 +18,6 @@ import org.jclouds.blobstore.domain.MutableBlobMetadata;
 import org.jclouds.blobstore.domain.PageSet;
 import org.jclouds.blobstore.domain.StorageMetadata;
 import org.jclouds.blobstore.domain.StorageType;
-import org.jclouds.blobstore.domain.internal.BlobMetadataImpl;
 import org.jclouds.blobstore.options.ListContainerOptions;
 
 import com.google.common.base.Splitter;
@@ -39,6 +38,11 @@ public class S3StorageService extends ExtendedStorageService {
 
 	private BlobStoreContext s3Context;
 	private BlobStore blobStore;
+	
+	public S3StorageService() {
+		super();
+		setName(StorageServiceConstants.S3);
+	}
 	
 	@Override
 	public URI getPublicURLForPath(String remotePath) throws FileNotExistsException, MethodNotSupportedException, URLExtractionException {

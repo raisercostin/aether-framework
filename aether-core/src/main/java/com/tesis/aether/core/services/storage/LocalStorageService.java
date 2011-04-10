@@ -32,6 +32,11 @@ import com.tesis.aether.core.services.storage.object.constants.StorageObjectCons
 
 public class LocalStorageService extends ExtendedStorageService {
 
+	public LocalStorageService() {
+		super();
+		setName(StorageServiceConstants.S3);
+	}
+	
 	@Override
 	public URI getPublicURLForPath(String remotePath) throws FileNotExistsException, MethodNotSupportedException, URLExtractionException {
 		File remoteFile = initRemoteFile(remotePath);

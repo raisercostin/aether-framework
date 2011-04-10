@@ -6,51 +6,30 @@ import com.tesis.aether.core.exception.MissingConfigurationItemsException;
 import com.tesis.aether.core.exception.ServiceCreationException;
 import com.tesis.aether.core.exception.WrongServiceTypeException;
 import com.tesis.aether.core.factory.builder.ServiceBuilder;
+import com.tesis.aether.core.factory.parser.AccountXmlParser;
+import com.tesis.aether.core.services.CloudService;
 import com.tesis.aether.core.services.CloudServiceConstants;
 import com.tesis.aether.core.services.storage.BaseStorageService;
+import com.tesis.aether.core.services.storage.ExtendedStorageService;
 
 public class ServiceFactory {
 
-	private Map<String,ServiceBuilder> serviceBuilders;
+	private Map<String, CloudService> services;
 
-	//Collections2.filter(serviceBuilders.keySet(), new ServiceTypePredicate(CloudServiceConstants.STORAGE_KIND));
-	
 	public static ServiceFactory instance = new ServiceFactory();
 	
-	protected ServiceFactory() {			
+	protected ServiceFactory() {		
+		setServices(AccountXmlParser.INSTANCE.loadServices()); 
 	}
-	
-	public BaseStorageService getStorageService(ServiceRequest request) throws MissingConfigurationItemsException, ServiceCreationException {
-		if(request.size() == 1) {
-			String serviceType = request.getServices().iterator().next();
-			int accountNumber = request.getAccountsForService(serviceType).iterator().next();
-			
-			return getStorageService(serviceType, accountNumber);
-			
-		} /*else {
-			MultiStorageService multiStorageService = new MultiStorageService();
-			for(String serviceType: request.getServices()) {
-				for(int accountNumber: request.getAccountsForService(serviceType)) {
-					StorageService storageService = getStorageService(serviceType, accountNumber);
-					multiStorageService.addStorageService(storageService);
-				}				
-			}						
-			
-			return multiStorageService;
-		}*/ return null;
-			
-	}
-	
-	public BaseStorageService getStorageService(String serviceKey, int accountNumber) throws MissingConfigurationItemsException, ServiceCreationException {
+		
+	public ExtendedStorageService getStorageService(String serviceKey, int accountNumber) throws MissingConfigurationItemsException, ServiceCreationException {
 		
 		try {
-			ServiceBuilder serviceBuilder = getServiceBuilders().get(serviceKey);
-			if(!serviceBuilder.getServiceKind().equals(CloudServiceConstants.STORAGE_KIND)) {
+			CloudService cloudService = getServices().get(serviceKey);
+			if(!cloudService.getKind().equals(CloudServiceConstants.STORAGE_KIND)) {
 				throw new WrongServiceTypeException("Service " + serviceKey + " is not a storage service");
 			}
-			return (BaseStorageService)serviceBuilder.createService(accountNumber);
-		} catch (MissingConfigurationItemsException e) {
-			throw e;
+			return (ExtendedStorageService) cloudService;
 		} catch(Exception e) {
 			e.printStackTrace();
 			throw new ServiceCreationException("Unknown service creation error");
@@ -62,16 +41,12 @@ public class ServiceFactory {
 		return getStorageService(serviceKey, 1);
 	}
 
-	public void addServiceBuilder(String key, ServiceBuilder value) {
-		this.serviceBuilders.put(key, value);
-	}
-	
-	public void setServiceBuilders(Map<String,ServiceBuilder> serviceBuilders) {
-		this.serviceBuilders = serviceBuilders;
+	public void setServices(Map<String, CloudService> services) {
+		this.services = services;
 	}
 
-	public Map<String,ServiceBuilder> getServiceBuilders() {
-		return serviceBuilders;
-	}	
+	public Map<String, CloudService> getServices() {
+		return services;
+	}
 	
 }
