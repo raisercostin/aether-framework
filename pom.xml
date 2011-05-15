@@ -12,6 +12,7 @@
 	<modules>
 		<module>aether-core</module>
 		<module>aether-examples</module>
+		<module>aether-adapters</module>
 	</modules>
 
 	<inceptionYear>2010</inceptionYear>
