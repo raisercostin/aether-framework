@@ -1,5 +1,7 @@
 package com.tesis.aether.adapters.jclouds;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 
 import org.apache.commons.io.FilenameUtils;
@@ -7,11 +9,13 @@ import org.jclouds.blobstore.BlobStore;
 import org.jclouds.blobstore.BlobStoreContext;
 import org.jclouds.blobstore.domain.Blob;
 import org.jclouds.blobstore.domain.BlobMetadata;
+import org.jclouds.blobstore.domain.MutableStorageMetadata;
 import org.jclouds.blobstore.domain.PageSet;
 import org.jclouds.blobstore.domain.StorageMetadata;
 import org.jclouds.blobstore.domain.StorageType;
 import org.jclouds.blobstore.domain.internal.BlobImpl;
 import org.jclouds.blobstore.domain.internal.MutableBlobMetadataImpl;
+import org.jclouds.blobstore.domain.internal.PageSetImpl;
 import org.jclouds.blobstore.options.GetOptions;
 import org.jclouds.blobstore.options.ListContainerOptions;
 import org.jclouds.domain.Location;
@@ -25,16 +29,17 @@ import com.tesis.aether.core.exception.UploadException;
 import com.tesis.aether.core.factory.ServiceFactory;
 import com.tesis.aether.core.services.storage.ExtendedStorageService;
 import com.tesis.aether.core.services.storage.object.StorageObject;
+import com.tesis.aether.core.services.storage.object.StorageObjectMetadata;
 
 public class BlobStoreAetherImpl implements BlobStore {
 
-	//Aca ya se debe contar con el StorageService instanciado de Aether
-	//Se debe convertir de los objetos internos a los de jclouds para que
-	//el usuario no perciba cambio alguno
-	
+	// Aca ya se debe contar con el StorageService instanciado de Aether
+	// Se debe convertir de los objetos internos a los de jclouds para que
+	// el usuario no perciba cambio alguno
+
 	private ExtendedStorageService service;
 
-	public BlobStoreAetherImpl() {		
+	public BlobStoreAetherImpl() {
 
 		service = ServiceFactory.instance.getFirstStorageService();
 		try {
@@ -45,18 +50,18 @@ public class BlobStoreAetherImpl implements BlobStore {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public BlobStoreContext getContext() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	public Blob newBlob(String name) {
-		
+
 		MutableBlobMetadataImpl mutableBlobMetadataImpl = new MutableBlobMetadataImpl();
 		mutableBlobMetadataImpl.setName(name);
 		mutableBlobMetadataImpl.setType(StorageType.BLOB);
-				
+
 		Blob blob = new BlobImpl(mutableBlobMetadataImpl);
 
 		return blob;
@@ -111,13 +116,13 @@ public class BlobStoreAetherImpl implements BlobStore {
 	}
 
 	public String putBlob(String container, Blob blob) {
-		try {	
-			
+		try {
+
 			String name = FilenameUtils.getName(blob.getMetadata().getName());
 			String path = FilenameUtils.getPathNoEndSeparator(blob.getMetadata().getName());
-			
+
 			service.uploadInputStream(blob.getPayload().getInput(), path, name, blob.getPayload().getContentMetadata().getContentLength());
-			
+
 			return null;
 		} catch (UploadException e) {
 			e.printStackTrace();
@@ -132,9 +137,9 @@ public class BlobStoreAetherImpl implements BlobStore {
 	}
 
 	public BlobMetadata blobMetadata(String container, String name) {
-		try {			
+		try {
 			StorageObject storageObject = service.getStorageObject(name);
-			return generateJcloudsMetadata(storageObject);			
+			return generateJcloudsMetadata(storageObject.getMetadata());
 		} catch (FileNotExistsException e) {
 			e.printStackTrace();
 			return null;
@@ -142,12 +147,12 @@ public class BlobStoreAetherImpl implements BlobStore {
 	}
 
 	public Blob getBlob(String container, String name) {
-		try {			
+		try {
 			StorageObject storageObject = service.getStorageObject(name);
-			Blob blob = new BlobImpl(generateJcloudsMetadata(storageObject));
+			Blob blob = new BlobImpl(generateJcloudsMetadata(storageObject.getMetadata()));
 			blob.setPayload(storageObject.getStream());
-					
-			return blob;			
+
+			return blob;
 		} catch (FileNotExistsException e) {
 			e.printStackTrace();
 			return null;
@@ -166,17 +171,54 @@ public class BlobStoreAetherImpl implements BlobStore {
 		}
 	}
 
-	private MutableBlobMetadataImpl generateJcloudsMetadata(StorageObject storageObject) {
+	private MutableBlobMetadataImpl generateJcloudsMetadata(StorageObjectMetadata storageObjectMetadata) {
 		MutableBlobMetadataImpl mutableBlobMetadataImpl = new MutableBlobMetadataImpl();
-		mutableBlobMetadataImpl.setName(storageObject.getMetadata().getPathAndName());
+		mutableBlobMetadataImpl.setName(storageObjectMetadata.getPathAndName());
 		mutableBlobMetadataImpl.setType(StorageType.BLOB);
-		mutableBlobMetadataImpl.getContentMetadata().setContentLength(storageObject.getMetadata().getLength());
-		mutableBlobMetadataImpl.setLastModified(storageObject.getMetadata().getLastModified());
-		
+		mutableBlobMetadataImpl.getContentMetadata().setContentLength(storageObjectMetadata.getLength());
+		mutableBlobMetadataImpl.setLastModified(storageObjectMetadata.getLastModified());
+
 		return mutableBlobMetadataImpl;
 	}
 
-	
+	public PageSet<? extends StorageMetadata> list() {
+		List<StorageObjectMetadata> listFiles;
+		try {
+			listFiles = service.listFiles("/", false);
+
+			List<MutableStorageMetadata> jCloudsMetadata = new ArrayList<MutableStorageMetadata>();
+			for (StorageObjectMetadata metadata : listFiles) {
+				jCloudsMetadata.add(generateJcloudsMetadata(metadata));
+			}
+
+			return new PageSetImpl<StorageMetadata>(jCloudsMetadata, null);
+		} catch (MethodNotSupportedException e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+
+	public PageSet<? extends StorageMetadata> list(String container) {
+		return list();
+	}
+
+	public PageSet<? extends StorageMetadata> list(String container, ListContainerOptions options) {
+		List<StorageObjectMetadata> listFiles;
+		try {
+			listFiles = service.listFiles(options.getDir(), options.isRecursive());
+
+			List<MutableStorageMetadata> jCloudsMetadata = new ArrayList<MutableStorageMetadata>();
+			for (StorageObjectMetadata metadata : listFiles) {
+				jCloudsMetadata.add(generateJcloudsMetadata(metadata));
+			}
+
+			return new PageSetImpl<StorageMetadata>(jCloudsMetadata, null);
+		} catch (MethodNotSupportedException e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+
 	/**
 	 * NOT IMPLEMENTED METHODS
 	 */
@@ -204,25 +246,10 @@ public class BlobStoreAetherImpl implements BlobStore {
 		// TODO Auto-generated method stub
 
 	}
+
 	public Set<? extends Location> listAssignableLocations() {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
-	public PageSet<? extends StorageMetadata> list() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public PageSet<? extends StorageMetadata> list(String container) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public PageSet<? extends StorageMetadata> list(String container, ListContainerOptions options) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
 
 }
