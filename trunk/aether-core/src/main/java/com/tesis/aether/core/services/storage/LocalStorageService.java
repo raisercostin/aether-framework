@@ -34,7 +34,7 @@ public class LocalStorageService extends ExtendedStorageService {
 
 	public LocalStorageService() {
 		super();
-		setName(StorageServiceConstants.S3);
+		setName(StorageServiceConstants.LOCAL);
 	}
 	
 	@Override
