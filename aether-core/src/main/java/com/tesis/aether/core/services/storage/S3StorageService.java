@@ -106,7 +106,9 @@ public class S3StorageService extends ExtendedStorageService {
 			}
 		}
 		
-		Blob blob = blobStore.newBlob(sanitizedPath + "/" + filename);
+		
+		String blobFullName = sanitizedPath.trim().isEmpty() ? filename : sanitizedPath + "/" + filename;
+		Blob blob = blobStore.newBlob(blobFullName);
 		blob.setPayload(stream);
 		blob.getPayload().getContentMetadata().setContentLength(contentLength);
 		blobStore.putBlob(getServiceProperty(StorageServiceConstants.S3_BUCKET), blob);

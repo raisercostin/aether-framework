@@ -5,7 +5,6 @@ import java.util.Map;
 import com.tesis.aether.core.exception.MissingConfigurationItemsException;
 import com.tesis.aether.core.exception.ServiceCreationException;
 import com.tesis.aether.core.exception.WrongServiceTypeException;
-import com.tesis.aether.core.factory.builder.ServiceBuilder;
 import com.tesis.aether.core.factory.parser.AccountXmlParser;
 import com.tesis.aether.core.services.CloudService;
 import com.tesis.aether.core.services.CloudServiceConstants;
@@ -17,9 +16,15 @@ public class ServiceFactory {
 	private Map<String, CloudService> services;
 
 	public static ServiceFactory instance = new ServiceFactory();
+	//TODO REMOVER ESTO
+	public static final String SERVICES_FILE = "src/main/resources/config.xml";
 	
 	protected ServiceFactory() {		
-		setServices(AccountXmlParser.INSTANCE.loadServices()); 
+		try {
+			setServices(AccountXmlParser.INSTANCE.loadServices(SERVICES_FILE));
+		} catch (Exception e) {
+			e.printStackTrace();
+		} 
 	}
 		
 	public ExtendedStorageService getStorageService(String serviceKey, int accountNumber) throws MissingConfigurationItemsException, ServiceCreationException {
@@ -47,6 +52,17 @@ public class ServiceFactory {
 
 	public Map<String, CloudService> getServices() {
 		return services;
+	}
+
+	public ExtendedStorageService getFirstStorageService() {
+		for(String key: services.keySet()) {
+			if(services.get(key).getKind().equals(CloudServiceConstants.STORAGE_KIND)) {
+				return (ExtendedStorageService)services.get(key);
+			}
+		}
+		
+		return null;
+		
 	}
 	
 }
