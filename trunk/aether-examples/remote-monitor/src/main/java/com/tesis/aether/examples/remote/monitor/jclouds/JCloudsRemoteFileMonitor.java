@@ -41,7 +41,7 @@ public class JCloudsRemoteFileMonitor implements RemoteFileMonitor{
 
 		s3Context = new BlobStoreContextFactory().createContext("s3", accessKey, secretKey);
 		blobStore = s3Context.getBlobStore();
-
+		
 		timer.schedule(new TimerTask() {
 			public void run() {
 				Date lastModified = blobStore.getBlob(bucket, fileToMonitor).getMetadata().getLastModified();
