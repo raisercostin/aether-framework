@@ -1,9 +1,0 @@
-<storageServices>
-	<storageService class="S3StorageService">
-		<secretKey></secretKey>
-		<accessKey></accessKey>
-	</storageService>
-	<storageService class="LocalStorageService">
-		<localBaseFolder></localBaseFolder>
-	</storageService>
-</storageServices>
