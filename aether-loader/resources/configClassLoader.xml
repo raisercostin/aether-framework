@@ -1,7 +1,7 @@
 <ClassLoaderConfig>
 	<classException>
-		<srcClass>Test1</srcClass>
-		<dstClass>Test2</dstClass>
+		<srcClass>com.tesis.aether.tests.Test1</srcClass>
+		<dstClass>com.tesis.aether.tests.Test2</dstClass>
 	</classException>
 	<packageException>
 		<srcPackage></srcPackage>

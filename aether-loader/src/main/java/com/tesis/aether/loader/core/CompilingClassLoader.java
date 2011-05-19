@@ -352,21 +352,27 @@ public class CompilingClassLoader extends ClassLoader {
 			}
 		}
 
-		if (!origName.equals(name)) {
-			if (clas != null)
-				return clas;
-		}
 		//La clase puede estar en una biblioteca, por lo que se intenta
 		//cargar de forma normal
 		if (clas == null) {
 			clas = super.loadClass(name);
 		}
-		// En caso de no haberse encontrado la clase y estar 'resolve' en true
-		// se procede a linkear la clase
-			resolveClass(clas);
 		// Si no se encontro la clase, entonces ahora si es un error
-		if (clas == null)
+		if (clas == null) {
 			throw new ClassNotFoundException(name);
+		} else {
+			// En caso de haberse encontrado la clase
+			// se procede a linkearla
+			resolveClass(clas);
+		}
+
+		// Si la clase original se mapeo a otra ver que es lo que hay que hacer...
+		// @TODO queda pendiente resolver esto   
+		if (!origName.equals(name)) {
+			if (clas != null)
+				return clas;
+		}
+
 		// En caso de haberse encontrado la clase, se retorna
 		return clas;
 	}
