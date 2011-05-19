@@ -6,13 +6,16 @@ import java.util.HashMap;
 import javax.xml.parsers.ParserConfigurationException;
 import org.xml.sax.SAXException;
 import com.tesis.aether.loader.conf.ConfigClassLoader;
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 
-/**************************************************************
- * Para que el cargador de clases funcione en la aplicacion   *
- * se debe agregar com parametro de la vm la siguiente linea: *
- *                                                            *
- * -Djava.system.class.loader=core.CompilingClassLoader       *
- **************************************************************/
+
+/********************************************************************************
+ * Para que el cargador de clases funcione en la aplicacion                     *
+ * se debe agregar com parametro de la vm la siguiente linea:                   *
+ *                                                                              *
+ * -Djava.system.class.loader=com.tesis.aether.loader.core.CompilingClassLoader *
+ ********************************************************************************/
 
 
 /**
@@ -20,6 +23,9 @@ import com.tesis.aether.loader.conf.ConfigClassLoader;
  * o estar desactualizadas y las carga para ejecucion
  */
 public class CompilingClassLoader extends ClassLoader {
+	// Logger
+	private static Logger logger = null;
+	
 	/**
 	 * Contiene el mapeo de clases a ser reemplazadas en la carga.
 	 * Las clases se deben especificar con incluyendo el paquete,
@@ -169,7 +175,7 @@ public class CompilingClassLoader extends ClassLoader {
 		String newName = pckName;
 		if (isExceptedPackage(pckName)) {
 			newName = packageExceptions.get(pckName);
-			System.out.println("Changing package name '" + pckName + "' to '"
+			logger.debug("Changing package name '" + pckName + "' to '"
 					+ newName + "'");
 		}
 		return newName;
@@ -186,7 +192,7 @@ public class CompilingClassLoader extends ClassLoader {
 		String newName = className;
 		if (isExceptedClass(className)) {
 			newName = classExceptions.get(className);
-			System.out.println("Changing class name '" + className + "' to '"
+			logger.debug("Changing class name '" + className + "' to '"
 					+ newName + "'");
 		}
 		return newName;
@@ -201,7 +207,7 @@ public class CompilingClassLoader extends ClassLoader {
 	private String replaceWithExceptions(String fullName) {
 		if (isExceptedClass(fullName)) {
 			String newClassName = classExceptions.get(fullName);
-			System.out.println("Changing class name '" + fullName + "' to '"
+			logger.debug("Changing class name '" + fullName + "' to '"
 					+ newClassName + "'");
 			return newClassName;
 		}
@@ -210,13 +216,13 @@ public class CompilingClassLoader extends ClassLoader {
 		if (isExceptedPackage(newPckName)) {
 			System.out.print("Changing package name '" + newPckName + "' to '");
 			newPckName = packageExceptions.get(newPckName);
-			System.out.println(newPckName + "'");
+			logger.debug(newPckName + "'");
 		}
 		if (newPckName.equals("")) {
 			return newClassName;
 		}
 		if (!fullName.equals(newPckName + "." + newClassName)) {
-			System.out.println("Changed full name '" + fullName + "' to '"
+			logger.debug("Changed full name '" + fullName + "' to '"
 					+ newPckName + "." + newClassName + "'");
 		}
 		return newPckName + "." + newClassName;
@@ -249,47 +255,21 @@ public class CompilingClassLoader extends ClassLoader {
 	 * @throws IOException
 	 */
 	private boolean compile(String javaFile) throws IOException {
-		System.out.println("CCL: Compiling " + javaFile + "...");
+		logger.debug("CCL: Compiling " + javaFile + "...");
 		Process p = Runtime.getRuntime().exec("javac " + javaFile);
 		try {
 			p.waitFor();
 		} catch (InterruptedException ie) {
-			System.out.println(ie);
+			logger.debug(ie);
 		}
 		int ret = p.exitValue();
 		return ret == 0;
 	}
-
-	/**
-	 * Se encarga de cargar las clases y compilar los .java
-	 * en caso de que sea necesario.
-	 */
-	@Override
-	public Class<?> loadClass(String origName) throws ClassNotFoundException {
-		System.out.println("loading " + origName + "...");
-		if (loadConfigurations) {
-			loadConfigurations = false;
-			try {
-				loadClassMapper("resources/configClassLoader.xml");
-			} catch (Exception e) {
-				System.out
-						.println("Error al cargar la configuracion de mapeo de clases y paquetes.");
-				e.printStackTrace();
-			}
-		}
-		String name = replaceWithExceptions(origName);
-		Class<?> clas = null;
-		// Se busca si la clase ya fue cargada
-		clas = findLoadedClass(name);
-		// Se crea una ruta a la clase
-		// Por ejemplo java.lang.Object => java/lang/Object
-		String fileStub = name.replace('.', '/');
-		// Construimos los objetos que apunten al codigo fuente 
-		// y al .class
-		String javaFilename = "src/" + fileStub + ".java";
-		String classFilename = "bin/" + fileStub + ".class";
+	
+	private Class<?> loadClass (String javaFilename, String classFilename, String name) throws ClassNotFoundException {
 		File javaFile = new File(javaFilename);
 		File classFile = new File(classFilename);
+		Class<?> clas = null;
 		// Primero vemos si es necesario compilar. Si existe el codigo
 		// java y no existe el .class o el .class esta desactualizado
 		// entonces procedemos a compilarlo
@@ -316,8 +296,62 @@ public class CompilingClassLoader extends ClassLoader {
 		} catch (IOException ie) {
 			//No es un error ya que puede ser que tratemos de cargar
 			//una biblioteca
-			System.out.println("Error al cargar el arreglo de bytes, se continua con la carga de la clase... Error: " + ie.getMessage());
+			logger.debug("Error al cargar el arreglo de bytes, se continua con la carga de la clase... Error: " + ie.getMessage());
 		}
+		return clas;
+	}
+
+	/**
+	 * Se encarga de cargar las clases y compilar los .java
+	 * en caso de que sea necesario.
+	 */
+	@Override
+	public Class<?> loadClass(String origName) throws ClassNotFoundException {
+		if (loadConfigurations) {
+			loadConfigurations = false;
+			logger = Logger.getLogger("default");
+			PropertyConfigurator.configure("resources/log4j.properties");
+			logger.debug("loading " + origName + "...");
+			try {
+				loadClassMapper("resources/configClassLoader.xml");
+			} catch (Exception e) {
+				System.out
+						.println("Error al cargar la configuracion de mapeo de clases y paquetes.");
+				e.printStackTrace();
+			}
+		}
+		String name = replaceWithExceptions(origName);
+		Class<?> clas = null;
+		// Se busca si la clase ya fue cargada
+		clas = findLoadedClass(name);
+		if (clas == null) {
+			// Se crea una ruta a la clase
+			// Por ejemplo java.lang.Object => java/lang/Object
+			String fileStub = name.replace('.', '/');
+			
+			String classpath = System.getProperty("java.class.path");
+			if (classpath != null) {
+				String[] classpathItems = classpath.split(";");
+				boolean search = true;
+				int i = 0;
+				String classpathItem = "";
+				while (search && i < classpathItems.length) {
+					classpathItem = classpathItems[i];
+					// Construimos los objetos que apunten al codigo fuente 
+					// y al .class
+					String javaFilename = classpathItem.replace("\\", "/").concat("/") + fileStub + ".java";
+					String classFilename = classpathItem.replace("\\", "/").concat("/") + fileStub + ".class";
+					// Se trata de acargar la clase usando el elemento del classpath
+					
+					clas = loadClass(javaFilename, classFilename, name);
+					if (clas != null) {
+						search = false;
+					}
+					i++;
+				}
+			}
+		}
+
 		if (!origName.equals(name)) {
 			if (clas != null)
 				return clas;
