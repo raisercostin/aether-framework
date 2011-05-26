@@ -2,14 +2,19 @@ package com.tesis.aether.loader.core;
 
 import java.io.*;
 import java.lang.reflect.Method;
+import java.util.ArrayList;
 import java.util.HashMap;
+
+import javassist.CannotCompileException;
+import javassist.ClassPool;
+import javassist.CtClass;
+import javassist.NotFoundException;
+
 import javax.xml.parsers.ParserConfigurationException;
 import org.xml.sax.SAXException;
 import com.tesis.aether.loader.conf.ConfigClassLoader;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
-
-
 /********************************************************************************
  * Para que el cargador de clases funcione en la aplicacion                     *
  * se debe agregar com parametro de la vm la siguiente linea:                   *
@@ -25,6 +30,7 @@ import org.apache.log4j.PropertyConfigurator;
 public class CompilingClassLoader extends ClassLoader {
 	// Logger
 	private static Logger logger = null;
+	private ArrayList<String> loaded = new ArrayList<String>();
 	
 	/**
 	 * Contiene el mapeo de clases a ser reemplazadas en la carga.
@@ -320,7 +326,12 @@ public class CompilingClassLoader extends ClassLoader {
 				e.printStackTrace();
 			}
 		}
-		String name = replaceWithExceptions(origName);
+		String name = origName;
+		if (!loaded.contains(origName)) {
+			loaded.add(origName);
+			name = replaceWithExceptions(origName);
+		}
+		
 		Class<?> clas = null;
 		// Se busca si la clase ya fue cargada
 		clas = findLoadedClass(name);
@@ -343,6 +354,7 @@ public class CompilingClassLoader extends ClassLoader {
 					String classFilename = classpathItem.replace("\\", "/").concat("/") + fileStub + ".class";
 					// Se trata de acargar la clase usando el elemento del classpath
 					
+					System.out.println("clas = loadClass(" + javaFilename + ", " + classFilename + ", " + name + ");");
 					clas = loadClass(javaFilename, classFilename, name);
 					if (clas != null) {
 						search = false;
@@ -369,8 +381,17 @@ public class CompilingClassLoader extends ClassLoader {
 		// Si la clase original se mapeo a otra ver que es lo que hay que hacer...
 		// @TODO queda pendiente resolver esto   
 		if (!origName.equals(name)) {
-			if (clas != null)
-				return clas;
+	/*		
+			ClassPool pool = ClassPool.getDefault();
+			try {
+				CtClass cc = pool.get(name);
+				cc.setSuperclass(pool.get(origName));
+				cc.writeFile();
+				return cc.toClass();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}	
+		*/		
 		}
 
 		// En caso de haberse encontrado la clase, se retorna
