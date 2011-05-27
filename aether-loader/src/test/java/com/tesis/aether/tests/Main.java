@@ -1,12 +1,12 @@
 package com.tesis.aether.tests;
 
-import com.tesis.aether.loader.core.CompilingClassLoader;
+import com.tesis.aether.loader.core.JavasistClassLoader;
 
 public class Main {
 	  public static void main(String[] args) {
-		  CompilingClassLoader ccl = null;
+		  JavasistClassLoader ccl = null;
 		  try {
-			  ccl = new CompilingClassLoader(Thread.currentThread().getContextClassLoader());
+			  ccl = new JavasistClassLoader(Thread.currentThread().getContextClassLoader());
 		  } catch (Exception e) {
 			  e.printStackTrace();
 		  }
