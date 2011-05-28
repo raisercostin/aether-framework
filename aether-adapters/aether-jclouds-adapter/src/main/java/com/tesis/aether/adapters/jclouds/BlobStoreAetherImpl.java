@@ -174,7 +174,11 @@ public class BlobStoreAetherImpl implements BlobStore {
 	private MutableBlobMetadataImpl generateJcloudsMetadata(StorageObjectMetadata storageObjectMetadata) {
 		MutableBlobMetadataImpl mutableBlobMetadataImpl = new MutableBlobMetadataImpl();
 		mutableBlobMetadataImpl.setName(storageObjectMetadata.getPathAndName());
-		mutableBlobMetadataImpl.setType(StorageType.BLOB);
+		if(storageObjectMetadata.isFile()) {
+			mutableBlobMetadataImpl.setType(StorageType.BLOB);
+		} else if(storageObjectMetadata.isDirectory()) {
+			mutableBlobMetadataImpl.setType(StorageType.FOLDER);
+		}
 		mutableBlobMetadataImpl.getContentMetadata().setContentLength(storageObjectMetadata.getLength());
 		mutableBlobMetadataImpl.setLastModified(storageObjectMetadata.getLastModified());
 
@@ -184,7 +188,7 @@ public class BlobStoreAetherImpl implements BlobStore {
 	public PageSet<? extends StorageMetadata> list() {
 		List<StorageObjectMetadata> listFiles;
 		try {
-			listFiles = service.listFiles("/", false);
+			listFiles = service.listFiles("", true);
 
 			List<MutableStorageMetadata> jCloudsMetadata = new ArrayList<MutableStorageMetadata>();
 			for (StorageObjectMetadata metadata : listFiles) {
@@ -192,10 +196,10 @@ public class BlobStoreAetherImpl implements BlobStore {
 			}
 
 			return new PageSetImpl<StorageMetadata>(jCloudsMetadata, null);
-		} catch (MethodNotSupportedException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 			return null;
-		}
+		} 
 	}
 
 	public PageSet<? extends StorageMetadata> list(String container) {
