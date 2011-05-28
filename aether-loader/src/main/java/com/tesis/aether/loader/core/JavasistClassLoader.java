@@ -2,17 +2,10 @@ package com.tesis.aether.loader.core;
 
 import java.io.*;
 import java.lang.reflect.Method;
-import java.util.ArrayList;
 import java.util.HashMap;
-
-import javassist.CannotCompileException;
-import javassist.ClassPool;
-import javassist.CtClass;
-import javassist.CtMethod;
-import javassist.NotFoundException;
-
 import javax.xml.parsers.ParserConfigurationException;
 import org.xml.sax.SAXException;
+import com.tesis.aether.loader.classTools.ClassManipulator;
 import com.tesis.aether.loader.conf.ConfigClassLoader;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
@@ -51,16 +44,6 @@ public class JavasistClassLoader extends ClassLoader {
 		super(parent);
 	}
 
-	private String getInicStringToMap (String className, String methodName, boolean retType) {
-		String ret = "{ " + className + " _new_call = new " + className + "(); ";
-		if (retType) {
-			ret += "return _new_call." + methodName + "($$);}";
-		} else {
-			ret += "_new_call." + methodName + "($$); return;}";
-		}
-		return ret;
-	}
-	
 	private void loadClassMapper(String fromPath) throws SAXException,
 			IOException, ParserConfigurationException {
 		ConfigClassLoader conf = new ConfigClassLoader(fromPath);
@@ -389,129 +372,20 @@ public class JavasistClassLoader extends ClassLoader {
 			}
 		}
 		if (!isExceptedClass(origName)) {
+			//Si la clase no esta en la lista de excepciones entonces
+			//se carga con un classloader normal
 			Class<?> clas = loadClass2(origName);
-			// Si no se encontro la clase, entonces ahora si es un error
-			if (clas == null) {
-				throw new ClassNotFoundException(origName);
-			} else {
-				// En caso de haberse encontrado la clase
-				// se procede a linkearla
-				//resolveClass(clas);
-			}
 			return clas;
 		}
-		String name = origName;
+		String nameClassTo = origName;
+		nameClassTo = replaceWithExceptions(origName);
+		String pckName = getPackageName(nameClassTo);
 		try {
-			name = replaceWithExceptions(origName);
-			ClassPool pool = ClassPool.getDefault();
-			String pckName = getPackageName(name);
-			if (!"".equals(pckName)) {
-				pool.importPackage(pckName);
-			}
-			CtClass cc = pool.get(origName);
-//			CtMethod met = cc.getDeclaredMethod("toString");
-//			try {
-//				met.insertBefore("{com.tesis.aether.tests.Test2 tt = new com.tesis.aether.tests.Test2(); tt.toString();return \"pepino\";}");
-//				//met.insertBefore("{System.out.println(\"Hello.say():\"); }");
-//			} catch (Exception e) {
-//				e.printStackTrace();
-//			}
-			CtMethod[] methods = cc.getDeclaredMethods();
-			int i = 0;
-			while (i < methods.length) {
-				CtMethod method = methods[i];
-				String _call = "";
-				_call = getInicStringToMap(name, method.getName(), !method.getReturnType().getName().equals("void"));
-				try {
-					method.insertBefore(_call);
-				} catch (Exception e) {
-					e.printStackTrace();
-					System.out.println("No se pudo agregar código en el método " + method.getName());
-				}
-				i++;
-			}
-			return cc.toClass();
-		
-			
-			
-			
-			
-			
-			
-			
-			//cc.setSuperclass(pool.get(origName));
-			//cc.writeFile();
-//			return cc.toClass();
+			return ClassManipulator.addClassCalls(pckName, origName, nameClassTo);
 		} catch (Exception e) {
 			e.printStackTrace();
-			throw new ClassNotFoundException(name);
+			throw new ClassNotFoundException(nameClassTo);
 		}	
-		
-		
-//		Class<?> clas = null;
-//		// Se busca si la clase ya fue cargada
-//		clas = findLoadedClass(name);
-//		if (clas == null) {
-//			// Se crea una ruta a la clase
-//			// Por ejemplo java.lang.Object => java/lang/Object
-//			String fileStub = name.replace('.', '/');
-//			
-//			String classpath = System.getProperty("java.class.path");
-//			if (classpath != null) {
-//				String[] classpathItems = classpath.split(";");
-//				boolean search = true;
-//				int i = 0;
-//				String classpathItem = "";
-//				while (search && i < classpathItems.length) {
-//					classpathItem = classpathItems[i];
-//					// Construimos los objetos que apunten al codigo fuente 
-//					// y al .class
-//					String javaFilename = classpathItem.replace("\\", "/").concat("/") + fileStub + ".java";
-//					String classFilename = classpathItem.replace("\\", "/").concat("/") + fileStub + ".class";
-//					// Se trata de acargar la clase usando el elemento del classpath
-//					
-//					System.out.println("clas = loadClass(" + javaFilename + ", " + classFilename + ", " + name + ");");
-//					clas = loadClass(javaFilename, classFilename, name);
-//					if (clas != null) {
-//						search = false;
-//					}
-//					i++;
-//				}
-//			}
-//		}
-//
-//		//La clase puede estar en una biblioteca, por lo que se intenta
-//		//cargar de forma normal
-//		if (clas == null) {
-//			clas = super.loadClass(name);
-//		}
-//		// Si no se encontro la clase, entonces ahora si es un error
-//		if (clas == null) {
-//			throw new ClassNotFoundException(name);
-//		} else {
-//			// En caso de haberse encontrado la clase
-//			// se procede a linkearla
-//			resolveClass(clas);
-//		}
-//
-//		// Si la clase original se mapeo a otra ver que es lo que hay que hacer...
-//		// @TODO queda pendiente resolver esto   
-//		if (!origName.equals(name)) {
-//	/*		
-//			ClassPool pool = ClassPool.getDefault();
-//			try {
-//				CtClass cc = pool.get(name);
-//				cc.setSuperclass(pool.get(origName));
-//				cc.writeFile();
-//				return cc.toClass();
-//			} catch (Exception e) {
-//				e.printStackTrace();
-//			}	
-//		*/		
-//		}
-//
-//		// En caso de haberse encontrado la clase, se retorna
-//		return clas;
 	}
 	
 	/**
