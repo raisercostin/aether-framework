@@ -7,11 +7,12 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
+import java.util.Properties;
 
 import org.apache.commons.io.FilenameUtils;
+import org.jclouds.aws.s3.S3ContextBuilder;
 import org.jclouds.blobstore.BlobStore;
 import org.jclouds.blobstore.BlobStoreContext;
-import org.jclouds.blobstore.BlobStoreContextFactory;
 import org.jclouds.blobstore.domain.Blob;
 import org.jclouds.blobstore.domain.BlobMetadata;
 import org.jclouds.blobstore.domain.MutableBlobMetadata;
@@ -38,12 +39,12 @@ public class S3StorageService extends ExtendedStorageService {
 
 	private BlobStoreContext s3Context;
 	private BlobStore blobStore;
-	
+
 	public S3StorageService() {
 		super();
 		setName(StorageServiceConstants.S3);
 	}
-	
+
 	@Override
 	public URI getPublicURLForPath(String remotePath) throws FileNotExistsException, MethodNotSupportedException, URLExtractionException {
 		String sanitizedPath = sanitizeRemotePath(remotePath);
@@ -54,23 +55,25 @@ public class S3StorageService extends ExtendedStorageService {
 	public List<StorageObjectMetadata> listFiles(String remotePath, boolean recursive) throws MethodNotSupportedException {
 
 		String sanitizedPath = sanitizeRemotePath(remotePath);
-		
+
 		if (checkFileExists(sanitizedPath)) {
 			BlobMetadata blobMetadata = blobStore.blobMetadata(getServiceProperty(StorageServiceConstants.S3_BUCKET), sanitizedPath);
 			return Arrays.asList(toStorageObjectMetadata(blobMetadata));
 		} else {
-			PageSet<? extends StorageMetadata> list = blobStore.list(getServiceProperty(StorageServiceConstants.S3_BUCKET), ListContainerOptions.Builder.inDirectory(sanitizedPath));
+			PageSet<? extends StorageMetadata> list = sanitizedPath.isEmpty() ? blobStore.list(getServiceProperty(StorageServiceConstants.S3_BUCKET)) : blobStore.list(getServiceProperty(StorageServiceConstants.S3_BUCKET), ListContainerOptions.Builder.inDirectory(sanitizedPath));
 			List<StorageObjectMetadata> result = new ArrayList<StorageObjectMetadata>();
 			for (StorageMetadata file : list) {
-				StorageObjectMetadata storageObjectMetadata = toStorageObjectMetadata(file);
-				if(storageObjectMetadata.isDirectory() && recursive == true) {
-					result.addAll(listFiles(storageObjectMetadata.getPathAndName(), true));
+				if (!file.getName().isEmpty()) {
+					StorageObjectMetadata storageObjectMetadata = toStorageObjectMetadata(file);
+					if (storageObjectMetadata.isDirectory() && recursive == true) {
+						result.addAll(listFiles(storageObjectMetadata.getPathAndName(), true));
+					}
+					result.add(storageObjectMetadata);
 				}
-				result.add(storageObjectMetadata);
 			}
 			return result;
 		}
-		
+
 	}
 
 	@Override
@@ -97,7 +100,7 @@ public class S3StorageService extends ExtendedStorageService {
 	@Override
 	public void uploadInputStream(InputStream stream, String remoteDirectory, String filename, Long contentLength) throws UploadException, MethodNotSupportedException, FileNotExistsException {
 		String sanitizedPath = sanitizeRemotePath(remoteDirectory);
-		
+
 		if (!checkObjectExists(sanitizedPath)) {
 			try {
 				createFolder(sanitizedPath);
@@ -105,15 +108,14 @@ public class S3StorageService extends ExtendedStorageService {
 				throw new UploadException("Destination path could not be created.");
 			}
 		}
-		
-		
+
 		String blobFullName = sanitizedPath.trim().isEmpty() ? filename : sanitizedPath + "/" + filename;
 		Blob blob = blobStore.newBlob(blobFullName);
 		blob.setPayload(stream);
 		blob.getPayload().getContentMetadata().setContentLength(contentLength);
 		blobStore.putBlob(getServiceProperty(StorageServiceConstants.S3_BUCKET), blob);
-		
-		if(stream != null) {
+
+		if (stream != null) {
 			try {
 				stream.close();
 			} catch (IOException e) {
@@ -132,7 +134,7 @@ public class S3StorageService extends ExtendedStorageService {
 		String sanitizedPath = sanitizeRemotePath(remotePath);
 		blobStore.deleteDirectory(getServiceProperty(StorageServiceConstants.S3_BUCKET), sanitizedPath);
 	}
-	
+
 	@Override
 	public void createFolder(String remotePath) throws FolderCreationException, MethodNotSupportedException {
 
@@ -153,28 +155,63 @@ public class S3StorageService extends ExtendedStorageService {
 
 			accumulatedPath.append("/");
 		}
-		
+
 	}
 
 	@Override
 	public boolean checkFileExists(String remotePath) throws MethodNotSupportedException {
 		String sanitizedPath = sanitizeRemotePath(remotePath);
-		
-		boolean blobExists = blobStore.blobExists(getServiceProperty(StorageServiceConstants.S3_BUCKET), sanitizedPath);
+
+		boolean blobExists = sanitizedPath.isEmpty() ? false : blobStore.blobExists(getServiceProperty(StorageServiceConstants.S3_BUCKET), sanitizedPath);
 		return blobExists;
 	}
 
 	@Override
 	public boolean checkDirectoryExists(String remotePath) throws MethodNotSupportedException {
 		String sanitizedPath = sanitizeRemotePath(remotePath);
-		
+
 		boolean directoryExists = blobStore.directoryExists(getServiceProperty(StorageServiceConstants.S3_BUCKET), sanitizedPath);
 		return directoryExists;
 	}
 
 	@Override
 	public void connect(Authenticator authenticator) throws ConnectionException, MethodNotSupportedException {
-		s3Context = new BlobStoreContextFactory().createContext("s3", getServiceProperty(StorageServiceConstants.S3_ACCESS_KEY), getServiceProperty(StorageServiceConstants.S3_SECRET_KEY));
+		// s3Context = new BlobStoreContextFactory().createContext("s3",
+		// getServiceProperty(StorageServiceConstants.S3_ACCESS_KEY),
+		// getServiceProperty(StorageServiceConstants.S3_SECRET_KEY));
+		// blobStore = s3Context.getBlobStore();
+
+		Properties properties = new Properties();
+		properties.put("jclouds.user-threads", "0");
+		properties.put("jclouds.identity", getServiceProperty(StorageServiceConstants.S3_ACCESS_KEY));
+		properties.put("jclouds.max-session-failures", "2");
+		properties.put("jclouds.aws.default_regions", "us-standard");
+		properties.put("jclouds.s3.service-path", "/");
+		properties.put("jclouds.aws.header.tag", "amz");
+		properties.put("jclouds.aws.auth.tag", "AWS");
+		properties.put("jclouds.relax-hostname", "true");
+		properties.put("jclouds.max-connection-reuse", "75");
+		properties.put("jclouds.endpoint", "https://s3.amazonaws.com");
+		properties.put("jclouds.credential", getServiceProperty(StorageServiceConstants.S3_SECRET_KEY));
+		properties.put("jclouds.aws.regions", "us-standard,us-west-1,EU,ap-southeast-1");
+		properties.put("jclouds.s3.virtual-host-buckets", "true");
+		properties.put("jclouds.blobstore.metaprefix", "x-amz-meta-");
+		properties.put("jclouds.endpoint.ap-southeast-1", "https://s3-ap-southeast-1.amazonaws.com");
+		properties.put("jclouds.endpoint.EU", "https://s3-eu-west-1.amazonaws.com");
+		properties.put("jclouds.max-connections-per_context", "20");
+		properties.put("jclouds.so-timeout", "60000");
+		properties.put("jclouds.max-connections-per-host", "0");
+		properties.put("jclouds.endpoint.us-west-1", "https://s3-us-west-1.amazonaws.com");
+		properties.put("jclouds.endpoint.us-standard", "https://s3.amazonaws.com");
+		properties.put("jclouds.io-worker-threads", "20");
+		properties.put("jclouds.blobstore.directorysuffix", "_$folder$");
+		properties.put("jclouds.api-version", "2006-03-01");
+		properties.put("jclouds.connection-timeout", "60000");
+		properties.put("jclouds.provider", "s3");
+		properties.put("jclouds.session-interval", "60");
+
+		S3ContextBuilder builder = new S3ContextBuilder(properties);
+		s3Context = builder.buildBlobStoreContext();
 		blobStore = s3Context.getBlobStore();
 	}
 
@@ -183,7 +220,7 @@ public class S3StorageService extends ExtendedStorageService {
 		s3Context.close();
 		s3Context = null;
 	}
-		
+
 	private String sanitizeRemotePath(String... remoteDirectoryComponents) {
 
 		StringBuffer remotePath = new StringBuffer();
@@ -195,25 +232,31 @@ public class S3StorageService extends ExtendedStorageService {
 
 		String separatorsToUnix = FilenameUtils.separatorsToUnix(withoutStartingSeparator);
 
-		return FilenameUtils.normalizeNoEndSeparator(separatorsToUnix, true);
+		String normalizeNoEndSeparator = FilenameUtils.normalizeNoEndSeparator(separatorsToUnix, true);
+
+		if (normalizeNoEndSeparator.startsWith("/")) {
+			return normalizeNoEndSeparator.substring(1);
+		} else {
+			return normalizeNoEndSeparator;
+		}
 	}
 
 	private StorageObjectMetadata toStorageObjectMetadata(StorageMetadata blobMetadata) {
 		String name = FilenameUtils.getName(blobMetadata.getName());
 		String path = FilenameUtils.getPathNoEndSeparator(blobMetadata.getName());
-		
+
 		StorageObjectMetadata metadata = new StorageObjectMetadata();
 		metadata.setPath(path);
 		metadata.setName(name);
 		metadata.setLastModified(blobMetadata.getLastModified());
 		metadata.setPathAndName(path + "/" + name);
-		if(blobMetadata.getType().equals(StorageType.BLOB)) {
+		if (blobMetadata.getType().equals(StorageType.BLOB)) {
 			metadata.setType(StorageObjectConstants.FILE_TYPE);
-			metadata.setLength(((MutableBlobMetadata)blobMetadata).getContentMetadata().getContentLength());
+			metadata.setLength(((MutableBlobMetadata) blobMetadata).getContentMetadata().getContentLength());
 		} else {
-			metadata.setType(StorageObjectConstants.DIRECTORY_TYPE);			
+			metadata.setType(StorageObjectConstants.DIRECTORY_TYPE);
 		}
-		
+
 		return metadata;
 	}
 
