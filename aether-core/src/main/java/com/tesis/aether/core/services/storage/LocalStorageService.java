@@ -190,7 +190,13 @@ public class LocalStorageService extends ExtendedStorageService {
 		metadata.setPath(path);
 		metadata.setName(name);
 		metadata.setLastModified(new Date(dirToList.lastModified()));
-		metadata.setPathAndName(path + "/" + name);
+		
+		if(!path.trim().isEmpty()) {
+			metadata.setPathAndName(path + "/" + name);
+		} else {
+			metadata.setPathAndName(name);
+		}
+		
 		if (dirToList.isFile()) {
 			metadata.setType(StorageObjectConstants.FILE_TYPE);
 		} else {

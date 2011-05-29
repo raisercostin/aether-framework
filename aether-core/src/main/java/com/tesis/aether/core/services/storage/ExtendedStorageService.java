@@ -38,7 +38,11 @@ public abstract class ExtendedStorageService extends BaseStorageService {
 		metadata.setPath(path);
 		metadata.setName(name);
 		metadata.setType(StorageObjectConstants.FILE_TYPE);
-		metadata.setPathAndName(path + "/" + name);
+		if(!path.trim().isEmpty()) {
+			metadata.setPathAndName(path + "/" + name);
+		} else {
+			metadata.setPathAndName(name);
+		}
 
 		try {
 			metadata.setUri(getPublicURLForPath(remotePathFile));
