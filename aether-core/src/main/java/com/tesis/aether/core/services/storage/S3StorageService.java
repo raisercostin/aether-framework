@@ -101,7 +101,7 @@ public class S3StorageService extends ExtendedStorageService {
 	public void uploadInputStream(InputStream stream, String remoteDirectory, String filename, Long contentLength) throws UploadException, MethodNotSupportedException, FileNotExistsException {
 		String sanitizedPath = sanitizeRemotePath(remoteDirectory);
 
-		if (!checkObjectExists(sanitizedPath)) {
+		if (!sanitizedPath.trim().isEmpty() && !checkObjectExists(sanitizedPath)) {
 			try {
 				createFolder(sanitizedPath);
 			} catch (FolderCreationException e) {
