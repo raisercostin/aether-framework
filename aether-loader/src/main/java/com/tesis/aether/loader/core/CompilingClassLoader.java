@@ -5,11 +5,6 @@ import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import javassist.CannotCompileException;
-import javassist.ClassPool;
-import javassist.CtClass;
-import javassist.NotFoundException;
-
 import javax.xml.parsers.ParserConfigurationException;
 import org.xml.sax.SAXException;
 import com.tesis.aether.loader.conf.ConfigClassLoader;

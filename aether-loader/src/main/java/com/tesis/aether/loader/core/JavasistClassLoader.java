@@ -323,7 +323,7 @@ public class JavasistClassLoader extends ClassLoader {
 					String classFilename = classpathItem.replace("\\", "/").concat("/") + fileStub + ".class";
 					// Se trata de acargar la clase usando el elemento del classpath
 					
-					System.out.println("clas = loadClass(" + javaFilename + ", " + classFilename + ", " + name + ");");
+					logger.debug("clas = loadClass(" + javaFilename + ", " + classFilename + ", " + name + ");");
 					clas = loadClass(javaFilename, classFilename, name);
 					if (clas != null) {
 						search = false;
@@ -379,9 +379,8 @@ public class JavasistClassLoader extends ClassLoader {
 		}
 		String nameClassTo = origName;
 		nameClassTo = replaceWithExceptions(origName);
-		String pckName = getPackageName(nameClassTo);
 		try {
-			return ClassManipulator.addClassCalls(pckName, origName, nameClassTo);
+			return ClassManipulator.addClassCalls(origName, nameClassTo, true);
 		} catch (Exception e) {
 			e.printStackTrace();
 			throw new ClassNotFoundException(nameClassTo);
