@@ -9,9 +9,7 @@ import java.util.TimerTask;
 
 import org.jets3t.service.S3ServiceException;
 import org.jets3t.service.impl.rest.httpclient.RestS3Service;
-import org.jets3t.service.model.S3Bucket;
-import org.jets3t.service.model.S3Object;
-import org.jets3t.service.multithread.S3ServiceSimpleMulti;
+import org.jets3t.service.model.StorageObject;
 import org.jets3t.service.security.AWSCredentials;
 
 import com.tesis.aether.examples.remote.monitor.common.RemoteFileMonitor;
@@ -62,11 +60,8 @@ public class JetS3tRemoteFileMonitor implements RemoteFileMonitor {
 	public Date getLastModifiedDate(String fileToMonitor, String bucket) {
 
 		try {
-			S3Bucket s3Bucket =	s3Bucket = new S3Bucket(bucket);
-
-			String s3keys[] = { fileToMonitor };
-			S3ServiceSimpleMulti serviceSimpleMulti = new S3ServiceSimpleMulti(s3Service);
-			S3Object fileObject = serviceSimpleMulti.getObjectsHeads(s3Bucket, s3keys)[0];
+			
+			StorageObject fileObject = s3Service.getObjectDetails(bucket, fileToMonitor);
 			return fileObject.getLastModifiedDate();
 
 		} catch (Exception e) {
@@ -78,14 +73,9 @@ public class JetS3tRemoteFileMonitor implements RemoteFileMonitor {
 
 	private void downloadFile(String fileToMonitor, String bucket, String localFile) {
 		try {
-			S3Bucket s3Bucket = new S3Bucket(bucket);
 
-			S3Object fileObject;
-
-			String s3keys[] = { fileToMonitor };
-			S3ServiceSimpleMulti serviceSimpleMulti = new S3ServiceSimpleMulti(s3Service);
-			fileObject = serviceSimpleMulti.getObjects(s3Bucket, s3keys)[0];
-
+			StorageObject fileObject = s3Service.getObject(bucket, fileToMonitor);
+			
 			InputStream inputStream = fileObject.getDataInputStream();
 			OutputStream out = new FileOutputStream(localFile);
 			byte buf[] = new byte[1024];
