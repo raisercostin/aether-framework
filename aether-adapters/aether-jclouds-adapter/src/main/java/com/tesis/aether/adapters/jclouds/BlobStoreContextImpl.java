@@ -12,63 +12,56 @@ import org.jclouds.rest.RestContext;
 import org.jclouds.rest.Utils;
 
 public class BlobStoreContextImpl implements BlobStoreContext {
-	
-	public BlobRequestSigner getSigner() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public InputStreamMap createInputStreamMap(String container, ListContainerOptions options) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public InputStreamMap createInputStreamMap(String container) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public BlobMap createBlobMap(String container, ListContainerOptions options) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public BlobMap createBlobMap(String container) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public AsyncBlobStore getAsyncBlobStore() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 	public BlobStore getBlobStore() {
 		return new BlobStoreAetherImpl();
 	}
+	
+	/**
+	 * UNIMPLEMENTED METHODS
+	 */
+	
+	public BlobRequestSigner getSigner() {
+		return null;
+	}
+
+	public InputStreamMap createInputStreamMap(String container, ListContainerOptions options) {
+		return null;
+	}
+
+	public InputStreamMap createInputStreamMap(String container) {
+		return null;
+	}
+
+	public BlobMap createBlobMap(String container, ListContainerOptions options) {
+		return null;
+	}
+
+	public BlobMap createBlobMap(String container) {
+		return null;
+	}
+
+	public AsyncBlobStore getAsyncBlobStore() {
+		return null;
+	}
 
 	public ConsistencyModel getConsistencyModel() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	public <S, A> RestContext<S, A> getProviderSpecificContext() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	public Utils getUtils() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	public Utils utils() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	public void close() {
-		// TODO Auto-generated method stub
 		
 	}
  

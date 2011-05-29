@@ -26,5 +26,10 @@
 			<artifactId>aether-core</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
         </dependency>
+		<dependency>
+			<groupId>net.java.dev.jets3t</groupId>
+			<artifactId>jets3t</artifactId>
+			<version>0.8.0</version>
+		</dependency>
 	</dependencies>
 </project>
