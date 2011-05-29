@@ -26,5 +26,10 @@
 			<artifactId>aether-core</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
         </dependency>
+		<dependency>
+			<groupId>org.dasein</groupId>
+			<artifactId>dasein-cloud-aws</artifactId>
+			<version>2011.02</version>
+		</dependency>
 	</dependencies>
 </project>

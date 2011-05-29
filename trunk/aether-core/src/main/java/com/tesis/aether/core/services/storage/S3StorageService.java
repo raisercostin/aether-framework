@@ -249,7 +249,13 @@ public class S3StorageService extends ExtendedStorageService {
 		metadata.setPath(path);
 		metadata.setName(name);
 		metadata.setLastModified(blobMetadata.getLastModified());
-		metadata.setPathAndName(path + "/" + name);
+		
+		if(!path.trim().isEmpty()) {
+			metadata.setPathAndName(path + "/" + name);
+		} else {
+			metadata.setPathAndName(name);
+		}
+		
 		if (blobMetadata.getType().equals(StorageType.BLOB)) {
 			metadata.setType(StorageObjectConstants.FILE_TYPE);
 			metadata.setLength(((MutableBlobMetadata) blobMetadata).getContentMetadata().getContentLength());
