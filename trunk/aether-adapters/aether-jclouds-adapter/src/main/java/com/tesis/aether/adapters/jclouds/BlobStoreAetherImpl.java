@@ -33,10 +33,6 @@ import com.tesis.aether.core.services.storage.object.StorageObjectMetadata;
 
 public class BlobStoreAetherImpl implements BlobStore {
 
-	// Aca ya se debe contar con el StorageService instanciado de Aether
-	// Se debe convertir de los objetos internos a los de jclouds para que
-	// el usuario no perciba cambio alguno
-
 	private ExtendedStorageService service;
 
 	public BlobStoreAetherImpl() {
