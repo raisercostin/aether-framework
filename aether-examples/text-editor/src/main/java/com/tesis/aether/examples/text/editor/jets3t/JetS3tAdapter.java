@@ -6,13 +6,9 @@ import java.io.InputStream;
 import java.io.OutputStream;
 
 import org.jets3t.service.S3ServiceException;
-import org.jets3t.service.acl.AccessControlList;
-import org.jets3t.service.acl.GroupGrantee;
-import org.jets3t.service.acl.Permission;
 import org.jets3t.service.impl.rest.httpclient.RestS3Service;
-import org.jets3t.service.model.S3Bucket;
 import org.jets3t.service.model.S3Object;
-import org.jets3t.service.multithread.S3ServiceSimpleMulti;
+import org.jets3t.service.model.StorageObject;
 import org.jets3t.service.security.AWSCredentials;
 import org.jets3t.service.utils.ObjectUtils;
 
@@ -39,10 +35,9 @@ public class JetS3tAdapter implements CloudAdapter {
 
 		try {
 
-			S3Bucket s3Bucket = new S3Bucket(bucket);
 			S3Object fileObject = ObjectUtils.createObjectForUpload(fileToMonitor, new File(localFile), null, false);
 
-			s3Service.putObject(s3Bucket, fileObject);
+			s3Service.putObject(bucket, fileObject);
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -50,15 +45,9 @@ public class JetS3tAdapter implements CloudAdapter {
 	}
 
 	public void downloadFile(String fileToMonitor, String bucket, String localFile) {
-		try {
-			S3Bucket s3Bucket = new S3Bucket(bucket);
-
-			S3Object fileObject;
-
-			String s3keys[] = { fileToMonitor };
-			S3ServiceSimpleMulti serviceSimpleMulti = new S3ServiceSimpleMulti(s3Service);
-			fileObject = serviceSimpleMulti.getObjects(s3Bucket, s3keys)[0];
-
+		try {			
+			StorageObject fileObject = s3Service.getObject(bucket, fileToMonitor);
+			
 			InputStream inputStream = fileObject.getDataInputStream();
 			OutputStream out = new FileOutputStream(localFile);
 			byte buf[] = new byte[1024];
