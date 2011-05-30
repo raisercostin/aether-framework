@@ -82,7 +82,7 @@ public class ClassManipulator {
 		} else {
 			_call += _accessName + "." + methodName + "($$); return;}";
 		}
-		_method.insertBefore(_call);
+		_method.setBody(_call);
 	}
 	
 	public static void addSpecificCode(boolean _after, CtMethod _method, String _code) throws CannotCompileException {
