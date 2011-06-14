@@ -1,15 +1,18 @@
 package com.tesis.aether.loader.core;
 
-import java.io.*;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.lang.reflect.Method;
-import java.util.ArrayList;
 import java.util.HashMap;
 
 import javax.xml.parsers.ParserConfigurationException;
-import org.xml.sax.SAXException;
-import com.tesis.aether.loader.conf.ConfigClassLoader;
+
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
+import org.xml.sax.SAXException;
+
+import com.tesis.aether.loader.conf.ConfigClassLoader;
 /********************************************************************************
  * Para que el cargador de clases funcione en la aplicacion                     *
  * se debe agregar com parametro de la vm la siguiente linea:                   *
@@ -23,9 +26,10 @@ import org.apache.log4j.PropertyConfigurator;
  * o estar desactualizadas y las carga para ejecucion
  */
 public class CompilingClassLoader extends ClassLoader {
-	// Logger
+	/**
+	 * Logger utilizado por la clase
+	 */
 	private static Logger logger = null;
-	private ArrayList<String> loaded = new ArrayList<String>();
 	
 	/**
 	 * Contiene el mapeo de clases a ser reemplazadas en la carga.
@@ -34,18 +38,33 @@ public class CompilingClassLoader extends ClassLoader {
 	 * <Clase a reemplazar, Clase reemplazante>
 	 */
 	private HashMap<String, String> classExceptions = new HashMap<String, String>();
+	
 	/**
 	 * Contiene el mapeo de paquetes a ser reemplazados en la carga.
 	 * <Paquete a reemplazar, Paquete reemplazante>
 	 */
 	private HashMap<String, String> packageExceptions = new HashMap<String, String>();
+	
+	/**
+	 * Indica si la configuración fue cargada o no.
+	 */
 	private boolean loadConfigurations = true;
 
-	public CompilingClassLoader(ClassLoader parent) throws SAXException,
-			IOException, ParserConfigurationException {
+	/**
+	 * Constructor de la clase.
+	 * @param parent classloader padre
+	 */
+	public CompilingClassLoader(ClassLoader parent) {
 		super(parent);
 	}
 
+	/**
+	 * Carga los mapeos de lcases y paquetes
+	 * @param fromPath path del archivo de configuracion
+	 * @throws SAXException excepcion al parsear el archivo xml
+	 * @throws IOException excepcion al intentar obtener acceso al archivo
+	 * @throws ParserConfigurationException excepcion al parsear el archivo xml
+	 */
 	private void loadClassMapper(String fromPath) throws SAXException,
 			IOException, ParserConfigurationException {
 		ConfigClassLoader conf = new ConfigClassLoader(fromPath);
@@ -55,9 +74,9 @@ public class CompilingClassLoader extends ClassLoader {
 
 	/**
 	 * Agrega una clase para ser reemplazada en la carga
-	 * @param classSrc
-	 * @param classDst
-	 * @return
+	 * @param classSrc clase original
+	 * @param classDst clase a la cual se debe mapear
+	 * @return true si se agrego la excepcion, false si ya estaba agregada
 	 */
 	public boolean addClassException(String classSrc, String classDst) {
 		if (classExceptions.containsKey(classSrc)) {
@@ -69,9 +88,9 @@ public class CompilingClassLoader extends ClassLoader {
 
 	/**
 	 * Agrega un paquete a ser reemplazado en la carga
-	 * @param pckSrc
-	 * @param pckDst
-	 * @return
+	 * @param pckSrc paquete original
+	 * @param pckDst paquete destino al cual se debe mapear
+	 * @return true si se agrego el paquete, false si ya se encontraba agregado
 	 */
 	public boolean addPackageException(String pckSrc, String pckDst) {
 		if (packageExceptions.containsKey(pckSrc)) {
@@ -83,8 +102,8 @@ public class CompilingClassLoader extends ClassLoader {
 
 	/**
 	 * Remueve una clase de la lista de reemplazos
-	 * @param classException
-	 * @return
+	 * @param classException nombre original de la clase a eliminar del mapeo
+	 * @return true si se elimino, false si la clase no se encontraba mapeada
 	 */
 	public boolean removeClassException(String classException) {
 		if (classExceptions.containsKey(classException)) {
@@ -96,8 +115,8 @@ public class CompilingClassLoader extends ClassLoader {
 
 	/**
 	 * Remueve un paquete de la lista de reemplazos
-	 * @param packageException
-	 * @return
+	 * @param packageException nombre del paquete original a eliminar del mapeo
+	 * @return true si se elimino, false si el paquete no se encontraba mapeado
 	 */
 	public boolean removePackageException(String packageException) {
 		if (packageExceptions.containsKey(packageException)) {
@@ -110,8 +129,8 @@ public class CompilingClassLoader extends ClassLoader {
 	/**
 	 * Retorna el nombre del paquete de una clase completa pasada
 	 * como parametro
-	 * @param srcClass
-	 * @return
+	 * @param srcClass nombre completo de la clase
+	 * @return nombre del paquete de la clase
 	 */
 	private String getPackageName(String srcClass) {
 		String pckName = "";
@@ -131,8 +150,8 @@ public class CompilingClassLoader extends ClassLoader {
 	/**
 	 * Retorna el nombre de la clase pasada como parametro,
 	 * quitandole el nombre de paquete
-	 * @param srcClass
-	 * @return
+	 * @param srcClass nombre completo de la clase
+	 * @return nombre de la clase
 	 */
 	private String getClassName(String srcClass) {
 		String className = "";
@@ -148,17 +167,17 @@ public class CompilingClassLoader extends ClassLoader {
 
 	/**
 	 * Retorna si el paquete se encuentra en la lista de reemplazos
-	 * @param pckName
-	 * @return
+	 * @param pckName nombre del paquete
+	 * @return true en caso de que el paquete se encuentre en la lista de excepciones
 	 */
 	private boolean isExceptedPackage(String pckName) {
 		return packageExceptions.containsKey(pckName);
 	}
 
 	/**
-	 * Retorna se la clase se encuentra en la lista de reemplazos
-	 * @param className
-	 * @return
+	 * Retorna si la clase se encuentra en la lista de reemplazos
+	 * @param className nombre completo de la clase 
+	 * @return true en caso de encontrarse la clase en la lista de excepciones
 	 */
 	private boolean isExceptedClass(String className) {
 		return classExceptions.containsKey(className);
@@ -168,8 +187,8 @@ public class CompilingClassLoader extends ClassLoader {
 	 * Retorna el nombre del paquete que reemplaza al pasado 
 	 * por parametro en caso de existir, en caso contrario 
 	 * retorna el nombre del paquete pasado por parametro
-	 * @param pckName
-	 * @return
+	 * @param pckName nombre del paquete
+	 * @return nombre del paquete mapeado en caso de existir. De lo contrario retorna el mismo nombre de paquete pasado por parametro
 	 */
 	@SuppressWarnings("unused")
 	private String replacePackage(String pckName) {
@@ -185,8 +204,8 @@ public class CompilingClassLoader extends ClassLoader {
 	/**
 	 * Retorna la clase que reemplaza a la especificada por parametro
 	 * En caso de no existir retorna el mismo nombre de clase que se recibio
-	 * @param className
-	 * @return
+	 * @param className nombre de la clase
+	 * @return nombre de la clase mapeada en caso de existir. En caso contrario retorna el mismo nombre que el pasado por parametro
 	 */
 	@SuppressWarnings("unused")
 	private String replaceClass(String className) {
@@ -202,8 +221,8 @@ public class CompilingClassLoader extends ClassLoader {
 	/**
 	 * Retorna el mapeo al nuevo paquete y nombre de clase
 	 * correspondiente a la clase especificada por parametro
-	 * @param fullName
-	 * @return
+	 * @param fullName nombre completo de la clase mas el paquete
+	 * @return el nombre completo de la clase y paquete en caso de estar mapeada. Caso contrario retorna el mismo nombre pasado por parametro
 	 */
 	private String replaceWithExceptions(String fullName) {
 		if (isExceptedClass(fullName)) {
@@ -232,8 +251,8 @@ public class CompilingClassLoader extends ClassLoader {
 	/**
 	 * Dado un nombre de archivo, lo lee del disco y lo retorna 
 	 * como un array de bytes
-	 * @param filename
-	 * @return
+	 * @param filename nombre del archivo
+	 * @return bytes correspondientes al archivo
 	 * @throws IOException
 	 */
 	private byte[] getBytes(String filename) throws IOException {
@@ -251,7 +270,7 @@ public class CompilingClassLoader extends ClassLoader {
 	/**
 	 * Compila un archivo pasado como parametro creando un proceso
 	 * para realizar la compilacion
-	 * @param javaFile
+	 * @param javaFile nombre de la clase java a compilar
 	 * @return true si la compilacion fue exitosa
 	 * @throws IOException
 	 */
@@ -267,6 +286,14 @@ public class CompilingClassLoader extends ClassLoader {
 		return ret == 0;
 	}
 	
+	/**
+	 * Carga la clase especificada
+	 * @param javaFilename nombre del archivo fuente
+	 * @param classFilename nombre del archivo .class
+	 * @param name nombre de la clase
+	 * @return clase cargada
+	 * @throws ClassNotFoundException en caso de no poder cargarse la clase
+	 */
 	private Class<?> loadClass (String javaFilename, String classFilename, String name) throws ClassNotFoundException {
 		File javaFile = new File(javaFilename);
 		File classFile = new File(classFilename);
@@ -305,6 +332,8 @@ public class CompilingClassLoader extends ClassLoader {
 	/**
 	 * Se encarga de cargar las clases y compilar los .java
 	 * en caso de que sea necesario.
+	 * 
+	 * @param origName nombre de la clase
 	 */
 	@Override
 	public Class<?> loadClass(String origName) throws ClassNotFoundException {
@@ -322,10 +351,7 @@ public class CompilingClassLoader extends ClassLoader {
 			}
 		}
 		String name = origName;
-		if (!loaded.contains(origName)) {
-			loaded.add(origName);
-			name = replaceWithExceptions(origName);
-		}
+		name = replaceWithExceptions(origName);
 		
 		Class<?> clas = null;
 		// Se busca si la clase ya fue cargada
