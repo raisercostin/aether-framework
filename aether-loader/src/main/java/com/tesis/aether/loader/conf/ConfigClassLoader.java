@@ -24,10 +24,6 @@ public class ConfigClassLoader {
 	 * Contiene los mapeos de clases
 	 */
 	private HashMap<String, String> classExceptions = new HashMap<String, String>();
-	/**
-	 * Contiene los mapeos de paquetes (no utilizado en este proyecto)
-	 */
-	private HashMap<String, String> packageExceptions = new HashMap<String, String>();
 
 	/**
 	 * Constructor por defecto de la clase. Se encarga de cargar la configuracion correspondiente.
@@ -81,19 +77,6 @@ public class ConfigClassLoader {
 				}
 			}
 		}
-		nListExceptions = doc.getElementsByTagName("packageException");
-		for (int temp = 0; temp < nListExceptions.getLength(); temp++) {
-			Node nNode = nListExceptions.item(temp);
-			if (nNode.getNodeType() == Node.ELEMENT_NODE) {
-				Element eElement = (Element) nNode;
-				src = getTagValue("srcPackage", eElement);
-				dst = getTagValue("dstPackage", eElement);
-				if (src != null && dst != null) {
-					System.out.println("loading package exception " + src + " to " + dst);
-					packageExceptions.put(src, dst);
-				}
-			}
-		}
 	}
 	
 	/**
@@ -118,13 +101,4 @@ public class ConfigClassLoader {
 	 public HashMap<String, String> getClassExceptions(){
 		 return classExceptions;
 	 }
-	 
-	 /**
-	  * Retorna los mapeos de paquetes
-	  * @return hashmap con los mapeos de paquetes
-	  */
-	 public HashMap<String, String> getPackageExceptions(){
-		 return packageExceptions;
-	 }
-
 }

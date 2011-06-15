@@ -69,7 +69,7 @@ public class CompilingClassLoader extends ClassLoader {
 			IOException, ParserConfigurationException {
 		ConfigClassLoader conf = new ConfigClassLoader(fromPath);
 		classExceptions = conf.getClassExceptions();
-		packageExceptions = conf.getPackageExceptions();
+	//	packageExceptions = conf.getPackageExceptions();
 	}
 
 	/**

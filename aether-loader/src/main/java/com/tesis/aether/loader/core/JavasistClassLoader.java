@@ -36,12 +36,6 @@ public class JavasistClassLoader extends ClassLoader {
 	private HashMap<String, String> classExceptions = new HashMap<String, String>();
 	
 	/**
-	 * Contiene el mapeo de paquetes a ser reemplazados en la carga.
-	 * <Paquete a reemplazar, Paquete reemplazante>
-	 */
-	private HashMap<String, String> packageExceptions = new HashMap<String, String>();
-	
-	/**
 	 * Indica si se debe cargar la configuracion o no
 	 */
 	private boolean loadConfigurations = true;
@@ -65,7 +59,6 @@ public class JavasistClassLoader extends ClassLoader {
 			IOException, ParserConfigurationException {
 		ConfigClassLoader conf = new ConfigClassLoader(fromPath);
 		classExceptions = conf.getClassExceptions();
-		packageExceptions = conf.getPackageExceptions();
 	}
 
 	/**
@@ -83,20 +76,6 @@ public class JavasistClassLoader extends ClassLoader {
 	}
 
 	/**
-	 * Agrega un paquete a ser reemplazado en la carga
-	 * @param pckSrc paquete original
-	 * @param pckDst paquete destino al cual se debe mapear
-	 * @return true si se agrego el paquete, false si ya se encontraba agregado
-	 */
-	public boolean addPackageException(String pckSrc, String pckDst) {
-		if (packageExceptions.containsKey(pckSrc)) {
-			return false;
-		}
-		packageExceptions.put(pckSrc, pckDst);
-		return true;
-	}
-
-	/**
 	 * Remueve una clase de la lista de reemplazos
 	 * @param classException nombre original de la clase a eliminar del mapeo
 	 * @return true si se elimino, false si la clase no se encontraba mapeada
@@ -110,24 +89,12 @@ public class JavasistClassLoader extends ClassLoader {
 	}
 
 	/**
-	 * Remueve un paquete de la lista de reemplazos
-	 * @param packageException nombre del paquete original a eliminar del mapeo
-	 * @return true si se elimino, false si el paquete no se encontraba mapeado
-	 */
-	public boolean removePackageException(String packageException) {
-		if (packageExceptions.containsKey(packageException)) {
-			packageExceptions.remove(packageException);
-			return true;
-		}
-		return false;
-	}
-
-	/**
 	 * Retorna el nombre del paquete de una clase completa pasada
 	 * como parametro
 	 * @param srcClass nombre completo de la clase
 	 * @return nombre del paquete de la clase
 	 */
+	@SuppressWarnings("unused")
 	private String getPackageName(String srcClass) {
 		String pckName = "";
 		if (srcClass != null) {
@@ -149,6 +116,7 @@ public class JavasistClassLoader extends ClassLoader {
 	 * @param srcClass nombre completo de la clase
 	 * @return nombre de la clase
 	 */
+	@SuppressWarnings("unused")
 	private String getClassName(String srcClass) {
 		String className = "";
 		if (srcClass != null) {
@@ -162,15 +130,6 @@ public class JavasistClassLoader extends ClassLoader {
 	}
 
 	/**
-	 * Retorna si el paquete se encuentra en la lista de reemplazos
-	 * @param pckName nombre del paquete
-	 * @return true en caso de que el paquete se encuentre en la lista de excepciones
-	 */
-	private boolean isExceptedPackage(String pckName) {
-		return packageExceptions.containsKey(pckName);
-	}
-
-	/**
 	 * Retorna si la clase se encuentra en la lista de reemplazos
 	 * @param className nombre completo de la clase 
 	 * @return true en caso de encontrarse la clase en la lista de excepciones
@@ -180,31 +139,12 @@ public class JavasistClassLoader extends ClassLoader {
 	}
 
 	/**
-	 * Retorna el nombre del paquete que reemplaza al pasado 
-	 * por parametro en caso de existir, en caso contrario 
-	 * retorna el nombre del paquete pasado por parametro
-	 * @param pckName nombre del paquete
-	 * @return nombre del paquete mapeado en caso de existir. De lo contrario retorna el mismo nombre de paquete pasado por parametro
-	 */
-	@SuppressWarnings("unused")
-	private String replacePackage(String pckName) {
-		String newName = pckName;
-		if (isExceptedPackage(pckName)) {
-			newName = packageExceptions.get(pckName);
-			logger.debug("Changing package name '" + pckName + "' to '"
-					+ newName + "'");
-		}
-		return newName;
-	}
-
-	/**
 	 * Retorna la clase que reemplaza a la especificada por parametro
 	 * En caso de no existir retorna el mismo nombre de clase que se recibio
 	 * @param className nombre de la clase
 	 * @return nombre de la clase mapeada en caso de existir. En caso contrario retorna el mismo nombre que el pasado por parametro
 	 */
-	@SuppressWarnings("unused")
-	private String replaceClass(String className) {
+	private String replaceClassName(String className) {
 		String newName = className;
 		if (isExceptedClass(className)) {
 			newName = classExceptions.get(className);
@@ -212,36 +152,6 @@ public class JavasistClassLoader extends ClassLoader {
 					+ newName + "'");
 		}
 		return newName;
-	}
-
-	/**
-	 * Retorna el mapeo al nuevo paquete y nombre de clase
-	 * correspondiente a la clase especificada por parametro
-	 * @param fullName nombre completo de la clase mas el paquete
-	 * @return el nombre completo de la clase y paquete en caso de estar mapeada. Caso contrario retorna el mismo nombre pasado por parametro
-	 */
-	private String replaceWithExceptions(String fullName) {
-		if (isExceptedClass(fullName)) {
-			String newClassName = classExceptions.get(fullName);
-			logger.debug("Changing class name '" + fullName + "' to '"
-					+ newClassName + "'");
-			return newClassName;
-		}
-		String newPckName = getPackageName(fullName);
-		String newClassName = getClassName(fullName);
-		if (isExceptedPackage(newPckName)) {
-			System.out.print("Changing package name '" + newPckName + "' to '");
-			newPckName = packageExceptions.get(newPckName);
-			logger.debug(newPckName + "'");
-		}
-		if (newPckName.equals("")) {
-			return newClassName;
-		}
-		if (!fullName.equals(newPckName + "." + newClassName)) {
-			logger.debug("Changed full name '" + fullName + "' to '"
-					+ newPckName + "." + newClassName + "'");
-		}
-		return newPckName + "." + newClassName;
 	}
 
 	/**
@@ -398,9 +308,8 @@ public class JavasistClassLoader extends ClassLoader {
 			try {
 				loadClassMapper("resources/configClassLoader.xml");
 			} catch (Exception e) {
-				System.out
-						.println("Error al cargar la configuracion de mapeo de clases y paquetes.");
-				e.printStackTrace();
+				logger.error("Error al cargar la configuracion de mapeo de clases y paquetes.");
+				logger.error(e);
 			}
 		}
 		if (!isExceptedClass(origName)) {
@@ -410,11 +319,11 @@ public class JavasistClassLoader extends ClassLoader {
 			return clas;
 		}
 		String nameClassTo = origName;
-		nameClassTo = replaceWithExceptions(origName);
+		nameClassTo = replaceClassName(origName);
 		try {
 			return ClassManipulator.addClassCalls(origName, nameClassTo, true);
 		} catch (Exception e) {
-			e.printStackTrace();
+			logger.error(e);
 			throw new ClassNotFoundException(nameClassTo);
 		}	
 	}

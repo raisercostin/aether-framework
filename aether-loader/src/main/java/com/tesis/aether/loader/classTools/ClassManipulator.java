@@ -155,7 +155,6 @@ public class ClassManipulator {
 				ClassManipulator.addCall(nameClassDst, method.getName(), !method.getReturnType().getName().equals("void"), 
 						method, useField);
 			} catch (Exception e) {
-				//e.printStackTrace();
 				System.out.println("No se pudo agregar la llamada en el metodo: '" + method.getName() + 
 						"' posiblemente no exista en la clase destino: '" + nameClassDst + "'");
 				logger.error("No se pudo agregar código en el método: " + method.getName(), e);
