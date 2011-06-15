@@ -13,8 +13,10 @@ import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 
+import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
+import org.jclouds.blobstore.domain.MutableBlobMetadata;
 
 import com.tesis.aether.core.auth.authenticator.Authenticator;
 import com.tesis.aether.core.exception.ConnectionException;
@@ -29,6 +31,7 @@ import com.tesis.aether.core.exception.UploadException;
 import com.tesis.aether.core.services.storage.constants.StorageServiceConstants;
 import com.tesis.aether.core.services.storage.object.StorageObjectMetadata;
 import com.tesis.aether.core.services.storage.object.constants.StorageObjectConstants;
+import com.tesis.aether.core.util.CodecUtil;
 
 public class LocalStorageService extends ExtendedStorageService {
 
@@ -190,6 +193,7 @@ public class LocalStorageService extends ExtendedStorageService {
 		metadata.setPath(path);
 		metadata.setName(name);
 		metadata.setLastModified(new Date(dirToList.lastModified()));
+		metadata.setMd5hash(CodecUtil.getMd5FromFile(dirToList));
 		
 		if(!path.trim().isEmpty()) {
 			metadata.setPathAndName(path + "/" + name);
@@ -199,6 +203,7 @@ public class LocalStorageService extends ExtendedStorageService {
 		
 		if (dirToList.isFile()) {
 			metadata.setType(StorageObjectConstants.FILE_TYPE);
+			metadata.setLength(dirToList.length());
 		} else {
 			metadata.setType(StorageObjectConstants.DIRECTORY_TYPE);
 		}
@@ -226,6 +231,41 @@ public class LocalStorageService extends ExtendedStorageService {
 			throw new DeleteException(remotePath + " is blocked or not empty.");
 		}
 		
+	}
+	@Override
+	public StorageObjectMetadata getMetadataForObject(String remotePathFile) {
+
+		String name = FilenameUtils.getName(remotePathFile);
+		String path = FilenameUtils.getPathNoEndSeparator(remotePathFile);
+
+		StorageObjectMetadata metadata = new StorageObjectMetadata();
+		metadata.setPath(path);
+		metadata.setName(name);
+		metadata.setType(StorageObjectConstants.FILE_TYPE);
+		if(!path.trim().isEmpty()) {
+			metadata.setPathAndName(path + "/" + name);
+		} else {
+			metadata.setPathAndName(name);
+		}
+
+		metadata.setMd5hash(CodecUtil.getMd5FromFile(initRemoteFile(remotePathFile)));
+		
+		try {
+			metadata.setUri(getPublicURLForPath(remotePathFile));
+		} catch (Exception e) {
+		}
+
+		try {
+			metadata.setLength(sizeOf(remotePathFile));
+		} catch (Exception e) {
+		}
+
+		try {
+			metadata.setLastModified(lastModified(remotePathFile));
+		} catch (Exception e) {
+		}
+
+		return metadata;
 	}
 
 }
