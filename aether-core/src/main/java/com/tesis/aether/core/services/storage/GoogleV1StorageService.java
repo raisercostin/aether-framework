@@ -7,12 +7,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
-import java.util.Properties;
 
 import org.apache.commons.io.FilenameUtils;
-import org.jclouds.aws.s3.S3ContextBuilder;
 import org.jclouds.blobstore.BlobStore;
 import org.jclouds.blobstore.BlobStoreContext;
+import org.jclouds.blobstore.BlobStoreContextFactory;
 import org.jclouds.blobstore.domain.Blob;
 import org.jclouds.blobstore.domain.BlobMetadata;
 import org.jclouds.blobstore.domain.MutableBlobMetadata;
@@ -35,20 +34,20 @@ import com.tesis.aether.core.services.storage.constants.StorageServiceConstants;
 import com.tesis.aether.core.services.storage.object.StorageObjectMetadata;
 import com.tesis.aether.core.services.storage.object.constants.StorageObjectConstants;
 
-public class S3StorageService extends ExtendedStorageService {
+public class GoogleV1StorageService extends ExtendedStorageService {
 
-	private BlobStoreContext s3Context;
+	private BlobStoreContext gsContext;
 	private BlobStore blobStore;
 
-	public S3StorageService() {
+	public GoogleV1StorageService() {
 		super();
-		setName(StorageServiceConstants.S3);
+		setName(StorageServiceConstants.GOOGLE_STORAGE);
 	}
 
 	@Override
 	public URI getPublicURLForPath(String remotePath) throws FileNotExistsException, MethodNotSupportedException, URLExtractionException {
 		String sanitizedPath = sanitizeRemotePath(remotePath);
-		return blobStore.blobMetadata(getServiceProperty(StorageServiceConstants.S3_BUCKET), sanitizedPath).getUri();
+		return blobStore.blobMetadata(getServiceProperty(StorageServiceConstants.GOOGLE_STORAGE_BUCKET), sanitizedPath).getUri();
 	}
 
 	@Override
@@ -57,10 +56,10 @@ public class S3StorageService extends ExtendedStorageService {
 		String sanitizedPath = sanitizeRemotePath(remotePath);
 
 		if (checkFileExists(sanitizedPath)) {
-			BlobMetadata blobMetadata = blobStore.blobMetadata(getServiceProperty(StorageServiceConstants.S3_BUCKET), sanitizedPath);
+			BlobMetadata blobMetadata = blobStore.blobMetadata(getServiceProperty(StorageServiceConstants.GOOGLE_STORAGE_BUCKET), sanitizedPath);
 			return Arrays.asList(toStorageObjectMetadata(blobMetadata));
 		} else {
-			PageSet<? extends StorageMetadata> list = sanitizedPath.isEmpty() ? blobStore.list(getServiceProperty(StorageServiceConstants.S3_BUCKET)) : blobStore.list(getServiceProperty(StorageServiceConstants.S3_BUCKET), ListContainerOptions.Builder.inDirectory(sanitizedPath));
+			PageSet<? extends StorageMetadata> list = sanitizedPath.isEmpty() ? blobStore.list(getServiceProperty(StorageServiceConstants.GOOGLE_STORAGE_BUCKET)) : blobStore.list(getServiceProperty(StorageServiceConstants.GOOGLE_STORAGE_BUCKET), ListContainerOptions.Builder.inDirectory(sanitizedPath));
 			List<StorageObjectMetadata> result = new ArrayList<StorageObjectMetadata>();
 			for (StorageMetadata file : list) {
 				if (!file.getName().isEmpty()) {
@@ -79,20 +78,20 @@ public class S3StorageService extends ExtendedStorageService {
 	@Override
 	public Long sizeOf(String remotePath) throws MetadataFetchingException, MethodNotSupportedException, FileNotExistsException {
 		String sanitizedPath = sanitizeRemotePath(remotePath);
-		return blobStore.blobMetadata(getServiceProperty(StorageServiceConstants.S3_BUCKET), sanitizedPath).getContentMetadata().getContentLength();
+		return blobStore.blobMetadata(getServiceProperty(StorageServiceConstants.GOOGLE_STORAGE_BUCKET), sanitizedPath).getContentMetadata().getContentLength();
 	}
 
 	@Override
 	public Date lastModified(String remotePath) throws MetadataFetchingException, MethodNotSupportedException, FileNotExistsException {
 		String sanitizedPath = sanitizeRemotePath(remotePath);
-		return blobStore.blobMetadata(getServiceProperty(StorageServiceConstants.S3_BUCKET), sanitizedPath).getLastModified();
+		return blobStore.blobMetadata(getServiceProperty(StorageServiceConstants.GOOGLE_STORAGE_BUCKET), sanitizedPath).getLastModified();
 	}
 
 	@Override
 	public InputStream getInputStream(String remotePathFile) throws FileNotExistsException {
 		String sanitizedPath = sanitizeRemotePath(remotePathFile);
 
-		Blob blob = blobStore.getBlob(getServiceProperty(StorageServiceConstants.S3_BUCKET), sanitizedPath);
+		Blob blob = blobStore.getBlob(getServiceProperty(StorageServiceConstants.GOOGLE_STORAGE_BUCKET), sanitizedPath);
 
 		return blob.getPayload().getInput();
 	}
@@ -113,7 +112,7 @@ public class S3StorageService extends ExtendedStorageService {
 		Blob blob = blobStore.newBlob(blobFullName);
 		blob.setPayload(stream);
 		blob.getPayload().getContentMetadata().setContentLength(contentLength);
-		blobStore.putBlob(getServiceProperty(StorageServiceConstants.S3_BUCKET), blob);
+		blobStore.putBlob(getServiceProperty(StorageServiceConstants.GOOGLE_STORAGE_BUCKET), blob);
 
 		if (stream != null) {
 			try {
@@ -126,13 +125,13 @@ public class S3StorageService extends ExtendedStorageService {
 	@Override
 	public void deleteFile(String remotePathFile) {
 		String sanitizedPath = sanitizeRemotePath(remotePathFile);
-		blobStore.removeBlob(getServiceProperty(StorageServiceConstants.S3_BUCKET), sanitizedPath);
+		blobStore.removeBlob(getServiceProperty(StorageServiceConstants.GOOGLE_STORAGE_BUCKET), sanitizedPath);
 	}
 
 	@Override
 	public void deleteFolder(String remotePath) {
 		String sanitizedPath = sanitizeRemotePath(remotePath);
-		blobStore.deleteDirectory(getServiceProperty(StorageServiceConstants.S3_BUCKET), sanitizedPath);
+		blobStore.deleteDirectory(getServiceProperty(StorageServiceConstants.GOOGLE_STORAGE_BUCKET), sanitizedPath);
 	}
 
 	@Override
@@ -148,7 +147,7 @@ public class S3StorageService extends ExtendedStorageService {
 			accumulatedPath.append(partialPath);
 
 			try {
-				blobStore.createDirectory(getServiceProperty(StorageServiceConstants.S3_BUCKET), accumulatedPath.toString());
+				blobStore.createDirectory(getServiceProperty(StorageServiceConstants.GOOGLE_STORAGE_BUCKET), accumulatedPath.toString());
 			} catch (Exception e) {
 				throw new FolderCreationException(remotePath + " could not be created.");
 			}
@@ -162,7 +161,7 @@ public class S3StorageService extends ExtendedStorageService {
 	public boolean checkFileExists(String remotePath) throws MethodNotSupportedException {
 		String sanitizedPath = sanitizeRemotePath(remotePath);
 
-		boolean blobExists = sanitizedPath.isEmpty() ? false : blobStore.blobExists(getServiceProperty(StorageServiceConstants.S3_BUCKET), sanitizedPath);
+		boolean blobExists = sanitizedPath.isEmpty() ? false : blobStore.blobExists(getServiceProperty(StorageServiceConstants.GOOGLE_STORAGE_BUCKET), sanitizedPath);
 		return blobExists;
 	}
 
@@ -170,8 +169,16 @@ public class S3StorageService extends ExtendedStorageService {
 	public boolean checkDirectoryExists(String remotePath) throws MethodNotSupportedException {
 		String sanitizedPath = sanitizeRemotePath(remotePath);
 
-		boolean directoryExists = blobStore.directoryExists(getServiceProperty(StorageServiceConstants.S3_BUCKET), sanitizedPath);
+		boolean directoryExists = blobStore.directoryExists(getServiceProperty(StorageServiceConstants.GOOGLE_STORAGE_BUCKET), sanitizedPath);
 		return directoryExists;
+	}
+
+	@Override
+	public void connect(Authenticator authenticator) throws ConnectionException, MethodNotSupportedException {
+		gsContext = new BlobStoreContextFactory().createContext("googlestorage",
+				getServiceProperty(StorageServiceConstants.GOOGLE_STORAGE_ACCESS_KEY),
+				getServiceProperty(StorageServiceConstants.GOOGLE_STORAGE_SECRET_KEY));
+				blobStore = gsContext.getBlobStore();
 	}
 	
 	@Override
@@ -191,7 +198,7 @@ public class S3StorageService extends ExtendedStorageService {
 		}
 
 		String sanitizedPath = sanitizeRemotePath(remotePathFile);
-		BlobMetadata blobMetadata = blobStore.blobMetadata(getServiceProperty(StorageServiceConstants.S3_BUCKET), sanitizedPath);
+		BlobMetadata blobMetadata = blobStore.blobMetadata(getServiceProperty(StorageServiceConstants.GOOGLE_STORAGE_BUCKET), sanitizedPath);
 		
 		try {
 			metadata.setUri(blobMetadata.getUri());
@@ -217,50 +224,9 @@ public class S3StorageService extends ExtendedStorageService {
 	}
 
 	@Override
-	public void connect(Authenticator authenticator) throws ConnectionException, MethodNotSupportedException {
-		// s3Context = new BlobStoreContextFactory().createContext("s3",
-		// getServiceProperty(StorageServiceConstants.S3_ACCESS_KEY),
-		// getServiceProperty(StorageServiceConstants.S3_SECRET_KEY));
-		// blobStore = s3Context.getBlobStore();
-
-		Properties properties = new Properties();
-		properties.put("jclouds.user-threads", "0");
-		properties.put("jclouds.identity", getServiceProperty(StorageServiceConstants.S3_ACCESS_KEY));
-		properties.put("jclouds.max-session-failures", "2");
-		properties.put("jclouds.aws.default_regions", "us-standard");
-		properties.put("jclouds.s3.service-path", "/");
-		properties.put("jclouds.aws.header.tag", "amz");
-		properties.put("jclouds.aws.auth.tag", "AWS");
-		properties.put("jclouds.relax-hostname", "true");
-		properties.put("jclouds.max-connection-reuse", "75");
-		properties.put("jclouds.endpoint", "https://s3.amazonaws.com");
-		properties.put("jclouds.credential", getServiceProperty(StorageServiceConstants.S3_SECRET_KEY));
-		properties.put("jclouds.aws.regions", "us-standard,us-west-1,EU,ap-southeast-1");
-		properties.put("jclouds.s3.virtual-host-buckets", "true");
-		properties.put("jclouds.blobstore.metaprefix", "x-amz-meta-");
-		properties.put("jclouds.endpoint.ap-southeast-1", "https://s3-ap-southeast-1.amazonaws.com");
-		properties.put("jclouds.endpoint.EU", "https://s3-eu-west-1.amazonaws.com");
-		properties.put("jclouds.max-connections-per_context", "20");
-		properties.put("jclouds.so-timeout", "60000");
-		properties.put("jclouds.max-connections-per-host", "0");
-		properties.put("jclouds.endpoint.us-west-1", "https://s3-us-west-1.amazonaws.com");
-		properties.put("jclouds.endpoint.us-standard", "https://s3.amazonaws.com");
-		properties.put("jclouds.io-worker-threads", "20");
-		properties.put("jclouds.blobstore.directorysuffix", "_$folder$");
-		properties.put("jclouds.api-version", "2006-03-01");
-		properties.put("jclouds.connection-timeout", "60000");
-		properties.put("jclouds.provider", "s3");
-		properties.put("jclouds.session-interval", "60");
-
-		S3ContextBuilder builder = new S3ContextBuilder(properties);
-		s3Context = builder.buildBlobStoreContext();
-		blobStore = s3Context.getBlobStore();
-	}
-
-	@Override
 	public void disconnect() throws DisconnectionException, MethodNotSupportedException {
-		s3Context.close();
-		s3Context = null;
+		gsContext.close();
+		gsContext = null;
 	}
 
 	private String sanitizeRemotePath(String... remoteDirectoryComponents) {

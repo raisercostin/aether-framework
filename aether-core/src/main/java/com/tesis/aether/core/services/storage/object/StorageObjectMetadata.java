@@ -1,7 +1,6 @@
 package com.tesis.aether.core.services.storage.object;
 
 import java.net.URI;
-import java.net.URL;
 import java.util.Date;
 
 import com.tesis.aether.core.services.storage.object.constants.StorageObjectConstants;
@@ -13,6 +12,7 @@ public class StorageObjectMetadata {
 	private String pathAndName;
 	private Long length;
 	private Date lastModified;
+	private String md5hash;
 	private URI uri;
 		
 	public boolean isDirectory(){
@@ -66,5 +66,13 @@ public class StorageObjectMetadata {
 
 	public URI getUri() {
 		return uri;
+	}
+
+	public void setMd5hash(String md5hash) {
+		this.md5hash = md5hash;
+	}
+
+	public String getMd5hash() {
+		return md5hash;
 	}
 }
