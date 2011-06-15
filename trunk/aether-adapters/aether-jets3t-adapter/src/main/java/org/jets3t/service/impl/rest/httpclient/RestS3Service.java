@@ -19,7 +19,7 @@
 package org.jets3t.service.impl.rest.httpclient;
 
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.Calendar;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -27,35 +27,39 @@ import java.util.Map;
 import org.apache.commons.httpclient.HostConfiguration;
 import org.apache.commons.httpclient.auth.CredentialsProvider;
 import org.apache.commons.io.FilenameUtils;
-import org.jclouds.blobstore.domain.Blob;
-import org.jclouds.blobstore.domain.MutableStorageMetadata;
-import org.jclouds.blobstore.domain.StorageMetadata;
-import org.jclouds.blobstore.domain.internal.BlobImpl;
-import org.jclouds.blobstore.domain.internal.PageSetImpl;
 import org.jets3t.service.Constants;
 import org.jets3t.service.Jets3tProperties;
 import org.jets3t.service.S3Service;
 import org.jets3t.service.S3ServiceException;
 import org.jets3t.service.ServiceException;
+import org.jets3t.service.StorageObjectsChunk;
 import org.jets3t.service.VersionOrDeleteMarkersChunk;
 import org.jets3t.service.model.BaseStorageItem;
 import org.jets3t.service.model.BaseVersionOrDeleteMarker;
+import org.jets3t.service.model.S3Bucket;
 import org.jets3t.service.model.S3BucketLoggingStatus;
 import org.jets3t.service.model.S3BucketVersioningStatus;
 import org.jets3t.service.model.S3Object;
+import org.jets3t.service.model.StorageBucket;
 import org.jets3t.service.model.StorageObject;
+import org.jets3t.service.mx.MxDelegate;
 import org.jets3t.service.security.ProviderCredentials;
 
 import com.tesis.aether.core.exception.ConnectionException;
+import com.tesis.aether.core.exception.DeleteException;
 import com.tesis.aether.core.exception.FileNotExistsException;
 import com.tesis.aether.core.exception.MethodNotSupportedException;
 import com.tesis.aether.core.exception.UploadException;
 import com.tesis.aether.core.factory.ServiceFactory;
 import com.tesis.aether.core.services.storage.ExtendedStorageService;
+import com.tesis.aether.core.services.storage.constants.StorageServiceConstants;
 import com.tesis.aether.core.services.storage.object.StorageObjectMetadata;
 
 public class RestS3Service extends S3Service {
 
+	private static final String AWS_SIGNATURE_IDENTIFIER = "AWS";
+	private static final String AWS_REST_HEADER_PREFIX = "x-amz-";
+	private static final String AWS_REST_METADATA_PREFIX = "x-amz-meta-";
 	private ExtendedStorageService service;
 
 	public RestS3Service(ProviderCredentials credentials) throws S3ServiceException {
@@ -93,6 +97,9 @@ public class RestS3Service extends S3Service {
 			S3Object object = new S3Object(objectKey);
 			object.setDataInputStream(storageObject.getStream());
 			object.addAllMetadata(generateJetS3tMetadata(storageObject.getMetadata()));
+			object.setBucketName(bucketName);
+			object.setStorageClass("STANDARD");
+			object.setETag(storageObject.getMetadata().getMd5hash());
 			return object;
 		} catch (FileNotExistsException e) {
 			e.printStackTrace();
@@ -101,11 +108,18 @@ public class RestS3Service extends S3Service {
 	}
 
 	@Override
+	public S3Object getObject(S3Bucket bucketName, String objectKey) {
+		return this.getObject(bucketName.getName(), objectKey);
+	}
+
+	@Override
 	public StorageObject getObjectDetails(String bucketName, String objectKey) throws ServiceException {
 		try {
 			com.tesis.aether.core.services.storage.object.StorageObject storageObject = service.getStorageObject(objectKey);
 			StorageObject object = new StorageObject(objectKey);
 			object.addAllMetadata(generateJetS3tMetadata(storageObject.getMetadata()));
+			object.setStorageClass("STANDARD");
+			object.setETag(storageObject.getMetadata().getMd5hash());
 			return object;
 		} catch (FileNotExistsException e) {
 			e.printStackTrace();
@@ -113,14 +127,29 @@ public class RestS3Service extends S3Service {
 		}
 	}
 
-    public S3Object putObject(String bucketName, S3Object object) throws S3ServiceException {
-        try {
-            return (S3Object) this.putObject(bucketName, (StorageObject)object);
-        } catch (ServiceException se) {
-            throw new S3ServiceException(se);
-        }
-    }
-    
+	public S3Object getObjectDetails(S3Bucket bucket, String objectKey) throws S3ServiceException {
+		try {
+			com.tesis.aether.core.services.storage.object.StorageObject storageObject = service.getStorageObject(objectKey);
+			S3Object object = new S3Object(objectKey);
+			object.addAllMetadata(generateJetS3tMetadata(storageObject.getMetadata()));
+			object.setBucketName(bucket.getName());
+			object.setStorageClass("STANDARD");
+			object.setETag(storageObject.getMetadata().getMd5hash());
+			return object;
+		} catch (FileNotExistsException e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+
+	public S3Object putObject(String bucketName, S3Object object) throws S3ServiceException {
+		try {
+			return (S3Object) this.putObject(bucketName, (StorageObject) object);
+		} catch (ServiceException se) {
+			throw new S3ServiceException(se);
+		}
+	}
+
 	@Override
 	public StorageObject putObject(String bucketName, StorageObject object) throws ServiceException {
 		try {
@@ -148,14 +177,29 @@ public class RestS3Service extends S3Service {
 		List<StorageObjectMetadata> listFiles;
 		try {
 			listFiles = service.listFiles("", true);
-			return aetherMetadataListToS3ObjectArray(listFiles);
+			return aetherMetadataListToS3ObjectArray(listFiles, bucketName);
 		} catch (Exception e) {
 			e.printStackTrace();
 			return null;
-		} 
+		}
 	}
 
-	//AETHER NO SOPORTA DELIMITER
+	protected StorageObjectsChunk listObjectsInternal(String bucketName, String prefix, String delimiter, long maxListingLength, boolean automaticallyMergeChunks, String priorLastKey, String priorLastVersion) throws ServiceException {
+
+		S3Object[] listObjects = listObjects(bucketName, prefix, delimiter, maxListingLength);
+
+		return new StorageObjectsChunk(prefix, delimiter, listObjects, null, null);
+	}
+
+	public void deleteObject(S3Bucket bucket, String objectKey) throws S3ServiceException {
+		try {
+			service.delete(objectKey, true);
+		} catch (DeleteException e) {
+			e.printStackTrace();
+		}
+	}
+
+	// AETHER NO SOPORTA DELIMITER
 	@Override
 	public S3Object[] listObjects(String bucketName, String prefix, String delimiter, long maxListingLength) {
 		try {
@@ -166,17 +210,28 @@ public class RestS3Service extends S3Service {
 		}
 	}
 
-	//AETHER NO SOPORTA DELIMITER
+	// AETHER NO SOPORTA DELIMITER
 	@Override
 	public S3Object[] listObjects(String bucketName, String prefix, String delimiter) throws S3ServiceException {
 		List<StorageObjectMetadata> listFiles;
 		try {
 			listFiles = service.listFiles(prefix, true);
-			return aetherMetadataListToS3ObjectArray(listFiles);
+			return aetherMetadataListToS3ObjectArray(listFiles, bucketName);
 		} catch (Exception e) {
 			e.printStackTrace();
 			return null;
-		} 
+		}
+	}
+
+	@Override
+	public S3Bucket[] listAllBuckets() throws S3ServiceException {
+		if (service.getServiceProperty(StorageServiceConstants.S3_BUCKET) != null) {
+			StorageBucket[] buckets = { new S3Bucket(service.getServiceProperty(StorageServiceConstants.S3_BUCKET)) };
+			return S3Bucket.cast(buckets);
+		} else {
+			StorageBucket[] buckets = { new S3Bucket(service.getServiceProperty(StorageServiceConstants.GOOGLE_STORAGE_BUCKET)) };
+			return S3Bucket.cast(buckets);
+		}
 	}
 
 	/**
@@ -185,16 +240,22 @@ public class RestS3Service extends S3Service {
 	private Map<String, Object> generateJetS3tMetadata(StorageObjectMetadata metadata) {
 		Map<String, Object> jets3metadata = new HashMap<String, Object>();
 		jets3metadata.put(BaseStorageItem.METADATA_HEADER_LAST_MODIFIED_DATE, metadata.getLastModified());
-		jets3metadata.put(BaseStorageItem.METADATA_HEADER_CONTENT_LENGTH, metadata.getLength());
+		jets3metadata.put(BaseStorageItem.METADATA_HEADER_CONTENT_LENGTH, metadata.getLength().toString());
+		jets3metadata.put(BaseStorageItem.METADATA_HEADER_CONTENT_MD5, metadata.getMd5hash());
 		return jets3metadata;
 	}
 
-	private S3Object[] aetherMetadataListToS3ObjectArray(List<StorageObjectMetadata> listFiles) {
+	private S3Object[] aetherMetadataListToS3ObjectArray(List<StorageObjectMetadata> listFiles, String bucketName) {
 		List<S3Object> jCloudsMetadata = new ArrayList<S3Object>();
 		for (StorageObjectMetadata metadata : listFiles) {
-			S3Object object = new S3Object(metadata.getPathAndName());
-			object.addAllMetadata(generateJetS3tMetadata(metadata));
-			jCloudsMetadata.add(object);
+			if (metadata.isFile()) {
+				S3Object object = new S3Object(metadata.getPathAndName());
+				object.setBucketName(bucketName);
+				object.setStorageClass("STANDARD");
+				object.setETag(metadata.getMd5hash());
+				object.addAllMetadata(generateJetS3tMetadata(metadata));
+				jCloudsMetadata.add(object);
+			}
 		}
 
 		return (S3Object[]) jCloudsMetadata.toArray(new S3Object[jCloudsMetadata.size()]);
@@ -265,52 +326,52 @@ public class RestS3Service extends S3Service {
 
 	@Override
 	public String getEndpoint() {
-		return null;
+		return this.jets3tProperties.getStringProperty("s3service.s3-endpoint", Constants.S3_DEFAULT_HOSTNAME);
 	}
 
 	@Override
 	protected String getVirtualPath() {
-		return null;
+		return this.jets3tProperties.getStringProperty("s3service.s3-endpoint-virtual-path", "");
 	}
 
 	@Override
 	protected String getSignatureIdentifier() {
-		return null;
+		return AWS_SIGNATURE_IDENTIFIER;
 	}
 
 	@Override
 	public String getRestHeaderPrefix() {
-		return null;
+		return AWS_REST_HEADER_PREFIX;
 	}
 
 	@Override
 	public String getRestMetadataPrefix() {
-		return null;
+		return AWS_REST_METADATA_PREFIX;
 	}
 
 	@Override
 	protected int getHttpPort() {
-		return 0;
+		return this.jets3tProperties.getIntProperty("s3service.s3-endpoint-http-port", 80);
 	}
 
 	@Override
 	protected int getHttpsPort() {
-		return 0;
+		return this.jets3tProperties.getIntProperty("s3service.s3-endpoint-https-port", 443);
 	}
 
 	@Override
 	protected boolean getHttpsOnly() {
-		return false;
+		return this.jets3tProperties.getBoolProperty("s3service.https-only", true);
 	}
 
 	@Override
 	protected boolean getDisableDnsBuckets() {
-		return false;
+		return this.jets3tProperties.getBoolProperty("s3service.disable-dns-buckets", false);
 	}
 
 	@Override
 	protected boolean getEnableStorageClasses() {
-		return false;
+		return this.jets3tProperties.getBoolProperty("s3service.enable-storage-classes", false);
 	}
 
 }
