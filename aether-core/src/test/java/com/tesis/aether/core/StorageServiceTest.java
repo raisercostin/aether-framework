@@ -293,7 +293,8 @@ public abstract class StorageServiceTest {
 	@Test
 	public void migrateDataTest() {
 		ServiceAccountProperties properties = new ServiceAccountProperties();
-		String tempDirectory = System.getProperty("java.io.tmpdir") + "/REMOTE_MOCK_MIGRATE/";
+		String tempDirectory = System.getProperty("java.io.tmpdir") + "REMOTE_MOCK_MIGRATE\\";
+		properties.putProperty(StorageServiceConstants.LOCAL_BASE_FOLDER, tempDirectory);		
 		
 		ExtendedStorageService migrateService = new LocalStorageService();
 		migrateService.setServiceProperties(properties);
@@ -302,7 +303,7 @@ public abstract class StorageServiceTest {
 			assert !service.checkObjectExists(getContainer(), "resources");
 			assert !migrateService.checkObjectExists(getContainer(), "resources");
 			service.upload(new File("resources"), getContainer(), "");
-			service.migrateData(getContainer(), "resources", migrateService, tempDirectory, "");
+			service.migrateData(getContainer(), "resources", migrateService, getContainer(), "");
 			assert migrateService.checkObjectExists(getContainer(), "resources/TEST_FOLDER/test.2");
 			assert migrateService.checkObjectExists(getContainer(), "resources/test.1");
 			migrateService.delete(getContainer(), "resources", true);
