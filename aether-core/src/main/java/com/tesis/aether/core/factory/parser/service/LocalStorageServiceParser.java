@@ -3,7 +3,7 @@ package com.tesis.aether.core.factory.parser.service;
 import com.tesis.aether.core.factory.ServiceAccountProperties;
 import com.tesis.aether.core.services.CloudService;
 import com.tesis.aether.core.services.storage.ExtendedStorageService;
-import com.tesis.aether.core.services.storage.LocalStorageService;
+import com.tesis.aether.core.services.storage.imp.local.LocalStorageService;
 
 public class LocalStorageServiceParser extends StorageServiceParser{
 

@@ -14,7 +14,12 @@ public class StorageObjectMetadata {
 	private Date lastModified;
 	private String md5hash;
 	private URI uri;
-		
+	private String container;
+
+	public boolean isContainer(){
+		return this.getType().equals(StorageObjectConstants.CONTAINER_TYPE);
+	}
+	
 	public boolean isDirectory(){
 		return this.getType().equals(StorageObjectConstants.DIRECTORY_TYPE);
 	}
@@ -74,5 +79,13 @@ public class StorageObjectMetadata {
 
 	public String getMd5hash() {
 		return md5hash;
+	}
+
+	public void setContainer(String container) {
+		this.container = container;
+	}
+
+	public String getContainer() {
+		return container;
 	}
 }

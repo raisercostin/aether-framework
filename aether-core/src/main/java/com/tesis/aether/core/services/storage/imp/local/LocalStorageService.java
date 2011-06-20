@@ -1,4 +1,4 @@
-package com.tesis.aether.core.services.storage;
+package com.tesis.aether.core.services.storage.imp.local;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -13,13 +13,13 @@ import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 
-import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
-import org.jclouds.blobstore.domain.MutableBlobMetadata;
 
 import com.tesis.aether.core.auth.authenticator.Authenticator;
 import com.tesis.aether.core.exception.ConnectionException;
+import com.tesis.aether.core.exception.CreateContainerException;
+import com.tesis.aether.core.exception.DeleteContainerException;
 import com.tesis.aether.core.exception.DeleteException;
 import com.tesis.aether.core.exception.DisconnectionException;
 import com.tesis.aether.core.exception.FileNotExistsException;
@@ -28,6 +28,7 @@ import com.tesis.aether.core.exception.MetadataFetchingException;
 import com.tesis.aether.core.exception.MethodNotSupportedException;
 import com.tesis.aether.core.exception.URLExtractionException;
 import com.tesis.aether.core.exception.UploadException;
+import com.tesis.aether.core.services.storage.ExtendedStorageService;
 import com.tesis.aether.core.services.storage.constants.StorageServiceConstants;
 import com.tesis.aether.core.services.storage.object.StorageObjectMetadata;
 import com.tesis.aether.core.services.storage.object.constants.StorageObjectConstants;
@@ -39,12 +40,12 @@ public class LocalStorageService extends ExtendedStorageService {
 		super();
 		setName(StorageServiceConstants.LOCAL);
 	}
-	
-	@Override
-	public URI getPublicURLForPath(String remotePath) throws FileNotExistsException, MethodNotSupportedException, URLExtractionException {
-		File remoteFile = initRemoteFile(remotePath);
 
-		if(!checkObjectExists(remotePath)) {
+	@Override
+	public URI getPublicURLForPath(String container, String remotePath) throws FileNotExistsException, MethodNotSupportedException, URLExtractionException {
+		File remoteFile = initRemoteFile(container, remotePath);
+
+		if (!checkObjectExists(container, remotePath)) {
 			throw new FileNotExistsException("File " + remotePath + " does not exist");
 		}
 
@@ -52,9 +53,9 @@ public class LocalStorageService extends ExtendedStorageService {
 	}
 
 	@Override
-	public void createFolder(String remotePath) throws FolderCreationException, MethodNotSupportedException {
+	public void createFolder(String container, String remotePath) throws FolderCreationException, MethodNotSupportedException {
 		try {
-			File remotePathFile = initRemoteFile(remotePath);
+			File remotePathFile = initRemoteFile(container, remotePath);
 			FileUtils.forceMkdir(remotePathFile);
 		} catch (IOException e) {
 			throw new FolderCreationException(remotePath + " could not be created. The path might be invalid or blocked.");
@@ -62,65 +63,65 @@ public class LocalStorageService extends ExtendedStorageService {
 	}
 
 	@Override
-	public List<StorageObjectMetadata> listFiles(String remotePath, boolean recursive) throws MethodNotSupportedException {
-		File dirToList = initRemoteFile(remotePath);
+	public List<StorageObjectMetadata> listFiles(String container, String remotePath, boolean recursive) throws MethodNotSupportedException {
+		File dirToList = initRemoteFile(container, remotePath);
 
-		if (checkDirectoryExists(remotePath)) {
+		if (checkDirectoryExists(container, remotePath)) {
 			List<StorageObjectMetadata> files = new ArrayList<StorageObjectMetadata>();
 			for (String file : dirToList.list()) {
-				StorageObjectMetadata storageObjectMetadata = toStorageObjectMetadata(initRemoteFile(remotePath + "/" + file));
+				StorageObjectMetadata storageObjectMetadata = toStorageObjectMetadata(container, initRemoteFile(container, remotePath + "/" + file));
 				if (storageObjectMetadata.isDirectory() && recursive == true) {
-					files.addAll(listFiles(storageObjectMetadata.getPathAndName(), true));
+					files.addAll(listFiles(container, storageObjectMetadata.getPathAndName(), true));
 				}
 				files.add(storageObjectMetadata);
 			}
 			return files;
-		} else if (checkFileExists(remotePath)) {
-			return Arrays.asList(toStorageObjectMetadata(dirToList));
+		} else if (checkFileExists(container, remotePath)) {
+			return Arrays.asList(toStorageObjectMetadata(container, dirToList));
 		} else {
 			return new ArrayList<StorageObjectMetadata>();
 		}
 	}
 
 	@Override
-	public Long sizeOf(String remotePath) throws MetadataFetchingException, MethodNotSupportedException, FileNotExistsException {
-		if(!checkObjectExists(remotePath)) {
+	public Long sizeOf(String container, String remotePath) throws MetadataFetchingException, MethodNotSupportedException, FileNotExistsException {
+		if (!checkObjectExists(container, remotePath)) {
 			throw new FileNotExistsException("File " + remotePath + " does not exist");
-		}		
-		File remoteFile = initRemoteFile(remotePath);
-		return remoteFile.length();		
+		}
+		File remoteFile = initRemoteFile(container, remotePath);
+		return remoteFile.length();
 	}
 
 	@Override
-	public Date lastModified(String remotePath) throws MetadataFetchingException, MethodNotSupportedException, FileNotExistsException {
-		if(!checkObjectExists(remotePath)) {
+	public Date lastModified(String container, String remotePath) throws MetadataFetchingException, MethodNotSupportedException, FileNotExistsException {
+		if (!checkObjectExists(container, remotePath)) {
 			throw new FileNotExistsException("File " + remotePath + " does not exist");
-		}		
-		File remoteFile = initRemoteFile(remotePath);
-		return new Date(remoteFile.lastModified());	
+		}
+		File remoteFile = initRemoteFile(container, remotePath);
+		return new Date(remoteFile.lastModified());
 	}
 
 	@Override
-	public InputStream getInputStream(String remotePathFile) throws FileNotExistsException {
-	
-		File remoteFile = initRemoteFile(remotePathFile);
+	public InputStream getInputStream(String container, String remotePathFile) throws FileNotExistsException {
+
+		File remoteFile = initRemoteFile(container, remotePathFile);
 		try {
 			return new FileInputStream(remoteFile);
 		} catch (FileNotFoundException e) {
 			throw new FileNotExistsException("File " + remotePathFile + " does not exist");
-		}	
+		}
 	}
 
 	@Override
-	public void uploadInputStream(InputStream inputStream, String remoteDirectory, String filename, Long contentLength) throws UploadException, MethodNotSupportedException, FileNotExistsException {
-		
-		File toFileFile = initRemoteFile(remoteDirectory + "/" + filename);
-		
+	public void uploadInputStream(InputStream inputStream, String container, String remoteDirectory, String filename, Long contentLength) throws UploadException, MethodNotSupportedException, FileNotExistsException {
+
+		File toFileFile = initRemoteFile(container, remoteDirectory + "/" + filename);
+
 		OutputStream out = null;
 
 		try {
-			
-			createFolder(remoteDirectory);
+
+			createFolder(container, remoteDirectory);
 
 			out = new FileOutputStream(toFileFile);
 
@@ -148,8 +149,8 @@ public class LocalStorageService extends ExtendedStorageService {
 	}
 
 	@Override
-	public boolean checkFileExists(String remotePath) throws MethodNotSupportedException {
-		File dir = initRemoteFile(remotePath);
+	public boolean checkFileExists(String container, String remotePath) throws MethodNotSupportedException {
+		File dir = initRemoteFile(container, remotePath);
 		if (dir.exists() && dir.isFile()) {
 			return true;
 		} else {
@@ -158,8 +159,8 @@ public class LocalStorageService extends ExtendedStorageService {
 	}
 
 	@Override
-	public boolean checkDirectoryExists(String remotePath) throws MethodNotSupportedException {
-		File dir = initRemoteFile(remotePath);
+	public boolean checkDirectoryExists(String container, String remotePath) throws MethodNotSupportedException {
+		File dir = initRemoteFile(container, remotePath);
 		if (dir.exists() && dir.isDirectory()) {
 			return true;
 		} else {
@@ -177,13 +178,12 @@ public class LocalStorageService extends ExtendedStorageService {
 
 	}
 
-	public File initRemoteFile(String path) {
-		String basePath = this.getServiceProperty(StorageServiceConstants.LOCAL_BASE_FOLDER);
-		return new File(basePath + path);
+	public File initRemoteFile(String container, String path) {
+		return new File(this.getServiceProperty(StorageServiceConstants.LOCAL_BASE_FOLDER) + "/" + container + "/" + path);
 	}
 
-	private StorageObjectMetadata toStorageObjectMetadata(File dirToList) {
-		File baseToIgnore = new File(this.getServiceProperty(StorageServiceConstants.LOCAL_BASE_FOLDER));
+	private StorageObjectMetadata toStorageObjectMetadata(String container, File dirToList) {
+		File baseToIgnore = initRemoteFile(container,"");
 		String pathAndFilename = dirToList.getPath().replace(baseToIgnore.getPath(), "");
 
 		String path = FilenameUtils.separatorsToUnix(FilenameUtils.getPathNoEndSeparator(pathAndFilename));
@@ -194,13 +194,14 @@ public class LocalStorageService extends ExtendedStorageService {
 		metadata.setName(name);
 		metadata.setLastModified(new Date(dirToList.lastModified()));
 		metadata.setMd5hash(CodecUtil.getMd5FromFile(dirToList));
-		
-		if(!path.trim().isEmpty()) {
+		metadata.setContainer(container);
+
+		if (!path.trim().isEmpty()) {
 			metadata.setPathAndName(path + "/" + name);
 		} else {
 			metadata.setPathAndName(name);
 		}
-		
+
 		if (dirToList.isFile()) {
 			metadata.setType(StorageObjectConstants.FILE_TYPE);
 			metadata.setLength(dirToList.length());
@@ -212,28 +213,29 @@ public class LocalStorageService extends ExtendedStorageService {
 	}
 
 	@Override
-	public void deleteFile(String remotePath) throws DeleteException {
-		File remotePathFile = initRemoteFile(remotePath);
-		
+	public void deleteFile(String container, String remotePath) throws DeleteException {
+		File remotePathFile = initRemoteFile(container, remotePath);
+
 		boolean success = remotePathFile.delete();
 		if (!success) {
 			throw new DeleteException(remotePath + " is blocked or not empty.");
 		}
-		
+
 	}
 
 	@Override
-	public void deleteFolder(String remotePath) throws DeleteException {
-		File remotePathFile = initRemoteFile(remotePath);
-		
+	public void deleteFolder(String container, String remotePath) throws DeleteException {
+		File remotePathFile = initRemoteFile(container, remotePath);
+
 		boolean success = remotePathFile.delete();
 		if (!success) {
 			throw new DeleteException(remotePath + " is blocked or not empty.");
 		}
-		
+
 	}
+
 	@Override
-	public StorageObjectMetadata getMetadataForObject(String remotePathFile) {
+	public StorageObjectMetadata getMetadataForObject(String container, String remotePathFile) {
 
 		String name = FilenameUtils.getName(remotePathFile);
 		String path = FilenameUtils.getPathNoEndSeparator(remotePathFile);
@@ -242,30 +244,76 @@ public class LocalStorageService extends ExtendedStorageService {
 		metadata.setPath(path);
 		metadata.setName(name);
 		metadata.setType(StorageObjectConstants.FILE_TYPE);
-		if(!path.trim().isEmpty()) {
+		metadata.setContainer(container);
+		if (!path.trim().isEmpty()) {
 			metadata.setPathAndName(path + "/" + name);
 		} else {
 			metadata.setPathAndName(name);
 		}
 
-		metadata.setMd5hash(CodecUtil.getMd5FromFile(initRemoteFile(remotePathFile)));
-		
+		metadata.setMd5hash(CodecUtil.getMd5FromFile(initRemoteFile(container, remotePathFile)));
+
 		try {
-			metadata.setUri(getPublicURLForPath(remotePathFile));
+			metadata.setUri(getPublicURLForPath(container, remotePathFile));
 		} catch (Exception e) {
 		}
 
 		try {
-			metadata.setLength(sizeOf(remotePathFile));
+			metadata.setLength(sizeOf(container, remotePathFile));
 		} catch (Exception e) {
 		}
 
 		try {
-			metadata.setLastModified(lastModified(remotePathFile));
+			metadata.setLastModified(lastModified(container, remotePathFile));
 		} catch (Exception e) {
 		}
 
 		return metadata;
+	}
+
+	@Override
+	public void createContainer(String name) throws CreateContainerException {
+		File initRemoteFile = initRemoteFile(name, "");
+		try {
+			FileUtils.forceMkdir(initRemoteFile);
+		} catch (IOException e) {
+			e.printStackTrace();
+			throw new CreateContainerException(e.getMessage());
+		}
+	}
+
+	@Override
+	public void deleteContainer(String name) throws DeleteContainerException {
+		File initRemoteFile = initRemoteFile(name, "");
+		try {
+			FileUtils.deleteDirectory(initRemoteFile);
+		} catch (IOException e) {
+			e.printStackTrace();
+			throw new DeleteContainerException(e.getMessage());
+		}
+	}
+
+	@Override
+	public List<StorageObjectMetadata> listContainers() {
+		File initRemoteFile = initRemoteFile("", "");
+		List<StorageObjectMetadata> metadatas = new ArrayList<StorageObjectMetadata>();
+		
+		String[] list = initRemoteFile.list();
+		for (String fileLocation : list) {
+			File file = initRemoteFile(fileLocation, "");
+			if (file.isDirectory()) {
+				StorageObjectMetadata storageObjectMetadata = toStorageObjectMetadata(FilenameUtils.getName(fileLocation), file);
+				storageObjectMetadata.setType(StorageObjectConstants.CONTAINER_TYPE);
+				metadatas.add(storageObjectMetadata);
+			}
+		}
+		
+		return metadatas;
+	}
+
+	@Override
+	public boolean existsContainer(String name) {
+		return initRemoteFile(name, "").exists();
 	}
 
 }
