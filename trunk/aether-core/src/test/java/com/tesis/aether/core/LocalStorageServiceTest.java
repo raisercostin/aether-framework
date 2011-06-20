@@ -1,9 +1,9 @@
 package com.tesis.aether.core;
 
 import com.tesis.aether.core.factory.ServiceAccountProperties;
-import com.tesis.aether.core.services.storage.LocalStorageService;
 import com.tesis.aether.core.services.storage.ExtendedStorageService;
 import com.tesis.aether.core.services.storage.constants.StorageServiceConstants;
+import com.tesis.aether.core.services.storage.imp.local.LocalStorageService;
 
 
 public class LocalStorageServiceTest extends StorageServiceTest {
@@ -19,4 +19,8 @@ public class LocalStorageServiceTest extends StorageServiceTest {
 		return service;
 	}
 
+	@Override
+	protected String getContainer() {
+		return "TEST";
+	}
 }
