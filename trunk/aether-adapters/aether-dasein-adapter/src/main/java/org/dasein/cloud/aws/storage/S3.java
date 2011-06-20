@@ -44,7 +44,7 @@ public class S3 implements BlobStoreSupport {
 	public FileTransfer download(String directory, String fileName, File toFile, Encryption decryption) throws InternalException, CloudException {
 		try {
 			String path = FilenameUtils.getFullPath(toFile.getCanonicalPath());
-			service.downloadFileToDirectory(fileName, new File(path));
+			service.downloadFileToDirectory(directory, fileName, new File(path));
 
 			FileTransfer fileTransfer = new FileTransfer();
 			fileTransfer.setPercentComplete(1.0);
@@ -60,7 +60,7 @@ public class S3 implements BlobStoreSupport {
 	public Iterable<CloudStoreObject> listFiles(String parentDirectory) throws CloudException, InternalException {
 		List<StorageObjectMetadata> listFiles;
 		try {
-			listFiles = service.listFiles("", true);
+			listFiles = service.listFiles(parentDirectory, "", true);
 
 			List<CloudStoreObject> daseinMetadata = new ArrayList<CloudStoreObject>();
 			for (StorageObjectMetadata metadata : listFiles) {
@@ -92,7 +92,7 @@ public class S3 implements BlobStoreSupport {
 
 			String path = FilenameUtils.getPathNoEndSeparator(fileName);
 
-			service.uploadSingleFile(sourceFile, path);
+			service.uploadSingleFile(sourceFile, directory, path);
 
 		} catch (UploadException e) {
 			e.printStackTrace();

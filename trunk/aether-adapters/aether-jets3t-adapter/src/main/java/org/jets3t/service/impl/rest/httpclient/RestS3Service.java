@@ -19,7 +19,7 @@
 package org.jets3t.service.impl.rest.httpclient;
 
 import java.util.ArrayList;
-import java.util.Calendar;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -40,9 +40,8 @@ import org.jets3t.service.model.S3Bucket;
 import org.jets3t.service.model.S3BucketLoggingStatus;
 import org.jets3t.service.model.S3BucketVersioningStatus;
 import org.jets3t.service.model.S3Object;
-import org.jets3t.service.model.StorageBucket;
 import org.jets3t.service.model.StorageObject;
-import org.jets3t.service.mx.MxDelegate;
+import org.jets3t.service.model.StorageOwner;
 import org.jets3t.service.security.ProviderCredentials;
 
 import com.tesis.aether.core.exception.ConnectionException;
@@ -52,7 +51,6 @@ import com.tesis.aether.core.exception.MethodNotSupportedException;
 import com.tesis.aether.core.exception.UploadException;
 import com.tesis.aether.core.factory.ServiceFactory;
 import com.tesis.aether.core.services.storage.ExtendedStorageService;
-import com.tesis.aether.core.services.storage.constants.StorageServiceConstants;
 import com.tesis.aether.core.services.storage.object.StorageObjectMetadata;
 
 public class RestS3Service extends S3Service {
@@ -93,7 +91,7 @@ public class RestS3Service extends S3Service {
 	@Override
 	public S3Object getObject(String bucketName, String objectKey) {
 		try {
-			com.tesis.aether.core.services.storage.object.StorageObject storageObject = service.getStorageObject(objectKey);
+			com.tesis.aether.core.services.storage.object.StorageObject storageObject = service.getStorageObject(bucketName, objectKey);
 			S3Object object = new S3Object(objectKey);
 			object.setDataInputStream(storageObject.getStream());
 			object.addAllMetadata(generateJetS3tMetadata(storageObject.getMetadata()));
@@ -115,7 +113,7 @@ public class RestS3Service extends S3Service {
 	@Override
 	public StorageObject getObjectDetails(String bucketName, String objectKey) throws ServiceException {
 		try {
-			com.tesis.aether.core.services.storage.object.StorageObject storageObject = service.getStorageObject(objectKey);
+			com.tesis.aether.core.services.storage.object.StorageObject storageObject = service.getStorageObject(bucketName, objectKey);
 			StorageObject object = new StorageObject(objectKey);
 			object.addAllMetadata(generateJetS3tMetadata(storageObject.getMetadata()));
 			object.setStorageClass("STANDARD");
@@ -129,7 +127,7 @@ public class RestS3Service extends S3Service {
 
 	public S3Object getObjectDetails(S3Bucket bucket, String objectKey) throws S3ServiceException {
 		try {
-			com.tesis.aether.core.services.storage.object.StorageObject storageObject = service.getStorageObject(objectKey);
+			com.tesis.aether.core.services.storage.object.StorageObject storageObject = service.getStorageObject(bucket.getName(), objectKey);
 			S3Object object = new S3Object(objectKey);
 			object.addAllMetadata(generateJetS3tMetadata(storageObject.getMetadata()));
 			object.setBucketName(bucket.getName());
@@ -157,8 +155,10 @@ public class RestS3Service extends S3Service {
 			String name = FilenameUtils.getName(object.getName());
 			String path = FilenameUtils.getPathNoEndSeparator(object.getName());
 
-			service.uploadInputStream(object.getDataInputStream(), path, name, object.getContentLength());
-
+			service.uploadInputStream(object.getDataInputStream(), bucketName, path, name, object.getContentLength());
+			
+			object.setLastModifiedDate(new Date());
+			
 			return object;
 		} catch (UploadException e) {
 			e.printStackTrace();
@@ -176,7 +176,7 @@ public class RestS3Service extends S3Service {
 	public S3Object[] listObjects(String bucketName) throws S3ServiceException {
 		List<StorageObjectMetadata> listFiles;
 		try {
-			listFiles = service.listFiles("", true);
+			listFiles = service.listFiles(bucketName, "", true);
 			return aetherMetadataListToS3ObjectArray(listFiles, bucketName);
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -193,7 +193,7 @@ public class RestS3Service extends S3Service {
 
 	public void deleteObject(S3Bucket bucket, String objectKey) throws S3ServiceException {
 		try {
-			service.delete(objectKey, true);
+			service.delete(bucket.getName(), objectKey, true);
 		} catch (DeleteException e) {
 			e.printStackTrace();
 		}
@@ -215,8 +215,26 @@ public class RestS3Service extends S3Service {
 	public S3Object[] listObjects(String bucketName, String prefix, String delimiter) throws S3ServiceException {
 		List<StorageObjectMetadata> listFiles;
 		try {
-			listFiles = service.listFiles(prefix, true);
+			listFiles = service.listFiles(bucketName, prefix, true);
 			return aetherMetadataListToS3ObjectArray(listFiles, bucketName);
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+
+	public void deleteBucket(String bucketName) throws ServiceException {
+		try {
+			service.deleteContainer(bucketName);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public S3Bucket createBucket(S3Bucket bucket) throws S3ServiceException {
+		try {
+			service.createContainer(bucket.getName());
+			return bucket;
 		} catch (Exception e) {
 			e.printStackTrace();
 			return null;
@@ -225,18 +243,29 @@ public class RestS3Service extends S3Service {
 
 	@Override
 	public S3Bucket[] listAllBuckets() throws S3ServiceException {
-		if (service.getServiceProperty(StorageServiceConstants.S3_BUCKET) != null) {
-			StorageBucket[] buckets = { new S3Bucket(service.getServiceProperty(StorageServiceConstants.S3_BUCKET)) };
-			return S3Bucket.cast(buckets);
-		} else {
-			StorageBucket[] buckets = { new S3Bucket(service.getServiceProperty(StorageServiceConstants.GOOGLE_STORAGE_BUCKET)) };
-			return S3Bucket.cast(buckets);
+		try {
+			List<StorageObjectMetadata> listContainers = service.listContainers();
+			return toS3Bucket(listContainers);
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
 		}
 	}
+
 
 	/**
 	 * UTIL
 	 */
+	private S3Bucket[] toS3Bucket(List<StorageObjectMetadata> listContainers) {
+		S3Bucket[] buckets = new S3Bucket[listContainers.size()];
+		for(int i=0; i<listContainers.size(); i++) {
+			S3Bucket bucket = new S3Bucket(listContainers.get(i).getName());
+			bucket.setOwner(new StorageOwner());
+			buckets[i] = bucket;
+		}
+		return buckets;
+	}
+
 	private Map<String, Object> generateJetS3tMetadata(StorageObjectMetadata metadata) {
 		Map<String, Object> jets3metadata = new HashMap<String, Object>();
 		jets3metadata.put(BaseStorageItem.METADATA_HEADER_LAST_MODIFIED_DATE, metadata.getLastModified());

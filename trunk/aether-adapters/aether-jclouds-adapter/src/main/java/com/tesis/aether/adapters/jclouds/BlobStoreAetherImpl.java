@@ -21,6 +21,8 @@ import org.jclouds.blobstore.options.ListContainerOptions;
 import org.jclouds.domain.Location;
 
 import com.tesis.aether.core.exception.ConnectionException;
+import com.tesis.aether.core.exception.CreateContainerException;
+import com.tesis.aether.core.exception.DeleteContainerException;
 import com.tesis.aether.core.exception.DeleteException;
 import com.tesis.aether.core.exception.FileNotExistsException;
 import com.tesis.aether.core.exception.FolderCreationException;
@@ -65,7 +67,7 @@ public class BlobStoreAetherImpl implements BlobStore {
 
 	public void clearContainer(String container) {
 		try {
-			service.delete("/", true);
+			service.delete(container, "/", true);
 		} catch (DeleteException e) {
 			e.printStackTrace();
 		}
@@ -77,7 +79,7 @@ public class BlobStoreAetherImpl implements BlobStore {
 
 	public boolean directoryExists(String container, String directory) {
 		try {
-			return service.checkDirectoryExists(directory);
+			return service.checkDirectoryExists(container, directory);
 		} catch (MethodNotSupportedException e) {
 			e.printStackTrace();
 			return false;
@@ -86,7 +88,7 @@ public class BlobStoreAetherImpl implements BlobStore {
 
 	public void createDirectory(String container, String directory) {
 		try {
-			service.createFolder(directory);
+			service.createFolder(container, directory);
 		} catch (FolderCreationException e) {
 			e.printStackTrace();
 		} catch (MethodNotSupportedException e) {
@@ -94,9 +96,9 @@ public class BlobStoreAetherImpl implements BlobStore {
 		}
 	}
 
-	public void deleteDirectory(String containerName, String name) {
+	public void deleteDirectory(String container, String name) {
 		try {
-			service.deleteFolder(name);
+			service.deleteFolder(container, name);
 		} catch (DeleteException e) {
 			e.printStackTrace();
 		}
@@ -104,7 +106,7 @@ public class BlobStoreAetherImpl implements BlobStore {
 
 	public boolean blobExists(String container, String name) {
 		try {
-			return service.checkFileExists(name);
+			return service.checkFileExists(container, name);
 		} catch (MethodNotSupportedException e) {
 			e.printStackTrace();
 			return false;
@@ -117,7 +119,7 @@ public class BlobStoreAetherImpl implements BlobStore {
 			String name = FilenameUtils.getName(blob.getMetadata().getName());
 			String path = FilenameUtils.getPathNoEndSeparator(blob.getMetadata().getName());
 
-			service.uploadInputStream(blob.getPayload().getInput(), path, name, blob.getPayload().getContentMetadata().getContentLength());
+			service.uploadInputStream(blob.getPayload().getInput(), container, path, name, blob.getPayload().getContentMetadata().getContentLength());
 
 			return null;
 		} catch (UploadException e) {
@@ -134,7 +136,7 @@ public class BlobStoreAetherImpl implements BlobStore {
 
 	public BlobMetadata blobMetadata(String container, String name) {
 		try {
-			StorageObject storageObject = service.getStorageObject(name);
+			StorageObject storageObject = service.getStorageObject(container, name);
 			return generateJcloudsMetadata(storageObject.getMetadata());
 		} catch (FileNotExistsException e) {
 			e.printStackTrace();
@@ -144,7 +146,7 @@ public class BlobStoreAetherImpl implements BlobStore {
 
 	public Blob getBlob(String container, String name) {
 		try {
-			StorageObject storageObject = service.getStorageObject(name);
+			StorageObject storageObject = service.getStorageObject(container, name);
 			Blob blob = new BlobImpl(generateJcloudsMetadata(storageObject.getMetadata()));
 			blob.setPayload(storageObject.getStream());
 
@@ -161,7 +163,7 @@ public class BlobStoreAetherImpl implements BlobStore {
 
 	public void removeBlob(String container, String name) {
 		try {
-			service.deleteFile(name);
+			service.deleteFile(container, name);
 		} catch (DeleteException e) {
 			e.printStackTrace();
 		}
@@ -174,6 +176,8 @@ public class BlobStoreAetherImpl implements BlobStore {
 			mutableBlobMetadataImpl.setType(StorageType.BLOB);
 		} else if(storageObjectMetadata.isDirectory()) {
 			mutableBlobMetadataImpl.setType(StorageType.FOLDER);
+		} else if(storageObjectMetadata.isContainer()) {
+			mutableBlobMetadataImpl.setType(StorageType.CONTAINER);
 		}
 		mutableBlobMetadataImpl.getContentMetadata().setContentLength(storageObjectMetadata.getLength());
 		mutableBlobMetadataImpl.setLastModified(storageObjectMetadata.getLastModified());
@@ -182,9 +186,26 @@ public class BlobStoreAetherImpl implements BlobStore {
 	}
 
 	public PageSet<? extends StorageMetadata> list() {
+		List<StorageObjectMetadata> listContainers;
+		try {
+			listContainers = service.listContainers();
+
+			List<MutableStorageMetadata> jCloudsMetadata = new ArrayList<MutableStorageMetadata>();
+			for (StorageObjectMetadata metadata : listContainers) {
+				jCloudsMetadata.add(generateJcloudsMetadata(metadata));
+			}
+
+			return new PageSetImpl<StorageMetadata>(jCloudsMetadata, null);
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		} 
+	}
+
+	public PageSet<? extends StorageMetadata> list(String container) {
 		List<StorageObjectMetadata> listFiles;
 		try {
-			listFiles = service.listFiles("", true);
+			listFiles = service.listFiles(container, "", true);
 
 			List<MutableStorageMetadata> jCloudsMetadata = new ArrayList<MutableStorageMetadata>();
 			for (StorageObjectMetadata metadata : listFiles) {
@@ -198,14 +219,10 @@ public class BlobStoreAetherImpl implements BlobStore {
 		} 
 	}
 
-	public PageSet<? extends StorageMetadata> list(String container) {
-		return list();
-	}
-
 	public PageSet<? extends StorageMetadata> list(String container, ListContainerOptions options) {
 		List<StorageObjectMetadata> listFiles;
 		try {
-			listFiles = service.listFiles(options.getDir(), options.isRecursive());
+			listFiles = service.listFiles(container, options.getDir(), options.isRecursive());
 
 			List<MutableStorageMetadata> jCloudsMetadata = new ArrayList<MutableStorageMetadata>();
 			for (StorageObjectMetadata metadata : listFiles) {
@@ -216,6 +233,28 @@ public class BlobStoreAetherImpl implements BlobStore {
 		} catch (MethodNotSupportedException e) {
 			e.printStackTrace();
 			return null;
+		}
+	}
+
+	public boolean containerExists(String container) {
+		return service.existsContainer(container);
+	}
+
+	public boolean createContainerInLocation(Location location, String container) {
+		try {
+			service.createContainer(container);
+			return true;
+		} catch (CreateContainerException e) {
+			e.printStackTrace();
+			return false;
+		}
+	}
+
+	public void deleteContainer(String container) {
+		try {
+			service.deleteContainer(container);
+		} catch (DeleteContainerException e) {
+			e.printStackTrace();
 		}
 	}
 
@@ -230,21 +269,6 @@ public class BlobStoreAetherImpl implements BlobStore {
 	public long countBlobs(String container, ListContainerOptions options) {
 		// TODO Auto-generated method stub
 		return 0;
-	}
-
-	public boolean containerExists(String container) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	public boolean createContainerInLocation(Location location, String container) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	public void deleteContainer(String container) {
-		// TODO Auto-generated method stub
-
 	}
 
 	public Set<? extends Location> listAssignableLocations() {
