@@ -3,7 +3,7 @@ package com.tesis.aether.core.factory.parser.service;
 import com.tesis.aether.core.factory.ServiceAccountProperties;
 import com.tesis.aether.core.services.CloudService;
 import com.tesis.aether.core.services.storage.ExtendedStorageService;
-import com.tesis.aether.core.services.storage.GoogleV1StorageService;
+import com.tesis.aether.core.services.storage.imp.google.storage.GoogleV1StorageService;
 
 public class GoogleStorageServiceParser extends StorageServiceParser {
 

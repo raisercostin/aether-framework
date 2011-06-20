@@ -3,6 +3,7 @@ package com.tesis.aether.core.util;
 import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.security.DigestInputStream;
 import java.security.MessageDigest;
 import java.util.Formatter;
@@ -10,11 +11,14 @@ import java.util.Formatter;
 public class CodecUtil {
 	public static String getMd5FromFile(File file) {
 		MessageDigest md5;
+		FileInputStream fis = null;
+		BufferedInputStream bis = null;
+		DigestInputStream dis = null;
 		try {
 			md5 = MessageDigest.getInstance("MD5");
-			FileInputStream fis = new FileInputStream(file);
-			BufferedInputStream bis = new BufferedInputStream(fis);
-			DigestInputStream dis = new DigestInputStream(bis, md5);
+			fis = new FileInputStream(file);
+			bis = new BufferedInputStream(fis);
+			dis = new DigestInputStream(bis, md5);
 
 			// read the file and update the hash calculation
 			while (dis.read() != -1)
@@ -25,8 +29,30 @@ public class CodecUtil {
 
 			return byteArray2Hex(hash);
 		} catch (Exception e) {
-			e.printStackTrace();
+			// e.printStackTrace();
 			return null;
+		} finally {
+			if (fis != null) {
+				try {
+					fis.close();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+			}
+			if (bis != null) {
+				try {
+					bis.close();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+			}
+			if (dis != null) {
+				try {
+					dis.close();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+			}
 		}
 	}
 

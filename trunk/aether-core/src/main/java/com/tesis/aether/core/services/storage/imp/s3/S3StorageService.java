@@ -1,4 +1,4 @@
-package com.tesis.aether.core.services.storage;
+package com.tesis.aether.core.services.storage.imp.s3;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -24,6 +24,8 @@ import org.jclouds.blobstore.options.ListContainerOptions;
 import com.google.common.base.Splitter;
 import com.tesis.aether.core.auth.authenticator.Authenticator;
 import com.tesis.aether.core.exception.ConnectionException;
+import com.tesis.aether.core.exception.CreateContainerException;
+import com.tesis.aether.core.exception.DeleteContainerException;
 import com.tesis.aether.core.exception.DisconnectionException;
 import com.tesis.aether.core.exception.FileNotExistsException;
 import com.tesis.aether.core.exception.FolderCreationException;
@@ -31,6 +33,7 @@ import com.tesis.aether.core.exception.MetadataFetchingException;
 import com.tesis.aether.core.exception.MethodNotSupportedException;
 import com.tesis.aether.core.exception.URLExtractionException;
 import com.tesis.aether.core.exception.UploadException;
+import com.tesis.aether.core.services.storage.ExtendedStorageService;
 import com.tesis.aether.core.services.storage.constants.StorageServiceConstants;
 import com.tesis.aether.core.services.storage.object.StorageObjectMetadata;
 import com.tesis.aether.core.services.storage.object.constants.StorageObjectConstants;
@@ -46,64 +49,63 @@ public class S3StorageService extends ExtendedStorageService {
 	}
 
 	@Override
-	public URI getPublicURLForPath(String remotePath) throws FileNotExistsException, MethodNotSupportedException, URLExtractionException {
+	public URI getPublicURLForPath(String container, String remotePath) throws FileNotExistsException, MethodNotSupportedException, URLExtractionException {
 		String sanitizedPath = sanitizeRemotePath(remotePath);
-		return blobStore.blobMetadata(getServiceProperty(StorageServiceConstants.S3_BUCKET), sanitizedPath).getUri();
+		return blobStore.blobMetadata(container, sanitizedPath).getUri();
 	}
 
 	@Override
-	public List<StorageObjectMetadata> listFiles(String remotePath, boolean recursive) throws MethodNotSupportedException {
+	public List<StorageObjectMetadata> listFiles(String container, String remotePath, boolean recursive) throws MethodNotSupportedException {
 
 		String sanitizedPath = sanitizeRemotePath(remotePath);
 
-		if (checkFileExists(sanitizedPath)) {
-			BlobMetadata blobMetadata = blobStore.blobMetadata(getServiceProperty(StorageServiceConstants.S3_BUCKET), sanitizedPath);
-			return Arrays.asList(toStorageObjectMetadata(blobMetadata));
+		if (checkFileExists(container, sanitizedPath)) {
+			BlobMetadata blobMetadata = blobStore.blobMetadata(container, sanitizedPath);
+			return Arrays.asList(toStorageObjectMetadata(blobMetadata, container));
 		} else {
-			PageSet<? extends StorageMetadata> list = sanitizedPath.isEmpty() ? blobStore.list(getServiceProperty(StorageServiceConstants.S3_BUCKET)) : blobStore.list(getServiceProperty(StorageServiceConstants.S3_BUCKET), ListContainerOptions.Builder.inDirectory(sanitizedPath));
+			PageSet<? extends StorageMetadata> list = sanitizedPath.isEmpty() ? blobStore.list(container) : blobStore.list(container, ListContainerOptions.Builder.inDirectory(sanitizedPath));
 			List<StorageObjectMetadata> result = new ArrayList<StorageObjectMetadata>();
 			for (StorageMetadata file : list) {
-				if (!file.getName().isEmpty()) {
-					StorageObjectMetadata storageObjectMetadata = toStorageObjectMetadata(file);
+				if (!file.getName().isEmpty() && !file.getName().equals(sanitizedPath)) {
+					StorageObjectMetadata storageObjectMetadata = toStorageObjectMetadata(file, container);
 					if (storageObjectMetadata.isDirectory() && recursive == true) {
-						result.addAll(listFiles(storageObjectMetadata.getPathAndName(), true));
+						result.addAll(listFiles(container, storageObjectMetadata.getPathAndName(), true));
 					}
 					result.add(storageObjectMetadata);
 				}
 			}
 			return result;
 		}
-
 	}
 
 	@Override
-	public Long sizeOf(String remotePath) throws MetadataFetchingException, MethodNotSupportedException, FileNotExistsException {
+	public Long sizeOf(String container, String remotePath) throws MetadataFetchingException, MethodNotSupportedException, FileNotExistsException {
 		String sanitizedPath = sanitizeRemotePath(remotePath);
-		return blobStore.blobMetadata(getServiceProperty(StorageServiceConstants.S3_BUCKET), sanitizedPath).getContentMetadata().getContentLength();
+		return blobStore.blobMetadata(container, sanitizedPath).getContentMetadata().getContentLength();
 	}
 
 	@Override
-	public Date lastModified(String remotePath) throws MetadataFetchingException, MethodNotSupportedException, FileNotExistsException {
+	public Date lastModified(String container, String remotePath) throws MetadataFetchingException, MethodNotSupportedException, FileNotExistsException {
 		String sanitizedPath = sanitizeRemotePath(remotePath);
-		return blobStore.blobMetadata(getServiceProperty(StorageServiceConstants.S3_BUCKET), sanitizedPath).getLastModified();
+		return blobStore.blobMetadata(container, sanitizedPath).getLastModified();
 	}
 
 	@Override
-	public InputStream getInputStream(String remotePathFile) throws FileNotExistsException {
+	public InputStream getInputStream(String container, String remotePathFile) throws FileNotExistsException {
 		String sanitizedPath = sanitizeRemotePath(remotePathFile);
 
-		Blob blob = blobStore.getBlob(getServiceProperty(StorageServiceConstants.S3_BUCKET), sanitizedPath);
+		Blob blob = blobStore.getBlob(container, sanitizedPath);
 
 		return blob.getPayload().getInput();
 	}
 
 	@Override
-	public void uploadInputStream(InputStream stream, String remoteDirectory, String filename, Long contentLength) throws UploadException, MethodNotSupportedException, FileNotExistsException {
+	public void uploadInputStream(InputStream stream, String container, String remoteDirectory, String filename, Long contentLength) throws UploadException, MethodNotSupportedException, FileNotExistsException {
 		String sanitizedPath = sanitizeRemotePath(remoteDirectory);
 
-		if (!sanitizedPath.trim().isEmpty() && !checkObjectExists(sanitizedPath)) {
+		if (!sanitizedPath.trim().isEmpty() && !checkObjectExists(container, sanitizedPath)) {
 			try {
-				createFolder(sanitizedPath);
+				createFolder(container, sanitizedPath);
 			} catch (FolderCreationException e) {
 				throw new UploadException("Destination path could not be created.");
 			}
@@ -113,7 +115,7 @@ public class S3StorageService extends ExtendedStorageService {
 		Blob blob = blobStore.newBlob(blobFullName);
 		blob.setPayload(stream);
 		blob.getPayload().getContentMetadata().setContentLength(contentLength);
-		blobStore.putBlob(getServiceProperty(StorageServiceConstants.S3_BUCKET), blob);
+		blobStore.putBlob(container, blob);
 
 		if (stream != null) {
 			try {
@@ -124,19 +126,19 @@ public class S3StorageService extends ExtendedStorageService {
 	}
 
 	@Override
-	public void deleteFile(String remotePathFile) {
+	public void deleteFile(String container, String remotePathFile) {
 		String sanitizedPath = sanitizeRemotePath(remotePathFile);
-		blobStore.removeBlob(getServiceProperty(StorageServiceConstants.S3_BUCKET), sanitizedPath);
+		blobStore.removeBlob(container, sanitizedPath);
 	}
 
 	@Override
-	public void deleteFolder(String remotePath) {
+	public void deleteFolder(String container, String remotePath) {
 		String sanitizedPath = sanitizeRemotePath(remotePath);
-		blobStore.deleteDirectory(getServiceProperty(StorageServiceConstants.S3_BUCKET), sanitizedPath);
+		blobStore.deleteDirectory(container, sanitizedPath);
 	}
 
 	@Override
-	public void createFolder(String remotePath) throws FolderCreationException, MethodNotSupportedException {
+	public void createFolder(String container, String remotePath) throws FolderCreationException, MethodNotSupportedException {
 
 		String sanitizedPath = sanitizeRemotePath(remotePath);
 
@@ -148,7 +150,7 @@ public class S3StorageService extends ExtendedStorageService {
 			accumulatedPath.append(partialPath);
 
 			try {
-				blobStore.createDirectory(getServiceProperty(StorageServiceConstants.S3_BUCKET), accumulatedPath.toString());
+				blobStore.createDirectory(container, accumulatedPath.toString());
 			} catch (Exception e) {
 				throw new FolderCreationException(remotePath + " could not be created.");
 			}
@@ -159,23 +161,23 @@ public class S3StorageService extends ExtendedStorageService {
 	}
 
 	@Override
-	public boolean checkFileExists(String remotePath) throws MethodNotSupportedException {
+	public boolean checkFileExists(String container, String remotePath) throws MethodNotSupportedException {
 		String sanitizedPath = sanitizeRemotePath(remotePath);
 
-		boolean blobExists = sanitizedPath.isEmpty() ? false : blobStore.blobExists(getServiceProperty(StorageServiceConstants.S3_BUCKET), sanitizedPath);
+		boolean blobExists = sanitizedPath.isEmpty() ? false : blobStore.blobExists(container, sanitizedPath);
 		return blobExists;
 	}
 
 	@Override
-	public boolean checkDirectoryExists(String remotePath) throws MethodNotSupportedException {
+	public boolean checkDirectoryExists(String container, String remotePath) throws MethodNotSupportedException {
 		String sanitizedPath = sanitizeRemotePath(remotePath);
 
-		boolean directoryExists = blobStore.directoryExists(getServiceProperty(StorageServiceConstants.S3_BUCKET), sanitizedPath);
+		boolean directoryExists = blobStore.directoryExists(container, sanitizedPath);
 		return directoryExists;
 	}
-	
+
 	@Override
-	public StorageObjectMetadata getMetadataForObject(String remotePathFile) {
+	public StorageObjectMetadata getMetadataForObject(String container, String remotePathFile) {
 
 		String name = FilenameUtils.getName(remotePathFile);
 		String path = FilenameUtils.getPathNoEndSeparator(remotePathFile);
@@ -184,15 +186,15 @@ public class S3StorageService extends ExtendedStorageService {
 		metadata.setPath(path);
 		metadata.setName(name);
 		metadata.setType(StorageObjectConstants.FILE_TYPE);
-		if(!path.trim().isEmpty()) {
+		if (!path.trim().isEmpty()) {
 			metadata.setPathAndName(path + "/" + name);
 		} else {
 			metadata.setPathAndName(name);
 		}
 
 		String sanitizedPath = sanitizeRemotePath(remotePathFile);
-		BlobMetadata blobMetadata = blobStore.blobMetadata(getServiceProperty(StorageServiceConstants.S3_BUCKET), sanitizedPath);
-		
+		BlobMetadata blobMetadata = blobStore.blobMetadata(container, sanitizedPath);
+
 		try {
 			metadata.setUri(blobMetadata.getUri());
 		} catch (Exception e) {
@@ -207,7 +209,7 @@ public class S3StorageService extends ExtendedStorageService {
 			metadata.setMd5hash(blobMetadata.getETag());
 		} catch (Exception e) {
 		}
-		
+
 		try {
 			metadata.setLastModified(blobMetadata.getLastModified());
 		} catch (Exception e) {
@@ -263,6 +265,39 @@ public class S3StorageService extends ExtendedStorageService {
 		s3Context = null;
 	}
 
+	@Override
+	public void createContainer(String name) throws CreateContainerException {
+		try {
+			blobStore.createContainerInLocation(null, name);
+		} catch (Exception e) {
+			throw new CreateContainerException(e.getMessage());
+		}
+	}
+
+	@Override
+	public void deleteContainer(String name) throws DeleteContainerException {
+		blobStore.deleteContainer(name);
+	}
+
+	@Override
+	public List<StorageObjectMetadata> listContainers() {
+		PageSet<? extends StorageMetadata> list = blobStore.list();
+		List<StorageObjectMetadata> result = new ArrayList<StorageObjectMetadata>();
+		for (StorageMetadata file : list) {
+			if (!file.getName().isEmpty()) {
+				StorageObjectMetadata storageObjectMetadata = toStorageObjectMetadata(file, null);
+				result.add(storageObjectMetadata);
+			}
+		}
+		
+		return result;
+	}
+
+	@Override
+	public boolean existsContainer(String name) {
+		return blobStore.containerExists(name);
+	}
+
 	private String sanitizeRemotePath(String... remoteDirectoryComponents) {
 
 		StringBuffer remotePath = new StringBuffer();
@@ -283,7 +318,7 @@ public class S3StorageService extends ExtendedStorageService {
 		}
 	}
 
-	private StorageObjectMetadata toStorageObjectMetadata(StorageMetadata blobMetadata) {
+	private StorageObjectMetadata toStorageObjectMetadata(StorageMetadata blobMetadata, String container) {
 		String name = FilenameUtils.getName(blobMetadata.getName());
 		String path = FilenameUtils.getPathNoEndSeparator(blobMetadata.getName());
 
@@ -292,16 +327,19 @@ public class S3StorageService extends ExtendedStorageService {
 		metadata.setName(name);
 		metadata.setLastModified(blobMetadata.getLastModified());
 		metadata.setMd5hash(blobMetadata.getETag());
-		
-		if(!path.trim().isEmpty()) {
+		metadata.setContainer(container);
+
+		if (!path.trim().isEmpty()) {
 			metadata.setPathAndName(path + "/" + name);
 		} else {
 			metadata.setPathAndName(name);
 		}
-		
+
 		if (blobMetadata.getType().equals(StorageType.BLOB)) {
 			metadata.setType(StorageObjectConstants.FILE_TYPE);
 			metadata.setLength(((MutableBlobMetadata) blobMetadata).getContentMetadata().getContentLength());
+		} else if (blobMetadata.getType().equals(StorageType.CONTAINER)) {
+			metadata.setType(StorageObjectConstants.CONTAINER_TYPE);
 		} else {
 			metadata.setType(StorageObjectConstants.DIRECTORY_TYPE);
 		}
