@@ -1,0 +1,18 @@
+<storageServices>
+	<storageService class="LocalStorageServiceParser">
+		<parameter key="localBaseFolder" value="d:/remote_mock/"/>
+	</storageService>
+	<!-- 
+	<storageService class="GoogleStorageServiceParser">
+		<parameter key="googleStorageAccessKey" value=""/>
+		<parameter key="googleStorageSecretKey" value=""/>
+	</storageService>
+	<storageService class="S3StorageServiceParser">
+		<parameter key="s3AccessKey" value=""/>
+		<parameter key="s3SecretKey" value=""/>
+	</storageService>
+	<storageService class="LocalStorageServiceParser">
+		<parameter key="localBaseFolder" value="d:/remote_mock/"/>
+	</storageService>
+	 -->
+</storageServices>
