@@ -43,6 +43,7 @@ import org.jets3t.service.model.S3Object;
 import org.jets3t.service.model.StorageObject;
 import org.jets3t.service.model.StorageOwner;
 import org.jets3t.service.security.ProviderCredentials;
+import org.jets3t.service.utils.ServiceUtils;
 
 import com.tesis.aether.core.exception.ConnectionException;
 import com.tesis.aether.core.exception.DeleteException;
@@ -156,9 +157,9 @@ public class RestS3Service extends S3Service {
 			String path = FilenameUtils.getPathNoEndSeparator(object.getName());
 
 			service.uploadInputStream(object.getDataInputStream(), bucketName, path, name, object.getContentLength());
-			
+
 			object.setLastModifiedDate(new Date());
-			
+
 			return object;
 		} catch (UploadException e) {
 			e.printStackTrace();
@@ -170,25 +171,6 @@ public class RestS3Service extends S3Service {
 			e.printStackTrace();
 			return null;
 		}
-	}
-
-	@Override
-	public S3Object[] listObjects(String bucketName) throws S3ServiceException {
-		List<StorageObjectMetadata> listFiles;
-		try {
-			listFiles = service.listFiles(bucketName, "", true);
-			return aetherMetadataListToS3ObjectArray(listFiles, bucketName);
-		} catch (Exception e) {
-			e.printStackTrace();
-			return null;
-		}
-	}
-
-	protected StorageObjectsChunk listObjectsInternal(String bucketName, String prefix, String delimiter, long maxListingLength, boolean automaticallyMergeChunks, String priorLastKey, String priorLastVersion) throws ServiceException {
-
-		S3Object[] listObjects = listObjects(bucketName, prefix, delimiter, maxListingLength);
-
-		return new StorageObjectsChunk(prefix, delimiter, listObjects, null, null);
 	}
 
 	public void deleteObject(S3Bucket bucket, String objectKey) throws S3ServiceException {
@@ -215,12 +197,36 @@ public class RestS3Service extends S3Service {
 	public S3Object[] listObjects(String bucketName, String prefix, String delimiter) throws S3ServiceException {
 		List<StorageObjectMetadata> listFiles;
 		try {
-			listFiles = service.listFiles(bucketName, prefix, true);
+			if (prefix != null) {
+				listFiles = service.listFiles(bucketName, prefix, true);
+			} else {
+				listFiles = service.listFiles(bucketName, "", true);
+			}
 			return aetherMetadataListToS3ObjectArray(listFiles, bucketName);
 		} catch (Exception e) {
 			e.printStackTrace();
 			return null;
 		}
+	}
+
+	@Override
+	public S3Object[] listObjects(String bucketName) throws S3ServiceException {
+		List<StorageObjectMetadata> listFiles;
+		try {
+			listFiles = service.listFiles(bucketName, "", true);
+			return aetherMetadataListToS3ObjectArray(listFiles, bucketName);
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+
+	protected StorageObjectsChunk listObjectsInternal(String bucketName, String prefix, String delimiter, long maxListingLength, boolean automaticallyMergeChunks, String priorLastKey, String priorLastVersion) throws ServiceException {
+
+		S3Object[] listObjects = listObjects(bucketName, prefix, delimiter, maxListingLength);
+
+		StorageObjectsChunk storageObjectsChunk = new StorageObjectsChunk(prefix, delimiter, listObjects, new String[0], null);
+		return storageObjectsChunk;
 	}
 
 	public void deleteBucket(String bucketName) throws ServiceException {
@@ -252,13 +258,12 @@ public class RestS3Service extends S3Service {
 		}
 	}
 
-
 	/**
 	 * UTIL
 	 */
 	private S3Bucket[] toS3Bucket(List<StorageObjectMetadata> listContainers) {
 		S3Bucket[] buckets = new S3Bucket[listContainers.size()];
-		for(int i=0; i<listContainers.size(); i++) {
+		for (int i = 0; i < listContainers.size(); i++) {
 			S3Bucket bucket = new S3Bucket(listContainers.get(i).getName());
 			bucket.setOwner(new StorageOwner());
 			buckets[i] = bucket;
@@ -270,7 +275,7 @@ public class RestS3Service extends S3Service {
 		Map<String, Object> jets3metadata = new HashMap<String, Object>();
 		jets3metadata.put(BaseStorageItem.METADATA_HEADER_LAST_MODIFIED_DATE, metadata.getLastModified());
 		jets3metadata.put(BaseStorageItem.METADATA_HEADER_CONTENT_LENGTH, metadata.getLength().toString());
-		jets3metadata.put(BaseStorageItem.METADATA_HEADER_CONTENT_MD5, metadata.getMd5hash());
+		jets3metadata.put(BaseStorageItem.METADATA_HEADER_CONTENT_MD5, ServiceUtils.toBase64(ServiceUtils.fromHex(metadata.getMd5hash())));
 		return jets3metadata;
 	}
 
