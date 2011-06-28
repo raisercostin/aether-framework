@@ -8,12 +8,6 @@
 	<name>aether-loader</name>
 	<url>http://maven.apache.org</url>
 
-	<parent>
-		<groupId>com.tesis.aether</groupId>
-		<artifactId>aether</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
-	</parent>
-	
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
@@ -33,7 +27,7 @@
 		<dependency>
 			<groupId>javassist</groupId>
 			<artifactId>javassist</artifactId>
-			<version>3.11.0.GA</version>
+			<version>3.12.0.GA</version>
 		</dependency>
 	</dependencies>
 </project>
