@@ -59,12 +59,18 @@ public class ConfigClassLoader {
 			ParserConfigurationException {
 		System.out.println("loading configuration from: " + this.path);
 		File fXmlFile = new File(path);
+		System.out.println("Path de carga: " + fXmlFile.getAbsolutePath());
 		DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 		DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
 		Document doc = dBuilder.parse(fXmlFile);
 		doc.getDocumentElement().normalize();
 		NodeList nListExceptions = doc.getElementsByTagName("classException");
 		String src, dst;
+		if (nListExceptions.getLength() == 0) {
+			System.out.println("No se han encontrado clases para reemplazar...");
+		} else {
+			System.out.println("Se han encontrado " + nListExceptions.getLength() + " clases para reemplazar...");
+		}
 		for (int temp = 0; temp < nListExceptions.getLength(); temp++) {
 			Node nNode = nListExceptions.item(temp);
 			if (nNode.getNodeType() == Node.ELEMENT_NODE) {
