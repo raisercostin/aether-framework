@@ -104,9 +104,11 @@ public class ClassManipulator {
 					_accessName + " = new " + className + "(); ";
 		} 
 		if (retType) {
-			_call += "return " + _accessName + "." + methodName + "($$);}";
+			_call += "System.out.println(\"" + methodName + "\");";
+			_call += "return " + _accessName + ".getInstance()." + methodName + "($$);}";
 		} else {
-			_call += _accessName + "." + methodName + "($$); return;}";
+			_call += "System.out.println(\"" + methodName + "\");";
+			_call += _accessName + ".getInstance()." + methodName + "($$); return;}";
 		}
 		_method.setBody(_call);
 	}
@@ -144,22 +146,32 @@ public class ClassManipulator {
 			pool.importPackage(pckName);
 		}
 		CtClass cc = pool.get(origName);
+		CtClass cc2 = pool.get(nameClassDst);
 		if (useField) {
-			addClassField(true, nameClassDst, getGeneratedFieldName(getClassName(nameClassDst)), "", cc);
+			//addClassField(true, nameClassDst, getGeneratedFieldName(getClassName(nameClassDst)), "", cc);
 		}
-		CtMethod[] methods = cc.getDeclaredMethods();
+		CtMethod[] methods = cc.getMethods();
+		CtMethod[] methods2 = cc2.getDeclaredMethods();
 		int i = 0;
-		while (i < methods.length) {
-			CtMethod method = methods[i];
+		while (i < methods2.length) {
+			CtMethod method2 = methods2[i];
+			
+			
 			try {
+				CtMethod method = cc.getMethod(method2.getName(), method2.getSignature());
+				
 				ClassManipulator.addCall(nameClassDst, method.getName(), !method.getReturnType().getName().equals("void"), 
-						method, useField);
+						method, false);
+				
+				System.out.println("Agregada la llamada en el metodo: '" + method.getName());
+				logger.info("Agregada la llamada en el metodo: " + method.getName());
 			} catch (Exception e) {
-				System.out.println("No se pudo agregar la llamada en el metodo: '" + method.getName() + 
+				System.out.println("No se pudo agregar la llamada en el metodo: '" + method2.getName() + 
 						"' posiblemente no exista en la clase destino: '" + nameClassDst + "'");
-				logger.error("No se pudo agregar código en el método: " + method.getName(), e);
+				logger.error("No se pudo agregar código en el método: " + method2.getName(), e);
 			}
 			i++;
+			
 		}
 		return cc.toClass();
 	}
