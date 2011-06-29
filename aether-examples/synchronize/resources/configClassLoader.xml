@@ -3,7 +3,7 @@
 		<srcClass>org.jets3t.service.impl.rest.httpclient.RestS3Service</srcClass>
 		<dstClass>com.tesis.aether.adapters.jets3t.RestS3Service</dstClass>
 	</classException>
-	<classException>
+<!--	<classException>
 		<srcClass>org.jets3t.service.StorageService</srcClass>
 		<dstClass>com.tesis.aether.adapters.jets3t.RestS3Service</dstClass>
 	</classException>
@@ -18,5 +18,5 @@
 	<packageException>
 		<srcPackage></srcPackage>
 		<dstPackage></dstPackage>
-	</packageException>
+	</packageException>-->
 </ClassLoaderConfig>
