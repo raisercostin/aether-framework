@@ -1,7 +1,7 @@
 <ClassLoaderConfig>
 	<classException>
-		<srcClass>com.tesis.aether.tests.Test1</srcClass>
-		<dstClass>com.tesis.aether.tests.Test2</dstClass>
+		<srcClass>org.jets3t.service.impl.rest.httpclient.RestS3Service</srcClass>
+		<dstClass>com.tesis.aether.adapters.jets3t.RestS3Service</dstClass>
 	</classException>
 	<packageException>
 		<srcPackage></srcPackage>

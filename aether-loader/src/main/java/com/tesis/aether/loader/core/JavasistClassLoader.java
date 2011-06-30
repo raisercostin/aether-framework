@@ -235,6 +235,31 @@ public class JavasistClassLoader extends ClassLoader {
 		return clas;
 	}
 
+	private String findPath(String name, String extension) {
+		String classpath = System.getProperty("java.class.path");
+		String fileStub = name.replace('.', '/');
+		if (classpath != null) {
+			String[] classpathItems = classpath.split(";");
+			boolean search = true;
+			int i = 0;
+			String classpathItem = "";
+			while (search && i < classpathItems.length) {
+				classpathItem = classpathItems[i];
+				System.out.println("BUSCANDO PATH EN: " + classpathItem);
+				String path = classpathItem.replace("\\", "/").concat("/");
+				String fileName = path + fileStub + "." + extension;
+				File file = new File(fileName);
+				if (file.exists()) {
+					System.out.println("PATH DEL ARCHIVO: " + path);
+					return path;
+				}
+				i++;
+			}
+		}
+		System.out.println("PATH DEL ARCHIVO NO ENCONTRADO");
+		return null;
+	}
+	
 	/**
 	 * Cargador de clases utilizado para las clases que no estan en las excepciones
 	 * @param name nombre de la clase a cargar
@@ -304,14 +329,28 @@ public class JavasistClassLoader extends ClassLoader {
 			loadConfigurations = false;
 			logger = Logger.getLogger("default");
 			PropertyConfigurator.configure("resources/log4j.properties");
-			logger.debug("loading " + origName + "...");
-			try {
-				loadClassMapper("resources/configClassLoader.xml");
-			} catch (Exception e) {
-				logger.error("Error al cargar la configuracion de mapeo de clases y paquetes.");
-				logger.error(e);
+			
+			//carga de clases a mapear
+			String actualPath = new File (".").getAbsolutePath();//System.getProperty("user.dir");
+			System.out.println("Current Path: " + actualPath);
+			String path = findPath("configClassLoader", "xml");
+			if (path != null) {
+				try {
+					loadClassMapper(path + "configClassLoader.xml");
+				} catch (Exception e) {
+					logger.error("Error al cargar la configuracion de mapeo de clases y paquetes.");
+					logger.error(e);
+				}
+			} else {
+				try {
+					loadClassMapper("resources/configClassLoader.xml");
+				} catch (Exception e) {
+					logger.error("Error al cargar la configuracion de mapeo de clases y paquetes.");
+					logger.error(e);
+				}
 			}
 		}
+		logger.debug("loading " + origName + "...");
 		if (!isExceptedClass(origName)) {
 			//Si la clase no esta en la lista de excepciones entonces
 			//se carga con un classloader normal
