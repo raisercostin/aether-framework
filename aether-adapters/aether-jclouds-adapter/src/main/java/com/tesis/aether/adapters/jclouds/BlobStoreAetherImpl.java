@@ -29,11 +29,12 @@ import com.tesis.aether.core.exception.FolderCreationException;
 import com.tesis.aether.core.exception.MethodNotSupportedException;
 import com.tesis.aether.core.exception.UploadException;
 import com.tesis.aether.core.factory.ServiceFactory;
+import com.tesis.aether.core.framework.adapter.AetherFrameworkAdapter;
 import com.tesis.aether.core.services.storage.ExtendedStorageService;
 import com.tesis.aether.core.services.storage.object.StorageObject;
 import com.tesis.aether.core.services.storage.object.StorageObjectMetadata;
 
-public class BlobStoreAetherImpl implements BlobStore {
+public class BlobStoreAetherImpl implements BlobStore, AetherFrameworkAdapter {
 
 	private ExtendedStorageService service;
 

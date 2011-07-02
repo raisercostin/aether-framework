@@ -4,7 +4,6 @@ import com.tesis.aether.core.factory.ServiceAccountProperties;
 import com.tesis.aether.core.services.storage.ExtendedStorageService;
 import com.tesis.aether.core.services.storage.constants.StorageServiceConstants;
 import com.tesis.aether.core.services.storage.imp.google.storage.GoogleV1StorageService;
-import com.tesis.aether.core.services.storage.imp.s3.S3StorageService;
 
 
 public class GoogleV1StorageServiceTest extends StorageServiceTest {
