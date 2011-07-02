@@ -19,10 +19,11 @@ import com.tesis.aether.core.exception.FileNotExistsException;
 import com.tesis.aether.core.exception.MethodNotSupportedException;
 import com.tesis.aether.core.exception.UploadException;
 import com.tesis.aether.core.factory.ServiceFactory;
+import com.tesis.aether.core.framework.adapter.AetherFrameworkAdapter;
 import com.tesis.aether.core.services.storage.ExtendedStorageService;
 import com.tesis.aether.core.services.storage.object.StorageObjectMetadata;
 
-public class S3 implements BlobStoreSupport {
+public class S3 implements BlobStoreSupport, AetherFrameworkAdapter{
 
 	private ExtendedStorageService service;
 

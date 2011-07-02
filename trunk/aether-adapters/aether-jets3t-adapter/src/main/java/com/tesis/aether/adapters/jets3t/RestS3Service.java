@@ -19,18 +19,14 @@
 package com.tesis.aether.adapters.jets3t;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 import org.apache.commons.httpclient.HostConfiguration;
-import org.apache.commons.httpclient.HttpMethodBase;
 import org.apache.commons.httpclient.auth.CredentialsProvider;
-import org.apache.commons.httpclient.methods.DeleteMethod;
-import org.apache.commons.httpclient.methods.GetMethod;
-import org.apache.commons.httpclient.methods.HeadMethod;
-import org.apache.commons.httpclient.methods.PutMethod;
 import org.apache.commons.io.FilenameUtils;
 import org.jets3t.service.Constants;
 import org.jets3t.service.Jets3tProperties;
@@ -39,17 +35,18 @@ import org.jets3t.service.S3ServiceException;
 import org.jets3t.service.ServiceException;
 import org.jets3t.service.StorageObjectsChunk;
 import org.jets3t.service.VersionOrDeleteMarkersChunk;
+import org.jets3t.service.acl.AccessControlList;
 import org.jets3t.service.model.BaseStorageItem;
 import org.jets3t.service.model.BaseVersionOrDeleteMarker;
 import org.jets3t.service.model.S3Bucket;
 import org.jets3t.service.model.S3BucketLoggingStatus;
 import org.jets3t.service.model.S3BucketVersioningStatus;
 import org.jets3t.service.model.S3Object;
+import org.jets3t.service.model.StorageBucket;
 import org.jets3t.service.model.StorageObject;
 import org.jets3t.service.model.StorageOwner;
 import org.jets3t.service.security.AWSCredentials;
 import org.jets3t.service.security.ProviderCredentials;
-import org.jets3t.service.utils.RestUtils;
 import org.jets3t.service.utils.ServiceUtils;
 
 import com.tesis.aether.core.exception.ConnectionException;
@@ -58,10 +55,11 @@ import com.tesis.aether.core.exception.FileNotExistsException;
 import com.tesis.aether.core.exception.MethodNotSupportedException;
 import com.tesis.aether.core.exception.UploadException;
 import com.tesis.aether.core.factory.ServiceFactory;
+import com.tesis.aether.core.framework.adapter.AetherFrameworkAdapter;
 import com.tesis.aether.core.services.storage.ExtendedStorageService;
 import com.tesis.aether.core.services.storage.object.StorageObjectMetadata;
 
-public class RestS3Service extends S3Service {
+public class RestS3Service extends S3Service implements AetherFrameworkAdapter {
 
 	private static RestS3Service INSTANCE = null;
 	private static final String AWS_SIGNATURE_IDENTIFIER = "AWS";
@@ -130,6 +128,10 @@ public class RestS3Service extends S3Service {
 		}
 	}
 
+	public StorageObject getObjectImpl(String bucketName, String objectKey, Calendar ifModifiedSince, Calendar ifUnmodifiedSince, String[] ifMatchTags, String[] ifNoneMatchTags, Long byteRangeStart, Long byteRangeEnd, String versionId) throws ServiceException {
+		return this.getObject(bucketName, objectKey);
+	}
+
 	@Override
 	public S3Object getObject(S3Bucket bucketName, String objectKey) {
 		return this.getObject(bucketName.getName(), objectKey);
@@ -165,6 +167,19 @@ public class RestS3Service extends S3Service {
 		}
 	}
 
+	@Override
+	public StorageObject getObjectDetailsImpl(String bucketName, String objectKey, Calendar ifModifiedSince, Calendar ifUnmodifiedSince, String[] ifMatchTags, String[] ifNoneMatchTags, String versionId) throws ServiceException {
+		return getObjectDetails(bucketName, objectKey);
+	}
+
+	public StorageObject putObjectImpl(String bucketName, StorageObject object) throws ServiceException {
+		try {
+			return (S3Object) this.putObject(bucketName, object);
+		} catch (ServiceException se) {
+			throw new S3ServiceException(se);
+		}
+	}
+
 	public S3Object putObject(String bucketName, S3Object object) throws S3ServiceException {
 		try {
 			return (S3Object) this.putObject(bucketName, (StorageObject) object);
@@ -180,8 +195,9 @@ public class RestS3Service extends S3Service {
 			String name = FilenameUtils.getName(object.getName());
 			String path = FilenameUtils.getPathNoEndSeparator(object.getName());
 
-			service.uploadInputStream(object.getDataInputStream(), bucketName, path, name, object.getContentLength());
-
+			if (object.getDataInputStream() != null) {
+				service.uploadInputStream(object.getDataInputStream(), bucketName, path, name, object.getContentLength());
+			}
 			object.setLastModifiedDate(new Date());
 
 			return object;
@@ -203,6 +219,18 @@ public class RestS3Service extends S3Service {
 		} catch (DeleteException e) {
 			e.printStackTrace();
 		}
+	}
+
+	public void deleteObject(String bucket, String objectKey) throws S3ServiceException {
+		try {
+			service.delete(bucket, objectKey, true);
+		} catch (DeleteException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void deleteObjectImpl(String bucketName, String objectKey, String versionId, String multiFactorSerialNumber, String multiFactorAuthCode) throws ServiceException {
+		this.deleteObject(bucketName, objectKey);
 	}
 
 	// AETHER NO SOPORTA DELIMITER
@@ -245,6 +273,10 @@ public class RestS3Service extends S3Service {
 		}
 	}
 
+	public StorageObject[] listObjectsImpl(String bucketName, String prefix, String delimiter, long maxListingLength) throws ServiceException {
+		return this.listObjects(bucketName, prefix, delimiter);
+	}
+
 	public StorageObjectsChunk listObjectsInternal(String bucketName, String prefix, String delimiter, long maxListingLength, boolean automaticallyMergeChunks, String priorLastKey, String priorLastVersion) throws ServiceException {
 
 		S3Object[] listObjects = listObjects(bucketName, prefix, delimiter, maxListingLength);
@@ -253,11 +285,32 @@ public class RestS3Service extends S3Service {
 		return storageObjectsChunk;
 	}
 
+	public StorageObjectsChunk listObjectsChunkedImpl(String bucketName, String prefix, String delimiter, long maxListingLength, String priorLastKey, boolean completeListing) throws ServiceException {
+		return this.listObjectsInternal(bucketName, prefix, delimiter, maxListingLength, true, priorLastKey, null);
+	}
+
 	public void deleteBucket(String bucketName) throws ServiceException {
 		try {
 			service.deleteContainer(bucketName);
 		} catch (Exception e) {
 			e.printStackTrace();
+		}
+	}
+
+	public void deleteBucketImpl(String bucketName) throws ServiceException {
+		this.deleteBucket(bucketName);
+	}
+
+	public S3Bucket createBucket(String bucketName) throws S3ServiceException {
+		try {
+			service.createContainer(bucketName);
+			S3Bucket bucket = new S3Bucket();
+			bucket.setName(bucketName);
+			bucket.setOwner(new StorageOwner());
+			return bucket;
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
 		}
 	}
 
@@ -271,6 +324,10 @@ public class RestS3Service extends S3Service {
 		}
 	}
 
+	public StorageBucket createBucketImpl(String bucketName, String location, AccessControlList acl) throws ServiceException {
+		return this.createBucket(bucketName);
+	}
+
 	@Override
 	public S3Bucket[] listAllBuckets() throws S3ServiceException {
 		try {
@@ -280,6 +337,10 @@ public class RestS3Service extends S3Service {
 			e.printStackTrace();
 			return null;
 		}
+	}
+
+	public StorageBucket[] listAllBucketsImpl() throws ServiceException {
+		return this.listAllBuckets();
 	}
 
 	/**
@@ -432,64 +493,38 @@ public class RestS3Service extends S3Service {
 		return this.jets3tProperties.getBoolProperty("s3service.enable-storage-classes", false);
 	}
 
-	public HttpMethodBase setupConnection(String method, String bucketName, String objectKey, Map<String, Object> requestParameters) throws ServiceException {
-		System.out.println("fewfwefwefe");
-		if (bucketName == null) {
-			throw new ServiceException("Cannot connect to S3 Service with a null path");
-		}
-
-		boolean disableDnsBuckets = this.getDisableDnsBuckets();
-		String s3Endpoint = this.getEndpoint();
-		String hostname = ServiceUtils.generateS3HostnameForBucket(bucketName, disableDnsBuckets, s3Endpoint);
-
-		// Allow for non-standard virtual directory paths on the server-side
-		String virtualPath = this.getVirtualPath();
-
-		// Determine the resource string (ie the item's path in S3, including
-		// the bucket name)
-		String resourceString = "/";
-		if (hostname.equals(s3Endpoint) && bucketName.length() > 0) {
-			resourceString += bucketName + "/";
-		}
-		resourceString += (objectKey != null ? RestUtils.encodeUrlString(objectKey) : "");
-
-		// Construct a URL representing a connection for the S3 resource.
-		String url = null;
-		if (isHttpsOnly()) {
-			int securePort = this.getHttpsPort();
-			url = "https://" + hostname + ":" + securePort + virtualPath + resourceString;
-		} else {
-			int insecurePort = this.getHttpPort();
-			url = "http://" + hostname + ":" + insecurePort + virtualPath + resourceString;
-		}
-
-		// Add additional request parameters to the URL for special cases (eg
-		// ACL operations)
-		url = addRequestParametersToUrlPath(url, requestParameters);
-
-		HttpMethodBase httpMethod = null;
-		if ("PUT".equals(method)) {
-			httpMethod = new PutMethod(url);
-		} else if ("HEAD".equals(method)) {
-			httpMethod = new HeadMethod(url);
-		} else if ("GET".equals(method)) {
-			httpMethod = new GetMethod(url);
-		} else if ("DELETE".equals(method)) {
-			httpMethod = new DeleteMethod(url);
-		} else {
-			throw new IllegalArgumentException("Unrecognised HTTP method name: " + method);
-		}
-
-		// Set mandatory Request headers.
-		if (httpMethod.getRequestHeader("Date") == null) {
-			httpMethod.setRequestHeader("Date", ServiceUtils.formatRfc822Date(getCurrentTimeWithOffset()));
-		}
-		if (httpMethod.getRequestHeader("Content-Type") == null) {
-			httpMethod.setRequestHeader("Content-Type", "");
-		}
-		
-		System.out.println("fewfwefwefe");
-		
-		return httpMethod;
+	public boolean isBucketAccessible(String bucketName) throws ServiceException {
+		return false;
 	}
+
+	public int checkBucketStatus(String bucketName) throws ServiceException {
+		return 0;
+	}
+
+	public StorageOwner getAccountOwnerImpl() throws ServiceException {
+		return null;
+	}
+
+	public Map<String, Object> copyObjectImpl(String sourceBucketName, String sourceObjectKey, String destinationBucketName, String destinationObjectKey, AccessControlList acl, Map<String, Object> destinationMetadata, Calendar ifModifiedSince, Calendar ifUnmodifiedSince, String[] ifMatchTags, String[] ifNoneMatchTags,
+			String versionId, String destinationObjectStorageClass) throws ServiceException {
+		return null;
+	}
+
+	public void putBucketAclImpl(String bucketName, AccessControlList acl) throws ServiceException {
+	}
+
+	public void putObjectAclImpl(String bucketName, String objectKey, AccessControlList acl, String versionId) throws ServiceException {
+	}
+
+	public AccessControlList getObjectAclImpl(String bucketName, String objectKey, String versionId) throws ServiceException {
+		return null;
+	}
+
+	public AccessControlList getBucketAclImpl(String bucketName) throws ServiceException {
+		return null;
+	}
+
+	public void shutdownImpl() throws ServiceException {
+	}
+
 }
