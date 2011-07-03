@@ -18,5 +18,15 @@
 			<artifactId>aether-jets3t-adapter</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+        <dependency>
+			<groupId>com.tesis.aether.loader</groupId>
+			<artifactId>aether-loader</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+        </dependency>
+		<dependency>
+			<groupId>net.java.dev.jets3t</groupId>
+			<artifactId>jets3t</artifactId>
+			<version>0.8.0</version>
+		</dependency>
 	</dependencies>
 </project>
