@@ -172,6 +172,9 @@ public class ClassManipulator {
 	 */
 	@SuppressWarnings("rawtypes")
 	public static Class addClassCalls(String origName, String nameClassDst, boolean useField) throws CannotCompileException, NotFoundException {
+		System.out.println("\nModifying methods for class: " + origName);
+		logger.info("Modifying methods for class: " + origName);
+		
 		ClassPool pool = ClassPool.getDefault();
 		String pckName = getPackageName(origName);
 		if (!"".equals(pckName)) {
@@ -191,6 +194,9 @@ public class ClassManipulator {
 
 			try {
 				CtMethod method = cc.getMethod(method2.getName(), method2.getSignature());
+				//if(method.getDeclaringClass().isFrozen()) {
+				//	method.getDeclaringClass().defrost();
+				//}
 				if (!method.toString().contains(" abstract ")) {
 					ClassManipulator.addCall(nameClassDst, method.getName(), !method.getReturnType().getName().equals("void"), method, false);
 					System.out.println("Agregada la llamada en el metodo: '" + method.getName());
