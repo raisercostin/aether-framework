@@ -74,17 +74,12 @@ public class JetS3tAetherFrameworkAdapter extends AetherFrameworkAdapter {
 	}
 
 	public StorageObject getObjectDetails(String bucketName, String objectKey) throws ServiceException {
-		try {
-			com.tesis.aether.core.services.storage.object.StorageObject storageObject = service.getStorageObject(bucketName, objectKey);
-			StorageObject object = new StorageObject(objectKey);
-			object.addAllMetadata(generateJetS3tMetadata(storageObject.getMetadata()));
-			object.setStorageClass("STANDARD");
-			object.setETag(storageObject.getMetadata().getMd5hash());
-			return object;
-		} catch (FileNotExistsException e) {
-			e.printStackTrace();
-			return null;
-		}
+		StorageObjectMetadata storageObject = service.getMetadataForObject(bucketName, objectKey);
+		StorageObject object = new StorageObject(objectKey);
+		object.addAllMetadata(generateJetS3tMetadata(storageObject));
+		object.setStorageClass("STANDARD");
+		object.setETag(storageObject.getMd5hash());
+		return object;
 	}
 
 	public S3Object getObjectDetails(S3Bucket bucket, String objectKey) throws S3ServiceException {
