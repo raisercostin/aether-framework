@@ -1,4 +1,4 @@
-package org.dasein.cloud.aws.storage;
+package com.tesis.aether.adapters.dasein;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -8,34 +8,28 @@ import java.util.Locale;
 import org.apache.commons.io.FilenameUtils;
 import org.dasein.cloud.CloudException;
 import org.dasein.cloud.InternalException;
-import org.dasein.cloud.aws.AWSCloud;
 import org.dasein.cloud.encryption.Encryption;
-import org.dasein.cloud.storage.BlobStoreSupport;
 import org.dasein.cloud.storage.CloudStoreObject;
 import org.dasein.cloud.storage.FileTransfer;
 
-import com.tesis.aether.core.exception.ConnectionException;
 import com.tesis.aether.core.exception.FileNotExistsException;
 import com.tesis.aether.core.exception.MethodNotSupportedException;
 import com.tesis.aether.core.exception.UploadException;
-import com.tesis.aether.core.factory.ServiceFactory;
 import com.tesis.aether.core.framework.adapter.AetherFrameworkAdapter;
-import com.tesis.aether.core.services.storage.ExtendedStorageService;
 import com.tesis.aether.core.services.storage.object.StorageObjectMetadata;
 
-public class S3 implements BlobStoreSupport, AetherFrameworkAdapter{
+public class DaseinAetherFrameworkAdapter extends AetherFrameworkAdapter {
+	private static DaseinAetherFrameworkAdapter INSTANCE = null;
 
-	private ExtendedStorageService service;
+	protected DaseinAetherFrameworkAdapter() {
+		super();
+	}
 
-	public S3(AWSCloud provider) {
-		service = ServiceFactory.instance.getFirstStorageService();
-		try {
-			service.connect(null);
-		} catch (ConnectionException e) {
-			e.printStackTrace();
-		} catch (MethodNotSupportedException e) {
-			e.printStackTrace();
+	public static DaseinAetherFrameworkAdapter getInstance() {
+		if (INSTANCE == null) {
+			INSTANCE = new DaseinAetherFrameworkAdapter();
 		}
+		return INSTANCE;
 	}
 
 	public FileTransfer download(CloudStoreObject sourceFile, File toFile) throws CloudException, InternalException {
