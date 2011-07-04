@@ -5,7 +5,6 @@ import java.util.List;
 import java.util.Set;
 
 import org.apache.commons.io.FilenameUtils;
-import org.jclouds.blobstore.BlobStore;
 import org.jclouds.blobstore.BlobStoreContext;
 import org.jclouds.blobstore.domain.Blob;
 import org.jclouds.blobstore.domain.BlobMetadata;
@@ -20,7 +19,6 @@ import org.jclouds.blobstore.options.GetOptions;
 import org.jclouds.blobstore.options.ListContainerOptions;
 import org.jclouds.domain.Location;
 
-import com.tesis.aether.core.exception.ConnectionException;
 import com.tesis.aether.core.exception.CreateContainerException;
 import com.tesis.aether.core.exception.DeleteContainerException;
 import com.tesis.aether.core.exception.DeleteException;
@@ -28,26 +26,22 @@ import com.tesis.aether.core.exception.FileNotExistsException;
 import com.tesis.aether.core.exception.FolderCreationException;
 import com.tesis.aether.core.exception.MethodNotSupportedException;
 import com.tesis.aether.core.exception.UploadException;
-import com.tesis.aether.core.factory.ServiceFactory;
 import com.tesis.aether.core.framework.adapter.AetherFrameworkAdapter;
-import com.tesis.aether.core.services.storage.ExtendedStorageService;
 import com.tesis.aether.core.services.storage.object.StorageObject;
 import com.tesis.aether.core.services.storage.object.StorageObjectMetadata;
 
-public class BlobStoreAetherImpl implements BlobStore, AetherFrameworkAdapter {
+public class JCloudsAetherFrameworkAdapter extends AetherFrameworkAdapter {
+	private static JCloudsAetherFrameworkAdapter INSTANCE = null;
 
-	private ExtendedStorageService service;
+	protected JCloudsAetherFrameworkAdapter() {
+		super();
+	}
 
-	public BlobStoreAetherImpl() {
-
-		service = ServiceFactory.instance.getFirstStorageService();
-		try {
-			service.connect(null);
-		} catch (ConnectionException e) {
-			e.printStackTrace();
-		} catch (MethodNotSupportedException e) {
-			e.printStackTrace();
+	public static JCloudsAetherFrameworkAdapter getInstance() {
+		if (INSTANCE == null) {
+			INSTANCE = new JCloudsAetherFrameworkAdapter();
 		}
+		return INSTANCE;
 	}
 
 	public BlobStoreContext getContext() {
