@@ -1,21 +1,3 @@
-/*
- * JetS3t : Java S3 Toolkit
- * Project hosted at http://bitbucket.org/jmurty/jets3t/
- *
- * Copyright 2006-2010 James Murty
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
 package com.tesis.aether.adapters.jets3t;
 
 import java.util.ArrayList;
@@ -25,12 +7,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.commons.httpclient.HostConfiguration;
-import org.apache.commons.httpclient.auth.CredentialsProvider;
 import org.apache.commons.io.FilenameUtils;
-import org.jets3t.service.Constants;
-import org.jets3t.service.Jets3tProperties;
-import org.jets3t.service.S3Service;
 import org.jets3t.service.S3ServiceException;
 import org.jets3t.service.ServiceException;
 import org.jets3t.service.StorageObjectsChunk;
@@ -45,73 +22,33 @@ import org.jets3t.service.model.S3Object;
 import org.jets3t.service.model.StorageBucket;
 import org.jets3t.service.model.StorageObject;
 import org.jets3t.service.model.StorageOwner;
-import org.jets3t.service.security.AWSCredentials;
-import org.jets3t.service.security.ProviderCredentials;
 import org.jets3t.service.utils.ServiceUtils;
 
-import com.tesis.aether.core.exception.ConnectionException;
 import com.tesis.aether.core.exception.DeleteException;
 import com.tesis.aether.core.exception.FileNotExistsException;
 import com.tesis.aether.core.exception.MethodNotSupportedException;
 import com.tesis.aether.core.exception.UploadException;
-import com.tesis.aether.core.factory.ServiceFactory;
 import com.tesis.aether.core.framework.adapter.AetherFrameworkAdapter;
-import com.tesis.aether.core.services.storage.ExtendedStorageService;
 import com.tesis.aether.core.services.storage.object.StorageObjectMetadata;
 
-public class RestS3Service extends S3Service implements AetherFrameworkAdapter {
+public class JetS3tAetherFrameworkAdapter extends AetherFrameworkAdapter {
 
-	private static RestS3Service INSTANCE = null;
+	private static JetS3tAetherFrameworkAdapter INSTANCE = null;
 	private static final String AWS_SIGNATURE_IDENTIFIER = "AWS";
 	private static final String AWS_REST_HEADER_PREFIX = "x-amz-";
 	private static final String AWS_REST_METADATA_PREFIX = "x-amz-meta-";
-	private ExtendedStorageService service;
 
-	public static RestS3Service getInstance() {
+	protected JetS3tAetherFrameworkAdapter() {
+		super();
+	}
+	
+	public static JetS3tAetherFrameworkAdapter getInstance() {
 		if (INSTANCE == null) {
-			try {
-				INSTANCE = new RestS3Service();
-			} catch (S3ServiceException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+			INSTANCE = new JetS3tAetherFrameworkAdapter();
 		}
 		return INSTANCE;
 	}
 
-	public RestS3Service() throws S3ServiceException {
-		this(new AWSCredentials("", ""), null, null);
-	}
-
-	public RestS3Service(ProviderCredentials credentials) throws S3ServiceException {
-		this(credentials, null, null);
-	}
-
-	public RestS3Service(ProviderCredentials credentials, String invokingApplicationDescription, CredentialsProvider credentialsProvider) throws S3ServiceException {
-		this(credentials, invokingApplicationDescription, credentialsProvider, Jets3tProperties.getInstance(Constants.JETS3T_PROPERTIES_FILENAME));
-	}
-
-	public RestS3Service(ProviderCredentials credentials, String invokingApplicationDescription, CredentialsProvider credentialsProvider, Jets3tProperties jets3tProperties) throws S3ServiceException {
-		this(credentials, invokingApplicationDescription, credentialsProvider, jets3tProperties, new HostConfiguration());
-	}
-
-	public RestS3Service(ProviderCredentials credentials, String invokingApplicationDescription, CredentialsProvider credentialsProvider, Jets3tProperties jets3tProperties, HostConfiguration hostConfig) throws S3ServiceException {
-		super(credentials, invokingApplicationDescription, credentialsProvider, jets3tProperties, hostConfig);
-		initStorageService();
-	}
-
-	public void initStorageService() {
-		service = ServiceFactory.instance.getFirstStorageService();
-		try {
-			service.connect(null);
-		} catch (ConnectionException e) {
-			e.printStackTrace();
-		} catch (MethodNotSupportedException e) {
-			e.printStackTrace();
-		}
-	}
-
-	@Override
 	public S3Object getObject(String bucketName, String objectKey) {
 		try {
 			com.tesis.aether.core.services.storage.object.StorageObject storageObject = service.getStorageObject(bucketName, objectKey);
@@ -132,12 +69,10 @@ public class RestS3Service extends S3Service implements AetherFrameworkAdapter {
 		return this.getObject(bucketName, objectKey);
 	}
 
-	@Override
 	public S3Object getObject(S3Bucket bucketName, String objectKey) {
 		return this.getObject(bucketName.getName(), objectKey);
 	}
 
-	@Override
 	public StorageObject getObjectDetails(String bucketName, String objectKey) throws ServiceException {
 		try {
 			com.tesis.aether.core.services.storage.object.StorageObject storageObject = service.getStorageObject(bucketName, objectKey);
@@ -167,7 +102,6 @@ public class RestS3Service extends S3Service implements AetherFrameworkAdapter {
 		}
 	}
 
-	@Override
 	public StorageObject getObjectDetailsImpl(String bucketName, String objectKey, Calendar ifModifiedSince, Calendar ifUnmodifiedSince, String[] ifMatchTags, String[] ifNoneMatchTags, String versionId) throws ServiceException {
 		return getObjectDetails(bucketName, objectKey);
 	}
@@ -188,7 +122,6 @@ public class RestS3Service extends S3Service implements AetherFrameworkAdapter {
 		}
 	}
 
-	@Override
 	public StorageObject putObject(String bucketName, StorageObject object) throws ServiceException {
 		try {
 
@@ -234,7 +167,6 @@ public class RestS3Service extends S3Service implements AetherFrameworkAdapter {
 	}
 
 	// AETHER NO SOPORTA DELIMITER
-	@Override
 	public S3Object[] listObjects(String bucketName, String prefix, String delimiter, long maxListingLength) {
 		try {
 			return listObjects(bucketName, prefix, delimiter);
@@ -245,7 +177,6 @@ public class RestS3Service extends S3Service implements AetherFrameworkAdapter {
 	}
 
 	// AETHER NO SOPORTA DELIMITER
-	@Override
 	public S3Object[] listObjects(String bucketName, String prefix, String delimiter) throws S3ServiceException {
 		List<StorageObjectMetadata> listFiles;
 		try {
@@ -261,7 +192,6 @@ public class RestS3Service extends S3Service implements AetherFrameworkAdapter {
 		}
 	}
 
-	@Override
 	public S3Object[] listObjects(String bucketName) throws S3ServiceException {
 		List<StorageObjectMetadata> listFiles;
 		try {
@@ -328,7 +258,6 @@ public class RestS3Service extends S3Service implements AetherFrameworkAdapter {
 		return this.createBucket(bucketName);
 	}
 
-	@Override
 	public S3Bucket[] listAllBuckets() throws S3ServiceException {
 		try {
 			List<StorageObjectMetadata> listContainers = service.listContainers();
@@ -383,114 +312,64 @@ public class RestS3Service extends S3Service implements AetherFrameworkAdapter {
 	/**
 	 * UNIMPLEMENTED METHODS
 	 */
-	@Override
+
 	public String getBucketLocationImpl(String bucketName) throws S3ServiceException {
 		return null;
 	}
 
-	@Override
 	public S3BucketLoggingStatus getBucketLoggingStatusImpl(String bucketName) throws S3ServiceException {
 		return null;
 	}
 
-	@Override
 	public void setBucketLoggingStatusImpl(String bucketName, S3BucketLoggingStatus status) throws S3ServiceException {
 	}
 
-	@Override
 	public void setBucketPolicyImpl(String bucketName, String policyDocument) throws S3ServiceException {
 	}
 
-	@Override
 	public String getBucketPolicyImpl(String bucketName) throws S3ServiceException {
 		return null;
 	}
 
-	@Override
 	public void deleteBucketPolicyImpl(String bucketName) throws S3ServiceException {
 	}
 
-	@Override
 	public void setRequesterPaysBucketImpl(String bucketName, boolean requesterPays) throws S3ServiceException {
 	}
 
-	@Override
 	public boolean isRequesterPaysBucketImpl(String bucketName) throws S3ServiceException {
 		return false;
 	}
 
-	@Override
 	public BaseVersionOrDeleteMarker[] listVersionedObjectsImpl(String bucketName, String prefix, String delimiter, String keyMarker, String versionMarker, long maxListingLength) throws S3ServiceException {
 		return null;
 	}
 
-	@Override
 	public VersionOrDeleteMarkersChunk listVersionedObjectsChunkedImpl(String bucketName, String prefix, String delimiter, long maxListingLength, String priorLastKey, String priorLastVersion, boolean completeListing) throws S3ServiceException {
 		return null;
 	}
 
-	@Override
 	public void updateBucketVersioningStatusImpl(String bucketName, boolean enabled, boolean multiFactorAuthDeleteEnabled, String multiFactorSerialNumber, String multiFactorAuthCode) throws S3ServiceException {
 	}
 
-	@Override
 	public S3BucketVersioningStatus getBucketVersioningStatusImpl(String bucketName) throws S3ServiceException {
 		return null;
 	}
 
-	@Override
 	public boolean isTargettingGoogleStorageService() {
 		return false;
 	}
-
-	@Override
-	public String getEndpoint() {
-		return this.jets3tProperties.getStringProperty("s3service.s3-endpoint", Constants.S3_DEFAULT_HOSTNAME);
-	}
-
-	@Override
-	public String getVirtualPath() {
-		return this.jets3tProperties.getStringProperty("s3service.s3-endpoint-virtual-path", "");
-	}
-
-	@Override
+	
 	public String getSignatureIdentifier() {
 		return AWS_SIGNATURE_IDENTIFIER;
 	}
 
-	@Override
 	public String getRestHeaderPrefix() {
 		return AWS_REST_HEADER_PREFIX;
 	}
 
-	@Override
 	public String getRestMetadataPrefix() {
 		return AWS_REST_METADATA_PREFIX;
-	}
-
-	@Override
-	public int getHttpPort() {
-		return this.jets3tProperties.getIntProperty("s3service.s3-endpoint-http-port", 80);
-	}
-
-	@Override
-	public int getHttpsPort() {
-		return this.jets3tProperties.getIntProperty("s3service.s3-endpoint-https-port", 443);
-	}
-
-	@Override
-	public boolean getHttpsOnly() {
-		return this.jets3tProperties.getBoolProperty("s3service.https-only", true);
-	}
-
-	@Override
-	public boolean getDisableDnsBuckets() {
-		return this.jets3tProperties.getBoolProperty("s3service.disable-dns-buckets", false);
-	}
-
-	@Override
-	public boolean getEnableStorageClasses() {
-		return this.jets3tProperties.getBoolProperty("s3service.enable-storage-classes", false);
 	}
 
 	public boolean isBucketAccessible(String bucketName) throws ServiceException {
