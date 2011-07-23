@@ -5,22 +5,24 @@ import org.w3c.dom.NodeList;
 
 import com.tesis.aether.core.factory.ServiceAccountProperties;
 import com.tesis.aether.core.services.CloudService;
-import com.tesis.aether.core.services.storage.constants.StorageServiceConstants;
 
-public abstract class ServiceParser {
-
-
+public class ServiceParser {
+	
 	private static final String VALUE = "value";
 	private static final String KEY = "key";
 	private static final String PARAMETER = "parameter";
 
-	public CloudService parse(Element service_param_el) {		
+	public CloudService parse(Element service_param_el, String className) throws InstantiationException, IllegalAccessException, ClassNotFoundException {		
 		ServiceAccountProperties properties = getParameters(service_param_el);
 		
-		return parse(properties);
+		return parse(properties, className);
 	}
 
-	protected abstract CloudService parse(ServiceAccountProperties properties);
+	protected CloudService parse(ServiceAccountProperties properties, String className) throws InstantiationException, IllegalAccessException, ClassNotFoundException {	
+		CloudService service = (CloudService) Class.forName(className).newInstance();
+		service.setServiceProperties(properties);
+		return service;
+	}
 
 	private ServiceAccountProperties getParameters(Element service_param_el) {
 		NodeList localBaseFolder_element = service_param_el.getElementsByTagName(PARAMETER);	
