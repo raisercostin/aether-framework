@@ -19,7 +19,7 @@ import com.tesis.aether.core.util.AetherStringUtils;
 public class AccountXmlParser {
 	private final String ELEMENT_STORAGE_SERVICE = "storageService";
 	private final String ATTRIBUTE_CLASS = "class";
-	private final String PARSERS_PACKAGE = "com.tesis.aether.core.factory.parser.service.";
+	private ServiceParser parser = new ServiceParser();
 	public static AccountXmlParser INSTANCE = new AccountXmlParser();
 	
 	private AccountXmlParser(){}
@@ -50,9 +50,8 @@ public class AccountXmlParser {
 
 		for (int j = 0; j < countParams; j++) {
 			Element storageService_param_el = (Element) storageService_node.item(j);
-			String storageService_class = storageService_param_el.getAttribute(ATTRIBUTE_CLASS);
-			ServiceParser parser = (ServiceParser) Class.forName(PARSERS_PACKAGE + storageService_class).newInstance();
-			CloudService service = parser.parse(storageService_param_el);
+			String storageService_class = storageService_param_el.getAttribute(ATTRIBUTE_CLASS);				
+			CloudService service = parser.parse(storageService_param_el, storageService_class);
 			services.put(service.getName(), service);
 		}
 
