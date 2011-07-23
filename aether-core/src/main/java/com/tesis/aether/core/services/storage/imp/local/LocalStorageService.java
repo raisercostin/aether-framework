@@ -226,7 +226,6 @@ public class LocalStorageService extends ExtendedStorageService {
 	@Override
 	public void deleteFolder(String container, String remotePath) throws DeleteException {
 		File remotePathFile = initRemoteFile(container, remotePath);
-
 		boolean success = remotePathFile.delete();
 		if (!success) {
 			throw new DeleteException(remotePath + " is blocked or not empty.");
