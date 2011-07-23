@@ -5,7 +5,7 @@ import com.tesis.aether.core.services.CloudService;
 import com.tesis.aether.core.services.storage.ExtendedStorageService;
 import com.tesis.aether.core.services.storage.imp.google.storage.GoogleV1StorageService;
 
-public class GoogleStorageServiceParser extends StorageServiceParser {
+public class GoogleStorageServiceParser extends ServiceParser {
 
 	@Override
 	protected CloudService parse(ServiceAccountProperties properties) {

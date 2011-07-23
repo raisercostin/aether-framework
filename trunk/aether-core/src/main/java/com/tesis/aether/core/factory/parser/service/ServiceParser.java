@@ -7,23 +7,23 @@ import com.tesis.aether.core.factory.ServiceAccountProperties;
 import com.tesis.aether.core.services.CloudService;
 import com.tesis.aether.core.services.storage.constants.StorageServiceConstants;
 
-public abstract class StorageServiceParser {
+public abstract class ServiceParser {
 
 
 	private static final String VALUE = "value";
 	private static final String KEY = "key";
 	private static final String PARAMETER = "parameter";
 
-	public CloudService parse(Element storageService_param_el) {		
-		ServiceAccountProperties properties = getParameters(storageService_param_el);
+	public CloudService parse(Element service_param_el) {		
+		ServiceAccountProperties properties = getParameters(service_param_el);
 		
 		return parse(properties);
 	}
 
 	protected abstract CloudService parse(ServiceAccountProperties properties);
 
-	private ServiceAccountProperties getParameters(Element storageService_param_el) {
-		NodeList localBaseFolder_element = storageService_param_el.getElementsByTagName(PARAMETER);	
+	private ServiceAccountProperties getParameters(Element service_param_el) {
+		NodeList localBaseFolder_element = service_param_el.getElementsByTagName(PARAMETER);	
 		int countParams = localBaseFolder_element.getLength();
 		ServiceAccountProperties properties = new ServiceAccountProperties();
 		

@@ -1,9 +1,9 @@
-package com.tesis.aether.core.factory.parser;
+package com.tesis.aether.core.util;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 
-public class TranscoderStringUtils {
+public class AetherStringUtils {
 
 
 	public static String readFileAsString(String filePath){
