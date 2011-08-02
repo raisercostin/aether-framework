@@ -1,0 +1,17 @@
+<class-diagram version="1.0.0" icons="true" automaticImage="PNG" always-add-relationships="false" generalizations="true" 
+  realizations="true" associations="true" dependencies="false" nesting-relationships="true">  
+  <class id="4" corner="BOTTOM_RIGHT" language="java" name="com.tesis.aether.loader.conf.ConfigClassLoader" 
+    project="aether-loader" file="/aether-loader/src/main/java/com/tesis/aether/loader/conf/ConfigClassLoader.java" 
+    binary="false">    
+    <position x="125" y="83" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <classifier-display autosize="true" package="true" initial-value="false" signature="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true"/>    
+    <operations public="true" package="true" protected="true" private="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
