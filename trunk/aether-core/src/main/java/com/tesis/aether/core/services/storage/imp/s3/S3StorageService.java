@@ -7,12 +7,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
-import java.util.Properties;
 
 import org.apache.commons.io.FilenameUtils;
-import org.jclouds.aws.s3.S3ContextBuilder;
 import org.jclouds.blobstore.BlobStore;
 import org.jclouds.blobstore.BlobStoreContext;
+import org.jclouds.blobstore.BlobStoreContextFactory;
 import org.jclouds.blobstore.domain.Blob;
 import org.jclouds.blobstore.domain.BlobMetadata;
 import org.jclouds.blobstore.domain.MutableBlobMetadata;
@@ -220,42 +219,9 @@ public class S3StorageService extends ExtendedStorageService {
 
 	@Override
 	public void connect(Authenticator authenticator) throws ConnectionException, MethodNotSupportedException {
-		// s3Context = new BlobStoreContextFactory().createContext("s3",
-		// getServiceProperty(StorageServiceConstants.S3_ACCESS_KEY),
-		// getServiceProperty(StorageServiceConstants.S3_SECRET_KEY));
-		// blobStore = s3Context.getBlobStore();
-
-		Properties properties = new Properties();
-		properties.put("jclouds.user-threads", "0");
-		properties.put("jclouds.identity", getServiceProperty(StorageServiceConstants.S3_ACCESS_KEY));
-		properties.put("jclouds.max-session-failures", "2");
-		properties.put("jclouds.aws.default_regions", "us-standard");
-		properties.put("jclouds.s3.service-path", "/");
-		properties.put("jclouds.aws.header.tag", "amz");
-		properties.put("jclouds.aws.auth.tag", "AWS");
-		properties.put("jclouds.relax-hostname", "true");
-		properties.put("jclouds.max-connection-reuse", "75");
-		properties.put("jclouds.endpoint", "https://s3.amazonaws.com");
-		properties.put("jclouds.credential", getServiceProperty(StorageServiceConstants.S3_SECRET_KEY));
-		properties.put("jclouds.aws.regions", "us-standard,us-west-1,EU,ap-southeast-1");
-		properties.put("jclouds.s3.virtual-host-buckets", "true");
-		properties.put("jclouds.blobstore.metaprefix", "x-amz-meta-");
-		properties.put("jclouds.endpoint.ap-southeast-1", "https://s3-ap-southeast-1.amazonaws.com");
-		properties.put("jclouds.endpoint.EU", "https://s3-eu-west-1.amazonaws.com");
-		properties.put("jclouds.max-connections-per_context", "20");
-		properties.put("jclouds.so-timeout", "60000");
-		properties.put("jclouds.max-connections-per-host", "0");
-		properties.put("jclouds.endpoint.us-west-1", "https://s3-us-west-1.amazonaws.com");
-		properties.put("jclouds.endpoint.us-standard", "https://s3.amazonaws.com");
-		properties.put("jclouds.io-worker-threads", "20");
-		properties.put("jclouds.blobstore.directorysuffix", "_$folder$");
-		properties.put("jclouds.api-version", "2006-03-01");
-		properties.put("jclouds.connection-timeout", "60000");
-		properties.put("jclouds.provider", "s3");
-		properties.put("jclouds.session-interval", "60");
-
-		S3ContextBuilder builder = new S3ContextBuilder(properties);
-		s3Context = builder.buildBlobStoreContext();
+		s3Context = new BlobStoreContextFactory().createContext("aws-s3",
+		getServiceProperty(StorageServiceConstants.S3_ACCESS_KEY),
+		getServiceProperty(StorageServiceConstants.S3_SECRET_KEY));
 		blobStore = s3Context.getBlobStore();
 	}
 

@@ -21,9 +21,19 @@ public class AccountXmlParser {
 	private final String ATTRIBUTE_CLASS = "class";
 	private ServiceParser parser = new ServiceParser();
 	public static AccountXmlParser INSTANCE = new AccountXmlParser();
-	
-	private AccountXmlParser(){}
-	
+
+	private AccountXmlParser() {
+	}
+
+	/**
+	 * Carga todos los servicios configurados en el path al XML pasado como
+	 * parámetro. Retorna una colección de los servicios que serán utilizados en
+	 * la clase ServiceFactory.
+	 * 
+	 * @param xmlfile
+	 * @return
+	 * @throws Exception
+	 */
 	public Map<String, CloudService> loadServices(String xmlfile) throws Exception {
 		try {
 			String xml = AetherStringUtils.readFileAsString(xmlfile);
@@ -50,7 +60,7 @@ public class AccountXmlParser {
 
 		for (int j = 0; j < countParams; j++) {
 			Element storageService_param_el = (Element) storageService_node.item(j);
-			String storageService_class = storageService_param_el.getAttribute(ATTRIBUTE_CLASS);				
+			String storageService_class = storageService_param_el.getAttribute(ATTRIBUTE_CLASS);
 			CloudService service = parser.parse(storageService_param_el, storageService_class);
 			services.put(service.getName(), service);
 		}
