@@ -7,7 +7,7 @@ import com.tesis.aether.core.services.storage.object.constants.StorageObjectCons
 
 public class StorageObjectMetadata {
 	private String path;
-	private String type; 
+	private String type;
 	private String name;
 	private String pathAndName;
 	private Long length;
@@ -16,51 +16,62 @@ public class StorageObjectMetadata {
 	private URI uri;
 	private String container;
 
-	public boolean isContainer(){
+	public boolean isContainer() {
 		return this.getType().equals(StorageObjectConstants.CONTAINER_TYPE);
 	}
-	
-	public boolean isDirectory(){
+
+	public boolean isDirectory() {
 		return this.getType().equals(StorageObjectConstants.DIRECTORY_TYPE);
 	}
-	
-	public boolean isFile(){
-		return this.getType().equals(StorageObjectConstants.FILE_TYPE);		
+
+	public boolean isFile() {
+		return this.getType().equals(StorageObjectConstants.FILE_TYPE);
 	}
-	
+
 	public void setLength(Long length) {
 		this.length = length;
 	}
+
 	public Long getLength() {
 		return length;
 	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
+
 	public String getName() {
 		return name;
 	}
+
 	public void setType(String type) {
 		this.type = type;
 	}
+
 	public String getType() {
 		return type;
 	}
+
 	public void setPath(String path) {
 		this.path = path;
 	}
+
 	public String getPath() {
 		return path;
 	}
+
 	public void setPathAndName(String pathAndName) {
 		this.pathAndName = pathAndName;
 	}
+
 	public String getPathAndName() {
 		return pathAndName;
 	}
+
 	public void setLastModified(Date lastModified) {
 		this.lastModified = lastModified;
 	}
+
 	public Date getLastModified() {
 		return lastModified;
 	}
