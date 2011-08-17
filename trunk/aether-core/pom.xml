@@ -59,7 +59,7 @@
         <dependency>
             <groupId>org.jclouds.provider</groupId>
             <artifactId>googlestorage</artifactId>
-            <version>1.0.0</version>
+            <version>1.0-beta-9d</version>
         </dependency>
 		<dependency>
 			<groupId>net.java.dev.jets3t</groupId>
