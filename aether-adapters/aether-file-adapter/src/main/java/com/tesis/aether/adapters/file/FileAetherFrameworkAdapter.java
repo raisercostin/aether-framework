@@ -30,7 +30,7 @@ public class FileAetherFrameworkAdapter extends AetherFrameworkAdapter {
 	private static String tempDirectory = "/tmp";
 	private static String CONTAINER = "container";
 	private static String TEMPDIRECTORY = "tempDirectory";
-	private static final String CONFIG_FILE = "configFileAdapter.xml";
+	private static final String CONFIG_FILE = "src/main/resources/configFileAdapter.xml";
 		
 	protected FileAetherFrameworkAdapter() {
 		super();

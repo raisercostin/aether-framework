@@ -20,6 +20,9 @@ public class ConfigFileAdapter {
 	 * Path por defecto al xml de configuracion
 	 */
 	private String path = "configFileAdapter.xml";
+	private String NAME = "name";
+	private String VALUE = "value";
+	private String PROPERTY = "property";
 	/**
 	 * Contiene las propiedades de configuracion
 	 */
@@ -63,7 +66,7 @@ public class ConfigFileAdapter {
 		DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
 		Document doc = dBuilder.parse(fXmlFile);
 		doc.getDocumentElement().normalize();
-		NodeList nList = doc.getElementsByTagName("Property");
+		NodeList nList = doc.getElementsByTagName(PROPERTY);
 		String name, value;
 		if (nList.getLength() == 0) {
 			System.out.println("No se han encontrado propiedades...");
@@ -74,8 +77,8 @@ public class ConfigFileAdapter {
 			Node nNode = nList.item(temp);
 			if (nNode.getNodeType() == Node.ELEMENT_NODE) {
 				Element eElement = (Element) nNode;
-				name = getTagValue("name", eElement);
-				value = getTagValue("value", eElement);
+				name = getTagValue(NAME, eElement);
+				value = getTagValue(VALUE, eElement);
 				if (name != null && value != null) {
 					System.out.println("loading property " + name + " value " + value);
 					properties.put(name, value);
