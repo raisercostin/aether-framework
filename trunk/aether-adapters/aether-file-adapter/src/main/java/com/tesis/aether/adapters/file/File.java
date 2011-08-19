@@ -15,7 +15,7 @@ public class File extends java.io.File {
 	private static final long serialVersionUID = 1322623669136988710L;
 
 	public File(String pathname) {
-		super(pathname.replaceAll("\\", "/").replaceAll("//", "/"));
+		super(pathname.replaceAll("\\\\", "/"));
 	}
 
 	public File(String parent, String child) {

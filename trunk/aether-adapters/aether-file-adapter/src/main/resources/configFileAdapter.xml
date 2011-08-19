@@ -1,14 +1,10 @@
-<ClassLoaderConfig>
-	<classException>
-		<srcClass>org.jclouds.blobstore.internal.BaseBlobStore</srcClass>
-		<dstClass>com.tesis.aether.adapters.jclouds.JCloudsAetherFrameworkAdapter</dstClass>
-	</classException>
-	<classException>
-		<srcClass>org.jclouds.aws.s3.blobstore.S3BlobStore</srcClass>
-		<dstClass>com.tesis.aether.adapters.jclouds.JCloudsAetherFrameworkAdapter</dstClass>
-	</classException>
-	<packageException>
-		<srcPackage></srcPackage>
-		<dstPackage></dstPackage>
-	</packageException>
-</ClassLoaderConfig>
+<FileAdapterConfig>
+	<property>
+		<name>container</name>
+		<value>tesis</value>
+	</property>
+	<property>
+		<name>tempDirectory</name>
+		<value>c:/temp</value>
+	</property>
+</FileAdapterConfig>
