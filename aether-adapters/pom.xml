@@ -19,6 +19,7 @@
 		<module>aether-jclouds-adapter</module>
 		<module>aether-jets3t-adapter</module>
 		<module>aether-dasein-adapter</module>
+		<module>aether-file-adapter</module>
 	</modules>
 
 </project>
