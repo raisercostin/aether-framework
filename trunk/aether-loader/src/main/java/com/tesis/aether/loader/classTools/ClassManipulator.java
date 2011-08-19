@@ -4,7 +4,9 @@ import org.apache.log4j.Logger;
 
 import javassist.CannotCompileException;
 import javassist.ClassPool;
+import javassist.CtBehavior;
 import javassist.CtClass;
+import javassist.CtConstructor;
 import javassist.CtField;
 import javassist.CtMethod;
 import javassist.NotFoundException;
@@ -102,6 +104,7 @@ public class ClassManipulator {
 	 *            nombre del método de la nueva clase
 	 * @param retType
 	 *            true si la llamada debe retornar un valor
+	 *            false si la llamada no retorna un valor o es un constructor
 	 * @param _method
 	 *            método al cual agregar la llamada
 	 * @param useField
@@ -110,7 +113,7 @@ public class ClassManipulator {
 	 * @throws CannotCompileException
 	 *             en caso de no poder compilarse la clase se lanza la excepcion
 	 */
-	public static void addCall(String className, String methodName, boolean retType, CtMethod _method, boolean useField) throws CannotCompileException {
+	public static void addCall(String className, String methodName, boolean retType, CtBehavior _method, boolean useField, boolean isConstructor) throws CannotCompileException {
 		String _accessName = "";
 		if (useField) {
 			_accessName = getGeneratedFieldName(getClassName(className));
@@ -126,10 +129,18 @@ public class ClassManipulator {
 			_call += "System.out.println(\"Invoking replaced method: " + methodName + "\");";
 			_call += "return " + _accessName + ".getInstance()." + methodName + "($$);}";
 		} else {
-			_call += "System.out.println(\"Invoking replaced method: " + methodName + "\");";
-			_call += _accessName + ".getInstance()." + methodName + "($$); return;}";
+			if (!isConstructor) {
+				_call += "System.out.println(\"Invoking replaced method: " + methodName + "\");";
+				_call += _accessName + ".getInstance()." + methodName + "($$); return;}";
+			} else { // en este punto seria un constructor
+				_call += "System.out.println(\"Invoking added method on constructor: " + methodName + "\");";
+				_call += _accessName + ".getInstance()." + methodName + "($$);}";
+			}
 		}
-		_method.setBody(_call);
+		if (isConstructor) 
+			_method.insertAfter(_call, true);
+		else
+			_method.setBody(_call);
 	}
 
 	/**
@@ -186,7 +197,6 @@ public class ClassManipulator {
 			// addClassField(true, nameClassDst,
 			// getGeneratedFieldName(getClassName(nameClassDst)), "", cc);
 		}
-		CtMethod[] methods = cc.getMethods();
 		CtMethod[] methods2 = cc2.getDeclaredMethods();
 		int i = 0;
 		while (i < methods2.length) {
@@ -198,11 +208,11 @@ public class ClassManipulator {
 				//	method.getDeclaringClass().defrost();
 				//}
 				if (!method.toString().contains(" abstract ")) {
-					ClassManipulator.addCall(nameClassDst, method.getName(), !method.getReturnType().getName().equals("void"), method, false);
-					System.out.println("Agregada la llamada en el metodo: '" + method.getName());
+					ClassManipulator.addCall(nameClassDst, method.getName(), !method.getReturnType().getName().equals("void"), method, false, false);
+					System.out.println("Agregada la llamada en el metodo: " + method.getName());
 					logger.info("Agregada la llamada en el metodo: " + method.getName());
 				} else {
-					System.out.println("No se modificara el metodo abstracto: '" + method.getName());
+					System.out.println("No se modificara el metodo abstracto: " + method.getName());
 					logger.info("No se modificara el metodo abstracto: " + method.getName());
 				}
 			} catch (Exception e) {
@@ -212,6 +222,23 @@ public class ClassManipulator {
 			i++;
 
 		}
+		CtConstructor[] constructors = cc.getConstructors();
+		i = 0;
+		while (i < constructors.length) {
+			CtConstructor constructor = constructors[i];
+
+			try {
+				ClassManipulator.addCall(nameClassDst, constructor.getName(), false, constructor, false, true);
+				System.out.println("Agregada la llamada en el constructor: '" + constructor.getName());
+				logger.info("Agregada la llamada en el constructor: " + constructor.getName());
+			} catch (Exception e) {
+				System.out.println("No se pudo agregar la llamada en el constructor: '" + constructor.getName() + "' - signatura: " + constructor.getSignature() + ". posiblemente no exista en la clase destino: '" + nameClassDst + "'");
+				logger.error("No se pudo agregar código en el método: " + constructor.getName(), e);
+			}
+			i++;
+
+		}
+
 		return cc.toClass();
 	}
 }

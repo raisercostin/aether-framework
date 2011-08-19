@@ -361,7 +361,7 @@ public class JavasistClassLoader extends ClassLoader {
 			Class<?> clas = loadClass2(origName);
 			return clas;
 		}
-		String nameClassTo = origName;
+		String nameClassTo = null;
 		nameClassTo = replaceClassName(origName);
 		try {
 			return ClassManipulator.addClassCalls(origName, nameClassTo, true);
