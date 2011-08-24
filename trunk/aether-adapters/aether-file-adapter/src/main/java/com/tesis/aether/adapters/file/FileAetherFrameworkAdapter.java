@@ -213,17 +213,40 @@ public class FileAetherFrameworkAdapter extends AetherFrameworkAdapter {
 		return null;
 	}
 
-	public File[] listFiles(String path) {
+	public com.tesis.aether.adapters.file.File[] listFiles(String path) {
+		try {
+			if (!service.checkDirectoryExists(container, path)) 
+				return null;
+		} catch (MethodNotSupportedException e) {
+			e.printStackTrace();
+			return null;
+		}
+		com.tesis.aether.adapters.file.File[] objects = null;
+		List<StorageObjectMetadata> listObjects = null;
+		try {
+			listObjects = service.listFiles(container, path, false);
+		} catch (MethodNotSupportedException e) {
+			e.printStackTrace();
+			return null;
+		}
+		if (listObjects != null) {
+			objects = new com.tesis.aether.adapters.file.File[listObjects.size()];
+			int i = 0;
+			for (StorageObjectMetadata som : listObjects) {
+				objects[i] = (new com.tesis.aether.adapters.file.File(som.getPathAndName()));
+				i++;
+			}
+			return objects;
+		}
+		return null;
+	}
+
+	public com.tesis.aether.adapters.file.File[] listFiles(String path, FilenameFilter filter) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	public File[] listFiles(String path, FilenameFilter filter) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public File[] listFiles(String path, FileFilter filter) {
+	public com.tesis.aether.adapters.file.File[] listFiles(String path, FileFilter filter) {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -306,7 +329,7 @@ public class FileAetherFrameworkAdapter extends AetherFrameworkAdapter {
 		return true;
 	}
 
-	public File[] listRoots() {
+	public com.tesis.aether.adapters.file.File[] listRoots() {
 		// TODO Auto-generated method stub
 		return null;
 	}
