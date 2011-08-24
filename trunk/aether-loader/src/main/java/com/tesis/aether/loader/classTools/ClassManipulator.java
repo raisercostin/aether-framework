@@ -216,7 +216,7 @@ public class ClassManipulator {
 					logger.info("No se modificara el metodo abstracto: " + method.getName());
 				}
 			} catch (Exception e) {
-				System.out.println("No se pudo agregar la llamada en el metodo: '" + method2.getName() + "' posiblemente no exista en la clase destino: '" + nameClassDst + "'");
+				System.out.println("No se pudo agregar la llamada en el metodo: '" + method2.getName() + "' posiblemente no exista en la clase origen: '" + origName + "'");
 				logger.error("No se pudo agregar código en el método: " + method2.getName(), e);
 			}
 			i++;
