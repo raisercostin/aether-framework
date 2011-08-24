@@ -38,8 +38,8 @@ public class File extends java.io.File {
 		return super.getParent();
 	}
 
-	public java.io.File getParentFile() {
-		return super.getParentFile();
+	public File getParentFile() {
+		return (File) super.getParentFile();
 	}
 
 	public String getPath() {
@@ -54,7 +54,7 @@ public class File extends java.io.File {
 		return null;
 	}
 
-	public java.io.File getAbsoluteFile() {
+	public File getAbsoluteFile() {
 		return null;
 	}
 
@@ -62,8 +62,8 @@ public class File extends java.io.File {
 		return super.getCanonicalPath();
 	}
 
-	public java.io.File getCanonicalFile() throws IOException {
-		return super.getCanonicalFile();
+	public File getCanonicalFile() throws IOException {
+		return (File) super.getCanonicalFile();
 	}
 
 	public URL toURL() throws MalformedURLException {
@@ -126,15 +126,15 @@ public class File extends java.io.File {
 		return com.tesis.aether.adapters.file.FileAetherFrameworkAdapter.getInstance().canRead(this.getPath(), filter);
 	}
 
-	public java.io.File[] listFiles() {
+	public File[] listFiles() {
 		return com.tesis.aether.adapters.file.FileAetherFrameworkAdapter.getInstance().listFiles(this.getPath());
 	}
 
-	public java.io.File[] listFiles(FilenameFilter filter) {
+	public File[] listFiles(FilenameFilter filter) {
 		return com.tesis.aether.adapters.file.FileAetherFrameworkAdapter.getInstance().listFiles(this.getPath(), filter);
 	}
 
-	public java.io.File[] listFiles(FileFilter filter) {
+	public File[] listFiles(FileFilter filter) {
 		return com.tesis.aether.adapters.file.FileAetherFrameworkAdapter.getInstance().listFiles(this.getPath(), filter);
 	}
 
@@ -186,7 +186,7 @@ public class File extends java.io.File {
 		return false;
 	}
 
-	public static java.io.File[] listRoots() {
+	public static File[] listRoots() {
 		return com.tesis.aether.adapters.file.FileAetherFrameworkAdapter.getInstance().listRoots();
 	}
 

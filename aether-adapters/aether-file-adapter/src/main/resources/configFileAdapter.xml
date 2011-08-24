@@ -1,10 +1,10 @@
 <FileAdapterConfig>
 	<property>
 		<name>container</name>
-		<value>tesis</value>
+		<value>anyvalue</value>
 	</property>
 	<property>
 		<name>tempDirectory</name>
-		<value>c:/temp</value>
+		<value>anyvalue</value>
 	</property>
 </FileAdapterConfig>
