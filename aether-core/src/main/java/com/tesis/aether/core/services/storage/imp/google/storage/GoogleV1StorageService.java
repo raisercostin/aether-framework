@@ -172,8 +172,15 @@ public class GoogleV1StorageService extends ExtendedStorageService {
 	public boolean checkDirectoryExists(String container, String remotePath) throws MethodNotSupportedException {
 		String sanitizedPath = sanitizeRemotePath(remotePath);
 
-		boolean directoryExists = blobStore.directoryExists(container, sanitizedPath);
-		return directoryExists;
+		if (sanitizedPath.isEmpty()) {
+			return true;
+		} else {
+			try {
+				return blobStore.directoryExists(container, sanitizedPath);
+			} catch (Exception e) {
+				return false;
+			}
+		}
 	}
 	
 	@Override
