@@ -171,8 +171,16 @@ public class S3StorageService extends ExtendedStorageService {
 	public boolean checkDirectoryExists(String container, String remotePath) throws MethodNotSupportedException {
 		String sanitizedPath = sanitizeRemotePath(remotePath);
 
-		boolean directoryExists = blobStore.directoryExists(container, sanitizedPath);
-		return directoryExists;
+		if (sanitizedPath.isEmpty()) {
+			return true;
+		} else {
+			try {
+				return blobStore.directoryExists(container, sanitizedPath);
+			} catch (Exception e) {
+				return false;
+			}
+		}
+
 	}
 
 	@Override
@@ -219,9 +227,7 @@ public class S3StorageService extends ExtendedStorageService {
 
 	@Override
 	public void connect(Authenticator authenticator) throws ConnectionException, MethodNotSupportedException {
-		s3Context = new BlobStoreContextFactory().createContext("aws-s3",
-		getServiceProperty(StorageServiceConstants.S3_ACCESS_KEY),
-		getServiceProperty(StorageServiceConstants.S3_SECRET_KEY));
+		s3Context = new BlobStoreContextFactory().createContext("aws-s3", getServiceProperty(StorageServiceConstants.S3_ACCESS_KEY), getServiceProperty(StorageServiceConstants.S3_SECRET_KEY));
 		blobStore = s3Context.getBlobStore();
 	}
 
@@ -255,7 +261,7 @@ public class S3StorageService extends ExtendedStorageService {
 				result.add(storageObjectMetadata);
 			}
 		}
-		
+
 		return result;
 	}
 
