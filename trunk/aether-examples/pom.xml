@@ -16,6 +16,7 @@
 	<packaging>pom</packaging>
 
 	<modules>
+		<module>mu-commander</module>
 		<module>remote-monitor</module>
 		<module>text-editor</module>
 		<module>tree-viewer</module>
