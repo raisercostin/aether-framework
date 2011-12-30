@@ -41,6 +41,10 @@ public class RuntimeConstants {
     public static final String LICENSE         = "/license.txt";
     /** Default muCommander theme. */
     public static final String DEFAULT_THEME   = "Native";
+    /** Default muCommander images resources dir. */
+    public static final String DEFAULT_IMGS_DIR   = "/images/";
+    /** Default muCommander images file resources dir. */
+    public static final String DEFAULT_IMGS_FILE_DIR   = DEFAULT_IMGS_DIR + "file/";
 
 
 
