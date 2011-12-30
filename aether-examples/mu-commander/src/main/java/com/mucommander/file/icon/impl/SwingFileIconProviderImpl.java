@@ -18,6 +18,7 @@
 
 package com.mucommander.file.icon.impl;
 
+import com.mucommander.RuntimeConstants;
 import com.mucommander.file.AbstractFile;
 import com.mucommander.file.FileLogger;
 import com.mucommander.file.FileProtocols;
@@ -91,7 +92,7 @@ class SwingFileIconProviderImpl extends LocalFileIconProvider implements Cacheab
             fileSystemView = FileSystemView.getFileSystemView();
 
         // Loads the symlink overlay icon
-        URL iconURL = ResourceLoader.getPackageResourceAsURL(SwingFileIconProviderImpl.class.getPackage(), SYMLINK_ICON_NAME);
+        URL iconURL = ResourceLoader.getResourceAsURL(RuntimeConstants.DEFAULT_IMGS_FILE_DIR + SYMLINK_ICON_NAME);
         if(iconURL==null)
             throw new RuntimeException("Could not locate required symlink icon: "+SYMLINK_ICON_NAME);
 
