@@ -27,15 +27,18 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-dependency-plugin</artifactId>
+				<version>2.1</version>
 				<executions>
 					<execution>
-						<id>copy-dependencies</id>
-						<phase>package</phase>
+						<id>copy</id>
+						<phase>install</phase>
 						<goals>
 							<goal>copy-dependencies</goal>
 						</goals>
 						<configuration>
-							<outputDirectory>target/lib</outputDirectory>
+							<outputDirectory>
+								${project.build.directory}/lib
+				</outputDirectory>
 						</configuration>
 					</execution>
 				</executions>
@@ -44,12 +47,10 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
 				<configuration>
+					<version>2.3.1</version>
+					<useDefaultManifestFile>false</useDefaultManifestFile>
 					<archive>
-						<manifest>
-							<addClasspath>true</addClasspath>
-							<classpathPrefix>lib/</classpathPrefix>
-							<mainClass>com.mucommander.Launcher</mainClass>
-						</manifest>
+						<manifestFile>src/main/java/META-INF/MANIFEST.MF</manifestFile>
 					</archive>
 				</configuration>
 			</plugin>
@@ -62,7 +63,6 @@
 			<url>http://maven.repository.paxle.net</url>
 		</repository>
 	</repositories>
-
 
 	<url>http://maven.apache.org</url>
 	<dependencies>
@@ -101,7 +101,7 @@
 		<dependency>
 			<groupId>javax.jmdns</groupId>
 			<artifactId>jmdns</artifactId>
-			<version>3.4.0</version>
+			<version>3.2.2</version>
 			<scope>system</scope>
 			<systemPath>${project.basedir}/lib/jmdns.jar</systemPath>
 		</dependency>
@@ -155,18 +155,13 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.sun.yanfs</groupId>
-			<artifactId>jna</artifactId>
+			<groupId>com.sun.xfile</groupId>
+			<artifactId>xfile</artifactId>
 			<version>3.0.9</version>
 			<scope>system</scope>
 			<systemPath>${project.basedir}/lib/yanfs.jar</systemPath>
 		</dependency>
 
-  		<dependency>
-			<groupId>com.sun.jna</groupId>
-			<artifactId>jna</artifactId>
-			<version>3.0.9</version>
-		</dependency>
 
 		<!-- Se usa la libreria incluida en /lib -->
 		<dependency>
@@ -177,12 +172,15 @@
 			<systemPath>${project.basedir}/lib/commons-net-ftp.jar</systemPath>
 		</dependency>
 
- 		<dependency>
-			<groupId>net.java.dev.jna</groupId>
+		<dependency>
+			<groupId>com.sun.jna</groupId>
 			<artifactId>jna</artifactId>
-			<version>3.2.1</version>
+			<version>3.2.2</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/jna.jar</systemPath>
 		</dependency>
- 
+
+
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
