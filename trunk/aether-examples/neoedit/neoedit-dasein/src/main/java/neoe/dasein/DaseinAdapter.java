@@ -56,7 +56,8 @@ public class DaseinAdapter {
 					// BLOB
 					File file = new File(bucket + "/" + cloudStoreObject.getName());
 					Files.createParentDirs(file);
-					FileUtils.touch(file);
+					FileUtils.touch(file);							
+					
 				}
 
 			}
@@ -95,7 +96,12 @@ public class DaseinAdapter {
 		
 		FileTransfer download;
 		try {
-			download = blobStoreSupport.download(bucket, path, selectedFile, null);
+			CloudStoreObject object = new CloudStoreObject();
+			object.setContainer(false);
+			object.setDirectory(bucket);
+			object.setName(path);
+			object.setProviderRegionId("us-east-1");
+			download = blobStoreSupport.download(object, selectedFile);
 
 			while (!download.isComplete()) {
 				Thread.sleep(500);
