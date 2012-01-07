@@ -23,6 +23,7 @@ import java.util.List;
 
 import javax.swing.JOptionPane;
 
+import neoe.dasein.PropertiesProvider;
 import neoe.ne.U.RoSb;
 
 public class PlainPage {
@@ -698,7 +699,7 @@ public class PlainPage {
 		void drawToolbar(Graphics2D g2) {
 
 			long MSG_VANISH_TIME = 3000;
-			String s1 = "<F1>:Help, " + (encoding == null ? "-" : encoding) + (lineSep.equals("\n") ? ", U" : ", W") + ", Line:" + roLines.getLinesize() + ", X:" + (cx + 1) + ", undo:" + history.size() + ", " + (rectSelectMode ? "R, " : "") + (fn == null ? "-" : fn);
+			String s1 = "<F1>:Help, " + (encoding == null ? "-" : encoding) + (lineSep.equals("\n") ? ", U" : ", W") + ", Line:" + roLines.getLinesize() + ", X:" + (cx + 1) + ", undo:" + history.size() + ", " + (rectSelectMode ? "R, " : "") + (fn == null ? "-" : fn.replace(cacheDirectory.getAbsolutePath(), ""));
 			g2.setColor(Color.WHITE);
 			g2.drawString(s1, 2, lineHeight + 2);
 			g2.setColor(Color.BLACK);
@@ -1019,6 +1020,8 @@ public class PlainPage {
 
 	static final String REV = "$Rev: 129 $";
 	static final String WINDOW_NAME = "neoeedit r" + REV.substring(6, REV.length() - 2);
+	
+	private File cacheDirectory = new File(PropertiesProvider.getProperty("aws.bucket"));
 
 	Cursor cursor = new Cursor();
 

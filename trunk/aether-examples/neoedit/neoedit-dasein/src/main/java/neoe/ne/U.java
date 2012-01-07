@@ -47,7 +47,9 @@ import javax.swing.JPanel;
 import javax.swing.TransferHandler;
 import javax.swing.filechooser.FileSystemView;
 
-import neoe.DirectoryRestrictedFileSystemView;
+import neoe.dasein.DaseinAdapter;
+import neoe.dasein.DirectoryRestrictedFileSystemView;
+import neoe.dasein.PropertiesProvider;
 import neoe.ne.PlainPage.Paint;
 import neoe.util.FileIterator;
 
@@ -725,6 +727,12 @@ public class U {
 
 	static Random random = new Random();
 
+	private static File cacheDirectory = new File(PropertiesProvider.getProperty("aws.bucket"));
+
+	private static FileSystemView fsv = new DirectoryRestrictedFileSystemView(cacheDirectory);
+
+	private static DaseinAdapter daseinAdapter = new DaseinAdapter();
+	
 	public static Image TabImg, TabImgPrint;
 
 	final static TransferHandler th = new TransferHandler(null) {
@@ -820,6 +828,9 @@ public class U {
 
 	static void doFindInDir(EditPanel editor, String text, boolean ignoreCase, boolean selected2, boolean inDir, String dir) throws Exception {
 		//TODO HOOK FIND AND REPLACE
+		
+		dir = cacheDirectory + "/" + dir;
+		
 		Iterable<File> it = new FileIterator(dir);
 		List<String> all = new ArrayList<String>();
 		for (File f : it) {
@@ -849,7 +860,7 @@ public class U {
 						p = p2;
 					}
 				}
-				showResult(page.uiComp, all, "file " + page.fn, text2find);
+				showResult(page.uiComp, all, "file " + page.fn.replace(cacheDirectory.getAbsolutePath(), ""), text2find);
 				page.uiComp.repaint();
 			}
 		}
@@ -885,6 +896,9 @@ public class U {
 
 	static void doReplaceInDir(PlainPage page, String text, boolean ignoreCase2, String text2, boolean inDir, String dir) throws Exception {
 		//TODO HOOK FIND AND REPLACE
+		
+		dir = cacheDirectory + "/" + dir;
+		
 		EditPanel editor = page.uiComp;
 		Iterable<File> it = new FileIterator(dir);
 		List<String> all = new ArrayList<String>();
@@ -895,6 +909,7 @@ public class U {
 			try {
 				List<String> res = U.findInFile(f, text, page.ignoreCase);
 				if (res.size() > 0) {
+					daseinAdapter.updateCachedFile(f, cacheDirectory);
 					PlainPage pi = new EditPanel(f).page;
 					if (pi != null) {
 						doReplaceAll(pi, text, ignoreCase2, false, text2, false, null);
@@ -1036,7 +1051,7 @@ public class U {
 				if (ignoreCase2) {
 					text = text.toLowerCase();
 				}
-				BufferedReader in = new BufferedReader(new InputStreamReader(new FileInputStream(f), enc));
+				BufferedReader in = new BufferedReader(new InputStreamReader(daseinAdapter.getInputStream(f, cacheDirectory), enc));
 				String line;
 				int lineno = 0;
 				while ((line = in.readLine()) != null) {
@@ -1050,7 +1065,7 @@ public class U {
 						if (line.length() > MAX_SHOW_CHARS_IN_LINE) {
 							line = line.substring(0, MAX_SHOW_CHARS_IN_LINE) + "...";
 						}
-						a.add(String.format("%s|%s:%s", fn, lineno, oline));
+						a.add(String.format("%s|%s:%s", fn.replace(cacheDirectory.getAbsolutePath(), ""), lineno, oline));
 					}
 				}
 
@@ -1315,7 +1330,6 @@ public class U {
 
 	static void openFile(PlainPage page) throws Exception {
 		//TODO OPEN FILE		
-		FileSystemView fsv = new DirectoryRestrictedFileSystemView(new File("d:\\Tesis\\New folder"));
 		JFileChooser chooser = new JFileChooser(fsv.getHomeDirectory(),fsv);
 
 		if (page.fn != null) {
@@ -1327,7 +1341,8 @@ public class U {
 		}
 		int returnVal = chooser.showOpenDialog(page.uiComp);
 		if (returnVal == JFileChooser.APPROVE_OPTION) {
-			System.out.println("You chose to open this file: " + chooser.getSelectedFile().getAbsolutePath());
+			System.out.println("You chose to open this file: " + chooser.getSelectedFile().getAbsolutePath().replace(cacheDirectory.getAbsolutePath(), ""));
+			daseinAdapter.updateCachedFile(chooser.getSelectedFile(), cacheDirectory);
 			File f = chooser.getSelectedFile();
 			openFile(f);
 		}
@@ -1631,7 +1646,7 @@ public class U {
 	static void saveAs(PlainPage page) throws Exception {
 		//TODO HOOK PARA SAVE FILE
 		EditPanel editor = page.uiComp;
-		JFileChooser chooser = new JFileChooser(page.fn);
+		JFileChooser chooser = new JFileChooser(fsv.getHomeDirectory(), fsv);
 		int returnVal = chooser.showSaveDialog(editor);
 		if (returnVal == JFileChooser.APPROVE_OPTION) {
 			String fn = chooser.getSelectedFile().getAbsolutePath();
@@ -1651,7 +1666,7 @@ public class U {
 	static boolean saveFile(PlainPage page) throws Exception {
 		//TODO HOOK PARA SAVE FILE
 		if (page.fn == null) {
-			JFileChooser chooser = new JFileChooser(page.workPath);
+			JFileChooser chooser = new JFileChooser(fsv.getHomeDirectory(), fsv);
 			int returnVal = chooser.showSaveDialog(page.uiComp);
 			if (returnVal == JFileChooser.APPROVE_OPTION) {
 				page.isCommentChecked = false;
@@ -1684,7 +1699,7 @@ public class U {
 	}
 
 	static boolean savePageToFile(PlainPage page) throws Exception {
-		System.out.println("save " + page.fn);
+		System.out.println("save " + page.fn.replace(cacheDirectory.getAbsolutePath(), ""));
 		if (page.encoding == null) {
 			page.encoding = UTF8;
 		}
@@ -1694,6 +1709,9 @@ public class U {
 			out.write(page.lineSep);
 		}
 		out.close();
+		
+		daseinAdapter.uploadFile(page.fn, cacheDirectory);
+		
 		return true;
 	}
 
