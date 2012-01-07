@@ -18,11 +18,15 @@ import javax.imageio.ImageIO;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
+import neoe.dasein.PropertiesProvider;
+
 public class EditPanel extends JPanel implements MouseMotionListener, MouseListener, MouseWheelListener, KeyListener {
 
 	private static final long serialVersionUID = -1667283144475200365L;
 
 	private boolean debugFPS = false;
+
+	private File cacheDirectory = new File(PropertiesProvider.getProperty("aws.bucket"));
 
 	private EditPanel() {
 		setFocusable(true);
@@ -180,7 +184,7 @@ public class EditPanel extends JPanel implements MouseMotionListener, MouseListe
 			return;
 		String fn = page.fn;
 		if (fn != null) {
-			frame.setTitle(new File(fn).getName() + " " + new File(fn).getParent() + " - " + PlainPage.WINDOW_NAME);
+			frame.setTitle(page.fn.replace(cacheDirectory.getAbsolutePath(), "") + " - " + PlainPage.WINDOW_NAME);
 		} else {
 			frame.setTitle(PlainPage.WINDOW_NAME);
 		}
