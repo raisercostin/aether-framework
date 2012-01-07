@@ -13,17 +13,16 @@ import org.dasein.cloud.CloudException;
 import org.dasein.cloud.InternalException;
 import org.dasein.cloud.ProviderContext;
 import org.dasein.cloud.aws.AWSCloud;
-import org.dasein.cloud.aws.storage.HTTPS3;
+import org.dasein.cloud.aws.storage.S3;
 import org.dasein.cloud.storage.CloudStoreObject;
 import org.dasein.cloud.storage.FileTransfer;
-import org.w3c.dom.Document;
 
 import com.google.common.io.Files;
 
 public class DaseinAdapter {
 
 	private String bucket;
-	private HTTPS3 blobStoreSupport;
+	private S3 blobStoreSupport;
 
 	public DaseinAdapter() {
 		Locale.setDefault(Locale.US);
@@ -33,7 +32,7 @@ public class DaseinAdapter {
 		context.setEndpoint("http://s3.amazonaws.com");
 		context.setRegionId("us-east-1");
 		cloud.connect(context);
-		blobStoreSupport = new HTTPS3(cloud);
+		blobStoreSupport = new S3(cloud);
 
 		populateCache();
 	}
@@ -58,13 +57,6 @@ public class DaseinAdapter {
 					File file = new File(bucket + "/" + cloudStoreObject.getName());
 					Files.createParentDirs(file);
 					FileUtils.touch(file);
-					
-					Document acl = blobStoreSupport.getAcl(bucket, cloudStoreObject.getName());
-					FileTransfer download = blobStoreSupport.download(cloudStoreObject, file);
-
-					while (!download.isComplete()) {
-						Thread.sleep(500);
-					}
 				}
 
 			}
