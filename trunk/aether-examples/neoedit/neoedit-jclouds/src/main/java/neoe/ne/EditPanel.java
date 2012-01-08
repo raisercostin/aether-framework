@@ -65,6 +65,8 @@ public class EditPanel extends JPanel implements MouseMotionListener, MouseListe
 	PlainPage page;
 	JFrame frame;
 
+	private File cacheDirectory = new File(PropertiesProvider.getProperty("aws.bucket"));
+
 	public void openWindow() throws IOException {
 		if (frame != null)
 			return;
@@ -180,7 +182,7 @@ public class EditPanel extends JPanel implements MouseMotionListener, MouseListe
 			return;
 		String fn = page.fn;
 		if (fn != null) {
-			frame.setTitle(new File(fn).getName() + " " + new File(fn).getParent() + " - " + PlainPage.WINDOW_NAME);
+			frame.setTitle(page.fn.replace(cacheDirectory.getAbsolutePath(), "") + " - " + PlainPage.WINDOW_NAME);
 		} else {
 			frame.setTitle(PlainPage.WINDOW_NAME);
 		}

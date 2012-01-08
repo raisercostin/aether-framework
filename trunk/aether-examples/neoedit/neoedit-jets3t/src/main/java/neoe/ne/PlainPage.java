@@ -23,6 +23,7 @@ import java.util.List;
 
 import javax.swing.JOptionPane;
 
+import neoe.jets3t.PropertiesProvider;
 import neoe.ne.U.RoSb;
 
 public class PlainPage {
@@ -1019,6 +1020,7 @@ public class PlainPage {
 
 	static final String REV = "$Rev: 129 $";
 	static final String WINDOW_NAME = "neoeedit r" + REV.substring(6, REV.length() - 2);
+	private File cacheDirectory = new File(PropertiesProvider.getProperty("aws.bucket"));
 
 	Cursor cursor = new Cursor();
 

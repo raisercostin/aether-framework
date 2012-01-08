@@ -1,4 +1,4 @@
-package neoe;
+package neoe.jets3t;
 
 import java.io.File;
 import java.io.IOException;
@@ -18,6 +18,11 @@ public class DirectoryRestrictedFileSystemView extends FileSystemView {
 
 	@Override
 	public File getHomeDirectory() {
+		return rootDirectories[0];
+	}
+
+	@Override
+	public File getParentDirectory(File dir) {
 		return rootDirectories[0];
 	}
 
