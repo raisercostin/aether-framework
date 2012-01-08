@@ -34,6 +34,7 @@ public class FindReplaceWindow implements ActionListener, KeyListener {
 	private JCheckBox jcb2;
 	private JCheckBox jcb3;
 	private JButton jb4;
+	private File cacheDirectory = new File(PropertiesProvider.getProperty("aws.bucket"));
 
 	public FindReplaceWindow(JFrame f, PlainPage page) {
 		this.page = page;
@@ -77,7 +78,7 @@ public class FindReplaceWindow implements ActionListener, KeyListener {
 		dialog.pack();
 		dialog.setLocationRelativeTo(f);
 		if (page != null && page.fn != null) {
-			jtadir.setText(new File(page.fn).getParent());
+			jtadir.setText(new File(page.fn).getParent().replace(cacheDirectory.getAbsolutePath(), ""));
 		}
 		jta1.addKeyListener(this);
 		jta2.addKeyListener(this);

@@ -7,7 +7,18 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>neoedit-jclouds</name>
 	<packaging>jar</packaging>
-
+	<dependencies>	
+        <dependency>
+            <groupId>org.jclouds</groupId>
+            <artifactId>jclouds-blobstore</artifactId>
+            <version>1.2.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jclouds</groupId>
+            <artifactId>jclouds-allblobstore</artifactId>
+            <version>1.2.1</version>
+        </dependency>
+	</dependencies>
 	<profiles>
 		<profile>
 			<id>build</id>
