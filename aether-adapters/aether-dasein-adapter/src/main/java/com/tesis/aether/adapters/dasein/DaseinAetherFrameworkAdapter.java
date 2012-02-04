@@ -2,12 +2,14 @@ package com.tesis.aether.adapters.dasein;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 import java.util.Locale;
 
 import org.apache.commons.io.FilenameUtils;
 import org.dasein.cloud.CloudException;
 import org.dasein.cloud.InternalException;
+import org.dasein.cloud.aws.AWSCloud;
 import org.dasein.cloud.encryption.Encryption;
 import org.dasein.cloud.storage.CloudStoreObject;
 import org.dasein.cloud.storage.FileTransfer;
@@ -25,6 +27,10 @@ import com.tesis.aether.core.services.storage.object.StorageObjectMetadata;
 public class DaseinAetherFrameworkAdapter extends AetherFrameworkAdapter {
 	private static DaseinAetherFrameworkAdapter INSTANCE = null;
 
+	protected DaseinAetherFrameworkAdapter(AWSCloud cloud) {
+		super();
+	}
+	
 	protected DaseinAetherFrameworkAdapter() {
 		super();
 	}
@@ -56,7 +62,7 @@ public class DaseinAetherFrameworkAdapter extends AetherFrameworkAdapter {
 		}
 	}
 
-	public Iterable<CloudStoreObject> listFiles(String parentDirectory) throws CloudException, InternalException {
+	public Collection<CloudStoreObject> listFiles(String parentDirectory) throws CloudException, InternalException {
 		List<StorageObjectMetadata> listFiles;
 		try {
 			listFiles = service.listFiles(parentDirectory, "", true);
