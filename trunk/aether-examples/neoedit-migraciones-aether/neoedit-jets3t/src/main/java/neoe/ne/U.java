@@ -1315,9 +1315,9 @@ public class U {
 	}
 
 	static void loadTabImage() throws Exception {
-		BufferedImage img = ImageIO.read(U.class.getResourceAsStream("/icontab.png"));
+		/*BufferedImage img = ImageIO.read(U.class.getResourceAsStream("/icontab.png"));
 		TabImg = img.getScaledInstance(40, 8, Image.SCALE_SMOOTH);
-		TabImgPrint = img.getScaledInstance(20, 8, Image.SCALE_SMOOTH);
+		TabImgPrint = img.getScaledInstance(20, 8, Image.SCALE_SMOOTH);*/
 	}
 
 	static void openFile(File f) throws Exception {
