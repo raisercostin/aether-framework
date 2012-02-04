@@ -103,7 +103,7 @@ public class JetS3tAetherFrameworkAdapter extends AetherFrameworkAdapter {
 
 	public StorageObject putObjectImpl(String bucketName, StorageObject object) throws ServiceException {
 		try {
-			return (S3Object) this.putObject(bucketName, object);
+			return (StorageObject) this.putObject(bucketName, object);
 		} catch (ServiceException se) {
 			throw new S3ServiceException(se);
 		}
