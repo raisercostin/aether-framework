@@ -73,7 +73,7 @@ public class EditPanel extends JPanel implements MouseMotionListener, MouseListe
 		if (frame != null)
 			return;
 		frame = new JFrame(PlainPage.WINDOW_NAME);
-		frame.setIconImage(ImageIO.read(EditPanel.class.getResourceAsStream("/Alien.png")));
+		//frame.setIconImage(ImageIO.read(EditPanel.class.getResourceAsStream("/Alien.png")));
 		frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		U.setFrameSize(frame, 800, 600);
 		frame.getContentPane().add(this);
