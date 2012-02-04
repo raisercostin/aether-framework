@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cloudloop-config>
+	<adapters>
+		<adapter impl="com.cloudloop.storage.adapter.amazonS3.AmazonS3CloudStore" name="amazonS3" type="storage" />
+	</adapters>
+	<stores>
+		<default-store>amazon</default-store>
+		<store>
+			<name>amazon</name>
+			<adapter>amazonS3</adapter>
+			<encrypted>false</encrypted>
+			<property name="access-key-id"></property>
+			<property name="secret-key"></property>
+			<property name="bucket-name"></property>
+		</store>
+	</stores>
+</cloudloop-config>
