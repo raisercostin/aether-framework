@@ -21,6 +21,7 @@ import com.tesis.aether.core.exception.URLExtractionException;
 import com.tesis.aether.core.exception.UploadException;
 import com.tesis.aether.core.services.CloudService;
 import com.tesis.aether.core.services.CloudServiceConstants;
+import com.tesis.aether.core.services.storage.constants.StorageServiceConstants;
 import com.tesis.aether.core.services.storage.object.StorageObject;
 import com.tesis.aether.core.services.storage.object.StorageObjectMetadata;
 
@@ -40,6 +41,10 @@ public abstract class BaseStorageService extends CloudService {
 	 * @throws MethodNotSupportedException
 	 */
 	public abstract boolean checkDirectoryExists(String container, String remotePath) throws MethodNotSupportedException;
+	
+	public boolean checkDirectoryExists(String remotePath) throws MethodNotSupportedException {
+		return checkDirectoryExists(this.getServiceProperty(StorageServiceConstants.CONTAINER), remotePath);
+	}
 
 	/**
 	 * Verifica si un archivo especifico existe dentro de un container.
@@ -50,6 +55,9 @@ public abstract class BaseStorageService extends CloudService {
 	 * @throws MethodNotSupportedException
 	 */
 	public abstract boolean checkFileExists(String container, String remotePath) throws MethodNotSupportedException;
+	public boolean checkFileExists(String remotePath) throws MethodNotSupportedException {
+		return checkFileExists(this.getServiceProperty(StorageServiceConstants.CONTAINER), remotePath);
+	}
 
 	/**
 	 * Verifica si un objeto, sea archivo o directorio, existe dentro de un
@@ -61,6 +69,9 @@ public abstract class BaseStorageService extends CloudService {
 	 * @throws MethodNotSupportedException
 	 */
 	public abstract boolean checkObjectExists(String container, String remotePath) throws MethodNotSupportedException;
+	public boolean checkObjectExists(String remotePath) throws MethodNotSupportedException {
+		return checkObjectExists(this.getServiceProperty(StorageServiceConstants.CONTAINER), remotePath);
+	}
 
 	/**
 	 * Copia el archivo “from” del container “fromContainer” hacia el directorio
@@ -95,6 +106,9 @@ public abstract class BaseStorageService extends CloudService {
 	 * @throws MethodNotSupportedException
 	 */
 	public abstract void createFolder(String container, String remotePath) throws FolderCreationException, MethodNotSupportedException;
+	public void createFolder(String remotePath) throws FolderCreationException, MethodNotSupportedException {
+		createFolder(this.getServiceProperty(StorageServiceConstants.CONTAINER), remotePath);
+	}
 
 	/**
 	 * Método de acceso genérico a “delete”. Elimina un objeto, sea archivo o
@@ -107,6 +121,9 @@ public abstract class BaseStorageService extends CloudService {
 	 * @throws DeleteException
 	 */
 	public abstract void delete(String container, StorageObjectMetadata file, boolean recursive) throws DeleteException;
+	public void delete(StorageObjectMetadata file, boolean recursive) throws DeleteException {
+		delete(this.getServiceProperty(StorageServiceConstants.CONTAINER), file, recursive);
+	}
 
 	/**
 	 * Método de acceso genérico a “delete”. Elimina un objeto, sea archivo o
@@ -119,6 +136,9 @@ public abstract class BaseStorageService extends CloudService {
 	 * @throws DeleteException
 	 */
 	public abstract void delete(String container, String remotePathFile, boolean recursive) throws DeleteException;
+	public void delete(String remotePathFile, boolean recursive) throws DeleteException {
+		delete(this.getServiceProperty(StorageServiceConstants.CONTAINER), remotePathFile, recursive);
+	}
 
 	/**
 	 * Elimina un container completo de la cuenta del usuario. El contenido del
@@ -137,6 +157,9 @@ public abstract class BaseStorageService extends CloudService {
 	 * @throws DeleteException
 	 */
 	public abstract void deleteFile(String container, String remotePathFile) throws DeleteException;
+	public void deleteFile(String remotePathFile) throws DeleteException {
+		deleteFile(this.getServiceProperty(StorageServiceConstants.CONTAINER), remotePathFile);
+	}
 
 	/**
 	 * Elimina el directorio pasado por parámetro del contenedor especificado.
@@ -146,6 +169,9 @@ public abstract class BaseStorageService extends CloudService {
 	 * @throws DeleteException
 	 */
 	public abstract void deleteFolder(String container, String remotePath) throws DeleteException;
+	public void deleteFolder(String remotePath) throws DeleteException {
+		deleteFolder(this.getServiceProperty(StorageServiceConstants.CONTAINER), remotePath);
+	}
 
 	/**
 	 * Descarga el directorio “remoteDirectory” dentro del path local
@@ -159,6 +185,9 @@ public abstract class BaseStorageService extends CloudService {
 	 * @throws MethodNotSupportedException
 	 */
 	public abstract void downloadDirectoryToDirectory(String container, String remotePathFile, File localDirectory) throws FileNotExistsException, DownloadException, MethodNotSupportedException;
+	public void downloadDirectoryToDirectory(String remotePathFile, File localDirectory) throws FileNotExistsException, DownloadException, MethodNotSupportedException {
+		downloadDirectoryToDirectory(this.getServiceProperty(StorageServiceConstants.CONTAINER), remotePathFile, localDirectory);
+	}
 
 	/**
 	 * Descarga el archivo remoto pasado por parámetro dentro del path local
@@ -171,6 +200,9 @@ public abstract class BaseStorageService extends CloudService {
 	 * @throws DownloadException
 	 */
 	public abstract void downloadFileToDirectory(String container, String remotePathFile, File localDirectory) throws FileNotExistsException, DownloadException;
+	public void downloadFileToDirectory(String remotePathFile, File localDirectory) throws FileNotExistsException, DownloadException {
+		downloadFileToDirectory(this.getServiceProperty(StorageServiceConstants.CONTAINER), remotePathFile, localDirectory);
+	}
 
 	/**
 	 * Método genérico de acceso a “get”. Descarga el archivo o directorio
@@ -185,6 +217,9 @@ public abstract class BaseStorageService extends CloudService {
 	 * @throws DownloadException
 	 */
 	public abstract void downloadToDirectory(String container, String remotePathFile, File localDirectory) throws MethodNotSupportedException, FileNotExistsException, DownloadException;
+	public void downloadToDirectory(String remotePathFile, File localDirectory) throws MethodNotSupportedException, FileNotExistsException, DownloadException {
+		downloadToDirectory(this.getServiceProperty(StorageServiceConstants.CONTAINER), remotePathFile, localDirectory);
+	}
 
 	/**
 	 * Verifica si el container con nombre “name” existe.
@@ -204,6 +239,9 @@ public abstract class BaseStorageService extends CloudService {
 	 * @throws FileNotExistsException
 	 */
 	public abstract InputStream getInputStream(String container, String remotePathFile) throws FileNotExistsException;
+	public InputStream getInputStream(String remotePathFile) throws FileNotExistsException {
+		return getInputStream(this.getServiceProperty(StorageServiceConstants.CONTAINER), remotePathFile);
+	}
 
 	/**
 	 * Retorna los metadatos de un archivo particular dentro del container
@@ -214,6 +252,9 @@ public abstract class BaseStorageService extends CloudService {
 	 * @return
 	 */
 	public abstract StorageObjectMetadata getMetadataForObject(String container, String remotePathFile);
+	public StorageObjectMetadata getMetadataForObject(String remotePathFile) {
+		return getMetadataForObject(this.getServiceProperty(StorageServiceConstants.CONTAINER), remotePathFile);
+	}
 
 	/**
 	 * Retorna una URI pública para el archivo deseado dentro de “container”
@@ -226,6 +267,9 @@ public abstract class BaseStorageService extends CloudService {
 	 * @throws URLExtractionException
 	 */
 	public abstract URI getPublicURLForPath(String container, String remotePath) throws FileNotExistsException, MethodNotSupportedException, URLExtractionException;
+	public URI getPublicURLForPath(String remotePath) throws FileNotExistsException, MethodNotSupportedException, URLExtractionException {
+		return getPublicURLForPath(this.getServiceProperty(StorageServiceConstants.CONTAINER), remotePath);
+	}
 
 	/**
 	 * Retorna un StorageObject completo con los datos del archivo apuntado por
@@ -238,6 +282,9 @@ public abstract class BaseStorageService extends CloudService {
 	 * @throws FileNotExistsException
 	 */
 	public abstract StorageObject getStorageObject(String container, String remotePathFile) throws FileNotExistsException;
+	public StorageObject getStorageObject(String remotePathFile) throws FileNotExistsException {
+		return getStorageObject(this.getServiceProperty(StorageServiceConstants.CONTAINER), remotePathFile);
+	}
 
 	/**
 	 * Retorna la fecha de última modificación del archivo “remotePath”
@@ -251,6 +298,9 @@ public abstract class BaseStorageService extends CloudService {
 	 * @throws FileNotExistsException
 	 */
 	public abstract Date lastModified(String container, String remotePath) throws MetadataFetchingException, MethodNotSupportedException, FileNotExistsException;
+	public Date lastModified(String remotePath) throws MetadataFetchingException, MethodNotSupportedException, FileNotExistsException {
+		return lastModified(this.getServiceProperty(StorageServiceConstants.CONTAINER), remotePath);
+	}
 
 	/**
 	 * Retorna una lista de todos los containers disponibles para el las
@@ -276,6 +326,9 @@ public abstract class BaseStorageService extends CloudService {
 	 * @throws MethodNotSupportedException
 	 */
 	public abstract List<StorageObjectMetadata> listFiles(String container, String remotePath, boolean recursive) throws MethodNotSupportedException;
+	public List<StorageObjectMetadata> listFiles(String remotePath, boolean recursive) throws MethodNotSupportedException {
+		return listFiles(this.getServiceProperty(StorageServiceConstants.CONTAINER), remotePath, recursive);
+	}
 
 	/**
 	 * Migra recursivamente los datos del servicio actual, comenzando desde el
@@ -316,6 +369,9 @@ public abstract class BaseStorageService extends CloudService {
 	 * @throws FileNotExistsException
 	 */
 	public abstract Long sizeOf(String container, String remotePath) throws MetadataFetchingException, MethodNotSupportedException, FileNotExistsException;
+	public Long sizeOf(String remotePath) throws MetadataFetchingException, MethodNotSupportedException, FileNotExistsException {
+		return sizeOf(this.getServiceProperty(StorageServiceConstants.CONTAINER), remotePath);
+	}
 
 	/**
 	 * Método de acceso genérico al “put”. Realiza un “put” de un archivo o
@@ -330,6 +386,9 @@ public abstract class BaseStorageService extends CloudService {
 	 * @throws FileNotExistsException
 	 */
 	public abstract void upload(File localPath, String container, String remoteDirectory) throws UploadException, MethodNotSupportedException, FileNotExistsException;
+	public void upload(File localPath, String remoteDirectory) throws UploadException, MethodNotSupportedException, FileNotExistsException {
+		upload(localPath, this.getServiceProperty(StorageServiceConstants.CONTAINER), remoteDirectory);
+	}
 
 	/**
 	 * Realiza un “put” de un directorio completo dentro del container y
@@ -343,6 +402,9 @@ public abstract class BaseStorageService extends CloudService {
 	 * @throws FileNotExistsException
 	 */
 	public abstract void uploadDirectory(File localDirectory, String container, String remoteDirectory) throws UploadException, MethodNotSupportedException, FileNotExistsException;
+	public void uploadDirectory(File localDirectory, String remoteDirectory) throws UploadException, MethodNotSupportedException, FileNotExistsException {		
+		uploadDirectory(localDirectory, this.getServiceProperty(StorageServiceConstants.CONTAINER), remoteDirectory);
+	}
 
 	/**
 	 * Realiza un “put” en el servicio de storage de un inputStream especifico
@@ -359,6 +421,9 @@ public abstract class BaseStorageService extends CloudService {
 	 * @throws FileNotExistsException
 	 */
 	public abstract void uploadInputStream(InputStream stream, String container, String remoteDirectory, String filename, Long contentLength) throws UploadException, MethodNotSupportedException, FileNotExistsException;
+	public void uploadInputStream(InputStream stream, String remoteDirectory, String filename, Long contentLength) throws UploadException, MethodNotSupportedException, FileNotExistsException {
+		uploadInputStream(stream, this.getServiceProperty(StorageServiceConstants.CONTAINER), remoteDirectory, filename, contentLength);
+	}
 
 	/**
 	 * Realiza un “put” de un archivo local en el container y directorio
@@ -372,4 +437,7 @@ public abstract class BaseStorageService extends CloudService {
 	 * @throws FileNotExistsException
 	 */
 	public abstract void uploadSingleFile(File localFile, String container, String remoteDirectory) throws UploadException, MethodNotSupportedException, FileNotExistsException;
+	public void uploadSingleFile(File localFile, String remoteDirectory) throws UploadException, MethodNotSupportedException, FileNotExistsException {
+		uploadSingleFile(localFile, this.getServiceProperty(StorageServiceConstants.CONTAINER), remoteDirectory);
+	}
 }
