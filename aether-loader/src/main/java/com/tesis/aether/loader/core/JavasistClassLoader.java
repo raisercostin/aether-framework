@@ -2,6 +2,8 @@ package com.tesis.aether.loader.core;
 
 import java.io.*;
 import java.lang.reflect.Method;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.HashMap;
 
 import javassist.CannotCompileException;
@@ -13,6 +15,7 @@ import com.tesis.aether.loader.classTools.ClassManipulator;
 import com.tesis.aether.loader.conf.ConfigClassLoader;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
+
 /********************************************************************************
  * Para que el cargador de clases funcione en la aplicacion                     *
  * se debe agregar com parametro de la vm la siguiente linea:                   *
@@ -20,25 +23,23 @@ import org.apache.log4j.PropertyConfigurator;
  * -Djava.system.class.loader=com.tesis.aether.loader.core.CompilingClassLoader *
  ********************************************************************************/
 
-
 /**
- * Compila las clases en caso de haber sufrido modificaciones
- * o estar desactualizadas y las carga para ejecucion
+ * Compila las clases en caso de haber sufrido modificaciones o estar
+ * desactualizadas y las carga para ejecucion
  */
 public class JavasistClassLoader extends ClassLoader {
 	/**
 	 * Logger utilizado por la clase
 	 */
 	private static Logger logger = null;
-	
+
 	/**
-	 * Contiene el mapeo de clases a ser reemplazadas en la carga.
-	 * Las clases se deben especificar con incluyendo el paquete,
-	 * por ejemplo: "java.util.HashMap"
-	 * <Clase a reemplazar, Clase reemplazante>
+	 * Contiene el mapeo de clases a ser reemplazadas en la carga. Las clases se
+	 * deben especificar con incluyendo el paquete, por ejemplo:
+	 * "java.util.HashMap" <Clase a reemplazar, Clase reemplazante>
 	 */
 	private HashMap<String, String> classExceptions = new HashMap<String, String>();
-	
+
 	/**
 	 * Indica si se debe cargar la configuracion o no
 	 */
@@ -46,7 +47,9 @@ public class JavasistClassLoader extends ClassLoader {
 
 	/**
 	 * Constructor de la clase
-	 * @param parent classloader padre
+	 * 
+	 * @param parent
+	 *            classloader padre
 	 */
 	public JavasistClassLoader(ClassLoader parent) {
 		super(parent);
@@ -54,22 +57,32 @@ public class JavasistClassLoader extends ClassLoader {
 
 	/**
 	 * Carga el mapeo de clases
-	 * @param fromPath path al archivo de configuracion
-	 * @throws SAXException excepcion al parsear el archivo xml de configuracion
-	 * @throws IOException excepcion al intentar tener acceso al archivo de configuracion
-	 * @throws ParserConfigurationException excepcion al parsear el archivo de configuracion
+	 * 
+	 * @param fromPath
+	 *            path al archivo de configuracion
+	 * @throws SAXException
+	 *             excepcion al parsear el archivo xml de configuracion
+	 * @throws IOException
+	 *             excepcion al intentar tener acceso al archivo de
+	 *             configuracion
+	 * @throws ParserConfigurationException
+	 *             excepcion al parsear el archivo de configuracion
 	 */
-	private void loadClassMapper(String fromPath) throws SAXException,
-			IOException, ParserConfigurationException {
+	private void loadClassMapper(String fromPath) throws SAXException, IOException, ParserConfigurationException {
 		ConfigClassLoader conf = new ConfigClassLoader(fromPath);
 		classExceptions = conf.getClassExceptions();
 	}
 
 	/**
 	 * Agrega una clase para ser reemplazada en la carga
-	 * @param classSrc clase original
-	 * @param classDst clase destino a la cual seran mapeados los metodos de la original
-	 * @return true en caso de haberse agregado la excepcion, false en caso de existir la clase en el mapeo
+	 * 
+	 * @param classSrc
+	 *            clase original
+	 * @param classDst
+	 *            clase destino a la cual seran mapeados los metodos de la
+	 *            original
+	 * @return true en caso de haberse agregado la excepcion, false en caso de
+	 *         existir la clase en el mapeo
 	 */
 	public boolean addClassException(String classSrc, String classDst) {
 		if (classExceptions.containsKey(classSrc)) {
@@ -81,7 +94,9 @@ public class JavasistClassLoader extends ClassLoader {
 
 	/**
 	 * Remueve una clase de la lista de reemplazos
-	 * @param classException nombre original de la clase a eliminar del mapeo
+	 * 
+	 * @param classException
+	 *            nombre original de la clase a eliminar del mapeo
 	 * @return true si se elimino, false si la clase no se encontraba mapeada
 	 */
 	public boolean removeClassException(String classException) {
@@ -93,9 +108,10 @@ public class JavasistClassLoader extends ClassLoader {
 	}
 
 	/**
-	 * Retorna el nombre del paquete de una clase completa pasada
-	 * como parametro
-	 * @param srcClass nombre completo de la clase
+	 * Retorna el nombre del paquete de una clase completa pasada como parametro
+	 * 
+	 * @param srcClass
+	 *            nombre completo de la clase
 	 * @return nombre del paquete de la clase
 	 */
 	@SuppressWarnings("unused")
@@ -115,9 +131,11 @@ public class JavasistClassLoader extends ClassLoader {
 	}
 
 	/**
-	 * Retorna el nombre de la clase pasada como parametro,
-	 * quitandole el nombre de paquete
-	 * @param srcClass nombre completo de la clase
+	 * Retorna el nombre de la clase pasada como parametro, quitandole el nombre
+	 * de paquete
+	 * 
+	 * @param srcClass
+	 *            nombre completo de la clase
 	 * @return nombre de la clase
 	 */
 	@SuppressWarnings("unused")
@@ -135,7 +153,9 @@ public class JavasistClassLoader extends ClassLoader {
 
 	/**
 	 * Retorna si la clase se encuentra en la lista de reemplazos
-	 * @param className nombre completo de la clase 
+	 * 
+	 * @param className
+	 *            nombre completo de la clase
 	 * @return true en caso de encontrarse la clase en la lista de excepciones
 	 */
 	private boolean isExceptedClass(String className) {
@@ -143,25 +163,29 @@ public class JavasistClassLoader extends ClassLoader {
 	}
 
 	/**
-	 * Retorna la clase que reemplaza a la especificada por parametro
-	 * En caso de no existir retorna el mismo nombre de clase que se recibio
-	 * @param className nombre de la clase
-	 * @return nombre de la clase mapeada en caso de existir. En caso contrario retorna el mismo nombre que el pasado por parametro
+	 * Retorna la clase que reemplaza a la especificada por parametro En caso de
+	 * no existir retorna el mismo nombre de clase que se recibio
+	 * 
+	 * @param className
+	 *            nombre de la clase
+	 * @return nombre de la clase mapeada en caso de existir. En caso contrario
+	 *         retorna el mismo nombre que el pasado por parametro
 	 */
 	private String replaceClassName(String className) {
 		String newName = className;
 		if (isExceptedClass(className)) {
 			newName = classExceptions.get(className);
-			logger.debug("Changing class name '" + className + "' to '"
-					+ newName + "'");
+			logger.debug("Changing class name '" + className + "' to '" + newName + "'");
 		}
 		return newName;
 	}
 
 	/**
-	 * Dado un nombre de archivo, lo lee del disco y lo retorna 
-	 * como un array de bytes
-	 * @param filename nombre del archivo
+	 * Dado un nombre de archivo, lo lee del disco y lo retorna como un array de
+	 * bytes
+	 * 
+	 * @param filename
+	 *            nombre del archivo
 	 * @return bytes correspondientes al archivo
 	 * @throws IOException
 	 */
@@ -178,9 +202,11 @@ public class JavasistClassLoader extends ClassLoader {
 	}
 
 	/**
-	 * Compila un archivo pasado como parametro creando un proceso
-	 * para realizar la compilacion
-	 * @param javaFile nombre de la clase java a compilar
+	 * Compila un archivo pasado como parametro creando un proceso para realizar
+	 * la compilacion
+	 * 
+	 * @param javaFile
+	 *            nombre de la clase java a compilar
 	 * @return true si la compilacion fue exitosa
 	 * @throws IOException
 	 */
@@ -195,30 +221,32 @@ public class JavasistClassLoader extends ClassLoader {
 		int ret = p.exitValue();
 		return ret == 0;
 	}
-	
+
 	/**
 	 * Carga la clase especificada
-	 * @param javaFilename nombre del archivo fuente
-	 * @param classFilename nombre del archivo .class
-	 * @param name nombre de la clase
+	 * 
+	 * @param javaFilename
+	 *            nombre del archivo fuente
+	 * @param classFilename
+	 *            nombre del archivo .class
+	 * @param name
+	 *            nombre de la clase
 	 * @return clase cargada
-	 * @throws ClassNotFoundException en caso de no encontrar la clase
+	 * @throws ClassNotFoundException
+	 *             en caso de no encontrar la clase
 	 */
-	private Class<?> loadClass (String javaFilename, String classFilename, String name) throws ClassNotFoundException {
+	private Class<?> loadClass(String javaFilename, String classFilename, String name) throws ClassNotFoundException {
 		File javaFile = new File(javaFilename);
 		File classFile = new File(classFilename);
 		Class<?> clas = null;
 		// Primero vemos si es necesario compilar. Si existe el codigo
 		// java y no existe el .class o el .class esta desactualizado
 		// entonces procedemos a compilarlo
-		if (javaFile.exists()
-				&& (!classFile.exists() || javaFile.lastModified() > classFile
-						.lastModified())) {
+		if (javaFile.exists() && (!classFile.exists() || javaFile.lastModified() > classFile.lastModified())) {
 			try {
 				// Si no se puede realizar la compilacion se lanza una excepcion
 				if (!compile(javaFilename) || !classFile.exists()) {
-					throw new ClassNotFoundException("Compile failed: "
-							+ javaFilename);
+					throw new ClassNotFoundException("Compile failed: " + javaFilename);
 				}
 			} catch (IOException ie) {
 				// Lanzamos la excepcion en caso de haber ocurrido algun
@@ -232,8 +260,8 @@ public class JavasistClassLoader extends ClassLoader {
 			// Tratamos de convertir el array en una clase
 			clas = defineClass(name, raw, 0, raw.length);
 		} catch (IOException ie) {
-			//No es un error ya que puede ser que tratemos de cargar
-			//una biblioteca
+			// No es un error ya que puede ser que tratemos de cargar
+			// una biblioteca
 			logger.debug("Error al cargar el arreglo de bytes, se continua con la carga de la clase... Error: " + ie.getMessage());
 		}
 		return clas;
@@ -263,14 +291,19 @@ public class JavasistClassLoader extends ClassLoader {
 		System.out.println("PATH DEL ARCHIVO NO ENCONTRADO");
 		return null;
 	}
-	
+
 	/**
-	 * Cargador de clases utilizado para las clases que no estan en las excepciones
-	 * @param name nombre de la clase a cargar
+	 * Cargador de clases utilizado para las clases que no estan en las
+	 * excepciones
+	 * 
+	 * @param name
+	 *            nombre de la clase a cargar
 	 * @return clase cargada
-	 * @throws ClassNotFoundException en caso de no encontrarse la clase
+	 * @throws ClassNotFoundException
+	 *             en caso de no encontrarse la clase
 	 */
 	public Class<?> loadClass2(String name) throws ClassNotFoundException {
+		ClassManipulator fa;
 		Class<?> clas = null;
 		// Se busca si la clase ya fue cargada
 		clas = findLoadedClass(name);
@@ -278,7 +311,7 @@ public class JavasistClassLoader extends ClassLoader {
 			// Se crea una ruta a la clase
 			// Por ejemplo java.lang.Object => java/lang/Object
 			String fileStub = name.replace('.', '/');
-			
+
 			String classpath = System.getProperty("java.class.path");
 			if (classpath != null) {
 				String[] classpathItems = classpath.split(";");
@@ -287,12 +320,13 @@ public class JavasistClassLoader extends ClassLoader {
 				String classpathItem = "";
 				while (search && i < classpathItems.length) {
 					classpathItem = classpathItems[i];
-					// Construimos los objetos que apunten al codigo fuente 
+					// Construimos los objetos que apunten al codigo fuente
 					// y al .class
 					String javaFilename = classpathItem.replace("\\", "/").concat("/") + fileStub + ".java";
 					String classFilename = classpathItem.replace("\\", "/").concat("/") + fileStub + ".class";
-					// Se trata de acargar la clase usando el elemento del classpath
-					
+					// Se trata de acargar la clase usando el elemento del
+					// classpath
+
 					logger.debug("clas = loadClass(" + javaFilename + ", " + classFilename + ", " + name + ");");
 					clas = loadClass(javaFilename, classFilename, name);
 					if (clas != null) {
@@ -303,8 +337,8 @@ public class JavasistClassLoader extends ClassLoader {
 			}
 		}
 
-		//La clase puede estar en una biblioteca, por lo que se intenta
-		//cargar de forma normal
+		// La clase puede estar en una biblioteca, por lo que se intenta
+		// cargar de forma normal
 		if (clas == null) {
 			clas = super.loadClass(name);
 		}
@@ -320,12 +354,13 @@ public class JavasistClassLoader extends ClassLoader {
 		// En caso de haberse encontrado la clase, se retorna
 		return clas;
 	}
-	
-	
+
 	/**
-	 * Se encarga de cargar las clases y compilar los .java
-	 * en caso de que sea necesario.
-	 * @param origName nombre original de la clase a cargar
+	 * Se encarga de cargar las clases y compilar los .java en caso de que sea
+	 * necesario.
+	 * 
+	 * @param origName
+	 *            nombre original de la clase a cargar
 	 */
 	@Override
 	public Class<?> loadClass(String origName) throws ClassNotFoundException {
@@ -333,9 +368,9 @@ public class JavasistClassLoader extends ClassLoader {
 			loadConfigurations = false;
 			logger = Logger.getLogger("default");
 			PropertyConfigurator.configure("resources/log4j.properties");
-			
-			//carga de clases a mapear
-			String actualPath = new File (".").getAbsolutePath();//System.getProperty("user.dir");
+
+			// carga de clases a mapear
+			String actualPath = new File(".").getAbsolutePath();// System.getProperty("user.dir");
 			System.out.println("Current Path: " + actualPath);
 			String path = findPath("configClassLoader", "xml");
 			if (path != null) {
@@ -356,8 +391,8 @@ public class JavasistClassLoader extends ClassLoader {
 		}
 		logger.debug("loading " + origName + "...");
 		if (!isExceptedClass(origName)) {
-			//Si la clase no esta en la lista de excepciones entonces
-			//se carga con un classloader normal
+			// Si la clase no esta en la lista de excepciones entonces
+			// se carga con un classloader normal
 			Class<?> clas = loadClass2(origName);
 			return clas;
 		}
@@ -368,15 +403,18 @@ public class JavasistClassLoader extends ClassLoader {
 		} catch (Exception e) {
 			logger.error(e);
 			throw new ClassNotFoundException(nameClassTo);
-		}	
+		}
 	}
-	
+
 	/**
 	 * Carga la clase e invoca al metodo especificado
 	 * 
-	 * @param className Clase que se quiere cargar
-	 * @param methodName Nombre del metodo que se va a invocar
-	 * @param args Argumentos pasados en la llamada al metodo
+	 * @param className
+	 *            Clase que se quiere cargar
+	 * @param methodName
+	 *            Nombre del metodo que se va a invocar
+	 * @param args
+	 *            Argumentos pasados en la llamada al metodo
 	 * @throws Exception
 	 */
 	public void invoke(String className, String methodName, String args[], Class<?>[] argsTypes) throws Exception {
@@ -391,4 +429,20 @@ public class JavasistClassLoader extends ClassLoader {
 		method.invoke(null, argsArray);
 	}
 
+	protected URL findResource(String name) {
+		try {
+			File file = new File(name);
+			if (file.exists()) {
+				return file.toURI().toURL();
+
+			}
+			file = new File("src/main/resources/" + name);
+			if(file.exists()) {
+				return file.toURI().toURL();
+			}
+			
+		} catch (Exception e) {
+		}
+		return null;
+	}
 }
