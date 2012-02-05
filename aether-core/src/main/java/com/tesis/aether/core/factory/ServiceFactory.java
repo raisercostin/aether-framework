@@ -13,6 +13,8 @@ import com.tesis.aether.core.services.storage.ExtendedStorageService;
 
 public class ServiceFactory {
 
+	private AccountXmlParser xmlParser = AccountXmlParser.INSTANCE;
+
 	private Map<String, CloudService> services;
 
 	public static ServiceFactory instance = new ServiceFactory();
@@ -21,7 +23,7 @@ public class ServiceFactory {
 
 	protected ServiceFactory() {
 		try {
-			setServices(AccountXmlParser.INSTANCE.loadServices(SERVICES_FILE));
+			setServices(xmlParser.loadServices(SERVICES_FILE));
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

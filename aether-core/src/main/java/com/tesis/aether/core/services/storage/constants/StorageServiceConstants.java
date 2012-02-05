@@ -14,5 +14,6 @@ public class StorageServiceConstants {
 	public static final String GOOGLE_STORAGE_BUCKET = "googleStorageBucket";
 	public static final String GOOGLE_STORAGE_ACCESS_KEY = "googleStorageAccessKey";
 	public static final String GOOGLE_STORAGE_SECRET_KEY = "googleStorageSecretKey";
+	public static final String CONTAINER = "container";
 
 }
