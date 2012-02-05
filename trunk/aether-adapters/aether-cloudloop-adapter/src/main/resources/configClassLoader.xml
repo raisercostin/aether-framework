@@ -1,0 +1,20 @@
+<ClassLoaderConfig>
+	<classException>
+		<srcClass>com.cloudloop.storage.adapter.CloudStoreAdapterBase</srcClass>
+		<dstClass>com.tesis.aether.adapters.cloudloop.CloudloopAetherAdapter</dstClass>
+	</classException>
+	<classException>
+		<srcClass>com.cloudloop.storage.adapter.amazonS3.AmazonS3AdapterBase</srcClass>
+		<dstClass>com.tesis.aether.adapters.cloudloop.CloudloopAetherAdapter</dstClass>
+	</classException>
+	<classException>
+		<srcClass>com.cloudloop.storage.adapter.amazonS3.AmazonS3CloudStore</srcClass>
+		<dstClass>com.tesis.aether.adapters.cloudloop.CloudloopAetherAdapter</dstClass>
+	</classException>
+	
+	<packageException>
+		<srcPackage></srcPackage>
+		<dstPackage></dstPackage>
+	</packageException>
+</ClassLoaderConfig>
+

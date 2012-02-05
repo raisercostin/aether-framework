@@ -20,6 +20,8 @@
 		<module>aether-jets3t-adapter</module>
 		<module>aether-dasein-adapter</module>
 		<module>aether-file-adapter</module>
+		<module>aether-cloudloop-adapter</module>
+		<module>aether-libcloud-adapter</module>
 	</modules>
 
 </project>
