@@ -9,9 +9,9 @@
 			<name>amazon</name>
 			<adapter>amazonS3</adapter>
 			<encrypted>false</encrypted>
-			<property name="access-key-id"></property>
-			<property name="secret-key"></property>
-			<property name="bucket-name"></property>
+			<property name="access-key-id">11111111111111111111</property>
+			<property name="secret-key">1111111111111111111111111111111111111111</property>
+			<property name="bucket-name">test</property>
 		</store>
 	</stores>
 </cloudloop-config>
