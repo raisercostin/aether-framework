@@ -27,7 +27,8 @@ public class CloudLoopAdapter {
 
 	public CloudLoopAdapter() {
 		try {
-			URL cfgResource = Cloudloop.class.getClassLoader().getResource("cloudloop.xml");
+			URL cfgResource = ClassLoader.getSystemResource("cloudloop.xml");
+			
 			Cloudloop cloudloop = Cloudloop.loadFrom(new File(cfgResource.toURI()));
 			storage = cloudloop.getStorage("amazon");
 		} catch (Exception e) {
@@ -107,6 +108,7 @@ public class CloudLoopAdapter {
 
 		try {
 			CloudStoreFile destinationFile = storage.getFile("/" + path);
+			destinationFile.getMetadata().setContentLengthInBytes(file.length());
 			destinationFile.setStreamToStore(new FileInputStream(selectedFile));
 			storage.upload(destinationFile, null);
 		} catch (Exception e) {
