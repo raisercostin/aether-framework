@@ -21,12 +21,15 @@ package com.mucommander.file.impl.s3;
 import com.mucommander.auth.AuthException;
 import com.mucommander.file.*;
 import com.mucommander.io.RandomAccessInputStream;
-import org.jets3t.service.S3Service;
-import org.jets3t.service.S3ServiceException;
+
+import org.jclouds.blobstore.BlobStore;
+import org.jclouds.blobstore.domain.PageSet;
+import org.jclouds.blobstore.domain.StorageMetadata;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.Date;
 
 /**
  * <code>S3Bucket</code> represents an Amazon S3 bucket.
@@ -43,14 +46,14 @@ public class S3Bucket extends S3File {
     private final static FilePermissions DEFAULT_PERMISSIONS = new SimpleFilePermissions(448);   // rwx------
 
 
-    protected S3Bucket(FileURL url, S3Service service, String bucketName) throws AuthException {
+    protected S3Bucket(FileURL url, BlobStore service, String bucketName) throws AuthException {
         super(url, service);
 
         this.bucketName = bucketName;
         atts = new S3BucketFileAttributes();
     }
 
-    protected S3Bucket(FileURL url, S3Service service, org.jets3t.service.model.S3Bucket bucket) throws AuthException {
+    protected S3Bucket(FileURL url, BlobStore service, StorageMetadata bucket) throws AuthException {
         super(url, service);
 
         this.bucketName = bucket.getName();
@@ -90,9 +93,9 @@ public class S3Bucket extends S3File {
     @Override
     public void delete() throws IOException {
         try {
-            service.deleteBucket(bucketName);
+            service.deleteContainer(bucketName);
         }
-        catch(S3ServiceException e) {
+        catch(Exception e) {
             throw getIOException(e);
         }
     }
@@ -100,9 +103,9 @@ public class S3Bucket extends S3File {
     @Override
     public void mkdir() throws IOException {
         try {
-            service.createBucket(bucketName);
+            service.createContainerInLocation(null, bucketName);
         }
-        catch(S3ServiceException e) {
+        catch(Exception e) {
             throw getIOException(e);
         }
     }
@@ -172,7 +175,7 @@ public class S3Bucket extends S3File {
             updateExpirationDate(); // declare the attributes as 'fresh'
         }
 
-        private S3BucketFileAttributes(org.jets3t.service.model.S3Bucket bucket) throws AuthException {
+        private S3BucketFileAttributes(StorageMetadata bucket) throws AuthException {
             super(TTL, false);      // no initial update
 
             setAttributes(bucket);
@@ -181,22 +184,30 @@ public class S3Bucket extends S3File {
             updateExpirationDate(); // declare the attributes as 'fresh'
         }
 
-        private void setAttributes(org.jets3t.service.model.S3Bucket bucket) {
+        private void setAttributes(StorageMetadata bucket) {
             setDirectory(true);
-            setDate(bucket.getCreationDate().getTime());
+            if (bucket.getLastModified() != null)
+            	setDate(bucket.getLastModified().getTime());
+            else
+            	setDate((new Date()).getTime());
             setPermissions(DEFAULT_PERMISSIONS);
-            setOwner(bucket.getOwner().getDisplayName());
+            setOwner(null);
         }
 
         private void fetchAttributes() throws AuthException {
-            org.jets3t.service.model.S3Bucket bucket;
-            S3ServiceException e = null;
+        	StorageMetadata bucket;
+            Exception e = null;
             try {
                 // Note: unlike getObjectDetails, getBucket returns null when the bucket does not exist
                 // (that is because the corresponding request is a GET on the root resource, not a HEAD on the bucket).
-                bucket = service.getBucket(bucketName);
+            	PageSet<? extends StorageMetadata> l = service.list(bucketName); 
+            	if (l.size() > 0) {
+            		bucket = l.iterator().next();
+            	} else {
+            		bucket = null;
+            	}
             }
-            catch(S3ServiceException ex) {
+            catch(Exception ex) {
                 e = ex;
                 bucket = null;
             }

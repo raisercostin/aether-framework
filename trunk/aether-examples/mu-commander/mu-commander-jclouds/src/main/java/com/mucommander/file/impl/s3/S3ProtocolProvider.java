@@ -25,11 +25,11 @@ import com.mucommander.file.FileURL;
 import com.mucommander.file.ProtocolProvider;
 import org.apache.commons.logging.LogFactory;
 import org.apache.commons.logging.impl.Jdk14Logger;
-import org.jets3t.service.Jets3tProperties;
-import org.jets3t.service.S3Service;
-import org.jets3t.service.S3ServiceException;
-import org.jets3t.service.impl.rest.httpclient.RestS3Service;
-import org.jets3t.service.security.AWSCredentials;
+import org.jclouds.blobstore.BlobStore;
+import org.jclouds.blobstore.BlobStoreContext;
+import org.jclouds.blobstore.BlobStoreContextFactory;
+import org.jclouds.blobstore.domain.BlobMetadata;
+import org.jclouds.blobstore.domain.StorageMetadata;
 
 import java.io.IOException;
 import java.util.StringTokenizer;
@@ -42,33 +42,36 @@ import java.util.logging.Level;
  */
 public class S3ProtocolProvider implements ProtocolProvider {
 
-    static {
-        // Turn off Jets3t logging: failed (404) HEAD request on non-existing object are logged with a SEVERE level,
-        // even though this is not an error per se. We don't want those to be reported in the log, so we have no
-        // choice but to disable logging entirely.
-        ((Jdk14Logger)LogFactory.getLog(RestS3Service.class)).getLogger().setLevel(Level.OFF);
-    }
+//    static {
+//        // Turn off Jets3t logging: failed (404) HEAD request on non-existing object are logged with a SEVERE level,
+//        // even though this is not an error per se. We don't want those to be reported in the log, so we have no
+//        // choice but to disable logging entirely.
+//        ((Jdk14Logger)LogFactory.getLog(RestS3Service.class)).getLogger().setLevel(Level.INFO);
+//    }
 
     public AbstractFile getFile(FileURL url, Object... instantiationParams) throws IOException {
         Credentials credentials = url.getCredentials();
         if(credentials==null || credentials.getLogin().equals("") || credentials.getPassword().equals(""))
             throw new AuthException(url);
 
-        S3Service service;
+    	BlobStoreContext s3Context;
+    	BlobStore service;        
         String bucketName;
 
         if(instantiationParams.length==0) {
             try {
-                service = new RestS3Service(new AWSCredentials(credentials.getLogin(), credentials.getPassword()));
-                Jets3tProperties props = new Jets3tProperties();
-                props.setProperty("s3service.s3-endpoint", url.getHost());
+            	s3Context = new BlobStoreContextFactory().createContext("aws-s3", credentials.getLogin(), credentials.getPassword());
+            	service = s3Context.getBlobStore();            	
+            	
+                //Jets3tProperties props = new Jets3tProperties();
+                //props.setProperty("s3service.s3-endpoint", url.getHost());
             }
-            catch(S3ServiceException e) {
+            catch(Exception e) {
                 throw S3File.getIOException(e, url);
             }
         }
         else {
-            service = (S3Service)instantiationParams[0];
+            service = (BlobStore)instantiationParams[0];
         }
 
         String path = url.getPath();
@@ -84,15 +87,22 @@ public class S3ProtocolProvider implements ProtocolProvider {
         // Object resource
         if(st.hasMoreTokens()) {
             if(instantiationParams.length==2)
-                return new S3Object(url, service, bucketName, (org.jets3t.service.model.S3Object)instantiationParams[1]);
+                return new S3Object(url, service, bucketName, (StorageMetadata)instantiationParams[1]);
 
             return new S3Object(url, service, bucketName);
         }
 
-        // Bucket resource
-        if(instantiationParams.length==2)
-            return new S3Bucket(url, service, (org.jets3t.service.model.S3Bucket)instantiationParams[1]);
+        //Folder resource
+        if(instantiationParams.length==2){
+            S3Bucket s3b = new S3Bucket(url, service, (StorageMetadata)instantiationParams[1]);
+            //s3b.
+        	return s3b;//new S3Bucket(url, service, (StorageMetadata)instantiationParams[1]);
+        	//S3Object s3o = new S3Object(url, service, bucketName, (StorageMetadata)instantiationParams[1]);
+        	//s3o.setDirectory(true);
+        	//return s3o;
+        }
 
+        // Bucket resource
         return new S3Bucket(url, service, bucketName);
     }
 }

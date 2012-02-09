@@ -22,14 +22,21 @@ import com.mucommander.auth.AuthException;
 import com.mucommander.file.*;
 import com.mucommander.io.RandomAccessOutputStream;
 import com.mucommander.runtime.JavaVersions;
-import org.jets3t.service.Constants;
-import org.jets3t.service.S3ObjectsChunk;
-import org.jets3t.service.S3Service;
-import org.jets3t.service.S3ServiceException;
+
+import org.apache.commons.io.FilenameUtils;
+import org.jclouds.blobstore.BlobStore;
+import org.jclouds.blobstore.domain.PageSet;
+import org.jclouds.blobstore.domain.StorageMetadata;
+import org.jclouds.blobstore.domain.StorageType;
+import org.jclouds.blobstore.domain.internal.StorageMetadataImpl;
+import org.jclouds.blobstore.options.ListContainerOptions;
 
 import java.io.IOException;
 import java.io.OutputStream;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.logging.Logger;
 
 /**
  * Super class of {@link S3Root}, {@link S3Bucket} and {@link S3Object}.
@@ -38,22 +45,22 @@ import java.util.Date;
  */
 public abstract class S3File extends ProtocolFile {
 
-    protected org.jets3t.service.S3Service service;
+    protected BlobStore service;
 
     protected AbstractFile parent;
     protected boolean parentSet;
 
-    protected S3File(FileURL url, S3Service service) {
+    protected S3File(FileURL url, BlobStore service) {
         super(url);
 
         this.service = service;
     }
     
-    protected IOException getIOException(S3ServiceException e) throws IOException {
+    protected IOException getIOException(Exception e) throws IOException {
         return getIOException(e, fileURL);
     }
 
-    protected static IOException getIOException(S3ServiceException e, FileURL fileURL) throws IOException {
+    protected static IOException getIOException(Exception e, FileURL fileURL) throws IOException {
         handleAuthException(e, fileURL);
 
         Throwable cause = e.getCause();
@@ -66,67 +73,88 @@ public abstract class S3File extends ProtocolFile {
         return new IOException(e.getMessage());
     }
 
-    protected static void handleAuthException(S3ServiceException e, FileURL fileURL) throws AuthException {
-        int code = e.getResponseCode();
-        if(code==401 || code==403)
-            throw new AuthException(fileURL);
+    protected static void handleAuthException(Exception e, FileURL fileURL) throws AuthException {
+        //int code = e.getResponseCode();
+        //if(code==401 || code==403)
+        //    throw new AuthException(fileURL);
     }
     
     protected AbstractFile[] listObjects(String bucketName, String prefix, S3File parent) throws IOException {
         try {
-            S3ObjectsChunk chunk = service.listObjectsChunked(bucketName, prefix, "/", Constants.DEFAULT_OBJECT_LIST_CHUNK_SIZE, null, true);
-            org.jets3t.service.model.S3Object objects[] = chunk.getObjects();
-            String[] commonPrefixes = chunk.getCommonPrefixes();
-
-            if(objects.length==0 && !prefix.equals("")) {
+        	if (prefix != null && !"".equals(prefix.trim())) {
+        		if (prefix.endsWith("/") && prefix.length() > 1) {
+        			prefix = prefix.substring(0, prefix.length() - 1);
+        		}
+        		String name = FilenameUtils.getName(prefix);
+				String path = FilenameUtils.getPathNoEndSeparator(prefix);     
+				prefix = path + (!"".equals(path)?"/":"") + name;
+			}
+        	else
+        		prefix = "";
+        
+            PageSet<? extends StorageMetadata> chunk;
+            if ("".equals(prefix))
+            	chunk = service.list(bucketName);//, prefix, "/", Constants.DEFAULT_OBJECT_LIST_CHUNK_SIZE, null, true);
+            else
+            	chunk = service.list(bucketName, ListContainerOptions.Builder.inDirectory(prefix));
+            
+            StorageMetadata objects[] = chunk.toArray(new StorageMetadata[]{});
+            
+            if(objects.length==0 && !"".equals(prefix)) {
                 // This happens only when the directory does not exist
                 throw new IOException();
             }
 
-            AbstractFile[] children = new AbstractFile[objects.length+commonPrefixes.length];
+            ArrayList <AbstractFile> children = new ArrayList<AbstractFile>();//+commonPrefixes.length];
             FileURL childURL;
-            int i=0;
             String objectKey;
-
-            for(org.jets3t.service.model.S3Object object : objects) {
+            StorageMetadata directoryObject;
+            for(StorageMetadata object : objects) {
                 // Discard the object corresponding to the prefix itself
-                objectKey = object.getKey();
-                if(objectKey.equals(prefix))
+                objectKey = object.getName();
+
+                String name = FilenameUtils.getName(objectKey);
+				String path = FilenameUtils.getPathNoEndSeparator(objectKey);     
+				String next = path + (!"".equals(path)?"/":"") + name;
+
+                if(next.equals(prefix))
                     continue;
+                
+                if (object.getType().equals(StorageType.BLOB)){ //.CONTAINER) || object.getType().equals(StorageType.FOLDER)){
+                    childURL = (FileURL)fileURL.clone();
+                    childURL.setPath(bucketName + "/" + objectKey);
 
-                childURL = (FileURL)fileURL.clone();
-                childURL.setPath(bucketName + "/" + objectKey);
+                    children.add(FileFactory.getFile(childURL, parent, service, object));
+                } else { //en este punto el objeto corresponde a una carpeta
+                    childURL = (FileURL)fileURL.clone();
+                    childURL.setPath(bucketName + "/" + objectKey);
 
-                children[i] = FileFactory.getFile(childURL, parent, service, object);
-                i++;
+                    directoryObject = new StorageMetadataImpl(StorageType.CONTAINER, null, objectKey, object.getLocation(), object.getUri(),
+                    		object.getETag(), new Date(System.currentTimeMillis()), object.getUserMetadata());
+                    // Common prefixes are not objects per se, and therefore do not have a date, content-length nor owner.
+                    //directoryObject..setContentLength(0);
+                    children.add(FileFactory.getFile(childURL, parent, service, directoryObject));
+                }
             }
 
-            org.jets3t.service.model.S3Object directoryObject;
-            for(String commonPrefix : commonPrefixes) {
-                childURL = (FileURL)fileURL.clone();
-                childURL.setPath(bucketName + "/" + commonPrefix);
-
-                directoryObject = new org.jets3t.service.model.S3Object(commonPrefix);
-                // Common prefixes are not objects per se, and therefore do not have a date, content-length nor owner.
-                directoryObject.setLastModifiedDate(new Date(System.currentTimeMillis()));
-                directoryObject.setContentLength(0);
-                children[i] = FileFactory.getFile(childURL, parent, service, directoryObject);
-                i++;
-            }
+//            StorageMetadata directoryObject;
+//            for(String commonPrefix : commonPrefixes) {
+//            }
 
             // Trim the array if an object was discarded.
             // Note: Having to recreate an array sucks (puts pressure on the GC), but I haven't found a reliable way
             // to know in advance whether the prefix will appear in the results or not.
-            if(i<children.length) {
-                AbstractFile[] childrenTrimmed = new AbstractFile[i];
-                System.arraycopy(children, 0, childrenTrimmed, 0, i);
+//            if(i<children.length) {
+//                AbstractFile[] childrenTrimmed = new AbstractFile[i];
+//                System.arraycopy(children, 0, childrenTrimmed, 0, i);
+//
+//                return childrenTrimmed;
+//            }
 
-                return childrenTrimmed;
-            }
-
-            return children;
+            return children.toArray(new AbstractFile[]{});
         }
-        catch(S3ServiceException e) {
+        catch(Exception e) {
+        	Logger.getLogger("default").info("Error e: " + e);
             throw getIOException(e);
         }
     }
