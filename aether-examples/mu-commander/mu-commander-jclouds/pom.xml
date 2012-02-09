@@ -1,0 +1,197 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<!--
+		<parent> <artifactId>aether-examples</artifactId>
+		<groupId>com.tesis.aether.examples</groupId>
+		<version>0.0.1-SNAPSHOT</version> </parent>
+	-->
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.mucommander</groupId>
+	<artifactId>MuCommanderApp-jclouds</artifactId>
+	<name>mu-commander</name>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.5</source>
+					<target>1.5</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<version>2.1</version>
+				<executions>
+					<execution>
+						<id>copy</id>
+						<phase>install</phase>
+						<goals>
+							<goal>copy-dependencies</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>
+								${project.build.directory}/lib
+				</outputDirectory>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<configuration>
+ 					<archive>
+						<index>false</index>
+						<manifest>
+							<addClasspath>true</addClasspath>
+							<mainClass>com.mucommander.Launcher</mainClass>
+							<classpathPrefix>lib/</classpathPrefix>
+						</manifest>
+						<manifestEntries>
+							<Class-Path>. lib/j2ssh.jar lib/J7Zip.jar lib/jmdns.jar lib/jcifs.jar lib/j2ssh.jar lib/yanfs.jar lib/commons-net-ftp.jar lib/jna.jar</Class-Path> <!-- HERE IS THE IMPORTANT BIT -->
+						</manifestEntries>
+					</archive> 	
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<repositories>
+		<repository>
+			<id>repo1</id>
+			<name>Maven New Repository</name>
+			<url>http://maven.repository.paxle.net</url>
+		</repository>
+	</repositories>
+
+	<url>http://maven.apache.org</url>
+	<dependencies>
+
+		<!-- Se usa la libreria incluida en /lib -->
+		<dependency>
+			<groupId>org.objectweb.joram</groupId>
+			<artifactId>jftp</artifactId>
+			<version>1.52</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/j2ssh.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.6.4</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.ant</groupId>
+			<artifactId>ant-nodeps</artifactId>
+			<version>1.8.1</version>
+		</dependency>
+
+		<!-- Se usa la libreria incluida en /lib -->
+		<dependency>
+			<groupId>SevenZip</groupId>
+			<artifactId>J7Zip</artifactId>
+			<version>4.43-alpha2</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/J7Zip.jar</systemPath>
+		</dependency>
+
+		<!-- Se usa la libreria incluida en /lib -->
+		<dependency>
+			<groupId>javax.jmdns</groupId>
+			<artifactId>jmdns</artifactId>
+			<version>3.2.2</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/jmdns.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-collections</groupId>
+			<artifactId>commons-collections</artifactId>
+			<version>3.2.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.hadoop</groupId>
+			<artifactId>hadoop-core</artifactId>
+			<version>0.20.2</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>commons-net</artifactId>
+					<groupId>commons-net</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<!-- Se usa la libreria incluida en /lib -->
+		<dependency>
+			<groupId>org.samba.jcifs</groupId>
+			<artifactId>jcifs</artifactId>
+			<version>1.2.9</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/jcifs.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>com.apple</groupId>
+			<artifactId>AppleJavaExtensions</artifactId>
+			<version>1.4</version>
+		</dependency>
+
+		<!-- Se usa la libreria incluida en /lib -->
+		<dependency>
+			<groupId>sshtools</groupId>
+			<artifactId>j2ssh-core</artifactId>
+			<version>0.2.9</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/j2ssh.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>com.ibm.icu</groupId>
+			<artifactId>icu4j</artifactId>
+			<version>4.0.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.sun.xfile</groupId>
+			<artifactId>xfile</artifactId>
+			<version>3.0.9</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/yanfs.jar</systemPath>
+		</dependency>
+
+
+		<!-- Se usa la libreria incluida en /lib -->
+		<dependency>
+			<groupId>commons-net</groupId>
+			<artifactId>commons-net</artifactId>
+			<version>2.0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/commons-net-ftp.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>com.sun.jna</groupId>
+			<artifactId>jna</artifactId>
+			<version>3.2.2</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/jna.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.8.1</version>
+		</dependency>
+
+	</dependencies>
+</project>
