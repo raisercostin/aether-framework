@@ -20,12 +20,17 @@ package com.mucommander.file.impl.s3;
 
 import com.mucommander.file.*;
 import com.mucommander.io.RandomAccessInputStream;
-import org.jets3t.service.S3Service;
-import org.jets3t.service.S3ServiceException;
+
+import org.jclouds.blobstore.BlobStore;
+import org.jclouds.blobstore.domain.PageSet;
+import org.jclouds.blobstore.domain.StorageMetadata;
+import org.jclouds.blobstore.domain.StorageType;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.ArrayList;
+import java.util.logging.Logger;
 
 /**
  * <code>S3Root</code> represents the Amazon S3 root resource, also known as 'service'.
@@ -39,7 +44,7 @@ public class S3Root extends S3File {
     /** Default permissions for the S3 root */
     private final static FilePermissions DEFAULT_PERMISSIONS = new SimpleFilePermissions(448);   // rwx------
 
-    protected S3Root(FileURL url, S3Service service) {
+    protected S3Root(FileURL url, BlobStore service) {
         super(url, service);
 
         atts = new SimpleFileAttributes();
@@ -81,21 +86,30 @@ public class S3Root extends S3File {
     @Override
     public AbstractFile[] ls() throws IOException {
         try {
-            org.jets3t.service.model.S3Bucket buckets[] = service.listAllBuckets();
+        	PageSet<? extends StorageMetadata> listBuckets = service.list();
+        	StorageMetadata buckets[] = listBuckets.toArray(new StorageMetadata[]{});
+        	
             int nbBuckets = buckets.length;
-
-            AbstractFile bucketFiles[] = new AbstractFile[nbBuckets];
+            ArrayList<AbstractFile> bucketFiles = new ArrayList<AbstractFile>();
             FileURL bucketURL;
             for(int i=0; i<nbBuckets; i++) {
-                bucketURL = (FileURL)fileURL.clone();
-                bucketURL.setPath("/"+buckets[i].getName());
+                try {
+	            	if (buckets[i].getType().equals(StorageType.CONTAINER)) {
+		                bucketURL = (FileURL)fileURL.clone();
+		                bucketURL.setPath("/"+buckets[i].getName());
+		                	AbstractFile af = FileFactory.getFile(bucketURL, null, service, buckets[i]);
+			                bucketFiles.add(i, af);
+	            	}
+                } catch (Exception e) {
+                	Logger.getAnonymousLogger().info(e.getMessage() + ": " + buckets[i].getName());
+                	e.printStackTrace();
+                }
 
-                bucketFiles[i] = FileFactory.getFile(bucketURL, null, service, buckets[i]);
             }
 
-            return bucketFiles;
+            return bucketFiles.toArray(new AbstractFile[]{});
         }
-        catch(S3ServiceException e) {
+        catch(Exception e) {
             throw getIOException(e);
         }
     }

@@ -72,6 +72,23 @@
 
 	<url>http://maven.apache.org</url>
 	<dependencies>
+	        <dependency>
+            <groupId>org.jclouds</groupId>
+            <artifactId>jclouds-blobstore</artifactId>
+            <version>1.2.1</version>
+        </dependency>
+    
+        <dependency>
+            <groupId>org.jclouds</groupId>
+            <artifactId>jclouds-allblobstore</artifactId>
+            <version>1.2.1</version>
+        </dependency>
+	
+		<dependency>
+			<groupId>org.jclouds</groupId>
+			<artifactId>jclouds-aws</artifactId>
+			<version>1.0-beta-8</version>
+		</dependency>
 
 		<!-- Se usa la libreria incluida en /lib -->
 		<dependency>
@@ -126,6 +143,10 @@
 				<exclusion>
 					<artifactId>commons-net</artifactId>
 					<groupId>commons-net</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>jets3t</artifactId>
+					<groupId>net.java.dev.jets3t</groupId>
 				</exclusion>
 			</exclusions>
 		</dependency>
