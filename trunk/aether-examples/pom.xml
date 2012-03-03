@@ -17,12 +17,18 @@
 
 	<modules>
 		<module>mu-commander</module>
+		<module>neoedit</module>
+		<module>neoedit-migraciones</module>
+		<module>neoedit-migraciones-aether</module>
 		<module>remote-monitor</module>
 		<module>text-editor</module>
 		<module>tree-viewer</module>
 		<module>tree-file-viewer</module>
 		<module>cockpit</module>
 		<module>synchronize</module>
+		<module>jfilesync</module>
+		<module>jfilesync-migraciones</module>
+		<module>jfilesync-migraciones-aether</module>
 	</modules>
 
 </project>
