@@ -1,0 +1,5 @@
+<storageServices>
+	<storageService class="LocalStorageServiceParser">
+		<parameter key="localBaseFolder" value="d:/remote_mock/"/>
+	</storageService>
+</storageServices>
