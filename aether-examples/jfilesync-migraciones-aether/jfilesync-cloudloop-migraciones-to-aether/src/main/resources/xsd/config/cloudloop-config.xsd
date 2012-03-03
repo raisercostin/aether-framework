@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:simpleType name="adapterType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="storage"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="propertyType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="name" type="xs:string" use="required"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType> 
+	<xs:element name="cloudloop-config">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="logger-config-file" type="xs:string" minOccurs="0" maxOccurs="1" />
+				<xs:element name="adapters" minOccurs="0" maxOccurs="1">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="adapter" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:attribute name="name" type="xs:string" use="required"/>
+									<xs:attribute name="type" type="adapterType" use="required"/>
+									<xs:attribute name="impl" type="xs:string" use="required"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+					<xs:unique name="uniqueAdapter">
+						<xs:selector xpath="./adapter"/>
+						<xs:field xpath="@name"/>
+					</xs:unique>
+				</xs:element>
+				<xs:element name="stores" minOccurs="0" maxOccurs="1">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="default-store" minOccurs="1" maxOccurs="1" type="xs:string"/>
+							<xs:element name="store" minOccurs="1" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="name" type="xs:string" minOccurs="1" maxOccurs="1"/>
+										<xs:element name="adapter" type="xs:string" minOccurs="1" maxOccurs="1"/>
+										<xs:element name="encrypted" type="xs:boolean" minOccurs="0" maxOccurs="1"/>
+										<xs:element name="property" type="propertyType" minOccurs="0" maxOccurs="unbounded"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+					<xs:unique name="uniqueStore">
+						<xs:selector xpath="store"/>
+						<xs:field xpath="name"/>
+					</xs:unique>
+					<xs:key name="adapterKey">
+						<xs:selector xpath="cloudloop-config/adapters/adapter"/>
+						<xs:field xpath="@name"/>
+					</xs:key>
+					<xs:keyref name="store_adapter" refer="adapterKey">
+						<xs:selector xpath="cloudloop-config/stores/store"/>
+						<xs:field xpath="type"/>
+					</xs:keyref>
+				</xs:element>
+				<xs:element name="encryption" minOccurs="0" maxOccurs="1">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="cipher" type="xs:string" minOccurs="0" maxOccurs="1"/>
+							<xs:element name="key-length" type="xs:int" minOccurs="0" maxOccurs="1"/>
+							<xs:element name="preferred-key" type="xs:string" minOccurs="1" maxOccurs="1"/>
+							<xs:element name="key-directory" type="xs:string" minOccurs="0" maxOccurs="1"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

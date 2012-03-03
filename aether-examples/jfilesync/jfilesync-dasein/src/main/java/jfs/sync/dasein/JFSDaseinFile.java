@@ -31,6 +31,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
@@ -40,7 +41,10 @@ import jfs.sync.JFSFile;
 import jfs.sync.JFSFileProducer;
 
 import org.apache.commons.io.FilenameUtils;
+import org.dasein.cloud.aws.storage.S3;
 import org.dasein.cloud.storage.BlobStoreSupport;
+import org.dasein.cloud.storage.CloudStoreObject;
+import org.dasein.cloud.storage.FileTransfer;
 
 public class JFSDaseinFile extends JFSFile {
 
@@ -53,6 +57,8 @@ public class JFSDaseinFile extends JFSFile {
 	private boolean isDirectory;
 	private String fullPath;
 	private BlobStoreSupport adapter;
+	private CloudStoreObject item;
+	private FileInputStream fileInputStream;
 
 	protected JFSDaseinFile(JFSFileProducer fileProducer, String relativePath, BlobStoreSupport adapter, String bucket) {
 		super(fileProducer, relativePath);
@@ -62,22 +68,37 @@ public class JFSDaseinFile extends JFSFile {
 		this.name = FilenameUtils.getName(pathAndName);
 		this.path = FilenameUtils.getFullPathNoEndSeparator(pathAndName);
 		setFullPath();
-		options = new HashMap<Object, Object>();
-		options.put(S3Adapter.Type.SRC_BUCKET, bucket);
+
+		CloudStoreObject object = new CloudStoreObject();
+		object.setContainer(false);
+		object.setDirectory(bucket);
+		object.setName(path);
+		object.setProviderRegionId("us-east-1");
 
 		try {
-			item = adapter.fetchItem("/" + fullPath, options);
-			metadata = adapter.fetchMetadata("/" + fullPath, options);
-			isDirectory = false;
-		} catch (Exception e) {
-			try {
-				item = adapter.fetchItem("/" + fullPath + "/", options);
-				metadata = adapter.fetchMetadata("/" + fullPath + "/", options);
+			if (adapter.exists(bucket, "/" + fullPath, false) > 0l) {
+				isDirectory = false;
+
+			} else if (adapter.exists(bucket, "/" + fullPath + "/", false) > 0l) {
 				isDirectory = true;
 				fullPath = fullPath + "/";
-			} catch (Exception e1) {
 			}
+		} catch (Exception e) {
+			// TODO: handle exception
 		}
+
+	}
+
+	public JFSDaseinFile(JFSFileProducer fileProducer, String relativePath, BlobStoreSupport adapter, String bucket, CloudStoreObject file) {
+		super(fileProducer, relativePath);
+		this.adapter = adapter;
+		this.bucket = bucket;
+		String pathAndName = FilenameUtils.separatorsToUnix(fileProducer.getRootPath() + relativePath).replaceAll("//", "/");
+		this.name = FilenameUtils.getName(pathAndName);
+		this.path = FilenameUtils.getFullPathNoEndSeparator(pathAndName);
+		setFullPath();
+		item = file;
+		isDirectory = false;
 	}
 
 	private void setFullPath() {
@@ -120,7 +141,7 @@ public class JFSDaseinFile extends JFSFile {
 
 	@Override
 	public long getLength() {
-		return item != null ? item.getContentLength() : 0;
+		return item != null ? item.getSize() : 0;
 	}
 
 	@Override
@@ -133,7 +154,7 @@ public class JFSDaseinFile extends JFSFile {
 				String fmt = "EEE, dd MMM yyyy HH:mm:ss ";
 				SimpleDateFormat df = new SimpleDateFormat(fmt, Locale.US);
 				df.setTimeZone(TimeZone.getTimeZone("GMT"));
-				date = df.parse(metadata.get("Last-Modified"));
+				date = df.parse(item.getCreationDate().toString());
 				return date.getTime();
 			} catch (ParseException e) {
 				return 0;
@@ -143,38 +164,44 @@ public class JFSDaseinFile extends JFSFile {
 
 	@Override
 	public JFSFile[] getList() {
-		if (list == null) {
-			List<String> listItems = adapter.listItems("/", options);
+		try {
+			if (list == null) {
+				Iterable<CloudStoreObject> listItems = adapter.listFiles(bucket);
+				Iterator<CloudStoreObject> iterator = listItems.iterator();
 
-			if (listItems != null && listItems.size() > 0) {
-				List<JFSFile> objects = new ArrayList<JFSFile>();
+				if (listItems != null && iterator.hasNext()) {
+					List<JFSFile> objects = new ArrayList<JFSFile>();
 
-				for (String file : listItems) {
-					String foundFilePath;
-					if (file.endsWith("/")) {
-						foundFilePath = FilenameUtils.getFullPathNoEndSeparator(FilenameUtils.getFullPathNoEndSeparator(file));
-					} else {
-						foundFilePath = FilenameUtils.getFullPathNoEndSeparator(file);
-					}
-					String thisFilePath = FilenameUtils.getFullPathNoEndSeparator(fullPath);
-
-					if (foundFilePath.equals(thisFilePath) && !file.contains(" ") && file.startsWith(fullPath) && !file.equals(fullPath) && !file.endsWith("_$folder$")) {
-						String name = file.replaceFirst(fileProducer.getRootPath() + "/", "");
-						if(name.endsWith("/")) {
-							name = FilenameUtils.getFullPathNoEndSeparator(name);
+					while (iterator.hasNext()) {
+						CloudStoreObject file = iterator.next();
+						String foundFilePath;
+						if (file.getName().endsWith("/")) {
+							foundFilePath = FilenameUtils.getFullPathNoEndSeparator(FilenameUtils.getFullPathNoEndSeparator(file.getName()));
+						} else {
+							foundFilePath = FilenameUtils.getFullPathNoEndSeparator(file.getName());
 						}
-						objects.add(new JFSDaseinFile(fileProducer, name, adapter, bucket));
-					}
-				}
+						String thisFilePath = FilenameUtils.getFullPathNoEndSeparator(fullPath);
 
-				if (objects.size() > 0) {
-					list = objects.toArray(new JFSFile[objects.size()]);
+						if (foundFilePath.equals(thisFilePath) && !file.getName().contains(" ") && file.getName().startsWith(fullPath) && !file.getName().equals(fullPath) && !file.getName().endsWith("_$folder$")) {
+							String name = file.getName().replaceFirst(fileProducer.getRootPath() + "/", "");
+							if (name.endsWith("/")) {
+								name = FilenameUtils.getFullPathNoEndSeparator(name);
+							}
+							objects.add(new JFSDaseinFile(fileProducer, name, adapter, bucket, file));
+						}
+					}
+
+					if (objects.size() > 0) {
+						list = objects.toArray(new JFSFile[objects.size()]);
+					} else {
+						list = new JFSDaseinFile[0];
+					}
 				} else {
 					list = new JFSDaseinFile[0];
 				}
-			} else {
-				list = new JFSDaseinFile[0];
 			}
+		} catch (Exception e) {
+			// TODO: handle exception
 		}
 
 		return list;
@@ -187,7 +214,8 @@ public class JFSDaseinFile extends JFSFile {
 
 	@Override
 	public boolean mkdir() {
-		try {
+		return true;
+		/*try {
 			Item uploadItem = new Item(new ByteArrayInputStream(new byte[0]), "binary/octet-stream", null, 0);
 			if (adapter.storeItem("/" + fullPath + "/", uploadItem, new HashMap<String, String>(), options)) {
 				item = adapter.fetchItem("/" + fullPath + "/", options);
@@ -200,7 +228,7 @@ public class JFSDaseinFile extends JFSFile {
 			}
 		} catch (Exception e) {
 			return false;
-		}
+		}*/
 	}
 
 	@Override
@@ -217,7 +245,7 @@ public class JFSDaseinFile extends JFSFile {
 	@Override
 	public boolean delete() {
 		try {
-			adapter.deleteItem("/" + fullPath, options);
+			adapter.removeFile(bucket, fullPath, false);
 			return true;
 		} catch (Exception e) {
 			return false;
@@ -227,7 +255,21 @@ public class JFSDaseinFile extends JFSFile {
 	@Override
 	protected InputStream getInputStream() {
 		if (!isDirectory && item != null) {
-			return item.getContent();
+			FileTransfer download;
+			try {
+				File toFile = new File(item.getName());
+				download = adapter.download(item, toFile);
+
+				while (!download.isComplete()) {
+					Thread.sleep(500);
+				}
+				fileInputStream = new FileInputStream(toFile);
+				return fileInputStream;
+
+			} catch (Exception e) {
+				e.printStackTrace();
+				return null;
+			}
 		} else {
 			return null;
 		}
@@ -241,7 +283,8 @@ public class JFSDaseinFile extends JFSFile {
 	@Override
 	protected void closeInputStream() {
 		try {
-			item.getContent().close();
+			fileInputStream.close();
+			new File(item.getName()).delete();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -279,18 +322,8 @@ public class JFSDaseinFile extends JFSFile {
 	@Override
 	protected boolean upload(File file) {
 		try {
-			InputStream stream = new BufferedInputStream(new FileInputStream(file));
-			Item uploadItem = new Item(stream, "application/xml", null, file.length());
-			Map<Object, Object> options = new HashMap<Object, Object>();
-			options.put(S3Adapter.Type.SRC_BUCKET, bucket);
-			if (adapter.storeItem("/" + fullPath, uploadItem, new HashMap<String, String>(), options)) {
-				item = adapter.fetchItem("/" + fullPath, options);
-				metadata = adapter.fetchMetadata("/" + fullPath, options);
-				isDirectory = false;
-				return true;
-			} else {
-				return false;
-			}
+			adapter.upload(file, bucket, fullPath, false, null);
+			return true;
 		} catch (Exception e) {
 			return false;
 		}
@@ -298,11 +331,7 @@ public class JFSDaseinFile extends JFSFile {
 
 	@Override
 	public String getMD5() {
-		if (metadata != null) {
-			return metadata.get("ETag").replaceAll("\"", "");
-		} else {
-			return "00000000";
-		}
+		return "00000000";
 	}
 
 }
