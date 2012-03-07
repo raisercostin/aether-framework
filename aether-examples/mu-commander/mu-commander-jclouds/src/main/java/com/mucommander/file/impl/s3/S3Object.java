@@ -327,6 +327,26 @@ public class S3Object extends S3File {
 		}
 	}
 
+	private String getDirectory(String object) {
+		String directory = "";
+		try {
+			if (object.endsWith("/"))
+				return object;
+			String aux = (object.startsWith("/") ? object.substring(1) : object);
+			String[] st = aux.split("/");
+			if (st.length > 1) {
+				for (int i = 0; i < st.length - 2; i++) {
+					directory += st[i] + "/";
+				}
+			}
+		} catch (Exception e) {
+			Logger.getAnonymousLogger().warning(
+					"Error al obtener el directorio de " + object
+							+ "   -  Error: " + e.getMessage());
+		}
+		return directory;
+	}
+
 	@Override
     public void copyRemotelyTo(AbstractFile destFile) throws IOException, UnsupportedFileOperationException{
 		checkCopyRemotelyPrerequisites(destFile, true, false);
@@ -334,7 +354,7 @@ public class S3Object extends S3File {
         if (!isDirectory()) {
     		try {
 				InputStream stream = service.getBlob(bucketName, getObjectKey(false)).getPayload().getInput();
-				uploadInputStream(stream, bucketName, destObjectFile.bucketName, getObjectKey(false), this.getSize());	
+				uploadInputStream(stream, destObjectFile.bucketName, getDirectory(destObjectFile.getObjectKey(false)!=null?destObjectFile.getObjectKey(false):getObjectKey(false)), getObjectKey(false), this.getSize());	
     		} catch (Exception e) {
     			Logger.getAnonymousLogger().info(getObjectKey(false) + " could not be copied to " + destFile.getName());
     		}
