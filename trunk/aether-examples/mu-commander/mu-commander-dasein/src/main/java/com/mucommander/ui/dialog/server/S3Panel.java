@@ -63,7 +63,7 @@ public class S3Panel extends ServerPanel {
         addRow(Translator.get("server_connect_dialog.server"), serverField, 15);
 
         // Username field, initialized to last username
-        usernameField = new JTextField("AKIAJVMWVFE6MVP6ZL3Q");
+        usernameField = new JTextField("");
         usernameField.selectAll();
         addTextFieldListeners(usernameField, false);
         
@@ -75,7 +75,7 @@ public class S3Panel extends ServerPanel {
         addRow("Access ID Key", usernameField, 5);
 
         // Password field, initialized to ""
-        passwordField = new JPasswordField("mKZHLAAjl1IBjuWKxIlE3ThLQ+QaRTrgYiBmnjJL");
+        passwordField = new JPasswordField("");
         addTextFieldListeners(passwordField, false);
         // Not localized on purpose
         addRow("Secret Access Key", passwordField, 15);
