@@ -18,14 +18,25 @@
 
 package com.mucommander.file.impl.s3;
 
-import com.mucommander.file.*;
-import com.mucommander.io.RandomAccessInputStream;
-import org.jets3t.service.S3Service;
-import org.jets3t.service.S3ServiceException;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.ArrayList;
+
+import org.dasein.cloud.storage.BlobStoreSupport;
+import org.dasein.cloud.storage.CloudStoreObject;
+
+import com.mucommander.file.AbstractFile;
+import com.mucommander.file.FileAttributes;
+import com.mucommander.file.FileFactory;
+import com.mucommander.file.FileOperation;
+import com.mucommander.file.FilePermissions;
+import com.mucommander.file.FileURL;
+import com.mucommander.file.SimpleFileAttributes;
+import com.mucommander.file.SimpleFilePermissions;
+import com.mucommander.file.UnsupportedFileOperation;
+import com.mucommander.file.UnsupportedFileOperationException;
+import com.mucommander.io.RandomAccessInputStream;
 
 /**
  * <code>S3Root</code> represents the Amazon S3 root resource, also known as 'service'.
@@ -38,12 +49,10 @@ public class S3Root extends S3File {
 
     /** Default permissions for the S3 root */
     private final static FilePermissions DEFAULT_PERMISSIONS = new SimpleFilePermissions(448);   // rwx------
-
-    protected S3Root(FileURL url, S3Service service) {
+    protected S3Root(FileURL url, BlobStoreSupport service) {
         super(url, service);
-
         atts = new SimpleFileAttributes();
-        atts.setPath("/");
+        atts.setPath(url.getPath());
         atts.setExists(true);
         atts.setDate(0);
         atts.setSize(0);
@@ -80,24 +89,54 @@ public class S3Root extends S3File {
 
     @Override
     public AbstractFile[] ls() throws IOException {
-        try {
-            org.jets3t.service.model.S3Bucket buckets[] = service.listAllBuckets();
-            int nbBuckets = buckets.length;
-
-            AbstractFile bucketFiles[] = new AbstractFile[nbBuckets];
-            FileURL bucketURL;
-            for(int i=0; i<nbBuckets; i++) {
-                bucketURL = (FileURL)fileURL.clone();
-                bucketURL.setPath("/"+buckets[i].getName());
-
-                bucketFiles[i] = FileFactory.getFile(bucketURL, null, service, buckets[i]);
-            }
-
-            return bucketFiles;
+    	String bucketName = atts.getPath();
+    	if (bucketName.startsWith("/"))
+    		bucketName = bucketName.substring(1);
+    	loadFileList(bucketName);
+    	ArrayList<CloudStoreObject> listCso = files.get(bucketName);
+        FileURL bucketURL;
+        ArrayList<AbstractFile> bucketFiles = new ArrayList<AbstractFile>();
+        for(CloudStoreObject object : listCso) {
+        	if (object.getDirectory() == bucketName && "".equals(object.getName())) 
+        		continue;
+            bucketURL = (FileURL)fileURL.clone();
+            bucketURL.setPath(object.getName());
+            object.setName(bucketName);
+            bucketFiles.add(FileFactory.getFile(bucketURL, null, service, object));
         }
-        catch(S3ServiceException e) {
-            throw getIOException(e);
-        }
+        return bucketFiles.toArray(new AbstractFile[]{});
+    	
+    	//    	CloudStoreObject cso = new CloudStoreObject();
+//    	cso.setName("tesismarcos");
+//    	
+//    	
+//    	return new AbstractFile[] {FileFactory.getFile((FileURL)fileURL.clone(), null, service, cso)};
+    	
+//        try {
+//        	org.dasein.cloud.platform.CDNSupport a = new org.dasein.cloud.platform.
+//        	a.list();
+        	
+        	
+//        	
+//        	String bucketName = atts.getPath();
+//        	if (bucketName.startsWith("/"))
+//        		bucketName = bucketName.substring(1);
+//            Iterable<CloudStoreObject> buckets = service.listFiles(bucketName);
+//            ArrayList<AbstractFile> bucketFiles = new ArrayList<AbstractFile>();
+//            FileURL bucketURL;
+//            for(CloudStoreObject object : buckets) {
+//                bucketURL = (FileURL)fileURL.clone();
+//                bucketURL.setPath(bucketName+"/"+object.getName());
+//                object.setName(bucketName);
+//
+//                bucketFiles.add(FileFactory.getFile(bucketURL, null, service, object));
+//            }
+//
+//            return bucketFiles.toArray(new AbstractFile[]{});
+//        }
+//        catch(Exception e) {
+//            throw getIOException(e);
+//        }
     }
 
     // Unsupported operations

@@ -49,7 +49,7 @@ public class S3Panel extends ServerPanel {
     private static String lastUsername = "";
     // Not static so that it is not saved (for security reasons)
     private String lastPassword = "";
-    private static String lastInitialDir = "/";
+    private static String lastInitialDir = Translator.get("default_root_bucket");
     private static int lastPort = FileURL.getRegisteredHandler(FileProtocols.S3).getStandardPort();
 
 
@@ -63,14 +63,19 @@ public class S3Panel extends ServerPanel {
         addRow(Translator.get("server_connect_dialog.server"), serverField, 15);
 
         // Username field, initialized to last username
-        usernameField = new JTextField(lastUsername);
+        usernameField = new JTextField("AKIAJVMWVFE6MVP6ZL3Q");
         usernameField.selectAll();
         addTextFieldListeners(usernameField, false);
+        
+        
         // Not localized on purpose
+        ///////////////////
+        //////////////////
+        //  OOJJJJOOOOOO NO COMMITEAR
         addRow("Access ID Key", usernameField, 5);
 
         // Password field, initialized to ""
-        passwordField = new JPasswordField();
+        passwordField = new JPasswordField("mKZHLAAjl1IBjuWKxIlE3ThLQ+QaRTrgYiBmnjJL");
         addTextFieldListeners(passwordField, false);
         // Not localized on purpose
         addRow("Secret Access Key", passwordField, 15);
@@ -92,6 +97,10 @@ public class S3Panel extends ServerPanel {
         lastUsername = usernameField.getText();
         lastPassword = new String(passwordField.getPassword());
         lastInitialDir = initialDirField.getText();
+        
+        if ("/".equals(lastInitialDir))
+        	lastInitialDir = Translator.get("default_root_bucket");
+        
         lastPort = (Integer) portSpinner.getValue();
     }
 
