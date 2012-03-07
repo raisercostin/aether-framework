@@ -18,81 +18,100 @@
 
 package com.mucommander.file.impl.s3;
 
+import java.io.IOException;
+import java.util.Locale;
+import java.util.StringTokenizer;
+
+import org.dasein.cloud.CloudProvider;
+import org.dasein.cloud.ProviderContext;
+import org.dasein.cloud.aws.AWSCloud;
+import org.dasein.cloud.aws.storage.S3;
+import org.dasein.cloud.storage.BlobStoreSupport;
+import org.dasein.cloud.storage.CloudStoreObject;
+
 import com.mucommander.auth.AuthException;
 import com.mucommander.auth.Credentials;
 import com.mucommander.file.AbstractFile;
 import com.mucommander.file.FileURL;
 import com.mucommander.file.ProtocolProvider;
-import org.apache.commons.logging.LogFactory;
-import org.apache.commons.logging.impl.Jdk14Logger;
-import org.jets3t.service.Jets3tProperties;
-import org.jets3t.service.S3Service;
-import org.jets3t.service.S3ServiceException;
-import org.jets3t.service.impl.rest.httpclient.RestS3Service;
-import org.jets3t.service.security.AWSCredentials;
-
-import java.io.IOException;
-import java.util.StringTokenizer;
-import java.util.logging.Level;
+import com.mucommander.text.Translator;
 
 /**
  * A file protocol provider for the Amazon S3 protocol.
- *
+ * 
  * @author Maxence Bernard
  */
 public class S3ProtocolProvider implements ProtocolProvider {
+	// static {
+	// Turn off Jets3t logging: failed (404) HEAD request on non-existing object
+	// are logged with a SEVERE level,
+	// even though this is not an error per se. We don't want those to be
+	// reported in the log, so we have no
+	// choice but to disable logging entirely.
+	// ((Jdk14Logger)LogFactory.getLog(RestS3Service.class)).getLogger().setLevel(Level.OFF);
+	// }
 
-    static {
-        // Turn off Jets3t logging: failed (404) HEAD request on non-existing object are logged with a SEVERE level,
-        // even though this is not an error per se. We don't want those to be reported in the log, so we have no
-        // choice but to disable logging entirely.
-        ((Jdk14Logger)LogFactory.getLog(RestS3Service.class)).getLogger().setLevel(Level.OFF);
-    }
+	public AbstractFile getFile(FileURL url, Object... instantiationParams)
+			throws IOException {
+		Credentials credentials = url.getCredentials();
+		if (credentials == null || credentials.getLogin().equals("")
+				|| credentials.getPassword().equals(""))
+			throw new AuthException(url);
 
-    public AbstractFile getFile(FileURL url, Object... instantiationParams) throws IOException {
-        Credentials credentials = url.getCredentials();
-        if(credentials==null || credentials.getLogin().equals("") || credentials.getPassword().equals(""))
-            throw new AuthException(url);
+		BlobStoreSupport service;
+		String bucketName;
 
-        S3Service service;
-        String bucketName;
+		if (instantiationParams.length == 0) {
+			// try {
+			AWSCloud provider;
+			Locale.setDefault(Locale.US);
+			provider = new AWSCloud();
+			ProviderContext ctx = new ProviderContext();
+			ctx.setAccessKeys(credentials.getLogin().getBytes(), credentials
+					.getPassword().getBytes());
+			ctx.setStorageKeys(credentials.getLogin().getBytes(), credentials
+					.getPassword().getBytes());
+			ctx.setEndpoint("http://s3.amazonaws.com");
+			ctx.setRegionId("us-east-1");
 
-        if(instantiationParams.length==0) {
-            try {
-                service = new RestS3Service(new AWSCredentials(credentials.getLogin(), credentials.getPassword()));
-                Jets3tProperties props = new Jets3tProperties();
-                props.setProperty("s3service.s3-endpoint", url.getHost());
-            }
-            catch(S3ServiceException e) {
-                throw S3File.getIOException(e, url);
-            }
-        }
-        else {
-            service = (S3Service)instantiationParams[0];
-        }
+			provider.connect(ctx);
+			service = new S3(provider);//provider.getStorageServices().getBlobStoreSupport();
 
-        String path = url.getPath();
+			// }
+			// catch(Exception e) {
+			// throw S3File.getIOException(e, url);
+			// }
+		} else {
+			service = (BlobStoreSupport) instantiationParams[0];
+		}
 
-        // Root resource
-        if(("/").equals(path))
-            return new S3Root(url, service);
+		String path = url.getPath();
 
-        // Fetch the bucket name from the URL
-        StringTokenizer st = new StringTokenizer(path, "/");
-        bucketName = st.nextToken();
+		// Root resource
+		if (("/").equals(path)) {
+			String bckt = Translator.get("default_root_bucket");
+			url.setPath(bckt);
+			return new S3Bucket(url, service, bckt);
+		}
 
-        // Object resource
-        if(st.hasMoreTokens()) {
-            if(instantiationParams.length==2)
-                return new S3Object(url, service, bucketName, (org.jets3t.service.model.S3Object)instantiationParams[1]);
+		// Fetch the bucket name from the URL
+		StringTokenizer st = new StringTokenizer(path, "/");
+		bucketName = st.nextToken();
 
-            return new S3Object(url, service, bucketName);
-        }
+		// Object resource
+		if (st.hasMoreTokens()) {
+			if (instantiationParams.length == 2)
+				return new S3Object(url, service, bucketName,
+						(CloudStoreObject) instantiationParams[1]);
 
-        // Bucket resource
-        if(instantiationParams.length==2)
-            return new S3Bucket(url, service, (org.jets3t.service.model.S3Bucket)instantiationParams[1]);
+			return new S3Object(url, service, bucketName);
+		}
 
-        return new S3Bucket(url, service, bucketName);
-    }
+		if (instantiationParams.length == 2)
+			return new S3Bucket(url, service,
+					(CloudStoreObject) instantiationParams[1]);
+
+		// Bucket resource
+		return new S3Bucket(url, service, bucketName);
+	}
 }

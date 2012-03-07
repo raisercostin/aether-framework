@@ -55,6 +55,34 @@
 # IMPORTANT: This file is encoded in the UTF-8 character encoding. Please ensure that you use UTF-8 when saving it, otherwise muCommander
 # will not be able to load it properly.
 
+##Default root bucket (only for some apis)
+
+default_root_bucket:EN:tesismarcos
+default_root_bucket:FR:tesismarcos
+default_root_bucket:DE:tesismarcos
+default_root_bucket:ES:tesismarcos
+default_root_bucket:CS:tesismarcos
+default_root_bucket:zh_TW:tesismarcos
+default_root_bucket:PL:tesismarcos
+default_root_bucket:HU:tesismarcos
+default_root_bucket:RU:tesismarcos
+default_root_bucket:zh_CN:tesismarcos
+default_root_bucket:SL:tesismarcos
+default_root_bucket:RO:tesismarcos
+default_root_bucket:IT:tesismarcos
+default_root_bucket:KO:tesismarcos
+default_root_bucket:pt_BR:tesismarcos
+default_root_bucket:NL:tesismarcos
+default_root_bucket:SK:tesismarcos
+default_root_bucket:JA:tesismarcos
+default_root_bucket:SV:tesismarcos
+default_root_bucket:DA:tesismarcos
+default_root_bucket:UA:tesismarcos
+default_root_bucket:AR:tesismarcos
+
+
+
+
 
 #############
 # Languages #
