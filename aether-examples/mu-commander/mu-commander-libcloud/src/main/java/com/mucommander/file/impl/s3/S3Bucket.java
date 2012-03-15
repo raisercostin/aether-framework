@@ -18,15 +18,25 @@
 
 package com.mucommander.file.impl.s3;
 
-import com.mucommander.auth.AuthException;
-import com.mucommander.file.*;
-import com.mucommander.io.RandomAccessInputStream;
-import org.jets3t.service.S3Service;
-import org.jets3t.service.S3ServiceException;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.Map;
+
+import simplecloud.storage.providers.amazon.S3Adapter;
+
+import com.mucommander.auth.AuthException;
+import com.mucommander.file.AbstractFile;
+import com.mucommander.file.FileAttributes;
+import com.mucommander.file.FileLogger;
+import com.mucommander.file.FileOperation;
+import com.mucommander.file.FilePermissions;
+import com.mucommander.file.FileURL;
+import com.mucommander.file.SimpleFilePermissions;
+import com.mucommander.file.SyncedFileAttributes;
+import com.mucommander.file.UnsupportedFileOperation;
+import com.mucommander.file.UnsupportedFileOperationException;
+import com.mucommander.io.RandomAccessInputStream;
 
 /**
  * <code>S3Bucket</code> represents an Amazon S3 bucket.
@@ -35,7 +45,7 @@ import java.io.OutputStream;
  */
 public class S3Bucket extends S3File {
 
-    private String bucketName;
+//    private String bucketName;
     private S3BucketFileAttributes atts;
 
     // TODO: add support for ACL ? (would cost an extra request per bucket)
@@ -43,19 +53,22 @@ public class S3Bucket extends S3File {
     private final static FilePermissions DEFAULT_PERMISSIONS = new SimpleFilePermissions(448);   // rwx------
 
 
-    protected S3Bucket(FileURL url, S3Service service, String bucketName) throws AuthException {
-        super(url, service);
-
-        this.bucketName = bucketName;
+    protected S3Bucket(FileURL url, S3Adapter service, String bucketName) throws AuthException {
+        super(url, service, bucketName);
         atts = new S3BucketFileAttributes();
     }
 
-    protected S3Bucket(FileURL url, S3Service service, org.jets3t.service.model.S3Bucket bucket) throws AuthException {
-        super(url, service);
-
-        this.bucketName = bucket.getName();
-        atts = new S3BucketFileAttributes(bucket);
+    protected S3Bucket(FileURL url, S3Adapter service, String bucketName, Map<String, String> object) throws AuthException {
+        super(url, service, bucketName);
+        atts = new S3BucketFileAttributes();
     }
+
+//    protected S3Bucket(FileURL url, S3Adapter service,  Map<String, String> bucket) throws AuthException {
+//        super(url, service);
+//
+//        this.bucketName = bucket;
+//        atts = new S3BucketFileAttributes(bucket);
+//    }
 
 
     ///////////////////////////
@@ -84,27 +97,17 @@ public class S3Bucket extends S3File {
 
     @Override
     public AbstractFile[] ls() throws IOException {
-        return listObjects(bucketName, "", this);
+        return listObjects(bucketName, "/", this);
     }
 
     @Override
     public void delete() throws IOException {
-        try {
-            service.deleteBucket(bucketName);
-        }
-        catch(S3ServiceException e) {
-            throw getIOException(e);
-        }
+        throw new IOException("Operation not supported.");
     }
 
     @Override
     public void mkdir() throws IOException {
-        try {
-            service.createBucket(bucketName);
-        }
-        catch(S3ServiceException e) {
-            throw getIOException(e);
-        }
+        throw new IOException("Operation not supported.");
     }
 
 
@@ -172,39 +175,32 @@ public class S3Bucket extends S3File {
             updateExpirationDate(); // declare the attributes as 'fresh'
         }
 
-        private S3BucketFileAttributes(org.jets3t.service.model.S3Bucket bucket) throws AuthException {
-            super(TTL, false);      // no initial update
-
-            setAttributes(bucket);
-            setExists(true);
-
-            updateExpirationDate(); // declare the attributes as 'fresh'
-        }
-
-        private void setAttributes(org.jets3t.service.model.S3Bucket bucket) {
-            setDirectory(true);
-            setDate(bucket.getCreationDate().getTime());
+        private void setAttributes() {
+    		setDirectory(true);
+      		setDate(System.currentTimeMillis());
             setPermissions(DEFAULT_PERMISSIONS);
-            setOwner(bucket.getOwner().getDisplayName());
+            setOwner(null);
         }
 
         private void fetchAttributes() throws AuthException {
-            org.jets3t.service.model.S3Bucket bucket;
-            S3ServiceException e = null;
+            Exception e = null;
+            boolean exist = false;
             try {
                 // Note: unlike getObjectDetails, getBucket returns null when the bucket does not exist
                 // (that is because the corresponding request is a GET on the root resource, not a HEAD on the bucket).
-                bucket = service.getBucket(bucketName);
-            }
-            catch(S3ServiceException ex) {
+    			if (files == null)
+    				loadFileList(bucketName);
+            	
+    			exist = files.size()>0;
+    			
+            } catch(Exception ex) {
                 e = ex;
-                bucket = null;
             }
 
-            if(bucket!=null) {
+            if(exist) {
                 // Bucket exists
                 setExists(true);
-                setAttributes(bucket);
+                setAttributes();
             }
             else {
                 // Bucket doesn't exist on the server, or could not be retrieved
@@ -216,7 +212,7 @@ public class S3Bucket extends S3File {
                 setOwner(null);
 
                 if(e!=null)
-                    handleAuthException(e, fileURL);
+                    throw new AuthException(fileURL, e.getMessage());
             }
         }
 

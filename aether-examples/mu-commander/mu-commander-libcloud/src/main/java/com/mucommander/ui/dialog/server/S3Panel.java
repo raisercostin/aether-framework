@@ -70,7 +70,7 @@ public class S3Panel extends ServerPanel {
         addRow("Access ID Key", usernameField, 5);
 
         // Password field, initialized to ""
-        passwordField = new JPasswordField();
+        passwordField = new JPasswordField(lastPassword);
         addTextFieldListeners(passwordField, false);
         // Not localized on purpose
         addRow("Secret Access Key", passwordField, 15);

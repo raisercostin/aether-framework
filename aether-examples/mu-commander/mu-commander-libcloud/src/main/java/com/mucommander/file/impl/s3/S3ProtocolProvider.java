@@ -18,81 +18,112 @@
 
 package com.mucommander.file.impl.s3;
 
+import base.interfaces.IItem;
+
 import com.mucommander.auth.AuthException;
 import com.mucommander.auth.Credentials;
 import com.mucommander.file.AbstractFile;
 import com.mucommander.file.FileURL;
 import com.mucommander.file.ProtocolProvider;
+import com.mucommander.text.Translator;
+
+import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.logging.LogFactory;
 import org.apache.commons.logging.impl.Jdk14Logger;
-import org.jets3t.service.Jets3tProperties;
-import org.jets3t.service.S3Service;
-import org.jets3t.service.S3ServiceException;
-import org.jets3t.service.impl.rest.httpclient.RestS3Service;
-import org.jets3t.service.security.AWSCredentials;
+import simplecloud.storage.providers.amazon.S3Adapter;
+import simplecloud.storage.providers.amazon.S3Adapter.Type;
 
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Locale;
+import java.util.Map;
 import java.util.StringTokenizer;
 import java.util.logging.Level;
 
 /**
  * A file protocol provider for the Amazon S3 protocol.
- *
+ * 
  * @author Maxence Bernard
  */
 public class S3ProtocolProvider implements ProtocolProvider {
 
-    static {
-        // Turn off Jets3t logging: failed (404) HEAD request on non-existing object are logged with a SEVERE level,
-        // even though this is not an error per se. We don't want those to be reported in the log, so we have no
-        // choice but to disable logging entirely.
-        ((Jdk14Logger)LogFactory.getLog(RestS3Service.class)).getLogger().setLevel(Level.OFF);
-    }
+	// static {
+	// Turn off Jets3t logging: failed (404) HEAD request on non-existing object
+	// are logged with a SEVERE level,
+	// even though this is not an error per se. We don't want those to be
+	// reported in the log, so we have no
+	// choice but to disable logging entirely.
+	// ((Jdk14Logger)LogFactory.getLog(RestS3Service.class)).getLogger().setLevel(Level.OFF);
+	// }
 
-    public AbstractFile getFile(FileURL url, Object... instantiationParams) throws IOException {
-        Credentials credentials = url.getCredentials();
-        if(credentials==null || credentials.getLogin().equals("") || credentials.getPassword().equals(""))
-            throw new AuthException(url);
+	public AbstractFile getFile(FileURL url, Object... instantiationParams)
+			throws IOException {
+		Locale.setDefault(Locale.US);
+		Credentials credentials = url.getCredentials();
+		if (credentials == null || credentials.getLogin().equals("")
+				|| credentials.getPassword().equals(""))
+			throw new AuthException(url);
 
-        S3Service service;
-        String bucketName;
+		S3Adapter service;
+		String bucketName;
 
-        if(instantiationParams.length==0) {
-            try {
-                service = new RestS3Service(new AWSCredentials(credentials.getLogin(), credentials.getPassword()));
-                Jets3tProperties props = new Jets3tProperties();
-                props.setProperty("s3service.s3-endpoint", url.getHost());
-            }
-            catch(S3ServiceException e) {
-                throw S3File.getIOException(e, url);
-            }
-        }
-        else {
-            service = (S3Service)instantiationParams[0];
-        }
+		if (instantiationParams.length == 0) {
+			try {
+				service = new S3Adapter(credentials.getLogin(), credentials
+						.getPassword(), "s3.amazonaws.com");
+				
+			} catch (Exception e) {
+				throw S3File.getIOException(e, url);
+			}
+		} else {
+			service = (S3Adapter) instantiationParams[0];
+		}
 
-        String path = url.getPath();
+		String path = url.getPath();
+		//TEST
+//		if (path.startsWith(path)) {
+//			path = path.substring(1);
+//		}
+//		Map<String, String> a= null;
+//		IItem fetchItem;
+//		try {
+//			HashMap<Object, Object> options = new HashMap<Object, Object>();
+//			options.put(Type.SRC_BUCKET, path);
+////			String path = selectedFile.getAbsolutePath().replace(cacheDirectory.getAbsolutePath() + "\\", "");
+//			path = FilenameUtils.separatorsToUnix(path);
+//			fetchItem = service.fetchItem("/build.xml", options);
+//			a = service.fetchMetadata("/build.xml", options);
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
+		//FIN TEST
 
-        // Root resource
-        if(("/").equals(path))
-            return new S3Root(url, service);
+		// Root resource
+		if (("/").equals(path)) {
+			String bckt = Translator.get("default_root_bucket");
+			url.setPath(bckt);
+			return new S3Bucket(url, service, bckt);
 
-        // Fetch the bucket name from the URL
-        StringTokenizer st = new StringTokenizer(path, "/");
-        bucketName = st.nextToken();
+		}
 
-        // Object resource
-        if(st.hasMoreTokens()) {
-            if(instantiationParams.length==2)
-                return new S3Object(url, service, bucketName, (org.jets3t.service.model.S3Object)instantiationParams[1]);
+		// Fetch the bucket name from the URL
+		StringTokenizer st = new StringTokenizer(path, "/");
+		bucketName = st.nextToken();
 
-            return new S3Object(url, service, bucketName);
-        }
+		// Object resource
+		if (st.hasMoreTokens()) {
+			 if(instantiationParams.length==2)
+			 return new S3Object(url, service, bucketName,
+			 (Map<String, String>)instantiationParams[1]);
 
-        // Bucket resource
-        if(instantiationParams.length==2)
-            return new S3Bucket(url, service, (org.jets3t.service.model.S3Bucket)instantiationParams[1]);
+			return new S3Object(url, service, bucketName);
+		}
 
-        return new S3Bucket(url, service, bucketName);
-    }
+		 if(instantiationParams.length==2)
+		 return new S3Bucket(url, service, bucketName,
+		 (Map<String, String>)instantiationParams[1]);
+
+		return new S3Bucket(url, service, bucketName);
+//		 return null;
+	}
 }
