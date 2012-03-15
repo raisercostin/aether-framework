@@ -126,6 +126,8 @@ public abstract class S3File extends ProtocolFile {
 			if (name.endsWith("/"))
 				name = name.substring(0, name.length() - 1);
 		}
+		if ("".equals(name))
+			name = "/";
 		ArrayList<Map<String, String>> objs = files.get(name);
 
 		if (objs == null)

@@ -275,7 +275,7 @@ public class S3Object extends S3File {
     	if (files == null)
 			loadFileList(bucketName);
 
-		String fullName = bucketName + "/" + getObjectKey(false, bucketName);
+		String fullName = "/" + getObjectKey(false, bucketName);
 		Map<String, String> cso = getObjectMetadata(fullName, bucketName, isDirectory());
 		
 		if (cso == null)
@@ -292,9 +292,9 @@ public class S3Object extends S3File {
 				if (objects.size() > 1)
 					throw new IOException("Directory not empty");
 	
-				service.deleteItem(getObjectKey(true, bucketName), defaultOptions);//.removeFile(bucketName, getObjectKey(true, bucketName), false);
+				service.deleteItem("/"+getObjectKey(true, bucketName), defaultOptions);//.removeFile(bucketName, getObjectKey(true, bucketName), false);
 			} else {
-				service.deleteItem(getObjectKey(false, bucketName), defaultOptions);
+				service.deleteItem("/"+getObjectKey(false, bucketName), defaultOptions);
 			}
 
 
