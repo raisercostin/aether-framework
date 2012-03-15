@@ -22,241 +22,506 @@ import com.mucommander.auth.AuthException;
 import com.mucommander.file.*;
 import com.mucommander.io.RandomAccessOutputStream;
 import com.mucommander.runtime.JavaVersions;
-import org.jets3t.service.Constants;
-import org.jets3t.service.S3ObjectsChunk;
-import org.jets3t.service.S3Service;
-import org.jets3t.service.S3ServiceException;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.OutputStream;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.logging.Logger;
+
+import org.apache.commons.io.FileUtils;
+
+import simplecloud.storage.providers.amazon.S3Adapter;
+import simplecloud.storage.providers.amazon.S3Adapter.Type;
 
 /**
  * Super class of {@link S3Root}, {@link S3Bucket} and {@link S3Object}.
- *
+ * 
  * @author Maxence Bernard
  */
 public abstract class S3File extends ProtocolFile {
 
-    protected org.jets3t.service.S3Service service;
+	protected S3Adapter service;
+	// En el hash esta <NombreCarpeta, ListaArchivoos>
+	protected static HashMap<String, ArrayList<Map<String, String>>> files = null;
+	protected String bucketName = null;
+	protected AbstractFile parent;
+	protected boolean parentSet;
+	protected Map<Object, Object> defaultOptions = null;
 
-    protected AbstractFile parent;
-    protected boolean parentSet;
+	protected S3File(FileURL url, S3Adapter service, String bucketName) {
+		super(url);
+		this.service = service;
+		this.bucketName = bucketName;
+		initializeOptions(bucketName);
+	}
 
-    protected S3File(FileURL url, S3Service service) {
-        super(url);
+	protected void initializeOptions(String bucket) {
+		if (defaultOptions == null)
+			defaultOptions = new HashMap<Object, Object>();
+		defaultOptions.put(S3Adapter.Type.SRC_BUCKET, bucket);
+	}
 
-        this.service = service;
-    }
-    
-    protected IOException getIOException(S3ServiceException e) throws IOException {
-        return getIOException(e, fileURL);
-    }
+	// copia de dasein
+	protected void loadFileList(String bucket) {
+		if (defaultOptions == null)
+			initializeOptions(bucket);
 
-    protected static IOException getIOException(S3ServiceException e, FileURL fileURL) throws IOException {
-        handleAuthException(e, fileURL);
+		try {
+			files = new HashMap<String, ArrayList<Map<String, String>>>();
 
-        Throwable cause = e.getCause();
-        if(cause instanceof IOException)
-            return (IOException)cause;
+			List<String> listItems = service.listItems("/", defaultOptions);
 
-        if(JavaVersions.JAVA_1_6.isCurrentOrHigher())
-            return new IOException(e);
+			for (String blob : listItems) {
+				processObject(blob, files);
+				/*
+				 * if (!blob.endsWith("/")) { File blobFile = new File(bucket +
+				 * "/" + blob); Files.createParentDirs(blobFile);
+				 * FileUtils.touch(blobFile); }
+				 */
+			}
+			//			
+			//			
+			// Iterable<CloudStoreObject> listFiles = service.listFiles(bucket);
+			// for (CloudStoreObject object : listFiles) {
+			// processObject(object, files);
+			// }
 
-        return new IOException(e.getMessage());
-    }
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 
-    protected static void handleAuthException(S3ServiceException e, FileURL fileURL) throws AuthException {
-        int code = e.getResponseCode();
-        if(code==401 || code==403)
-            throw new AuthException(fileURL);
-    }
-    
-    protected AbstractFile[] listObjects(String bucketName, String prefix, S3File parent) throws IOException {
-        try {
-            S3ObjectsChunk chunk = service.listObjectsChunked(bucketName, prefix, "/", Constants.DEFAULT_OBJECT_LIST_CHUNK_SIZE, null, true);
-            org.jets3t.service.model.S3Object objects[] = chunk.getObjects();
-            String[] commonPrefixes = chunk.getCommonPrefixes();
+	protected String getDirectory(String object) {
+		String directory = "";
+		try {
+			if (object.endsWith("/"))
+				return object;
+			String aux = (object.startsWith("/") ? object.substring(1) : object);
+			String[] st = aux.split("/");
+			if (st.length > 1) {
+				for (int i = 0; i < st.length - 1; i++) {
+					directory += st[i] + "/";
+				}
+			}
+		} catch (Exception e) {
+			Logger.getAnonymousLogger().warning(
+					"Error al obtener el directorio de " + object
+							+ "   -  Error: " + e.getMessage());
+		}
+		return directory;
+	}
 
-            if(objects.length==0 && !prefix.equals("")) {
-                // This happens only when the directory does not exist
-                throw new IOException();
-            }
+	protected Map<String, String> getObjectMetadata(String fullPath,
+			String bucketName, boolean isDirectory) {
+		String name;
+		if (isDirectory)
+			name = fullPath;
+		else {
+			name = getDirectory(fullPath);
+			if (name.endsWith("/"))
+				name = name.substring(0, name.length() - 1);
+		}
+		ArrayList<Map<String, String>> objs = files.get(name);
 
-            AbstractFile[] children = new AbstractFile[objects.length+commonPrefixes.length];
-            FileURL childURL;
-            int i=0;
-            String objectKey;
+		if (objs == null)
+			return null;
+		Map<String, String> fileObject = null;
+		for (Map<String, String> cso : objs) {
+			if (isDirectory) {
+				if (cso.get(DefaultFileAttributes.PATH).equals("/"+
+						getObjectKey(true, bucketName))) {
+					fileObject = cso;
+					break;
+				}
+			} else {
+				if (cso.get(DefaultFileAttributes.PATH).equals("/"+
+						getObjectKey(false, bucketName))) {
+					fileObject = cso;
+					break;
+				}
+			}
+		}
+		return fileObject;
+	}
 
-            for(org.jets3t.service.model.S3Object object : objects) {
-                // Discard the object corresponding to the prefix itself
-                objectKey = object.getKey();
-                if(objectKey.equals(prefix))
-                    continue;
+	protected String getObjectKey(String bucketName) {
+		String urlPath = fileURL.getPath();
+		// Strip out the bucket name from the path
+		return urlPath.substring(bucketName.length() + 2, urlPath.length());
+	}
 
-                childURL = (FileURL)fileURL.clone();
-                childURL.setPath(bucketName + "/" + objectKey);
+	protected String getObjectKey(boolean wantTrailingSeparator,
+			String bucketName) {
+		String objectKey = getObjectKey(bucketName);
+		return wantTrailingSeparator ? addTrailingSeparator(objectKey)
+				: removeTrailingSeparator(objectKey);
+	}
 
-                children[i] = FileFactory.getFile(childURL, parent, service, object);
-                i++;
-            }
+	// ______________________________________________________________________
 
-            org.jets3t.service.model.S3Object directoryObject;
-            for(String commonPrefix : commonPrefixes) {
-                childURL = (FileURL)fileURL.clone();
-                childURL.setPath(bucketName + "/" + commonPrefix);
+	// public HashMap<String, ArrayList<CloudStoreObject>> loadFileTree(String
+	// bucket) throws Exception {
+	// HashMap<String, ArrayList<CloudStoreObject>> elements = new
+	// HashMap<String, ArrayList<CloudStoreObject>>();
+	// Iterable<CloudStoreObject> listFiles = service.listFiles(bucket);
+	//		
+	// for (CloudStoreObject object : listFiles) {
+	// processObject(object.getName(), elements);
+	// }
+	// return elements;
+	// }
 
-                directoryObject = new org.jets3t.service.model.S3Object(commonPrefix);
-                // Common prefixes are not objects per se, and therefore do not have a date, content-length nor owner.
-                directoryObject.setLastModifiedDate(new Date(System.currentTimeMillis()));
-                directoryObject.setContentLength(0);
-                children[i] = FileFactory.getFile(childURL, parent, service, directoryObject);
-                i++;
-            }
+	public void processObject(String objectPath,
+			HashMap<String, ArrayList<Map<String, String>>> tl) {
 
-            // Trim the array if an object was discarded.
-            // Note: Having to recreate an array sucks (puts pressure on the GC), but I haven't found a reliable way
-            // to know in advance whether the prefix will appear in the results or not.
-            if(i<children.length) {
-                AbstractFile[] childrenTrimmed = new AbstractFile[i];
-                System.arraycopy(children, 0, childrenTrimmed, 0, i);
+		String[] directories = getDirectories(objectPath);
+		String name = getNameObject(objectPath);
+		String actualDirectory = "/";
+		String previousDirectory = "";
+		// Se cargan todos los directorios intermedios
+		for (int i = 0; (i < directories.length) || (i == 0 && directories.length == 0); i++) {
+//			if (i != 0)
+			previousDirectory = actualDirectory;
 
-                return childrenTrimmed;
-            }
+			if (directories.length > 0) {
+				if (i == 0 )
+					actualDirectory += directories[i];
+				else
+					actualDirectory += "/" + directories[i];
+			}
+				
+//			else
+//				actualDirectory += directories[i];
+			if (!tl.containsKey(actualDirectory)) {
+				Map<String, String> cso = new HashMap<String, String>();
+				cso.put(DefaultFileAttributes.ISDIRECTORY, Boolean.TRUE.toString());
+				cso.put(DefaultFileAttributes.CREATIONDATE, null);
+//				if (actualDirectory.startsWith("/"))
+//					actualDirectory = actualDirectory.substring(1);
 
-            return children;
-        }
-        catch(S3ServiceException e) {
-            throw getIOException(e);
-        }
-    }
+				cso.put(DefaultFileAttributes.BUCKET, bucketName);
 
+				String nameAux = ("/".equals(actualDirectory)?actualDirectory:actualDirectory + "/");
+				if (!nameAux.startsWith("/"))
+					nameAux = "/" + nameAux;
+    			if (nameAux.endsWith("/") && nameAux.length()-1 > 0)
+    				nameAux = nameAux.substring(0, nameAux.length()-1);
+				// cso.setLocation("http://" + directories[0] +
+				// ".s3.amazonaws.com/" + nameAux);
+				// cso.setLocation(object.getLocation());
 
-    //////////////////////
-    // Abstract methods //
-    //////////////////////
+				cso.put(DefaultFileAttributes.PATH, nameAux);
+				// cso.setProviderRegionId("us-east-1");
+				ArrayList<Map<String, String>> temp = new ArrayList<Map<String, String>>();
+				//temp.add(cso);
+				tl.put(actualDirectory, temp);
 
-    public abstract FileAttributes getFileAttributes();
+				if (!"".equals(previousDirectory)) {
+					ArrayList<Map<String, String>> prev = tl
+							.get(previousDirectory);
+					if (!existCloudStoreObject(cso, prev))
+						prev.add(cso);
+				}
+			}
+		}
+		if (!name.equals("")) {
+			// agregar los atributos para el archivo
+			Map<String, String> object = null;
+			try {
+				object = service.fetchMetadata("/" + objectPath, defaultOptions);
+			} catch (Exception e) {
+				Logger.getAnonymousLogger().warning("(1)Error al obtener la metadata del archivo: "	+ objectPath);
+			}
+			if (object != null) {
+				object
+						.put(DefaultFileAttributes.ISDIRECTORY, Boolean.FALSE
+								.toString());
+				object.put(DefaultFileAttributes.CREATIONDATE, null);
+				object.put(DefaultFileAttributes.BUCKET, bucketName);
+				object.put(DefaultFileAttributes.PATH, "/"+objectPath);
 
+				tl.get(actualDirectory).add(object);
+			} else {
+				Logger.getAnonymousLogger().warning(
+						"(2)Error al obtener la metadata del archivo: "
+								+ objectPath);
+			}
+		}
+	}
 
-    /////////////////////////////////
-    // ProtocolFile implementation //
-    /////////////////////////////////
+	private boolean existCloudStoreObject(Map<String, String> o,
+			ArrayList<Map<String, String>> list) {
+		for (Map<String, String> obj : list) {
+			if (o.get(DefaultFileAttributes.PATH).equals(obj.get(DefaultFileAttributes.PATH)))
+				return true;
+		}
+		return false;
+	}
 
-    @Override
-    public AbstractFile getParent() {
-        if(!parentSet) {
-            FileURL parentFileURL = this.fileURL.getParent();
-            if(parentFileURL!=null) {
-                try {
-                    parent = FileFactory.getFile(parentFileURL, null, service);
-                }
-                catch(IOException e) {
-                    // No parent
-                }
-            }
+	private String getNameObject(String object) {
+		String aux = object.replace("/", "/*/");
+		String[] st = aux.split("/");
+		if (st.length > 0 && !st[st.length - 1].equals("*")) {
+			if (st.length > 1) {
+				return st[st.length - 1];
+			} else {
+				return st[st.length - 1];
+			}
+		} else {
+			return "";
+		}
+	}
 
-            parentSet = true;
-        }
+	private String[] getDirectories(String object) {
+		String aux = object.replace("/", "/*/");
+		String[] st = aux.split("/");
+		ArrayList<String> directories = new ArrayList<String>();
+		if (st.length > 1) {
+			for (int i = 1; i < st.length; i = i + 2) {
+				directories.add(st[i - 1]);
+			}
+		}
+		return directories.toArray(new String[] {});
+	}
 
-        return parent;
-    }
+	// Fin copia de dasein
 
-    @Override
-    public void setParent(AbstractFile parent) {
-        this.parent = parent;
-        this.parentSet = true;
-    }
+	// ______________________________________________________________________
 
+	protected IOException getIOException(Exception e) throws IOException {
+		return getIOException(e, fileURL);
+	}
 
-    // Delegates to FileAttributes
+	protected static IOException getIOException(Exception e, FileURL fileURL)
+			throws IOException {
 
-    @Override
-    public long getDate() {
-        return getFileAttributes().getDate();
-    }
+		Throwable cause = e.getCause();
+		if (cause instanceof IOException)
+			return (IOException) cause;
 
-    @Override
-    public long getSize() {
-        return getFileAttributes().getSize();
-    }
+		if (JavaVersions.JAVA_1_6.isCurrentOrHigher())
+			return new IOException(e);
 
-    @Override
-    public boolean exists() {
-        return getFileAttributes().exists();
-    }
+		return new IOException(e.getMessage());
+	}
 
-    @Override
-    public boolean isDirectory() {
-        return getFileAttributes().isDirectory();
-    }
+	// protected static void handleAuthException(S3ServiceException e, FileURL
+	// fileURL) throws AuthException {
+	// int code = e.getResponseCode();
+	// if(code==401 || code==403)
+	// throw new AuthException(fileURL);
+	// }
 
-    @Override
-    public FilePermissions getPermissions() {
-        return getFileAttributes().getPermissions();
-    }
+	protected AbstractFile[] listObjects(String bucketName, String prefix,
+			S3File parent) throws IOException {
+		if (files == null) {
+			loadFileList(bucketName);
+		}
+		try {
+			String path = prefix;
+			if (prefix == null || "".equals(prefix.trim()))
+				path = "/";
 
-    @Override
-    public Object getUnderlyingFileObject() {
-        return getFileAttributes();
-    }
-    
+			if (path.endsWith("/") && path.length() - 1 > 0)
+				path = path.substring(0, path.length() - 1);
 
-    // Unsupported operations, no matter the kind of resource (object, bucket, service)
+			ArrayList<AbstractFile> abstractFiles = new ArrayList<AbstractFile>();
+			ArrayList<Map<String, String>> objects = files.get(path);
 
-    @Override
-    public boolean isSymlink() {
-        return false;
-    }
+			// se obtienen los archivos
+			// HashMap<Object, Object> options = new HashMap<Object, Object>();
+			// options.put(Type.SRC_BUCKET, bucketName);
+			// List<String> files = service.listItems(path, options);
 
-    @Override
-    public PermissionBits getChangeablePermissions() {
-        return PermissionBits.EMPTY_PERMISSION_BITS;
-    }
+			FileURL childURL;
+			if (objects != null) {
+				for (Map<String, String> o : objects) {
+					if (!o.get(DefaultFileAttributes.PATH).equals(prefix)) {
+						childURL = (FileURL) fileURL.clone();
+						childURL.setPath(o.get(DefaultFileAttributes.BUCKET) + o.get(DefaultFileAttributes.PATH));
+						abstractFiles.add(FileFactory.getFile(childURL, parent,
+								service, o));
+					}
+				}
+			}
+			return abstractFiles.toArray(new AbstractFile[] {});
+		} catch (Exception e) {
+			throw getIOException(e);
+		}
 
-    @Override
-    @UnsupportedFileOperation
-    public void changePermission(int access, int permission, boolean enabled) throws UnsupportedFileOperationException {
-        throw new UnsupportedFileOperationException(FileOperation.CHANGE_PERMISSION);
-    }
+		// ArrayList<CloudStoreObject> objects = files.get(path);
+		//			
+		// // if (!objects.isEmpty() && !prefix.equals("")) {
+		// // // This happens only when the directory does not exist
+		// // throw new IOException();
+		// // }
+		//
+		// FileURL childURL;
+		// if (objects != null) {
+		// for (CloudStoreObject o : objects) {
+		// if (!"".equals(o.getName()) && !(o.getName().equals(prefix) &&
+		// o.getDirectory().equals(bucketName)))
+		// {//(o.getDirectory().equals(path) && "".equals(o.getName()))) {
+		// childURL = (FileURL) fileURL.clone();
+		// childURL.setPath(o.getDirectory() + "/" + o.getName());
+		// abstractFiles.add(FileFactory.getFile(childURL, parent, service, o));
+		// }
+		// }
+		// }
+		// return abstractFiles.toArray(new AbstractFile[]{});
+		// } catch (Exception e) {
+		// throw getIOException(e);
+		// }
+	}
 
-    @Override
-    public String getGroup() {
-        return null;
-    }
+	// ////////////////////
+	// Abstract methods //
+	// ////////////////////
 
-    @Override
-    public boolean canGetGroup() {
-        return false;
-    }
+	public abstract FileAttributes getFileAttributes();
 
-    @Override
-    @UnsupportedFileOperation
-    public OutputStream getAppendOutputStream() throws UnsupportedFileOperationException {
-        throw new UnsupportedFileOperationException(FileOperation.APPEND_FILE);
-    }
+	// ///////////////////////////////
+	// ProtocolFile implementation //
+	// ///////////////////////////////
 
-    @Override
-    @UnsupportedFileOperation
-    public RandomAccessOutputStream getRandomAccessOutputStream() throws UnsupportedFileOperationException {
-        throw new UnsupportedFileOperationException(FileOperation.RANDOM_WRITE_FILE);
-    }
+	@Override
+	public AbstractFile getParent() {
+		if (!parentSet) {
+			FileURL parentFileURL = this.fileURL.getParent();
+			if (parentFileURL != null) {
+				try {
+					parent = FileFactory.getFile(parentFileURL, null, service);
+				} catch (IOException e) {
+					// No parent
+				}
+			}
 
-    @Override
-    @UnsupportedFileOperation
-    public long getFreeSpace() throws UnsupportedFileOperationException {
-        throw new UnsupportedFileOperationException(FileOperation.GET_FREE_SPACE);
-    }
+			parentSet = true;
+		}
 
-    @Override
-    @UnsupportedFileOperation
-    public long getTotalSpace() throws UnsupportedFileOperationException {
-        throw new UnsupportedFileOperationException(FileOperation.GET_TOTAL_SPACE);
-    }
+		return parent;
+	}
 
-    @Override
-    @UnsupportedFileOperation
-    public void changeDate(long lastModified) throws UnsupportedFileOperationException {
-        throw new UnsupportedFileOperationException(FileOperation.CHANGE_DATE);
-    }
+	@Override
+	public void setParent(AbstractFile parent) {
+		this.parent = parent;
+		this.parentSet = true;
+	}
+
+	// Delegates to FileAttributes
+
+	@Override
+	public long getDate() {
+		return getFileAttributes().getDate();
+	}
+
+	@Override
+	public long getSize() {
+		return getFileAttributes().getSize();
+	}
+
+	@Override
+	public boolean exists() {
+		return getFileAttributes().exists();
+	}
+
+	@Override
+	public boolean isDirectory() {
+		return getFileAttributes().isDirectory();
+	}
+
+	@Override
+	public FilePermissions getPermissions() {
+		return getFileAttributes().getPermissions();
+	}
+
+	@Override
+	public Object getUnderlyingFileObject() {
+		return getFileAttributes();
+	}
+
+	// Unsupported operations, no matter the kind of resource (object, bucket,
+	// service)
+
+	@Override
+	public boolean isSymlink() {
+		return false;
+	}
+
+	@Override
+	public PermissionBits getChangeablePermissions() {
+		return PermissionBits.EMPTY_PERMISSION_BITS;
+	}
+
+	@Override
+	@UnsupportedFileOperation
+	public void changePermission(int access, int permission, boolean enabled)
+			throws UnsupportedFileOperationException {
+		throw new UnsupportedFileOperationException(
+				FileOperation.CHANGE_PERMISSION);
+	}
+
+	@Override
+	public String getGroup() {
+		return null;
+	}
+
+	@Override
+	public boolean canGetGroup() {
+		return false;
+	}
+
+	@Override
+	@UnsupportedFileOperation
+	public OutputStream getAppendOutputStream()
+			throws UnsupportedFileOperationException {
+		throw new UnsupportedFileOperationException(FileOperation.APPEND_FILE);
+	}
+
+	@Override
+	@UnsupportedFileOperation
+	public RandomAccessOutputStream getRandomAccessOutputStream()
+			throws UnsupportedFileOperationException {
+		throw new UnsupportedFileOperationException(
+				FileOperation.RANDOM_WRITE_FILE);
+	}
+
+	@Override
+	@UnsupportedFileOperation
+	public long getFreeSpace() throws UnsupportedFileOperationException {
+		throw new UnsupportedFileOperationException(
+				FileOperation.GET_FREE_SPACE);
+	}
+
+	@Override
+	@UnsupportedFileOperation
+	public long getTotalSpace() throws UnsupportedFileOperationException {
+		throw new UnsupportedFileOperationException(
+				FileOperation.GET_TOTAL_SPACE);
+	}
+
+	@Override
+	@UnsupportedFileOperation
+	public void changeDate(long lastModified)
+			throws UnsupportedFileOperationException {
+		throw new UnsupportedFileOperationException(FileOperation.CHANGE_DATE);
+	}
+
+	protected class DefaultFileAttributes {
+		public static final String ISDIRECTORY = "Is-Directory";
+		public static final String PATH = "File-Path";
+		public static final String BUCKET = "Bucket";
+		public static final String EXIST = "Exist";
+		public static final String LASTMODIFIED = "Last-Modified";
+		public static final String TYPE = "File-Type";
+		public static final String DEFAULTFILETYPE = "application/octet-stream";
+		public static final String CONTENTLENGTH = "Content-Length";
+		public static final String CREATIONDATE = "Creation-Date";
+	}
+
 }

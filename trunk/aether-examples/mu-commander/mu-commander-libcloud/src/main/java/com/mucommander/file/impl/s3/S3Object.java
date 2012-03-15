@@ -18,19 +18,43 @@
 
 package com.mucommander.file.impl.s3;
 
+import java.io.BufferedInputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.logging.Logger;
+
+import org.apache.commons.io.FilenameUtils;
+
+import simplecloud.storage.providers.amazon.S3Adapter;
+import simplecloud.storage.providers.amazon.S3Adapter.Type;
+import base.interfaces.IItem;
+import base.types.Item;
+
 import com.mucommander.auth.AuthException;
-import com.mucommander.file.*;
+import com.mucommander.file.AbstractFile;
+import com.mucommander.file.FileAttributes;
+import com.mucommander.file.FileFactory;
+import com.mucommander.file.FileLogger;
+import com.mucommander.file.FileOperation;
+import com.mucommander.file.FilePermissions;
+import com.mucommander.file.FileURL;
+import com.mucommander.file.SimpleFilePermissions;
+import com.mucommander.file.SyncedFileAttributes;
+import com.mucommander.file.UnsupportedFileOperation;
+import com.mucommander.file.UnsupportedFileOperationException;
 import com.mucommander.io.BufferPool;
 import com.mucommander.io.FileTransferException;
 import com.mucommander.io.RandomAccessInputStream;
 import com.mucommander.io.StreamUtils;
-import org.jets3t.service.S3Service;
-import org.jets3t.service.S3ServiceException;
-import org.jets3t.service.model.S3Owner;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
 
 /**
  * <code>S3Object</code> represents an Amazon S3 object.
@@ -39,7 +63,7 @@ import java.io.OutputStream;
  */
 public class S3Object extends S3File {
 
-    private String bucketName;
+//    private String bucketName;
     private S3ObjectFileAttributes atts;
 
     /** Maximum size of an S3 object (5GB) */
@@ -50,19 +74,49 @@ public class S3Object extends S3File {
     private final static FilePermissions DEFAULT_PERMISSIONS = new SimpleFilePermissions(384);   // rw-------
 
 
-    protected S3Object(FileURL url, S3Service service, String bucketName) throws AuthException {
-        super(url, service);
-
-        this.bucketName = bucketName;
+    protected S3Object(FileURL url, S3Adapter service, String bucketName) throws AuthException {
+        super(url, service, bucketName);
         atts = new S3ObjectFileAttributes();
     }
 
-    protected S3Object(FileURL url, S3Service service, String bucketName, org.jets3t.service.model.S3Object object) throws AuthException {
-        super(url, service);
+	protected S3Object(FileURL url, S3Adapter service,
+			String bucketName, String object) throws AuthException {
+		super(url, service, bucketName);
+		atts = new S3ObjectFileAttributes(object);
+	}
 
-        this.bucketName = bucketName;
-        atts = new S3ObjectFileAttributes(object);
-    }
+	protected S3Object(FileURL url, S3Adapter service,
+			String bucketName, Map<String, String> object) throws AuthException {
+		super(url, service, bucketName);
+		atts = new S3ObjectFileAttributes(object);
+	}
+
+	private File getFile(InputStream in) {
+		String file = getObjectKey(false, bucketName);
+		File f = null;
+		try {
+			f = File.createTempFile(file, null);
+			OutputStream out = new FileOutputStream(f);
+
+			byte buf[] = new byte[1024];
+			int len;
+			while ((len = in.read(buf)) > 0)
+				out.write(buf, 0, len);
+			out.close();
+		} catch (IOException e) {
+			Logger.getAnonymousLogger().warning(
+					"Error al intentar crear el archivo a partir del InputStream - Error: "
+							+ e.getMessage());
+		}
+		return f;
+	}
+
+//    protected S3Object(FileURL url, S3Adapter service, String bucketName, Object object) throws AuthException {
+//        super(url, service);
+//
+//        this.bucketName = bucketName;
+//        atts = new S3ObjectFileAttributes(object);
+//    }
 
     private String getObjectKey() {
         String urlPath = fileURL.getPath();
@@ -83,32 +137,89 @@ public class S3Object extends S3File {
      * @param objectLength length of the object
      * @throws FileTransferException if an error occurred during the transfer
      */
-    private void putObject(InputStream in, long objectLength) throws FileTransferException {
-        try {
-            // Init S3 object
-            org.jets3t.service.model.S3Object object = new org.jets3t.service.model.S3Object(getObjectKey(false));
-            object.setDataInputStream(in);
-            object.setContentLength(objectLength);
+     	private void putObject(InputStream in, long objectLength)
+			throws FileTransferException {
+		try {
+			File f = getFile(in);
+			String path = getObjectKey(false, bucketName);
+			path = FilenameUtils.separatorsToUnix(path);
+			InputStream stream = new BufferedInputStream(in);
+			Item item = new Item(stream, DefaultFileAttributes.DEFAULTFILETYPE, null, f.length());
+			
+			if (service.storeItem("/" + path, item, new HashMap<String, String>(), defaultOptions)) {
+				atts.setExists(true);
+				Logger.getAnonymousLogger().warning("Upload succeeded");
+			} else {
+				atts.setExists(false);
+				Logger.getAnonymousLogger().warning("Upload failed");
+				throw new FileTransferException(
+						FileTransferException.UNKNOWN_REASON);
+			}
+			atts.updateExpirationDate();
 
-            // Transfer to S3 and update local file attributes
-            atts.setAttributes(service.putObject(bucketName, object));
-            atts.setExists(true);
-            atts.updateExpirationDate();
-        }
-        catch(S3ServiceException e) {
-            throw new FileTransferException(FileTransferException.UNKNOWN_REASON);
-        }
-        finally {
-            // Close the InputStream, no matter what
-            try {
-                in.close();
-            }
-            catch(IOException e) {
-                // Do not re-throw the exception to prevent exceptions caught in the catch block from being replaced
-            }
-        }
+		} catch (Exception e) {
+			throw new FileTransferException(
+					FileTransferException.UNKNOWN_REASON);
+		} finally {
+			// Close the InputStream, no matter what
+			try {
+				in.close();
+			} catch (IOException e) {
+				// Do not re-throw the exception to prevent exceptions caught in
+				// the catch block from being replaced
+			}
+			loadFileList(bucketName);
+		}
+	}
+     /*
+    private void putObject(String selectedFile, File cacheDirectory) throws FileTransferException {
+    	//String selectedFile, File cacheDirectory
+		try {
+			File file = new File(selectedFile);
+			String path = file.getAbsolutePath().replace(cacheDirectory.getAbsolutePath() + "\\", "");
+			path = FilenameUtils.separatorsToUnix(path);
+
+			InputStream stream = new BufferedInputStream(new FileInputStream(file));
+			Item item = new Item(stream, "application/xml", null, file.length());
+			Map<Object, Object> options = new HashMap<Object, Object>();
+			options.put(S3Adapter.Type.SRC_BUCKET, bucketName);
+			if (service.storeItem("/" + path, item, new HashMap<String, String>(), options)) {
+				System.out.println("Upload succeeded");
+			} else {
+				System.out.println("Upload failed");
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+
+    	
+    	//        try {
+//            // Init S3 object
+//            service.storeItem(getObjectKey(false), item, metadata, options)
+//        	//.service.model.S3Object object = new .service.model.S3Object(getObjectKey(false));
+//            object.setDataInputStream(in);
+//            object.setContentLength(objectLength);
+//            
+//            // Transfer to S3 and update local file attributes
+//            atts.setAttributes(service.putObject(bucketName, object));
+//            atts.setExists(true);
+//            atts.updateExpirationDate();
+//        }
+//        catch(Exception e) {
+//            throw new FileTransferException(FileTransferException.UNKNOWN_REASON);
+//        }
+//        finally {
+//            // Close the InputStream, no matter what
+//            try {
+//                in.close();
+//            }
+//            catch(IOException e) {
+//                // Do not re-throw the exception to prevent exceptions caught in the catch block from being replaced
+//            }
+//        }
     }
-
+*/
 
     ///////////////////////////
     // S3File implementation //
@@ -136,46 +247,85 @@ public class S3Object extends S3File {
 
     @Override
     public AbstractFile[] ls() throws IOException {
-        return listObjects(bucketName, getObjectKey(true), this);
+		return listObjects(bucketName, "/" + getObjectKey(true, bucketName), this);
     }
 
     @Override
     public void mkdir() throws IOException {
         if(exists())
             throw new IOException();
-
+	//@TODO falta ver esta implementacion
         try {
-            atts.setAttributes(service.putObject(bucketName, new org.jets3t.service.model.S3Object(getObjectKey(true))));
+			Map<Object, Object> options = new HashMap<Object, Object>();
+			options.put(S3Adapter.Type.SRC_BUCKET, bucketName);
+			//bucketName + "/" + getObjectKey(false, bucketName)
+        	service.fetchItem(getPath(), options);
+        	
+//            atts.setAttributes(service.putObject(bucketName, Map<String, String>));
             atts.setExists(true);
             atts.updateExpirationDate();
         }
-        catch(S3ServiceException e) {
+        catch(Exception e) {
             throw getIOException(e);
         }
     }
 
     @Override
     public void delete() throws IOException {
-        // Note: DELETE on a non-existing resource is a successful request, so we need this check
-        if(!exists())
-            throw new IOException();
+    	if (files == null)
+			loadFileList(bucketName);
 
-        try {
-            // Make sure that the directory is empty, abort if not.
-            // Note that we must not count the parent directory (this file).
-            if(service.listObjectsChunked(bucketName, getObjectKey(isDirectory()), "/", 2, null, false).getObjects().length>=2) {
-                throw new IOException("Directory not empty");
-            }
-            service.deleteObject(bucketName, getObjectKey(isDirectory()));
+		String fullName = bucketName + "/" + getObjectKey(false, bucketName);
+		Map<String, String> cso = getObjectMetadata(fullName, bucketName, isDirectory());
+		
+		if (cso == null)
+			throw new IOException();
 
-            // Update file attributes locally
-            atts.setExists(false);
-            atts.setDirectory(false);
-            atts.setSize(0);
-        }
-        catch(S3ServiceException e) {
-            throw getIOException(e);
-        }
+		try {
+			// Make sure that the directory is empty, abort if not.
+			// Note that we must not count the parent directory (this file).
+			if (isDirectory()) {
+				ArrayList<Map<String, String>> objects =files.get(bucketName + "/" + getObjectKey(false, bucketName)); 
+				if (objects == null)
+					throw new IOException();
+
+				if (objects.size() > 1)
+					throw new IOException("Directory not empty");
+	
+				service.deleteItem(getObjectKey(true, bucketName), defaultOptions);//.removeFile(bucketName, getObjectKey(true, bucketName), false);
+			} else {
+				service.deleteItem(getObjectKey(false, bucketName), defaultOptions);
+			}
+
+
+			// Update file attributes locally
+			atts.setExists(false);
+			atts.setDirectory(false);
+			atts.setSize(0);
+			loadFileList(bucketName);
+		} catch (Exception e) {
+			throw getIOException(e);
+		}
+//        // Note: DELETE on a non-existing resource is a successful request, so we need this check
+//        if(!exists())
+//            throw new IOException();
+//
+//        try {
+//            // Make sure that the directory is empty, abort if not.
+//            // Note that we must not count the parent directory (this file).
+//            if(service.listObjectsChunked(bucketName, getObjectKey(isDirectory()), "/", 2, null, false).getObjects().length>=2) {
+//                throw new IOException("Directory not empty");
+//            }
+//            service.deleteObject(bucketName, getObjectKey(isDirectory()));
+//
+//            // Update file attributes locally
+//            atts.setExists(false);
+//            atts.setDirectory(false);
+//            atts.setSize(0);
+//        }
+//        catch(S3ServiceException e) {
+//            throw getIOException(e);
+//        }
     }
 
     @Override
@@ -186,35 +336,59 @@ public class S3Object extends S3File {
 
     @Override
     public void copyRemotelyTo(AbstractFile destFile) throws IOException {
-        checkCopyRemotelyPrerequisites(destFile, true, false);
-
-        S3Object destObjectFile = (S3Object)destFile.getAncestor(S3Object.class);
-
-        try {
-            // Let the COPY request fail if both objects are not located in the same region, saves 2 HEAD BUCKET requests.
-//            // Ensure that both objects' bucket are located in the same region (null means US standard)
-//            String sourceBucketLocation = service.getBucket(bucketName).getLocation();
-//            String destBucketLocation = destObjectFile.service.getBucket(destObjectFile.bucketName).getLocation();
-//            if((sourceBucketLocation==null && destBucketLocation!=null)
-//            || (sourceBucketLocation!=null && destBucketLocation==null)
-//            || !(sourceBucketLocation!=null && !sourceBucketLocation.equals(destBucketLocation))
-//            || !destBucketLocation.equals(destBucketLocation))
-//                throw new IOException();
-
-            boolean isDirectory = isDirectory();
-            org.jets3t.service.model.S3Object destObject = new org.jets3t.service.model.S3Object(destObjectFile.getObjectKey(isDirectory));
-
-            destObject.addAllMetadata(
-                    service.copyObject(bucketName, getObjectKey(isDirectory), destObjectFile.bucketName, destObject, false)
-            );
-
-            // Update destination file attributes
-            destObjectFile.atts.setAttributes(destObject);
-            destObjectFile.atts.setExists(true);
-        }
-        catch(S3ServiceException e) {
-            throw getIOException(e);
-        }
+    		checkCopyRemotelyPrerequisites(destFile, true, false);
+		S3Object destObjectFile = (S3Object) destFile
+				.getAncestor(S3Object.class);
+		boolean isDirectory = isDirectory();
+		if (!isDirectory) {
+			try {
+				if (!defaultOptions.containsKey(Type.DEST_BUCKET))
+					defaultOptions.put(Type.DEST_BUCKET, bucketName);
+				
+				service.copyItem("/" + getObjectKey(false, bucketName), "/" + destObjectFile.getObjectKey(false, bucketName), defaultOptions);
+			} catch (Exception e) {
+				Logger.getAnonymousLogger().info(
+						getObjectKey(false, bucketName) + " could not be copied to "
+								+ destFile.getName());
+			}
+		} else {
+			AbstractFile[] af = ls();
+			for (AbstractFile file : af) {
+				file.copyRemotelyTo(destFile);
+			}
+		}
+		loadFileList(bucketName);
+    
+    
+//        checkCopyRemotelyPrerequisites(destFile, true, false);
+//
+//        S3Object destObjectFile = (S3Object)destFile.getAncestor(S3Object.class);
+//
+//        try {
+//            // Let the COPY request fail if both objects are not located in the same region, saves 2 HEAD BUCKET requests.
+////            // Ensure that both objects' bucket are located in the same region (null means US standard)
+////            String sourceBucketLocation = service.getBucket(bucketName).getLocation();
+////            String destBucketLocation = destObjectFile.service.getBucket(destObjectFile.bucketName).getLocation();
+////            if((sourceBucketLocation==null && destBucketLocation!=null)
+////            || (sourceBucketLocation!=null && destBucketLocation==null)
+////            || !(sourceBucketLocation!=null && !sourceBucketLocation.equals(destBucketLocation))
+////            || !destBucketLocation.equals(destBucketLocation))
+////                throw new IOException();
+//
+//            boolean isDirectory = isDirectory();
+//            .service.model.S3Object destObject = new org.jets3t.service.model.S3Object(destObjectFile.getObjectKey(isDirectory));
+//
+//            destObject.addAllMetadata(
+//                    service.copyObject(bucketName, getObjectKey(isDirectory), destObjectFile.bucketName, destObject, false)
+//            );
+//
+//            // Update destination file attributes
+//            destObjectFile.atts.setAttributes(destObject);
+//            destObjectFile.atts.setExists(true);
+//        }
+//        catch(S3ServiceException e) {
+//            throw getIOException(e);
+//        }
     }
 
     @Override
@@ -224,15 +398,34 @@ public class S3Object extends S3File {
 
     @Override
     public InputStream getInputStream(long offset) throws IOException {
-        try {
-            // Note: do *not* use S3ObjectRandomAccessInputStream if the object is to be read sequentially, as it would
-            // add unnecessary billing overhead since it reads the object chunk by chunk, each in a separate GET request.
-            return service.getObject(bucketName, getObjectKey(false), null, null, null, null, offset==0?null:offset, null).getDataInputStream();
-        }
-        catch(S3ServiceException e) {
-            throw getIOException(e);
-        }
-    }
+    	try {
+			String path = getObjectKey(false, bucketName);
+			path = FilenameUtils.separatorsToUnix(path);
+
+			IItem fetchItem = service.fetchItem("/" + path, defaultOptions);
+			return fetchItem.getContent();
+		} catch (Exception e) {
+			Logger.getAnonymousLogger().warning(
+					"Error al obtener el inputStream: " + e.getMessage());
+			e.printStackTrace();
+			throw getIOException(e);
+		}
+	}
+
+    private InputStream getInputStream(long offset, String path) throws IOException {
+    	try {
+			path = FilenameUtils.separatorsToUnix(path);
+
+			IItem fetchItem = service.fetchItem("/" + path, defaultOptions);
+			return fetchItem.getContent();
+		} catch (Exception e) {
+			Logger.getAnonymousLogger().warning(
+					"Error al obtener el inputStream: " + e.getMessage());
+			e.printStackTrace();
+			throw getIOException(e);
+		}
+	}
+
 
     @Override
     public RandomAccessInputStream getRandomAccessInputStream() throws IOException {
@@ -308,66 +501,125 @@ public class S3Object extends S3File {
 
     @Override
     public void copyStream(InputStream in, boolean append, long length) throws FileTransferException {
-        if(append) {
-//            throw new UnsupportedFileOperationException(FileOperation.APPEND_FILE);
-            throw new FileTransferException(FileTransferException.READING_SOURCE);
-        }
+		if (append) {
+			// throw new
+			// UnsupportedFileOperationException(FileOperation.APPEND_FILE);
+			throw new FileTransferException(
+					FileTransferException.READING_SOURCE);
+		}
 
-        // TODO: compute md5 ?
+		// TODO: compute md5 ?
 
-        // If the length is known, we can upload the object directly without having to go through the tedious process
-        // of copying the stream to a temporary file.
-        if(length>=0) {
-            putObject(in, length);
-        }
-        else {
-            // Copy the stream to a temporary file so that we can know the object's length, which has to be declared
-            // in the PUT request's headers (that is before the transfer is started).
-            final AbstractFile tempFile;
-            final OutputStream tempOut;
-            try {
-                tempFile = FileFactory.getTemporaryFile(false);
-                tempOut = tempFile.getOutputStream();
-            }
-            catch(IOException e) {
-                throw new FileTransferException(FileTransferException.OPENING_DESTINATION);
-            }
+		// If the length is known, we can upload the object directly without
+		// having to go through the tedious process
+		// of copying the stream to a temporary file.
+		if (length >= 0) {
+			putObject(in, length);
+		} else {
+			// Copy the stream to a temporary file so that we can know the
+			// object's length, which has to be declared
+			// in the PUT request's headers (that is before the transfer is
+			// started).
+			final AbstractFile tempFile;
+			final OutputStream tempOut;
+			try {
+				tempFile = FileFactory.getTemporaryFile(false);
+				tempOut = tempFile.getOutputStream();
+			} catch (IOException e) {
+				throw new FileTransferException(
+						FileTransferException.OPENING_DESTINATION);
+			}
 
-            try {
-                // Copy the stream to the temporary file
-                try {
-                    StreamUtils.copyStream(in, tempOut, IO_BUFFER_SIZE);
-                }
-                finally {
-                    // Close the stream even if copyStream() threw an IOException
-                    try {
-                        tempOut.close();
-                    }
-                    catch(IOException e) {
-                        // Do not re-throw the exception to prevent swallowing the exception thrown in the try block
-                    }
-                }
+			try {
+				// Copy the stream to the temporary file
+				try {
+					StreamUtils.copyStream(in, tempOut, IO_BUFFER_SIZE);
+				} finally {
+					// Close the stream even if copyStream() threw an
+					// IOException
+					try {
+						tempOut.close();
+					} catch (IOException e) {
+						// Do not re-throw the exception to prevent swallowing
+						// the exception thrown in the try block
+					}
+				}
 
-                InputStream tempIn;
-                try {
-                    tempIn = tempFile.getInputStream();
-                }
-                catch(IOException e) {
-                    throw new FileTransferException(FileTransferException.OPENING_SOURCE);
-                }
+				InputStream tempIn;
+				try {
+					tempIn = tempFile.getInputStream();
+				} catch (IOException e) {
+					throw new FileTransferException(
+							FileTransferException.OPENING_SOURCE);
+				}
 
-                putObject(tempIn, tempFile.getSize());
-            }
-            finally {
-                // Delete the temporary file, no matter what.
-                try {
-                    tempFile.delete();
-                }
-                catch(IOException e) {
-                    // Do not re-throw the exception to prevent exceptions caught in the catch block from being replaced
-                }
-            }
-        }
+				putObject(tempIn, tempFile.getSize());
+			} finally {
+				// Delete the temporary file, no matter what.
+				try {
+					tempFile.delete();
+				} catch (IOException e) {
+					// Do not re-throw the exception to prevent exceptions
+					// caught in the catch block from being replaced
+				}
+			}
+		}
+
+//        if(append) {
+////            throw new UnsupportedFileOperationException(FileOperation.APPEND_FILE);
+//            throw new FileTransferException(FileTransferException.READING_SOURCE);
+//        }
+//
+//        // TODO: compute md5 ?
+//
+//        // If the length is known, we can upload the object directly without having to go through the tedious process
+//        // of copying the stream to a temporary file.
+//            // Copy the stream to a temporary file so that we can know the object's length, which has to be declared
+//            // in the PUT request's headers (that is before the transfer is started).
+//            final AbstractFile tempFile;
+//            final OutputStream tempOut;
+//            try {
+//                tempFile = FileFactory.getTemporaryFile(false);
+//                tempOut = tempFile.getOutputStream();
+//            }
+//            catch(IOException e) {
+//                throw new FileTransferException(FileTransferException.OPENING_DESTINATION);
+//            }
+//
+//            try {
+//                // Copy the stream to the temporary file
+//                try {
+//                    StreamUtils.copyStream(in, tempOut, IO_BUFFER_SIZE);
+//                }
+//                finally {
+//                    // Close the stream even if copyStream() threw an IOException
+//                    try {
+//                        tempOut.close();
+//                    }
+//                    catch(IOException e) {
+//                        // Do not re-throw the exception to prevent swallowing the exception thrown in the try block
+//                    }
+//                }
+//
+//                InputStream tempIn;
+//                try {
+//                    tempIn = tempFile.getInputStream();
+//                }
+//                catch(IOException e) {
+//                    throw new FileTransferException(FileTransferException.OPENING_SOURCE);
+//                }
+//
+//                putObject(tempIn, tempFile.getSize());
+//            }
+//            finally {
+//                // Delete the temporary file, no matter what.
+//                try {
+//                    tempFile.delete();
+//                }
+//                catch(IOException e) {
+//                    // Do not re-throw the exception to prevent exceptions caught in the catch block from being replaced
+//                }
+//        }
     }
 
     ///////////////////
@@ -444,11 +696,11 @@ public class S3Object extends S3File {
                 }
 
                 try {
-                    this.in = service.getObject(bucketName, getObjectKey(false), null, null, null, null, offset, null)
-                        .getDataInputStream();
+//                    this.in = service.getObject(bucketName, getObjectKey(false), null, null, null, null, offset, null)
+//                        .getDataInputStream();
                     this.offset = offset;
                 }
-                catch(S3ServiceException e) {
+                catch(Exception e) {
                     throw getIOException(e);
                 }
             }
@@ -594,32 +846,101 @@ public class S3Object extends S3File {
             updateExpirationDate(); // declare the attributes as 'fresh'
         }
 
-        private S3ObjectFileAttributes(org.jets3t.service.model.S3Object object) throws AuthException {
-            super(TTL, false);      // no initial update
 
-            setAttributes(object);
-            setExists(true);
+        private S3ObjectFileAttributes (String objectPath) {
+        	super(TTL, false);      // no initial update
+			Map<String, String> object = null;
+			try {
+				object = service.fetchMetadata("/" + objectPath, defaultOptions);
+			} catch (Exception e) {
 
-            updateExpirationDate(); // declare the attributes as 'fresh'
+			}
+			if (object != null) {
+				object
+						.put(DefaultFileAttributes.ISDIRECTORY, Boolean.FALSE
+								.toString());
+				object.put(DefaultFileAttributes.CREATIONDATE, null);
+				object.put(DefaultFileAttributes.BUCKET, bucketName);
+				object.put(DefaultFileAttributes.PATH, objectPath);
+				setAttributes(object);
+			} else {
+				Logger.getAnonymousLogger().warning(
+						"Error al obtener la metadata del archivo: "
+								+ objectPath);
+			}
+
         }
+        
+		private S3ObjectFileAttributes(Map<String, String> object)
+				throws AuthException {
+			super(TTL, false); // no initial update
 
-        private void setAttributes(org.jets3t.service.model.S3Object object) {
-            setDirectory(object.getKey().endsWith("/"));
-            setSize(object.getContentLength());
-            setDate(object.getLastModifiedDate().getTime());
-            setPermissions(DEFAULT_PERMISSIONS);
-            // Note: owner is null for common prefix objects
-            S3Owner owner = object.getOwner();
-            setOwner(owner==null?null:owner.getDisplayName());
-        }
+			setAttributes(object);
+			setExists(true);
+
+			updateExpirationDate(); // declare the attributes as 'fresh'
+		}
+
+		private void setAttributes(Map<String, String> object) {
+			if (object != null) {
+				setDirectory(Boolean.valueOf(object.get(DefaultFileAttributes.ISDIRECTORY)));
+				try {
+					setSize(Long.parseLong(object.get(DefaultFileAttributes.CONTENTLENGTH)));
+				} catch (NumberFormatException nfe) {
+					setSize(0);
+				}
+				setDate(object.get(DefaultFileAttributes.CREATIONDATE)!=null?(new Date(object.get(DefaultFileAttributes.CREATIONDATE))).getTime():System.currentTimeMillis());// .getLastModifiedDate().getTime());
+				setPermissions(DEFAULT_PERMISSIONS);
+				// Note: owner is null for common prefix objects
+				setOwner(null);
+			}
+		}
 
         private void fetchAttributes() throws AuthException {
             try {
-                setAttributes(service.getObjectDetails(bucketName, getObjectKey(), null, null, null, null));
-                // Object does not exist on the server
-                setExists(true);
+            	if (files == null)
+            		loadFileList(bucketName);
+            	
+            	ArrayList<Map<String, String>> objectFiles = files.get("/" + getObjectKey(false, bucketName));
+            	if (objectFiles == null) {
+            		//buscar el posible archivo un directorio atras
+            		String directory = getDirectory(bucketName + "/" + getObjectKey(false, bucketName));
+            		objectFiles = files.get(directory);
+            	}
+            	if (objectFiles == null) {
+                    setExists(false);
+                    setDirectory(false);
+                    setSize(0);
+                    setDate(0);
+                    setPermissions(FilePermissions.EMPTY_FILE_PERMISSIONS);
+                    setOwner(null);
+            	} else {
+            		Map<String, String> file = null;
+	            	for (Map<String, String> object : objectFiles) {
+	            		String name = object.get(DefaultFileAttributes.PATH);
+	        			if (name.endsWith("/") && name.length()-1 > 0)
+	        				name = name.substring(0, name.length()-1);
+	
+	            		if (object.get(DefaultFileAttributes.PATH).equals("/"+getObjectKey(false, bucketName))){
+	            			file = object;
+	            			break;
+	            		}
+	            	}
+	            	if (file != null) {
+		                setAttributes(file);
+		                // Object does exist on the server
+		                setExists(true);
+	            	} else {
+	                    setExists(false);
+	                    setDirectory(false);
+	                    setSize(0);
+	                    setDate(0);
+	                    setPermissions(FilePermissions.EMPTY_FILE_PERMISSIONS);
+	                    setOwner(null);
+	            	}
+            	}
             }
-            catch(S3ServiceException e) {
+            catch(Exception e) {
                 // Object does not exist on the server, or could not be retrieved
                 setExists(false);
 
@@ -629,7 +950,7 @@ public class S3Object extends S3File {
                 setPermissions(FilePermissions.EMPTY_FILE_PERMISSIONS);
                 setOwner(null);
 
-                handleAuthException(e, fileURL);
+                throw new AuthException(fileURL, e.getMessage());
             }
         }
 
