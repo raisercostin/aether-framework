@@ -18,10 +18,12 @@
 
 package com.mucommander.file.impl.s3;
 
+import com.cloudloop.storage.CloudStore;
+import com.cloudloop.storage.CloudStoreDirectory;
+import com.cloudloop.storage.CloudStoreObject;
+import com.cloudloop.storage.CloudStoreObjectType;
 import com.mucommander.file.*;
 import com.mucommander.io.RandomAccessInputStream;
-import org.jets3t.service.S3Service;
-import org.jets3t.service.S3ServiceException;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -39,7 +41,7 @@ public class S3Root extends S3File {
     /** Default permissions for the S3 root */
     private final static FilePermissions DEFAULT_PERMISSIONS = new SimpleFilePermissions(448);   // rwx------
 
-    protected S3Root(FileURL url, S3Service service) {
+    protected S3Root(FileURL url, CloudStore service) {
         super(url, service);
 
         atts = new SimpleFileAttributes();
@@ -81,21 +83,24 @@ public class S3Root extends S3File {
     @Override
     public AbstractFile[] ls() throws IOException {
         try {
-            org.jets3t.service.model.S3Bucket buckets[] = service.listAllBuckets();
+        	CloudStoreDirectory directory = service.getDirectory("/");
+        	
+        	CloudStoreObject[] buckets = directory.listContents(false);
+        	
             int nbBuckets = buckets.length;
 
             AbstractFile bucketFiles[] = new AbstractFile[nbBuckets];
             FileURL bucketURL;
             for(int i=0; i<nbBuckets; i++) {
                 bucketURL = (FileURL)fileURL.clone();
-                bucketURL.setPath("/"+buckets[i].getName());
+                bucketURL.setPath(buckets[i].getPath().getPathText());
 
                 bucketFiles[i] = FileFactory.getFile(bucketURL, null, service, buckets[i]);
             }
 
             return bucketFiles;
         }
-        catch(S3ServiceException e) {
+        catch(Exception e) {
             throw getIOException(e);
         }
     }

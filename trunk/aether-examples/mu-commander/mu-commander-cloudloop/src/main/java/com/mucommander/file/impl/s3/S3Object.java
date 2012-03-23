@@ -18,19 +18,26 @@
 
 package com.mucommander.file.impl.s3;
 
+import com.cloudloop.storage.CloudStore;
+import com.cloudloop.storage.CloudStoreDirectory;
+import com.cloudloop.storage.CloudStoreFile;
+import com.cloudloop.storage.CloudStoreObject;
 import com.mucommander.auth.AuthException;
 import com.mucommander.file.*;
 import com.mucommander.io.BufferPool;
 import com.mucommander.io.FileTransferException;
 import com.mucommander.io.RandomAccessInputStream;
 import com.mucommander.io.StreamUtils;
-import org.jets3t.service.S3Service;
-import org.jets3t.service.S3ServiceException;
-import org.jets3t.service.model.S3Owner;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.logging.Logger;
+
+import org.apache.commons.io.FilenameUtils;
 
 /**
  * <code>S3Object</code> represents an Amazon S3 object.
@@ -42,22 +49,19 @@ public class S3Object extends S3File {
     private String bucketName;
     private S3ObjectFileAttributes atts;
 
-    /** Maximum size of an S3 object (5GB) */
-    private final static long MAX_OBJECT_SIZE = 5368709120l;
 
-    // TODO: add support for ACL ? (would cost an extra request per object)
     /** Default permissions for S3 objects */
     private final static FilePermissions DEFAULT_PERMISSIONS = new SimpleFilePermissions(384);   // rw-------
 
 
-    protected S3Object(FileURL url, S3Service service, String bucketName) throws AuthException {
+    protected S3Object(FileURL url, CloudStore service, String bucketName) throws AuthException {
         super(url, service);
 
         this.bucketName = bucketName;
         atts = new S3ObjectFileAttributes();
     }
 
-    protected S3Object(FileURL url, S3Service service, String bucketName, org.jets3t.service.model.S3Object object) throws AuthException {
+    protected S3Object(FileURL url, CloudStore service, String bucketName, CloudStoreObject object) throws AuthException {
         super(url, service);
 
         this.bucketName = bucketName;
@@ -75,6 +79,26 @@ public class S3Object extends S3File {
         return wantTrailingSeparator?addTrailingSeparator(objectKey):removeTrailingSeparator(objectKey);
     }
 
+	private File getFile(InputStream in) {
+		String file = fileURL.getPath().substring(bucketName.length() + 2, fileURL.getPath().length());
+		File f = null;
+		try {
+			f = File.createTempFile(file, null);
+			OutputStream out = new FileOutputStream(f);
+
+			byte buf[] = new byte[1024];
+			int len;
+			while ((len = in.read(buf)) > 0)
+				out.write(buf, 0, len);
+			out.close();
+		} catch (IOException e) {
+			Logger.getAnonymousLogger().warning(
+					"Error al intentar crear el archivo a partir del InputStream - Error: "
+							+ e.getMessage());
+		}
+		return f;
+	}
+
     /**
      * Uploads the object contained in the given input stream to S3 by performing a 'PUT Object' request.
      * The input stream is always closed, whether the operation failed or succeeded.
@@ -84,20 +108,20 @@ public class S3Object extends S3File {
      * @throws FileTransferException if an error occurred during the transfer
      */
     private void putObject(InputStream in, long objectLength) throws FileTransferException {
-        try {
-            // Init S3 object
-            org.jets3t.service.model.S3Object object = new org.jets3t.service.model.S3Object(getObjectKey(false));
-            object.setDataInputStream(in);
-            object.setContentLength(objectLength);
 
-            // Transfer to S3 and update local file attributes
-            atts.setAttributes(service.putObject(bucketName, object));
+		String path = getObjectKey(false);
+		path = FilenameUtils.separatorsToUnix(path);
+
+		try {
+			CloudStoreFile destinationFile = service.getFile("/" + path);
+			destinationFile.setStreamToStore(in);
+			service.upload(destinationFile, null);
+            atts.setAttributes(destinationFile);
             atts.setExists(true);
             atts.updateExpirationDate();
-        }
-        catch(S3ServiceException e) {
-            throw new FileTransferException(FileTransferException.UNKNOWN_REASON);
-        }
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
         finally {
             // Close the InputStream, no matter what
             try {
@@ -145,11 +169,13 @@ public class S3Object extends S3File {
             throw new IOException();
 
         try {
-            atts.setAttributes(service.putObject(bucketName, new org.jets3t.service.model.S3Object(getObjectKey(true))));
+        	CloudStoreDirectory dir = service.getDirectory(getObjectKey(true));
+        	service.createDirectory(dir);
+            atts.setAttributes(dir);
             atts.setExists(true);
             atts.updateExpirationDate();
         }
-        catch(S3ServiceException e) {
+        catch(Exception e) {
             throw getIOException(e);
         }
     }
@@ -163,17 +189,20 @@ public class S3Object extends S3File {
         try {
             // Make sure that the directory is empty, abort if not.
             // Note that we must not count the parent directory (this file).
-            if(service.listObjectsChunked(bucketName, getObjectKey(isDirectory()), "/", 2, null, false).getObjects().length>=2) {
-                throw new IOException("Directory not empty");
-            }
-            service.deleteObject(bucketName, getObjectKey(isDirectory()));
-
+        	if (isDirectory()) {
+            	CloudStoreDirectory dirToRemove = service.getDirectory( getObjectKey(true) );
+            	dirToRemove.remove(true);
+        	} else {
+        		CloudStoreFile fileToRemove = service.getFile( getObjectKey(false) );
+        		fileToRemove.remove();
+        	}
+        	
             // Update file attributes locally
             atts.setExists(false);
             atts.setDirectory(false);
             atts.setSize(0);
         }
-        catch(S3ServiceException e) {
+        catch(Exception e) {
             throw getIOException(e);
         }
     }
@@ -202,17 +231,21 @@ public class S3Object extends S3File {
 //                throw new IOException();
 
             boolean isDirectory = isDirectory();
-            org.jets3t.service.model.S3Object destObject = new org.jets3t.service.model.S3Object(destObjectFile.getObjectKey(isDirectory));
-
-            destObject.addAllMetadata(
-                    service.copyObject(bucketName, getObjectKey(isDirectory), destObjectFile.bucketName, destObject, false)
-            );
+            if (isDirectory) {
+            	CloudStoreDirectory srcObject = service.getDirectory( getObjectKey(true) );
+            	CloudStoreDirectory dstObject = service.getDirectory( destObjectFile.getObjectKey(true));
+            	srcObject.copyTo(dstObject, null);
+            } else {
+            	CloudStoreFile srcObject = service.getFile( getObjectKey(false) );
+            	CloudStoreFile dstObject = service.getFile( destObjectFile.getObjectKey(false));
+            	srcObject.copyTo(dstObject, null);
+            }
 
             // Update destination file attributes
-            destObjectFile.atts.setAttributes(destObject);
+            //destObjectFile.atts.setAttributes(destObject);
             destObjectFile.atts.setExists(true);
         }
-        catch(S3ServiceException e) {
+        catch(Exception e) {
             throw getIOException(e);
         }
     }
@@ -222,16 +255,22 @@ public class S3Object extends S3File {
         return getInputStream(0);
     }
 
+    private InputStream getInputStream(String path) throws IOException {
+		path = FilenameUtils.separatorsToUnix(path);
+
+		try {
+			CloudStoreFile remoteFile = service.getFile("/" + path);
+			return service.download(remoteFile, null);
+
+		} catch (Exception e) {
+			e.printStackTrace();
+            throw getIOException(e);
+		}
+    }
+    
     @Override
     public InputStream getInputStream(long offset) throws IOException {
-        try {
-            // Note: do *not* use S3ObjectRandomAccessInputStream if the object is to be read sequentially, as it would
-            // add unnecessary billing overhead since it reads the object chunk by chunk, each in a separate GET request.
-            return service.getObject(bucketName, getObjectKey(false), null, null, null, null, offset==0?null:offset, null).getDataInputStream();
-        }
-        catch(S3ServiceException e) {
-            throw getIOException(e);
-        }
+    	return getInputStream(getObjectKey(false));
     }
 
     @Override
@@ -444,11 +483,10 @@ public class S3Object extends S3File {
                 }
 
                 try {
-                    this.in = service.getObject(bucketName, getObjectKey(false), null, null, null, null, offset, null)
-                        .getDataInputStream();
+                    this.in = getInputStream(getObjectKey(false));
                     this.offset = offset;
                 }
-                catch(S3ServiceException e) {
+                catch(Exception e) {
                     throw getIOException(e);
                 }
             }
@@ -594,7 +632,7 @@ public class S3Object extends S3File {
             updateExpirationDate(); // declare the attributes as 'fresh'
         }
 
-        private S3ObjectFileAttributes(org.jets3t.service.model.S3Object object) throws AuthException {
+        private S3ObjectFileAttributes(CloudStoreObject object) throws AuthException {
             super(TTL, false);      // no initial update
 
             setAttributes(object);
@@ -603,23 +641,51 @@ public class S3Object extends S3File {
             updateExpirationDate(); // declare the attributes as 'fresh'
         }
 
-        private void setAttributes(org.jets3t.service.model.S3Object object) {
-            setDirectory(object.getKey().endsWith("/"));
-            setSize(object.getContentLength());
-            setDate(object.getLastModifiedDate().getTime());
-            setPermissions(DEFAULT_PERMISSIONS);
+        private void setAttributes(CloudStoreObject object) {
+            setDirectory(object.getPath().isDirectory());
+            if (object.getPath().isDirectory())
+            	setPermissions(FilePermissions.DEFAULT_DIRECTORY_PERMISSIONS);
+            else
+            	setPermissions(DEFAULT_PERMISSIONS);
+            	
+            setSize(object.getContentLengthInBytes());
+            setDate(object.getLastModifiedDate()!=null?object.getLastModifiedDate().getTime():0);
             // Note: owner is null for common prefix objects
-            S3Owner owner = object.getOwner();
-            setOwner(owner==null?null:owner.getDisplayName());
+            setOwner(null);
         }
+
+        private void setAttributes(CloudStoreFile object) {
+            setDirectory(false);
+            setSize(object.getContentLength());
+            setDate(object.getLastModifiedDate()!=null?object.getLastModifiedDate().getTime():0);
+            setPermissions(DEFAULT_PERMISSIONS);
+            setExists(object.existsInStore());
+            // Note: owner is null for common prefix objects
+            setOwner(null);
+        }
+
+        private void setAttributes(CloudStoreDirectory object) {
+            setDirectory(true);
+            setSize(object.getContentLengthInBytes());
+            setDate(object.getLastModifiedDate()!=null?object.getLastModifiedDate().getTime():0);
+            setPermissions(FilePermissions.DEFAULT_DIRECTORY_PERMISSIONS);
+            setExists(object.existsInStore());
+            // Note: owner is null for common prefix objects
+            setOwner(null);
+        }
+
 
         private void fetchAttributes() throws AuthException {
             try {
-                setAttributes(service.getObjectDetails(bucketName, getObjectKey(), null, null, null, null));
-                // Object does not exist on the server
-                setExists(true);
+            	if (getObjectKey().endsWith("/")) {
+            		CloudStoreDirectory csd = service.getDirectory(getObjectKey(true));
+            		setAttributes(csd);
+            	} else {
+            		CloudStoreFile csf = service.getFile(getObjectKey());
+            		setAttributes(csf);
+            	}
             }
-            catch(S3ServiceException e) {
+            catch(Exception e) {
                 // Object does not exist on the server, or could not be retrieved
                 setExists(false);
 

@@ -18,22 +18,23 @@
 
 package com.mucommander.file.impl.s3;
 
+import java.io.IOException;
+import java.util.StringTokenizer;
+
+import com.cloudloop.Cloudloop;
+import com.cloudloop.generated.AdapterType;
+import com.cloudloop.generated.CloudloopConfig;
+import com.cloudloop.generated.PropertyType;
+import com.cloudloop.generated.CloudloopConfig.Adapters;
+import com.cloudloop.generated.CloudloopConfig.Stores;
+import com.cloudloop.generated.CloudloopConfig.Stores.Store;
+import com.cloudloop.storage.CloudStore;
+import com.cloudloop.storage.CloudStoreObject;
 import com.mucommander.auth.AuthException;
 import com.mucommander.auth.Credentials;
 import com.mucommander.file.AbstractFile;
 import com.mucommander.file.FileURL;
 import com.mucommander.file.ProtocolProvider;
-import org.apache.commons.logging.LogFactory;
-import org.apache.commons.logging.impl.Jdk14Logger;
-import org.jets3t.service.Jets3tProperties;
-import org.jets3t.service.S3Service;
-import org.jets3t.service.S3ServiceException;
-import org.jets3t.service.impl.rest.httpclient.RestS3Service;
-import org.jets3t.service.security.AWSCredentials;
-
-import java.io.IOException;
-import java.util.StringTokenizer;
-import java.util.logging.Level;
 
 /**
  * A file protocol provider for the Amazon S3 protocol.
@@ -41,38 +42,71 @@ import java.util.logging.Level;
  * @author Maxence Bernard
  */
 public class S3ProtocolProvider implements ProtocolProvider {
-
-    static {
-        // Turn off Jets3t logging: failed (404) HEAD request on non-existing object are logged with a SEVERE level,
-        // even though this is not an error per se. We don't want those to be reported in the log, so we have no
-        // choice but to disable logging entirely.
-        ((Jdk14Logger)LogFactory.getLog(RestS3Service.class)).getLogger().setLevel(Level.OFF);
-    }
+	private static CloudStore service = null;
 
     public AbstractFile getFile(FileURL url, Object... instantiationParams) throws IOException {
         Credentials credentials = url.getCredentials();
         if(credentials==null || credentials.getLogin().equals("") || credentials.getPassword().equals(""))
             throw new AuthException(url);
 
-        S3Service service;
         String bucketName;
 
-        if(instantiationParams.length==0) {
+        if(instantiationParams.length==0 && service == null) {
             try {
-                service = new RestS3Service(new AWSCredentials(credentials.getLogin(), credentials.getPassword()));
-                Jets3tProperties props = new Jets3tProperties();
-                props.setProperty("s3service.s3-endpoint", url.getHost());
+            	CloudloopConfig cc = new CloudloopConfig();
+            	
+            	Adapters.Adapter ad = new Adapters.Adapter();
+            	ad.setImpl("com.cloudloop.storage.adapter.amazonS3.AmazonS3CloudStore");
+            	ad.setName("amazonS3");
+            	ad.setType(AdapterType.STORAGE);
+
+            	Adapters a = new Adapters();
+            	a.getAdapter().add(ad);
+            	
+               	Store s2 = new Store();
+            	s2.setAdapter("amazonS3");
+            	s2.setEncrypted(false);
+            	s2.setName("amazon");
+            	
+            	PropertyType pt1 = new PropertyType();
+            	pt1.setName("access-key-id");
+            	pt1.setValue(credentials.getLogin());
+            	s2.getProperty().add(pt1);
+            	
+            	PropertyType pt2 = new PropertyType();
+            	pt2.setName("secret-key");
+            	pt2.setValue(credentials.getPassword());
+            	s2.getProperty().add(pt2);
+            	
+            	PropertyType pt3 = new PropertyType();
+            	pt3.setName("bucket-name");
+            	pt3.setValue(url.getFilename());
+            	s2.getProperty().add(pt3);
+            	
+            	Stores s = new Stores();
+            	
+            	s.getStore().add(s2);
+            	s.setDefaultStore(s2.getName());
+            	
+            	cc.setAdapters(a);
+            	cc.setEncryption(null);
+            	cc.setStores(s);
+            	
+            	Cloudloop c = new Cloudloop(cc);
+            	
+            	service = c.getStorage("amazon");
+    			
             }
-            catch(S3ServiceException e) {
-                throw S3File.getIOException(e, url);
+            catch(Exception e) {
+                throw new AuthException(url);
             }
         }
-        else {
-            service = (S3Service)instantiationParams[0];
-        }
+//        else {
+//            service = (CloudStore)instantiationParams[0];
+//        }
 
         String path = url.getPath();
-
+        
         // Root resource
         if(("/").equals(path))
             return new S3Root(url, service);
@@ -84,14 +118,14 @@ public class S3ProtocolProvider implements ProtocolProvider {
         // Object resource
         if(st.hasMoreTokens()) {
             if(instantiationParams.length==2)
-                return new S3Object(url, service, bucketName, (org.jets3t.service.model.S3Object)instantiationParams[1]);
+                return new S3Object(url, service, bucketName, (CloudStoreObject)instantiationParams[1]);
 
             return new S3Object(url, service, bucketName);
         }
 
         // Bucket resource
         if(instantiationParams.length==2)
-            return new S3Bucket(url, service, (org.jets3t.service.model.S3Bucket)instantiationParams[1]);
+            return new S3Bucket(url, service, (CloudStoreObject)instantiationParams[1], bucketName);
 
         return new S3Bucket(url, service, bucketName);
     }

@@ -18,18 +18,28 @@
 
 package com.mucommander.file.impl.s3;
 
-import com.mucommander.auth.AuthException;
-import com.mucommander.file.*;
-import com.mucommander.io.RandomAccessOutputStream;
-import com.mucommander.runtime.JavaVersions;
-import org.jets3t.service.Constants;
-import org.jets3t.service.S3ObjectsChunk;
-import org.jets3t.service.S3Service;
-import org.jets3t.service.S3ServiceException;
-
 import java.io.IOException;
 import java.io.OutputStream;
-import java.util.Date;
+import java.util.ArrayList;
+
+import com.cloudloop.storage.CloudStore;
+import com.cloudloop.storage.CloudStoreDirectory;
+import com.cloudloop.storage.CloudStoreObject;
+import com.cloudloop.storage.CloudStoreObjectType;
+import com.mucommander.auth.AuthException;
+import com.mucommander.file.AbstractFile;
+import com.mucommander.file.FileAttributes;
+import com.mucommander.file.FileFactory;
+import com.mucommander.file.FileOperation;
+import com.mucommander.file.FilePermissions;
+import com.mucommander.file.FileURL;
+import com.mucommander.file.PermissionBits;
+import com.mucommander.file.ProtocolFile;
+import com.mucommander.file.UnsupportedFileOperation;
+import com.mucommander.file.UnsupportedFileOperationException;
+import com.mucommander.io.RandomAccessOutputStream;
+import com.mucommander.runtime.JavaVersions;
+
 
 /**
  * Super class of {@link S3Root}, {@link S3Bucket} and {@link S3Object}.
@@ -38,22 +48,22 @@ import java.util.Date;
  */
 public abstract class S3File extends ProtocolFile {
 
-    protected org.jets3t.service.S3Service service;
+    protected CloudStore service;
 
     protected AbstractFile parent;
     protected boolean parentSet;
 
-    protected S3File(FileURL url, S3Service service) {
+    protected S3File(FileURL url, CloudStore service) {
         super(url);
 
         this.service = service;
     }
     
-    protected IOException getIOException(S3ServiceException e) throws IOException {
+    protected IOException getIOException(Exception e) throws IOException {
         return getIOException(e, fileURL);
     }
 
-    protected static IOException getIOException(S3ServiceException e, FileURL fileURL) throws IOException {
+    protected static IOException getIOException(Exception e, FileURL fileURL) throws IOException {
         handleAuthException(e, fileURL);
 
         Throwable cause = e.getCause();
@@ -66,67 +76,46 @@ public abstract class S3File extends ProtocolFile {
         return new IOException(e.getMessage());
     }
 
-    protected static void handleAuthException(S3ServiceException e, FileURL fileURL) throws AuthException {
-        int code = e.getResponseCode();
-        if(code==401 || code==403)
-            throw new AuthException(fileURL);
+    protected static void handleAuthException(Exception e, FileURL fileURL) throws AuthException {
+    	
     }
     
     protected AbstractFile[] listObjects(String bucketName, String prefix, S3File parent) throws IOException {
         try {
-            S3ObjectsChunk chunk = service.listObjectsChunked(bucketName, prefix, "/", Constants.DEFAULT_OBJECT_LIST_CHUNK_SIZE, null, true);
-            org.jets3t.service.model.S3Object objects[] = chunk.getObjects();
-            String[] commonPrefixes = chunk.getCommonPrefixes();
+        	if ("".equals(prefix))
+        		prefix = "/";
+        	CloudStoreDirectory directory = service.getDirectory(prefix);
+        	CloudStoreObject[] objects = directory.listContents(false);
+//            if(objects.length==0 && !prefix.equals("")) {
+//                // This happens only when the directory does not exist
+//                throw new IOException();
+//            }
 
-            if(objects.length==0 && !prefix.equals("")) {
-                // This happens only when the directory does not exist
-                throw new IOException();
-            }
-
-            AbstractFile[] children = new AbstractFile[objects.length+commonPrefixes.length];
+            ArrayList <AbstractFile> files = new ArrayList<AbstractFile>();
             FileURL childURL;
-            int i=0;
             String objectKey;
-
-            for(org.jets3t.service.model.S3Object object : objects) {
+            
+        	for (CloudStoreObject object : objects) {
                 // Discard the object corresponding to the prefix itself
-                objectKey = object.getKey();
+                objectKey = object.getPath().getAbsolutePath();
                 if(objectKey.equals(prefix))
                     continue;
-
                 childURL = (FileURL)fileURL.clone();
-                childURL.setPath(bucketName + "/" + objectKey);
+                childURL.setPath(bucketName + objectKey);
+                
+                AbstractFile f = FileFactory.getFile(childURL, parent, service, object);
+                files.add(f);
+                //FALTA LA PARTE DE DIRECTORIOS Y ESPECIFICAR LOS ATRIBUTOS
+                
+//                directoryObject.setLastModifiedDate(new Date(System.currentTimeMillis()));
+//                directoryObject.setContentLength(0);
+//                children[i] = FileFactory.getFile(childURL, parent, service, directoryObject);
+        		
+			}
 
-                children[i] = FileFactory.getFile(childURL, parent, service, object);
-                i++;
-            }
-
-            org.jets3t.service.model.S3Object directoryObject;
-            for(String commonPrefix : commonPrefixes) {
-                childURL = (FileURL)fileURL.clone();
-                childURL.setPath(bucketName + "/" + commonPrefix);
-
-                directoryObject = new org.jets3t.service.model.S3Object(commonPrefix);
-                // Common prefixes are not objects per se, and therefore do not have a date, content-length nor owner.
-                directoryObject.setLastModifiedDate(new Date(System.currentTimeMillis()));
-                directoryObject.setContentLength(0);
-                children[i] = FileFactory.getFile(childURL, parent, service, directoryObject);
-                i++;
-            }
-
-            // Trim the array if an object was discarded.
-            // Note: Having to recreate an array sucks (puts pressure on the GC), but I haven't found a reliable way
-            // to know in advance whether the prefix will appear in the results or not.
-            if(i<children.length) {
-                AbstractFile[] childrenTrimmed = new AbstractFile[i];
-                System.arraycopy(children, 0, childrenTrimmed, 0, i);
-
-                return childrenTrimmed;
-            }
-
-            return children;
+            return files.toArray(new AbstractFile[]{});
         }
-        catch(S3ServiceException e) {
+        catch(Exception e) {
             throw getIOException(e);
         }
     }
