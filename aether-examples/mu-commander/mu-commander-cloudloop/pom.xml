@@ -57,7 +57,10 @@
 						<manifestEntries>
 							<Class-Path>. lib/j2ssh.jar lib/J7Zip.jar lib/jmdns.jar
 								lib/jcifs.jar lib/j2ssh.jar lib/yanfs.jar
-								lib/commons-net-ftp.jar lib/jna.jar</Class-Path> <!-- HERE IS THE IMPORTANT BIT -->
+								lib/commons-net-ftp.jar lib/jna.jar lib/bcprov-jdk14-140.jar 
+								lib/log4j-1.2.16.jar lib/aspectjrt-1.6.11.jar 
+								lib/cloudloop-main-1.1-SNAPSHOT.jar 
+								lib/cloudloop-adapter-1.1-SNAPSHOT.jar</Class-Path> <!-- HERE IS THE IMPORTANT BIT -->
 						</manifestEntries>
 					</archive>
 				</configuration>
