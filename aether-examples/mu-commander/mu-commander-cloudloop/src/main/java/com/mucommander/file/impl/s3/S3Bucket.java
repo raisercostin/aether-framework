@@ -18,11 +18,11 @@
 
 package com.mucommander.file.impl.s3;
 
+import com.cloudloop.storage.CloudStore;
+import com.cloudloop.storage.CloudStoreObject;
 import com.mucommander.auth.AuthException;
 import com.mucommander.file.*;
 import com.mucommander.io.RandomAccessInputStream;
-import org.jets3t.service.S3Service;
-import org.jets3t.service.S3ServiceException;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -43,17 +43,17 @@ public class S3Bucket extends S3File {
     private final static FilePermissions DEFAULT_PERMISSIONS = new SimpleFilePermissions(448);   // rwx------
 
 
-    protected S3Bucket(FileURL url, S3Service service, String bucketName) throws AuthException {
+    protected S3Bucket(FileURL url, CloudStore service, String bucketName) throws AuthException {
         super(url, service);
 
         this.bucketName = bucketName;
         atts = new S3BucketFileAttributes();
     }
 
-    protected S3Bucket(FileURL url, S3Service service, org.jets3t.service.model.S3Bucket bucket) throws AuthException {
+    protected S3Bucket(FileURL url, CloudStore service, CloudStoreObject bucket, String bucketName) throws AuthException {
         super(url, service);
 
-        this.bucketName = bucket.getName();
+        this.bucketName = bucketName;
         atts = new S3BucketFileAttributes(bucket);
     }
 
@@ -89,22 +89,12 @@ public class S3Bucket extends S3File {
 
     @Override
     public void delete() throws IOException {
-        try {
-            service.deleteBucket(bucketName);
-        }
-        catch(S3ServiceException e) {
-            throw getIOException(e);
-        }
+    	throw new UnsupportedFileOperationException(FileOperation.DELETE);    
     }
 
     @Override
     public void mkdir() throws IOException {
-        try {
-            service.createBucket(bucketName);
-        }
-        catch(S3ServiceException e) {
-            throw getIOException(e);
-        }
+    	throw new UnsupportedFileOperationException(FileOperation.CREATE_DIRECTORY);    
     }
 
 
@@ -172,7 +162,7 @@ public class S3Bucket extends S3File {
             updateExpirationDate(); // declare the attributes as 'fresh'
         }
 
-        private S3BucketFileAttributes(org.jets3t.service.model.S3Bucket bucket) throws AuthException {
+        private S3BucketFileAttributes(CloudStoreObject bucket) throws AuthException {
             super(TTL, false);      // no initial update
 
             setAttributes(bucket);
@@ -181,43 +171,19 @@ public class S3Bucket extends S3File {
             updateExpirationDate(); // declare the attributes as 'fresh'
         }
 
-        private void setAttributes(org.jets3t.service.model.S3Bucket bucket) {
+        private void setAttributes(CloudStoreObject bucket) {
             setDirectory(true);
-            setDate(bucket.getCreationDate().getTime());
+            setDate(bucket.getLastModifiedDate().getTime());
             setPermissions(DEFAULT_PERMISSIONS);
-            setOwner(bucket.getOwner().getDisplayName());
+            setOwner(null);
         }
 
         private void fetchAttributes() throws AuthException {
-            org.jets3t.service.model.S3Bucket bucket;
-            S3ServiceException e = null;
-            try {
-                // Note: unlike getObjectDetails, getBucket returns null when the bucket does not exist
-                // (that is because the corresponding request is a GET on the root resource, not a HEAD on the bucket).
-                bucket = service.getBucket(bucketName);
-            }
-            catch(S3ServiceException ex) {
-                e = ex;
-                bucket = null;
-            }
-
-            if(bucket!=null) {
-                // Bucket exists
-                setExists(true);
-                setAttributes(bucket);
-            }
-            else {
-                // Bucket doesn't exist on the server, or could not be retrieved
-                setExists(false);
-
-                setDirectory(false);
-                setDate(0);
-                setPermissions(FilePermissions.EMPTY_FILE_PERMISSIONS);
-                setOwner(null);
-
-                if(e!=null)
-                    handleAuthException(e, fileURL);
-            }
+            setExists(true);
+            setDirectory(true);
+            setDate(0);
+            setPermissions(FilePermissions.DEFAULT_DIRECTORY_PERMISSIONS);
+            setOwner(null);
         }
 
 
