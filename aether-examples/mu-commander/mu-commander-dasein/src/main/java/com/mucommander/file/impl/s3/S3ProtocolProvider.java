@@ -22,7 +22,6 @@ import java.io.IOException;
 import java.util.Locale;
 import java.util.StringTokenizer;
 
-import org.dasein.cloud.CloudProvider;
 import org.dasein.cloud.ProviderContext;
 import org.dasein.cloud.aws.AWSCloud;
 import org.dasein.cloud.aws.storage.S3;

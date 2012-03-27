@@ -167,6 +167,7 @@ public class S3Object extends S3File {
 					false);
 			atts.setExists(true);
 			atts.updateExpirationDate();
+			loadFileList(bucketName);
 		} catch (Exception e) {
 			throw getIOException(e);
 		}
