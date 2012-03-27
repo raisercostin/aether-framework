@@ -62,7 +62,7 @@ public abstract class TransferFileJob extends FileJob {
     private ByteCounter totalSkippedByteCounter;
 
     /** InputStream currently being processed, may be null */
-    private ThroughputLimitInputStream tlin;
+    private InputStream tlin;
 
     /** ThroughputLimit in bytes per second, -1 initially (no limit) */
     private long throughputLimit = -1;
@@ -352,13 +352,7 @@ public abstract class TransferFileJob extends FileJob {
      * @return the 'augmented' InputStream using the given stream as the underlying InputStream
      */
     protected synchronized InputStream setCurrentInputStream(InputStream in) {
-        if(tlin==null) {
-            tlin = new ThroughputLimitInputStream(new CounterInputStream(in, currentFileByteCounter), throughputLimit);
-        }
-        else {
-            tlin.setUnderlyingInputStream(new CounterInputStream(in, currentFileByteCounter));
-        }
-
+        tlin = in;
         return tlin;
     }
 
@@ -510,10 +504,10 @@ public abstract class TransferFileJob extends FileJob {
         // from what a user would expect when specifying 0 as a limit
         this.throughputLimit = bytesPerSecond<=0?-1:bytesPerSecond;
 
-        synchronized(this) {
-            if(getState()!=PAUSED && tlin !=null)
-                tlin.setThroughputLimit(throughputLimit);
-        }
+//        synchronized(this) {
+//            if(getState()!=PAUSED && tlin !=null)
+//                tlin.setThroughputLimit(throughputLimit);
+//        }
     }
 
     /**
@@ -556,10 +550,10 @@ public abstract class TransferFileJob extends FileJob {
     protected void jobPaused() {
         super.jobPaused();
 
-        synchronized(this) {
-            if(tlin !=null)
-                tlin.setThroughputLimit(0);
-        }
+//        synchronized(this) {
+//            if(tlin !=null)
+//                tlin.setThroughputLimit(0);
+//        }
     }
 
 
@@ -571,11 +565,11 @@ public abstract class TransferFileJob extends FileJob {
     protected void jobResumed() {
         super.jobResumed();
 
-        synchronized(this) {
-            // Restore previous throughput limit (if any, -1 by default)
-            if(tlin !=null)
-                tlin.setThroughputLimit(throughputLimit);
-        }
+//        synchronized(this) {
+//            // Restore previous throughput limit (if any, -1 by default)
+//            if(tlin !=null)
+//                tlin.setThroughputLimit(throughputLimit);
+//        }
     }
 
 
