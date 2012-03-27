@@ -93,9 +93,12 @@ public class S3Object extends S3File {
 
 	private File getFile(InputStream in) {
 		String file = getObjectKey(false, bucketName);
+		String directory = getDirectory(file);
 		File f = null;
 		try {
-			f = File.createTempFile(file, null);
+			f = new File("tempFiles/"+ directory);
+			f.mkdirs();
+			f = new File("tempFiles/"+file);
 			OutputStream out = new FileOutputStream(f);
 
 			byte buf[] = new byte[1024];
@@ -140,12 +143,11 @@ public class S3Object extends S3File {
      	private void putObject(InputStream in, long objectLength)
 			throws FileTransferException {
 		try {
+			//InputStream in = new FileInputStream(new File("C:\\M1319.log"));
 			File f = getFile(in);
 			String path = getObjectKey(false, bucketName);
 			path = FilenameUtils.separatorsToUnix(path);
-			InputStream stream = new BufferedInputStream(in);
-			Item item = new Item(stream, DefaultFileAttributes.DEFAULTFILETYPE, null, f.length());
-			
+			Item item = new Item(new FileInputStream(f), DefaultFileAttributes.DEFAULTFILETYPE, null, f.length());
 			if (service.storeItem("/" + path, item, new HashMap<String, String>(), defaultOptions)) {
 				atts.setExists(true);
 				Logger.getAnonymousLogger().warning("Upload succeeded");
@@ -162,12 +164,12 @@ public class S3Object extends S3File {
 					FileTransferException.UNKNOWN_REASON);
 		} finally {
 			// Close the InputStream, no matter what
-			try {
-				in.close();
-			} catch (IOException e) {
-				// Do not re-throw the exception to prevent exceptions caught in
-				// the catch block from being replaced
-			}
+//			try {
+//				in.close();
+//			} catch (IOException e) {
+//				// Do not re-throw the exception to prevent exceptions caught in
+//				// the catch block from being replaced
+//			}
 			loadFileList(bucketName);
 		}
 	}
@@ -915,29 +917,47 @@ public class S3Object extends S3File {
                     setPermissions(FilePermissions.EMPTY_FILE_PERMISSIONS);
                     setOwner(null);
             	} else {
-            		Map<String, String> file = null;
-	            	for (Map<String, String> object : objectFiles) {
-	            		String name = object.get(DefaultFileAttributes.PATH);
-	        			if (name.endsWith("/") && name.length()-1 > 0)
-	        				name = name.substring(0, name.length()-1);
-	
-	            		if (object.get(DefaultFileAttributes.PATH).equals("/"+getObjectKey(false, bucketName))){
-	            			file = object;
-	            			break;
-	            		}
-	            	}
-	            	if (file != null) {
-		                setAttributes(file);
-		                // Object does exist on the server
-		                setExists(true);
-	            	} else {
-	                    setExists(false);
-	                    setDirectory(false);
-	                    setSize(0);
-	                    setDate(0);
-	                    setPermissions(FilePermissions.EMPTY_FILE_PERMISSIONS);
-	                    setOwner(null);
-	            	}
+            		if (getObjectKey().endsWith("/")) {//es un directorio
+		                    setExists(true);
+		                    setDirectory(true);
+		                    setSize(0);
+		                    setDate(0);
+		                    setPermissions(FilePermissions.DEFAULT_FILE_PERMISSIONS);
+		                    setOwner(null);
+            		} else {
+	            		Map<String, String> file = null;
+		            	for (Map<String, String> object : objectFiles) {
+		            		String name = object.get(DefaultFileAttributes.PATH);
+		        			if (name.endsWith("/") && name.length()-1 > 0)
+		        				name = name.substring(0, name.length()-1);
+		
+		            		if (object.get(DefaultFileAttributes.PATH).equals("/"+getObjectKey(false, bucketName))){
+		            			file = object;
+		            			break;
+		            		}
+		            	}
+		            	if (file != null) {
+			                setAttributes(file);
+			                // Object does exist on the server
+			                setExists(true);
+		            	} else {
+		            		if (files.containsKey("/"+getObjectKey(false, bucketName))) { //tambien es un directorio
+			                    setExists(true);
+			                    setDirectory(true);
+			                    setSize(0);
+			                    setDate(0);
+			                    setPermissions(FilePermissions.DEFAULT_FILE_PERMISSIONS);
+			                    setOwner(null);
+		            		} else {
+			                    setExists(false);
+			                    setDirectory(false);
+			                    setSize(0);
+			                    setDate(0);
+			                    setPermissions(FilePermissions.EMPTY_FILE_PERMISSIONS);
+			                    setOwner(null);
+			                }
+		            	}
+		            }
             	}
             }
             catch(Exception e) {
