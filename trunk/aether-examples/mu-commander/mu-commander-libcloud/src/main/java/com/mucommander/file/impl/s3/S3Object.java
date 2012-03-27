@@ -98,7 +98,7 @@ public class S3Object extends S3File {
 		try {
 			f = new File("tempFiles/"+ directory);
 			f.mkdirs();
-			f = new File("tempFiles/"+file);
+			f = new File("tempFiles/"+ file+System.currentTimeMillis());
 			OutputStream out = new FileOutputStream(f);
 
 			byte buf[] = new byte[1024];
