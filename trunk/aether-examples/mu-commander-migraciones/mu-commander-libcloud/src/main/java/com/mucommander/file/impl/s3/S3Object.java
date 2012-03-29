@@ -18,7 +18,6 @@
 
 package com.mucommander.file.impl.s3;
 
-import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -33,6 +32,7 @@ import java.util.logging.Logger;
 
 import org.apache.commons.io.FilenameUtils;
 
+import simplecloud.storage.interfaces.IStorageAdapter;
 import simplecloud.storage.providers.amazon.S3Adapter;
 import simplecloud.storage.providers.amazon.S3Adapter.Type;
 import base.interfaces.IItem;
@@ -74,18 +74,18 @@ public class S3Object extends S3File {
     private final static FilePermissions DEFAULT_PERMISSIONS = new SimpleFilePermissions(384);   // rw-------
 
 
-    protected S3Object(FileURL url, S3Adapter service, String bucketName) throws AuthException {
+    protected S3Object(FileURL url, IStorageAdapter service, String bucketName) throws AuthException {
         super(url, service, bucketName);
         atts = new S3ObjectFileAttributes();
     }
 
-	protected S3Object(FileURL url, S3Adapter service,
+	protected S3Object(FileURL url, IStorageAdapter service,
 			String bucketName, String object) throws AuthException {
 		super(url, service, bucketName);
 		atts = new S3ObjectFileAttributes(object);
 	}
 
-	protected S3Object(FileURL url, S3Adapter service,
+	protected S3Object(FileURL url, IStorageAdapter service,
 			String bucketName, Map<String, String> object) throws AuthException {
 		super(url, service, bucketName);
 		atts = new S3ObjectFileAttributes(object);
@@ -125,11 +125,6 @@ public class S3Object extends S3File {
         String urlPath = fileURL.getPath();
         // Strip out the bucket name from the path
         return urlPath.substring(bucketName.length()+2, urlPath.length());
-    }
-
-    private String getObjectKey(boolean wantTrailingSeparator) {
-        String objectKey = getObjectKey();
-        return wantTrailingSeparator?addTrailingSeparator(objectKey):removeTrailingSeparator(objectKey);
     }
 
     /**
@@ -413,21 +408,6 @@ public class S3Object extends S3File {
 			throw getIOException(e);
 		}
 	}
-
-    private InputStream getInputStream(long offset, String path) throws IOException {
-    	try {
-			path = FilenameUtils.separatorsToUnix(path);
-
-			IItem fetchItem = service.fetchItem("/" + path, defaultOptions);
-			return fetchItem.getContent();
-		} catch (Exception e) {
-			Logger.getAnonymousLogger().warning(
-					"Error al obtener el inputStream: " + e.getMessage());
-			e.printStackTrace();
-			throw getIOException(e);
-		}
-	}
-
 
     @Override
     public RandomAccessInputStream getRandomAccessInputStream() throws IOException {

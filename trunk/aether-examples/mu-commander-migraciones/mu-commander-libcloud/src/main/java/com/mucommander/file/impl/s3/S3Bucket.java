@@ -23,7 +23,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.Map;
 
-import simplecloud.storage.providers.amazon.S3Adapter;
+import simplecloud.storage.interfaces.IStorageAdapter;
 
 import com.mucommander.auth.AuthException;
 import com.mucommander.file.AbstractFile;
@@ -53,12 +53,12 @@ public class S3Bucket extends S3File {
     private final static FilePermissions DEFAULT_PERMISSIONS = new SimpleFilePermissions(448);   // rwx------
 
 
-    protected S3Bucket(FileURL url, S3Adapter service, String bucketName) throws AuthException {
+    protected S3Bucket(FileURL url, IStorageAdapter service, String bucketName) throws AuthException {
         super(url, service, bucketName);
         atts = new S3BucketFileAttributes();
     }
 
-    protected S3Bucket(FileURL url, S3Adapter service, String bucketName, Map<String, String> object) throws AuthException {
+    protected S3Bucket(FileURL url, IStorageAdapter service, String bucketName, Map<String, String> object) throws AuthException {
         super(url, service, bucketName);
         atts = new S3BucketFileAttributes();
     }

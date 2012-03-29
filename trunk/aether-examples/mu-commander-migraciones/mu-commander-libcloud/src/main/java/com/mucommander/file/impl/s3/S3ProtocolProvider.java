@@ -18,7 +18,13 @@
 
 package com.mucommander.file.impl.s3;
 
-import base.interfaces.IItem;
+import java.io.IOException;
+import java.util.Locale;
+import java.util.Map;
+import java.util.StringTokenizer;
+
+import simplecloud.storage.interfaces.IStorageAdapter;
+import simplecloud.storage.providers.nirvanix.NirvanixAdapter;
 
 import com.mucommander.auth.AuthException;
 import com.mucommander.auth.Credentials;
@@ -26,19 +32,6 @@ import com.mucommander.file.AbstractFile;
 import com.mucommander.file.FileURL;
 import com.mucommander.file.ProtocolProvider;
 import com.mucommander.text.Translator;
-
-import org.apache.commons.io.FilenameUtils;
-import org.apache.commons.logging.LogFactory;
-import org.apache.commons.logging.impl.Jdk14Logger;
-import simplecloud.storage.providers.amazon.S3Adapter;
-import simplecloud.storage.providers.amazon.S3Adapter.Type;
-
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.Locale;
-import java.util.Map;
-import java.util.StringTokenizer;
-import java.util.logging.Level;
 
 /**
  * A file protocol provider for the Amazon S3 protocol.
@@ -64,19 +57,18 @@ public class S3ProtocolProvider implements ProtocolProvider {
 				|| credentials.getPassword().equals(""))
 			throw new AuthException(url);
 
-		S3Adapter service;
+		IStorageAdapter service;
 		String bucketName;
 
 		if (instantiationParams.length == 0) {
 			try {
-				service = new S3Adapter(credentials.getLogin(), credentials
-						.getPassword(), "s3.amazonaws.com");
+				service = new NirvanixAdapter("nirvanix.app.name", "nirvanix.app.key", credentials.getLogin(), credentials.getPassword());
 				
 			} catch (Exception e) {
 				throw S3File.getIOException(e, url);
 			}
 		} else {
-			service = (S3Adapter) instantiationParams[0];
+			service = (IStorageAdapter) instantiationParams[0];
 		}
 
 		String path = url.getPath();
