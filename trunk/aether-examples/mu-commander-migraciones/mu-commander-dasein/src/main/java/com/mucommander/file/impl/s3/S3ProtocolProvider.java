@@ -23,8 +23,7 @@ import java.util.Locale;
 import java.util.StringTokenizer;
 
 import org.dasein.cloud.ProviderContext;
-import org.dasein.cloud.aws.AWSCloud;
-import org.dasein.cloud.aws.storage.S3;
+import org.dasein.cloud.google.GoogleAppEngine;
 import org.dasein.cloud.storage.BlobStoreSupport;
 import org.dasein.cloud.storage.CloudStoreObject;
 
@@ -62,9 +61,9 @@ public class S3ProtocolProvider implements ProtocolProvider {
 
 		if (instantiationParams.length == 0) {
 			// try {
-			AWSCloud provider;
+			GoogleAppEngine provider;
 			Locale.setDefault(Locale.US);
-			provider = new AWSCloud();
+			provider = new GoogleAppEngine();
 			ProviderContext ctx = new ProviderContext();
 			ctx.setAccessKeys(credentials.getLogin().getBytes(), credentials
 					.getPassword().getBytes());
@@ -74,7 +73,7 @@ public class S3ProtocolProvider implements ProtocolProvider {
 			ctx.setRegionId("us-east-1");
 
 			provider.connect(ctx);
-			service = new S3(provider);//provider.getStorageServices().getBlobStoreSupport();
+			service = provider.getStorageServices().getBlobStoreSupport();//provider.getStorageServices().getBlobStoreSupport();
 
 			// }
 			// catch(Exception e) {
