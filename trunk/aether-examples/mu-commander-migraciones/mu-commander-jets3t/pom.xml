@@ -7,7 +7,7 @@
 	-->
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.mucommander</groupId>
-	<artifactId>MuCommanderApp-libcloud-migracion</artifactId>
+	<artifactId>MuCommanderApp-jets3t-migracion</artifactId>
 	<name>mu-commander</name>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
@@ -68,10 +68,20 @@
 			<name>Maven New Repository</name>
 			<url>http://maven.repository.paxle.net</url>
 		</repository>
+				<repository>
+			<name>jets3t</name>
+			<id>jets3t</id>
+			<url>http://www.jets3t.org/maven2</url>
+		</repository>
 	</repositories>
 
 	<url>http://maven.apache.org</url>
 	<dependencies>
+		<dependency>
+			<groupId>net.java.dev.jets3t</groupId>
+			<artifactId>jets3t</artifactId>
+			<version>0.8.1</version>
+		</dependency>
 
 		<!-- Se usa la libreria incluida en /lib -->
 		<dependency>
