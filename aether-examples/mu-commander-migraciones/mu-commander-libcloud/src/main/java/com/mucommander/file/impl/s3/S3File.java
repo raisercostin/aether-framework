@@ -18,25 +18,29 @@
 
 package com.mucommander.file.impl.s3;
 
-import com.mucommander.auth.AuthException;
-import com.mucommander.file.*;
-import com.mucommander.io.RandomAccessOutputStream;
-import com.mucommander.runtime.JavaVersions;
-
-import java.io.File;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.logging.Logger;
 
-import org.apache.commons.io.FileUtils;
+import simplecloud.storage.interfaces.IStorageAdapter;
+import simplecloud.storage.providers.nirvanix.NirvanixAdapter;
 
-import simplecloud.storage.providers.amazon.S3Adapter;
-import simplecloud.storage.providers.amazon.S3Adapter.Type;
+import com.mucommander.file.AbstractFile;
+import com.mucommander.file.FileAttributes;
+import com.mucommander.file.FileFactory;
+import com.mucommander.file.FileOperation;
+import com.mucommander.file.FilePermissions;
+import com.mucommander.file.FileURL;
+import com.mucommander.file.PermissionBits;
+import com.mucommander.file.ProtocolFile;
+import com.mucommander.file.UnsupportedFileOperation;
+import com.mucommander.file.UnsupportedFileOperationException;
+import com.mucommander.io.RandomAccessOutputStream;
+import com.mucommander.runtime.JavaVersions;
 
 /**
  * Super class of {@link S3Root}, {@link S3Bucket} and {@link S3Object}.
@@ -45,7 +49,7 @@ import simplecloud.storage.providers.amazon.S3Adapter.Type;
  */
 public abstract class S3File extends ProtocolFile {
 
-	protected S3Adapter service;
+	protected IStorageAdapter service;
 	// En el hash esta <NombreCarpeta, ListaArchivoos>
 	protected static HashMap<String, ArrayList<Map<String, String>>> files = null;
 	protected String bucketName = null;
@@ -53,9 +57,9 @@ public abstract class S3File extends ProtocolFile {
 	protected boolean parentSet;
 	protected Map<Object, Object> defaultOptions = null;
 
-	protected S3File(FileURL url, S3Adapter service, String bucketName) {
+	protected S3File(FileURL url, IStorageAdapter service2, String bucketName) {
 		super(url);
-		this.service = service;
+		this.service = service2;
 		this.bucketName = bucketName;
 		initializeOptions(bucketName);
 	}
@@ -63,7 +67,8 @@ public abstract class S3File extends ProtocolFile {
 	protected void initializeOptions(String bucket) {
 		if (defaultOptions == null)
 			defaultOptions = new HashMap<Object, Object>();
-		defaultOptions.put(S3Adapter.Type.SRC_BUCKET, bucket);
+		defaultOptions.put(NirvanixAdapter.Type.PAGE_NUMBER, "0");
+		defaultOptions.put(NirvanixAdapter.Type.PAGE_SIZE, "1000");
 	}
 
 	// copia de dasein
