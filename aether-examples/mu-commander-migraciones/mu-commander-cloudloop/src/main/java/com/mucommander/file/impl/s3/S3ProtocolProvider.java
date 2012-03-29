@@ -56,33 +56,38 @@ public class S3ProtocolProvider implements ProtocolProvider {
             	CloudloopConfig cc = new CloudloopConfig();
             	
             	Adapters.Adapter ad = new Adapters.Adapter();
-            	ad.setImpl("com.cloudloop.storage.adapter.amazonS3.AmazonS3CloudStore");
-            	ad.setName("amazonS3");
+            	ad.setImpl("com.cloudloop.storage.adapter.nirvanix.NirvanixCloudStore");
+            	ad.setName("nirvanix");
             	ad.setType(AdapterType.STORAGE);
 
             	Adapters a = new Adapters();
             	a.getAdapter().add(ad);
             	
                	Store s2 = new Store();
-            	s2.setAdapter("amazonS3");
+            	s2.setAdapter("nirvanix");
             	s2.setEncrypted(false);
             	s2.setName("amazon");
             	
             	PropertyType pt1 = new PropertyType();
-            	pt1.setName("access-key-id");
+            	pt1.setName("user-login");
             	pt1.setValue(credentials.getLogin());
             	s2.getProperty().add(pt1);
             	
             	PropertyType pt2 = new PropertyType();
-            	pt2.setName("secret-key");
+            	pt2.setName("user-password");
             	pt2.setValue(credentials.getPassword());
             	s2.getProperty().add(pt2);
             	
             	PropertyType pt3 = new PropertyType();
-            	pt3.setName("bucket-name");
+            	pt3.setName("app-key");
             	pt3.setValue(url.getFilename());
             	s2.getProperty().add(pt3);
             	
+            	PropertyType pt4 = new PropertyType();
+            	pt4.setName("app-name");
+            	pt4.setValue("APP_NAME");
+            	s2.getProperty().add(pt4);
+
             	Stores s = new Stores();
             	
             	s.getStore().add(s2);
