@@ -20,8 +20,12 @@ package com.mucommander.file.impl.s3;
 
 import com.mucommander.file.*;
 import com.mucommander.io.RandomAccessInputStream;
-import org.jets3t.service.S3Service;
 import org.jets3t.service.S3ServiceException;
+import org.jets3t.service.ServiceException;
+import org.jets3t.service.impl.rest.httpclient.GoogleStorageService;
+import org.jets3t.service.model.GSBucket;
+import org.jets3t.service.model.GSObject;
+import org.jets3t.service.security.GSCredentials;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -39,7 +43,7 @@ public class S3Root extends S3File {
     /** Default permissions for the S3 root */
     private final static FilePermissions DEFAULT_PERMISSIONS = new SimpleFilePermissions(448);   // rwx------
 
-    protected S3Root(FileURL url, S3Service service) {
+    protected S3Root(FileURL url, GoogleStorageService service) {
         super(url, service);
 
         atts = new SimpleFileAttributes();
@@ -81,7 +85,7 @@ public class S3Root extends S3File {
     @Override
     public AbstractFile[] ls() throws IOException {
         try {
-            org.jets3t.service.model.S3Bucket buckets[] = service.listAllBuckets();
+            GSBucket[] buckets = service.listAllBuckets();
             int nbBuckets = buckets.length;
 
             AbstractFile bucketFiles[] = new AbstractFile[nbBuckets];
@@ -95,7 +99,7 @@ public class S3Root extends S3File {
 
             return bucketFiles;
         }
-        catch(S3ServiceException e) {
+        catch(ServiceException e) {
             throw getIOException(e);
         }
     }

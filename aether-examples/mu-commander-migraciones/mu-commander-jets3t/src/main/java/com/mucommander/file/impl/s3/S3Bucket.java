@@ -23,6 +23,11 @@ import com.mucommander.file.*;
 import com.mucommander.io.RandomAccessInputStream;
 import org.jets3t.service.S3Service;
 import org.jets3t.service.S3ServiceException;
+import org.jets3t.service.ServiceException;
+import org.jets3t.service.impl.rest.httpclient.GoogleStorageService;
+import org.jets3t.service.model.GSObject;
+import org.jets3t.service.model.StorageBucket;
+import org.jets3t.service.security.GSCredentials;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -43,14 +48,14 @@ public class S3Bucket extends S3File {
     private final static FilePermissions DEFAULT_PERMISSIONS = new SimpleFilePermissions(448);   // rwx------
 
 
-    protected S3Bucket(FileURL url, S3Service service, String bucketName) throws AuthException {
+    protected S3Bucket(FileURL url, GoogleStorageService service, String bucketName) throws AuthException {
         super(url, service);
 
         this.bucketName = bucketName;
         atts = new S3BucketFileAttributes();
     }
 
-    protected S3Bucket(FileURL url, S3Service service, org.jets3t.service.model.S3Bucket bucket) throws AuthException {
+    protected S3Bucket(FileURL url, GoogleStorageService service, org.jets3t.service.model.S3Bucket bucket) throws AuthException {
         super(url, service);
 
         this.bucketName = bucket.getName();
@@ -92,7 +97,7 @@ public class S3Bucket extends S3File {
         try {
             service.deleteBucket(bucketName);
         }
-        catch(S3ServiceException e) {
+        catch(ServiceException e) {
             throw getIOException(e);
         }
     }
@@ -102,7 +107,7 @@ public class S3Bucket extends S3File {
         try {
             service.createBucket(bucketName);
         }
-        catch(S3ServiceException e) {
+        catch(ServiceException e) {
             throw getIOException(e);
         }
     }
@@ -181,7 +186,7 @@ public class S3Bucket extends S3File {
             updateExpirationDate(); // declare the attributes as 'fresh'
         }
 
-        private void setAttributes(org.jets3t.service.model.S3Bucket bucket) {
+        private void setAttributes(StorageBucket bucket) {
             setDirectory(true);
             setDate(bucket.getCreationDate().getTime());
             setPermissions(DEFAULT_PERMISSIONS);
@@ -189,14 +194,14 @@ public class S3Bucket extends S3File {
         }
 
         private void fetchAttributes() throws AuthException {
-            org.jets3t.service.model.S3Bucket bucket;
-            S3ServiceException e = null;
+            StorageBucket bucket;
+            ServiceException e = null;
             try {
                 // Note: unlike getObjectDetails, getBucket returns null when the bucket does not exist
                 // (that is because the corresponding request is a GET on the root resource, not a HEAD on the bucket).
                 bucket = service.getBucket(bucketName);
             }
-            catch(S3ServiceException ex) {
+            catch(ServiceException ex) {
                 e = ex;
                 bucket = null;
             }
