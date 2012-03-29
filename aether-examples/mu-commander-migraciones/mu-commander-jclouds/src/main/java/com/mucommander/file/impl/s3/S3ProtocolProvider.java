@@ -60,7 +60,7 @@ public class S3ProtocolProvider implements ProtocolProvider {
 
         if(instantiationParams.length==0) {
             try {
-            	s3Context = new BlobStoreContextFactory().createContext("aws-s3", credentials.getLogin(), credentials.getPassword());
+            	s3Context = new BlobStoreContextFactory().createContext("googlestorage", credentials.getLogin(), credentials.getPassword());
             	service = s3Context.getBlobStore();            	
             	
                 //Jets3tProperties props = new Jets3tProperties();
