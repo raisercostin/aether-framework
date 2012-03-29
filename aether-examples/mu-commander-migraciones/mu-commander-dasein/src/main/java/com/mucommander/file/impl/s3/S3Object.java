@@ -18,28 +18,36 @@
 
 package com.mucommander.file.impl.s3;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.util.ArrayList;
+import java.util.logging.Logger;
+
+import org.apache.commons.io.FilenameUtils;
+import org.dasein.cloud.storage.BlobStoreSupport;
+import org.dasein.cloud.storage.CloudStoreObject;
+import org.dasein.cloud.storage.FileTransfer;
+
 import com.mucommander.auth.AuthException;
-import com.mucommander.file.*;
+import com.mucommander.file.AbstractFile;
+import com.mucommander.file.FileAttributes;
+import com.mucommander.file.FileFactory;
+import com.mucommander.file.FileLogger;
+import com.mucommander.file.FileOperation;
+import com.mucommander.file.FilePermissions;
+import com.mucommander.file.FileURL;
+import com.mucommander.file.SimpleFilePermissions;
+import com.mucommander.file.SyncedFileAttributes;
+import com.mucommander.file.UnsupportedFileOperation;
+import com.mucommander.file.UnsupportedFileOperationException;
 import com.mucommander.io.BufferPool;
 import com.mucommander.io.FileTransferException;
 import com.mucommander.io.RandomAccessInputStream;
 import com.mucommander.io.StreamUtils;
-
-import org.apache.commons.io.FilenameUtils;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.FileOutputStream;
-import java.util.ArrayList;
-import java.util.logging.Logger;
-
-import org.dasein.cloud.CloudException;
-import org.dasein.cloud.InternalException;
-import org.dasein.cloud.storage.BlobStoreSupport;
-import org.dasein.cloud.storage.CloudStoreObject;
-import org.dasein.cloud.storage.FileTransfer;
 
 /**
  * <code>S3Object</code> represents an Amazon S3 object.
