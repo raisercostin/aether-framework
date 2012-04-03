@@ -3,7 +3,7 @@
 
 	<parent>
 		<groupId>com.tesis.aether.examples.neoedit</groupId>
-		<artifactId>neoedit-migraciones-to-aether</artifactId>
+		<artifactId>neoedit-migraciones-aether</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	
