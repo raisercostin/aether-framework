@@ -4,7 +4,7 @@
 
 	<parent>
 		<groupId>com.tesis.aether.examples.neoedit</groupId>
-		<artifactId>neoedit-migraciones-to-aether</artifactId>
+		<artifactId>neoedit-migraciones-aether</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	
@@ -14,6 +14,16 @@
 	<name>neoedit-jclouds-to-aether</name>
 	<packaging>jar</packaging>
 	<dependencies>	
+		<dependency>
+			<groupId>com.tesis.aether.adapters.jclouds</groupId>
+			<artifactId>aether-jclouds-adapter</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+        <dependency>
+			<groupId>com.tesis.aether.loader</groupId>
+			<artifactId>aether-loader</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+        </dependency>
         <dependency>
             <groupId>org.jclouds</groupId>
             <artifactId>jclouds-blobstore</artifactId>
