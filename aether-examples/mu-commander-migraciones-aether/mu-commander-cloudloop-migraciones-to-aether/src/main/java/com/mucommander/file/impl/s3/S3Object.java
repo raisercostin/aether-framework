@@ -656,7 +656,7 @@ public class S3Object extends S3File {
 
         private void setAttributes(CloudStoreFile object) {
             setDirectory(false);
-            setSize(object.getContentLength());
+            setSize(object.getContentLength()!=0l?object.getContentLength():object.getContentLengthInBytes());
             setDate(object.getLastModifiedDate()!=null?object.getLastModifiedDate().getTime():0);
             setPermissions(DEFAULT_PERMISSIONS);
             setExists(object.existsInStore());
