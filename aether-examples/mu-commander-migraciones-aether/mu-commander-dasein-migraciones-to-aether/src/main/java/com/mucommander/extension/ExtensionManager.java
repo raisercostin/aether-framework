@@ -67,7 +67,7 @@ public class ExtensionManager {
     // - Class fields -----------------------------------------------------------
     // --------------------------------------------------------------------------
     /** ClassLoader used to load all extensions. */
-    private static AbstractFileClassLoader loader;
+    private static ClassLoader loader;
 
 
 
@@ -88,11 +88,11 @@ public class ExtensionManager {
         // Initialises the extension class loader.
         // If the system classloader is an instance of AbstractFileClassLoader, use it.
         if((temp = ClassLoader.getSystemClassLoader()) instanceof AbstractFileClassLoader)
-            loader = (AbstractFileClassLoader)temp;
+            loader = temp;//(AbstractFileClassLoader)temp;
 
         // Otherwise, use a new instance of AbstractFileClassLoader.
         else
-            loader = new AbstractFileClassLoader();
+            loader = temp;//new AbstractFileClassLoader();
     }
 
     /**
@@ -220,7 +220,7 @@ public class ExtensionManager {
      * @param  file file whose presence in the extensions path will be checked.
      * @return      <code>true</code> if the specified file is in the extension's classloader path, <code>false</code> otherwise.
      */
-    public static boolean isInExtensionsPath(AbstractFile file) {return loader.contains(file);}
+    public static boolean isInExtensionsPath(AbstractFile file) {return false;}//loader..contains(file);}
 
     /**
      * Returns <code>true</code> if the specified file is in the system classpath.
@@ -290,7 +290,7 @@ public class ExtensionManager {
      * Adds the specified file to the extension's classpath.
      * @param file file to add to the classpath.
      */
-    public static void addToClassPath(AbstractFile file) {loader.addFile(file);}
+    public static void addToClassPath(AbstractFile file) {;}//loader.addFile(file);}
 
     /**
      * Adds all known extensions to the current classpath.

@@ -94,7 +94,7 @@ public class MuConfiguration {
     /** Log level. */
     public static final String  LOG_LEVEL                         = LOG_SECTION + '.' + "level";
     /** Default log level. */
-    public static final String  DEFAULT_LOG_LEVEL                 = "FINEST";
+    public static final String  DEFAULT_LOG_LEVEL                 = "WARNING";
     /** Log buffer size, in number of messages. */
     public static final String  LOG_BUFFER_SIZE                   = LOG_SECTION + '.' + "buffer_size";
     /** Default log buffer size. Should be set to a low value to minimize memory usage, yet high enough to have most of

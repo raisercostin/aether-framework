@@ -55,7 +55,10 @@
 							<classpathPrefix>lib/</classpathPrefix>
 						</manifest>
 						<manifestEntries>
-							<Class-Path>. lib/j2ssh.jar lib/J7Zip.jar lib/jmdns.jar lib/jcifs.jar lib/j2ssh.jar lib/yanfs.jar lib/commons-net-ftp.jar lib/jna.jar</Class-Path> <!-- HERE IS THE IMPORTANT BIT -->
+							<Class-Path>. lib/aether-core-0.0.1-SNAPSHOT.jar 
+								lib/aether-cloudloop-adapter-0.0.1-SNAPSHOT.jar 
+								lib/aether-loader-0.0.1-SNAPSHOT.jar
+								lib/j2ssh.jar lib/J7Zip.jar lib/jmdns.jar lib/jcifs.jar lib/j2ssh.jar lib/yanfs.jar lib/commons-net-ftp.jar lib/jna.jar</Class-Path> <!-- HERE IS THE IMPORTANT BIT -->
 						</manifestEntries>
 					</archive> 	
 				</configuration>
@@ -72,6 +75,24 @@
 
 	<url>http://maven.apache.org</url>
 	<dependencies>
+			<!-- LIBRERIAS DE AETHER -->
+		<dependency>
+			<groupId>com.tesis.aether.core</groupId>
+			<artifactId>aether-core</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.tesis.aether.adapters.dasein</groupId>
+			<artifactId>aether-dasein-adapter</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+        <dependency>
+			<groupId>com.tesis.aether.loader</groupId>
+			<artifactId>aether-loader</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+        </dependency>
+		<!-- FIN LIBRERIAS DE AETHER -->
+	
 	<!-- 	<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-io</artifactId>
