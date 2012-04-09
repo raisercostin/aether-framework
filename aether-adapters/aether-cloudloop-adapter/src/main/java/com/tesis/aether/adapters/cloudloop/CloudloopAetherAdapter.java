@@ -2,8 +2,6 @@ package com.tesis.aether.adapters.cloudloop;
 
 import java.io.InputStream;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 import org.apache.commons.io.FilenameUtils;
@@ -11,7 +9,6 @@ import org.apache.commons.io.FilenameUtils;
 import com.cloudloop.TransferProgressObserver;
 import com.cloudloop.adapter.AmazonCloudKey;
 import com.cloudloop.encryption.EncryptionProvider;
-import com.cloudloop.internal.util.PathUtil;
 import com.cloudloop.storage.CloudStore;
 import com.cloudloop.storage.CloudStoreDirectory;
 import com.cloudloop.storage.CloudStoreFile;
@@ -19,16 +16,11 @@ import com.cloudloop.storage.CloudStoreObject;
 import com.cloudloop.storage.CloudStoreObjectType;
 import com.cloudloop.storage.CloudStorePath;
 import com.cloudloop.storage.CloudStorePathNormalizer;
-import com.cloudloop.storage.exceptions.InvalidPathException;
 import com.cloudloop.storage.internal.CloudStoreObjectMetadata;
-import com.google.common.collect.Collections2;
 import com.tesis.aether.core.exception.CreateContainerException;
 import com.tesis.aether.core.exception.DeleteException;
-import com.tesis.aether.core.exception.FileNotExistsException;
 import com.tesis.aether.core.exception.MethodNotSupportedException;
-import com.tesis.aether.core.exception.UploadException;
 import com.tesis.aether.core.framework.adapter.AetherFrameworkAdapter;
-import com.tesis.aether.core.services.storage.object.StorageObject;
 import com.tesis.aether.core.services.storage.object.StorageObjectMetadata;
 
 public class CloudloopAetherAdapter extends AetherFrameworkAdapter {
@@ -105,12 +97,22 @@ public class CloudloopAetherAdapter extends AetherFrameworkAdapter {
 	}
 
 	private CloudStoreObject generateCloudLoopObject(StorageObjectMetadata metadata, CloudStore cloudStore) {
-		CloudStorePath cloudStorePath = new CloudStorePath(metadata.getPathAndName());
+		CloudStorePath cloudStorePath;// = new CloudStorePath(metadata.getPathAndName());
 		if (metadata.isFile()) {
+			cloudStorePath = new CloudStorePath(metadata.getPathAndName());
 			CloudStoreFile file = new CloudStoreFile(cloudStore, cloudStorePath);
+			CloudStoreObjectMetadata objectMetadata = new CloudStoreObjectMetadata();
+			objectMetadata.setContentLengthInBytes(metadata.getLength()!=null?metadata.getLength().longValue():0);
+			objectMetadata.setLastModifiedDate(metadata.getLastModified());
+			file.setMetadata(objectMetadata);
 			return file;
 		} else {
+			cloudStorePath = new CloudStorePath(metadata.getPathAndName() + "/");
 			CloudStoreDirectory dir = new CloudStoreDirectory(cloudStore, cloudStorePath);
+			CloudStoreObjectMetadata objectMetadata = new CloudStoreObjectMetadata();
+			objectMetadata.setContentLengthInBytes(metadata.getLength()!=null?metadata.getLength().longValue():0);
+			objectMetadata.setLastModifiedDate(metadata.getLastModified());
+			dir.setMetadata(objectMetadata);
 			return dir;
 		}
 	}
