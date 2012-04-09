@@ -32,7 +32,7 @@ import java.util.Vector;
  * </p>
  * @author Nicolas Rinaudo
  */
-public class AbstractFileClassLoader extends ClassLoader {
+public class AbstractFileClassLoader extends JavasistClassLoader {
     // - Instance fields -------------------------------------------------------
     // -------------------------------------------------------------------------
     /** All abstract files in which to look for classes and resources. */
