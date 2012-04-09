@@ -25,6 +25,8 @@ import java.util.Enumeration;
 import java.util.Iterator;
 import java.util.Vector;
 
+import com.tesis.aether.loader.core.JavasistClassLoader;
+
 /**
  * <code>ClassLoader</code> implementation capable of loading classes from instances of {@link AbstractFile}.
  * <p>
