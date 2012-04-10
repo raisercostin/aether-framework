@@ -104,6 +104,7 @@ public class CloudloopAetherAdapter extends AetherFrameworkAdapter {
 			CloudStoreObjectMetadata objectMetadata = new CloudStoreObjectMetadata();
 			objectMetadata.setContentLengthInBytes(metadata.getLength()!=null?metadata.getLength().longValue():0);
 			objectMetadata.setLastModifiedDate(metadata.getLastModified());
+			objectMetadata.setETag(metadata.getMd5hash());
 			file.setMetadata(objectMetadata);
 			return file;
 		} else {
@@ -112,6 +113,7 @@ public class CloudloopAetherAdapter extends AetherFrameworkAdapter {
 			CloudStoreObjectMetadata objectMetadata = new CloudStoreObjectMetadata();
 			objectMetadata.setContentLengthInBytes(metadata.getLength()!=null?metadata.getLength().longValue():0);
 			objectMetadata.setLastModifiedDate(metadata.getLastModified());
+			objectMetadata.setETag(metadata.getMd5hash());
 			dir.setMetadata(objectMetadata);
 			return dir;
 		}
@@ -119,9 +121,12 @@ public class CloudloopAetherAdapter extends AetherFrameworkAdapter {
 
 	public CloudStoreFile getFile(String path) {
 		try {
-			StorageObjectMetadata storageObject = service.getMetadataForObject(path);
-			CloudStoreFile cloudStoreFile = (CloudStoreFile) generateCloudLoopObject(storageObject, null);
-			return cloudStoreFile; 
+			if ((path.endsWith("/") && service.checkDirectoryExists(path)) || (!path.endsWith("/") && service.checkFileExists(path))) {
+				StorageObjectMetadata storageObject = service.getMetadataForObject(path);
+				CloudStoreFile cloudStoreFile = (CloudStoreFile) generateCloudLoopObject(storageObject, null);
+				return cloudStoreFile; 
+			}
+			return null;
 		} catch (Exception e) {
 			e.printStackTrace();
 			return null;
@@ -163,9 +168,11 @@ public class CloudloopAetherAdapter extends AetherFrameworkAdapter {
 	}
 
 	public CloudStoreObjectMetadata refreshMetaData(CloudStoreObject obj) {
-		return null;
+		return obj.getMetadata();
 	}
 
+	public void refreshMetadata() {
+	}
 	public void writeMetadata(CloudStoreObject obj, CloudStoreObjectMetadata metadata) {
 	}
 

@@ -41,7 +41,7 @@ public class JetS3tAetherFrameworkAdapter extends AetherFrameworkAdapter {
 	protected JetS3tAetherFrameworkAdapter() {
 		super();
 	}
-	
+
 	public static JetS3tAetherFrameworkAdapter getInstance() {
 		if (INSTANCE == null) {
 			INSTANCE = new JetS3tAetherFrameworkAdapter();
@@ -49,27 +49,36 @@ public class JetS3tAetherFrameworkAdapter extends AetherFrameworkAdapter {
 		return INSTANCE;
 	}
 
-	public S3Object getObject(String bucketName, String objectKey) {
+	public S3Object getObject(String bucketName, String objectKey) throws Exception {
 		try {
-			com.tesis.aether.core.services.storage.object.StorageObject storageObject = service.getStorageObject(bucketName, objectKey);
-			S3Object object = new S3Object(objectKey);
-			object.setDataInputStream(storageObject.getStream());
-			object.addAllMetadata(generateJetS3tMetadata(storageObject.getMetadata()));
-			object.setBucketName(bucketName);
-			object.setStorageClass("STANDARD");
-			object.setETag(storageObject.getMetadata().getMd5hash());
-			return object;
-		} catch (FileNotExistsException e) {
-			e.printStackTrace();
-			return null;
+
+			if ((objectKey.endsWith("/") && service.checkDirectoryExists(bucketName, objectKey)) || (!objectKey.endsWith("/") && service.checkFileExists(bucketName, objectKey))) {
+				StorageObjectMetadata storageObject = service.getMetadataForObject(bucketName, objectKey);
+				S3Object object = new S3Object(objectKey);
+
+				try {
+					object.setDataInputStream(service.getInputStream(bucketName, objectKey));
+				} catch (Exception e) {
+					// TODO: handle exception
+				}
+
+				object.addAllMetadata(generateJetS3tMetadata(storageObject));
+				object.setBucketName(bucketName);
+				object.setStorageClass("STANDARD");
+				object.setETag(storageObject.getMd5hash());
+				return object;
+			}
+			throw new Exception();
+		} catch (Exception e) {
+			throw e;
 		}
 	}
 
-	public StorageObject getObjectImpl(String bucketName, String objectKey, Calendar ifModifiedSince, Calendar ifUnmodifiedSince, String[] ifMatchTags, String[] ifNoneMatchTags, Long byteRangeStart, Long byteRangeEnd, String versionId) throws ServiceException {
+	public StorageObject getObjectImpl(String bucketName, String objectKey, Calendar ifModifiedSince, Calendar ifUnmodifiedSince, String[] ifMatchTags, String[] ifNoneMatchTags, Long byteRangeStart, Long byteRangeEnd, String versionId) throws Exception {
 		return this.getObject(bucketName, objectKey);
 	}
 
-	public S3Object getObject(S3Bucket bucketName, String objectKey) {
+	public S3Object getObject(S3Bucket bucketName, String objectKey) throws Exception {
 		return this.getObject(bucketName.getName(), objectKey);
 	}
 
@@ -284,7 +293,10 @@ public class JetS3tAetherFrameworkAdapter extends AetherFrameworkAdapter {
 		Map<String, Object> jets3metadata = new HashMap<String, Object>();
 		jets3metadata.put(BaseStorageItem.METADATA_HEADER_LAST_MODIFIED_DATE, metadata.getLastModified());
 		jets3metadata.put(BaseStorageItem.METADATA_HEADER_CONTENT_LENGTH, metadata.getLength().toString());
-		jets3metadata.put(BaseStorageItem.METADATA_HEADER_CONTENT_MD5, ServiceUtils.toBase64(ServiceUtils.fromHex(metadata.getMd5hash())));
+		try {
+			jets3metadata.put(BaseStorageItem.METADATA_HEADER_CONTENT_MD5, ServiceUtils.toBase64(ServiceUtils.fromHex(metadata.getMd5hash())));
+		} catch (Exception e) {
+		}
 		return jets3metadata;
 	}
 
@@ -354,7 +366,7 @@ public class JetS3tAetherFrameworkAdapter extends AetherFrameworkAdapter {
 	public boolean isTargettingGoogleStorageService() {
 		return false;
 	}
-	
+
 	public String getSignatureIdentifier() {
 		return AWS_SIGNATURE_IDENTIFIER;
 	}

@@ -1,5 +1,6 @@
 package com.tesis.aether.adapters.libcloud;
 
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -31,16 +32,24 @@ public class LibcloudAetherAdapter extends AetherFrameworkAdapter {
 		return INSTANCE;
 	}
 
-	public IItem fetchItem(String path, Map<Object, Object> options) {
-		
-		StorageObject storageObject;
+	public IItem fetchItem(String path, Map<Object, Object> options) throws Exception {
+
 		try {
-			storageObject = service.getStorageObject((String) options.get(S3Adapter.Type.SRC_BUCKET), path);
-			Item item = new Item(storageObject.getStream(), "application/xml", null, storageObject.getMetadata().getLength());			
-			return item;
+			String container = (String) options.get(S3Adapter.Type.SRC_BUCKET);
+			if ((path.endsWith("/") && service.checkDirectoryExists(container, path)) || (!path.endsWith("/") && service.checkFileExists(container, path))) {
+				StorageObjectMetadata storageObject = service.getMetadataForObject(container, path);
+				try {
+					InputStream inputStream = service.getInputStream(container, path);
+					Item item = new Item(inputStream, "application/xml", null, storageObject.getLength());
+					return item;
+				} catch (Exception e) {
+					Item item = new Item(null, "application/xml", null, 0);
+					return item;
+				}
+			}
+			throw new Exception();
 		} catch (FileNotExistsException e) {
-			e.printStackTrace();
-			return null;
+			throw e;
 		}
 	}
 
@@ -51,7 +60,7 @@ public class LibcloudAetherAdapter extends AetherFrameworkAdapter {
 		} catch (Exception e) {
 			e.printStackTrace();
 			return false;
-		} 
+		}
 	}
 
 	public void deleteItem(String path, Map<Object, Object> options) {
