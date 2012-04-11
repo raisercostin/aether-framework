@@ -63,20 +63,20 @@ public class S3Panel extends ServerPanel {
         addRow(Translator.get("server_connect_dialog.server"), serverField, 15);
 
         // Username field, initialized to last username
-        usernameField = new JTextField("XXXXXXXXXXXXXXXXXXXX");
+        usernameField = new JTextField(lastUsername);
         usernameField.selectAll();
         addTextFieldListeners(usernameField, false);
         // Not localized on purpose
         addRow("Access ID Key", usernameField, 5);
 
         // Password field, initialized to ""
-        passwordField = new JPasswordField("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+        passwordField = new JPasswordField(lastPassword);
         addTextFieldListeners(passwordField, false);
         // Not localized on purpose
         addRow("Secret Access Key", passwordField, 15);
 
         // Initial directory field, initialized to "/"
-        initialDirField = new JTextField("test");
+        initialDirField = new JTextField(lastInitialDir);
         initialDirField.selectAll();
         addTextFieldListeners(initialDirField, true);
         addRow(Translator.get("server_connect_dialog.initial_dir"), initialDirField, 5);
