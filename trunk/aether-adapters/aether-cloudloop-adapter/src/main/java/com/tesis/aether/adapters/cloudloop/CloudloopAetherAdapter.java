@@ -9,6 +9,8 @@ import org.apache.commons.io.FilenameUtils;
 import com.cloudloop.TransferProgressObserver;
 import com.cloudloop.adapter.AmazonCloudKey;
 import com.cloudloop.encryption.EncryptionProvider;
+import com.cloudloop.generated.CloudloopConfig;
+import com.cloudloop.internal.util.PathUtil;
 import com.cloudloop.storage.CloudStore;
 import com.cloudloop.storage.CloudStoreDirectory;
 import com.cloudloop.storage.CloudStoreFile;
@@ -16,16 +18,19 @@ import com.cloudloop.storage.CloudStoreObject;
 import com.cloudloop.storage.CloudStoreObjectType;
 import com.cloudloop.storage.CloudStorePath;
 import com.cloudloop.storage.CloudStorePathNormalizer;
+import com.cloudloop.storage.exceptions.InvalidPathException;
 import com.cloudloop.storage.internal.CloudStoreObjectMetadata;
 import com.tesis.aether.core.exception.CreateContainerException;
 import com.tesis.aether.core.exception.DeleteException;
+import com.tesis.aether.core.exception.FolderCreationException;
 import com.tesis.aether.core.exception.MethodNotSupportedException;
 import com.tesis.aether.core.framework.adapter.AetherFrameworkAdapter;
 import com.tesis.aether.core.services.storage.object.StorageObjectMetadata;
 
 public class CloudloopAetherAdapter extends AetherFrameworkAdapter {
 	private static CloudloopAetherAdapter INSTANCE = null;
-
+	private CloudStore serviceCloudStore = null;
+	
 	protected CloudloopAetherAdapter() {
 		super();
 	}
@@ -35,6 +40,10 @@ public class CloudloopAetherAdapter extends AetherFrameworkAdapter {
 			INSTANCE = new CloudloopAetherAdapter();
 		}
 		return INSTANCE;
+	}
+	
+	public void AmazonS3CloudStore(CloudStore cs){
+		serviceCloudStore = cs;
 	}
 
 	public void initializeConnection(AmazonCloudKey key) {
@@ -57,7 +66,14 @@ public class CloudloopAetherAdapter extends AetherFrameworkAdapter {
 	}
 
 	public CloudStoreDirectory createDirectory(CloudStoreDirectory dir) {
-		return null;
+		try {
+				service.createFolder(dir.getPath().getAbsolutePath());
+			} catch (FolderCreationException e) {
+				e.printStackTrace();
+			} catch (MethodNotSupportedException e) {
+				e.printStackTrace();
+			}
+			return getCloudStoreDirectory(dir.getPath().getAbsolutePath());
 	}
 
 	public void removeDirectory(CloudStoreDirectory directory, boolean recursive) {
@@ -123,16 +139,36 @@ public class CloudloopAetherAdapter extends AetherFrameworkAdapter {
 		try {
 			if ((path.endsWith("/") && service.checkDirectoryExists(path)) || (!path.endsWith("/") && service.checkFileExists(path))) {
 				StorageObjectMetadata storageObject = service.getMetadataForObject(path);
-				CloudStoreFile cloudStoreFile = (CloudStoreFile) generateCloudLoopObject(storageObject, null);
+				CloudStoreFile cloudStoreFile = (CloudStoreFile) generateCloudLoopObject(storageObject, serviceCloudStore);
 				return cloudStoreFile; 
 			}
-			return null;
+			CloudStorePath cloudPath = new CloudStorePath(path);
+			return new CloudStoreFile(serviceCloudStore, cloudPath);
 		} catch (Exception e) {
 			e.printStackTrace();
 			return null;
 		}
 	}
 
+	public CloudStoreDirectory getCloudStoreDirectory(String path) {
+		CloudStorePath cloudPath = new CloudStorePath(path, true, PathUtil.ROOT_DIRECTORY);
+		if (!cloudPath.isDirectory()) {
+			throw new InvalidPathException("Path, " + cloudPath.getAbsolutePath() + " does not represent a directory location.");
+		}
+
+		try {
+			if (path.endsWith("/") && service.checkDirectoryExists(path)) {
+				StorageObjectMetadata storageObject = service.getMetadataForObject(path);
+				CloudStoreDirectory cloudStoreDirectory = (CloudStoreDirectory) generateCloudLoopObject(storageObject, serviceCloudStore);
+				return cloudStoreDirectory; 
+			}
+			return new CloudStoreDirectory(serviceCloudStore, cloudPath);
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+	
 	public void upload(CloudStoreFile file, TransferProgressObserver progressObserver) {
 		try {
 			service.uploadInputStream(file.getStreamToStore(), FilenameUtils.getFullPath(file.getPath().getAbsolutePath()), FilenameUtils.getName(file.getPath().getAbsolutePath()), file.getContentLengthInBytes());
