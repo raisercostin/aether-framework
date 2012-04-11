@@ -188,7 +188,11 @@ public class CloudloopAetherAdapter extends AetherFrameworkAdapter {
 
 	public boolean contains(CloudStoreObject object) {
 		try {
-			return service.checkObjectExists(object.getPath().getAbsolutePath());
+			if(object.getPath().getAbsolutePath().endsWith("/")) {
+				return service.checkDirectoryExists(object.getPath().getAbsolutePath());
+			} else {
+				return service.checkFileExists(object.getPath().getAbsolutePath());				
+			}
 		} catch (MethodNotSupportedException e) {
 			e.printStackTrace();
 			return false;
