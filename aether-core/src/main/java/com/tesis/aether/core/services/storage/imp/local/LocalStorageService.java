@@ -242,7 +242,11 @@ public class LocalStorageService extends ExtendedStorageService {
 		StorageObjectMetadata metadata = new StorageObjectMetadata();
 		metadata.setPath(path);
 		metadata.setName(name);
-		metadata.setType(StorageObjectConstants.FILE_TYPE);
+		if (remotePathFile.endsWith("/"))
+			metadata.setType(StorageObjectConstants.DIRECTORY_TYPE);
+		else
+			metadata.setType(StorageObjectConstants.FILE_TYPE);
+			
 		metadata.setContainer(container);
 		if (!path.trim().isEmpty()) {
 			metadata.setPathAndName(path + "/" + name);
