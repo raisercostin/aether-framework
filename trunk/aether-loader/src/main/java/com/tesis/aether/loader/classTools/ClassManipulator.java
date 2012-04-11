@@ -121,6 +121,7 @@ public class ClassManipulator {
 			_accessName = className;
 		}
 		String _call = "{ ";
+		String _call2 = null;
 		if (useField) {
 			// si el atributo es nulo debemos instanciarlo
 			_call += "if (" + _accessName + " == null) " + _accessName + " = new " + className + "(); ";
@@ -134,11 +135,19 @@ public class ClassManipulator {
 				_call += _accessName + ".getInstance()." + methodName + "($$); return;}";
 			} else { // en este punto seria un constructor
 				_call += "System.out.println(\"Invoking added method on constructor: " + methodName + "\");";
+				_call2 = _call;
 				_call += _accessName + ".getInstance()." + methodName + "($$);}";
+				_call2 += _accessName + ".getInstance()." + methodName + "(this);}";
 			}
 		}
-		if (isConstructor) 
-			_method.insertAfter(_call, true);
+		if (isConstructor) {
+			try {
+				_method.insertAfter(_call, true);
+			} catch ( CannotCompileException cnce) {
+				_method.insertAfter(_call2, true);
+			}
+			
+		}
 		else
 			_method.setBody(_call);
 	}
@@ -201,9 +210,9 @@ public class ClassManipulator {
 		int i = 0;
 		while (i < methods2.length) {
 			CtMethod method2 = methods2[i];
-
 			try {
 				CtMethod method = cc.getMethod(method2.getName(), method2.getSignature());
+
 				//if(method.getDeclaringClass().isFrozen()) {
 				//	method.getDeclaringClass().defrost();
 				//}
