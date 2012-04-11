@@ -603,7 +603,6 @@ public class Launcher {
         }
         catch(Throwable t) {
             // Startup failed, dispose the splash screen
-        	t.printStackTrace();
             if(splashScreen!=null)
                 splashScreen.dispose();
 
