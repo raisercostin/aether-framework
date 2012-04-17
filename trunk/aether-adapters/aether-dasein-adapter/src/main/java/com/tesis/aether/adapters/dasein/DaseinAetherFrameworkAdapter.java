@@ -34,7 +34,7 @@ public class DaseinAetherFrameworkAdapter extends AetherFrameworkAdapter {
 	protected DaseinAetherFrameworkAdapter(AWSCloud cloud) {
 		super();
 	}
-	
+
 	protected DaseinAetherFrameworkAdapter() {
 		super();
 	}
@@ -59,9 +59,7 @@ public class DaseinAetherFrameworkAdapter extends AetherFrameworkAdapter {
 				out.write(buf, 0, len);
 			out.close();
 		} catch (IOException e) {
-			System.out.println(
-					"Error al intentar crear el archivo a partir del InputStream - Error: "
-							+ e.getMessage());
+			System.out.println("Error al intentar crear el archivo a partir del InputStream - Error: " + e.getMessage());
 			e.printStackTrace();
 			return false;
 		}
@@ -74,7 +72,7 @@ public class DaseinAetherFrameworkAdapter extends AetherFrameworkAdapter {
 			service.downloadFileToDirectory(directory, fileName, new File(path));
 			String nameFilename = FilenameUtils.getName(fileName);
 			if (!toFile.getName().equals(FilenameUtils.getName(fileName))) {
-				File f = new File (path + nameFilename);
+				File f = new File(path + nameFilename);
 				if (!writeToFile(new FileInputStream(f), toFile))
 					System.out.println("Error al copiar el contenido del archivo al archivo correspondiente.");
 			}
@@ -165,10 +163,18 @@ public class DaseinAetherFrameworkAdapter extends AetherFrameworkAdapter {
 
 	public long exists(String directory, String fileName, boolean multiPart) throws InternalException, CloudException {
 		try {
-			if (service.checkObjectExists(directory, fileName)) {
-				return 0L;
+			if (fileName.endsWith("/")) {
+				if (service.checkDirectoryExists(directory, fileName)) {
+					return 0L;
+				} else {
+					return -1L;
+				}
 			} else {
-				return -1L;
+				if (service.checkFileExists(directory, fileName)) {
+					return 0L;
+				} else {
+					return -1L;
+				}
 			}
 		} catch (MethodNotSupportedException e) {
 			e.printStackTrace();
