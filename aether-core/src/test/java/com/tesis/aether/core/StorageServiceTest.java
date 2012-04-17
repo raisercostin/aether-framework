@@ -85,7 +85,7 @@ public abstract class StorageServiceTest {
 				
 		try {
 			assert !service.checkFileExists(getContainer(), "resources/TEST_FOLDER/test.2");
-			service.uploadSingleFile(new File("resources/TEST_FOLDER/test.2"), getContainer(), "resources/TEST_FOLDER/");
+			service.uploadSingleFile(new File("resources/TEST_FOLDER/test.2"), getContainer(), "resources/TEST_FOLDER/", "test.2");
 			assert service.checkFileExists(getContainer(), "resources/TEST_FOLDER/test.2");
 		} catch(Exception e) {
 			assert false;
@@ -98,7 +98,7 @@ public abstract class StorageServiceTest {
 		try {
 			assert !service.checkObjectExists(getContainer(), "resources/TEST_FOLDER/test.2");
 			assert !service.checkObjectExists(getContainer(), "resources/TEST_FOLDER/");
-			service.uploadSingleFile(new File("resources/TEST_FOLDER/test.2"), getContainer(), "resources/TEST_FOLDER/");
+			service.uploadSingleFile(new File("resources/TEST_FOLDER/test.2"), getContainer(), "resources/TEST_FOLDER/", "test.2");
 			assert service.checkObjectExists(getContainer(), "resources/TEST_FOLDER/test.2");
 			assert service.checkObjectExists(getContainer(), "resources/TEST_FOLDER/");
 		} catch(Exception e) {
@@ -140,7 +140,7 @@ public abstract class StorageServiceTest {
 			assert !service.checkObjectExists(getContainer(), "resources/TEST_FOLDER/test.2");
 			assert !service.checkObjectExists(getContainer(), "resources/TEST_FOLDER/");
 			
-			service.uploadSingleFile(new File("resources/TEST_FOLDER/test.2"), getContainer(), "resources/TEST_FOLDER/");
+			service.uploadSingleFile(new File("resources/TEST_FOLDER/test.2"), getContainer(), "resources/TEST_FOLDER/", "test.2");
 			
 			assert service.checkObjectExists(getContainer(), "resources/TEST_FOLDER/test.2");
 			assert service.checkObjectExists(getContainer(), "resources/TEST_FOLDER/");
@@ -177,7 +177,7 @@ public abstract class StorageServiceTest {
 		try {
 			File localFile = new File("resources/Downloaded_2/test.2");
 			assert !localFile.exists();
-			service.uploadSingleFile(new File("resources/TEST_FOLDER/test.2"), getContainer(), "resources/TEST_FOLDER/");
+			service.uploadSingleFile(new File("resources/TEST_FOLDER/test.2"), getContainer(), "resources/TEST_FOLDER/", "test.2");
 			service.downloadFileToDirectory(getContainer(), "resources/TEST_FOLDER/test.2", new File("resources/Downloaded_2"));
 			assert localFile.exists();
 		} catch(Exception e) {
@@ -202,7 +202,7 @@ public abstract class StorageServiceTest {
 		try {
 			File localFile = new File("resources/Downloaded_2/test.2");
 			assert !localFile.exists();
-			service.uploadSingleFile(new File("resources/TEST_FOLDER/test.2"), getContainer(), "resources/TEST_FOLDER/");
+			service.uploadSingleFile(new File("resources/TEST_FOLDER/test.2"), getContainer(), "resources/TEST_FOLDER/", "test.2");
 			service.downloadToDirectory(getContainer(), "resources/TEST_FOLDER/test.2", new File("resources/Downloaded_2"));
 			assert localFile.exists();
 		} catch(Exception e) {
@@ -214,7 +214,7 @@ public abstract class StorageServiceTest {
 	@Test
 	public void getInputStreamTest() {
 		try {
-			service.uploadSingleFile(new File("resources/TEST_FOLDER/test.2"), getContainer(), "resources/TEST_FOLDER/");
+			service.uploadSingleFile(new File("resources/TEST_FOLDER/test.2"), getContainer(), "resources/TEST_FOLDER/", "test.2");
 			InputStream inputStream = service.getInputStream(getContainer(), "resources/TEST_FOLDER/test.2");
 			assert inputStream != null;			
 			inputStream.close();
@@ -226,7 +226,7 @@ public abstract class StorageServiceTest {
 	@Test
 	public void getMetadataForObjectTest() {
 		try {
-			service.uploadSingleFile(new File("resources/TEST_FOLDER/test.2"), getContainer(), "resources/TEST_FOLDER/");
+			service.uploadSingleFile(new File("resources/TEST_FOLDER/test.2"), getContainer(), "resources/TEST_FOLDER/", "test.2");
 			StorageObjectMetadata metadataForObject = service.getMetadataForObject(getContainer(), "resources/TEST_FOLDER/test.2");
 			assert metadataForObject != null;			
 			assert metadataForObject.getLastModified() != null;
@@ -246,7 +246,7 @@ public abstract class StorageServiceTest {
 	@Test
 	public void getPublicURLForPathTest() {
 		try {
-			service.uploadSingleFile(new File("resources/TEST_FOLDER/test.2"), getContainer(), "resources/TEST_FOLDER/");
+			service.uploadSingleFile(new File("resources/TEST_FOLDER/test.2"), getContainer(), "resources/TEST_FOLDER/", "test.2");
 			assert service.getPublicURLForPath(getContainer(), "resources/TEST_FOLDER/test.2") != null;			
 		} catch(Exception e) {
 			assert false;
@@ -256,7 +256,7 @@ public abstract class StorageServiceTest {
 	@Test
 	public void getStorageObjectTest() {
 		try {
-			service.uploadSingleFile(new File("resources/TEST_FOLDER/test.2"), getContainer(), "resources/TEST_FOLDER/");
+			service.uploadSingleFile(new File("resources/TEST_FOLDER/test.2"), getContainer(), "resources/TEST_FOLDER/", "test.2");
 			StorageObject storageObject = service.getStorageObject(getContainer(), "resources/TEST_FOLDER/test.2");
 			assert storageObject != null;		
 			assert storageObject.getMetadata() != null;
@@ -270,7 +270,7 @@ public abstract class StorageServiceTest {
 	@Test
 	public void lastModifiedTest() {
 		try {
-			service.uploadSingleFile(new File("resources/TEST_FOLDER/test.2"), getContainer(), "resources/TEST_FOLDER/");
+			service.uploadSingleFile(new File("resources/TEST_FOLDER/test.2"), getContainer(), "resources/TEST_FOLDER/", "test.2");
 			assert service.lastModified(getContainer(), "resources/TEST_FOLDER/test.2") != null;			
 		} catch(Exception e) {
 			assert false;
@@ -335,7 +335,7 @@ public abstract class StorageServiceTest {
 	@Test
 	public void sizeOfTest() {
 		try {
-			service.uploadSingleFile(new File("resources/TEST_FOLDER/test.2"), getContainer(), "resources/TEST_FOLDER/");
+			service.uploadSingleFile(new File("resources/TEST_FOLDER/test.2"), getContainer(), "resources/TEST_FOLDER/", "test.2");
 			assert service.sizeOf(getContainer(), "resources/TEST_FOLDER/test.2") == 0;			
 		} catch(Exception e) {
 			assert false;
@@ -380,7 +380,7 @@ public abstract class StorageServiceTest {
 	public void uploadSingleFileTest() {				
 		try {
 			assert !service.checkFileExists(getContainer(), "resources/TEST_FOLDER/test.2");
-			service.uploadSingleFile(new File("resources/TEST_FOLDER/test.2"), getContainer(), "resources/TEST_FOLDER/");
+			service.uploadSingleFile(new File("resources/TEST_FOLDER/test.2"), getContainer(), "resources/TEST_FOLDER/", "test.2");
 			assert service.checkFileExists(getContainer(), "resources/TEST_FOLDER/test.2");
 		} catch(Exception e) {
 			assert false;

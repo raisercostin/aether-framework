@@ -436,8 +436,8 @@ public abstract class BaseStorageService extends CloudService {
 	 * @throws MethodNotSupportedException
 	 * @throws FileNotExistsException
 	 */
-	public abstract void uploadSingleFile(File localFile, String container, String remoteDirectory) throws UploadException, MethodNotSupportedException, FileNotExistsException;
+	public abstract void uploadSingleFile(File localFile, String container, String remoteDirectory, String fileName) throws UploadException, MethodNotSupportedException, FileNotExistsException;
 	public void uploadSingleFile(File localFile, String remoteDirectory) throws UploadException, MethodNotSupportedException, FileNotExistsException {
-		uploadSingleFile(localFile, this.getServiceProperty(StorageServiceConstants.CONTAINER), remoteDirectory);
+		uploadSingleFile(localFile, this.getServiceProperty(StorageServiceConstants.CONTAINER), remoteDirectory, localFile.getName());
 	}
 }

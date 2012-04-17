@@ -186,7 +186,12 @@ public class LocalStorageService extends ExtendedStorageService {
 		File baseToIgnore = initRemoteFile(container,"");
 		String pathAndFilename = dirToList.getPath().replace(baseToIgnore.getPath(), "");
 
-		String path = FilenameUtils.separatorsToUnix(FilenameUtils.getPathNoEndSeparator(pathAndFilename));
+		String path;
+		try {
+			path = FilenameUtils.separatorsToUnix(FilenameUtils.getPathNoEndSeparator(pathAndFilename));
+		} catch (Exception e) {
+			path = "";
+		}
 		String name = dirToList.getName();
 
 		StorageObjectMetadata metadata = new StorageObjectMetadata();
