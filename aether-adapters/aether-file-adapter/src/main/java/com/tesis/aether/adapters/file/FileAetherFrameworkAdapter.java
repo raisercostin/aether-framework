@@ -159,7 +159,7 @@ public class FileAetherFrameworkAdapter extends AetherFrameworkAdapter {
 					return false;
 				}
 				try {
-					service.uploadSingleFile(tmp, container, getDirectories(path));
+					service.uploadSingleFile(tmp, container, getDirectories(path), tmp.getName());
 					return true;
 				} catch (UploadException e) {
 					e.printStackTrace();
@@ -309,7 +309,7 @@ public class FileAetherFrameworkAdapter extends AetherFrameworkAdapter {
 			return false;
 		}
 		try {
-			service.uploadSingleFile(fileTmp, container, dest.getPath());
+			service.uploadSingleFile(fileTmp, container, dest.getPath(), fileTmp.getName());
 		} catch (UploadException e) {
 			e.printStackTrace();
 			return false;
