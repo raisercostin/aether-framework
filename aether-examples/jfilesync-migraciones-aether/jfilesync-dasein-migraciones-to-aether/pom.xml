@@ -6,6 +6,16 @@
 
 	<dependencies>
 		<dependency>
+			<groupId>com.tesis.aether.adapters.dasein</groupId>
+			<artifactId>aether-dasein-adapter</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+        <dependency>
+			<groupId>com.tesis.aether.loader</groupId>
+			<artifactId>aether-loader</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+        </dependency>
+		<dependency>
 			<groupId>org.dasein</groupId>
 			<artifactId>dasein-cloud-aws</artifactId>
 			<version>2011.08</version>

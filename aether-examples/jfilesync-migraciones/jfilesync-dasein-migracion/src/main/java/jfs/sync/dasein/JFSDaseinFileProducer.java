@@ -27,8 +27,7 @@ import jfs.sync.JFSFile;
 import jfs.sync.JFSFileProducer;
 
 import org.dasein.cloud.ProviderContext;
-import org.dasein.cloud.aws.AWSCloud;
-import org.dasein.cloud.aws.storage.S3;
+import org.dasein.cloud.google.GoogleAppEngine;
 import org.dasein.cloud.storage.BlobStoreSupport;
 
 /**
@@ -57,13 +56,11 @@ public class JFSDaseinFileProducer extends JFSFileProducer {
 			String credential = PropertiesProvider.getProperty("aws.secret");
 			
 			Locale.setDefault(Locale.US);
-			AWSCloud cloud = new AWSCloud();
+			GoogleAppEngine cloud = new GoogleAppEngine();
 			ProviderContext context = new ProviderContext();
-			context.setAccessKeys(identity.getBytes(), credential.getBytes());
-			context.setEndpoint("http://s3.amazonaws.com");
-			context.setRegionId("us-east-1");
+			context.setAccessKeys(PropertiesProvider.getProperty("gs.access").getBytes(), PropertiesProvider.getProperty("gs.secret").getBytes());
 			cloud.connect(context);
-			amazon = new S3(cloud);
+			amazon = cloud.getStorageServices().getBlobStoreSupport();
 			
 		} catch (Exception e) {
 			throw new RuntimeException(e);
