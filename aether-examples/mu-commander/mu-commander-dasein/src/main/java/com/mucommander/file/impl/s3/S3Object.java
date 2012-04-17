@@ -73,10 +73,9 @@ public class S3Object extends S3File {
 	}
 
 	private File getFile(InputStream in) {
-		String file = getObjectKey(false, bucketName);
 		File f = null;
 		try {
-			f = File.createTempFile(file, null);
+			f = File.createTempFile(getName(), null);
 			OutputStream out = new FileOutputStream(f);
 
 			byte buf[] = new byte[1024];
