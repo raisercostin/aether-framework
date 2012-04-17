@@ -6,9 +6,10 @@
 	<name>jfilesync-dasein-migracion</name>
 
 	<dependencies>
+
 		<dependency>
 			<groupId>org.dasein</groupId>
-			<artifactId>dasein-cloud-aws</artifactId>
+			<artifactId>dasein-cloud-google</artifactId>
 			<version>2011.08</version>
 		</dependency>
 		<dependency>

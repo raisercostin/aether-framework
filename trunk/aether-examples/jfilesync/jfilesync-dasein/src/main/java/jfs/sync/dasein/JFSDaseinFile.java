@@ -75,11 +75,13 @@ public class JFSDaseinFile extends JFSFile {
 		object.setName(path);
 		object.setProviderRegionId("us-east-1");
 
+		item = object;
+		
 		try {
-			if (adapter.exists(bucket, "/" + fullPath, false) > 0l) {
+			if (adapter.exists(bucket, "/" + fullPath, false) >= 0l) {
 				isDirectory = false;
 
-			} else if (adapter.exists(bucket, "/" + fullPath + "/", false) > 0l) {
+			} else if (adapter.exists(bucket, "/" + fullPath + "/", false) >= 0l) {
 				isDirectory = true;
 				fullPath = fullPath + "/";
 			}
@@ -156,7 +158,7 @@ public class JFSDaseinFile extends JFSFile {
 				df.setTimeZone(TimeZone.getTimeZone("GMT"));
 				date = df.parse(item.getCreationDate().toString());
 				return date.getTime();
-			} catch (ParseException e) {
+			} catch (Exception e) {
 				return 0;
 			}
 		}
@@ -180,6 +182,8 @@ public class JFSDaseinFile extends JFSFile {
 						} else {
 							foundFilePath = FilenameUtils.getFullPathNoEndSeparator(file.getName());
 						}
+						foundFilePath = foundFilePath.isEmpty() ? file.getName() : foundFilePath;
+						
 						String thisFilePath = FilenameUtils.getFullPathNoEndSeparator(fullPath);
 
 						if (foundFilePath.equals(thisFilePath) && !file.getName().contains(" ") && file.getName().startsWith(fullPath) && !file.getName().equals(fullPath) && !file.getName().endsWith("_$folder$")) {
