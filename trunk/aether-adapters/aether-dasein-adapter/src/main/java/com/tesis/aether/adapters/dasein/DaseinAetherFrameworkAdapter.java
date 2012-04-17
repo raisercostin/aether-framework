@@ -1,11 +1,15 @@
 package com.tesis.aether.adapters.dasein;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.Locale;
-
 import org.apache.commons.io.FilenameUtils;
 import org.dasein.cloud.CloudException;
 import org.dasein.cloud.InternalException;
@@ -46,11 +50,34 @@ public class DaseinAetherFrameworkAdapter extends AetherFrameworkAdapter {
 		return this.download(sourceFile.getDirectory(), sourceFile.getName(), toFile, null);
 	}
 
+	private boolean writeToFile(InputStream in, File toFile) {
+		try {
+			OutputStream out = new FileOutputStream(toFile);
+			byte buf[] = new byte[1024];
+			int len;
+			while ((len = in.read(buf)) > 0)
+				out.write(buf, 0, len);
+			out.close();
+		} catch (IOException e) {
+			System.out.println(
+					"Error al intentar crear el archivo a partir del InputStream - Error: "
+							+ e.getMessage());
+			e.printStackTrace();
+			return false;
+		}
+		return true;
+	}
+
 	public FileTransfer download(String directory, String fileName, File toFile, Encryption decryption) throws InternalException, CloudException {
 		try {
 			String path = FilenameUtils.getFullPath(toFile.getCanonicalPath());
 			service.downloadFileToDirectory(directory, fileName, new File(path));
-
+			String nameFilename = FilenameUtils.getName(fileName);
+			if (!toFile.getName().equals(FilenameUtils.getName(fileName))) {
+				File f = new File (path + nameFilename);
+				if (!writeToFile(new FileInputStream(f), toFile))
+					System.out.println("Error al copiar el contenido del archivo al archivo correspondiente.");
+			}
 			FileTransfer fileTransfer = new FileTransfer();
 			fileTransfer.setPercentComplete(1.0);
 			fileTransfer.complete(null);
@@ -69,7 +96,8 @@ public class DaseinAetherFrameworkAdapter extends AetherFrameworkAdapter {
 
 			List<CloudStoreObject> daseinMetadata = new ArrayList<CloudStoreObject>();
 			for (StorageObjectMetadata metadata : listFiles) {
-				daseinMetadata.add(generateDaseinMetadata(metadata));
+				if (metadata.isFile())
+					daseinMetadata.add(generateDaseinMetadata(metadata));
 			}
 
 			return daseinMetadata;
@@ -87,17 +115,19 @@ public class DaseinAetherFrameworkAdapter extends AetherFrameworkAdapter {
 		} else {
 			object.setSize(0);
 		}
+		object.setDirectory(metadata.getContainer());
 		object.setName(metadata.getPathAndName());
+		object.setContainer(metadata.isContainer());
 		// object.setLocation(metadata.getUri().toString());
 		return object;
 	}
 
 	public void upload(File sourceFile, String directory, String fileName, boolean multiPart, Encryption encryption) throws CloudException, InternalException {
 		try {
-
+			String destFileName = FilenameUtils.getName(fileName);
 			String path = FilenameUtils.getPathNoEndSeparator(fileName);
 
-			service.uploadSingleFile(sourceFile, directory, path);
+			service.uploadSingleFile(sourceFile, directory, path, destFileName);
 
 		} catch (UploadException e) {
 			e.printStackTrace();
