@@ -142,7 +142,7 @@ public abstract class ExtendedStorageService extends BaseStorageService {
 		if (localPath.isDirectory()) {
 			uploadDirectory(localPath, container, remoteDirectory);
 		} else if (localPath.isFile()) {
-			uploadSingleFile(localPath, container, remoteDirectory);
+			uploadSingleFile(localPath, container, remoteDirectory, localPath.getName());
 		}
 	}
 
@@ -158,7 +158,7 @@ public abstract class ExtendedStorageService extends BaseStorageService {
 					String canonicalPath = file.getCanonicalPath();
 					String pathToUpload = remoteDirectory + FilenameUtils.getPath(canonicalPath.replace(basePath, ""));
 
-					uploadSingleFile(file, container, pathToUpload);
+					uploadSingleFile(file, container, pathToUpload, file.getName());
 				}
 			}
 		} catch (IOException e) {
@@ -167,9 +167,9 @@ public abstract class ExtendedStorageService extends BaseStorageService {
 	}
 
 	@Override
-	public void uploadSingleFile(File localFile, String container, String remoteDirectory) throws UploadException, MethodNotSupportedException, FileNotExistsException {
+	public void uploadSingleFile(File localFile, String container, String remoteDirectory, String fileName) throws UploadException, MethodNotSupportedException, FileNotExistsException {
 		try {
-			uploadInputStream(new FileInputStream(localFile), container, remoteDirectory, localFile.getName(), localFile.length());
+			uploadInputStream(new FileInputStream(localFile), container, remoteDirectory, fileName, localFile.length());
 		} catch (FileNotFoundException e) {
 			throw new UploadException("The file you are trying to upload doesn't exist");
 		} 
