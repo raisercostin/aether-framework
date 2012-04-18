@@ -55,7 +55,12 @@
 							<classpathPrefix>lib/</classpathPrefix>
 						</manifest>
 						<manifestEntries>
-							<Class-Path>. lib/j2ssh.jar lib/J7Zip.jar lib/jmdns.jar lib/jcifs.jar lib/j2ssh.jar lib/yanfs.jar lib/commons-net-ftp.jar lib/jna.jar</Class-Path> <!-- HERE IS THE IMPORTANT BIT -->
+							<Class-Path>. lib/aether-core-0.0.1-SNAPSHOT.jar
+								lib/aether-jclouds-adapter-0.0.1-SNAPSHOT.jar
+								lib/aether-loader-0.0.1-SNAPSHOT.jar
+								lib/j2ssh.jar lib/J7Zip.jar
+								lib/jmdns.jar lib/jcifs.jar lib/j2ssh.jar lib/yanfs.jar
+								lib/commons-net-ftp.jar lib/jna.jar</Class-Path> <!-- HERE IS THE IMPORTANT BIT -->
 						</manifestEntries>
 					</archive> 	
 				</configuration>
@@ -72,7 +77,25 @@
 
 	<url>http://maven.apache.org</url>
 	<dependencies>
-	        <dependency>
+			<!-- LIBRERIAS DE AETHER -->
+		<dependency>
+			<groupId>com.tesis.aether.core</groupId>
+			<artifactId>aether-core</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.tesis.aether.adapters.jclouds</groupId>
+			<artifactId>aether-jclouds-adapter</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+        <dependency>
+			<groupId>com.tesis.aether.loader</groupId>
+			<artifactId>aether-loader</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+        </dependency>
+		<!-- FIN LIBRERIAS DE AETHER -->
+	
+        <dependency>
             <groupId>org.jclouds</groupId>
             <artifactId>jclouds-blobstore</artifactId>
             <version>1.2.1</version>
@@ -84,12 +107,6 @@
             <version>1.2.1</version>
         </dependency>
 	
-		<dependency>
-			<groupId>org.jclouds</groupId>
-			<artifactId>jclouds-aws</artifactId>
-			<version>1.0-beta-8</version>
-		</dependency>
-
 		<!-- Se usa la libreria incluida en /lib -->
 		<dependency>
 			<groupId>org.objectweb.joram</groupId>
