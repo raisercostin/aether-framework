@@ -1,24 +1,35 @@
 package com.tesis.aether.adapters.jclouds;
 
+import java.security.NoSuchAlgorithmException;
+import java.security.cert.CertificateException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
 import org.apache.commons.io.FilenameUtils;
+import org.jclouds.blobstore.BlobStore;
 import org.jclouds.blobstore.BlobStoreContext;
 import org.jclouds.blobstore.domain.Blob;
+import org.jclouds.blobstore.domain.BlobBuilder;
 import org.jclouds.blobstore.domain.BlobMetadata;
 import org.jclouds.blobstore.domain.MutableStorageMetadata;
 import org.jclouds.blobstore.domain.PageSet;
 import org.jclouds.blobstore.domain.StorageMetadata;
 import org.jclouds.blobstore.domain.StorageType;
+import org.jclouds.blobstore.domain.internal.BlobBuilderImpl;
 import org.jclouds.blobstore.domain.internal.BlobImpl;
 import org.jclouds.blobstore.domain.internal.MutableBlobMetadataImpl;
 import org.jclouds.blobstore.domain.internal.PageSetImpl;
+import org.jclouds.blobstore.options.CreateContainerOptions;
 import org.jclouds.blobstore.options.GetOptions;
 import org.jclouds.blobstore.options.ListContainerOptions;
+import org.jclouds.blobstore.options.PutOptions;
 import org.jclouds.domain.Location;
+import org.jclouds.encryption.internal.JCECrypto;
+import org.jclouds.rest.RestContextBuilder;
 
+import com.google.common.collect.ImmutableSet;
+import com.google.inject.Module;
 import com.tesis.aether.core.exception.CreateContainerException;
 import com.tesis.aether.core.exception.DeleteContainerException;
 import com.tesis.aether.core.exception.DeleteException;
@@ -30,7 +41,7 @@ import com.tesis.aether.core.framework.adapter.AetherFrameworkAdapter;
 import com.tesis.aether.core.services.storage.object.StorageObject;
 import com.tesis.aether.core.services.storage.object.StorageObjectMetadata;
 
-public class JCloudsAetherFrameworkAdapter extends AetherFrameworkAdapter {
+public class JCloudsAetherFrameworkAdapter extends AetherFrameworkAdapter implements BlobStore{
 	private static JCloudsAetherFrameworkAdapter INSTANCE = null;
 
 	protected JCloudsAetherFrameworkAdapter() {
@@ -106,6 +117,19 @@ public class JCloudsAetherFrameworkAdapter extends AetherFrameworkAdapter {
 			e.printStackTrace();
 			return false;
 		}
+	}
+
+	public BlobBuilder blobBuilder(String name) {
+		try {
+			return new BlobBuilderImpl(new JCECrypto()).name(name);
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+
+	public String putBlob(String container, Blob blob, PutOptions options) {
+		return putBlob(container, blob);
 	}
 
 	public String putBlob(String container, Blob blob) {
@@ -217,7 +241,12 @@ public class JCloudsAetherFrameworkAdapter extends AetherFrameworkAdapter {
 	public PageSet<? extends StorageMetadata> list(String container, ListContainerOptions options) {
 		List<StorageObjectMetadata> listFiles;
 		try {
-			listFiles = service.listFiles(container, options.getDir(), options.isRecursive());
+			String dir = options.getDir();
+			if(dir != null) {
+				listFiles = service.listFiles(container, dir, options.isRecursive());
+			} else {
+				listFiles = service.listFiles(container, "", options.isRecursive());			
+			}
 
 			List<MutableStorageMetadata> jCloudsMetadata = new ArrayList<MutableStorageMetadata>();
 			for (StorageObjectMetadata metadata : listFiles) {
@@ -252,7 +281,7 @@ public class JCloudsAetherFrameworkAdapter extends AetherFrameworkAdapter {
 			e.printStackTrace();
 		}
 	}
-
+	   
 	/**
 	 * NOT IMPLEMENTED METHODS
 	 */
@@ -269,6 +298,11 @@ public class JCloudsAetherFrameworkAdapter extends AetherFrameworkAdapter {
 	public Set<? extends Location> listAssignableLocations() {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+	public boolean createContainerInLocation(Location location, String container, CreateContainerOptions options) {
+		// TODO Auto-generated method stub
+		return false;
 	}
 
 }
