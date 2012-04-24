@@ -40,6 +40,7 @@ import com.tesis.aether.core.exception.UploadException;
 import com.tesis.aether.core.framework.adapter.AetherFrameworkAdapter;
 import com.tesis.aether.core.services.storage.object.StorageObject;
 import com.tesis.aether.core.services.storage.object.StorageObjectMetadata;
+import com.tesis.aether.core.services.storage.object.constants.StorageObjectConstants;
 
 public class JCloudsAetherFrameworkAdapter extends AetherFrameworkAdapter implements BlobStore{
 	private static JCloudsAetherFrameworkAdapter INSTANCE = null;
@@ -224,7 +225,7 @@ public class JCloudsAetherFrameworkAdapter extends AetherFrameworkAdapter implem
 	public PageSet<? extends StorageMetadata> list(String container) {
 		List<StorageObjectMetadata> listFiles;
 		try {
-			listFiles = service.listFiles(container, "", true);
+			listFiles = service.listFiles(container, "", false);
 
 			List<MutableStorageMetadata> jCloudsMetadata = new ArrayList<MutableStorageMetadata>();
 			for (StorageObjectMetadata metadata : listFiles) {
@@ -249,7 +250,15 @@ public class JCloudsAetherFrameworkAdapter extends AetherFrameworkAdapter implem
 			}
 
 			List<MutableStorageMetadata> jCloudsMetadata = new ArrayList<MutableStorageMetadata>();
-			for (StorageObjectMetadata metadata : listFiles) {
+			if (!listFiles.isEmpty()) {
+				for (StorageObjectMetadata metadata : listFiles) {
+					jCloudsMetadata.add(generateJcloudsMetadata(metadata));
+				}
+			} else {
+				StorageObjectMetadata metadata = new StorageObjectMetadata();
+				if (dir != null)
+					metadata.setPathAndName(dir);
+				metadata.setType(StorageObjectConstants.DIRECTORY_TYPE);
 				jCloudsMetadata.add(generateJcloudsMetadata(metadata));
 			}
 
