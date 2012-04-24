@@ -72,6 +72,11 @@
 
 	<url>http://maven.apache.org</url>
 	<dependencies>
+ 		<dependency>
+			<groupId>net.java.dev.jets3t</groupId>
+			<artifactId>jets3t</artifactId>
+			<version>0.8.0</version>
+		</dependency>
 
 		<!-- Se usa la libreria incluida en /lib -->
 		<dependency>
@@ -126,6 +131,10 @@
 				<exclusion>
 					<artifactId>commons-net</artifactId>
 					<groupId>commons-net</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>jets3t</artifactId>
+					<groupId>net.java.dev.jets3t</groupId>
 				</exclusion>
 			</exclusions>
 		</dependency>
