@@ -84,6 +84,9 @@ public class JetS3tAetherFrameworkAdapter extends AetherFrameworkAdapter {
 
 	public StorageObject getObjectDetails(String bucketName, String objectKey) throws ServiceException {
 		StorageObjectMetadata storageObject = service.getMetadataForObject(bucketName, objectKey);
+		if (storageObject.getLength() == null && storageObject.getMd5hash() == null) {
+			throw new ServiceException("ResponseStatus: Not Found.");
+		}
 		StorageObject object = new StorageObject(objectKey);
 		object.addAllMetadata(generateJetS3tMetadata(storageObject));
 		object.setStorageClass("STANDARD");
@@ -211,11 +214,42 @@ public class JetS3tAetherFrameworkAdapter extends AetherFrameworkAdapter {
 		return this.listObjects(bucketName, prefix, delimiter);
 	}
 
-	public StorageObjectsChunk listObjectsInternal(String bucketName, String prefix, String delimiter, long maxListingLength, boolean automaticallyMergeChunks, String priorLastKey, String priorLastVersion) throws ServiceException {
+	private String[] getCommonPrefixes(List<StorageObjectMetadata> files) {
+		List<String> retElements = new ArrayList<String>();
+		for (StorageObjectMetadata metadata : files) {
+			if (!metadata.isFile()) {
+				retElements.add(metadata.getPathAndName() + "/");
+			}
+		}
+		return (String[]) retElements.toArray(new String[retElements.size()]);
+	}
+	
+	public StorageObjectsChunk listObjectsInternal(String bucketName,
+			String prefix, String delimiter, long maxListingLength,
+			boolean automaticallyMergeChunks, String priorLastKey,
+			String priorLastVersion) throws ServiceException {
+		List<StorageObjectMetadata> listFiles;
+		StorageObjectsChunk storageObjectsChunk;
+		// se obtienen todos los elementos (archivos y directorios)
+		try {
+			if (prefix != null) {
+				listFiles = service.listFiles(bucketName, prefix, false);
+			} else {
+				listFiles = service.listFiles(bucketName, "", false);
+			}
+			// Se obtienen los S3Objects (archivos)
+			S3Object[] objects = aetherMetadataListToS3ObjectArray(listFiles,
+					bucketName);
 
-		S3Object[] listObjects = listObjects(bucketName, prefix, delimiter, maxListingLength);
+			//Se obtienen los common prefixed (directorios)
+			String[] commonPrefixes = getCommonPrefixes(listFiles);
 
-		StorageObjectsChunk storageObjectsChunk = new StorageObjectsChunk(prefix, delimiter, listObjects, new String[0], null);
+			storageObjectsChunk = new StorageObjectsChunk(
+					prefix, delimiter, objects, commonPrefixes, null);
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
 		return storageObjectsChunk;
 	}
 
@@ -292,7 +326,7 @@ public class JetS3tAetherFrameworkAdapter extends AetherFrameworkAdapter {
 	private Map<String, Object> generateJetS3tMetadata(StorageObjectMetadata metadata) {
 		Map<String, Object> jets3metadata = new HashMap<String, Object>();
 		jets3metadata.put(BaseStorageItem.METADATA_HEADER_LAST_MODIFIED_DATE, metadata.getLastModified());
-		jets3metadata.put(BaseStorageItem.METADATA_HEADER_CONTENT_LENGTH, metadata.getLength().toString());
+		jets3metadata.put(BaseStorageItem.METADATA_HEADER_CONTENT_LENGTH, (metadata.getLength()!=null?metadata.getLength().toString():"0"));
 		try {
 			jets3metadata.put(BaseStorageItem.METADATA_HEADER_CONTENT_MD5, ServiceUtils.toBase64(ServiceUtils.fromHex(metadata.getMd5hash())));
 		} catch (Exception e) {
