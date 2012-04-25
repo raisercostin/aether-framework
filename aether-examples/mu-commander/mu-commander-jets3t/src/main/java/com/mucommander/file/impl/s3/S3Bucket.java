@@ -184,7 +184,7 @@ public class S3Bucket extends S3File {
 
         private void setAttributes(org.jets3t.service.model.S3Bucket bucket) {
             setDirectory(true);
-            setDate(bucket.getCreationDate().getTime());
+            setDate(bucket.getCreationDate()!= null?bucket.getCreationDate().getTime():System.currentTimeMillis());
             setPermissions(DEFAULT_PERMISSIONS);
             setOwner(bucket.getOwner().getDisplayName());
         }

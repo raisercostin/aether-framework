@@ -24,7 +24,7 @@ import com.mucommander.file.AbstractFile;
 import com.mucommander.file.FileURL;
 import com.mucommander.file.ProtocolProvider;
 import org.apache.commons.logging.LogFactory;
-import org.apache.commons.logging.impl.Jdk14Logger;
+
 import org.jets3t.service.Jets3tProperties;
 import org.jets3t.service.S3Service;
 import org.jets3t.service.S3ServiceException;
@@ -33,7 +33,6 @@ import org.jets3t.service.security.AWSCredentials;
 
 import java.io.IOException;
 import java.util.StringTokenizer;
-import java.util.logging.Level;
 
 /**
  * A file protocol provider for the Amazon S3 protocol.
@@ -46,7 +45,7 @@ public class S3ProtocolProvider implements ProtocolProvider {
         // Turn off Jets3t logging: failed (404) HEAD request on non-existing object are logged with a SEVERE level,
         // even though this is not an error per se. We don't want those to be reported in the log, so we have no
         // choice but to disable logging entirely.
-        ((Jdk14Logger)LogFactory.getLog(RestS3Service.class)).getLogger().setLevel(Level.OFF);
+//        ((Jdk14Logger)LogFactory.getLog(RestS3Service.class)).getLogger().setLevel(Level.OFF);
     }
 
     public AbstractFile getFile(FileURL url, Object... instantiationParams) throws IOException {
