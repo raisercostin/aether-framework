@@ -23,6 +23,7 @@ import com.mucommander.file.*;
 import com.mucommander.io.RandomAccessInputStream;
 import org.jets3t.service.S3Service;
 import org.jets3t.service.S3ServiceException;
+import org.jets3t.service.ServiceException;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -92,7 +93,7 @@ public class S3Bucket extends S3File {
         try {
             service.deleteBucket(bucketName);
         }
-        catch(S3ServiceException e) {
+        catch(ServiceException e) {
             throw getIOException(e);
         }
     }
@@ -183,7 +184,7 @@ public class S3Bucket extends S3File {
 
         private void setAttributes(org.jets3t.service.model.S3Bucket bucket) {
             setDirectory(true);
-            setDate(bucket.getCreationDate().getTime());
+            setDate(bucket.getCreationDate()!= null?bucket.getCreationDate().getTime():System.currentTimeMillis());
             setPermissions(DEFAULT_PERMISSIONS);
             setOwner(bucket.getOwner().getDisplayName());
         }
