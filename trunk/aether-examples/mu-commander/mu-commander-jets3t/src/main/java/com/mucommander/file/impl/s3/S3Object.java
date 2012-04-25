@@ -27,7 +27,6 @@ import com.mucommander.io.StreamUtils;
 import org.jets3t.service.S3Service;
 import org.jets3t.service.S3ServiceException;
 import org.jets3t.service.ServiceException;
-import org.jets3t.service.model.StorageObject;
 import org.jets3t.service.model.StorageOwner;
 
 import java.io.IOException;

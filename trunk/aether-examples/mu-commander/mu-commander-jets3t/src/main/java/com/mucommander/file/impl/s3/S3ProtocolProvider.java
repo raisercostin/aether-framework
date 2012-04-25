@@ -23,8 +23,6 @@ import com.mucommander.auth.Credentials;
 import com.mucommander.file.AbstractFile;
 import com.mucommander.file.FileURL;
 import com.mucommander.file.ProtocolProvider;
-import org.apache.commons.logging.LogFactory;
-
 import org.jets3t.service.Jets3tProperties;
 import org.jets3t.service.S3Service;
 import org.jets3t.service.S3ServiceException;
