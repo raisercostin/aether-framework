@@ -73,9 +73,10 @@ public abstract class S3File extends ProtocolFile {
 
 		try {
 			files = new HashMap<String, ArrayList<Map<String, String>>>();
+			ArrayList<Map<String, String>> temp = new ArrayList<Map<String, String>>();
+			files.put("/", temp);
 
 			List<String> listItems = service.listItems("/", defaultOptions);
-
 			for (String blob : listItems) {
 				processObject(blob, files);
 				/*
@@ -128,6 +129,8 @@ public abstract class S3File extends ProtocolFile {
 		}
 		if ("".equals(name))
 			name = "/";
+		if (!name.startsWith("/"))
+			name = "/" + name;
 		ArrayList<Map<String, String>> objs = files.get(name);
 
 		if (objs == null)
