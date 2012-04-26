@@ -72,6 +72,24 @@
 
 	<url>http://maven.apache.org</url>
 	<dependencies>
+			<!-- LIBRERIAS DE AETHER -->
+		<dependency>
+			<groupId>com.tesis.aether.core</groupId>
+			<artifactId>aether-core</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+ 		<dependency>
+			<groupId>com.tesis.aether.adapters.libcloud</groupId>
+			<artifactId>aether-libcloud-adapter</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.tesis.aether.loader</groupId>
+			<artifactId>aether-loader</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	 	<!-- FIN LIBRERIAS DE AETHER -->
+	
 		<!-- Dependencias de libcloud -->
 		<dependency>
 			<artifactId>httpclient-cache</artifactId>
