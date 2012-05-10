@@ -1,0 +1,6 @@
+<storageServices>
+	<storageService class="com.tesis.aether.core.services.storage.imp.s3.S3StorageService">
+		<parameter key="s3AccessKey" value=""/>
+		<parameter key="s3SecretKey" value=""/>
+	</storageService>
+</storageServices>

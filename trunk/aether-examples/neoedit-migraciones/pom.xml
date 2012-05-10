@@ -21,6 +21,7 @@
 		<module>neoedit-dasein-migracion</module>
 		<module>neoedit-jclouds-migracion</module>
 		<module>neoedit-jets3t-migracion</module>
+		<module>neoedit-aether-migracion</module>
 	</modules>
 
 </project>
