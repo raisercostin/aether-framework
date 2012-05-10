@@ -1,0 +1,6 @@
+<storageServices>
+	<storageService class="com.tesis.aether.core.services.storage.imp.local.LocalStorageService">
+		<parameter key="localBaseFolder" value="e:/remote_mock/"/>
+		<parameter key="container" value="test"/>
+	</storageService>
+</storageServices>
