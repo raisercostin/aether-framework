@@ -21,6 +21,7 @@
 		<module>neoedit-dasein</module>
 		<module>neoedit-jclouds</module>
 		<module>neoedit-jets3t</module>
+		<module>neoedit-aether</module>
 		<module>neoedit-original</module>
 	</modules>
 
