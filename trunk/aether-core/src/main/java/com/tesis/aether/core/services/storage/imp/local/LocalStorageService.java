@@ -247,7 +247,15 @@ public class LocalStorageService extends ExtendedStorageService {
 		StorageObjectMetadata metadata = new StorageObjectMetadata();
 		metadata.setPath(path);
 		metadata.setName(name);
-		if (remotePathFile.endsWith("/"))
+//		if(remotePathFile.endsWith("/") || remotePathFile.isEmpty()){
+		boolean isDirectory;
+		try {
+			isDirectory = checkDirectoryExists(container, remotePathFile);
+		} catch (Exception e1) {
+			isDirectory = false;
+		}
+		
+		if (isDirectory)
 			metadata.setType(StorageObjectConstants.DIRECTORY_TYPE);
 		else
 			metadata.setType(StorageObjectConstants.FILE_TYPE);

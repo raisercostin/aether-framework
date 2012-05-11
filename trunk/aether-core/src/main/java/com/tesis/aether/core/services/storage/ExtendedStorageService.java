@@ -38,7 +38,7 @@ public abstract class ExtendedStorageService extends BaseStorageService {
 		metadata.setPath(path);
 		metadata.setName(name);
 		metadata.setType(StorageObjectConstants.FILE_TYPE);
-		if(!path.trim().isEmpty()) {
+		if (!path.trim().isEmpty()) {
 			metadata.setPathAndName(path + "/" + name);
 		} else {
 			metadata.setPathAndName(name);
@@ -64,14 +64,19 @@ public abstract class ExtendedStorageService extends BaseStorageService {
 
 	@Override
 	public StorageObject getStorageObject(String container, String remotePathFile) throws FileNotExistsException {
+
 		StorageObject storageObject = new StorageObject();
-		storageObject.setStream(getInputStream(container, remotePathFile));
+		try {
+			storageObject.setStream(getInputStream(container, remotePathFile));
+		} catch (Exception e) {
+			//File is a directory
+		}
 		storageObject.setMetadata(getMetadataForObject(container, remotePathFile));
 
 		return storageObject;
 	}
 
-	//DOWNLOAD
+	// DOWNLOAD
 	@Override
 	public void downloadToDirectory(String container, String remotePathFile, File localDirectory) throws MethodNotSupportedException, FileNotExistsException, DownloadException {
 		if (checkFileExists(container, remotePathFile)) {
@@ -172,7 +177,7 @@ public abstract class ExtendedStorageService extends BaseStorageService {
 			uploadInputStream(new FileInputStream(localFile), container, remoteDirectory, fileName, localFile.length());
 		} catch (FileNotFoundException e) {
 			throw new UploadException("The file you are trying to upload doesn't exist");
-		} 
+		}
 	}
 
 	// SISTEMA DE ARCHIVOS
@@ -184,14 +189,14 @@ public abstract class ExtendedStorageService extends BaseStorageService {
 				deleteFile(container, remotePathFile);
 			} else if (checkDirectoryExists(container, remotePathFile)) {
 				List<StorageObjectMetadata> listFiles = listFiles(container, remotePathFile, false);
-				
-				if(recursive) {
-					for(StorageObjectMetadata childrenFile: listFiles) {
+
+				if (recursive) {
+					for (StorageObjectMetadata childrenFile : listFiles) {
 						delete(container, childrenFile, true);
 					}
 				}
-				
-				boolean isEmpty = listFiles.size() == 0;			
+
+				boolean isEmpty = listFiles.size() == 0;
 				if (isEmpty || recursive) {
 					deleteFolder(container, remotePathFile);
 				} else {
@@ -210,14 +215,14 @@ public abstract class ExtendedStorageService extends BaseStorageService {
 				deleteFile(container, file.getPathAndName());
 			} else if (file.isDirectory()) {
 				List<StorageObjectMetadata> listFiles = listFiles(container, file.getPathAndName(), false);
-				
-				if(recursive) {
-					for(StorageObjectMetadata childrenFile: listFiles) {
+
+				if (recursive) {
+					for (StorageObjectMetadata childrenFile : listFiles) {
 						delete(container, childrenFile, true);
 					}
 				}
-				
-				boolean isEmpty = listFiles.size() == 0;			
+
+				boolean isEmpty = listFiles.size() == 0;
 				if (isEmpty || recursive) {
 					deleteFolder(container, file.getPathAndName());
 				} else {
@@ -233,16 +238,16 @@ public abstract class ExtendedStorageService extends BaseStorageService {
 	public void copyFile(String fromContainer, String from, String toContainer, String toDirectory) throws CopyFileException {
 		try {
 			List<StorageObjectMetadata> listFiles = listFiles(fromContainer, from, false);
-			
+
 			String finalDirectory = toDirectory + "/" + FilenameUtils.getName(from);
 
 			createFolder(toContainer, finalDirectory);
-			
-			for(StorageObjectMetadata file: listFiles) {
-				if(file.isFile()) {					
+
+			for (StorageObjectMetadata file : listFiles) {
+				if (file.isFile()) {
 					InputStream stream = getInputStream(fromContainer, file.getPathAndName());
-					uploadInputStream(stream, toContainer, finalDirectory, file.getName(), file.getLength());					
-				} else if(file.isDirectory()) {
+					uploadInputStream(stream, toContainer, finalDirectory, file.getName(), file.getLength());
+				} else if (file.isDirectory()) {
 					copyFile(fromContainer, from + "/" + file.getName(), toContainer, finalDirectory);
 				}
 			}
@@ -275,16 +280,16 @@ public abstract class ExtendedStorageService extends BaseStorageService {
 	public void migrateData(String container, String startingPath, ExtendedStorageService target, String targetContainer, String targetPath) throws MigrationException {
 		try {
 			List<StorageObjectMetadata> listFiles = listFiles(container, startingPath, false);
-			
+
 			String finalDirectory = targetPath + "/" + FilenameUtils.getName(startingPath);
 
 			target.createFolder(targetContainer, finalDirectory);
-			
-			for(StorageObjectMetadata file: listFiles) {
-				if(file.isFile()) {					
+
+			for (StorageObjectMetadata file : listFiles) {
+				if (file.isFile()) {
 					InputStream stream = getInputStream(container, file.getPathAndName());
-					target.uploadInputStream(stream, targetContainer, finalDirectory, file.getName(), file.getLength());					
-				} else if(file.isDirectory()) {
+					target.uploadInputStream(stream, targetContainer, finalDirectory, file.getName(), file.getLength());
+				} else if (file.isDirectory()) {
 					migrateData(container, startingPath + "/" + file.getName(), target, targetContainer, finalDirectory);
 				}
 			}
@@ -292,5 +297,5 @@ public abstract class ExtendedStorageService extends BaseStorageService {
 			throw new MigrationException("Error while migrating data");
 		}
 	}
-	
+
 }
