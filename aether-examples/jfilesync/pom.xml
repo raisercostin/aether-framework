@@ -21,6 +21,7 @@
 		<module>jfilesync-dasein</module>
 		<module>jfilesync-jclouds</module>
 		<module>jfilesync-jets3t</module>
+		<module>jfilesync-aether</module>
 		<module>jfilesync-original</module>
 	</modules>
 

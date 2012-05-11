@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jFileSync title="Aether" version="2.2">
+  <directory src="E:\remote_mock\local\" tgt="aether://test/"/>
+</jFileSync>
