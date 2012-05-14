@@ -140,8 +140,7 @@ public class JFSAetherFile extends JFSFile {
 
 				List<JFSFile> objects = new ArrayList<JFSFile>();
 				for (StorageObjectMetadata storageObjectMetadata : listFiles) {
-
-					String name = storageObjectMetadata.getName().replaceFirst(fileProducer.getRootPath() + "/", "");
+					String name = !fileProducer.getRootPath().isEmpty() ? storageObjectMetadata.getPathAndName().replaceFirst(fileProducer.getRootPath() + "/", "") : storageObjectMetadata.getPathAndName();
 					objects.add(new JFSAetherFile(fileProducer, name, service, bucket));
 				}
 				if (objects.size() > 0) {
@@ -149,8 +148,6 @@ public class JFSAetherFile extends JFSFile {
 				} else {
 					list = new JFSLocalFile[0];
 				}
-			} else {
-				list = new JFSLocalFile[0];
 			}
 		} catch (Exception e) {
 			list = new JFSLocalFile[0];
