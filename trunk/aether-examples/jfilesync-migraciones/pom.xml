@@ -21,6 +21,7 @@
 		<module>jfilesync-dasein-migracion</module>
 		<module>jfilesync-jclouds-migracion</module>
 		<module>jfilesync-jets3t-migracion</module>
+		<module>jfilesync-aether-migracion</module>
 	</modules>
 
 </project>
