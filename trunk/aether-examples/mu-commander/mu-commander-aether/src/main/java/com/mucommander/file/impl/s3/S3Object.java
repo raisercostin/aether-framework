@@ -18,13 +18,13 @@
 
 package com.mucommander.file.impl.s3;
 
+import com.mucommander.aether.adapter.AetherAdapter;
 import com.mucommander.auth.AuthException;
 import com.mucommander.file.*;
 import com.mucommander.io.BufferPool;
 import com.mucommander.io.FileTransferException;
 import com.mucommander.io.RandomAccessInputStream;
 import com.mucommander.io.StreamUtils;
-import org.jets3t.service.S3Service;
 import org.jets3t.service.S3ServiceException;
 import org.jets3t.service.ServiceException;
 import org.jets3t.service.model.StorageObject;
@@ -52,14 +52,14 @@ public class S3Object extends S3File {
     private final static FilePermissions DEFAULT_PERMISSIONS = new SimpleFilePermissions(384);   // rw-------
 
 
-    protected S3Object(FileURL url, S3Service service, String bucketName) throws AuthException {
+    protected S3Object(FileURL url, AetherAdapter service, String bucketName) throws AuthException {
         super(url, service);
 
         this.bucketName = bucketName;
         atts = new S3ObjectFileAttributes();
     }
 
-    protected S3Object(FileURL url, S3Service service, String bucketName, org.jets3t.service.model.S3Object object) throws AuthException {
+    protected S3Object(FileURL url, AetherAdapter service, String bucketName, org.jets3t.service.model.S3Object object) throws AuthException {
         super(url, service);
 
         this.bucketName = bucketName;
@@ -214,8 +214,8 @@ public class S3Object extends S3File {
             destObjectFile.atts.setAttributes(destObject);
             destObjectFile.atts.setExists(true);
         }
-        catch(ServiceException e) {
-            throw getIOException(e);
+        catch(Exception e) {
+            throw new IOException(e.getMessage());
         }
     }
 
@@ -231,8 +231,8 @@ public class S3Object extends S3File {
             // add unnecessary billing overhead since it reads the object chunk by chunk, each in a separate GET request.
             return service.getObject(bucketName, getObjectKey(false), null, null, null, null, offset==0?null:offset, null).getDataInputStream();
         }
-        catch(ServiceException e) {
-            throw getIOException(e);
+        catch(Exception e) {
+            throw new IOException(e.getMessage());
         }
     }
 
@@ -450,8 +450,8 @@ public class S3Object extends S3File {
                         .getDataInputStream();
                     this.offset = offset;
                 }
-                catch(ServiceException e) {
-                    throw getIOException(e);
+                catch(Exception e) {
+                    throw new IOException(e.getMessage());
                 }
             }
         }
