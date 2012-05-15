@@ -18,17 +18,13 @@
 
 package com.mucommander.file.impl.s3;
 
+import com.mucommander.aether.adapter.AetherAdapter;
 import com.mucommander.auth.AuthException;
 import com.mucommander.auth.Credentials;
 import com.mucommander.file.AbstractFile;
 import com.mucommander.file.FileURL;
 import com.mucommander.file.ProtocolProvider;
 import org.jets3t.service.Jets3tProperties;
-import org.jets3t.service.S3Service;
-import org.jets3t.service.S3ServiceException;
-import org.jets3t.service.impl.rest.httpclient.RestS3Service;
-import org.jets3t.service.security.AWSCredentials;
-
 import java.io.IOException;
 import java.util.StringTokenizer;
 
@@ -51,21 +47,21 @@ public class S3ProtocolProvider implements ProtocolProvider {
         if(credentials==null || credentials.getLogin().equals("") || credentials.getPassword().equals(""))
             throw new AuthException(url);
 
-        S3Service service;
+        AetherAdapter service;
         String bucketName;
 
         if(instantiationParams.length==0) {
             try {
-                service = new RestS3Service(new AWSCredentials(credentials.getLogin(), credentials.getPassword()));
+                service = new AetherAdapter();
                 Jets3tProperties props = new Jets3tProperties();
                 props.setProperty("s3service.s3-endpoint", url.getHost());
             }
-            catch(S3ServiceException e) {
-                throw S3File.getIOException(e, url);
+            catch(Exception e) {
+                throw new IOException(e.getMessage());
             }
         }
         else {
-            service = (S3Service)instantiationParams[0];
+            service = (AetherAdapter)instantiationParams[0];
         }
 
         String path = url.getPath();
