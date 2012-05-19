@@ -18,9 +18,9 @@
 
 package com.mucommander.file.impl.s3;
 
+import com.mucommander.aether.adapter.AetherAdapter;
 import com.mucommander.file.*;
 import com.mucommander.io.RandomAccessInputStream;
-import org.jets3t.service.S3Service;
 import org.jets3t.service.S3ServiceException;
 
 import java.io.IOException;
@@ -39,7 +39,7 @@ public class S3Root extends S3File {
     /** Default permissions for the S3 root */
     private final static FilePermissions DEFAULT_PERMISSIONS = new SimpleFilePermissions(448);   // rwx------
 
-    protected S3Root(FileURL url, S3Service service) {
+    protected S3Root(FileURL url, AetherAdapter service) {
         super(url, service);
 
         atts = new SimpleFileAttributes();
