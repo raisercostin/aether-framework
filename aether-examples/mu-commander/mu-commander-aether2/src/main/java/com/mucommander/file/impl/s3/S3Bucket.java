@@ -18,10 +18,10 @@
 
 package com.mucommander.file.impl.s3;
 
+import com.mucommander.aether.adapter.AetherAdapter;
 import com.mucommander.auth.AuthException;
 import com.mucommander.file.*;
 import com.mucommander.io.RandomAccessInputStream;
-import org.jets3t.service.S3Service;
 import org.jets3t.service.S3ServiceException;
 
 import java.io.IOException;
@@ -43,14 +43,14 @@ public class S3Bucket extends S3File {
     private final static FilePermissions DEFAULT_PERMISSIONS = new SimpleFilePermissions(448);   // rwx------
 
 
-    protected S3Bucket(FileURL url, S3Service service, String bucketName) throws AuthException {
+    protected S3Bucket(FileURL url, AetherAdapter service, String bucketName) throws AuthException {
         super(url, service);
 
         this.bucketName = bucketName;
         atts = new S3BucketFileAttributes();
     }
 
-    protected S3Bucket(FileURL url, S3Service service, org.jets3t.service.model.S3Bucket bucket) throws AuthException {
+    protected S3Bucket(FileURL url, AetherAdapter service, org.jets3t.service.model.S3Bucket bucket) throws AuthException {
         super(url, service);
 
         this.bucketName = bucket.getName();

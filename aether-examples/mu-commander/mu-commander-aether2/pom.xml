@@ -76,6 +76,12 @@
 			<groupId>com.tesis.aether.core</groupId>
 			<artifactId>aether-core</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>jets3t</artifactId>
+					<groupId>net.java.dev.jets3t</groupId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 
 		<!-- Se usa la libreria incluida en /lib -->

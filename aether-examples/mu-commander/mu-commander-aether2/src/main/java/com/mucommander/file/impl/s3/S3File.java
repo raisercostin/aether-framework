@@ -18,13 +18,13 @@
 
 package com.mucommander.file.impl.s3;
 
+import com.mucommander.aether.adapter.AetherAdapter;
 import com.mucommander.auth.AuthException;
 import com.mucommander.file.*;
 import com.mucommander.io.RandomAccessOutputStream;
 import com.mucommander.runtime.JavaVersions;
 import org.jets3t.service.Constants;
 import org.jets3t.service.S3ObjectsChunk;
-import org.jets3t.service.S3Service;
 import org.jets3t.service.S3ServiceException;
 
 import java.io.IOException;
@@ -38,15 +38,15 @@ import java.util.Date;
  */
 public abstract class S3File extends ProtocolFile {
 
-    protected org.jets3t.service.S3Service service;
+    protected AetherAdapter service;
 
     protected AbstractFile parent;
     protected boolean parentSet;
 
-    protected S3File(FileURL url, S3Service service) {
+    protected S3File(FileURL url, AetherAdapter service2) {
         super(url);
 
-        this.service = service;
+        this.service = service2;
     }
     
     protected IOException getIOException(S3ServiceException e) throws IOException {
