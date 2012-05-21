@@ -23,7 +23,7 @@ import com.mucommander.auth.AuthException;
 import com.mucommander.file.*;
 import com.mucommander.io.RandomAccessInputStream;
 import org.jets3t.service.S3ServiceException;
-import org.jets3t.service.ServiceException;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -43,10 +43,10 @@ public class S3Bucket extends S3File {
     private final static FilePermissions DEFAULT_PERMISSIONS = new SimpleFilePermissions(448);   // rwx------
 
 
-    protected S3Bucket(FileURL url, AetherAdapter service, String instantiationParams) throws AuthException {
+    protected S3Bucket(FileURL url, AetherAdapter service, String bucketName) throws AuthException {
         super(url, service);
 
-        this.bucketName = instantiationParams;
+        this.bucketName = bucketName;
         atts = new S3BucketFileAttributes();
     }
 
@@ -92,7 +92,7 @@ public class S3Bucket extends S3File {
         try {
             service.deleteBucket(bucketName);
         }
-        catch(ServiceException e) {
+        catch(S3ServiceException e) {
             throw getIOException(e);
         }
     }
@@ -183,20 +183,20 @@ public class S3Bucket extends S3File {
 
         private void setAttributes(org.jets3t.service.model.S3Bucket bucket) {
             setDirectory(true);
-            setDate(bucket.getCreationDate()!= null?bucket.getCreationDate().getTime():System.currentTimeMillis());
+            setDate(bucket.getCreationDate().getTime());
             setPermissions(DEFAULT_PERMISSIONS);
             setOwner(bucket.getOwner().getDisplayName());
         }
 
         private void fetchAttributes() throws AuthException {
             org.jets3t.service.model.S3Bucket bucket;
-            Exception e = null;
+            S3ServiceException e = null;
             try {
                 // Note: unlike getObjectDetails, getBucket returns null when the bucket does not exist
                 // (that is because the corresponding request is a GET on the root resource, not a HEAD on the bucket).
                 bucket = service.getBucket(bucketName);
             }
-            catch(Exception ex) {
+            catch(S3ServiceException ex) {
                 e = ex;
                 bucket = null;
             }
@@ -216,7 +216,7 @@ public class S3Bucket extends S3File {
                 setOwner(null);
 
                 if(e!=null)
-                    throw new AuthException(fileURL);
+                    handleAuthException(e, fileURL);
             }
         }
 
