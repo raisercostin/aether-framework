@@ -190,7 +190,7 @@ public class ClassManipulator {
 	 * @throws NotFoundException
 	 *             en caso de no encontrarse la clase en el pool de clases
 	 */
-	@SuppressWarnings("rawtypes")
+	@SuppressWarnings({ "unchecked" })
 	public static Class addClassCalls(String origName, String nameClassDst, boolean useField) throws CannotCompileException, NotFoundException {
 		System.out.println("\nModifying methods for class: " + origName);
 		logger.info("Modifying methods for class: " + origName);
@@ -202,20 +202,12 @@ public class ClassManipulator {
 		}
 		CtClass cc = pool.get(origName);
 		CtClass cc2 = pool.get(nameClassDst);
-		if (useField) {
-			// addClassField(true, nameClassDst,
-			// getGeneratedFieldName(getClassName(nameClassDst)), "", cc);
-		}
 		CtMethod[] methods2 = cc2.getDeclaredMethods();
 		int i = 0;
 		while (i < methods2.length) {
 			CtMethod method2 = methods2[i];
 			try {
 				CtMethod method = cc.getMethod(method2.getName(), method2.getSignature());
-
-				//if(method.getDeclaringClass().isFrozen()) {
-				//	method.getDeclaringClass().defrost();
-				//}
 				if (!method.toString().contains(" abstract ")) {
 					ClassManipulator.addCall(nameClassDst, method.getName(), !method.getReturnType().getName().equals("void"), method, false, false);
 					System.out.println("Agregada la llamada en el metodo: " + method.getName());

@@ -1,20 +1,21 @@
 package com.tesis.aether.loader.core;
 
-import java.io.*;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.lang.reflect.Method;
-import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.HashMap;
 
-import javassist.CannotCompileException;
-import javassist.NotFoundException;
-
 import javax.xml.parsers.ParserConfigurationException;
-import org.xml.sax.SAXException;
-import com.tesis.aether.loader.classTools.ClassManipulator;
-import com.tesis.aether.loader.conf.ConfigClassLoader;
+
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
+import org.xml.sax.SAXException;
+
+import com.tesis.aether.loader.classTools.ClassManipulator;
+import com.tesis.aether.loader.conf.ConfigClassLoader;
 
 /********************************************************************************
  * Para que el cargador de clases funcione en la aplicacion                     *
@@ -32,7 +33,8 @@ public class JavasistClassLoader extends ClassLoader {
 	 * Logger utilizado por la clase
 	 */
 	private static Logger logger = null;
-
+	
+	private static final String RESOURCES = "resources/";
 	/**
 	 * Contiene el mapeo de clases a ser reemplazadas en la carga. Las clases se
 	 * deben especificar con incluyendo el paquete, por ejemplo:
@@ -266,26 +268,83 @@ public class JavasistClassLoader extends ClassLoader {
 		}
 		return clas;
 	}
+	
+	private boolean existFile (String fileName) {
+		if (fileName == null)
+			return false;
+		File file = new File(fileName);
+		return file.exists();
+	}
 
-	private String findPath(String name, String extension) {
-		String classpath = System.getProperty("java.class.path");
+	private String findPath(String actualPath, String name, String extension) {
 		String fileStub = name.replace('.', '/');
+		
+		//Se busca el archivo de configuración en el path actual
+		System.out.println("***BUSCANDO ARCHIVO EN: " + actualPath);
+		if (existFile (actualPath + fileStub + "." + extension)) {
+			return actualPath;
+		}
+		
+		//Si no se encontro se busca en pathActual/resources
+		String pathResources = actualPath + RESOURCES;
+		System.out.println("BUSCANDO ARCHIVO EN: " + pathResources);
+		if (existFile (pathResources + fileStub + "." + extension)) {
+			return pathResources;
+		}
+		
+		//Si no se encontro se busca en pathActual/src/main/resources
+		pathResources = actualPath + "src/main/" + RESOURCES;
+		System.out.println("BUSCANDO ARCHIVO EN: " + pathResources);
+		if (existFile (pathResources + fileStub + "." + extension)) {
+			return pathResources;
+		}
+		
+		//Se busca en el classpath
+		String classpath = System.getProperty("java.class.path");
 		if (classpath != null) {
+			ArrayList<String> aetherJars = new ArrayList<String>();
+			ArrayList<String> nonAetherJars = new ArrayList<String>();
 			String[] classpathItems = classpath.split(";");
-			boolean search = true;
-			int i = 0;
-			String classpathItem = "";
-			while (search && i < classpathItems.length) {
-				classpathItem = classpathItems[i];
-				System.out.println("BUSCANDO PATH EN: " + classpathItem);
-				String path = classpathItem.replace("\\", "/").concat("/");
-				String fileName = path + fileStub + "." + extension;
-				File file = new File(fileName);
-				if (file.exists()) {
-					System.out.println("PATH DEL ARCHIVO: " + path);
-					return path;
+			
+			for (String item : classpathItems) {
+				if (item.contains("aether-"))
+					if (item.contains("-adapter")) {//Si es un adapter se inserta al principio de la lista
+						System.out.println("***SE AGREGA AL INICIO ADAPTER DE AETHER: " + item);
+						aetherJars.add(0, item);
+					} else {
+						System.out.println("****SE AGREGA AL FINAL JAR DE AETHER: " + item);
+						aetherJars.add(item);//Si no es un adapter se inserta al final de la lista
+					}
+				else {
+					System.out.println("**SE AGREGA JAR FUERA DE AETHER: " + item);
+					nonAetherJars.add(item);//Es un jar que no corresponde a aether
 				}
-				i++;
+			}
+			
+			//Se busca en los jars correspondientes a aether
+			if (aetherJars != null) {
+				for (String item : aetherJars) {
+					System.out.println("BUSCANDO PATH EN JARS DE AETHER: " + item);
+					String path = item.replace("\\", "/").concat("/");
+					String fileName = path + fileStub + "." + extension;
+					if (existFile(fileName)) {
+						System.out.println("CARGANDO EL ARCHIVO DESDE: " + path);
+						return path;
+					}
+				}
+			}
+
+			//Si no se encontro se busca en el resto de los archivos del classpath
+			if (nonAetherJars != null) {
+				for (String item : nonAetherJars) {
+					System.out.println("BUSCANDO PATH EN JARS FUERA DE AETHER: " + item);
+					String path = item.replace("\\", "/").concat("/");
+					String fileName = path + fileStub + "." + extension;
+					if (existFile(fileName)) {
+						System.out.println("CARGANDO EL ARCHIVO DESDE: " + path);
+						return path;
+					}
+				}
 			}
 		}
 		System.out.println("PATH DEL ARCHIVO NO ENCONTRADO");
@@ -303,7 +362,6 @@ public class JavasistClassLoader extends ClassLoader {
 	 *             en caso de no encontrarse la clase
 	 */
 	public Class<?> loadClass2(String name) throws ClassNotFoundException {
-		ClassManipulator fa;
 		Class<?> clas = null;
 		// Se busca si la clase ya fue cargada
 		clas = findLoadedClass(name);
@@ -371,8 +429,16 @@ public class JavasistClassLoader extends ClassLoader {
 
 			// carga de clases a mapear
 			String actualPath = new File(".").getAbsolutePath();// System.getProperty("user.dir");
-			System.out.println("Current Path: " + actualPath);
-			String path = findPath("configClassLoader", "xml");
+			if (actualPath.endsWith("."))
+				actualPath = actualPath.substring(0, actualPath.length() - 1);
+			
+			String pathActual = actualPath.replace('\\', '/');
+
+			if (!pathActual.endsWith("/")) //Si el path no termina con / se la agregamos
+				pathActual += "/";
+			
+			System.out.println("Current Path: " + pathActual);
+			String path = findPath(pathActual, "configClassLoader", "xml");
 			if (path != null) {
 				try {
 					loadClassMapper(path + "configClassLoader.xml");
