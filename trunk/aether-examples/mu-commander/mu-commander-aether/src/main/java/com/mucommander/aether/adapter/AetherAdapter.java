@@ -1,19 +1,22 @@
 package com.mucommander.aether.adapter;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.logging.Logger;
 
 import org.apache.commons.io.FilenameUtils;
-import org.jets3t.service.S3ServiceException;
 import org.jets3t.service.S3ObjectsChunk;
+import org.jets3t.service.S3ServiceException;
 import org.jets3t.service.model.S3Bucket;
 import org.jets3t.service.model.S3Object;
 import org.jets3t.service.model.S3Owner;
 import org.jets3t.service.utils.ServiceUtils;
 
+import com.tesis.aether.core.exception.ConnectionException;
 import com.tesis.aether.core.exception.DeleteException;
 import com.tesis.aether.core.exception.FileNotExistsException;
 import com.tesis.aether.core.exception.MethodNotSupportedException;
@@ -27,7 +30,13 @@ public class AetherAdapter {
 	private ExtendedStorageService	service = ServiceFactory.instance.getFirstStorageService();
 
 	public AetherAdapter() throws S3ServiceException {
-		
+		try {
+			service.connect(null);
+		} catch (ConnectionException e) {
+			throw new S3ServiceException(e);
+		} catch (MethodNotSupportedException e) {
+			throw new S3ServiceException(e);
+		}
 	}
 
 	public S3Object getObject(String bucketName, String objectKey) throws S3ServiceException {
@@ -217,9 +226,88 @@ public class AetherAdapter {
 		return (S3Object[]) jCloudsMetadata.toArray(new S3Object[jCloudsMetadata.size()]);
 	}
 
+	private String getDirectory(String object) {
+		String directory = "";
+		try {
+			if (object.endsWith("/"))
+				return object;
+			String aux = (object.startsWith("/") ? object.substring(1) : object);
+			String[] st = aux.split("/");
+			if (st.length > 1) {
+				for (int i = 0; i < st.length - 1; i++) {
+					directory += st[i] + "/";
+				}
+			}
+		} catch (Exception e) {
+			Logger.getAnonymousLogger().warning(
+					"Error al obtener el directorio de " + object
+							+ "   -  Error: " + e.getMessage());
+		}
+		return directory;
+	}
+
+	private String getNameObject(String object) {
+	String aux = object.replace("/", "/*/");
+		String[] st = aux.split("/");
+		if (st.length > 0 && !st[st.length - 1].equals("*")) {
+			if (st.length > 1) {
+				return st[st.length -1];
+			} else {
+				return st[st.length - 1];
+			}
+		} else {
+			return "";
+		}
+	}
+	
+	@SuppressWarnings("unchecked")
 	public Map<String, Object> copyObject(String bucketName, String objectKey,
 			String bucketName2, S3Object destObject, boolean b) throws S3ServiceException {
-		return null;
+        
+		String nameDestObject = destObject.getKey();
+		
+		if (bucketName.equals(bucketName2)) {
+			String dir1 = getDirectory(objectKey);
+			String name1 = getNameObject(objectKey);
+			String dir2 = getDirectory(nameDestObject);
+			String name2 = getNameObject(nameDestObject);
+			if (dir1.equals(dir2)) {
+				if (name1.equals(name2))
+					throw new S3ServiceException("No se puede copiar un elemento sobre si mismo.");
+				if (!"".equals(name1) && !"".equals(name2)) {
+					try {
+						//Se debe descargar, renombrar y volver  asubir
+						String fileName = System.currentTimeMillis() + name2;
+						File f = File.createTempFile(fileName, "");
+						f = new File((FilenameUtils.getFullPathNoEndSeparator(f.getCanonicalPath())));
+						if (service.checkFileExists(bucketName, objectKey)) {
+							service.downloadFileToDirectory(bucketName, objectKey, f);
+							File to = new File(f, name2);
+							to.deleteOnExit();
+							f.renameTo(to);
+							service.upload(to, bucketName2, dir2);
+							return (Map<String, Object>) getObjectDetails(bucketName2, destObject.getKey()).getMetadataMap();
+						} else {
+							if (service.checkDirectoryExists(bucketName, objectKey)) {
+								//por el momento queda sin hacer
+							} else
+								throw new S3ServiceException("Error desconocido al copiar los objetos.");
+						}
+					} catch (Exception e) {
+						throw new S3ServiceException(e);
+					}
+				} else {
+					throw new S3ServiceException("Error en los nombres de los archivos.");
+				}
+			}
+		}
+		try {
+			service.copyFile(bucketName, objectKey, bucketName2, 
+					destObject.getKey());
+			return (Map<String, Object>) getObjectDetails(bucketName2, destObject.getKey()).getMetadataMap();
+		} catch (Exception e) {
+			throw new S3ServiceException(e);
+		}
 	}
 
 	public S3Bucket getBucket(String bucketName) throws S3ServiceException {
