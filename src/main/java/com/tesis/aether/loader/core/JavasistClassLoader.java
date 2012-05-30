@@ -2,6 +2,8 @@ package com.tesis.aether.loader.core;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.lang.reflect.Method;
 import java.net.URL;
@@ -16,6 +18,7 @@ import org.apache.commons.io.FilenameUtils;
 import org.xml.sax.SAXException;
 
 import com.tesis.aether.loader.classTools.ClassManipulator;
+import com.tesis.aether.loader.classTools.JarResources;
 import com.tesis.aether.loader.conf.ConfigClassLoader;
 
 /********************************************************************************
@@ -33,12 +36,16 @@ public class JavasistClassLoader extends ClassLoader {
 	/**
 	 * Logger utilizado por la clase
 	 */
-//	private static Logger logger = null;
-	
+	// private static Logger logger = null;
+
 	private static final String RESOURCES = "resources/";
-	
+
 	private static final String MAIN_SRC = "src/main/";
 	
+	private static final String CONFIG_FILE_NAME = "configClassLoader";
+	
+	private static final String CONFIG_FILE_EXTENSION = "xml";
+
 	/**
 	 * Contiene el mapeo de clases a ser reemplazadas en la carga. Las clases se
 	 * deben especificar con incluyendo el paquete, por ejemplo:
@@ -74,7 +81,8 @@ public class JavasistClassLoader extends ClassLoader {
 	 * @throws ParserConfigurationException
 	 *             excepcion al parsear el archivo de configuracion
 	 */
-	private void loadClassMapper(String fromPath) throws SAXException, IOException, ParserConfigurationException {
+	private void loadClassMapper(String fromPath) throws SAXException,
+			IOException, ParserConfigurationException {
 		ConfigClassLoader conf = new ConfigClassLoader(fromPath);
 		classExceptions = conf.getClassExceptions();
 	}
@@ -181,7 +189,8 @@ public class JavasistClassLoader extends ClassLoader {
 		String newName = className;
 		if (isExceptedClass(className)) {
 			newName = classExceptions.get(className);
-			System.out.println("Changing class name '" + className + "' to '" + newName + "'");
+			System.out.println("Changing class name '" + className + "' to '"
+					+ newName + "'");
 		}
 		return newName;
 	}
@@ -241,18 +250,22 @@ public class JavasistClassLoader extends ClassLoader {
 	 * @throws ClassNotFoundException
 	 *             en caso de no encontrar la clase
 	 */
-	private Class<?> loadClass(String javaFilename, String classFilename, String name) throws ClassNotFoundException {
+	private Class<?> loadClass(String javaFilename, String classFilename,
+			String name) throws ClassNotFoundException {
 		File javaFile = new File(javaFilename);
 		File classFile = new File(classFilename);
 		Class<?> clas = null;
 		// Primero vemos si es necesario compilar. Si existe el codigo
 		// java y no existe el .class o el .class esta desactualizado
 		// entonces procedemos a compilarlo
-		if (javaFile.exists() && (!classFile.exists() || javaFile.lastModified() > classFile.lastModified())) {
+		if (javaFile.exists()
+				&& (!classFile.exists() || javaFile.lastModified() > classFile
+						.lastModified())) {
 			try {
 				// Si no se puede realizar la compilacion se lanza una excepcion
 				if (!compile(javaFilename) || !classFile.exists()) {
-					throw new ClassNotFoundException("Compile failed: " + javaFilename);
+					throw new ClassNotFoundException("Compile failed: "
+							+ javaFilename);
 				}
 			} catch (IOException ie) {
 				// Lanzamos la excepcion en caso de haber ocurrido algun
@@ -268,118 +281,167 @@ public class JavasistClassLoader extends ClassLoader {
 		} catch (IOException ie) {
 			// No es un error ya que puede ser que tratemos de cargar
 			// una biblioteca
-			System.out.println("Error al cargar el arreglo de bytes, se continua con la carga de la clase... Error: " + ie.getMessage());
+			// System.out.println("Error al cargar el arreglo de bytes, se continua con la carga de la clase... Error: "
+			// + ie.getMessage());
 		}
 		return clas;
 	}
-	
-	private boolean existFile (String fileName) {
+
+	private boolean existFile(String fileName) {
 		if (fileName == null)
 			return false;
 		File file = new File(fileName);
 		return file.exists();
 	}
 
-	private String findPathInJar (String jarFile, String fileName) {
+	private boolean createFileFromBytes(File toRet, byte[] arr) {
 		try {
-			if( jarFile != null ) {
-			    URL jar = (new File (jarFile)).toURI().toURL();
-			    ZipInputStream zip = new ZipInputStream(jar.openStream());
-			    ZipEntry ze = null;
-		        String entryName;
-
-		        while( ( ze = zip.getNextEntry() ) != null ) {
-			        entryName = ze.getName();
-			    	System.out.println("=====>>> jar entry: " + entryName);
-			        if( entryName.equals(fileName) ) {
-			            return entryName;
-			        }
-			    }
-			 }
-		} catch (Exception e) {
-			return null;
+			FileOutputStream fos = new FileOutputStream(toRet);
+			fos.write(arr);
+			fos.close();
+			return true;
+		} catch (FileNotFoundException ex) {
+			System.out.println("FileNotFoundException : " + ex);
+		} catch (IOException ioe) {
+			System.out.println("IOException : " + ioe);
 		}
+		return false;
+	}
+
+	private String findPathInJar(String jarFile, String fileName, String ext) {
+		JarResources jr = new JarResources(jarFile);
+		byte[] array = jr.getResource(fileName + "." + ext);
+		String pathFile = System.currentTimeMillis() + "";
+		try {
+			File f = File.createTempFile(fileName, "." + ext);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		// try {
+		// if( jarFile != null ) {
+		// URL jar = (new File (jarFile)).toURI().toURL();
+		// ZipInputStream zip = new ZipInputStream(jar.openStream());
+		// ZipEntry ze = null;
+		// String entryName;
+		//
+		// while( ( ze = zip.getNextEntry() ) != null ) {
+		// entryName = ze.getName();
+		// System.out.println("=====>>> jar entry: " + entryName);
+		// if( entryName.equals(fileName) ) {
+		// //Crear un archivo temporal con la configuracion
+		// JarResources jr = new JarResources(jarFile);
+		// jr.getResource(fileName);
+		// //Retornar el archivo temporal
+		// return jarFile + "!";
+		// }
+		// }
+		// }
+		// } catch (Exception e) {
+		// return null;
+		// }
 		return null;
 	}
-	
+
 	/**
 	 * Busca el path del archivo especificado por parametros
-	 * @param actualPath path actual 
-	 * @param name nombre del archivo a buscar
-	 * @param extension extension del archivo a buscar (sin el '.')
+	 * 
+	 * @param actualPath
+	 *            path actual
+	 * @param name
+	 *            nombre del archivo a buscar
+	 * @param extension
+	 *            extension del archivo a buscar (sin el '.')
 	 * @return
 	 */
 	private String findPath(String actualPath, String name, String extension) {
 		String fileStub = name.replace('.', '/');
-		
-		//Se busca el archivo de configuración en el path actual
+
+		// Se busca el archivo de configuración en el path actual
 		System.out.println("***BUSCANDO ARCHIVO EN: " + actualPath);
-		if (existFile (actualPath + fileStub + "." + extension)) {
-			return actualPath;
+		if (existFile(actualPath + fileStub + "." + extension)) {
+			return actualPath + fileStub + "." + extension;
 		}
-		
-		//Si no se encontro se busca en pathActual/resources
+
+		// Si no se encontro se busca en pathActual/resources
 		String pathResources = actualPath + RESOURCES;
 		System.out.println("BUSCANDO ARCHIVO EN: " + pathResources);
-		if (existFile (pathResources + fileStub + "." + extension)) {
-			return pathResources;
+		if (existFile(pathResources + fileStub + "." + extension)) {
+			return pathResources + fileStub + "." + extension;
 		}
-		
-		//Si no se encontro se busca en pathActual/src/main/resources
+
+		// Si no se encontro se busca en pathActual/src/main/resources
 		pathResources = actualPath + MAIN_SRC + RESOURCES;
 		System.out.println("BUSCANDO ARCHIVO EN: " + pathResources);
-		if (existFile (pathResources + fileStub + "." + extension)) {
-			return pathResources;
+		if (existFile(pathResources + fileStub + "." + extension)) {
+			return pathResources + fileStub + "." + extension;
 		}
-		
-		//Se busca en el classpath
+
+		// Se busca en el classpath
 		String classpath = System.getProperty("java.class.path");
+		System.out.println("Classpath: " + classpath);
 		if (classpath != null) {
 			ArrayList<String> aetherJars = new ArrayList<String>();
 			ArrayList<String> nonAetherJars = new ArrayList<String>();
 			String[] classpathItems = classpath.split(";");
-			
+
 			for (String item : classpathItems) {
 				if (item.contains("aether-"))
-					if (item.contains("-adapter")) {//Si es un adapter se inserta al principio de la lista
-						System.out.println("***SE AGREGA AL INICIO ADAPTER DE AETHER: " + item);
+					if (item.contains("-adapter")) {// Si es un adapter se
+													// inserta al principio de
+													// la lista
+						System.out
+								.println("***SE AGREGA AL INICIO ADAPTER DE AETHER: "
+										+ item);
 						aetherJars.add(0, item);
 					} else {
-						System.out.println("****SE AGREGA AL FINAL ELEMENTO DE AETHER: " + item);
-						aetherJars.add(item);//Si no es un adapter se inserta al final de la lista
+						System.out
+								.println("****SE AGREGA AL FINAL ELEMENTO DE AETHER: "
+										+ item);
+						aetherJars.add(item);// Si no es un adapter se inserta
+												// al final de la lista
 					}
 				else {
-					System.out.println("**SE AGREGA ELEMENTO FUERA DE AETHER: " + item);
-					nonAetherJars.add(item);//Es un jar que no corresponde a aether
+					System.out.println("**SE AGREGA ELEMENTO FUERA DE AETHER: "
+							+ item);
+					nonAetherJars.add(item);// Es un jar que no corresponde a
+											// aether
 				}
 			}
-			
-			//Se busca en los jars correspondientes a aether
+
+			// Se busca en los jars correspondientes a aether
 			if (aetherJars != null) {
 				for (String item : aetherJars) {
-					System.out.println("BUSCANDO PATH EN ELEMENTO DE AETHER: " + item);
+					System.out.println("BUSCANDO PATH EN ELEMENTO DE AETHER: "
+							+ item);
 					String path = item.replace('\\', '/');
 					if (path.endsWith(".jar")) {
-						findPathInJar(path, fileStub + "." + extension);
+						String retPath = findPathInJar(path, fileStub, extension);
+						if (retPath != null)
+							return retPath;
 					} else {
 						String fileName = path + fileStub + "." + extension;
-						path = path.concat("/");						
+						path = path.concat("/");
 						if (existFile(fileName)) {
-							System.out.println("CARGANDO EL ARCHIVO DESDE: " + path);
+							System.out.println("CARGANDO EL ARCHIVO DESDE: "
+									+ path);
 							return path;
 						}
 					}
 				}
 			}
 
-			//Si no se encontro se busca en el resto de los archivos del classpath
+			// Si no se encontro se busca en el resto de los archivos del
+			// classpath
 			if (nonAetherJars != null) {
 				for (String item : nonAetherJars) {
-					System.out.println("BUSCANDO PATH EN ELEMENTOS FUERA DE AETHER: " + item);
+					System.out
+							.println("BUSCANDO PATH EN ELEMENTOS FUERA DE AETHER: "
+									+ item);
 					String path = item.replace('\\', '/').concat("/");
 					String fileName = path + fileStub + "." + extension;
 					if (existFile(fileName)) {
-						System.out.println("CARGANDO EL ARCHIVO DESDE: " + path);
+						System.out
+								.println("CARGANDO EL ARCHIVO DESDE: " + path);
 						return path;
 					}
 				}
@@ -418,12 +480,17 @@ public class JavasistClassLoader extends ClassLoader {
 					classpathItem = classpathItems[i];
 					// Construimos los objetos que apunten al codigo fuente
 					// y al .class
-					String javaFilename = classpathItem.replace("\\", "/").concat("/") + fileStub + ".java";
-					String classFilename = classpathItem.replace("\\", "/").concat("/") + fileStub + ".class";
+					String javaFilename = classpathItem.replace("\\", "/")
+							.concat("/")
+							+ fileStub + ".java";
+					String classFilename = classpathItem.replace("\\", "/")
+							.concat("/")
+							+ fileStub + ".class";
 					// Se trata de acargar la clase usando el elemento del
 					// classpath
 
-					System.out.println("clas = loadClass(" + javaFilename + ", " + classFilename + ", " + name + ");");
+					// System.out.println("clas = loadClass(" + javaFilename +
+					// ", " + classFilename + ", " + name + ");");
 					clas = loadClass(javaFilename, classFilename, name);
 					if (clas != null) {
 						search = false;
@@ -462,30 +529,30 @@ public class JavasistClassLoader extends ClassLoader {
 	public Class<?> loadClass(String origName) throws ClassNotFoundException {
 		if (loadConfigurations) {
 			loadConfigurations = false;
-//			logger = Logger.getLogger("default");
-//			PropertyConfigurator.configure("resources/log4j.properties");
-
 			// carga de clases a mapear
 			String actualPath;
-			loadClass2("org.apache.commons.io.FilenameUtils");
-			actualPath = FilenameUtils.getPathNoEndSeparator(new File(".").getAbsolutePath());
-			
+			actualPath = FilenameUtils.getPathNoEndSeparator(new File(".")
+					.getAbsolutePath());
+
 			actualPath = actualPath.replace('\\', '/');
 
-			if (!actualPath.endsWith("/")) //Si el path no termina con / se la agregamos
+			if (!actualPath.endsWith("/")) // Si el path no termina con / se la
+											// agregamos
 				actualPath += "/";
-			
+
 			System.out.println("Current Path: " + actualPath);
-			String path = findPath(actualPath, "configClassLoader", "xml");
-			if (path != null) {
+			String fullPath = findPath(actualPath, CONFIG_FILE_NAME, CONFIG_FILE_EXTENSION);
+			if (fullPath != null) {
 				try {
-					loadClassMapper(path + "configClassLoader.xml");
+					loadClassMapper(fullPath);
 				} catch (Exception e) {
-					System.out.println("Error al cargar la configuracion de mapeo de clases y paquetes.");
+					System.out
+							.println("Error al cargar la configuracion de mapeo de clases y paquetes.");
 					System.out.println(e);
 				}
 			} else {
-				System.out.println("Error al cargar la configuracion de mapeo de clases y paquetes. Archivo no encontrado.");
+				System.out
+						.println("Error al cargar la configuracion de mapeo de clases y paquetes. Archivo no encontrado.");
 			}
 		}
 		System.out.println("loading " + origName + "...");
@@ -516,7 +583,8 @@ public class JavasistClassLoader extends ClassLoader {
 	 *            Argumentos pasados en la llamada al metodo
 	 * @throws Exception
 	 */
-	public void invoke(String className, String methodName, String args[], Class<?>[] argsTypes) throws Exception {
+	public void invoke(String className, String methodName, String args[],
+			Class<?>[] argsTypes) throws Exception {
 		// Cargamos la clase a traves del class loader
 		Class<?> clas = this.loadClass(className);
 		// Usamos reflexion para llamar al metodo y pasarle los parametros
@@ -536,10 +604,10 @@ public class JavasistClassLoader extends ClassLoader {
 
 			}
 			file = new File("src/main/resources/" + name);
-			if(file.exists()) {
+			if (file.exists()) {
 				return file.toURI().toURL();
 			}
-			
+
 		} catch (Exception e) {
 		}
 		return null;
