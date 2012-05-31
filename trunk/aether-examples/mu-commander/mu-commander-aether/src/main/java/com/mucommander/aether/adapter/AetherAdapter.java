@@ -281,11 +281,15 @@ public class AetherAdapter {
 						File f = File.createTempFile(fileName, "");
 						f = new File((FilenameUtils.getFullPathNoEndSeparator(f.getCanonicalPath())));
 						if (service.checkFileExists(bucketName, objectKey)) {
+							System.out.println(">>> descargando " + objectKey);
 							service.downloadFileToDirectory(bucketName, objectKey, f);
 							File to = new File(f, name2);
+							f = new File(f.getCanonicalPath() + "/" + objectKey);
 							to.deleteOnExit();
 							f.renameTo(to);
+							System.out.println(">>> subiendo " + name2);
 							service.upload(to, bucketName2, dir2);
+							System.out.println(">>> Fin de subida " + objectKey);
 							return (Map<String, Object>) getObjectDetails(bucketName2, destObject.getKey()).getMetadataMap();
 						} else {
 							if (service.checkDirectoryExists(bucketName, objectKey)) {
