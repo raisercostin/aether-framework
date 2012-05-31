@@ -52,6 +52,7 @@ public abstract class S3File extends ProtocolFile {
 	protected static HashMap<String, ArrayList<CloudStoreObject>> files = null;
 	protected AbstractFile parent;
 	protected boolean parentSet;
+	protected static boolean existBucket = true;
 
 	protected S3File(FileURL url, BlobStoreSupport service) {
 		super(url);
@@ -60,16 +61,18 @@ public abstract class S3File extends ProtocolFile {
 	}
 
 	protected void loadFileList(String bucket) {
-
 		try {
 			files = new HashMap<String, ArrayList<CloudStoreObject>>();
 			Iterable<CloudStoreObject> listFiles = service.listFiles(bucket);
-			for (CloudStoreObject object : listFiles) {
-				processObject(object, files);
+			if (listFiles != null) {
+				for (CloudStoreObject object : listFiles) {
+					processObject(object, files);
+				}
 			}
-
+			existBucket = true;
 		} catch (Exception e) {
 			e.printStackTrace();
+			existBucket = false;
 		}
 	}
 	
