@@ -198,9 +198,10 @@ public class S3Bucket extends S3File {
             try {
                 // Note: unlike getObjectDetails, getBucket returns null when the bucket does not exist
                 // (that is because the corresponding request is a GET on the root resource, not a HEAD on the bucket).
-   				loadFileList(bucketName);
+    			if (files == null)
+    				loadFileList(bucketName);
             	
-    			exist = existBucket;
+    			exist = files.size()>0;
     			
             } catch(Exception ex) {
                 e = ex;
