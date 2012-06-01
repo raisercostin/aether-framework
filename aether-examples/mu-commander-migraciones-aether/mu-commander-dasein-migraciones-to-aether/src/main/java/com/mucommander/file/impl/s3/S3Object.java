@@ -206,10 +206,10 @@ public class S3Object extends S3File {
 			atts.setExists(false);
 			atts.setDirectory(false);
 			atts.setSize(0);
+			loadFileList(bucketName);
 		} catch (Exception e) {
 			throw getIOException(e);
 		}
-		loadFileList(bucketName);
 	}
 
 	@Override
