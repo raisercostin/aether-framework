@@ -98,6 +98,10 @@ public class LibcloudAetherAdapter extends AetherFrameworkAdapter {
 		Map<String, String> metadata = new HashMap<String, String>();
 		metadata.put("Last-Modified", storageObject.getLastModified().toString());
 		metadata.put("ETag", storageObject.getMd5hash());
+		if (storageObject.getLength() != null) 
+			metadata.put("Content-Length", storageObject.getLength().toString());
+		else
+			metadata.put("Content-Length", "0");
 		return metadata;
 	}
 
