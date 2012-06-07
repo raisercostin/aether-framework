@@ -261,7 +261,10 @@ public class S3Object extends S3File {
 			Map<Object, Object> options = new HashMap<Object, Object>();
 			options.put(S3Adapter.Type.SRC_BUCKET, bucketName);
 			//bucketName + "/" + getObjectKey(false, bucketName)
-        	service.fetchItem(getPath(), options);
+			String path = getPath();
+			if (!path.endsWith("/"))
+				path += "/";
+        	service.fetchItem(path, options);
         	
 //            atts.setAttributes(service.putObject(bucketName, Map<String, String>));
             atts.setExists(true);
@@ -287,7 +290,7 @@ public class S3Object extends S3File {
 			// Make sure that the directory is empty, abort if not.
 			// Note that we must not count the parent directory (this file).
 			if (isDirectory()) {
-				ArrayList<Map<String, String>> objects =files.get(bucketName + "/" + getObjectKey(false, bucketName)); 
+				ArrayList<Map<String, String>> objects =files.get(fullName); 
 				if (objects == null)
 					throw new IOException();
 
