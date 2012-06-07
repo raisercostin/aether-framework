@@ -1,5 +1,6 @@
 package com.tesis.aether.adapters.jets3t;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
@@ -424,10 +425,104 @@ public class JetS3tAetherFrameworkAdapter extends AetherFrameworkAdapter {
 	public StorageOwner getAccountOwnerImpl() throws ServiceException {
 		return null;
 	}
+	
+	private String getDirectory(String object) {
+		String directory = "";
+		try {
+			if (object.endsWith("/"))
+				return object;
+			String aux = (object.startsWith("/") ? object.substring(1) : object);
+			String[] st = aux.split("/");
+			if (st.length > 1) {
+				for (int i = 0; i < st.length - 1; i++) {
+					directory += st[i] + "/";
+				}
+			}
+		} catch (Exception e) {
+			System.out.println(
+					"Error al obtener el directorio de " + object
+							+ "   -  Error: " + e.getMessage());
+		}
+		return directory;
+	}
 
-	public Map<String, Object> copyObjectImpl(String sourceBucketName, String sourceObjectKey, String destinationBucketName, String destinationObjectKey, AccessControlList acl, Map<String, Object> destinationMetadata, Calendar ifModifiedSince, Calendar ifUnmodifiedSince, String[] ifMatchTags, String[] ifNoneMatchTags,
-			String versionId, String destinationObjectStorageClass) throws ServiceException {
-		return null;
+	private String getNameObject(String object) {
+	String aux = object.replace("/", "/*/");
+		String[] st = aux.split("/");
+		if (st.length > 0 && !st[st.length - 1].equals("*")) {
+			if (st.length > 1) {
+				return st[st.length -1];
+			} else {
+				return st[st.length - 1];
+			}
+		} else {
+			return "";
+		}
+	}
+
+	public Map<String, Object> copyObjectImpl(String bucketName,
+			String objectKey, String bucketName2,
+			String nameDestObject, AccessControlList acl,
+			Map<String, Object> destinationMetadata, Calendar ifModifiedSince,
+			Calendar ifUnmodifiedSince, String[] ifMatchTags,
+			String[] ifNoneMatchTags, String versionId,
+			String destinationObjectStorageClass) throws ServiceException {
+
+		if (bucketName.equals(bucketName2)) {
+			String dir1 = getDirectory(objectKey);
+			String name1 = getNameObject(objectKey);
+			String dir2 = getDirectory(nameDestObject);
+			String name2 = getNameObject(nameDestObject);
+			if (dir1.equals(dir2)) {
+				if (name1.equals(name2))
+					throw new S3ServiceException(
+							"No se puede copiar un elemento sobre si mismo.");
+				if (!"".equals(name1) && !"".equals(name2)) {
+					try {
+						// Se debe descargar, renombrar y volver asubir
+						String fileName = System.currentTimeMillis() + name2;
+						File f = File.createTempFile(fileName, "");
+						f = new File((FilenameUtils.getFullPathNoEndSeparator(f
+								.getCanonicalPath())));
+						if (service.checkFileExists(bucketName, objectKey)) {
+							System.out.println(">>> descargando " + objectKey);
+							service.downloadFileToDirectory(bucketName,
+									objectKey, f);
+							File to = new File(f, name2);
+							f = new File(f.getCanonicalPath() + "/" + objectKey);
+							to.deleteOnExit();
+							f.renameTo(to);
+							System.out.println(">>> subiendo " + name2);
+							service.upload(to, bucketName2, dir2);
+							System.out
+									.println(">>> Fin de subida " + objectKey);
+							return (Map<String, Object>) getObjectDetails(
+									bucketName2, nameDestObject)
+									.getMetadataMap();
+						} else {
+							if (service.checkDirectoryExists(bucketName,
+									objectKey)) {
+								// por el momento queda sin hacer
+							} else
+								throw new S3ServiceException(
+										"Error desconocido al copiar los objetos.");
+						}
+					} catch (Exception e) {
+						throw new S3ServiceException(e);
+					}
+				} else {
+					throw new S3ServiceException(
+							"Error en los nombres de los archivos.");
+				}
+			}
+		}
+		try {
+			service.copyFile(bucketName, objectKey, bucketName2, nameDestObject);
+			return (Map<String, Object>) getObjectDetails(bucketName2,
+					nameDestObject).getMetadataMap();
+		} catch (Exception e) {
+			throw new S3ServiceException(e);
+		}
 	}
 
 	public void putBucketAclImpl(String bucketName, AccessControlList acl) throws ServiceException {
