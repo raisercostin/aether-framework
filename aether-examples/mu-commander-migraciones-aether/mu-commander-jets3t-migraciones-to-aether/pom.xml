@@ -55,9 +55,7 @@
 							<classpathPrefix>lib/</classpathPrefix>
 						</manifest>
 						<manifestEntries>
-							<Class-Path>. lib/aether-core-0.0.1-SNAPSHOT.jar
-								lib/aether-cloudloop-adapter-0.0.1-SNAPSHOT.jar
-								lib/aether-loader-0.0.1-SNAPSHOT.jar
+							<Class-Path>. 
 								lib/j2ssh.jar lib/J7Zip.jar
 								lib/jmdns.jar lib/jcifs.jar lib/j2ssh.jar lib/yanfs.jar
 								lib/commons-net-ftp.jar lib/jna.jar</Class-Path> <!-- HERE IS THE IMPORTANT BIT -->
@@ -109,11 +107,6 @@
 			<groupId>commons-httpclient</groupId>
 			<artifactId>commons-httpclient</artifactId>
 			<version>3.1</version>
-		</dependency>
-		<dependency>
-			<groupId>commons-io</groupId>
-			<artifactId>commons-io</artifactId>
-			<version>1.4</version>
 		</dependency>
 
 		<dependency>
