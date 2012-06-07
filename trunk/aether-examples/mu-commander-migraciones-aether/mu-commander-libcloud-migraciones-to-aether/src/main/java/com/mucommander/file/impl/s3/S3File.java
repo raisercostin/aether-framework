@@ -135,6 +135,8 @@ public abstract class S3File extends ProtocolFile {
 
 		if (objs == null)
 			return null;
+		if (objs.size() == 0)
+			return new HashMap<String, String> ();
 		Map<String, String> fileObject = null;
 		for (Map<String, String> cso : objs) {
 			if (isDirectory) {
