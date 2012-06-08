@@ -354,7 +354,7 @@ public class S3Object extends S3File {
         if (!isDirectory()) {
     		try {
 				InputStream stream = service.getBlob(bucketName, getObjectKey(false)).getPayload().getInput();
-				uploadInputStream(stream, destObjectFile.bucketName, getDirectory(destObjectFile.getObjectKey(false)!=null?destObjectFile.getObjectKey(false):getObjectKey(false)), getObjectKey(false), this.getSize());	
+				uploadInputStream(stream, destObjectFile.bucketName, getDirectory(destObjectFile.getObjectKey(false)!=null?destObjectFile.getObjectKey(false):getObjectKey(false)), destObjectFile.getObjectKey(false), this.getSize());	
     		} catch (Exception e) {
     			Logger.getAnonymousLogger().info(getObjectKey(false) + " could not be copied to " + destFile.getName());
     		}
@@ -859,7 +859,7 @@ public class S3Object extends S3File {
                     // Object does exist on the server
                     setExists(true);
             	} else {
-            		//if (service.directoryExists(bucketName, getObjectKey())) { //Es una carpeta
+            		if (service.directoryExists(bucketName, getObjectKey())) { //Es una carpeta
                         setExists(true);
 
                         setDirectory(true);
@@ -867,7 +867,14 @@ public class S3Object extends S3File {
                         setDate(0);
                         setPermissions(FilePermissions.DEFAULT_DIRECTORY_PERMISSIONS);
                         setOwner(null);
-            		//}
+            		} else {
+                        setExists(false);
+                        setDirectory(false);
+                        setSize(0);
+                        setDate(0);
+                        setPermissions(FilePermissions.DEFAULT_DIRECTORY_PERMISSIONS);
+                        setOwner(null);
+            		}
             	}
             }
             catch(Exception e) {
