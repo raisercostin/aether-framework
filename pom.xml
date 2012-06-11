@@ -50,16 +50,6 @@
 	</properties>
 
 	<dependencies>
-	<!-- ESTO NO VAAAAAA SOLO PARA TEST-->
-			<dependency>
-			<groupId>com.tesis.aether.adapters.jets3t</groupId>
-			<artifactId>aether-jets3t-adapter</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-	
-	
-	
-	
 		<dependency>
 			<groupId>commons-io</groupId>
 			<artifactId>commons-io</artifactId>

@@ -1,0 +1,12 @@
+Loader:
+	Nombre del archivo de configuración:
+		configClassLoader.xml
+		
+	Orden de búsqueda del archivo:
+		1º path actual
+		2º path actual/resources
+		3º path actual/src/main/resources
+		4º path actual/lib/<jars de aether adapters>
+		5º items del classpath (solo en los jars de adapters de aether y en las carpetas)
+		
+	

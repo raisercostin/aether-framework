@@ -4,14 +4,12 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.FilenameFilter;
 import java.io.IOException;
 import java.lang.reflect.Method;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.zip.ZipEntry;
-import java.util.zip.ZipInputStream;
-
 import javax.xml.parsers.ParserConfigurationException;
 
 import org.apache.commons.io.FilenameUtils;
@@ -33,12 +31,9 @@ import com.tesis.aether.loader.conf.ConfigClassLoader;
  * desactualizadas y las carga para ejecucion
  */
 public class JavasistClassLoader extends ClassLoader {
-	/**
-	 * Logger utilizado por la clase
-	 */
-	// private static Logger logger = null;
-
 	private static final String RESOURCES = "resources/";
+
+	private static final String LIB = "lib/";
 
 	private static final String MAIN_SRC = "src/main/";
 	
@@ -311,9 +306,11 @@ public class JavasistClassLoader extends ClassLoader {
 	private String findPathInJar(String jarFile, String fileName, String ext) {
 		JarResources jr = new JarResources(jarFile);
 		byte[] array = jr.getResource(fileName + "." + ext);
-		String pathFile = System.currentTimeMillis() + "";
+		//String pathFile = System.currentTimeMillis() + "";
+		File f = null;
 		try {
-			File f = File.createTempFile(fileName, "." + ext);
+			f = File.createTempFile(fileName, "." + ext);
+			createFileFromBytes(f, array);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -339,7 +336,7 @@ public class JavasistClassLoader extends ClassLoader {
 		// } catch (Exception e) {
 		// return null;
 		// }
-		return null;
+		return f!=null?f.getAbsolutePath():null;
 	}
 
 	/**
@@ -369,13 +366,43 @@ public class JavasistClassLoader extends ClassLoader {
 			return pathResources + fileStub + "." + extension;
 		}
 
-		// Si no se encontro se busca en pathActual/src/main/resources
+		// Si no se encontro se busca en pathActual/src/main/resources por si es un proy maven
 		pathResources = actualPath + MAIN_SRC + RESOURCES;
 		System.out.println("BUSCANDO ARCHIVO EN: " + pathResources);
 		if (existFile(pathResources + fileStub + "." + extension)) {
 			return pathResources + fileStub + "." + extension;
 		}
 
+		//Si no se encontro se busca en los jar de aether en 'path actual'/lib
+		String libs = LIB;
+		System.out.println("libs: " + libs);
+		File f = new File (libs);
+		System.out.println("Path completo de libs: " + f.getAbsolutePath());
+		FilenameFilter filter = new FilenameFilter() {
+			@Override
+			public boolean accept(File dir, String name) {
+				if (name.contains("aether-") && name.contains("-adapter"))
+					return true;
+				return false;
+			}
+		};
+		try {
+			String[] libsItems = f.list(filter);
+			for (String item : libsItems) {
+				item = f.getAbsolutePath() + "/" + item;
+				System.out.println("BUSCANDO PATH EN JAR DE AETHER ADAPTER EN LIBS: "
+						+ item);
+				String path = item.replace('\\', '/');
+				if (path.endsWith(".jar")) {
+					String retPath = findPathInJar(path, fileStub, extension);
+					if (retPath != null)
+						return retPath;
+				}
+			}
+		} catch (Exception e) {
+			System.out.println("Error al buscar archivo en /lib: " + e.getMessage());
+		}
+		
 		// Se busca en el classpath
 		String classpath = System.getProperty("java.class.path");
 		System.out.println("Classpath: " + classpath);
