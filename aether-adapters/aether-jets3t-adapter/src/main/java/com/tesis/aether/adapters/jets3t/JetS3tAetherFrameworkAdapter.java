@@ -38,6 +38,7 @@ public class JetS3tAetherFrameworkAdapter extends AetherFrameworkAdapter {
 	private static final String AWS_SIGNATURE_IDENTIFIER = "AWS";
 	private static final String AWS_REST_HEADER_PREFIX = "x-amz-";
 	private static final String AWS_REST_METADATA_PREFIX = "x-amz-meta-";
+    public static final String METADATA_HEADER_ETAG = "ETag";
 
 	protected JetS3tAetherFrameworkAdapter() {
 		super();
@@ -140,7 +141,10 @@ public class JetS3tAetherFrameworkAdapter extends AetherFrameworkAdapter {
 				service.uploadInputStream(object.getDataInputStream(), bucketName, path, name, object.getContentLength());
 			}
 			object.setLastModifiedDate(new Date());
-
+			try {
+			object.addMetadata(METADATA_HEADER_ETAG, object.getMd5HashAsHex());
+			} catch (Exception e) {
+				}
 			return object;
 		} catch (UploadException e) {
 			e.printStackTrace();
