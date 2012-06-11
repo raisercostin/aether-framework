@@ -42,7 +42,7 @@ import com.tesis.aether.core.services.storage.object.StorageObject;
 import com.tesis.aether.core.services.storage.object.StorageObjectMetadata;
 import com.tesis.aether.core.services.storage.object.constants.StorageObjectConstants;
 
-public class JCloudsAetherFrameworkAdapter extends AetherFrameworkAdapter implements BlobStore{
+public class JCloudsAetherFrameworkAdapter extends AetherFrameworkAdapter implements BlobStore {
 	private static JCloudsAetherFrameworkAdapter INSTANCE = null;
 
 	protected JCloudsAetherFrameworkAdapter() {
@@ -168,8 +168,10 @@ public class JCloudsAetherFrameworkAdapter extends AetherFrameworkAdapter implem
 		try {
 			StorageObject storageObject = service.getStorageObject(container, name);
 			Blob blob = new BlobImpl(generateJcloudsMetadata(storageObject.getMetadata()));
-			blob.setPayload(storageObject.getStream());
-
+			if (storageObject.getStream() != null) {
+				blob.setPayload(storageObject.getStream());
+				blob.getMetadata().getContentMetadata().setContentLength(storageObject.getMetadata().getLength());
+			}
 			return blob;
 		} catch (FileNotExistsException e) {
 			e.printStackTrace();
@@ -192,16 +194,18 @@ public class JCloudsAetherFrameworkAdapter extends AetherFrameworkAdapter implem
 	private MutableBlobMetadataImpl generateJcloudsMetadata(StorageObjectMetadata storageObjectMetadata) {
 		MutableBlobMetadataImpl mutableBlobMetadataImpl = new MutableBlobMetadataImpl();
 		mutableBlobMetadataImpl.setName(storageObjectMetadata.getPathAndName());
-		if(storageObjectMetadata.isFile()) {
+		if (storageObjectMetadata.isFile()) {
 			mutableBlobMetadataImpl.setType(StorageType.BLOB);
-		} else if(storageObjectMetadata.isDirectory()) {
+		} else if (storageObjectMetadata.isDirectory()) {
 			mutableBlobMetadataImpl.setType(StorageType.FOLDER);
-		} else if(storageObjectMetadata.isContainer()) {
+		} else if (storageObjectMetadata.isContainer()) {
 			mutableBlobMetadataImpl.setType(StorageType.CONTAINER);
 		}
 		mutableBlobMetadataImpl.getContentMetadata().setContentLength(storageObjectMetadata.getLength());
 		mutableBlobMetadataImpl.setLastModified(storageObjectMetadata.getLastModified());
-
+		if (storageObjectMetadata.getMd5hash() != null) {
+			mutableBlobMetadataImpl.setETag(storageObjectMetadata.getMd5hash());
+		}
 		return mutableBlobMetadataImpl;
 	}
 
@@ -219,7 +223,7 @@ public class JCloudsAetherFrameworkAdapter extends AetherFrameworkAdapter implem
 		} catch (Exception e) {
 			e.printStackTrace();
 			return null;
-		} 
+		}
 	}
 
 	public PageSet<? extends StorageMetadata> list(String container) {
@@ -236,17 +240,17 @@ public class JCloudsAetherFrameworkAdapter extends AetherFrameworkAdapter implem
 		} catch (Exception e) {
 			e.printStackTrace();
 			return null;
-		} 
+		}
 	}
 
 	public PageSet<? extends StorageMetadata> list(String container, ListContainerOptions options) {
 		List<StorageObjectMetadata> listFiles;
 		try {
 			String dir = options.getDir();
-			if(dir != null) {
+			if (dir != null) {
 				listFiles = service.listFiles(container, dir, options.isRecursive());
 			} else {
-				listFiles = service.listFiles(container, "", options.isRecursive());			
+				listFiles = service.listFiles(container, "", options.isRecursive());
 			}
 
 			List<MutableStorageMetadata> jCloudsMetadata = new ArrayList<MutableStorageMetadata>();
@@ -290,7 +294,7 @@ public class JCloudsAetherFrameworkAdapter extends AetherFrameworkAdapter implem
 			e.printStackTrace();
 		}
 	}
-	   
+
 	/**
 	 * NOT IMPLEMENTED METHODS
 	 */
