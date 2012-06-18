@@ -558,8 +558,13 @@ public class JavasistClassLoader extends ClassLoader {
 			loadConfigurations = false;
 			// carga de clases a mapear
 			String actualPath;
-			actualPath = FilenameUtils.getPathNoEndSeparator(new File(".")
-					.getAbsolutePath());
+			try {
+				actualPath = new File(".")
+						.getCanonicalPath();
+			} catch (IOException e1) {
+				actualPath = new File(".")
+						.getAbsolutePath();
+			}
 
 			actualPath = actualPath.replace('\\', '/');
 
