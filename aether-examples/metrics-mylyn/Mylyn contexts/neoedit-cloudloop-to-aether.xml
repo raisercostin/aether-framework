@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InteractionHistory Id="http://code.google.com/p/aether-framework-30"
+	Version="1">
+	<InteractionEvent Delta="null" EndDate="2012-02-09 19:19:48.187 ART"
+		Interest="19.085001" Kind="propagation"
+		Navigation="org.eclipse.mylyn.core.model.edges.containment" OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-02-09 19:19:37.275 ART" StructureHandle=""
+		StructureKind="java" NumEvents="20" CreationCount="1" />
+	<InteractionEvent Delta="null" EndDate="2012-02-09 19:19:46.465 ART"
+		Interest="3.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.PackageExplorer" StartDate="2012-02-09 19:19:44.999 ART"
+		StructureHandle="/neoedit-cloudloop-to-aether/src/main/resources/properties.properties"
+		StructureKind="resource" NumEvents="3" CreationCount="14" />
+	<InteractionEvent Delta="null" EndDate="2012-02-09 19:19:45.250 ART"
+		Interest="1.0" Kind="edit" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.PropertiesFileEditor" StartDate="2012-02-09 19:19:45.250 ART"
+		StructureHandle="/neoedit-cloudloop-to-aether/src/main/resources/properties.properties"
+		StructureKind="resource" />
+	<InteractionEvent Delta="null" EndDate="2012-02-09 19:19:47.944 ART"
+		Interest="6.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.PackageExplorer" StartDate="2012-02-09 19:19:43.353 ART"
+		StructureHandle="/neoedit-cloudloop-to-aether/src/main/resources/config.xml"
+		StructureKind="resource" NumEvents="6" CreationCount="10" />
+	<InteractionEvent Delta="null" EndDate="2012-02-09 19:19:46.738 ART"
+		Interest="2.0" Kind="edit" Navigation="null"
+		OriginId="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart"
+		StartDate="2012-02-09 19:19:43.774 ART" StructureHandle="/neoedit-cloudloop-to-aether/src/main/resources/config.xml"
+		StructureKind="resource" NumEvents="2" CreationCount="10" />
+	<InteractionEvent Delta="null" EndDate="2012-02-09 19:19:48.186 ART"
+		Interest="19.0" Kind="propagation" Navigation="null"
+		OriginId="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart"
+		StartDate="2012-02-09 19:19:41.898 ART" StructureHandle="/neoedit-cloudloop-to-aether/src/main/resources"
+		StructureKind="resource" NumEvents="19" CreationCount="6" />
+	<InteractionEvent Delta="null" EndDate="2012-02-09 19:19:48.186 ART"
+		Interest="19.085001" Kind="propagation"
+		Navigation="org.eclipse.mylyn.core.model.edges.containment" OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-02-09 19:19:37.274 ART" StructureHandle="=neoedit-cloudloop-to-aether"
+		StructureKind="resource" NumEvents="20" CreationCount="1" />
+	<InteractionEvent Delta="null" EndDate="2012-02-09 19:19:47.944 ART"
+		Interest="7.4680004" Kind="propagation"
+		Navigation="org.eclipse.mylyn.core.model.edges.containment" OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-02-09 19:19:41.898 ART" StructureHandle="=neoedit-cloudloop-to-aether/src\/main\/resources"
+		StructureKind="java" NumEvents="10" CreationCount="6" />
+	<InteractionEvent Delta="null" EndDate="2012-02-09 19:19:48.186 ART"
+		Interest="19.0" Kind="propagation" Navigation="org.eclipse.mylyn.core.model.edges.containment"
+		OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-02-09 19:19:41.898 ART" StructureHandle="/neoedit-cloudloop-to-aether/src/main"
+		StructureKind="resource" NumEvents="19" CreationCount="6" />
+	<InteractionEvent Delta="null" EndDate="2012-02-09 19:19:40.657 ART"
+		Interest="2.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.PackageExplorer" StartDate="2012-02-09 19:19:37.274 ART"
+		StructureHandle="/neoedit-cloudloop-to-aether/pom.xml" StructureKind="resource"
+		NumEvents="2" CreationCount="1" />
+	<InteractionEvent Delta="null" EndDate="2012-02-09 19:19:39.598 ART"
+		Interest="3.0" Kind="edit" Navigation="null"
+		OriginId="org.maven.ide.eclipse.editor.MavenPomEditor" StartDate="2012-02-09 19:19:37.367 ART"
+		StructureHandle="/neoedit-cloudloop-to-aether/pom.xml" StructureKind="resource"
+		NumEvents="3" CreationCount="1" />
+	<InteractionEvent Delta="null" EndDate="2012-02-09 19:19:48.187 ART"
+		Interest="24.0" Kind="propagation" Navigation="org.eclipse.mylyn.core.model.edges.containment"
+		OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-02-09 19:19:37.274 ART" StructureHandle="/"
+		StructureKind="resource" NumEvents="24" CreationCount="1" />
+	<InteractionEvent Delta="null" EndDate="2012-02-09 19:19:48.187 ART"
+		Interest="24.0" Kind="propagation" Navigation="null"
+		OriginId="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart"
+		StartDate="2012-02-09 19:19:37.274 ART" StructureHandle="/neoedit-cloudloop-to-aether"
+		StructureKind="resource" NumEvents="24" CreationCount="1" />
+	<InteractionEvent Delta="null" EndDate="2012-02-09 19:19:48.186 ART"
+		Interest="19.0" Kind="propagation" Navigation="org.eclipse.mylyn.core.model.edges.containment"
+		OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-02-09 19:19:41.898 ART" StructureHandle="/neoedit-cloudloop-to-aether/src"
+		StructureKind="resource" NumEvents="19" CreationCount="6" />
+	<InteractionEvent Delta="null" EndDate="2012-02-09 19:19:48.152 ART"
+		Interest="5.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart"
+		StartDate="2012-02-09 19:19:41.897 ART"
+		StructureHandle="/neoedit-cloudloop-to-aether/src/main/resources/cloudloop.xml"
+		StructureKind="resource" NumEvents="5" CreationCount="6" />
+	<InteractionEvent Delta="null" EndDate="2012-02-09 19:19:48.186 ART"
+		Interest="2.0" Kind="edit" Navigation="null"
+		OriginId="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart"
+		StartDate="2012-02-09 19:19:41.996 ART"
+		StructureHandle="/neoedit-cloudloop-to-aether/src/main/resources/cloudloop.xml"
+		StructureKind="resource" NumEvents="2" CreationCount="6" />
+</InteractionHistory>

@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Metrics scope="java" type="PackageRoot" date="2012-06-23" xmlns="http://metrics.sourceforge.net/2003/Metrics-First-Flat">
+   <Cycle name="org.jclouds.aws.handlers et al" nodes="2" diameter="1">
+      <Package>org.jclouds.aws.handlers</Package>
+      <Package>org.jclouds.aws</Package>
+   </Cycle>
+   <Metric id = "VG" description ="McCabe Cyclomatic Complexity" max ="10" hint ="use Extract-method to split the method up">
+      <Values per = "method" avg = "2.208" stddev = "3.355" max = "27" maxinrange="false">
+         <Value name="refineException" source ="ParseAWSErrorFromXmlContent.java" package ="org.jclouds.aws.handlers" value ="27" inrange="false"/>
+         <Value name="shouldRetryRequest" source ="AWSClientErrorRetryHandler.java" package ="org.jclouds.aws.handlers" value ="10"/>
+         <Value name="shouldRetryRequest" source ="AWSRedirectionRetryHandler.java" package ="org.jclouds.aws.handlers" value ="7"/>
+         <Value name="handleError" source ="ParseAWSErrorFromXmlContent.java" package ="org.jclouds.aws.handlers" value ="7"/>
+         <Value name="parseAWSErrorFromContent" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="7"/>
+         <Value name="toString" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="6"/>
+         <Value name="FormSigner.anonymous#~setPayload~QHttpRequest;~QMultimap\&lt;QString;QString;&gt;;[#compare" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="5"/>
+         <Value name="indexMapOfIterableToFormValuesWithPrefix" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="5"/>
+         <Value name="endElement" source ="ErrorHandler.java" package ="org.jclouds.aws.xml" value ="5"/>
+         <Value name="findRegionInArgsOrNull" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="4"/>
+         <Value name="indexMapToFormValuesWithPrefix" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="4"/>
+         <Value name="indexMultimapToFormValuesWithPrefix" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="4"/>
+         <Value name="getDefaultRegion" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="3"/>
+         <Value name="setPayload" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="3"/>
+         <Value name="sign" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="3"/>
+         <Value name="indexIterableToFormValuesWithPrefix" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="3"/>
+         <Value name="indexStringArrayToFormValuesWithPrefix" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="3"/>
+         <Value name="indexStringArrayToFormValuesWithStringFormat" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="3"/>
+         <Value name="FormSigner.anonymous#^sortAWSFirst[#compare" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="2"/>
+         <Value name="createStringToSign" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="2"/>
+         <Value name="FormSigner.anonymous#~sortForSigning~QString;[#compare" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="2"/>
+         <Value name="validateParams" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="2"/>
+         <Value name="AWSUtils.GetRegionFromLocation#apply" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="2"/>
+         <Value name="getRegionFromLocationOrNull" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="2"/>
+         <Value name="parseHandle" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="2"/>
+         <Value name="AWSRestClientModule" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="AWSRestClientModule" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="bindErrorHandlers" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="bindRegionsToProvider" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="bindRegionsToProvider" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="bindRetryHandlers" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="configure" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="provideRegions" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="FormSigningRestClientModule" source ="FormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="FormSigningRestClientModule" source ="FormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="provideRequestSigner" source ="FormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="provideTimeStamp" source ="FormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="WithZonesFormSigningRestClientModule" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="WithZonesFormSigningRestClientModule" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="bindZonesToProvider" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="bindZonesToProvider" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="configure" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="provideZones" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="WithZonesFormSigningRestClientModule.anonymous#~provideZones~QMap\&lt;QString;QURI;&gt;;~QMap\&lt;QString;QString;&gt;;[#apply" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="getCode" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="getDetails" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="getMessage" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="getRequestId" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="getRequestToken" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="getSignature" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="getStringSigned" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="setCode" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="setDetails" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="setMessage" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="setRequestId" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="setRequestToken" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="setSignature" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="setStringSigned" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="regionProperties" source ="Region.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="regionPropertiesS3" source ="Region.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="FormSigner" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="1"/>
+         <Value name="addSignature" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="1"/>
+         <Value name="addSigningParams" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="1"/>
+         <Value name="buildCanonicalizedString" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="1"/>
+         <Value name="createStringToSign" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="1"/>
+         <Value name="filter" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="1"/>
+         <Value name="sortForSigning" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="1"/>
+         <Value name="AWSClientErrorRetryHandler" source ="AWSClientErrorRetryHandler.java" package ="org.jclouds.aws.handlers" value ="1"/>
+         <Value name="AWSRedirectionRetryHandler" source ="AWSRedirectionRetryHandler.java" package ="org.jclouds.aws.handlers" value ="1"/>
+         <Value name="ParseAWSErrorFromXmlContent" source ="ParseAWSErrorFromXmlContent.java" package ="org.jclouds.aws.handlers" value ="1"/>
+         <Value name="AWSUtils" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="1"/>
+         <Value name="isRegion" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="1"/>
+         <Value name="characters" source ="ErrorHandler.java" package ="org.jclouds.aws.xml" value ="1"/>
+         <Value name="getResult" source ="ErrorHandler.java" package ="org.jclouds.aws.xml" value ="1"/>
+         <Value name="AWSResponseException" source ="AWSResponseException.java" package ="org.jclouds.aws" value ="1"/>
+         <Value name="AWSResponseException" source ="AWSResponseException.java" package ="org.jclouds.aws" value ="1"/>
+         <Value name="AWSResponseException" source ="AWSResponseException.java" package ="org.jclouds.aws" value ="1"/>
+         <Value name="AWSResponseException" source ="AWSResponseException.java" package ="org.jclouds.aws" value ="1"/>
+         <Value name="getError" source ="AWSResponseException.java" package ="org.jclouds.aws" value ="1"/>
+         <Value name="setError" source ="AWSResponseException.java" package ="org.jclouds.aws" value ="1"/>
+      </Values>
+   </Metric>
+   <Metric id = "PAR" description ="Number of Parameters" max ="5" hint ="Move invoked method or pass an object">
+      <Values per = "method" avg = "1.662" stddev = "1.5" max = "6" maxinrange="false">
+         <Value name="FormSigner" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="6" inrange="false"/>
+         <Value name="refineException" source ="ParseAWSErrorFromXmlContent.java" package ="org.jclouds.aws.handlers" value ="5"/>
+         <Value name="indexMapOfIterableToFormValuesWithPrefix" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="5"/>
+         <Value name="indexMapToFormValuesWithPrefix" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="5"/>
+         <Value name="indexMultimapToFormValuesWithPrefix" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="5"/>
+         <Value name="AWSResponseException" source ="AWSResponseException.java" package ="org.jclouds.aws" value ="5"/>
+         <Value name="AWSUtils" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="4"/>
+         <Value name="AWSResponseException" source ="AWSResponseException.java" package ="org.jclouds.aws" value ="4"/>
+         <Value name="AWSResponseException" source ="AWSResponseException.java" package ="org.jclouds.aws" value ="4"/>
+         <Value name="AWSRestClientModule" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="3"/>
+         <Value name="getDefaultRegion" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="3"/>
+         <Value name="FormSigningRestClientModule" source ="FormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="3"/>
+         <Value name="WithZonesFormSigningRestClientModule" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="3"/>
+         <Value name="AWSRedirectionRetryHandler" source ="AWSRedirectionRetryHandler.java" package ="org.jclouds.aws.handlers" value ="3"/>
+         <Value name="indexIterableToFormValuesWithPrefix" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="3"/>
+         <Value name="indexStringArrayToFormValuesWithPrefix" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="3"/>
+         <Value name="indexStringArrayToFormValuesWithStringFormat" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="3"/>
+         <Value name="characters" source ="ErrorHandler.java" package ="org.jclouds.aws.xml" value ="3"/>
+         <Value name="endElement" source ="ErrorHandler.java" package ="org.jclouds.aws.xml" value ="3"/>
+         <Value name="AWSResponseException" source ="AWSResponseException.java" package ="org.jclouds.aws" value ="3"/>
+         <Value name="AWSRestClientModule" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="2"/>
+         <Value name="FormSigningRestClientModule" source ="FormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="2"/>
+         <Value name="provideTimeStamp" source ="FormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="2"/>
+         <Value name="WithZonesFormSigningRestClientModule" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="2"/>
+         <Value name="provideZones" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="2"/>
+         <Value name="FormSigner.anonymous#^sortAWSFirst[#compare" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="2"/>
+         <Value name="addSignature" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="2"/>
+         <Value name="createStringToSign" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="2"/>
+         <Value name="setPayload" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="2"/>
+         <Value name="FormSigner.anonymous#~setPayload~QHttpRequest;~QMultimap\&lt;QString;QString;&gt;;[#compare" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="2"/>
+         <Value name="FormSigner.anonymous#~sortForSigning~QString;[#compare" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="2"/>
+         <Value name="shouldRetryRequest" source ="AWSClientErrorRetryHandler.java" package ="org.jclouds.aws.handlers" value ="2"/>
+         <Value name="shouldRetryRequest" source ="AWSRedirectionRetryHandler.java" package ="org.jclouds.aws.handlers" value ="2"/>
+         <Value name="handleError" source ="ParseAWSErrorFromXmlContent.java" package ="org.jclouds.aws.handlers" value ="2"/>
+         <Value name="parseAWSErrorFromContent" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="2"/>
+         <Value name="bindRegionsToProvider" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="provideRegions" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="provideRequestSigner" source ="FormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="bindZonesToProvider" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="WithZonesFormSigningRestClientModule.anonymous#~provideZones~QMap\&lt;QString;QURI;&gt;;~QMap\&lt;QString;QString;&gt;;[#apply" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="setCode" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="setDetails" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="setMessage" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="setRequestId" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="setRequestToken" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="setSignature" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="setStringSigned" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="addSigningParams" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="1"/>
+         <Value name="buildCanonicalizedString" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="1"/>
+         <Value name="createStringToSign" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="1"/>
+         <Value name="filter" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="1"/>
+         <Value name="sign" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="1"/>
+         <Value name="sortForSigning" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="1"/>
+         <Value name="validateParams" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="1"/>
+         <Value name="AWSClientErrorRetryHandler" source ="AWSClientErrorRetryHandler.java" package ="org.jclouds.aws.handlers" value ="1"/>
+         <Value name="ParseAWSErrorFromXmlContent" source ="ParseAWSErrorFromXmlContent.java" package ="org.jclouds.aws.handlers" value ="1"/>
+         <Value name="AWSUtils.GetRegionFromLocation#apply" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="1"/>
+         <Value name="findRegionInArgsOrNull" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="1"/>
+         <Value name="getRegionFromLocationOrNull" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="1"/>
+         <Value name="isRegion" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="1"/>
+         <Value name="parseHandle" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="1"/>
+         <Value name="setError" source ="AWSResponseException.java" package ="org.jclouds.aws" value ="1"/>
+         <Value name="bindErrorHandlers" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="0"/>
+         <Value name="bindRegionsToProvider" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="0"/>
+         <Value name="bindRetryHandlers" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="0"/>
+         <Value name="configure" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="0"/>
+         <Value name="bindZonesToProvider" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="0"/>
+         <Value name="configure" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="0"/>
+         <Value name="getCode" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="0"/>
+         <Value name="getDetails" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="0"/>
+         <Value name="getMessage" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="0"/>
+         <Value name="getRequestId" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="0"/>
+         <Value name="getRequestToken" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="0"/>
+         <Value name="getSignature" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="0"/>
+         <Value name="getStringSigned" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="0"/>
+         <Value name="toString" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="0"/>
+         <Value name="regionProperties" source ="Region.java" package ="org.jclouds.aws.domain" value ="0"/>
+         <Value name="regionPropertiesS3" source ="Region.java" package ="org.jclouds.aws.domain" value ="0"/>
+         <Value name="getResult" source ="ErrorHandler.java" package ="org.jclouds.aws.xml" value ="0"/>
+         <Value name="getError" source ="AWSResponseException.java" package ="org.jclouds.aws" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "NBD" description ="Nested Block Depth" max ="5" hint ="use Extract-method to split the method up">
+      <Values per = "method" avg = "1.429" stddev = "0.904" max = "5">
+         <Value name="shouldRetryRequest" source ="AWSRedirectionRetryHandler.java" package ="org.jclouds.aws.handlers" value ="5"/>
+         <Value name="handleError" source ="ParseAWSErrorFromXmlContent.java" package ="org.jclouds.aws.handlers" value ="5"/>
+         <Value name="shouldRetryRequest" source ="AWSClientErrorRetryHandler.java" package ="org.jclouds.aws.handlers" value ="4"/>
+         <Value name="indexMapOfIterableToFormValuesWithPrefix" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="4"/>
+         <Value name="findRegionInArgsOrNull" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="3"/>
+         <Value name="indexMapToFormValuesWithPrefix" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="3"/>
+         <Value name="indexMultimapToFormValuesWithPrefix" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="3"/>
+         <Value name="parseAWSErrorFromContent" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="3"/>
+         <Value name="getDefaultRegion" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="2"/>
+         <Value name="provideZones" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="2"/>
+         <Value name="setPayload" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="2"/>
+         <Value name="sign" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="2"/>
+         <Value name="sortForSigning" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="2"/>
+         <Value name="validateParams" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="2"/>
+         <Value name="refineException" source ="ParseAWSErrorFromXmlContent.java" package ="org.jclouds.aws.handlers" value ="2"/>
+         <Value name="indexIterableToFormValuesWithPrefix" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="2"/>
+         <Value name="indexStringArrayToFormValuesWithPrefix" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="2"/>
+         <Value name="indexStringArrayToFormValuesWithStringFormat" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="2"/>
+         <Value name="endElement" source ="ErrorHandler.java" package ="org.jclouds.aws.xml" value ="2"/>
+         <Value name="AWSRestClientModule" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="AWSRestClientModule" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="bindErrorHandlers" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="bindRegionsToProvider" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="bindRegionsToProvider" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="bindRetryHandlers" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="configure" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="provideRegions" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="FormSigningRestClientModule" source ="FormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="FormSigningRestClientModule" source ="FormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="provideRequestSigner" source ="FormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="provideTimeStamp" source ="FormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="WithZonesFormSigningRestClientModule" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="WithZonesFormSigningRestClientModule" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="bindZonesToProvider" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="bindZonesToProvider" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="configure" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="WithZonesFormSigningRestClientModule.anonymous#~provideZones~QMap\&lt;QString;QURI;&gt;;~QMap\&lt;QString;QString;&gt;;[#apply" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="getCode" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="getDetails" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="getMessage" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="getRequestId" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="getRequestToken" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="getSignature" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="getStringSigned" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="setCode" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="setDetails" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="setMessage" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="setRequestId" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="setRequestToken" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="setSignature" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="setStringSigned" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="toString" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="regionProperties" source ="Region.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="regionPropertiesS3" source ="Region.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="FormSigner.anonymous#^sortAWSFirst[#compare" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="1"/>
+         <Value name="FormSigner" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="1"/>
+         <Value name="addSignature" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="1"/>
+         <Value name="addSigningParams" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="1"/>
+         <Value name="buildCanonicalizedString" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="1"/>
+         <Value name="createStringToSign" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="1"/>
+         <Value name="createStringToSign" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="1"/>
+         <Value name="filter" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="1"/>
+         <Value name="FormSigner.anonymous#~setPayload~QHttpRequest;~QMultimap\&lt;QString;QString;&gt;;[#compare" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="1"/>
+         <Value name="FormSigner.anonymous#~sortForSigning~QString;[#compare" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="1"/>
+         <Value name="AWSClientErrorRetryHandler" source ="AWSClientErrorRetryHandler.java" package ="org.jclouds.aws.handlers" value ="1"/>
+         <Value name="AWSRedirectionRetryHandler" source ="AWSRedirectionRetryHandler.java" package ="org.jclouds.aws.handlers" value ="1"/>
+         <Value name="ParseAWSErrorFromXmlContent" source ="ParseAWSErrorFromXmlContent.java" package ="org.jclouds.aws.handlers" value ="1"/>
+         <Value name="AWSUtils.GetRegionFromLocation#apply" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="1"/>
+         <Value name="AWSUtils" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="1"/>
+         <Value name="getRegionFromLocationOrNull" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="1"/>
+         <Value name="isRegion" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="1"/>
+         <Value name="parseHandle" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="1"/>
+         <Value name="characters" source ="ErrorHandler.java" package ="org.jclouds.aws.xml" value ="1"/>
+         <Value name="getResult" source ="ErrorHandler.java" package ="org.jclouds.aws.xml" value ="1"/>
+         <Value name="AWSResponseException" source ="AWSResponseException.java" package ="org.jclouds.aws" value ="1"/>
+         <Value name="AWSResponseException" source ="AWSResponseException.java" package ="org.jclouds.aws" value ="1"/>
+         <Value name="AWSResponseException" source ="AWSResponseException.java" package ="org.jclouds.aws" value ="1"/>
+         <Value name="AWSResponseException" source ="AWSResponseException.java" package ="org.jclouds.aws" value ="1"/>
+         <Value name="getError" source ="AWSResponseException.java" package ="org.jclouds.aws" value ="1"/>
+         <Value name="setError" source ="AWSResponseException.java" package ="org.jclouds.aws" value ="1"/>
+      </Values>
+   </Metric>
+   <Metric id = "CA" description ="Afferent Coupling">
+      <Values per = "packageFragment" avg = "5.125" stddev = "5.158" max = "16">
+         <Value name="org.jclouds.aws.domain" package ="org.jclouds.aws.domain" value ="16"/>
+         <Value name="org.jclouds.aws.reference" package ="org.jclouds.aws.reference" value ="11"/>
+         <Value name="org.jclouds.aws.util" package ="org.jclouds.aws.util" value ="5"/>
+         <Value name="org.jclouds.aws" package ="org.jclouds.aws" value ="3"/>
+         <Value name="org.jclouds.aws.handlers" package ="org.jclouds.aws.handlers" value ="3"/>
+         <Value name="org.jclouds.aws.config" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="org.jclouds.aws.filters" package ="org.jclouds.aws.filters" value ="1"/>
+         <Value name="org.jclouds.aws.xml" package ="org.jclouds.aws.xml" value ="1"/>
+      </Values>
+   </Metric>
+   <Metric id = "CE" description ="Efferent Coupling">
+      <Values per = "packageFragment" avg = "1.375" stddev = "0.992" max = "3">
+         <Value name="org.jclouds.aws.config" package ="org.jclouds.aws.config" value ="3"/>
+         <Value name="org.jclouds.aws.handlers" package ="org.jclouds.aws.handlers" value ="3"/>
+         <Value name="org.jclouds.aws" package ="org.jclouds.aws" value ="1"/>
+         <Value name="org.jclouds.aws.domain" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="org.jclouds.aws.filters" package ="org.jclouds.aws.filters" value ="1"/>
+         <Value name="org.jclouds.aws.util" package ="org.jclouds.aws.util" value ="1"/>
+         <Value name="org.jclouds.aws.xml" package ="org.jclouds.aws.xml" value ="1"/>
+         <Value name="org.jclouds.aws.reference" package ="org.jclouds.aws.reference" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "RMI" description ="Instability">
+      <Values per = "packageFragment" avg = "0.341" stddev = "0.244" max = "0.75">
+         <Value name="org.jclouds.aws.config" package ="org.jclouds.aws.config" value ="0.75"/>
+         <Value name="org.jclouds.aws.filters" package ="org.jclouds.aws.filters" value ="0.5"/>
+         <Value name="org.jclouds.aws.handlers" package ="org.jclouds.aws.handlers" value ="0.5"/>
+         <Value name="org.jclouds.aws.xml" package ="org.jclouds.aws.xml" value ="0.5"/>
+         <Value name="org.jclouds.aws" package ="org.jclouds.aws" value ="0.25"/>
+         <Value name="org.jclouds.aws.util" package ="org.jclouds.aws.util" value ="0.167"/>
+         <Value name="org.jclouds.aws.domain" package ="org.jclouds.aws.domain" value ="0.059"/>
+         <Value name="org.jclouds.aws.reference" package ="org.jclouds.aws.reference" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "RMA" description ="Abstractness">
+      <Values per = "packageFragment" avg = "0.125" stddev = "0.331" max = "1">
+         <Value name="org.jclouds.aws.reference" package ="org.jclouds.aws.reference" value ="1"/>
+         <Value name="org.jclouds.aws" package ="org.jclouds.aws" value ="0"/>
+         <Value name="org.jclouds.aws.config" package ="org.jclouds.aws.config" value ="0"/>
+         <Value name="org.jclouds.aws.domain" package ="org.jclouds.aws.domain" value ="0"/>
+         <Value name="org.jclouds.aws.filters" package ="org.jclouds.aws.filters" value ="0"/>
+         <Value name="org.jclouds.aws.handlers" package ="org.jclouds.aws.handlers" value ="0"/>
+         <Value name="org.jclouds.aws.util" package ="org.jclouds.aws.util" value ="0"/>
+         <Value name="org.jclouds.aws.xml" package ="org.jclouds.aws.xml" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "RMD" description ="Normalized Distance">
+      <Values per = "packageFragment" avg = "0.534" stddev = "0.29" max = "0.941">
+         <Value name="org.jclouds.aws.domain" package ="org.jclouds.aws.domain" value ="0.941"/>
+         <Value name="org.jclouds.aws.util" package ="org.jclouds.aws.util" value ="0.833"/>
+         <Value name="org.jclouds.aws" package ="org.jclouds.aws" value ="0.75"/>
+         <Value name="org.jclouds.aws.filters" package ="org.jclouds.aws.filters" value ="0.5"/>
+         <Value name="org.jclouds.aws.handlers" package ="org.jclouds.aws.handlers" value ="0.5"/>
+         <Value name="org.jclouds.aws.xml" package ="org.jclouds.aws.xml" value ="0.5"/>
+         <Value name="org.jclouds.aws.config" package ="org.jclouds.aws.config" value ="0.25"/>
+         <Value name="org.jclouds.aws.reference" package ="org.jclouds.aws.reference" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "DIT" description ="Depth of Inheritance Tree">
+      <Values per = "type" avg = "1.875" stddev = "1.576" max = "5">
+         <Value name="WithZonesFormSigningRestClientModule" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="5"/>
+         <Value name="AWSResponseException" source ="AWSResponseException.java" package ="org.jclouds.aws" value ="5"/>
+         <Value name="FormSigningRestClientModule" source ="FormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="4"/>
+         <Value name="AWSRestClientModule" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="3"/>
+         <Value name="ErrorHandler" source ="ErrorHandler.java" package ="org.jclouds.aws.xml" value ="3"/>
+         <Value name="AWSRestClientModule.anonymous#~bindRegionsToProvider~QClass\&lt;+Qjavax.inject.Provider\&lt;QMap\&lt;QString;QURI;&gt;;&gt;;&gt;;[" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="2"/>
+         <Value name="WithZonesFormSigningRestClientModule.anonymous#~bindZonesToProvider~QClass\&lt;+Qjavax.inject.Provider\&lt;QMap\&lt;QString;QString;&gt;;&gt;;&gt;;[" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="2"/>
+         <Value name="AWSRedirectionRetryHandler" source ="AWSRedirectionRetryHandler.java" package ="org.jclouds.aws.handlers" value ="2"/>
+         <Value name="WithZonesFormSigningRestClientModule.anonymous#~provideZones~QMap\&lt;QString;QURI;&gt;;~QMap\&lt;QString;QString;&gt;;[" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="AWSError" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="Region" source ="Region.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="FormSigner" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="1"/>
+         <Value name="FormSigner.anonymous#^sortAWSFirst[" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="1"/>
+         <Value name="FormSigner.anonymous#~setPayload~QHttpRequest;~QMultimap\&lt;QString;QString;&gt;;[" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="1"/>
+         <Value name="FormSigner.anonymous#~sortForSigning~QString;[" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="1"/>
+         <Value name="AWSClientErrorRetryHandler" source ="AWSClientErrorRetryHandler.java" package ="org.jclouds.aws.handlers" value ="1"/>
+         <Value name="ParseAWSErrorFromXmlContent" source ="ParseAWSErrorFromXmlContent.java" package ="org.jclouds.aws.handlers" value ="1"/>
+         <Value name="AWSUtils" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="1"/>
+         <Value name="AWSUtils.GetRegionFromLocation" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="1"/>
+         <Value name="AWSConstants" source ="AWSConstants.java" package ="org.jclouds.aws.reference" value ="0"/>
+         <Value name="FormParameters" source ="FormParameters.java" package ="org.jclouds.aws.reference" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "WMC" description ="Weighted methods per Class">
+      <Values per = "type" total = "170" avg = "10.625" stddev = "11.412" max = "39">
+         <Value name="AWSUtils" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="39"/>
+         <Value name="ParseAWSErrorFromXmlContent" source ="ParseAWSErrorFromXmlContent.java" package ="org.jclouds.aws.handlers" value ="35"/>
+         <Value name="AWSError" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="20"/>
+         <Value name="FormSigner" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="17"/>
+         <Value name="AWSRestClientModule" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="11"/>
+         <Value name="AWSClientErrorRetryHandler" source ="AWSClientErrorRetryHandler.java" package ="org.jclouds.aws.handlers" value ="11"/>
+         <Value name="AWSRedirectionRetryHandler" source ="AWSRedirectionRetryHandler.java" package ="org.jclouds.aws.handlers" value ="8"/>
+         <Value name="ErrorHandler" source ="ErrorHandler.java" package ="org.jclouds.aws.xml" value ="7"/>
+         <Value name="WithZonesFormSigningRestClientModule" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="6"/>
+         <Value name="AWSResponseException" source ="AWSResponseException.java" package ="org.jclouds.aws" value ="6"/>
+         <Value name="FormSigner.anonymous#~setPayload~QHttpRequest;~QMultimap\&lt;QString;QString;&gt;;[" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="5"/>
+         <Value name="FormSigningRestClientModule" source ="FormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="4"/>
+         <Value name="Region" source ="Region.java" package ="org.jclouds.aws.domain" value ="2"/>
+         <Value name="FormSigner.anonymous#^sortAWSFirst[" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="2"/>
+         <Value name="FormSigner.anonymous#~sortForSigning~QString;[" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="2"/>
+         <Value name="AWSUtils.GetRegionFromLocation" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="2"/>
+         <Value name="WithZonesFormSigningRestClientModule.anonymous#~provideZones~QMap\&lt;QString;QURI;&gt;;~QMap\&lt;QString;QString;&gt;;[" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="AWSRestClientModule.anonymous#~bindRegionsToProvider~QClass\&lt;+Qjavax.inject.Provider\&lt;QMap\&lt;QString;QURI;&gt;;&gt;;&gt;;[" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="0"/>
+         <Value name="WithZonesFormSigningRestClientModule.anonymous#~bindZonesToProvider~QClass\&lt;+Qjavax.inject.Provider\&lt;QMap\&lt;QString;QString;&gt;;&gt;;&gt;;[" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="0"/>
+         <Value name="AWSConstants" source ="AWSConstants.java" package ="org.jclouds.aws.reference" value ="0"/>
+         <Value name="FormParameters" source ="FormParameters.java" package ="org.jclouds.aws.reference" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "NSC" description ="Number of Children">
+      <Values per = "type" total = "2" avg = "0.125" stddev = "0.331" max = "1">
+         <Value name="AWSRestClientModule" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="FormSigningRestClientModule" source ="FormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="AWSRestClientModule.anonymous#~bindRegionsToProvider~QClass\&lt;+Qjavax.inject.Provider\&lt;QMap\&lt;QString;QURI;&gt;;&gt;;&gt;;[" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="0"/>
+         <Value name="WithZonesFormSigningRestClientModule" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="0"/>
+         <Value name="WithZonesFormSigningRestClientModule.anonymous#~bindZonesToProvider~QClass\&lt;+Qjavax.inject.Provider\&lt;QMap\&lt;QString;QString;&gt;;&gt;;&gt;;[" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="0"/>
+         <Value name="WithZonesFormSigningRestClientModule.anonymous#~provideZones~QMap\&lt;QString;QURI;&gt;;~QMap\&lt;QString;QString;&gt;;[" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="0"/>
+         <Value name="AWSError" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="0"/>
+         <Value name="Region" source ="Region.java" package ="org.jclouds.aws.domain" value ="0"/>
+         <Value name="FormSigner" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="0"/>
+         <Value name="FormSigner.anonymous#^sortAWSFirst[" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="0"/>
+         <Value name="FormSigner.anonymous#~setPayload~QHttpRequest;~QMultimap\&lt;QString;QString;&gt;;[" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="0"/>
+         <Value name="FormSigner.anonymous#~sortForSigning~QString;[" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="0"/>
+         <Value name="AWSClientErrorRetryHandler" source ="AWSClientErrorRetryHandler.java" package ="org.jclouds.aws.handlers" value ="0"/>
+         <Value name="AWSRedirectionRetryHandler" source ="AWSRedirectionRetryHandler.java" package ="org.jclouds.aws.handlers" value ="0"/>
+         <Value name="ParseAWSErrorFromXmlContent" source ="ParseAWSErrorFromXmlContent.java" package ="org.jclouds.aws.handlers" value ="0"/>
+         <Value name="AWSConstants" source ="AWSConstants.java" package ="org.jclouds.aws.reference" value ="0"/>
+         <Value name="FormParameters" source ="FormParameters.java" package ="org.jclouds.aws.reference" value ="0"/>
+         <Value name="AWSUtils" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="0"/>
+         <Value name="AWSUtils.GetRegionFromLocation" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="0"/>
+         <Value name="ErrorHandler" source ="ErrorHandler.java" package ="org.jclouds.aws.xml" value ="0"/>
+         <Value name="AWSResponseException" source ="AWSResponseException.java" package ="org.jclouds.aws" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "NORM" description ="Number of Overridden Methods">
+      <Values per = "type" total = "5" avg = "0.312" stddev = "0.682" max = "2">
+         <Value name="AWSRestClientModule" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="2"/>
+         <Value name="ErrorHandler" source ="ErrorHandler.java" package ="org.jclouds.aws.xml" value ="2"/>
+         <Value name="AWSError" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="AWSRestClientModule.anonymous#~bindRegionsToProvider~QClass\&lt;+Qjavax.inject.Provider\&lt;QMap\&lt;QString;QURI;&gt;;&gt;;&gt;;[" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="0"/>
+         <Value name="FormSigningRestClientModule" source ="FormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="0"/>
+         <Value name="WithZonesFormSigningRestClientModule" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="0"/>
+         <Value name="WithZonesFormSigningRestClientModule.anonymous#~bindZonesToProvider~QClass\&lt;+Qjavax.inject.Provider\&lt;QMap\&lt;QString;QString;&gt;;&gt;;&gt;;[" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="0"/>
+         <Value name="WithZonesFormSigningRestClientModule.anonymous#~provideZones~QMap\&lt;QString;QURI;&gt;;~QMap\&lt;QString;QString;&gt;;[" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="0"/>
+         <Value name="Region" source ="Region.java" package ="org.jclouds.aws.domain" value ="0"/>
+         <Value name="FormSigner" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="0"/>
+         <Value name="FormSigner.anonymous#^sortAWSFirst[" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="0"/>
+         <Value name="FormSigner.anonymous#~setPayload~QHttpRequest;~QMultimap\&lt;QString;QString;&gt;;[" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="0"/>
+         <Value name="FormSigner.anonymous#~sortForSigning~QString;[" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="0"/>
+         <Value name="AWSClientErrorRetryHandler" source ="AWSClientErrorRetryHandler.java" package ="org.jclouds.aws.handlers" value ="0"/>
+         <Value name="AWSRedirectionRetryHandler" source ="AWSRedirectionRetryHandler.java" package ="org.jclouds.aws.handlers" value ="0"/>
+         <Value name="ParseAWSErrorFromXmlContent" source ="ParseAWSErrorFromXmlContent.java" package ="org.jclouds.aws.handlers" value ="0"/>
+         <Value name="AWSConstants" source ="AWSConstants.java" package ="org.jclouds.aws.reference" value ="0"/>
+         <Value name="FormParameters" source ="FormParameters.java" package ="org.jclouds.aws.reference" value ="0"/>
+         <Value name="AWSUtils" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="0"/>
+         <Value name="AWSUtils.GetRegionFromLocation" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="0"/>
+         <Value name="AWSResponseException" source ="AWSResponseException.java" package ="org.jclouds.aws" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "LCOM" description ="Lack of Cohesion of Methods">
+      <Values per = "type" avg = "0.263" stddev = "0.386" max = "1">
+         <Value name="AWSClientErrorRetryHandler" source ="AWSClientErrorRetryHandler.java" package ="org.jclouds.aws.handlers" value ="1"/>
+         <Value name="ParseAWSErrorFromXmlContent" source ="ParseAWSErrorFromXmlContent.java" package ="org.jclouds.aws.handlers" value ="1"/>
+         <Value name="AWSError" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="0.867"/>
+         <Value name="FormSigner" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="0.679"/>
+         <Value name="ErrorHandler" source ="ErrorHandler.java" package ="org.jclouds.aws.xml" value ="0.5"/>
+         <Value name="AWSUtils" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="0.167"/>
+         <Value name="AWSRestClientModule" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="0"/>
+         <Value name="AWSRestClientModule.anonymous#~bindRegionsToProvider~QClass\&lt;+Qjavax.inject.Provider\&lt;QMap\&lt;QString;QURI;&gt;;&gt;;&gt;;[" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="0"/>
+         <Value name="FormSigningRestClientModule" source ="FormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="0"/>
+         <Value name="WithZonesFormSigningRestClientModule" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="0"/>
+         <Value name="WithZonesFormSigningRestClientModule.anonymous#~bindZonesToProvider~QClass\&lt;+Qjavax.inject.Provider\&lt;QMap\&lt;QString;QString;&gt;;&gt;;&gt;;[" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="0"/>
+         <Value name="WithZonesFormSigningRestClientModule.anonymous#~provideZones~QMap\&lt;QString;QURI;&gt;;~QMap\&lt;QString;QString;&gt;;[" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="0"/>
+         <Value name="Region" source ="Region.java" package ="org.jclouds.aws.domain" value ="0"/>
+         <Value name="FormSigner.anonymous#^sortAWSFirst[" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="0"/>
+         <Value name="FormSigner.anonymous#~setPayload~QHttpRequest;~QMultimap\&lt;QString;QString;&gt;;[" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="0"/>
+         <Value name="FormSigner.anonymous#~sortForSigning~QString;[" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="0"/>
+         <Value name="AWSRedirectionRetryHandler" source ="AWSRedirectionRetryHandler.java" package ="org.jclouds.aws.handlers" value ="0"/>
+         <Value name="AWSConstants" source ="AWSConstants.java" package ="org.jclouds.aws.reference" value ="0"/>
+         <Value name="FormParameters" source ="FormParameters.java" package ="org.jclouds.aws.reference" value ="0"/>
+         <Value name="AWSUtils.GetRegionFromLocation" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="0"/>
+         <Value name="AWSResponseException" source ="AWSResponseException.java" package ="org.jclouds.aws" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "NOF" description ="Number of Attributes">
+      <Values per = "type" total = "29" avg = "1.812" stddev = "2.505" max = "7">
+         <Value name="AWSError" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="7"/>
+         <Value name="FormSigner" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="7"/>
+         <Value name="AWSUtils" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="6"/>
+         <Value name="AWSClientErrorRetryHandler" source ="AWSClientErrorRetryHandler.java" package ="org.jclouds.aws.handlers" value ="3"/>
+         <Value name="ParseAWSErrorFromXmlContent" source ="ParseAWSErrorFromXmlContent.java" package ="org.jclouds.aws.handlers" value ="2"/>
+         <Value name="ErrorHandler" source ="ErrorHandler.java" package ="org.jclouds.aws.xml" value ="2"/>
+         <Value name="AWSRedirectionRetryHandler" source ="AWSRedirectionRetryHandler.java" package ="org.jclouds.aws.handlers" value ="1"/>
+         <Value name="AWSResponseException" source ="AWSResponseException.java" package ="org.jclouds.aws" value ="1"/>
+         <Value name="AWSRestClientModule" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="0"/>
+         <Value name="AWSRestClientModule.anonymous#~bindRegionsToProvider~QClass\&lt;+Qjavax.inject.Provider\&lt;QMap\&lt;QString;QURI;&gt;;&gt;;&gt;;[" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="0"/>
+         <Value name="FormSigningRestClientModule" source ="FormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="0"/>
+         <Value name="WithZonesFormSigningRestClientModule" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="0"/>
+         <Value name="WithZonesFormSigningRestClientModule.anonymous#~bindZonesToProvider~QClass\&lt;+Qjavax.inject.Provider\&lt;QMap\&lt;QString;QString;&gt;;&gt;;&gt;;[" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="0"/>
+         <Value name="WithZonesFormSigningRestClientModule.anonymous#~provideZones~QMap\&lt;QString;QURI;&gt;;~QMap\&lt;QString;QString;&gt;;[" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="0"/>
+         <Value name="Region" source ="Region.java" package ="org.jclouds.aws.domain" value ="0"/>
+         <Value name="FormSigner.anonymous#^sortAWSFirst[" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="0"/>
+         <Value name="FormSigner.anonymous#~setPayload~QHttpRequest;~QMultimap\&lt;QString;QString;&gt;;[" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="0"/>
+         <Value name="FormSigner.anonymous#~sortForSigning~QString;[" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="0"/>
+         <Value name="AWSConstants" source ="AWSConstants.java" package ="org.jclouds.aws.reference" value ="0"/>
+         <Value name="FormParameters" source ="FormParameters.java" package ="org.jclouds.aws.reference" value ="0"/>
+         <Value name="AWSUtils.GetRegionFromLocation" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "NSF" description ="Number of Static Attributes">
+      <Values per = "type" total = "25" avg = "1.562" stddev = "3.162" max = "11">
+         <Value name="Region" source ="Region.java" package ="org.jclouds.aws.domain" value ="11"/>
+         <Value name="FormParameters" source ="FormParameters.java" package ="org.jclouds.aws.reference" value ="8"/>
+         <Value name="AWSConstants" source ="AWSConstants.java" package ="org.jclouds.aws.reference" value ="3"/>
+         <Value name="FormSigner" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="2"/>
+         <Value name="AWSResponseException" source ="AWSResponseException.java" package ="org.jclouds.aws" value ="1"/>
+         <Value name="AWSRestClientModule" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="0"/>
+         <Value name="AWSRestClientModule.anonymous#~bindRegionsToProvider~QClass\&lt;+Qjavax.inject.Provider\&lt;QMap\&lt;QString;QURI;&gt;;&gt;;&gt;;[" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="0"/>
+         <Value name="FormSigningRestClientModule" source ="FormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="0"/>
+         <Value name="WithZonesFormSigningRestClientModule" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="0"/>
+         <Value name="WithZonesFormSigningRestClientModule.anonymous#~bindZonesToProvider~QClass\&lt;+Qjavax.inject.Provider\&lt;QMap\&lt;QString;QString;&gt;;&gt;;&gt;;[" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="0"/>
+         <Value name="WithZonesFormSigningRestClientModule.anonymous#~provideZones~QMap\&lt;QString;QURI;&gt;;~QMap\&lt;QString;QString;&gt;;[" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="0"/>
+         <Value name="AWSError" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="0"/>
+         <Value name="FormSigner.anonymous#^sortAWSFirst[" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="0"/>
+         <Value name="FormSigner.anonymous#~setPayload~QHttpRequest;~QMultimap\&lt;QString;QString;&gt;;[" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="0"/>
+         <Value name="FormSigner.anonymous#~sortForSigning~QString;[" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="0"/>
+         <Value name="AWSClientErrorRetryHandler" source ="AWSClientErrorRetryHandler.java" package ="org.jclouds.aws.handlers" value ="0"/>
+         <Value name="AWSRedirectionRetryHandler" source ="AWSRedirectionRetryHandler.java" package ="org.jclouds.aws.handlers" value ="0"/>
+         <Value name="ParseAWSErrorFromXmlContent" source ="ParseAWSErrorFromXmlContent.java" package ="org.jclouds.aws.handlers" value ="0"/>
+         <Value name="AWSUtils" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="0"/>
+         <Value name="AWSUtils.GetRegionFromLocation" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="0"/>
+         <Value name="ErrorHandler" source ="ErrorHandler.java" package ="org.jclouds.aws.xml" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "NOM" description ="Number of Methods">
+      <Values per = "type" total = "65" avg = "4.062" stddev = "4.205" max = "15">
+         <Value name="AWSError" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="15"/>
+         <Value name="FormSigner" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="11"/>
+         <Value name="AWSRestClientModule" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="9"/>
+         <Value name="WithZonesFormSigningRestClientModule" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="6"/>
+         <Value name="AWSResponseException" source ="AWSResponseException.java" package ="org.jclouds.aws" value ="6"/>
+         <Value name="FormSigningRestClientModule" source ="FormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="4"/>
+         <Value name="ParseAWSErrorFromXmlContent" source ="ParseAWSErrorFromXmlContent.java" package ="org.jclouds.aws.handlers" value ="3"/>
+         <Value name="ErrorHandler" source ="ErrorHandler.java" package ="org.jclouds.aws.xml" value ="3"/>
+         <Value name="AWSClientErrorRetryHandler" source ="AWSClientErrorRetryHandler.java" package ="org.jclouds.aws.handlers" value ="2"/>
+         <Value name="AWSRedirectionRetryHandler" source ="AWSRedirectionRetryHandler.java" package ="org.jclouds.aws.handlers" value ="2"/>
+         <Value name="AWSUtils" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="2"/>
+         <Value name="WithZonesFormSigningRestClientModule.anonymous#~provideZones~QMap\&lt;QString;QURI;&gt;;~QMap\&lt;QString;QString;&gt;;[" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="FormSigner.anonymous#^sortAWSFirst[" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="1"/>
+         <Value name="FormSigner.anonymous#~setPayload~QHttpRequest;~QMultimap\&lt;QString;QString;&gt;;[" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="1"/>
+         <Value name="FormSigner.anonymous#~sortForSigning~QString;[" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="1"/>
+         <Value name="AWSUtils.GetRegionFromLocation" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="1"/>
+         <Value name="AWSRestClientModule.anonymous#~bindRegionsToProvider~QClass\&lt;+Qjavax.inject.Provider\&lt;QMap\&lt;QString;QURI;&gt;;&gt;;&gt;;[" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="0"/>
+         <Value name="WithZonesFormSigningRestClientModule.anonymous#~bindZonesToProvider~QClass\&lt;+Qjavax.inject.Provider\&lt;QMap\&lt;QString;QString;&gt;;&gt;;&gt;;[" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="0"/>
+         <Value name="Region" source ="Region.java" package ="org.jclouds.aws.domain" value ="0"/>
+         <Value name="AWSConstants" source ="AWSConstants.java" package ="org.jclouds.aws.reference" value ="0"/>
+         <Value name="FormParameters" source ="FormParameters.java" package ="org.jclouds.aws.reference" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "NSM" description ="Number of Static Methods">
+      <Values per = "type" total = "12" avg = "0.75" stddev = "2.437" max = "10">
+         <Value name="AWSUtils" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="10"/>
+         <Value name="Region" source ="Region.java" package ="org.jclouds.aws.domain" value ="2"/>
+         <Value name="AWSRestClientModule" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="0"/>
+         <Value name="AWSRestClientModule.anonymous#~bindRegionsToProvider~QClass\&lt;+Qjavax.inject.Provider\&lt;QMap\&lt;QString;QURI;&gt;;&gt;;&gt;;[" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="0"/>
+         <Value name="FormSigningRestClientModule" source ="FormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="0"/>
+         <Value name="WithZonesFormSigningRestClientModule" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="0"/>
+         <Value name="WithZonesFormSigningRestClientModule.anonymous#~bindZonesToProvider~QClass\&lt;+Qjavax.inject.Provider\&lt;QMap\&lt;QString;QString;&gt;;&gt;;&gt;;[" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="0"/>
+         <Value name="WithZonesFormSigningRestClientModule.anonymous#~provideZones~QMap\&lt;QString;QURI;&gt;;~QMap\&lt;QString;QString;&gt;;[" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="0"/>
+         <Value name="AWSError" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="0"/>
+         <Value name="FormSigner" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="0"/>
+         <Value name="FormSigner.anonymous#^sortAWSFirst[" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="0"/>
+         <Value name="FormSigner.anonymous#~setPayload~QHttpRequest;~QMultimap\&lt;QString;QString;&gt;;[" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="0"/>
+         <Value name="FormSigner.anonymous#~sortForSigning~QString;[" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="0"/>
+         <Value name="AWSClientErrorRetryHandler" source ="AWSClientErrorRetryHandler.java" package ="org.jclouds.aws.handlers" value ="0"/>
+         <Value name="AWSRedirectionRetryHandler" source ="AWSRedirectionRetryHandler.java" package ="org.jclouds.aws.handlers" value ="0"/>
+         <Value name="ParseAWSErrorFromXmlContent" source ="ParseAWSErrorFromXmlContent.java" package ="org.jclouds.aws.handlers" value ="0"/>
+         <Value name="AWSConstants" source ="AWSConstants.java" package ="org.jclouds.aws.reference" value ="0"/>
+         <Value name="FormParameters" source ="FormParameters.java" package ="org.jclouds.aws.reference" value ="0"/>
+         <Value name="AWSUtils.GetRegionFromLocation" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="0"/>
+         <Value name="ErrorHandler" source ="ErrorHandler.java" package ="org.jclouds.aws.xml" value ="0"/>
+         <Value name="AWSResponseException" source ="AWSResponseException.java" package ="org.jclouds.aws" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "SIX" description ="Specialization Index">
+      <Values per = "type" avg = "0.171" stddev = "0.499" max = "2">
+         <Value name="ErrorHandler" source ="ErrorHandler.java" package ="org.jclouds.aws.xml" value ="2"/>
+         <Value name="AWSRestClientModule" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="0.667"/>
+         <Value name="AWSError" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="0.067"/>
+         <Value name="AWSRestClientModule.anonymous#~bindRegionsToProvider~QClass\&lt;+Qjavax.inject.Provider\&lt;QMap\&lt;QString;QURI;&gt;;&gt;;&gt;;[" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="0"/>
+         <Value name="FormSigningRestClientModule" source ="FormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="0"/>
+         <Value name="WithZonesFormSigningRestClientModule" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="0"/>
+         <Value name="WithZonesFormSigningRestClientModule.anonymous#~bindZonesToProvider~QClass\&lt;+Qjavax.inject.Provider\&lt;QMap\&lt;QString;QString;&gt;;&gt;;&gt;;[" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="0"/>
+         <Value name="WithZonesFormSigningRestClientModule.anonymous#~provideZones~QMap\&lt;QString;QURI;&gt;;~QMap\&lt;QString;QString;&gt;;[" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="0"/>
+         <Value name="Region" source ="Region.java" package ="org.jclouds.aws.domain" value ="0"/>
+         <Value name="FormSigner" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="0"/>
+         <Value name="FormSigner.anonymous#^sortAWSFirst[" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="0"/>
+         <Value name="FormSigner.anonymous#~setPayload~QHttpRequest;~QMultimap\&lt;QString;QString;&gt;;[" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="0"/>
+         <Value name="FormSigner.anonymous#~sortForSigning~QString;[" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="0"/>
+         <Value name="AWSClientErrorRetryHandler" source ="AWSClientErrorRetryHandler.java" package ="org.jclouds.aws.handlers" value ="0"/>
+         <Value name="AWSRedirectionRetryHandler" source ="AWSRedirectionRetryHandler.java" package ="org.jclouds.aws.handlers" value ="0"/>
+         <Value name="ParseAWSErrorFromXmlContent" source ="ParseAWSErrorFromXmlContent.java" package ="org.jclouds.aws.handlers" value ="0"/>
+         <Value name="AWSConstants" source ="AWSConstants.java" package ="org.jclouds.aws.reference" value ="0"/>
+         <Value name="FormParameters" source ="FormParameters.java" package ="org.jclouds.aws.reference" value ="0"/>
+         <Value name="AWSUtils" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="0"/>
+         <Value name="AWSUtils.GetRegionFromLocation" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="0"/>
+         <Value name="AWSResponseException" source ="AWSResponseException.java" package ="org.jclouds.aws" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "NOC" description ="Number of Classes">
+      <Values per = "packageFragment" total = "16" avg = "2" stddev = "0.707" max = "3">
+         <Value name="org.jclouds.aws.config" package ="org.jclouds.aws.config" value ="3"/>
+         <Value name="org.jclouds.aws.handlers" package ="org.jclouds.aws.handlers" value ="3"/>
+         <Value name="org.jclouds.aws.domain" package ="org.jclouds.aws.domain" value ="2"/>
+         <Value name="org.jclouds.aws.filters" package ="org.jclouds.aws.filters" value ="2"/>
+         <Value name="org.jclouds.aws.reference" package ="org.jclouds.aws.reference" value ="2"/>
+         <Value name="org.jclouds.aws.util" package ="org.jclouds.aws.util" value ="2"/>
+         <Value name="org.jclouds.aws" package ="org.jclouds.aws" value ="1"/>
+         <Value name="org.jclouds.aws.xml" package ="org.jclouds.aws.xml" value ="1"/>
+      </Values>
+   </Metric>
+   <Metric id = "NOI" description ="Number of Interfaces">
+      <Values per = "packageFragment" total = "2" avg = "0.25" stddev = "0.661" max = "2">
+         <Value name="org.jclouds.aws.reference" package ="org.jclouds.aws.reference" value ="2"/>
+         <Value name="org.jclouds.aws" package ="org.jclouds.aws" value ="0"/>
+         <Value name="org.jclouds.aws.config" package ="org.jclouds.aws.config" value ="0"/>
+         <Value name="org.jclouds.aws.domain" package ="org.jclouds.aws.domain" value ="0"/>
+         <Value name="org.jclouds.aws.filters" package ="org.jclouds.aws.filters" value ="0"/>
+         <Value name="org.jclouds.aws.handlers" package ="org.jclouds.aws.handlers" value ="0"/>
+         <Value name="org.jclouds.aws.util" package ="org.jclouds.aws.util" value ="0"/>
+         <Value name="org.jclouds.aws.xml" package ="org.jclouds.aws.xml" value ="0"/>
+      </Values>
+   </Metric>
+   <Metric id = "NOP" description ="Number of Packages">
+      <Value value="8"/>
+   </Metric>
+   <Metric id = "TLOC" description ="Total Lines of Code">
+      <Value value="887"/>
+   </Metric>
+   <Metric id = "MLOC" description ="Method Lines of Code">
+      <Values per = "method" total = "395" avg = "5.13" stddev = "6.634" max = "31">
+         <Value name="refineException" source ="ParseAWSErrorFromXmlContent.java" package ="org.jclouds.aws.handlers" value ="31"/>
+         <Value name="handleError" source ="ParseAWSErrorFromXmlContent.java" package ="org.jclouds.aws.handlers" value ="29"/>
+         <Value name="shouldRetryRequest" source ="AWSRedirectionRetryHandler.java" package ="org.jclouds.aws.handlers" value ="26"/>
+         <Value name="parseAWSErrorFromContent" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="19"/>
+         <Value name="shouldRetryRequest" source ="AWSClientErrorRetryHandler.java" package ="org.jclouds.aws.handlers" value ="17"/>
+         <Value name="indexMapOfIterableToFormValuesWithPrefix" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="17"/>
+         <Value name="toString" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="15"/>
+         <Value name="indexMultimapToFormValuesWithPrefix" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="15"/>
+         <Value name="indexMapToFormValuesWithPrefix" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="13"/>
+         <Value name="regionProperties" source ="Region.java" package ="org.jclouds.aws.domain" value ="11"/>
+         <Value name="filter" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="11"/>
+         <Value name="setPayload" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="11"/>
+         <Value name="sign" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="10"/>
+         <Value name="indexIterableToFormValuesWithPrefix" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="10"/>
+         <Value name="endElement" source ="ErrorHandler.java" package ="org.jclouds.aws.xml" value ="10"/>
+         <Value name="createStringToSign" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="9"/>
+         <Value name="sortForSigning" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="9"/>
+         <Value name="indexStringArrayToFormValuesWithPrefix" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="9"/>
+         <Value name="indexStringArrayToFormValuesWithStringFormat" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="9"/>
+         <Value name="findRegionInArgsOrNull" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="8"/>
+         <Value name="getDefaultRegion" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="7"/>
+         <Value name="provideZones" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="6"/>
+         <Value name="regionPropertiesS3" source ="Region.java" package ="org.jclouds.aws.domain" value ="6"/>
+         <Value name="FormSigner" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="6"/>
+         <Value name="addSigningParams" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="5"/>
+         <Value name="FormSigner.anonymous#~setPayload~QHttpRequest;~QMultimap\&lt;QString;QString;&gt;;[#compare" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="5"/>
+         <Value name="AWSUtils" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="5"/>
+         <Value name="bindErrorHandlers" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="3"/>
+         <Value name="FormSigner.anonymous#^sortAWSFirst[#compare" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="3"/>
+         <Value name="FormSigner.anonymous#~sortForSigning~QString;[#compare" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="3"/>
+         <Value name="validateParams" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="3"/>
+         <Value name="AWSResponseException" source ="AWSResponseException.java" package ="org.jclouds.aws" value ="3"/>
+         <Value name="AWSResponseException" source ="AWSResponseException.java" package ="org.jclouds.aws" value ="3"/>
+         <Value name="bindRegionsToProvider" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="2"/>
+         <Value name="bindRetryHandlers" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="2"/>
+         <Value name="configure" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="2"/>
+         <Value name="bindZonesToProvider" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="2"/>
+         <Value name="configure" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="2"/>
+         <Value name="AWSRedirectionRetryHandler" source ="AWSRedirectionRetryHandler.java" package ="org.jclouds.aws.handlers" value ="2"/>
+         <Value name="AWSUtils.GetRegionFromLocation#apply" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="2"/>
+         <Value name="parseHandle" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="2"/>
+         <Value name="AWSResponseException" source ="AWSResponseException.java" package ="org.jclouds.aws" value ="2"/>
+         <Value name="AWSResponseException" source ="AWSResponseException.java" package ="org.jclouds.aws" value ="2"/>
+         <Value name="AWSRestClientModule" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="AWSRestClientModule" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="bindRegionsToProvider" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="provideRegions" source ="AWSRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="FormSigningRestClientModule" source ="FormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="FormSigningRestClientModule" source ="FormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="provideRequestSigner" source ="FormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="provideTimeStamp" source ="FormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="WithZonesFormSigningRestClientModule" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="WithZonesFormSigningRestClientModule" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="bindZonesToProvider" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="WithZonesFormSigningRestClientModule.anonymous#~provideZones~QMap\&lt;QString;QURI;&gt;;~QMap\&lt;QString;QString;&gt;;[#apply" source ="WithZonesFormSigningRestClientModule.java" package ="org.jclouds.aws.config" value ="1"/>
+         <Value name="getCode" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="getDetails" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="getMessage" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="getRequestId" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="getRequestToken" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="getSignature" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="getStringSigned" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="setCode" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="setDetails" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="setMessage" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="setRequestId" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="setRequestToken" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="setSignature" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="setStringSigned" source ="AWSError.java" package ="org.jclouds.aws.domain" value ="1"/>
+         <Value name="addSignature" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="1"/>
+         <Value name="buildCanonicalizedString" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="1"/>
+         <Value name="createStringToSign" source ="FormSigner.java" package ="org.jclouds.aws.filters" value ="1"/>
+         <Value name="AWSClientErrorRetryHandler" source ="AWSClientErrorRetryHandler.java" package ="org.jclouds.aws.handlers" value ="1"/>
+         <Value name="ParseAWSErrorFromXmlContent" source ="ParseAWSErrorFromXmlContent.java" package ="org.jclouds.aws.handlers" value ="1"/>
+         <Value name="getRegionFromLocationOrNull" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="1"/>
+         <Value name="isRegion" source ="AWSUtils.java" package ="org.jclouds.aws.util" value ="1"/>
+         <Value name="characters" source ="ErrorHandler.java" package ="org.jclouds.aws.xml" value ="1"/>
+         <Value name="getResult" source ="ErrorHandler.java" package ="org.jclouds.aws.xml" value ="1"/>
+         <Value name="getError" source ="AWSResponseException.java" package ="org.jclouds.aws" value ="1"/>
+         <Value name="setError" source ="AWSResponseException.java" package ="org.jclouds.aws" value ="1"/>
+      </Values>
+   </Metric>
+   </Metrics>

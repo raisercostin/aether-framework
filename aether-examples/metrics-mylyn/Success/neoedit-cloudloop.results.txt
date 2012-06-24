@@ -1,0 +1,3843 @@
+Loading metrics from: D:\Mylyn Metrics\Projects\neoedit-cloudloop.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\aether-core.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\aether-loader.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\cloudloop-adapter.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\cloudloop-main.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\dasein-aws.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\dasein-core.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\dasein-google.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\jclouds-aws-common.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\jclouds-aws-s3.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\jclouds-blobstore.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\jclouds-core.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\jclouds-s3.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\jets3t.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\libcloud.xml
+java : 
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-main/src
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop.storage{CloudStore.java[CloudStore
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop.storage{CloudStore.java[CloudStore
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/ne&lt;(EditPanel$1.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{PlainPage.java[PlainPage~keyPressed~QKeyEvent;
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: PlainPage
+Class Name: PlainPage
+Metodo: keyPressed
+MLOC: 177
+---------------------------------------------
+resource : /cloudloop-main/src/main/java/com/cloudloop
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-adapter/pom.xml
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-adapter/pom.xml
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/util/FileIterator.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/jaxb-impl-2.2.5-b10.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/jaxb-impl-2.2.5-b10.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/.project
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/cloudloop-main-1.1-SNAPSHOT.jar&lt;com.cloudloop.storage
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/test/java
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/test/java
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-main/src/main/java/com/cloudloop
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-adapter/src/main/java&lt;com.cloudloop.storage.adapter.jclouds.amazonS3{JS3CloudStore.java#com.cloudloop.adapter.AmazonCloudKey
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/ne
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-adapter/target
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/cloudloop/DirectoryRestrictedFileSystemView.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/cloudloop-main-1.1-SNAPSHOT.jar&lt;com.cloudloop.storage.adapter(CloudStoreAdapterBase.class[CloudStoreAdapterBase
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/cloudloop-main-1.1-SNAPSHOT.jar&lt;com.cloudloop.storage.adapter(CloudStoreAdapterBase.class[CloudStoreAdapterBase
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-adapter/target/classes/com
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-adapter/src/main/java&lt;com.cloudloop.storage.adapter.amazonS3{AmazonS3AdapterBase.java#
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-adapter/src/main
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-all/cloudloop-main/src/main/java/com/cloudloop&lt;{Cloudloop.java
+REGEXP does not match
+---------------------------------------------
+resource : /
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-adapter/src/main/java/com/cloudloop/storage/adapter/rackspace
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop.config{CloudloopConfigLoader.java
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop.config{CloudloopConfigLoader.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/nirvanix-java-sdk-1.5.2.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/nirvanix-java-sdk-1.5.2.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-cloudloop/src/main/java/neoe/ne
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-main/src/main/java/com/cloudloop/config/CloudloopConfigLoader.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/target/classes/cloudloop.xml
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/target/classes/cloudloop.xml
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-main/src/main/java/com/cloudloop/storage/adapter/CloudStoreAdapterBase.java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/src/test/resources
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/cloudloop-main-1.1-SNAPSHOT.jar&lt;com.cloudloop.storage.adapter(CloudStoreAdapterBase.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/cloudloop-main-1.1-SNAPSHOT.jar&lt;com.cloudloop.storage.adapter(CloudStoreAdapterBase.class
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-all/cloudloop-adapter/src/main/java/com/cloudloop/storage/adapter/amazonS3&lt;
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{PlainPage.java[PlainPage[Paint~applyColorMode~I
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: PlainPage
+Class Name: PlainPage.Paint
+Metodo: applyColorMode
+MLOC: 13
+---------------------------------------------
+resource : /cloudloop-main/src/main/java/com/cloudloop/Cloudloop.java
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-main/src/main/java/com/cloudloop/Cloudloop.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/src/main/java/neoe/ne/FindReplaceWindow.java
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-adapter/target/classes/com/cloudloop/storage
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/target/dist/lib/jsr305-1.3.9.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/C:/Users/Kireta/.m2/repository/cloudloop/cloudloop-main/1.1-SNAPSHOT/cloudloop-main-1.1-SNAPSHOT.jar&lt;com.cloudloop.config(CloudloopConfigLoader.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/C:/Users/Kireta/.m2/repository/cloudloop/cloudloop-main/1.1-SNAPSHOT/cloudloop-main-1.1-SNAPSHOT.jar&lt;com.cloudloop.config(CloudloopConfigLoader.class
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.com.nirvanix.sdk
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/src
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{U.java[U~openFile~QFile;
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: openFile
+MLOC: 5
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{U.java[U~openFile~QFile;
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: openFile
+MLOC: 5
+---------------------------------------------
+java : =neoedit-cloudloop/lib/commons-lang-2.6.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/commons-lang-2.6.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/cloudloop-adapter-1.1-SNAPSHOT.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/cloudloop-adapter-1.1-SNAPSHOT.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/cloudloop-adapter-1.1-SNAPSHOT.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/nirvanix-java-sdk-1.5.2.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/nirvanix-java-sdk-1.5.2.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/nirvanix-java-sdk-1.5.2.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/src/test/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/target/dist/lib/commons-io-1.3.2.jar
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-cloudloop/src/main/java/neoe/ne&lt;{PlainPage.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;java.lang
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/util/FileIterator$1.class
+REGEXP does not match
+---------------------------------------------
+resource : =libcloud-java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/target/classes/neoe/ne/PropertiesProvider.class
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/test/java&lt;cloudloop.test{CloudStorePathTests.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.cloudloop{CloudLoopAdapter.java[CloudLoopAdapter~populateCache
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.cloudloop
+Compilation Unit: CloudLoopAdapter
+Class Name: CloudLoopAdapter
+Metodo: populateCache
+MLOC: 17
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.cloudloop{CloudLoopAdapter.java[CloudLoopAdapter~populateCache
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.cloudloop
+Compilation Unit: CloudLoopAdapter
+Class Name: CloudLoopAdapter
+Metodo: populateCache
+MLOC: 17
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.cloudloop{CloudLoopAdapter.java[CloudLoopAdapter~populateCache
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.cloudloop
+Compilation Unit: CloudLoopAdapter
+Class Name: CloudLoopAdapter
+Metodo: populateCache
+MLOC: 17
+---------------------------------------------
+java : =cloudloop-adapter/src/main/java&lt;com.cloudloop.storage.adapter.amazonS3{AmazonS3AdapterBase.java#java.util.ArrayList
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-all
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-all
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/C:/Users/Kireta/.m2/repository/cloudloop/cloudloop-main/1.1-SNAPSHOT/cloudloop-main-1.1-SNAPSHOT.jar
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-all/cloudloop-adapter/src/main/java/com/cloudloop/storage/adapter/amazonS3&lt;{AmazonS3AdapterBase.java
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-adapter/target/classes/com/cloudloop/storage/adapter/amazonS3/AmazonS3AdapterBase$TypeDirListResponseFilter.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/target/classes/xsd/config
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/src/main/java/neoe/ne/EditPanel.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/ne/U$BasicAction.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/src/main/java/neoe/cloudloop/CloudLoopAdapter.java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/src/test/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/src/test/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/src/test/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-adapter/src/main/java&lt;com.cloudloop.storage.adapter.jclouds.amazonS3{JS3CloudStore.java[JS3CloudStore^_context
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-main/src/main
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/rackspace-cloudfiles-api-1.4.0.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/rackspace-cloudfiles-api-1.4.0.jar
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{U.java[U~runScriptOnDir~QString;[!2~actionPerformed~QActionEvent;
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: runScriptOnDir
+MLOC: 51
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/ne/EditPanel$1.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/src/main/java/neoe/ne/U.java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/src/main/resources/xsd/config/cloudloop-config1.xml
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/src/main/resources/xsd/config/cloudloop-config1.xml
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/src/main/resources/xsd/config/cloudloop-config1.xml
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/src/main/resources/cloudloop.xml
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/src/main/resources/cloudloop.xml
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-main/src/main/java/com/cloudloop/storage/CloudStoreDirectory.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-cloudloop/target/classes/neoe/ne&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /aether-core/pom.xml
+REGEXP does not match
+---------------------------------------------
+resource : /aether-core/pom.xml
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-installer
+REGEXP does not match
+---------------------------------------------
+java : =libcloud-java/src&lt;base.interfaces{IConnection.java[IConnection
+REGEXP does not match
+---------------------------------------------
+java : =libcloud-java/src&lt;base.interfaces{IConnection.java[IConnection
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/src/main/resources
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/target/dist/lib/xsdlib-20030807.jar
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/util&lt;(FileIterator$1.class
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-cloudloop/src/main/java/neoe/ne&lt;{PropertiesProvider.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{Main.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{Main.java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/commons-logging-1.0.4.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/commons-logging-1.0.4.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/commons-logging-1.0.4.jar
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-adapter/src/main/java&lt;com.cloudloop.storage.adapter.rackspace{RackspaceCloudStore.java[RackspaceCloudStore^REMOTE_DATE_FORMAT[
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/ne
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-cloudloop/src/main/java/neoe/cloudloop
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/lib/cloudloop-adapter-1.1-SNAPSHOT.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{U.java[U~openFileHistory
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: openFileHistory
+MLOC: 6
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{U.java[U~openFileHistory
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: openFileHistory
+MLOC: 6
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-main/src/main/java/com/cloudloop/config/CloudloopConfigLoader.java
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-main/src/main/java/com/com/nirvanix/sdk
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/target/classes
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/target/dist/lib/jaxb-api-2.2.6.jar
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop{Cloudloop.java[Cloudloop~getStorage~QString;
+Proyecto: cloudloop-main
+Jar Location: src/main/java
+Package: com.cloudloop
+Compilation Unit: Cloudloop
+Class Name: Cloudloop
+Metodo: getStorage
+MLOC: 6
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop{Cloudloop.java[Cloudloop~getStorage~QString;
+Proyecto: cloudloop-main
+Jar Location: src/main/java
+Package: com.cloudloop
+Compilation Unit: Cloudloop
+Class Name: Cloudloop
+Metodo: getStorage
+MLOC: 6
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop{Cloudloop.java[Cloudloop~getStorage~QString;
+Proyecto: cloudloop-main
+Jar Location: src/main/java
+Package: com.cloudloop
+Compilation Unit: Cloudloop
+Class Name: Cloudloop
+Metodo: getStorage
+MLOC: 6
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{U.java[U^th[~canImport~QTransferHandler.TransferSupport;
+---------------------------------------------
+resource : /cloudloop-main/src/main/java/com/cloudloop/config
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-all/cloudloop-main/target/classes/com/cloudloop/storage&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/ne/EditPanel$1.class
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/src/main/resources/snippet
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/src/main/resources/snippet
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-adapter/src/main/java/com/cloudloop/storage/adapter/jclouds
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/xmlParserAPIs-2.6.2.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/xmlParserAPIs-2.6.2.jar
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-adapter/src/main/resources/cloudfiles.properties
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-adapter/src/main/resources/cloudfiles.properties
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-adapter/src/main/resources/cloudfiles.properties
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-adapter/target/classes/com/cloudloop/storage/adapter/rackspace
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/target/dist/lib/jaxb-impl-2.2.5-b10.jar
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/cloudloop
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-cloudloop/src/main/java/neoe/cloudloop
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/target/dist/lib/log4j-1.2.16.jar
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-main/src/test/java/cloudloop/test/adapter
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/cloudloop-main-1.1-SNAPSHOT.jar&lt;com.cloudloop.generated(CloudloopConfig.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/src/test/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/src/main/java/neoe/ne/CloudLoopAdapter.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/src/main/java/neoe
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/cloudloop&lt;(CloudLoopAdapter.class
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop.storage{CloudStoreDirectory.java[CloudStoreDirectory
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop.storage{CloudStoreDirectory.java[CloudStoreDirectory
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-adapter/src/main/java&lt;com.cloudloop.storage.adapter.rackspace{RackspaceCloudStore.java[RackspaceCloudStore
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/target/classes/icontab.png
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/src/test/resources
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-all/cloudloop-main/src/main/java/com/cloudloop
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/src/main/java/neoe/ne/Main.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/C:/Users/Kireta/.m2/repository/cloudloop/cloudloop-main/1.1-SNAPSHOT/cloudloop-main-1.1-SNAPSHOT.jar&lt;com.cloudloop.config
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/util
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-adapter/src/test/java
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-adapter/src/main/java
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-adapter/src/main/java/com/cloudloop/storage/adapter/rackspace/RackspaceCloudStore.java
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-all/cloudloop-adapter/src/main/java/com/cloudloop/storage/adapter/amazonS3
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/target/dist/lib/jdom-b10.jar
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-adapter/src/main/java&lt;com.cloudloop.storage.adapter.amazonS3{AmazonS3AuthenticatedRESTRequest.java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/aspectjrt-1.6.11.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/aspectjrt-1.6.11.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/aspectjrt-1.6.11.jar
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-cloudloop/src/main/java/neoe/ne
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{U.java[U^UTF8
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-adapter/src/main/java/com/cloudloop/storage
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/target/classes/xsd/config
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/src/main/java/neoe/ne/U.java
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-main/target/classes/com
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/target/classes/icontab.png
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-cloudloop/src/main/java/neoe/ne&lt;{U.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{U.java[U~runScriptOnDir~QString;
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: runScriptOnDir
+MLOC: 51
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/cloudloop/CloudLoopAdapter.class
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-cloudloop/src/main/java/neoe/ne&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/src/main/resources/xsd/config/cloudloop-config.xml
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-main/src/test/java
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-main/src/main/java/com/com/nirvanix
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/src/main/java/neoe/cloudloop/DirectoryRestrictedFileSystemView.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-cloudloop/src/main/java/neoe/ne&lt;{EditPanel.java
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-adapter/src/main/java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/ne/CloudLoopAdapter.class
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop{Cloudloop.java[Cloudloop~loadFrom~QFile;
+Proyecto: cloudloop-main
+Jar Location: src/main/java
+Package: com.cloudloop
+Compilation Unit: Cloudloop
+Class Name: Cloudloop
+Metodo: loadFrom
+MLOC: 2
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop{Cloudloop.java[Cloudloop~loadFrom~QFile;
+Proyecto: cloudloop-main
+Jar Location: src/main/java
+Package: com.cloudloop
+Compilation Unit: Cloudloop
+Class Name: Cloudloop
+Metodo: loadFrom
+MLOC: 2
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop{Cloudloop.java[Cloudloop~loadFrom~QFile;
+Proyecto: cloudloop-main
+Jar Location: src/main/java
+Package: com.cloudloop
+Compilation Unit: Cloudloop
+Class Name: Cloudloop
+Metodo: loadFrom
+MLOC: 2
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop.storage
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-main/target
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-all/cloudloop-main/src/main/java/com/cloudloop/storage/adapter
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/target/classes/xsd/config
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{FindReplaceWindow.java[FindReplaceWindow
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{FindReplaceWindow.java[FindReplaceWindow
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/lib/cloudloop-adapter-1.1-SNAPSHOT.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-cloudloop/src/main/java/neoe/ne&lt;{CloudLoopAdapter.java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/src/main/java/neoe/cloudloop
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/target/dist/lib/xercesImpl-2.6.2.jar
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop{Cloudloop.java[Cloudloop^_config
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop{Cloudloop.java[Cloudloop^_config
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/src/main
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/relaxngDatatype-20030807.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/relaxngDatatype-20030807.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/jaxb-impl-2.2.5-b10.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/jaxb-impl-2.2.5-b10.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/jaxb-impl-2.2.5-b10.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/commons-httpclient-3.1.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/commons-httpclient-3.1.jar
+REGEXP does not match
+---------------------------------------------
+resource : /libcloud-java/src/base
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/ne
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/target
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/cloudloop-main-1.1-SNAPSHOT.jar&lt;com.cloudloop.storage(CloudStore.class[CloudStore~getDirectory~Ljava.lang.String;
+Proyecto: neoedit-cloudloop
+Jar Location: lib/cloudloop-main-1.1-SNAPSHOT.jar
+Package: com.cloudloop.storage
+Compilation Unit: CloudStore
+Class Name: CloudStore
+Metodo: getDirectory
+MLOC: 0
+---------------------------------------------
+java : =cloudloop-main/src/main/java
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/java
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-cloudloop/target/classes/snippet&lt;{Snippet.java
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-all/cloudloop-adapter/target/classes/com/cloudloop/storage/adapter/rackspace
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/util
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-adapter/src/main/java&lt;com.cloudloop.storage.adapter.amazonS3{AmazonS3AdapterBase.java
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-adapter/src/main/java&lt;com.cloudloop.storage.adapter.amazonS3{AmazonS3AdapterBase.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/src/main/resources/xsd/config
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-adapter/pom.xml
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/bcprov-jdk14-140.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/bcprov-jdk14-140.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/bcprov-jdk14-140.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/cloudloop-main-1.1-SNAPSHOT.jar&lt;com.cloudloop.generated
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/mime-util-1.2.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/mime-util-1.2.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{FindReplaceWindow.java[FindReplaceWindow~FindReplaceWindow~QJFrame;~QPlainPage;
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: FindReplaceWindow
+Class Name: FindReplaceWindow
+Metodo: FindReplaceWindow
+MLOC: 44
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{FindReplaceWindow.java[FindReplaceWindow~FindReplaceWindow~QJFrame;~QPlainPage;
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: FindReplaceWindow
+Class Name: FindReplaceWindow
+Metodo: FindReplaceWindow
+MLOC: 44
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/xpp3-1.1.3.3.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/xpp3-1.1.3.3.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/xpp3-1.1.3.3.jar
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-main/src/main/java/com/cloudloop/storage/adapter/CloudStoreAdapterBase.java
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/pom.xml
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/pom.xml
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-adapter/src/main/java&lt;com.cloudloop.storage.adapter.amazonS3{AmazonS3CloudStore.java
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-adapter/src/main/java&lt;com.cloudloop.storage.adapter.amazonS3{AmazonS3CloudStore.java
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop{Cloudloop.java[Cloudloop^_providerFactory
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/target/classes/neoe/cloudloop/DirectoryRestrictedFileSystemView.class
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/target/classes/neoe/util
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-adapter/src/main/java/com/cloudloop/storage/adapter
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-cloudloop/src/main/java/neoe/ne&lt;{FindReplaceWindow.java
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-all/cloudloop-main/target/classes/com/cloudloop/storage
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/util&lt;(FileIterator.class
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-all/cloudloop-main/target/classes/com/cloudloop/config&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/target/dist/lib/commons-codec-1.6.jar
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-main/target/surefire/surefire7460214404267913536tmp
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-adapter/target/maven-archiver/pom.properties
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-adapter/target/maven-archiver/pom.properties
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-all/cloudloop-main/src/main/java/com/cloudloop/storage&lt;
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/cloudloop-main-1.1-SNAPSHOT.jar&lt;com.cloudloop(Cloudloop.class[Cloudloop~getStorage~Ljava.lang.String;
+Proyecto: neoedit-cloudloop
+Jar Location: lib/cloudloop-main-1.1-SNAPSHOT.jar
+Package: com.cloudloop
+Compilation Unit: Cloudloop
+Class Name: Cloudloop
+Metodo: getStorage
+MLOC: 6
+---------------------------------------------
+java : =neoedit-cloudloop/lib/cloudloop-main-1.1-SNAPSHOT.jar&lt;com.cloudloop(Cloudloop.class[Cloudloop~getStorage~Ljava.lang.String;
+Proyecto: neoedit-cloudloop
+Jar Location: lib/cloudloop-main-1.1-SNAPSHOT.jar
+Package: com.cloudloop
+Compilation Unit: Cloudloop
+Class Name: Cloudloop
+Metodo: getStorage
+MLOC: 6
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/target/classes/snippet
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-main/src/main/java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/src/main/resources/cloudloop.xml
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/src/main/resources/cloudloop.xml
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/target/classes/Alien.png
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/target/classes/Alien.png
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{U.java[U^cloudLoopAdapter
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{U.java[U^cloudLoopAdapter
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/src/main/java/neoe
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/ne/PropertiesProvider.class
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/target/classes/neoe/ne/EditPanel.class
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-all/cloudloop-main/src/main/java/com/cloudloop/config&lt;
+REGEXP does not match
+---------------------------------------------
+java : =libcloud-java/src
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/target/dist/lib/xmlParserAPIs-2.6.2.jar
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-cloudloop/src/main/java/neoe/ne
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{U.java[U~saveAs~QPlainPage;
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: saveAs
+MLOC: 16
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{U.java[U~saveAs~QPlainPage;
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: saveAs
+MLOC: 16
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/target/classes/neoe/ne/EditPanel$1.class
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/src/main/java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/cloudloop&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/stax-api-1.0.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/stax-api-1.0.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/stax-api-1.0.jar
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-cloudloop/target/classes/neoe/util
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{PlainPage.java[PlainPage
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-installer/pom.xml
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-installer/pom.xml
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-adapter/C:/Users/Kireta/.m2/repository/org/jclouds/jclouds-blobstore/1.0.0/jclouds-blobstore-1.0.0.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/lib/cloudloop-main-1.1-SNAPSHOT.jar
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-cloudloop/src/main/java/neoe/ne&lt;{U.java
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-main
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/src/main/java/neoe/cloudloop/CloudLoopAdapter.java
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop.config{CloudloopConfigLoader.java[CloudloopConfigLoader~getSchema
+Proyecto: cloudloop-main
+Jar Location: src/main/java
+Package: com.cloudloop.config
+Compilation Unit: CloudloopConfigLoader
+Class Name: CloudloopConfigLoader
+Metodo: getSchema
+MLOC: 14
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop.config{CloudloopConfigLoader.java[CloudloopConfigLoader~getSchema
+Proyecto: cloudloop-main
+Jar Location: src/main/java
+Package: com.cloudloop.config
+Compilation Unit: CloudloopConfigLoader
+Class Name: CloudloopConfigLoader
+Metodo: getSchema
+MLOC: 14
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.com.nirvanix.sdk.common
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/xercesImpl-2.6.2.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/xercesImpl-2.6.2.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/xercesImpl-2.6.2.jar
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/src/main/java/neoe/ne/FindReplaceWindow.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-cloudloop/target/classes/neoe/ne&lt;(U$BasicAction.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.cloudloop{DirectoryRestrictedFileSystemView.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.cloudloop{DirectoryRestrictedFileSystemView.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.cloudloop{DirectoryRestrictedFileSystemView.java
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop.config{CloudloopConfigLoader.java[CloudloopConfigLoader~loadFrom~QFile;
+Proyecto: cloudloop-main
+Jar Location: src/main/java
+Package: com.cloudloop.config
+Compilation Unit: CloudloopConfigLoader
+Class Name: CloudloopConfigLoader
+Metodo: loadFrom
+MLOC: 19
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop.config{CloudloopConfigLoader.java[CloudloopConfigLoader~loadFrom~QFile;
+Proyecto: cloudloop-main
+Jar Location: src/main/java
+Package: com.cloudloop.config
+Compilation Unit: CloudloopConfigLoader
+Class Name: CloudloopConfigLoader
+Metodo: loadFrom
+MLOC: 19
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop.config{CloudloopConfigLoader.java[CloudloopConfigLoader~loadFrom~QFile;
+Proyecto: cloudloop-main
+Jar Location: src/main/java
+Package: com.cloudloop.config
+Compilation Unit: CloudloopConfigLoader
+Class Name: CloudloopConfigLoader
+Metodo: loadFrom
+MLOC: 19
+---------------------------------------------
+java : =neoedit-cloudloop/lib/stax-api-1.0.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/stax-api-1.0.jar
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-main/src/main/java/com/cloudloop/Cloudloop.java
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-main/src
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/dom4j-1.5.2.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/dom4j-1.5.2.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/dom4j-1.5.2.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.cloudloop{CloudLoopAdapter.java[CloudLoopAdapter~updateCachedFile~QFile;~QFile;
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.cloudloop
+Compilation Unit: CloudLoopAdapter
+Class Name: CloudLoopAdapter
+Metodo: updateCachedFile
+MLOC: 30
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.cloudloop{CloudLoopAdapter.java[CloudLoopAdapter~updateCachedFile~QFile;~QFile;
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.cloudloop
+Compilation Unit: CloudLoopAdapter
+Class Name: CloudLoopAdapter
+Metodo: updateCachedFile
+MLOC: 30
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.cloudloop{CloudLoopAdapter.java[CloudLoopAdapter~updateCachedFile~QFile;~QFile;
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.cloudloop
+Compilation Unit: CloudLoopAdapter
+Class Name: CloudLoopAdapter
+Metodo: updateCachedFile
+MLOC: 30
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-adapter/target/classes/com/cloudloop/storage/adapter/amazonS3/AmazonS3CloudStore$GetObjMetadataResponse.class
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/src
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{EditPanel.java[EditPanel~changeTitle
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: EditPanel
+Class Name: EditPanel
+Metodo: changeTitle
+MLOC: 8
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{EditPanel.java[EditPanel~changeTitle
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: EditPanel
+Class Name: EditPanel
+Metodo: changeTitle
+MLOC: 8
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/ne&lt;(U$BasicAction.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/src/main/java/neoe/ne/EditPanel.java
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-adapter/src/main/java&lt;com
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-cloudloop/src/main/java/neoe/cloudloop&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-cli-client
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/ne&lt;(U$BasicAction.class
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-all/cloudloop-adapter/target/classes/com/cloudloop/storage/adapter/amazonS3&lt;(AmazonS3AdapterBase$TypeDirListResponseFilter.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/cloudloop-adapter-1.1-SNAPSHOT.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/cloudloop-adapter-1.1-SNAPSHOT.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/cloudloop-adapter-1.1-SNAPSHOT.jar
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-adapter/src/main/java/com/cloudloop
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/target/dist/lib
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/target/dist/lib
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/target/classes/neoe/util/FileIterator$1.class
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/log4j-1.2.16.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/log4j-1.2.16.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/log4j-1.2.16.jar
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop{Cloudloop.java[Cloudloop~Cloudloop~QCloudloopConfig;
+Proyecto: cloudloop-main
+Jar Location: src/main/java
+Package: com.cloudloop
+Compilation Unit: Cloudloop
+Class Name: Cloudloop
+Metodo: Cloudloop
+MLOC: 8
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop{Cloudloop.java[Cloudloop~Cloudloop~QCloudloopConfig;
+Proyecto: cloudloop-main
+Jar Location: src/main/java
+Package: com.cloudloop
+Compilation Unit: Cloudloop
+Class Name: Cloudloop
+Metodo: Cloudloop
+MLOC: 8
+---------------------------------------------
+java : =neoedit-cloudloop/lib/jdom-b10.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/jdom-b10.jar
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/ne&lt;(EditPanel$1.class
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-adapter/src/main/java&lt;com.cloudloop.storage.adapter.jclouds.amazonS3
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/src/main/java/neoe/ne
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-main/src/main/java/com/cloudloop/storage/CloudStoreDirectory.java
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop.storage.adapter{CloudStoreAdapterBase.java[CloudStoreAdapterBase~sendListDirectoryContentsRequest~QCloudStoreDirectory;~QCloudStoreObjectType;~Z
+Proyecto: cloudloop-main
+Jar Location: src/main/java
+Package: com.cloudloop.storage.adapter
+Compilation Unit: CloudStoreAdapterBase
+Class Name: CloudStoreAdapterBase
+Metodo: sendListDirectoryContentsRequest
+MLOC: 0
+---------------------------------------------
+java : =cloudloop-adapter/C:/Users/Kireta/.m2/repository/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.jar
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-adapter/src/main/java/com/cloudloop/storage/adapter/amazonS3/AmazonS3CloudStore.java
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-adapter/src/main/java&lt;com.cloudloop.storage.adapter.jclouds.amazonS3{JS3CloudStore.java#
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-adapter/src/main/java&lt;com.cloudloop.storage.adapter.jclouds.amazonS3{JS3CloudStore.java#
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/ne&lt;(CloudLoopAdapter.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/cloudloop-main-1.1-SNAPSHOT.jar&lt;com.cloudloop(Cloudloop.class[Cloudloop
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-adapter/target/maven-archiver
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-adapter/C:/Users/Kireta/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-adapter/src/main/java/com/cloudloop/storage/adapter/amazonS3/AmazonS3AdapterBase.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{EditPanel.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{EditPanel.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{EditPanel.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/resources/snippet
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/src/main/java/neoe/ne/PlainPage.java
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-adapter/C:/Users/Kireta/.m2/repository/xerces/xmlParserAPIs/2.6.2/xmlParserAPIs-2.6.2.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/src/main/resources/xsd/config
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/src/main/resources/Alien.png
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/src/main/java/neoe/cloudloop/DirectoryRestrictedFileSystemView.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/cloudloop-main-1.1-SNAPSHOT.jar&lt;com.cloudloop.storage.adapter(CloudStoreAdapterBase.class[CloudStoreAdapterBase~CloudStoreAdapterBase~Ljava.lang.String;~Ljava.lang.Boolean;~Lcom.cloudloop.encryption.EncryptionProvider;~Lcom.cloudloop.adapter.ProviderRequestExecutor;~Ljava.util.Properties;
+Proyecto: neoedit-cloudloop
+Jar Location: lib/cloudloop-main-1.1-SNAPSHOT.jar
+Package: com.cloudloop.storage.adapter
+Compilation Unit: CloudStoreAdapterBase
+Class Name: CloudStoreAdapterBase
+Metodo: CloudStoreAdapterBase
+MLOC: 0
+---------------------------------------------
+resource : /cloudloop-main/src/main/xsd/cloudloop-config.xsd
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/util&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-adapter/src/main/java/com/cloudloop/storage/adapter/jclouds/amazonS3/JS3CloudStore.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{U.java[U~doFindInPage~QPlainPage;~QString;~Z
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: doFindInPage
+MLOC: 19
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{U.java[U~doFindInPage~QPlainPage;~QString;~Z
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: doFindInPage
+MLOC: 19
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/target/classes/snippet
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/lib
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/src/main/resources
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/ne&lt;(EditPanel.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{PropertiesProvider.java
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop.storage.adapter{CloudStoreAdapterBase.java[CloudStoreAdapterBase~listDirectoryContents~QCloudStoreDirectory;~QCloudStoreObjectType;~Z
+Proyecto: cloudloop-main
+Jar Location: src/main/java
+Package: com.cloudloop.storage.adapter
+Compilation Unit: CloudStoreAdapterBase
+Class Name: CloudStoreAdapterBase
+Metodo: listDirectoryContents
+MLOC: 3
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop.storage.adapter{CloudStoreAdapterBase.java[CloudStoreAdapterBase~listDirectoryContents~QCloudStoreDirectory;~QCloudStoreObjectType;~Z
+Proyecto: cloudloop-main
+Jar Location: src/main/java
+Package: com.cloudloop.storage.adapter
+Compilation Unit: CloudStoreAdapterBase
+Class Name: CloudStoreAdapterBase
+Metodo: listDirectoryContents
+MLOC: 3
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/cloudloop
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-adapter/src/test/java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{U.java[U~doFindInDir~QEditPanel;~QString;~Z~Z~Z~QString;
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: doFindInDir
+MLOC: 12
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{U.java[U~doFindInDir~QEditPanel;~QString;~Z~Z~Z~QString;
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: doFindInDir
+MLOC: 12
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/target/classes/snippet/Snippet.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/aspectjrt-1.6.11.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/aspectjrt-1.6.11.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/dom4j-1.5.2.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/dom4j-1.5.2.jar
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-adapter/src/main/java/com/cloudloop/storage/adapter/rackspace
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/cloudloop-main-1.1-SNAPSHOT.jar&lt;com.cloudloop.storage(CloudStore.class[CloudStore
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/cloudloop-main-1.1-SNAPSHOT.jar&lt;com.cloudloop.storage(CloudStore.class[CloudStore
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/cloudloop/CloudLoopAdapter.class
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/ne&lt;(CloudLoopAdapter.class
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/target/dist/lib/xpp3-1.1.3.3.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/target/classes/neoe/cloudloop
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/ne&lt;(PropertiesProvider.class
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-main/target/classes/com/cloudloop/config
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-main/src/main/java/com/nirvanix/sdk
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/src/main/java/neoe/cloudloop
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop{ProviderFactoryDefaultImpl.java[ProviderFactoryDefaultImpl~getAdapterConfig~QString;
+Proyecto: cloudloop-main
+Jar Location: src/main/java
+Package: com.cloudloop
+Compilation Unit: ProviderFactoryDefaultImpl
+Class Name: ProviderFactoryDefaultImpl
+Metodo: getAdapterConfig
+MLOC: 14
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop{ProviderFactoryDefaultImpl.java[ProviderFactoryDefaultImpl~getAdapterConfig~QString;
+Proyecto: cloudloop-main
+Jar Location: src/main/java
+Package: com.cloudloop
+Compilation Unit: ProviderFactoryDefaultImpl
+Class Name: ProviderFactoryDefaultImpl
+Metodo: getAdapterConfig
+MLOC: 14
+---------------------------------------------
+resource : /cloudloop-adapter/src/main/java/com/cloudloop/storage
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/src/main/java/neoe/ne/FindReplaceWindow.java
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-adapter/src/main/java&lt;com.cloudloop.storage.adapter.amazonS3{AmazonS3AdapterBase.java[AmazonS3AdapterBase~sendListDirectoryContentsRequest~QCloudStoreDirectory;~QCloudStoreObjectType;~Z
+Proyecto: cloudloop-adapter
+Jar Location: src/main/java
+Package: com.cloudloop.storage.adapter.amazonS3
+Compilation Unit: AmazonS3AdapterBase
+Class Name: AmazonS3AdapterBase
+Metodo: sendListDirectoryContentsRequest
+MLOC: 38
+---------------------------------------------
+java : =cloudloop-adapter/src/main/java&lt;com.cloudloop.storage.adapter.amazonS3{AmazonS3AdapterBase.java[AmazonS3AdapterBase~sendListDirectoryContentsRequest~QCloudStoreDirectory;~QCloudStoreObjectType;~Z
+Proyecto: cloudloop-adapter
+Jar Location: src/main/java
+Package: com.cloudloop.storage.adapter.amazonS3
+Compilation Unit: AmazonS3AdapterBase
+Class Name: AmazonS3AdapterBase
+Metodo: sendListDirectoryContentsRequest
+MLOC: 38
+---------------------------------------------
+java : =cloudloop-adapter/src/main/java&lt;com.cloudloop.storage.adapter.amazonS3{AmazonS3AdapterBase.java[AmazonS3AdapterBase~sendListDirectoryContentsRequest~QCloudStoreDirectory;~QCloudStoreObjectType;~Z
+Proyecto: cloudloop-adapter
+Jar Location: src/main/java
+Package: com.cloudloop.storage.adapter.amazonS3
+Compilation Unit: AmazonS3AdapterBase
+Class Name: AmazonS3AdapterBase
+Metodo: sendListDirectoryContentsRequest
+MLOC: 38
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/target/classes
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-all/cloudloop-main/target/classes/com/cloudloop/storage&lt;(CloudStoreDirectory.class
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/target/dist/lib/nirvanix-java-sdk-1.5.2.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/rackspace-cloudfiles-api-1.4.0.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/rackspace-cloudfiles-api-1.4.0.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/rackspace-cloudfiles-api-1.4.0.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{U.java[U~replace~QPlainPage;~QString;~I~I~QString;~Z~Z
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: replace
+MLOC: 67
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{U.java[U~replace~QPlainPage;~QString;~I~I~QString;~Z~Z
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: replace
+MLOC: 67
+---------------------------------------------
+java : =cloudloop-main/src/test/java&lt;cloudloop.test.adapter
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/ne&lt;(FindReplaceWindow.class
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-all/cloudloop-adapter/target/classes/com/cloudloop/storage/adapter/rackspace&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/cloudloop
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop{ProviderFactoryDefaultImpl.java
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.nirvanix.sdk.transport
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/cloudloop-adapter-1.1-SNAPSHOT.jar&lt;com.cloudloop.storage.adapter.amazonS3(AmazonS3CloudStore.class
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/target/dist/lib/pull-parser-2.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/commons-logging-1.0.4.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/commons-logging-1.0.4.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/target/dist/lib/commons-lang-2.6.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/commons-codec-1.6.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/commons-codec-1.6.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/commons-codec-1.6.jar
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/lib
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/src/main/java/neoe/ne/PropertiesProvider.java
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop.config
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop.storage.adapter{CloudStoreAdapterBase.java[CloudStoreAdapterBase
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop.storage.adapter{CloudStoreAdapterBase.java[CloudStoreAdapterBase
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop.storage.adapter{CloudStoreAdapterBase.java[CloudStoreAdapterBase
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop.storage.adapter{CloudStoreAdapterBase.java[CloudStoreAdapterBase
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/cloudloop-main-1.1-SNAPSHOT.jar&lt;com.cloudloop.storage(CloudStore.class[CloudStore~upload~Lcom.cloudloop.storage.CloudStoreFile;~Lcom.cloudloop.TransferProgressObserver;
+Proyecto: neoedit-cloudloop
+Jar Location: lib/cloudloop-main-1.1-SNAPSHOT.jar
+Package: com.cloudloop.storage
+Compilation Unit: CloudStore
+Class Name: CloudStore
+Metodo: upload
+MLOC: 0
+---------------------------------------------
+java : =neoedit/neoedit-cloudloop/src/main/java/neoe/cloudloop&lt;{DirectoryRestrictedFileSystemView.java
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-all/cloudloop-main/src/main/java/com/cloudloop/storage/adapter&lt;
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-adapter/src/main/java&lt;com.cloudloop.storage.adapter.rackspace{RackspaceCloudStore.java[RackspaceCloudStore^REMOTE_DATE_FORMAT
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{U.java[U^th
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-cloudloop/src/main/java/neoe/cloudloop&lt;{CloudLoopAdapter.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-cloudloop/src/main/java/neoe/cloudloop&lt;{CloudLoopAdapter.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-cloudloop/target/classes/neoe/ne&lt;(CloudLoopAdapter.class
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-adapter/src/main/java/com/cloudloop/storage/adapter/amazonS3
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/test/java&lt;cloudloop.test
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/test/java&lt;cloudloop.test
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop{Cloudloop.java[Cloudloop~setupEncryption~QCloudloopConfig;
+Proyecto: cloudloop-main
+Jar Location: src/main/java
+Package: com.cloudloop
+Compilation Unit: Cloudloop
+Class Name: Cloudloop
+Metodo: setupEncryption
+MLOC: 15
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop{Cloudloop.java[Cloudloop~setupEncryption~QCloudloopConfig;
+Proyecto: cloudloop-main
+Jar Location: src/main/java
+Package: com.cloudloop
+Compilation Unit: Cloudloop
+Class Name: Cloudloop
+Metodo: setupEncryption
+MLOC: 15
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop{Cloudloop.java[Cloudloop~setupEncryption~QCloudloopConfig;
+Proyecto: cloudloop-main
+Jar Location: src/main/java
+Package: com.cloudloop
+Compilation Unit: Cloudloop
+Class Name: Cloudloop
+Metodo: setupEncryption
+MLOC: 15
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/src/main/java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/src/main/java/neoe/cloudloop/DirectoryRestrictedFileSystemView.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/target/classes/snippet/Snippet.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-cloudloop/target/classes/neoe/util&lt;(FileIterator.class
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-adapter/C:/Users/Kireta/.m2/repository/jaxen/jaxen/1.1-beta-8/jaxen-1.1-beta-8.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/jaxen-1.1-beta-4.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/jaxen-1.1-beta-4.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/jaxen-1.1-beta-4.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/jaxb-api-2.2.6.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/jaxb-api-2.2.6.jar
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/target/classes/cloudloop.xml
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/target/classes/cloudloop.xml
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-adapter/src
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/src/main/java/neoe/cloudloop/CloudLoopAdapter.java
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-adapter/src/main/java/com
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-main/target/classes/com/cloudloop/config/CloudloopConfigLoader.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{EditPanel.java[EditPanel~openWindow[~windowClosing~QWindowEvent;
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{EditPanel.java[EditPanel~openWindow[~windowClosing~QWindowEvent;
+---------------------------------------------
+resource : /cloudloop-cli-client
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/cloudloop-main-1.1-SNAPSHOT.jar&lt;com.cloudloop(Cloudloop.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/cloudloop-main-1.1-SNAPSHOT.jar&lt;com.cloudloop(Cloudloop.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/cloudloop-main-1.1-SNAPSHOT.jar&lt;com.cloudloop(Cloudloop.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/cloudloop-main-1.1-SNAPSHOT.jar&lt;com.cloudloop(Cloudloop.class
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-main/src/main/java/com/cloudloop/config
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-main
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/ne&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/xom-1.1d2.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/xom-1.1d2.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/xom-1.1d2.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/commons-lang-2.6.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/commons-lang-2.6.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/commons-lang-2.6.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{U.java[U~findInFile~QFile;~QString;~Z
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: findInFile
+MLOC: 32
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{U.java[U~findInFile~QFile;~QString;~Z
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: findInFile
+MLOC: 32
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/ne/FindReplaceWindow.class
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-cloudloop/src/main/java/neoe/ne&lt;{PlainPage.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/src/main/resources/xsd/config/cloudloop-config1.xml
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-cloudloop/target/classes/snippet
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-adapter/C:/Users/Kireta/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/src/main/resources
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/src/main
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/src/main
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-main/src/test
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/cloudloop-main-1.1-SNAPSHOT.jar&lt;com.cloudloop
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/target/dist/lib/jaxme-api-0.3.jar
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/util
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-cloudloop/target/classes/snippet&lt;
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{U.java[U~openFile~QPlainPage;
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: openFile
+MLOC: 5
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{U.java[U~openFile~QPlainPage;
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: openFile
+MLOC: 5
+---------------------------------------------
+resource : /neoedit-cloudloop/target/dist/lib/cloudloop-main-1.1-SNAPSHOT.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-cloudloop/target/classes/snippet
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/ne/EditPanel.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-cloudloop/target/classes/neoe/util&lt;(FileIterator$1.class
+REGEXP does not match
+---------------------------------------------
+java : =aether-core
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/target/classes/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/target/classes/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-adapter/src/main/resources
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-adapter/src/main/resources
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-main/src/main/java/com/cloudloop/storage
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-adapter/src/main/java/com/cloudloop/storage/adapter/amazonS3/AmazonS3AdapterBase.java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/xmlParserAPIs-2.6.2.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/xmlParserAPIs-2.6.2.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/xmlParserAPIs-2.6.2.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/relaxngDatatype-20030807.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/relaxngDatatype-20030807.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/relaxngDatatype-20030807.jar
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/src/main
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/target/classes/xsd/config/cloudloop-config.xml
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/target/classes/xsd/config/cloudloop-config.xml
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/src/main/java/neoe/ne/PlainPage.java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/lib/cloudloop-adapter-1.1-SNAPSHOT.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/target/dist/lib/icu4j-2.6.1.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/target/dist/neoedit.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-cloudloop/src/main/java/neoe/ne&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-adapter/src/main/java/com/cloudloop/storage/adapter/rackspace/RackspaceCloudStore.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-cloudloop/src/main/java/neoe/ne&lt;{CloudLoopAdapter.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-cloudloop/src/main/java/neoe/ne&lt;{FindReplaceWindow.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/cloudloop&lt;(CloudLoopAdapter.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/target/classes/snippet
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/target/classes/xsd
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/target/classes/Alien.png
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/target/classes/Alien.png
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/cloudloop-adapter-1.1-SNAPSHOT.jar&lt;com.cloudloop.storage.adapter.amazonS3(AmazonS3AdapterBase.class[AmazonS3AdapterBase
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/pull-parser-2.jar&lt;org.gjt.xpp.sax2(Driver.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/pull-parser-2.jar&lt;org.gjt.xpp.sax2(Driver.class
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/ne&lt;(EditPanel.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-cloudloop/target/classes/neoe/util&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/src/main/resources/xsd/config/cloudloop-config1.xml
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/target/classes/xsd/config/cloudloop-config.xsd
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/src/main/java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/src/test/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-cloudloop/src/main/java/neoe/ne&lt;{CloudLoopAdapter.java
+REGEXP does not match
+---------------------------------------------
+java : =java-storage
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-main/src/main/java/com/com
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-all/cloudloop-main/src/main/java/com/cloudloop/storage&lt;{CloudStoreDirectory.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/cloudloop&lt;(DirectoryRestrictedFileSystemView.class
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/target
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-adapter/src/main/java&lt;com.cloudloop.storage.adapter.jclouds.amazonS3{JS3CloudStore.java[JS3CloudStore~getName
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-cloudloop/target/classes/snippet&lt;
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop.storage{CloudStore.java[CloudStore~getPathNormalizer
+Proyecto: cloudloop-main
+Jar Location: src/main/java
+Package: com.cloudloop.storage
+Compilation Unit: CloudStore
+Class Name: CloudStore
+Metodo: getPathNormalizer
+MLOC: 0
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop.config{CloudloopConfigLoader.java[CloudloopConfigLoader~extractProviderConfig~QCloudloopConfig;~QString;~QProviderFactory;
+Proyecto: cloudloop-main
+Jar Location: src/main/java
+Package: com.cloudloop.config
+Compilation Unit: CloudloopConfigLoader
+Class Name: CloudloopConfigLoader
+Metodo: extractProviderConfig
+MLOC: 31
+---------------------------------------------
+resource : /cloudloop-adapter/src/main/java/com/cloudloop/storage/adapter/jclouds/amazonS3
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/src/main/resources/xsd/config/cloudloop-config.xsd
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/src/main/resources/xsd/config/cloudloop-config.xsd
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/src/main/resources/xsd/config/cloudloop-config.xsd
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/resources/snippet&lt;{Snippet.java[Snippet
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/resources/snippet&lt;{Snippet.java[Snippet
+REGEXP does not match
+---------------------------------------------
+resource : /libcloud-java/src/base/interfaces
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop{ProviderFactoryDefaultImpl.java[ProviderFactoryDefaultImpl~ProviderFactoryDefaultImpl~QCloudloopConfig;
+Proyecto: cloudloop-main
+Jar Location: src/main/java
+Package: com.cloudloop
+Compilation Unit: ProviderFactoryDefaultImpl
+Class Name: ProviderFactoryDefaultImpl
+Metodo: ProviderFactoryDefaultImpl
+MLOC: 1
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop{ProviderFactoryDefaultImpl.java[ProviderFactoryDefaultImpl~ProviderFactoryDefaultImpl~QCloudloopConfig;
+Proyecto: cloudloop-main
+Jar Location: src/main/java
+Package: com.cloudloop
+Compilation Unit: ProviderFactoryDefaultImpl
+Class Name: ProviderFactoryDefaultImpl
+Metodo: ProviderFactoryDefaultImpl
+MLOC: 1
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/src/main/java/neoe/ne/U.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{U.java[U
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{U.java[U
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-adapter/target/cloudloop-adapter-1.1-SNAPSHOT.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/target/classes/xsd/config/cloudloop-config.xsd
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/cloudloop-adapter-1.1-SNAPSHOT.jar&lt;com.cloudloop.storage.adapter.amazonS3(AmazonS3AdapterBase.class
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/target/dist/lib/bcprov-jdk14-140.jar
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-adapter/src/main/java/com/cloudloop
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-adapter/src/main/java&lt;com.cloudloop.storage.adapter.amazonS3{AmazonS3AdapterBase.java[AmazonS3AdapterBase^_key
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{U.java[U~saveFile~QPlainPage;
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: saveFile
+MLOC: 19
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{U.java[U~saveFile~QPlainPage;
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: saveFile
+MLOC: 19
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/util&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-adapter/target/classes/com/cloudloop/storage/adapter/amazonS3/AmazonS3CloudStore$GetBucketsResponse.class
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-main/src/main/java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/target/dist/lib/xml-apis-1.0.b2.jar
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-adapter/src/main/java&lt;com.cloudloop.storage.adapter.rackspace{RackspaceCloudStore.java[RackspaceCloudStore~getMetaData~QFilesObjectMetaData;
+Proyecto: cloudloop-adapter
+Jar Location: src/main/java
+Package: com.cloudloop.storage.adapter.rackspace
+Compilation Unit: RackspaceCloudStore
+Class Name: RackspaceCloudStore
+Metodo: getMetaData
+MLOC: 1
+---------------------------------------------
+java : =cloudloop-all/cloudloop-adapter/target/classes/com/cloudloop/storage/adapter/amazonS3&lt;(AmazonS3CloudStore$GetObjMetadataResponse.class
+REGEXP does not match
+---------------------------------------------
+resource : /java-storage
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{EditPanel.java[EditPanel~openWindow
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: EditPanel
+Class Name: EditPanel
+Metodo: openWindow
+MLOC: 24
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{EditPanel.java[EditPanel~openWindow
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: EditPanel
+Class Name: EditPanel
+Metodo: openWindow
+MLOC: 24
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{EditPanel.java[EditPanel~openWindow
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: EditPanel
+Class Name: EditPanel
+Metodo: openWindow
+MLOC: 24
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{EditPanel.java[EditPanel~openWindow[
+---------------------------------------------
+java : =cloudloop-adapter/src/main/java&lt;com.cloudloop.storage.adapter.jclouds.amazonS3{JS3CloudStore.java[JS3CloudStore~convertToCloopMetadata~QMetadata;
+---------------------------------------------
+java : =cloudloop-adapter/src/main/java&lt;com.cloudloop.storage.adapter.jclouds.amazonS3{JS3CloudStore.java[JS3CloudStore~convertToCloopMetadata~QMetadata;
+---------------------------------------------
+java : =cloudloop-all/cloudloop-adapter/src/main/java/com/cloudloop/storage/adapter/amazonS3&lt;{AmazonS3CloudStore.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-cloudloop/src/main/java/neoe/ne&lt;{PropertiesProvider.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/cloudloop-main-1.1-SNAPSHOT.jar&lt;com.cloudloop.storage(CloudStoreDirectory.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/cloudloop-main-1.1-SNAPSHOT.jar&lt;com.cloudloop.storage(CloudStoreDirectory.class
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-main/src/main
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-main/src/main
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/target/dist/neoedit.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/src/main/resources/xsd/config/cloudloop-config.xml
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/src/main/resources/xsd/config/cloudloop-config.xml
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/src/main/resources/xsd/config/cloudloop-config.xml
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/src/main/resources/xsd/config/cloudloop-config.xml
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-cloudloop/target/classes/snippet&lt;{Snippet.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/xercesImpl-2.6.2.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/xercesImpl-2.6.2.jar
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-main/src/main/java/com/com/nirvanix/sdk/common
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/ne/EditPanel.class
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-all/cloudloop-adapter/target/classes/com/cloudloop/storage/adapter/amazonS3
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/target/classes/cloudloop.xml
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/target/classes/cloudloop.xml
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/ne&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/jdom-b10.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/jdom-b10.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/jdom-b10.jar
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-cloudloop/src/main/java/neoe/ne&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-adapter/target/maven-archiver/pom.properties
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-adapter/src/main/java&lt;com.cloudloop.storage.adapter.jclouds.amazonS3{JS3CloudStore.java[JS3CloudStore
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-adapter/src/main/java&lt;com.cloudloop.storage.adapter.jclouds.amazonS3{JS3CloudStore.java[JS3CloudStore
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/src/main/resources/xsd/config/cloudloop-config.xml
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop.storage{CloudStoreDirectory.java[CloudStoreDirectory~copyTo~QCloudStoreDirectory;~QTransferProgressObserver;
+Proyecto: cloudloop-main
+Jar Location: src/main/java
+Package: com.cloudloop.storage
+Compilation Unit: CloudStoreDirectory
+Class Name: CloudStoreDirectory
+Metodo: copyTo
+MLOC: 37
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop.storage{CloudStoreDirectory.java[CloudStoreDirectory~copyTo~QCloudStoreDirectory;~QTransferProgressObserver;
+Proyecto: cloudloop-main
+Jar Location: src/main/java
+Package: com.cloudloop.storage
+Compilation Unit: CloudStoreDirectory
+Class Name: CloudStoreDirectory
+Metodo: copyTo
+MLOC: 37
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/target/classes/neoe
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/target/dist/lib/xom-1.1d2.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/cloudloop-adapter-1.1-SNAPSHOT.jar&lt;com.cloudloop.storage.adapter.amazonS3(AmazonS3CloudStore.class[AmazonS3CloudStore
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/src/main/java/neoe/ne/PlainPage.java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/target/dist/lib/rackspace-cloudfiles-api-1.4.0.jar
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/target/classes/xsd/config/cloudloop-config1.xml
+REGEXP does not match
+---------------------------------------------
+java : =libcloud-java/src&lt;base.interfaces
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{U.java[U~saveFileHistory~QString;~I
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: saveFileHistory
+MLOC: 6
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{U.java[U~saveFileHistory~QString;~I
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: saveFileHistory
+MLOC: 6
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop{Cloudloop.java
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop{Cloudloop.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/target/classes/xsd/config/cloudloop-config.xml
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/target/classes/xsd/config/cloudloop-config.xml
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-adapter/src/main/java&lt;com.cloudloop.storage.adapter.amazonS3
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-adapter/src/main/java&lt;com.cloudloop.storage.adapter.amazonS3
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/jaxme-api-0.3.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/jaxme-api-0.3.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/src/main/resources/xsd
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/target/dist
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/xsdlib-20030807.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/xsdlib-20030807.jar
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-main/target/classes/com/cloudloop
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/ne/FindReplaceWindow.class
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-cloudloop/src/main/java/neoe/ne&lt;{FindReplaceWindow.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/target/dist/neoedit.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/cloudloop-adapter-1.1-SNAPSHOT.jar&lt;com.cloudloop.storage.adapter.amazonS3
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/cloudloop&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/src/test
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/cloudloop-main-1.1-SNAPSHOT.jar&lt;com.cloudloop.storage(CloudStoreDirectory.class[CloudStoreDirectory
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-adapter/src/main/java&lt;com.cloudloop.storage.adapter.amazonS3{AmazonS3AdapterBase.java[AmazonS3AdapterBase~executeListDirectoryRequest~QString;~I
+Proyecto: cloudloop-adapter
+Jar Location: src/main/java
+Package: com.cloudloop.storage.adapter.amazonS3
+Compilation Unit: AmazonS3AdapterBase
+Class Name: AmazonS3AdapterBase
+Metodo: executeListDirectoryRequest
+MLOC: 0
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/src/main/java/neoe/cloudloop
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/target/classes/snippet/Snippet.java
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-adapter/C:/Users/Kireta/.m2/repository/com/jamesmurty/utils/java-xmlbuilder/0.3/java-xmlbuilder-0.3.jar
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/pom.xml
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/src/main/java/neoe/ne/PropertiesProvider.java
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-main/target/surefire
+REGEXP does not match
+---------------------------------------------
+resource : =neoedit-cloudloop
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop{ProviderFactoryDefaultImpl.java[ProviderFactoryDefaultImpl
+REGEXP does not match
+---------------------------------------------
+resource : /libcloud-java/src
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-main/target/classes/com/cloudloop/storage/CloudStoreDirectory.class
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/src/main/java/neoe/ne/U.java
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-main/src/main/xsd
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/target/dist/lib/stax-api-1.0.jar
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-main/target/surefire/surefire7172460368404764303tmp
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/src/main/java/neoe/cloudloop
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-adapter/target/classes/com/cloudloop/storage/adapter/rackspace/RackspaceCloudStore.class
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-all/cloudloop-main/src/main/java/com/cloudloop/storage/adapter&lt;{CloudStoreAdapterBase.java
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop{Cloudloop.java[Cloudloop~getProvider~QString;
+Proyecto: cloudloop-main
+Jar Location: src/main/java
+Package: com.cloudloop
+Compilation Unit: Cloudloop
+Class Name: Cloudloop
+Metodo: getProvider
+MLOC: 2
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop{Cloudloop.java[Cloudloop~getProvider~QString;
+Proyecto: cloudloop-main
+Jar Location: src/main/java
+Package: com.cloudloop
+Compilation Unit: Cloudloop
+Class Name: Cloudloop
+Metodo: getProvider
+MLOC: 2
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-adapter/target/classes
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop.config{CloudloopConfigLoader.java[CloudloopConfigLoader~saveConfiguration~QCloudloopConfig;~QFile;
+Proyecto: cloudloop-main
+Jar Location: src/main/java
+Package: com.cloudloop.config
+Compilation Unit: CloudloopConfigLoader
+Class Name: CloudloopConfigLoader
+Metodo: saveConfiguration
+MLOC: 8
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{PlainPage.java[PlainPage[Paint~drawToolbar~QGraphics2D;
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: PlainPage
+Class Name: PlainPage.Paint
+Metodo: drawToolbar
+MLOC: 18
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{PlainPage.java[PlainPage[Paint~drawToolbar~QGraphics2D;
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: PlainPage
+Class Name: PlainPage.Paint
+Metodo: drawToolbar
+MLOC: 18
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{EditPanel.java[EditPanel
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{EditPanel.java[EditPanel
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{EditPanel.java[EditPanel
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-all/cloudloop-adapter/target/classes/com/cloudloop/storage/adapter/amazonS3&lt;(AmazonS3AdapterBase.class
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-main/src/main/java/com/cloudloop/storage/adapter
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/cloudloop-main-1.1-SNAPSHOT.jar&lt;com.cloudloop.storage(CloudStore.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/cloudloop-main-1.1-SNAPSHOT.jar&lt;com.cloudloop.storage(CloudStore.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/cloudloop-main-1.1-SNAPSHOT.jar&lt;com.cloudloop.storage(CloudStore.class
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-cloudloop/src/main/java/neoe/cloudloop&lt;{DirectoryRestrictedFileSystemView.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-cloudloop/src/main/java/neoe/cloudloop&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/src/main/java/neoe
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-cloudloop/target/classes/neoe/ne&lt;(EditPanel$1.class
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-adapter/src/main/java/com/cloudloop/storage/adapter
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-webdav
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-adapter/target
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/target/dist/lib/cloudloop-adapter-1.1-SNAPSHOT.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/pom.xml
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop.storage.adapter
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/resources
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/resources
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/resources
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-all/cloudloop-adapter/src/main/java/com/cloudloop/storage/adapter/rackspace&lt;{RackspaceCloudStore.java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/src/main/java/neoe/ne/PlainPage.java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/src/main/java/neoe/ne/PlainPage.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/src/main/resources/xsd/config
+REGEXP does not match
+---------------------------------------------
+java : =libcloud-java/src&lt;base.interfaces{IConnection.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/util
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-all/cloudloop-main/src/main/java/com/cloudloop/config&lt;{CloudloopConfigLoader.java
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-main/src/main/java/com/cloudloop/storage/CloudStore.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/util&lt;(FileIterator$1.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-main/target/classes
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/target/dist/lib/relaxngDatatype-20030807.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/src/test
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{U.java[U~scale~I~QPaint;
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: scale
+MLOC: 5
+---------------------------------------------
+java : =neoedit/neoedit-cloudloop/src/main/java/neoe/ne&lt;{PropertiesProvider.java
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-main/src/main/resources/xsd
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-main/src/main/resources/xsd
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-main/target/classes/com/cloudloop/storage
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;java.lang(ExceptionInInitializerError.class
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;java.lang(ExceptionInInitializerError.class
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/resources
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/resources
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/target/classes/neoe/ne/U$BasicAction.class
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-adapter/target/classes/com/cloudloop/storage/adapter/amazonS3
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-adapter/src/main/java&lt;com.cloudloop.storage.adapter.rackspace{RackspaceCloudStore.java[RackspaceCloudStore~RackspaceCloudStore~QString;~QBoolean;~QEncryptionProvider;~QProviderRequestExecutor;~QProperties;
+Proyecto: cloudloop-adapter
+Jar Location: src/main/java
+Package: com.cloudloop.storage.adapter.rackspace
+Compilation Unit: RackspaceCloudStore
+Class Name: RackspaceCloudStore
+Metodo: RackspaceCloudStore
+MLOC: 0
+---------------------------------------------
+resource : /neoedit-cloudloop/src/main/resources
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/src/main/resources
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-adapter/src/main/java/com/cloudloop/storage/adapter/amazonS3
+REGEXP does not match
+---------------------------------------------
+java : =aether
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/src/main/resources/xsd/config/cloudloop-config.xml
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/target/dist
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/target/dist
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-all/cloudloop-main/target/classes/com/cloudloop/config&lt;(CloudloopConfigLoader.class
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-main/src/main/java/com/nirvanix/sdk/transport
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/target/classes/xsd
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/target/classes/neoe/ne
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-main/src/test/java/cloudloop/test
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/cloudloop-main-1.1-SNAPSHOT.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/cloudloop-main-1.1-SNAPSHOT.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/cloudloop-main-1.1-SNAPSHOT.jar
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-adapter/target/classes/com/cloudloop/storage/adapter
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/pull-parser-2.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/pull-parser-2.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/pull-parser-2.jar
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop{CloudProvider.java
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop{CloudProvider.java
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-main/src/main/java/com/nirvanix
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/src/main/java/neoe/ne
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-cloudloop/target/classes/neoe/cloudloop
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-main/src/main/java/com/cloudloop/ProviderFactoryDefaultImpl.java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/target/dist/lib/guava-11.0.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/mime-util-1.2.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/mime-util-1.2.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/mime-util-1.2.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-cloudloop/target/classes/neoe/ne
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/src/main/resources/xsd
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop{ProviderFactoryDefaultImpl.java[ProviderFactoryDefaultImpl~getAvailableAdapterConfigs
+Proyecto: cloudloop-main
+Jar Location: src/main/java
+Package: com.cloudloop
+Compilation Unit: ProviderFactoryDefaultImpl
+Class Name: ProviderFactoryDefaultImpl
+Metodo: getAvailableAdapterConfigs
+MLOC: 31
+---------------------------------------------
+java : =cloudloop-all/cloudloop-adapter/target/classes/com/cloudloop/storage/adapter/rackspace&lt;(RackspaceCloudStore.class
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop{Cloudloop.java[Cloudloop
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop{Cloudloop.java[Cloudloop
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop{Cloudloop.java[Cloudloop
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-main/src/main/java/com/cloudloop/CloudProvider.java
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-adapter/C:/Users/Kireta/.m2/repository/org/jclouds/jclouds-core/1.0.0/jclouds-core-1.0.0.jar
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/lib
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-adapter/src/test
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-main/src/main/java/com
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-main/src/main/java/com
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-cloudloop/src/main/java/neoe/ne&lt;{EditPanel.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/icu4j-2.6.1.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/icu4j-2.6.1.jar
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/target/classes/xsd/config/cloudloop-config1.xml
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-all/cloudloop-adapter/src/main/java/com/cloudloop/storage/adapter/rackspace
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-adapter/src/main/java&lt;com.cloudloop.storage.adapter.amazonS3{AmazonS3CloudStore.java[AmazonS3CloudStore
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-adapter/src/main/java&lt;com.cloudloop.storage.adapter.amazonS3{AmazonS3CloudStore.java[AmazonS3CloudStore
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-adapter/src/main/java&lt;com.cloudloop.storage.adapter.amazonS3{AmazonS3CloudStore.java[AmazonS3CloudStore
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/src/main/resources/xsd
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-cloudloop/src/main/java/neoe/cloudloop&lt;
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-adapter/C:/Users/Kireta/.m2/repository/org/aspectj/aspectjlib/1.6.2/aspectjlib-1.6.2.jar
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/util/FileIterator.class
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-adapter/src/main/java/com
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-main/target/surefire/surefire2936307904753050073tmp
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/src
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-all/cloudloop-adapter/target/classes/com/cloudloop/storage/adapter/amazonS3&lt;
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-adapter/src/main/java
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-adapter/src/main/java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-cloudloop/src/main/java/neoe/cloudloop&lt;{DirectoryRestrictedFileSystemView.java
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-adapter/src/main
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{U.java[U~savePageToFile~QPlainPage;
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: savePageToFile
+MLOC: 12
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{U.java[U~savePageToFile~QPlainPage;
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: savePageToFile
+MLOC: 12
+---------------------------------------------
+java : =neoedit-cloudloop/lib/xml-apis-1.0.b2.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/xml-apis-1.0.b2.jar
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/target/classes/xsd/config/cloudloop-config.xsd
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/xpp3-1.1.3.3.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/xpp3-1.1.3.3.jar
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-main/src/main/java/com/cloudloop/storage/adapter
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/src
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-cloudloop/target/classes/snippet
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.cloudloop{CloudLoopAdapter.java[CloudLoopAdapter~uploadFile~QString;~QFile;
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.cloudloop
+Compilation Unit: CloudLoopAdapter
+Class Name: CloudLoopAdapter
+Metodo: uploadFile
+MLOC: 10
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.cloudloop{CloudLoopAdapter.java[CloudLoopAdapter~uploadFile~QString;~QFile;
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.cloudloop
+Compilation Unit: CloudLoopAdapter
+Class Name: CloudLoopAdapter
+Metodo: uploadFile
+MLOC: 10
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.cloudloop{CloudLoopAdapter.java[CloudLoopAdapter~uploadFile~QString;~QFile;
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.cloudloop
+Compilation Unit: CloudLoopAdapter
+Class Name: CloudLoopAdapter
+Metodo: uploadFile
+MLOC: 10
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{PlainPage.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{PlainPage.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-cloudloop/src/main/java/neoe/ne&lt;{U.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/ne
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/target/classes/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/target/classes/properties.properties
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/cloudloop&lt;(DirectoryRestrictedFileSystemView.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{FindReplaceWindow.java[FindReplaceWindow~main~\[QString;
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: FindReplaceWindow
+Class Name: FindReplaceWindow
+Metodo: main
+MLOC: 4
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{FindReplaceWindow.java[FindReplaceWindow~main~\[QString;
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: FindReplaceWindow
+Class Name: FindReplaceWindow
+Metodo: main
+MLOC: 4
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop.storage.adapter{CloudStoreAdapterBase.java
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop.storage.adapter{CloudStoreAdapterBase.java
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop.storage.adapter{CloudStoreAdapterBase.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-cloudloop/src/main/java/neoe/cloudloop
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{U.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{U.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{U.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{U.java[U^th[
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-main/src/main/java/com/cloudloop/storage
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-all/cloudloop-adapter/target/classes/com/cloudloop/storage/adapter/amazonS3&lt;(AmazonS3CloudStore$GetBucketsResponse.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/commons-codec-1.6.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/commons-codec-1.6.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/src/main/java/neoe/ne/PropertiesProvider.java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/target/dist/lib/aspectjrt-1.6.11.jar
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-main/src/test/java/cloudloop
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/src/main/java/neoe/ne
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/src/main/java/neoe/cloudloop/CloudLoopAdapter.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/target/classes/icontab.png
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/src/main/java/neoe/DirectoryRestrictedFileSystemView.java
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-adapter/src
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/xml-apis-1.0.b2.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/xml-apis-1.0.b2.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/xml-apis-1.0.b2.jar
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-main/src/test/java/cloudloop/test/CloudStorePathTests.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/lib/cloudloop-main-1.1-SNAPSHOT.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.cloudloop
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.cloudloop
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/log4j-1.2.16.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/log4j-1.2.16.jar
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-adapter/C:/Users/Kireta/.m2/repository/jdom/jdom/1.0/jdom-1.0.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/xalan-2.6.0.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/xalan-2.6.0.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-cloudloop/target/classes/neoe/cloudloop&lt;(DirectoryRestrictedFileSystemView.class
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-main/pom.xml
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-main/pom.xml
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{PlainPage.java[PlainPage[Paint
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{PlainPage.java[PlainPage[Paint
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{PlainPage.java[PlainPage[Paint
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/jaxen-1.1-beta-4.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/jaxen-1.1-beta-4.jar
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/src/main/java/neoe/ne
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/commons-httpclient-3.1.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/commons-httpclient-3.1.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/commons-httpclient-3.1.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/cloudloop-main-1.1-SNAPSHOT.jar&lt;com.cloudloop.storage.adapter(CloudStoreAdapterBase.class[CloudStoreAdapterBase~upload~Lcom.cloudloop.storage.CloudStoreFile;~Lcom.cloudloop.TransferProgressObserver;
+Proyecto: neoedit-cloudloop
+Jar Location: lib/cloudloop-main-1.1-SNAPSHOT.jar
+Package: com.cloudloop.storage.adapter
+Compilation Unit: CloudStoreAdapterBase
+Class Name: CloudStoreAdapterBase
+Metodo: upload
+MLOC: 30
+---------------------------------------------
+java : =neoedit-cloudloop/lib/cloudloop-main-1.1-SNAPSHOT.jar&lt;com.cloudloop.storage.adapter(CloudStoreAdapterBase.class[CloudStoreAdapterBase~upload~Lcom.cloudloop.storage.CloudStoreFile;~Lcom.cloudloop.TransferProgressObserver;
+Proyecto: neoedit-cloudloop
+Jar Location: lib/cloudloop-main-1.1-SNAPSHOT.jar
+Package: com.cloudloop.storage.adapter
+Compilation Unit: CloudStoreAdapterBase
+Class Name: CloudStoreAdapterBase
+Metodo: upload
+MLOC: 30
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/resources/snippet&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/src/main/java/neoe/ne/EditPanel.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-all/cloudloop-main/src/main/java/com/cloudloop/storage
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/src/main/java/neoe/ne/CloudLoopAdapter.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/src/test
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-cloudloop/target/classes/snippet&lt;{Snippet.java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/xsdlib-20030807.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/xsdlib-20030807.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/xsdlib-20030807.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/src/main/java/neoe/ne/CloudLoopAdapter.java
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-cli-client/pom.xml
+REGEXP does not match
+---------------------------------------------
+resource : =cloudloop-adapter
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-adapter
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-webdav
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;java.lang(ExceptionInInitializerError.class[ExceptionInInitializerError
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.cloudloop{CloudLoopAdapter.java[CloudLoopAdapter
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.cloudloop{CloudLoopAdapter.java[CloudLoopAdapter
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.cloudloop{CloudLoopAdapter.java[CloudLoopAdapter
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/pom.xml
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/target/classes/neoe/cloudloop/CloudLoopAdapter.class
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-test-integration
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-test-integration
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/ne/CloudLoopAdapter.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-cloudloop/src/main/java/neoe/ne&lt;{EditPanel.java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/jaxb-api-2.2.6.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/jaxb-api-2.2.6.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/jaxb-api-2.2.6.jar
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-main/src/main/java/com
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/target/classes/neoe/util/FileIterator.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-core
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/lib/cloudloop-main-1.1-SNAPSHOT.jar
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-adapter/src/main/java&lt;com.cloudloop.storage.adapter.rackspace{RackspaceCloudStore.java[RackspaceCloudStore^REMOTE_DATE_FORMAT[~initialValue
+---------------------------------------------
+java : =cloudloop-adapter/src/main/java&lt;com.cloudloop.storage.adapter.rackspace{RackspaceCloudStore.java[RackspaceCloudStore^REMOTE_DATE_FORMAT[~initialValue
+---------------------------------------------
+java : =cloudloop-adapter/src/main/java&lt;com.cloudloop.storage.adapter.jclouds.amazonS3{JS3CloudStore.java[JS3CloudStore~executeListDirectoryRequest~QString;~I
+---------------------------------------------
+java : =cloudloop-adapter/src/main/java&lt;com.cloudloop.storage.adapter.jclouds.amazonS3{JS3CloudStore.java[JS3CloudStore~executeListDirectoryRequest~QString;~I
+---------------------------------------------
+resource : /neoedit-cloudloop/src/main/resources/xsd
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/src/main/resources/xsd
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/ne/PropertiesProvider.class
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/target/dist/lib/dom4j-1.5.2.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/jaxme-api-0.3.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/jaxme-api-0.3.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/jaxme-api-0.3.jar
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/src/main/resources/xsd/config/cloudloop-config1.xml
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/cloudloop-main-1.1-SNAPSHOT.jar&lt;com.cloudloop.storage.adapter
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/ne&lt;(PropertiesProvider.class
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/src/main/java/neoe
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/src/test/resources
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/src/main/java/neoe/cloudloop/DirectoryRestrictedFileSystemView.java
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop.config{CloudloopConfigLoader.java[CloudloopConfigLoader
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.cloudloop{CloudLoopAdapter.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.cloudloop{CloudLoopAdapter.java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/pom.xml
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/pom.xml
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/test/resources
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/test/resources
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/target/dist/lib/xalan-2.6.0.jar
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop.storage{CloudStore.java[CloudStore~listDirectoryContents~QCloudStoreDirectory;~QCloudStoreObjectType;~Z
+Proyecto: cloudloop-main
+Jar Location: src/main/java
+Package: com.cloudloop.storage
+Compilation Unit: CloudStore
+Class Name: CloudStore
+Metodo: listDirectoryContents
+MLOC: 0
+---------------------------------------------
+java : =neoedit/neoedit-cloudloop/target/classes/neoe/cloudloop&lt;(CloudLoopAdapter.class
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/src/test/resources
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-cloudloop/target/classes/snippet&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/src/main
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-cloudloop/target/classes/neoe/ne&lt;(EditPanel.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-cloudloop/src/main/java/neoe/ne&lt;{PlainPage.java
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-adapter
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{U.java[U~openFile~QString;~I
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: openFile
+MLOC: 5
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{U.java[U~openFile~QString;~I
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: openFile
+MLOC: 5
+---------------------------------------------
+java : =neoedit-cloudloop/lib/pull-parser-2.jar&lt;org.gjt.xpp.sax2
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/target/classes/neoe/ne/FindReplaceWindow.class
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/target/dist/lib/commons-logging-1.0.4.jar
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop.storage{CloudStoreDirectory.java
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop.storage{CloudStoreDirectory.java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/cloudloop-main-1.1-SNAPSHOT.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/cloudloop-main-1.1-SNAPSHOT.jar
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-adapter
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-all/cloudloop-adapter/target/classes/com/cloudloop/storage/adapter/amazonS3&lt;(AmazonS3AdapterBase$DirListResponseFilter.class
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-all/cloudloop-adapter/target/classes/com/cloudloop/storage/adapter/amazonS3&lt;(AmazonS3CloudStore.class
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/src/main/resources/cloudloop.xml
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/src/main/resources/cloudloop.xml
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/src/main/resources/cloudloop.xml
+REGEXP does not match
+---------------------------------------------
+resource : =cloudloop-main
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/src/main/java/neoe/ne/FindReplaceWindow.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/cloudloop-main-1.1-SNAPSHOT.jar&lt;com.cloudloop.storage(CloudStore.class[CloudStore~listDirectoryContents~Lcom.cloudloop.storage.CloudStoreDirectory;~Lcom.cloudloop.storage.CloudStoreObjectType;~Z
+Proyecto: neoedit-cloudloop
+Jar Location: lib/cloudloop-main-1.1-SNAPSHOT.jar
+Package: com.cloudloop.storage
+Compilation Unit: CloudStore
+Class Name: CloudStore
+Metodo: listDirectoryContents
+MLOC: 0
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-main/pom.xml
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/cloudloop
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/target/classes/xsd/config/cloudloop-config1.xml
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-adapter/target/classes/com/cloudloop/storage/adapter/amazonS3/AmazonS3AdapterBase$DirListResponseFilter.class
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/target/dist/lib/mime-util-1.2.jar
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/target/classes/xsd/config/cloudloop-config.xml
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/target/classes/xsd/config/cloudloop-config.xml
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/ne&lt;(FindReplaceWindow.class
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-adapter/src/main/java&lt;com.cloudloop.storage.adapter.jclouds.amazonS3{JS3CloudStore.java#org.jclouds.aws.s3.S3Connection
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-installer
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/target
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/target
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-cloudloop/target/classes/neoe/ne&lt;(PropertiesProvider.class
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-test-integration
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-test-integration
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-all/cloudloop-adapter/src/main/java/com/cloudloop/storage/adapter/rackspace&lt;
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-cli-client
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-cli-client
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/src/main/java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-cloudloop/target/classes/neoe/ne&lt;(FindReplaceWindow.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/util/FileIterator$1.class
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-adapter/target/classes/com/cloudloop/storage/adapter/amazonS3/AmazonS3CloudStore.class
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/src/main/resources/xsd/config
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/src/main/resources/xsd/config
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/src/main/java/neoe/ne/EditPanel.java
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-adapter/src/main/java&lt;com.cloudloop.storage.adapter.amazonS3{AmazonS3AdapterBase.java[AmazonS3AdapterBase
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-adapter/src/main/java&lt;com.cloudloop.storage.adapter.amazonS3{AmazonS3AdapterBase.java[AmazonS3AdapterBase
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-adapter/src/main/java&lt;com.cloudloop.storage.adapter.amazonS3{AmazonS3AdapterBase.java[AmazonS3AdapterBase
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-adapter/src/main/java&lt;com.cloudloop.storage.adapter.amazonS3{AmazonS3AdapterBase.java[AmazonS3AdapterBase
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-main/target/surefire/surefire5812892235315823154tmp
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/target/classes/neoe/ne/CloudLoopAdapter.class
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/target/dist/lib/commons-httpclient-3.1.jar
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-cloudloop/src/main/java/neoe/cloudloop&lt;{CloudLoopAdapter.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-cloudloop/src/main/java/neoe/cloudloop&lt;{CloudLoopAdapter.java
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-adapter/target/maven-archiver
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-adapter/src/main/java&lt;com.cloudloop.storage.adapter.rackspace
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-adapter/src/main/java&lt;com.cloudloop.storage.adapter.rackspace
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-cloudloop/target/classes/neoe/cloudloop&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/target/dist/lib/jaxen-1.1-beta-4.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/pull-parser-2.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/pull-parser-2.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/pull-parser-2.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/target/dist
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-adapter/src/main/resources
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/src/main/resources/cloudloop.xml
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/src/main/resources/cloudloop.xml
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/cloudloop/DirectoryRestrictedFileSystemView.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/target
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/util&lt;(FileIterator.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/src/main/java/neoe/ne/CloudLoopAdapter.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.cloudloop{CloudLoopAdapter.java[CloudLoopAdapter~CloudLoopAdapter
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.cloudloop
+Compilation Unit: CloudLoopAdapter
+Class Name: CloudLoopAdapter
+Metodo: CloudLoopAdapter
+MLOC: 8
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.cloudloop{CloudLoopAdapter.java[CloudLoopAdapter~CloudLoopAdapter
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.cloudloop
+Compilation Unit: CloudLoopAdapter
+Class Name: CloudLoopAdapter
+Metodo: CloudLoopAdapter
+MLOC: 8
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.cloudloop{CloudLoopAdapter.java[CloudLoopAdapter~CloudLoopAdapter
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.cloudloop
+Compilation Unit: CloudLoopAdapter
+Class Name: CloudLoopAdapter
+Metodo: CloudLoopAdapter
+MLOC: 8
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/target/classes
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-adapter/target/classes/com/cloudloop
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-all/cloudloop-main/target/classes/com/cloudloop/config
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/target/classes/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/target/classes/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/xalan-2.6.0.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/xalan-2.6.0.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/xalan-2.6.0.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{FindReplaceWindow.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{FindReplaceWindow.java
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-cli-client/pom.xml
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-cli-client/pom.xml
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/target/classes/neoe/ne/U$BasicAction.class
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-all/cloudloop-main/src/main/java/com/cloudloop&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-main/src/main/resources
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-main/src/main/resources
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{U.java[U~runScriptOnDir~QString;[!2
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: runScriptOnDir
+MLOC: 51
+---------------------------------------------
+java : =cloudloop-all/cloudloop-main/src/main/java/com/cloudloop/config
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop{CloudProvider.java[CloudProvider
+REGEXP does not match
+---------------------------------------------
+java : =cloudloop-main/src/main/java&lt;com.cloudloop{CloudProvider.java[CloudProvider
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{U.java[U~readFile~QPlainPage;~QString;
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: readFile
+MLOC: 6
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{U.java[U~readFile~QPlainPage;~QString;
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: readFile
+MLOC: 6
+---------------------------------------------
+java : =neoedit/neoedit-cloudloop/src/main/java/neoe/cloudloop&lt;{CloudLoopAdapter.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-cloudloop/src/main/java/neoe/cloudloop&lt;{CloudLoopAdapter.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/bcprov-jdk14-140.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/bcprov-jdk14-140.jar
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-cloudloop/target/dist
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{U.java[U~doReplaceInDir~QPlainPage;~QString;~Z~QString;~Z~QString;
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: doReplaceInDir
+MLOC: 25
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{U.java[U~doReplaceInDir~QPlainPage;~QString;~Z~QString;~Z~QString;
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: doReplaceInDir
+MLOC: 25
+---------------------------------------------
+java : =cloudloop-adapter/C:/Users/Kireta/.m2/repository/com/sun/jersey/jersey-core/1.6/jersey-core-1.6.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/resources/snippet&lt;{Snippet.java[Snippet^name
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/resources/snippet&lt;{Snippet.java[Snippet^name
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/xom-1.1d2.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/lib/xom-1.1d2.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/target/classes/Alien.png
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-cloudloop/target/classes/Alien.png
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-adapter/src/main/java/com/cloudloop/storage/adapter/amazonS3/AmazonS3CloudStore.java
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-adapter/src/main/java/com/cloudloop/storage/adapter/amazonS3/AmazonS3CloudStore.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/src/test
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/target/classes/xsd
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-cloudloop/src/main/java/neoe/ne/PropertiesProvider.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{U.java[U~readFileForEditor~QString;~QString;
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: readFileForEditor
+MLOC: 25
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.ne{U.java[U~readFileForEditor~QString;~QString;
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: readFileForEditor
+MLOC: 25
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/icu4j-2.6.1.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/icu4j-2.6.1.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/lib/icu4j-2.6.1.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-cloudloop/src/main/resources/snippet/Snippet.java
+REGEXP does not match
+---------------------------------------------
+resource : /libcloud-java/src/base/interfaces/IConnection.java
+REGEXP does not match
+---------------------------------------------
+resource : /libcloud-java/src/base/interfaces/IConnection.java
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-adapter/src/main/java/com/cloudloop/storage/adapter/amazonS3/AmazonS3AuthenticatedRESTRequest.java
+REGEXP does not match
+---------------------------------------------
+resource : /cloudloop-all/cloudloop-adapter/target/classes/com/cloudloop/storage/adapter/amazonS3/AmazonS3AdapterBase.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.cloudloop{CloudLoopAdapter.java[CloudLoopAdapter~getInputStream~QFile;~QFile;
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.cloudloop
+Compilation Unit: CloudLoopAdapter
+Class Name: CloudLoopAdapter
+Metodo: getInputStream
+MLOC: 9
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.cloudloop{CloudLoopAdapter.java[CloudLoopAdapter~getInputStream~QFile;~QFile;
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.cloudloop
+Compilation Unit: CloudLoopAdapter
+Class Name: CloudLoopAdapter
+Metodo: getInputStream
+MLOC: 9
+---------------------------------------------
+java : =neoedit-cloudloop/src/main/java&lt;neoe.cloudloop{CloudLoopAdapter.java[CloudLoopAdapter~getInputStream~QFile;~QFile;
+Proyecto: neoedit-cloudloop
+Jar Location: src/main/java
+Package: neoe.cloudloop
+Compilation Unit: CloudLoopAdapter
+Class Name: CloudLoopAdapter
+Metodo: getInputStream
+MLOC: 9
+---------------------------------------------
+FINAL ACCUMULATED RESULT: 1851.0
+---------------------------------------------

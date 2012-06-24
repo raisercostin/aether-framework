@@ -1,0 +1,2087 @@
+Loading metrics from: D:\Mylyn Metrics\Projects\jfilesync-dasein.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\aether-core.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\aether-loader.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\cloudloop-adapter.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\cloudloop-main.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\dasein-aws.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\dasein-core.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\dasein-google.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\jclouds-aws-common.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\jclouds-aws-s3.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\jclouds-blobstore.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\jclouds-core.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\jclouds-s3.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\jets3t.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\libcloud.xml
+java : 
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/external
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/gui&lt;(JFSConfigView$1.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-dasein/src/main/java/jfs/sync&lt;
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFileProducer.java[JFSDaseinFileProducer~JFSDaseinFileProducer~QString;
+Proyecto: jfilesync-dasein
+Jar Location: src/main/java
+Package: jfs.sync.dasein
+Compilation Unit: JFSDaseinFileProducer
+Class Name: JFSDaseinFileProducer
+Metodo: JFSDaseinFileProducer
+MLOC: 17
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFileProducer.java[JFSDaseinFileProducer~JFSDaseinFileProducer~QString;
+Proyecto: jfilesync-dasein
+Jar Location: src/main/java
+Package: jfs.sync.dasein
+Compilation Unit: JFSDaseinFileProducer
+Class Name: JFSDaseinFileProducer
+Metodo: JFSDaseinFileProducer
+MLOC: 17
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein/JFSDaseinFileProducerFactory.class
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein&lt;{JFSDaseinFileProducer.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein&lt;{JFSDaseinFileProducer.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/resources
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/gui&lt;{JFSConfigDirectoryView.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein/JFSDaseinFileProducerFactory.class
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/src
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jets3t/src/main/java/jfs
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/JFSElement.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/src/main/java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.gui{JFSConfigDirectoryView.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.gui{JFSConfigDirectoryView.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein&lt;(JFSDaseinFileProducer.class
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein&lt;(JFSDaseinFileProducer.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-dasein/src/main/java/jfs/util
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/target/classes/jfs/resources/conf
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{PropertiesProvider.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-dasein/src/main/java/jfs/sync/JFSFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync
+REGEXP does not match
+---------------------------------------------
+resource : /
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein&lt;{JFSLibcloudFileProducer.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/src/main/resources
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/JFSElement.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/src/main/java/jfs/resources/conf
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-dasein/target/classes/jfs/gui&lt;(JFSConfigView$1.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein&lt;(JFSLibcloudFile.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFile.java[JFSDaseinFile~getLength
+Proyecto: jfilesync-dasein
+Jar Location: src/main/java
+Package: jfs.sync.dasein
+Compilation Unit: JFSDaseinFile
+Class Name: JFSDaseinFile
+Metodo: getLength
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFile.java[JFSDaseinFile~getLength
+Proyecto: jfilesync-dasein
+Jar Location: src/main/java
+Package: jfs.sync.dasein
+Compilation Unit: JFSDaseinFile
+Class Name: JFSDaseinFile
+Metodo: getLength
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFile.java[JFSDaseinFile~getLength
+Proyecto: jfilesync-dasein
+Jar Location: src/main/java
+Package: jfs.sync.dasein
+Compilation Unit: JFSDaseinFile
+Class Name: JFSDaseinFile
+Metodo: getLength
+MLOC: 1
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar&lt;org.dasein.cloud.storage(AbstractBlobStoreSupport.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFile.java[JFSDaseinFile^adapter
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFile.java[JFSDaseinFile^adapter
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFile.java[JFSDaseinFile^adapter
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein&lt;{JFSDaseinFileProducer.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein&lt;{JFSDaseinFileProducer.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/src/main/java/jfs/sync/JFSFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/target/classes/jfs/util/CodecUtil.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.gui{JFSConfigView.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.gui{JFSConfigView.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-dasein/src/main/java/jfs/sync/dasein
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein/JFSLibcloudFileProducer.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/target/classes/jfs/gui/JFSConfigView$1.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein&lt;(JFSDaseinFileProducerFactory.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein/JFSDaseinFileProducer.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein/JFSDaseinFile.class
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein&lt;(PropertiesProvider.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jets3t/src/main/java&lt;jfs.sync{JFSFile.java[JFSFile
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFileProducer.java[JFSDaseinFileProducer^bucket
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/resources/conf
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein&lt;(JFSDaseinFileProducer.class
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein&lt;(JFSDaseinFileProducer.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFile.java[JFSDaseinFile~setReadOnly
+Proyecto: jfilesync-dasein
+Jar Location: src/main/java
+Package: jfs.sync.dasein
+Compilation Unit: JFSDaseinFile
+Class Name: JFSDaseinFile
+Metodo: setReadOnly
+MLOC: 1
+---------------------------------------------
+java : =jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein/JFSDaseinFileProducer.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein&lt;{JFSLibcloudFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/gui/JFSConfigView.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/src/main/java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar&lt;org.dasein.cloud.storage(BlobStoreSupport.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar&lt;org.dasein.cloud.storage(BlobStoreSupport.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar&lt;org.dasein.cloud.storage(BlobStoreSupport.class
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/local
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein/JFSLibcloudFileProducer.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFile.java[JFSDaseinFile~closeInputStream
+Proyecto: jfilesync-dasein
+Jar Location: src/main/java
+Package: jfs.sync.dasein
+Compilation Unit: JFSDaseinFile
+Class Name: JFSDaseinFile
+Metodo: closeInputStream
+MLOC: 6
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFile.java[JFSDaseinFile~closeInputStream
+Proyecto: jfilesync-dasein
+Jar Location: src/main/java
+Package: jfs.sync.dasein
+Compilation Unit: JFSDaseinFile
+Class Name: JFSDaseinFile
+Metodo: closeInputStream
+MLOC: 6
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFile.java[JFSDaseinFile~closeInputStream
+Proyecto: jfilesync-dasein
+Jar Location: src/main/java
+Package: jfs.sync.dasein
+Compilation Unit: JFSDaseinFile
+Class Name: JFSDaseinFile
+Metodo: closeInputStream
+MLOC: 6
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein&lt;{JFSDaseinFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/src/main/java/jfs/gui/JFSConfigView.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-dasein/src/main/java/jfs/sync/dasein/JFSLibcloudFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/util
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein/JFSDaseinFileProducer.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar&lt;org.dasein.cloud.storage(CloudStoreObject.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar&lt;org.dasein.cloud.storage(CloudStoreObject.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/src/main/resources
+REGEXP does not match
+---------------------------------------------
+resource : =jfilesync-dasein
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/resources/conf
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/external&lt;{JFSExternalFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.gui{JFSConfigView.java[JFSConfigView~JFSConfigView~QJFrame;
+Proyecto: jfilesync-dasein
+Jar Location: src/main/java
+Package: jfs.gui
+Compilation Unit: JFSConfigView
+Class Name: JFSConfigView
+Metodo: JFSConfigView
+MLOC: 102
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFile.java[JFSDaseinFile^bucket
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-dasein/src/main/java/jfs/sync&lt;{JFSFile.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/util&lt;(CodecUtil.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/gui/JFSConfigDirectoryView.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/conf&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein/JFSDaseinFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein/JFSLibcloudFileProducer.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/util/CodecUtil.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/util&lt;{CodecUtil.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jets3t/src
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFileProducer.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFileProducer.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFileProducer.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/gui&lt;
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFile.java[JFSDaseinFile~getList
+Proyecto: jfilesync-dasein
+Jar Location: src/main/java
+Package: jfs.sync.dasein
+Compilation Unit: JFSDaseinFile
+Class Name: JFSDaseinFile
+Metodo: getList
+MLOC: 36
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFile.java[JFSDaseinFile~getList
+Proyecto: jfilesync-dasein
+Jar Location: src/main/java
+Package: jfs.sync.dasein
+Compilation Unit: JFSDaseinFile
+Class Name: JFSDaseinFile
+Metodo: getList
+MLOC: 36
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/src
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFileProducer.java[JFSDaseinFileProducer~getRootJfsFile
+Proyecto: jfilesync-dasein
+Jar Location: src/main/java
+Package: jfs.sync.dasein
+Compilation Unit: JFSDaseinFileProducer
+Class Name: JFSDaseinFileProducer
+Metodo: getRootJfsFile
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFileProducer.java[JFSDaseinFileProducer~getRootJfsFile
+Proyecto: jfilesync-dasein
+Jar Location: src/main/java
+Package: jfs.sync.dasein
+Compilation Unit: JFSDaseinFileProducer
+Class Name: JFSDaseinFileProducer
+Metodo: getRootJfsFile
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFileProducer.java[JFSDaseinFileProducer~getRootJfsFile
+Proyecto: jfilesync-dasein
+Jar Location: src/main/java
+Package: jfs.sync.dasein
+Compilation Unit: JFSDaseinFileProducer
+Class Name: JFSDaseinFileProducer
+Metodo: getRootJfsFile
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFileProducer.java[JFSDaseinFileProducer^amazon
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFileProducer.java[JFSDaseinFileProducer^amazon
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein/JFSDaseinFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.external{JFSExternalFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.external{JFSExternalFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync{JFSElement.java[JFSElement~revalidate
+Proyecto: jfilesync-dasein
+Jar Location: src/main/java
+Package: jfs.sync
+Compilation Unit: JFSElement
+Class Name: JFSElement
+Metodo: revalidate
+MLOC: 36
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync{JFSElement.java[JFSElement~revalidate
+Proyecto: jfilesync-dasein
+Jar Location: src/main/java
+Package: jfs.sync
+Compilation Unit: JFSElement
+Class Name: JFSElement
+Metodo: revalidate
+MLOC: 36
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync{JFSElement.java[JFSElement~revalidate
+Proyecto: jfilesync-dasein
+Jar Location: src/main/java
+Package: jfs.sync
+Compilation Unit: JFSElement
+Class Name: JFSElement
+Metodo: revalidate
+MLOC: 36
+---------------------------------------------
+resource : /jfilesync-dasein/src/main/resources
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-dasein/target/classes/jfs/gui&lt;(JFSConfigDirectoryView.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.util{CodecUtil.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/conf&lt;{JFSConst.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/src/main
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/util
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jets3t/src/main/java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/src/main/java/jfs/sync/JFSFileProducerManager.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein/JFSLibcloudFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync&lt;{JFSElement.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein/JFSDaseinFileProducer.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein/PropertiesProvider.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/gui/JFSConfigView.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/src/main/java/jfs/sync/external/JFSExternalFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/target/classes/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-dasein/src/main/java/jfs/sync/dasein/JFSDaseinFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-dasein/src/main/java/jfs/sync/dasein/JFSDaseinFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/JFSFileProducerManager.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.conf{JFSConst.java[JFSConst^SCHEME_DASEIN
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.conf{JFSConst.java[JFSConst^SCHEME_DASEIN
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-dasein
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFile.java[JFSDaseinFile~getOutputStream
+Proyecto: jfilesync-dasein
+Jar Location: src/main/java
+Package: jfs.sync.dasein
+Compilation Unit: JFSDaseinFile
+Class Name: JFSDaseinFile
+Metodo: getOutputStream
+MLOC: 1
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/target/classes/jfs/sync
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein&lt;
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFile.java[JFSDaseinFile~setFullPath
+Proyecto: jfilesync-dasein
+Jar Location: src/main/java
+Package: jfs.sync.dasein
+Compilation Unit: JFSDaseinFile
+Class Name: JFSDaseinFile
+Metodo: setFullPath
+MLOC: 5
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSLibcloudFileProducerFactory.java[JFSLibcloudFileProducerFactory
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/JFSFileProducerManager.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein&lt;{JFSDaseinFileProducer.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein&lt;{JFSDaseinFileProducer.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/src/main/java/jfs/resources
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein/JFSDaseinFile.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/gui
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/src/main/java/jfs/conf
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jets3t/src/main/java&lt;jfs.sync{JFSFile.java[JFSFile~copy~QJFSFile;
+Proyecto: jfilesync-jets3t
+Jar Location: src/main/java
+Package: jfs.sync
+Compilation Unit: JFSFile
+Class Name: JFSFile
+Metodo: copy
+MLOC: 31
+---------------------------------------------
+resource : /jfilesync-dasein/src/main/java/jfs/resources/conf
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/resources
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/pom.xml
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/target
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/resources/conf
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein&lt;(JFSDaseinFile.class
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein&lt;(JFSDaseinFile.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync
+REGEXP does not match
+---------------------------------------------
+resource : =jfilesync
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.gui{JFSConfigView.java[JFSConfigView~createDirectoryDialog~QComponent;~QString;
+Proyecto: jfilesync-dasein
+Jar Location: src/main/java
+Package: jfs.gui
+Compilation Unit: JFSConfigView
+Class Name: JFSConfigView
+Metodo: createDirectoryDialog
+MLOC: 23
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.gui{JFSConfigView.java[JFSConfigView~createDirectoryDialog~QComponent;~QString;
+Proyecto: jfilesync-dasein
+Jar Location: src/main/java
+Package: jfs.gui
+Compilation Unit: JFSConfigView
+Class Name: JFSConfigView
+Metodo: createDirectoryDialog
+MLOC: 23
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/resources/conf/JFSTranslation.properties
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/resources
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein/JFSLibcloudFile.class
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/conf&lt;
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.resources.conf
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.resources.conf
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein&lt;{JFSDaseinFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync{JFSFileProducerManager.java[JFSFileProducerManager~JFSFileProducerManager
+Proyecto: jfilesync-dasein
+Jar Location: src/main/java
+Package: jfs.sync
+Compilation Unit: JFSFileProducerManager
+Class Name: JFSFileProducerManager
+Metodo: JFSFileProducerManager
+MLOC: 6
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync{JFSFileProducerManager.java[JFSFileProducerManager~JFSFileProducerManager
+Proyecto: jfilesync-dasein
+Jar Location: src/main/java
+Package: jfs.sync
+Compilation Unit: JFSFileProducerManager
+Class Name: JFSFileProducerManager
+Metodo: JFSFileProducerManager
+MLOC: 6
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/sync&lt;(JFSFileProducerManager.class
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/local/JFSLocalFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-dasein/src/main/java/jfs/conf/JFSConst.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/target/classes/properties.properties
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/local&lt;{JFSLocalFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-dasein/pom.xml
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-dasein/pom.xml
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync{JFSElement.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync{JFSElement.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync{JFSElement.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync{JFSElement.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein/PropertiesProvider.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/resources/conf/JFSTranslation.properties
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/src
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/gui/JFSConfigDirectoryView.class
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/util&lt;(CodecUtil.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFile.java#
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.local{JFSLocalFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.local{JFSLocalFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jets3t/src/main/java&lt;jfs.sync{JFSFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFile.java[JFSDaseinFile~getMD5
+Proyecto: jfilesync-dasein
+Jar Location: src/main/java
+Package: jfs.sync.dasein
+Compilation Unit: JFSDaseinFile
+Class Name: JFSDaseinFile
+Metodo: getMD5
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFile.java[JFSDaseinFile~getMD5
+Proyecto: jfilesync-dasein
+Jar Location: src/main/java
+Package: jfs.sync.dasein
+Compilation Unit: JFSDaseinFile
+Class Name: JFSDaseinFile
+Metodo: getMD5
+MLOC: 1
+---------------------------------------------
+java : =jfilesync/jfilesync-dasein/src/main/java/jfs/gui&lt;
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/gui&lt;(JFSConfigView$1.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/src/main/java/jfs/util/CodecUtil.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-dasein/src/main/java/jfs/gui&lt;{JFSConfigView.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/conf
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/src/main/java/jfs/resources/conf/JFSTranslation.properties
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/external
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/src/main/java/jfs/conf/JFSConst.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-dasein/src/main/java/jfs/sync/external
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.gui
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.gui
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-dasein/target/classes/jfs/sync&lt;(JFSFileProducerManager.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein&lt;{JFSLibcloudFileProducer.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.gui{JFSConfigDirectoryView.java[JFSConfigDirectoryView~JFSConfigDirectoryView~QJDialog;~QJFSConfig;~QJFSDirectoryPair;
+Proyecto: jfilesync-dasein
+Jar Location: src/main/java
+Package: jfs.gui
+Compilation Unit: JFSConfigDirectoryView
+Class Name: JFSConfigDirectoryView
+Metodo: JFSConfigDirectoryView
+MLOC: 73
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.gui{JFSConfigDirectoryView.java[JFSConfigDirectoryView~JFSConfigDirectoryView~QJDialog;~QJFSConfig;~QJFSDirectoryPair;
+Proyecto: jfilesync-dasein
+Jar Location: src/main/java
+Package: jfs.gui
+Compilation Unit: JFSConfigDirectoryView
+Class Name: JFSConfigDirectoryView
+Metodo: JFSConfigDirectoryView
+MLOC: 73
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein/JFSLibcloudFileProducer.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.gui{JFSConfigView.java[JFSConfigView
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-dasein/src/main/java/jfs/sync/external&lt;
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein&lt;{JFSLibcloudFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein/JFSLibcloudFileProducer.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein&lt;(JFSLibcloudFile.class
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/sync&lt;
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar&lt;org.dasein.cloud.storage(AbstractBlobStoreSupport.class[AbstractBlobStoreSupport
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-dasein/src/main/java/jfs/sync/local
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/src/main/java/jfs/util
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-dasein/src/main/java/jfs/sync/external
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.server
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.conf
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.conf
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein/JFSLibcloudFileProducerFactory.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein/PropertiesProvider.class
+REGEXP does not match
+---------------------------------------------
+resource : =aether
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar&lt;org.dasein.cloud.storage
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jets3t/src/main
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/src/main/java/jfs/sync/external
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/sync
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-dasein/src/main/java/jfs/sync/dasein/JFSLibcloudFileProducer.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/gui&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/resources/conf/JFSTranslation.properties
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein/JFSLibcloudFileProducer.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/gui&lt;{JFSConfigDirectoryView.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-dasein/src/main/java/jfs/sync/JFSFileProducerManager.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar&lt;org.dasein.cloud.storage(BlobStoreSupport.class[BlobStoreSupport~clear~Ljava.lang.String;
+Proyecto: jfilesync-dasein
+Jar Location: C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar
+Package: org.dasein.cloud.storage
+Compilation Unit: BlobStoreSupport
+Class Name: BlobStoreSupport
+Metodo: clear
+MLOC: 0
+---------------------------------------------
+resource : /aether-examples/jfilesync
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-dasein/src/main/java/jfs/sync/dasein/JFSDaseinFileProducer.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-dasein/src/main/java/jfs/sync&lt;{JFSElement.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync&lt;{JFSFileProducerManager.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/JFSFile.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/util
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/resources
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/resources
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein/JFSDaseinFileProducerFactory.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/target/classes/jfs/sync/JFSFileProducerManager.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jets3t/src/main/java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-aws/2011.08/dasein-cloud-aws-2011.08.jar&lt;org.dasein.cloud.aws.storage(S3.class[S3~exists~Ljava.lang.String;~Ljava.lang.String;~Z
+Proyecto: jfilesync-dasein
+Jar Location: C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-aws/2011.08/dasein-cloud-aws-2011.08.jar
+Package: org.dasein.cloud.aws.storage
+Compilation Unit: S3
+Class Name: S3
+Metodo: exists
+MLOC: 18
+---------------------------------------------
+java : =jfilesync-dasein/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-aws/2011.08/dasein-cloud-aws-2011.08.jar&lt;org.dasein.cloud.aws.storage(S3.class[S3~exists~Ljava.lang.String;~Ljava.lang.String;~Z
+Proyecto: jfilesync-dasein
+Jar Location: C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-aws/2011.08/dasein-cloud-aws-2011.08.jar
+Package: org.dasein.cloud.aws.storage
+Compilation Unit: S3
+Class Name: S3
+Metodo: exists
+MLOC: 18
+---------------------------------------------
+java : =jfilesync/jfilesync-dasein/src/main/java/jfs/sync/external&lt;{JFSExternalFile.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein&lt;(PropertiesProvider.class
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/gui&lt;{JFSConfigView.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein/JFSLibcloudFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/target/classes/jfs/util
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/src/main/java/jfs/gui/JFSConfigDirectoryView.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein&lt;{PropertiesProvider.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFile.java[JFSDaseinFile^fullPath
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.conf{JFSConst.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.conf{JFSConst.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.conf{JFSConst.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/external
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-dasein/src/main/java/jfs/sync/external/JFSExternalFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/target/classes
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-dasein/src/main/java/jfs/sync
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.local
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.local
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein&lt;{JFSDaseinFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein&lt;{JFSDaseinFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-dasein/src/main/java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFile.java[JFSDaseinFile~delete
+Proyecto: jfilesync-dasein
+Jar Location: src/main/java
+Package: jfs.sync.dasein
+Compilation Unit: JFSDaseinFile
+Class Name: JFSDaseinFile
+Metodo: delete
+MLOC: 6
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFile.java[JFSDaseinFile~delete
+Proyecto: jfilesync-dasein
+Jar Location: src/main/java
+Package: jfs.sync.dasein
+Compilation Unit: JFSDaseinFile
+Class Name: JFSDaseinFile
+Metodo: delete
+MLOC: 6
+---------------------------------------------
+java : =jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein&lt;(JFSLibcloudFileProducer.class
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/conf
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/target/classes/jfs/resources
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/gui
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein/PropertiesProvider.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/local/JFSLocalFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFile.java[JFSDaseinFile~getInputStream
+Proyecto: jfilesync-dasein
+Jar Location: src/main/java
+Package: jfs.sync.dasein
+Compilation Unit: JFSDaseinFile
+Class Name: JFSDaseinFile
+Metodo: getInputStream
+MLOC: 17
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFile.java[JFSDaseinFile~getInputStream
+Proyecto: jfilesync-dasein
+Jar Location: src/main/java
+Package: jfs.sync.dasein
+Compilation Unit: JFSDaseinFile
+Class Name: JFSDaseinFile
+Metodo: getInputStream
+MLOC: 17
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFile.java[JFSDaseinFile~upload~QFile;
+Proyecto: jfilesync-dasein
+Jar Location: src/main/java
+Package: jfs.sync.dasein
+Compilation Unit: JFSDaseinFile
+Class Name: JFSDaseinFile
+Metodo: upload
+MLOC: 6
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFile.java[JFSDaseinFile~upload~QFile;
+Proyecto: jfilesync-dasein
+Jar Location: src/main/java
+Package: jfs.sync.dasein
+Compilation Unit: JFSDaseinFile
+Class Name: JFSDaseinFile
+Metodo: upload
+MLOC: 6
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein/JFSLibcloudFileProducerFactory.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-aws/2011.08/dasein-cloud-aws-2011.08.jar
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein/JFSLibcloudFile.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-dasein/src/main/java/jfs/gui
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/resources
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-dasein/src/main/java/jfs/resources/conf/JFSTranslation.properties
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-dasein/src/main/java/jfs/resources/conf/JFSTranslation.properties
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein&lt;(JFSDaseinFileProducerFactory.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-dasein/src
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-dasein/target/classes/jfs/gui&lt;
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar&lt;org.dasein.cloud.storage(BlobStoreSupport.class[BlobStoreSupport~listFiles~Ljava.lang.String;
+Proyecto: jfilesync-dasein
+Jar Location: C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar
+Package: org.dasein.cloud.storage
+Compilation Unit: BlobStoreSupport
+Class Name: BlobStoreSupport
+Metodo: listFiles
+MLOC: 0
+---------------------------------------------
+java : =jfilesync-dasein/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar&lt;org.dasein.cloud.storage(BlobStoreSupport.class[BlobStoreSupport~listFiles~Ljava.lang.String;
+Proyecto: jfilesync-dasein
+Jar Location: C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar
+Package: org.dasein.cloud.storage
+Compilation Unit: BlobStoreSupport
+Class Name: BlobStoreSupport
+Metodo: listFiles
+MLOC: 0
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/util/CodecUtil.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/src/main
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein/PropertiesProvider.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-dasein/src/main/java/jfs/util
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein/PropertiesProvider.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-dasein/src/main/java/jfs/resources
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/gui&lt;(JFSConfigDirectoryView.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein&lt;{JFSLibcloudFile.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/local&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/target/classes/jfs
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/external&lt;{JFSExternalFile.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/external
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/gui/JFSConfigDirectoryView.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/util/CodecUtil.class
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/util&lt;
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein&lt;{JFSLibcloudFileProducer.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-dasein/src/main/java/jfs/util&lt;
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync{JFSFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync{JFSFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/external/JFSExternalFile.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein&lt;(JFSLibcloudFile.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-dasein/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-dasein/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-dasein/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-dasein/src/main/java/jfs/sync/dasein/PropertiesProvider.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/target
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/local&lt;{JFSLocalFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSLibcloudFileProducerFactory.java[JFSDaseinFileProducerFactory
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSLibcloudFileProducerFactory.java[JFSDaseinFileProducerFactory
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/resources/conf
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein&lt;{JFSLibcloudFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/sync&lt;(JFSFileProducerManager.class
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein&lt;
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein&lt;(JFSLibcloudFileProducerFactory.class
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/sync
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-dasein/src/main/java/jfs/gui
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein/JFSDaseinFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+resource : =jfilesync-jets3t
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein/JFSLibcloudFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein/JFSLibcloudFile.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar&lt;org.dasein.cloud.google.storage(GoogleBlobStore.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-dasein/target/classes/jfs/sync&lt;
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar&lt;org.dasein.cloud.storage
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFile.java[JFSDaseinFile^item
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFile.java[JFSDaseinFile^item
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/gui&lt;{JFSConfigView.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein&lt;{JFSLibcloudFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/sync/JFSFileProducerManager.class
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/local&lt;
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein&lt;(JFSDaseinFileProducerFactory.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/conf/JFSConst.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/util/CodecUtil.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar&lt;org.dasein.cloud.storage(CloudStoreObject.class[CloudStoreObject
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar&lt;org.dasein.cloud.storage(CloudStoreObject.class[CloudStoreObject
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-dasein/src/main/java/jfs/conf&lt;{JFSConst.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/external&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jets3t/src/main/java/jfs/sync/JFSFile.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/gui
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-aws/2011.08/dasein-cloud-aws-2011.08.jar&lt;org.dasein.cloud.aws.storage(S3.class[S3
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-aws/2011.08/dasein-cloud-aws-2011.08.jar&lt;org.dasein.cloud.aws.storage(S3.class[S3
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-aws/2011.08/dasein-cloud-aws-2011.08.jar&lt;org.dasein.cloud.aws.storage(S3.class[S3
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-aws/2011.08/dasein-cloud-aws-2011.08.jar&lt;org.dasein.cloud.aws.storage(S3.class[S3
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFile.java[JFSDaseinFile~JFSDaseinFile~QJFSFileProducer;~QString;~QBlobStoreSupport;~QString;
+Proyecto: jfilesync-dasein
+Jar Location: src/main/java
+Package: jfs.sync.dasein
+Compilation Unit: JFSDaseinFile
+Class Name: JFSDaseinFile
+Metodo: JFSDaseinFile
+MLOC: 9
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFile.java[JFSDaseinFile~JFSDaseinFile~QJFSFileProducer;~QString;~QBlobStoreSupport;~QString;
+Proyecto: jfilesync-dasein
+Jar Location: src/main/java
+Package: jfs.sync.dasein
+Compilation Unit: JFSDaseinFile
+Class Name: JFSDaseinFile
+Metodo: JFSDaseinFile
+MLOC: 9
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein/JFSDaseinFile.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/src/main/resources
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSLibcloudFileProducerFactory.java[JFSLibcloudFileProducerFactory~createProducer~QString;
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-dasein/src/main/java/jfs/sync/local&lt;
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein&lt;{JFSDaseinFile.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein&lt;{JFSDaseinFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync{JFSFileProducerManager.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync{JFSFileProducerManager.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.util
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.util
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/src/main/java/jfs
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jets3t/src/main/java&lt;jfs.sync
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/conf
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/util&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein/JFSLibcloudFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/JFSFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-dasein/src/main/java/jfs/gui/JFSConfigView.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/target/classes
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein/JFSLibcloudFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar&lt;org.dasein.cloud.google.storage(GoogleBlobStore.class[GoogleBlobStore
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/local
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.conf{JFSConst.java[JFSConst
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.conf{JFSConst.java[JFSConst
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein/JFSDaseinFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-dasein/src/main/java/jfs/sync/local&lt;{JFSLocalFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-dasein/target/classes/jfs/gui&lt;(JFSConfigView.class
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/gui&lt;(JFSConfigDirectoryView.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jets3t/src/main/java/jfs/sync
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync&lt;{JFSElement.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein&lt;(JFSDaseinFileProducer.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein&lt;(JFSDaseinFileProducer.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFile.java[JFSDaseinFile~JFSDaseinFile~QJFSFileProducer;~QString;~QBlobStoreSupport;~QString;~QCloudStoreObject;
+Proyecto: jfilesync-dasein
+Jar Location: src/main/java
+Package: jfs.sync.dasein
+Compilation Unit: JFSDaseinFile
+Class Name: JFSDaseinFile
+Metodo: JFSDaseinFile
+MLOC: 9
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFile.java[JFSDaseinFile~JFSDaseinFile~QJFSFileProducer;~QString;~QBlobStoreSupport;~QString;~QCloudStoreObject;
+Proyecto: jfilesync-dasein
+Jar Location: src/main/java
+Package: jfs.sync.dasein
+Compilation Unit: JFSDaseinFile
+Class Name: JFSDaseinFile
+Metodo: JFSDaseinFile
+MLOC: 9
+---------------------------------------------
+java : =jfilesync/jfilesync-dasein/src/main/java/jfs/sync/local
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-dasein/target/classes/jfs/sync
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/gui/JFSConfigView.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar&lt;org.dasein.cloud.storage(AbstractBlobStoreSupport.class[AbstractBlobStoreSupport~get~Ljava.lang.String;~Ljava.lang.String;~Ljava.io.File;~Lorg.dasein.cloud.storage.FileTransfer;
+Proyecto: neoedit-dasein-migracion
+Jar Location: C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar
+Package: org.dasein.cloud.storage
+Compilation Unit: AbstractBlobStoreSupport
+Class Name: AbstractBlobStoreSupport
+Metodo: get
+MLOC: 0
+---------------------------------------------
+java : =jfilesync-dasein/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar&lt;org.dasein.cloud.storage(BlobStoreSupport.class[BlobStoreSupport
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar&lt;org.dasein.cloud.storage(BlobStoreSupport.class[BlobStoreSupport
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/util&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/src/main/java/jfs/gui
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/gui/JFSConfigView$1.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/sync/JFSFileProducerManager.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.external
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.external
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/util
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-dasein/target/classes/jfs/util&lt;(CodecUtil.class
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/util&lt;{CodecUtil.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-dasein/src/main/java/jfs/server
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein&lt;
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-dasein/src/main/java/jfs/sync&lt;{JFSFileProducerManager.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFile.java[JFSDaseinFile~mkdir
+Proyecto: jfilesync-dasein
+Jar Location: src/main/java
+Package: jfs.sync.dasein
+Compilation Unit: JFSDaseinFile
+Class Name: JFSDaseinFile
+Metodo: mkdir
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFile.java[JFSDaseinFile~mkdir
+Proyecto: jfilesync-dasein
+Jar Location: src/main/java
+Package: jfs.sync.dasein
+Compilation Unit: JFSDaseinFile
+Class Name: JFSDaseinFile
+Metodo: mkdir
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFile.java[JFSDaseinFile~mkdir
+Proyecto: jfilesync-dasein
+Jar Location: src/main/java
+Package: jfs.sync.dasein
+Compilation Unit: JFSDaseinFile
+Class Name: JFSDaseinFile
+Metodo: mkdir
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync{JFSElement.java[JFSElement
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-dasein/src/main/java/jfs/conf
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein&lt;{PropertiesProvider.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/conf
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-dasein/src/main/java/jfs/conf
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync&lt;{JFSFileProducerManager.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFileProducerFactory.java[JFSDaseinFileProducerFactory~createProducer~QString;
+Proyecto: jfilesync-dasein
+Jar Location: src/main/java
+Package: jfs.sync.dasein
+Compilation Unit: JFSDaseinFileProducerFactory
+Class Name: JFSDaseinFileProducerFactory
+Metodo: createProducer
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFileProducerFactory.java[JFSDaseinFileProducerFactory~createProducer~QString;
+Proyecto: jfilesync-dasein
+Jar Location: src/main/java
+Package: jfs.sync.dasein
+Compilation Unit: JFSDaseinFileProducerFactory
+Class Name: JFSDaseinFileProducerFactory
+Metodo: createProducer
+MLOC: 1
+---------------------------------------------
+resource : /jfilesync-dasein/src/main/java/jfs/gui/JFSConfigDirectoryView.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar&lt;org.dasein.cloud.google.storage
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar&lt;org.dasein.cloud.storage(AbstractBlobStoreSupport.class[AbstractBlobStoreSupport
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein&lt;(PropertiesProvider.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/gui/JFSConfigView.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-aws/2011.08/dasein-cloud-aws-2011.08.jar&lt;org.dasein.cloud.aws.storage(S3.class[S3~S3~Lorg.dasein.cloud.aws.AWSCloud;
+Proyecto: jfilesync-dasein
+Jar Location: C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-aws/2011.08/dasein-cloud-aws-2011.08.jar
+Package: org.dasein.cloud.aws.storage
+Compilation Unit: S3
+Class Name: S3
+Metodo: S3
+MLOC: 1
+---------------------------------------------
+java : =jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein&lt;(JFSLibcloudFileProducerFactory.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-dasein/src/main/java/jfs/sync/dasein/JFSDaseinFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-dasein/src/main/java/jfs/sync/dasein/JFSDaseinFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/gui
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar&lt;org.dasein.cloud.storage(BlobStoreSupport.class[BlobStoreSupport~exists~Ljava.lang.String;~Ljava.lang.String;~Z
+Proyecto: jfilesync-dasein
+Jar Location: C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar
+Package: org.dasein.cloud.storage
+Compilation Unit: BlobStoreSupport
+Class Name: BlobStoreSupport
+Metodo: exists
+MLOC: 0
+---------------------------------------------
+java : =jfilesync-dasein/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar&lt;org.dasein.cloud.storage(BlobStoreSupport.class[BlobStoreSupport~exists~Ljava.lang.String;~Ljava.lang.String;~Z
+Proyecto: jfilesync-dasein
+Jar Location: C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar
+Package: org.dasein.cloud.storage
+Compilation Unit: BlobStoreSupport
+Class Name: BlobStoreSupport
+Metodo: exists
+MLOC: 0
+---------------------------------------------
+java : =jfilesync/jfilesync-dasein/target/classes/jfs/util
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-dasein/src/main/java/jfs
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein/JFSDaseinFileProducer.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/gui/JFSConfigDirectoryView.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync&lt;{JFSFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-dasein/src/main/java/jfs/sync/local/JFSLocalFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-dasein/src/main/java/jfs/sync/JFSElement.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-dasein/src/main/java/jfs/sync/JFSElement.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFile.java[JFSDaseinFile~preCopyTgt~QJFSFile;
+Proyecto: jfilesync-dasein
+Jar Location: src/main/java
+Package: jfs.sync.dasein
+Compilation Unit: JFSDaseinFile
+Class Name: JFSDaseinFile
+Metodo: preCopyTgt
+MLOC: 1
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/pom.xml
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-dasein/src/main/java/jfs/gui&lt;{JFSConfigDirectoryView.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/gui&lt;(JFSConfigView.class
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein&lt;(JFSLibcloudFileProducerFactory.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein&lt;(JFSDaseinFile.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein&lt;(JFSDaseinFile.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFileProducerFactory.java[JFSDaseinFileProducerFactory
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFileProducer.java[JFSDaseinFileProducer
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFileProducer.java[JFSDaseinFileProducer
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFile.java[JFSDaseinFile
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFile.java[JFSDaseinFile
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFile.java[JFSDaseinFile
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.gui{JFSConfigDirectoryView.java[JFSConfigDirectoryView
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync{JFSFileProducerManager.java[JFSFileProducerManager
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/util
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/util
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSLibcloudFileProducerFactory.java[JFSDaseinFileProducerFactory~createProducer~QString;
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSLibcloudFileProducerFactory.java[JFSDaseinFileProducerFactory~createProducer~QString;
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein/JFSDaseinFileProducer.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-dasein/src/test/java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein/JFSLibcloudFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/pom.xml
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFile.java[JFSDaseinFile~getLastModified
+Proyecto: jfilesync-dasein
+Jar Location: src/main/java
+Package: jfs.sync.dasein
+Compilation Unit: JFSDaseinFile
+Class Name: JFSDaseinFile
+Metodo: getLastModified
+MLOC: 14
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFile.java[JFSDaseinFile~getLastModified
+Proyecto: jfilesync-dasein
+Jar Location: src/main/java
+Package: jfs.sync.dasein
+Compilation Unit: JFSDaseinFile
+Class Name: JFSDaseinFile
+Metodo: getLastModified
+MLOC: 14
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFile.java[JFSDaseinFile~getLastModified
+Proyecto: jfilesync-dasein
+Jar Location: src/main/java
+Package: jfs.sync.dasein
+Compilation Unit: JFSDaseinFile
+Class Name: JFSDaseinFile
+Metodo: getLastModified
+MLOC: 14
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein&lt;{JFSDaseinFile.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein&lt;{JFSDaseinFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/src/main/java/jfs/sync/local
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein&lt;
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/gui&lt;
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-dasein/target/classes/jfs/gui
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/src/main
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/gui
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein&lt;(JFSLibcloudFileProducer.class
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync&lt;{JFSFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/conf/JFSConst.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/src/main/java/jfs/sync/JFSElement.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSLibcloudFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/util&lt;
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/external&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/target/classes/jfs/gui/JFSConfigView.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/target/classes
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/local
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/src/main/java/jfs/sync/local/JFSLocalFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-aws/2011.08/dasein-cloud-aws-2011.08.jar&lt;org.dasein.cloud.aws.storage
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/sync
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/local
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/test/java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-dasein/src/main/java/jfs/util&lt;{CodecUtil.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/external/JFSExternalFile.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/gui&lt;(JFSConfigView.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/gui
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein&lt;{JFSLibcloudFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-dasein/src/test
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-aws/2011.08/dasein-cloud-aws-2011.08.jar&lt;org.dasein.cloud.aws.storage(S3.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-aws/2011.08/dasein-cloud-aws-2011.08.jar&lt;org.dasein.cloud.aws.storage(S3.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/target/classes/jfs/gui/JFSConfigDirectoryView.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/target/classes/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : =aether-examples
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-dasein/src/main/java/jfs/conf&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/src/main/java/jfs/sync
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein&lt;(JFSLibcloudFileProducer.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/sync
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-dasein/src/main/java/jfs/sync/dasein/JFSLibcloudFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein/JFSDaseinFile.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar&lt;org.dasein.cloud.storage(AbstractBlobStoreSupport.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar&lt;org.dasein.cloud.storage(AbstractBlobStoreSupport.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein/JFSDaseinFile.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/conf&lt;{JFSConst.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/gui/JFSConfigView$1.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-dasein/src/main/java/jfs/util/CodecUtil.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-dasein/target/classes/jfs/util&lt;
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/sync&lt;
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFile.java#java.io.BufferedInputStream
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-dasein-migracion
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/util
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/target/classes/jfs/gui
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein&lt;(JFSDaseinFile.class
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein&lt;(JFSDaseinFile.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-dasein/src/main/java/jfs/sync
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/sync&lt;
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein&lt;{JFSDaseinFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/gui
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein&lt;{PropertiesProvider.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/gui
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/resources/conf/JFSTranslation.properties
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-dasein/src/main
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-dasein/src/main/java/jfs/sync/dasein
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/target
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/target/classes/jfs/sync/dasein/JFSLibcloudFileProducerFactory.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-dasein/target/classes/jfs/resources/conf/JFSTranslation.properties
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/gui&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-dasein/src/main/java/jfs/util
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-dasein/src/main/java&lt;jfs.sync.dasein{JFSDaseinFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+FINAL ACCUMULATED RESULT: 763.0
+---------------------------------------------

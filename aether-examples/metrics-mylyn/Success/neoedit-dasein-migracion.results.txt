@@ -1,0 +1,1045 @@
+Loading metrics from: D:\Mylyn Metrics\Projects\neoedit-dasein-migracion.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\aether-core.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\aether-loader.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\cloudloop-adapter.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\cloudloop-main.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\dasein-aws.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\dasein-core.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\dasein-google.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\jclouds-aws-common.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\jclouds-aws-s3.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\jclouds-blobstore.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\jclouds-core.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\jclouds-s3.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\jets3t.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\libcloud.xml
+java : =neoedit-jets3t-migracion/C:/Users/Kireta/.m2/repository/net/java/dev/jets3t/jets3t/0.8.1/jets3t-0.8.1.jar
+REGEXP does not match
+---------------------------------------------
+java : 
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/src/main/java&lt;neoe.ne{U.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/src/main/java&lt;neoe.ne{U.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit-migraciones/neoedit-dasein-migracion/target/classes/neoe/dasein/DaseinAdapter.class
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-migraciones/neoedit-dasein-migracion/src/main/java/neoe/dasein
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit-migraciones/neoedit-dasein-migracion/src/main/java/neoe/ne&lt;{U.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit-migraciones/neoedit-dasein-migracion/target
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t-migracion/C:/Users/Kireta/.m2/repository/net/java/dev/jets3t/jets3t/0.8.1/jets3t-0.8.1.jar&lt;org.jets3t.service.security
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit-migraciones/neoedit-dasein-migracion/src/main/java/neoe/ne/PlainPage.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/src/main/java&lt;neoe.dasein{DaseinAdapter.java[DaseinAdapter~populateCache
+Proyecto: neoedit-dasein-migracion
+Jar Location: src/main/java
+Package: neoe.dasein
+Compilation Unit: DaseinAdapter
+Class Name: DaseinAdapter
+Metodo: populateCache
+MLOC: 20
+---------------------------------------------
+java : =neoedit-dasein-migracion/src/main/java&lt;neoe.dasein{DaseinAdapter.java[DaseinAdapter~populateCache
+Proyecto: neoedit-dasein-migracion
+Jar Location: src/main/java
+Package: neoe.dasein
+Compilation Unit: DaseinAdapter
+Class Name: DaseinAdapter
+Metodo: populateCache
+MLOC: 20
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-aws/2011.08/dasein-cloud-aws-2011.08.jar&lt;org.dasein.cloud.aws(AWSCloud.class[AWSCloud
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-aws/2011.08/dasein-cloud-aws-2011.08.jar&lt;org.dasein.cloud.aws(AWSCloud.class[AWSCloud
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit-migraciones/neoedit-dasein-migracion/target/classes/neoe/dasein&lt;(DaseinAdapter.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-aws/2011.08/dasein-cloud-aws-2011.08.jar&lt;org.dasein.cloud.aws(AWSCloud.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-aws/2011.08/dasein-cloud-aws-2011.08.jar&lt;org.dasein.cloud.aws(AWSCloud.class
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-migraciones/neoedit-dasein-migracion/target
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/src/main/java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit-migraciones/neoedit-dasein-migracion/src/main/java/neoe/dasein/DaseinAdapter.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;java.io
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/src/main/java&lt;neoe.ne{PlainPage.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/src/main/java&lt;neoe.ne{PlainPage.java
+REGEXP does not match
+---------------------------------------------
+resource : /
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/src/main/java&lt;neoe.ne{EditPanel.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/src/main/java&lt;neoe.ne{EditPanel.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit-migraciones/neoedit-dasein-migracion/src/main/java/neoe/ne&lt;{EditPanel.java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-migraciones/neoedit-dasein-migracion/target/classes/neoe/ne/EditPanel$1.class
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit-migraciones/neoedit-dasein-migracion/target/classes/neoe/dasein
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/src/main/java&lt;neoe.ne{EditPanel.java[EditPanel~EditPanel~QString;
+Proyecto: neoedit-dasein-migracion
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: EditPanel
+Class Name: EditPanel
+Metodo: EditPanel
+MLOC: 2
+---------------------------------------------
+resource : /aether/aether-examples/neoedit-migraciones/neoedit-dasein-migracion/src/main/java/neoe/dasein
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-dasein-migracion/src/main/resources
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-migraciones/neoedit-dasein-migracion/src/main/java/neoe/ne&lt;
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/src/main/java&lt;neoe.ne{EditPanel.java[EditPanel^cacheDirectory
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar&lt;org.dasein.cloud.google.storage(StorageMethod.class[StorageMethod~invoke~Ljava.lang.String;~Ljava.lang.String;~Ljava.lang.String;
+Proyecto: neoedit-dasein-migracion
+Jar Location: C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar
+Package: org.dasein.cloud.google.storage
+Compilation Unit: StorageMethod
+Class Name: StorageMethod
+Metodo: invoke
+MLOC: 1
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar&lt;org.dasein.cloud.google.storage(StorageMethod.class[StorageMethod~invoke~Ljava.lang.String;~Ljava.lang.String;~Ljava.lang.String;
+Proyecto: neoedit-dasein-migracion
+Jar Location: C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar
+Package: org.dasein.cloud.google.storage
+Compilation Unit: StorageMethod
+Class Name: StorageMethod
+Metodo: invoke
+MLOC: 1
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar&lt;org.dasein.cloud
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit-migraciones/neoedit-dasein-migracion
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar&lt;org.dasein.cloud.google.storage(GoogleBlobStore.class[GoogleBlobStore~listFiles~Ljava.lang.String;
+Proyecto: neoedit-dasein-migracion
+Jar Location: C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar
+Package: org.dasein.cloud.google.storage
+Compilation Unit: GoogleBlobStore
+Class Name: GoogleBlobStore
+Metodo: listFiles
+MLOC: 4
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar&lt;org.dasein.cloud.google.storage(GoogleBlobStore.class[GoogleBlobStore~listFiles~Ljava.lang.String;
+Proyecto: neoedit-dasein-migracion
+Jar Location: C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar
+Package: org.dasein.cloud.google.storage
+Compilation Unit: GoogleBlobStore
+Class Name: GoogleBlobStore
+Metodo: listFiles
+MLOC: 4
+---------------------------------------------
+resource : /aether/aether-examples/neoedit-migraciones/neoedit-dasein-migracion/target/classes/neoe/ne
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-migraciones/neoedit-dasein-migracion/src
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t-migracion/C:/Users/Kireta/.m2/repository/net/java/dev/jets3t/jets3t/0.8.1/jets3t-0.8.1.jar&lt;org.jets3t.service.security(ProviderCredentials.class
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-dasein-migracion/src/main/java/neoe/ne/EditPanel.java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-migraciones/neoedit-dasein-migracion/pom.xml
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-migraciones/neoedit-dasein-migracion/target/classes/neoe/dasein
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit-migraciones/neoedit-dasein-migracion/src/main/java/neoe/dasein&lt;
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;java.io(File.class[File
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;java.io(File.class[File
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar&lt;org.dasein.cloud.google.storage(GoogleBlobStore.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar&lt;org.dasein.cloud.google.storage(GoogleBlobStore.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar&lt;org.dasein.cloud.google.storage(GoogleBlobStore.class
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-migraciones/neoedit-dasein-migracion/src/main/java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-migraciones/neoedit-dasein-migracion/target/classes/neoe/ne&lt;
+REGEXP does not match
+---------------------------------------------
+resource : =neoedit-dasein-migracion
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit-migraciones/neoedit-dasein-migracion/src/main/java/neoe/ne
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;java.lang
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar&lt;org.dasein.cloud.google(GoogleAppEngine.class[GoogleAppEngine~getStorageServices
+Proyecto: neoedit-dasein-migracion
+Jar Location: C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar
+Package: org.dasein.cloud.google
+Compilation Unit: GoogleAppEngine
+Class Name: GoogleAppEngine
+Metodo: getStorageServices
+MLOC: 1
+---------------------------------------------
+resource : /aether
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit-migraciones/neoedit-dasein-migracion/target/classes/neoe/ne&lt;(EditPanel$1.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit-migraciones/neoedit-dasein-migracion/src
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t-migracion
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit-migraciones/neoedit-dasein-migracion/src/main/java/neoe/ne/U.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-migraciones/neoedit-dasein-migracion/src/main/java/neoe/ne&lt;{PlainPage.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit-migraciones/neoedit-dasein-migracion/src/main/java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit-migraciones/neoedit-dasein-migracion/target/classes/neoe/dasein
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar&lt;org.dasein.cloud.google.storage(GoogleBlobStore.class[GoogleBlobStore~loadFiles~Ljava.lang.String;~Lorg.dasein.util.Jiterator\&lt;Lorg.dasein.cloud.storage.CloudStoreObject;&gt;;
+Proyecto: neoedit-dasein-migracion
+Jar Location: C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar
+Package: org.dasein.cloud.google.storage
+Compilation Unit: GoogleBlobStore
+Class Name: GoogleBlobStore
+Metodo: loadFiles
+MLOC: 63
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar&lt;org.dasein.cloud.google.storage(GoogleBlobStore.class[GoogleBlobStore~loadFiles~Ljava.lang.String;~Lorg.dasein.util.Jiterator\&lt;Lorg.dasein.cloud.storage.CloudStoreObject;&gt;;
+Proyecto: neoedit-dasein-migracion
+Jar Location: C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar
+Package: org.dasein.cloud.google.storage
+Compilation Unit: GoogleBlobStore
+Class Name: GoogleBlobStore
+Metodo: loadFiles
+MLOC: 63
+---------------------------------------------
+java : =neoedit-dasein-migracion/src/main/java&lt;neoe.ne{Main.java[Main
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar&lt;org.dasein.cloud(AbstractCloud.class[AbstractCloud
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar&lt;org.dasein.cloud(AbstractCloud.class[AbstractCloud
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-migraciones/neoedit-dasein-migracion/target/classes/neoe/ne
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit-migraciones/neoedit-dasein-migracion/target/classes/neoe/dasein
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-migraciones/neoedit-dasein-migracion/target/classes/properties.properties
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit-migraciones/neoedit-dasein-migracion/target/classes/neoe/ne
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit-migraciones/neoedit-dasein-migracion/src/main/java/neoe/ne&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit-migraciones/neoedit-dasein-migracion/src/main/resources
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit-migraciones/neoedit-dasein-migracion/src/main/java/neoe/ne/EditPanel.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-migraciones/neoedit-dasein-migracion/src/main/java/neoe/dasein&lt;{DaseinAdapter.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit-migraciones
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;java.lang(Thread.class[Thread
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit-migraciones/neoedit-dasein-migracion/src/main/java/neoe/ne&lt;
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit-migraciones/neoedit-dasein-migracion/src/main/java/neoe/dasein
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-dasein-migracion/src/main/java/neoe/ne/U.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit-migraciones/neoedit-dasein-migracion/src/main/java/neoe/dasein/DaseinAdapter.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;java.lang(Thread.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-aws/2011.08/dasein-cloud-aws-2011.08.jar&lt;org.dasein.cloud.aws(AWSCloud.class[AWSCloud~AWSCloud
+Proyecto: neoedit-dasein-migracion
+Jar Location: C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-aws/2011.08/dasein-cloud-aws-2011.08.jar
+Package: org.dasein.cloud.aws
+Compilation Unit: AWSCloud
+Class Name: AWSCloud
+Metodo: AWSCloud
+MLOC: 0
+---------------------------------------------
+resource : /neoedit-migraciones/neoedit-dasein-migracion/target/classes/neoe/dasein/DaseinAdapter.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-migraciones/neoedit-dasein-migracion/target/classes/neoe/ne
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/src/main/java&lt;neoe.ne{PlainPage.java[PlainPage
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/src/main/java&lt;neoe.ne{PlainPage.java[PlainPage
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/src/main/java&lt;neoe.ne{PlainPage.java[PlainPage
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit-migraciones/neoedit-dasein-migracion/target/classes/properties.properties
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar&lt;org.dasein.cloud(CloudProvider.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar&lt;org.dasein.cloud(CloudProvider.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit-migraciones/neoedit-dasein-migracion/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit-migraciones/neoedit-dasein-migracion/src/main/java/neoe/ne/EditPanel.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar&lt;org.dasein.cloud.google.storage(GoogleBlobStore.class[GoogleBlobStore~clear~Ljava.lang.String;
+Proyecto: neoedit-dasein-migracion
+Jar Location: C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar
+Package: org.dasein.cloud.google.storage
+Compilation Unit: GoogleBlobStore
+Class Name: GoogleBlobStore
+Metodo: clear
+MLOC: 9
+---------------------------------------------
+resource : /neoedit-dasein-migracion/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-dasein-migracion/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar&lt;org.dasein.cloud(CloudProvider.class[CloudProvider
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar&lt;org.dasein.cloud(CloudProvider.class[CloudProvider
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar&lt;org.dasein.cloud(CloudProvider.class[CloudProvider
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar&lt;org.dasein.cloud.google.storage(GoogleBlobStore.class[GoogleBlobStore
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar&lt;org.dasein.cloud.google.storage(GoogleBlobStore.class[GoogleBlobStore
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit-migraciones/neoedit-dasein-migracion/target/classes/neoe
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-migraciones/neoedit-dasein-migracion/src/main/java/neoe/dasein/DaseinAdapter.java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-migraciones/neoedit-dasein-migracion/src/main/java/neoe/ne
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar&lt;org.dasein.cloud.google.storage(GoogleBlobStore.class[GoogleBlobStore~exists~Ljava.lang.String;
+Proyecto: neoedit-dasein-migracion
+Jar Location: C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar
+Package: org.dasein.cloud.google.storage
+Compilation Unit: GoogleBlobStore
+Class Name: GoogleBlobStore
+Metodo: exists
+MLOC: 20
+---------------------------------------------
+java : =neoedit-dasein-migracion/src/main/java&lt;neoe.ne{U.java[U^cacheDirectory
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/src/main/java&lt;neoe.ne{U.java[U^cacheDirectory
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar&lt;org.dasein.cloud.google.storage(GoogleStorageServices.class[GoogleStorageServices~getBlobStoreSupport
+Proyecto: neoedit-dasein-migracion
+Jar Location: C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar
+Package: org.dasein.cloud.google.storage
+Compilation Unit: GoogleStorageServices
+Class Name: GoogleStorageServices
+Metodo: getBlobStoreSupport
+MLOC: 1
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar&lt;org.dasein.cloud.google.storage(GoogleStorageServices.class[GoogleStorageServices~getBlobStoreSupport
+Proyecto: neoedit-dasein-migracion
+Jar Location: C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar
+Package: org.dasein.cloud.google.storage
+Compilation Unit: GoogleStorageServices
+Class Name: GoogleStorageServices
+Metodo: getBlobStoreSupport
+MLOC: 1
+---------------------------------------------
+java : =aether/aether-examples/neoedit-migraciones/neoedit-dasein-migracion/src/main/java/neoe/dasein&lt;{DaseinAdapter.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit-migraciones/neoedit-dasein-migracion/target/classes/neoe/dasein
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/src/main/java&lt;neoe.ne{PlainPage.java[PlainPage^cacheDirectory
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/src/main/java&lt;neoe.ne{PlainPage.java[PlainPage^cacheDirectory
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit-migraciones/neoedit-dasein-migracion/src/main/java/neoe/ne&lt;{PlainPage.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit-migraciones/neoedit-dasein-migracion/src/main/java/neoe/ne
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-migraciones/neoedit-dasein-migracion/src/main/java/neoe/ne&lt;{EditPanel.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-migraciones/neoedit-dasein-migracion/src/main/java/neoe/ne
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit-migraciones/neoedit-dasein-migracion/target/classes/neoe/ne/EditPanel.class
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit-migraciones/neoedit-dasein-migracion/src/main/java/neoe/dasein
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar&lt;org.dasein.cloud.google.storage(GoogleStorageServices.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar&lt;org.dasein.cloud.google.storage(GoogleStorageServices.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar&lt;org.dasein.cloud.google(GoogleAppEngine.class[GoogleAppEngine~signForStorage~Ljava.lang.String;~\[B~Ljava.lang.String;~Ljava.lang.String;~Ljava.lang.String;~Ljava.util.Map\&lt;Ljava.lang.String;Ljava.lang.String;&gt;;~Ljava.lang.String;~Ljava.lang.String;
+Proyecto: neoedit-dasein-migracion
+Jar Location: C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar
+Package: org.dasein.cloud.google
+Compilation Unit: GoogleAppEngine
+Class Name: GoogleAppEngine
+Metodo: signForStorage
+MLOC: 35
+---------------------------------------------
+java : =aether/aether-examples/neoedit-migraciones/neoedit-dasein-migracion/src/main/java/neoe/ne&lt;{U.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/src/main/java&lt;neoe.dasein{DaseinAdapter.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/src/main/java&lt;neoe.dasein{DaseinAdapter.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit-migraciones/neoedit-dasein-migracion/src
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit-migraciones/neoedit-dasein-migracion/src/main/java/neoe
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/src/main/java&lt;neoe.ne{Main.java[Main~main~\[QString;
+Proyecto: neoedit-dasein-migracion
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: Main
+Class Name: Main
+Metodo: main
+MLOC: 8
+---------------------------------------------
+java : =MuCommanderApp/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;java.lang(Thread.class[Thread~dispatchUncaughtException~Ljava.lang.Throwable;
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-aws/2011.08/dasein-cloud-aws-2011.08.jar&lt;org.dasein.cloud.aws
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit-migraciones/neoedit-dasein-migracion/target/classes/neoe/dasein&lt;
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar&lt;org.dasein.cloud(CloudProvider.class[CloudProvider~connect~Lorg.dasein.cloud.ProviderContext;~Lorg.dasein.cloud.CloudProvider;
+Proyecto: neoedit-dasein-migracion
+Jar Location: C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar
+Package: org.dasein.cloud
+Compilation Unit: CloudProvider
+Class Name: CloudProvider
+Metodo: connect
+MLOC: 1
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar&lt;org.dasein.cloud(CloudProvider.class[CloudProvider~connect~Lorg.dasein.cloud.ProviderContext;~Lorg.dasein.cloud.CloudProvider;
+Proyecto: neoedit-dasein-migracion
+Jar Location: C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar
+Package: org.dasein.cloud
+Compilation Unit: CloudProvider
+Class Name: CloudProvider
+Metodo: connect
+MLOC: 1
+---------------------------------------------
+resource : /aether-examples/neoedit-migraciones/neoedit-dasein-migracion/pom.xml
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/src/main/java&lt;neoe.ne
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit-migraciones/neoedit-dasein-migracion/target/classes/neoe/ne&lt;(EditPanel.class
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-dasein-migracion/src
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-migraciones/neoedit-dasein-migracion/src/main/java/neoe/dasein&lt;
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar&lt;org.dasein.cloud.google.storage
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-migraciones/neoedit-dasein-migracion/target/classes/neoe
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar&lt;org.dasein.cloud.google(GoogleAppEngine.class[GoogleAppEngine~getDataCenterServices
+Proyecto: neoedit-dasein-migracion
+Jar Location: C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar
+Package: org.dasein.cloud.google
+Compilation Unit: GoogleAppEngine
+Class Name: GoogleAppEngine
+Metodo: getDataCenterServices
+MLOC: 2
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar&lt;org.dasein.cloud.google.storage(GoogleBlobStore.class[GoogleBlobStore~exists~Ljava.lang.String;~Ljava.lang.String;~Z
+Proyecto: neoedit-dasein-migracion
+Jar Location: C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar
+Package: org.dasein.cloud.google.storage
+Compilation Unit: GoogleBlobStore
+Class Name: GoogleBlobStore
+Metodo: exists
+MLOC: 20
+---------------------------------------------
+java : =neoedit-migraciones/neoedit-dasein-migracion/target/classes/neoe/dasein&lt;(DaseinAdapter.class
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit-migraciones/neoedit-dasein-migracion/target/classes/neoe/ne&lt;
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/src/main/java&lt;neoe.ne{EditPanel.java[EditPanel
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/src/main/java&lt;neoe.ne{EditPanel.java[EditPanel
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/src/main/java&lt;neoe.ne{EditPanel.java[EditPanel
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t-migracion/C:/Users/Kireta/.m2/repository/net/java/dev/jets3t/jets3t/0.8.1/jets3t-0.8.1.jar&lt;org.jets3t.service.security(ProviderCredentials.class[ProviderCredentials
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit-migraciones/neoedit-dasein-migracion/src/main/java/neoe/ne/U.java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-dasein-migracion/src/main/java/neoe/ne/PlainPage.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit-migraciones/neoedit-dasein-migracion/target/classes/neoe/ne&lt;
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit-migraciones/neoedit-dasein-migracion/target/classes/neoe/ne&lt;(EditPanel.class
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit-migraciones/neoedit-dasein-migracion/target/classes/neoe/ne
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar&lt;org.dasein.cloud.google.storage(GoogleBlobStore.class[GoogleBlobStore~GoogleBlobStore~Lorg.dasein.cloud.google.GoogleAppEngine;
+Proyecto: neoedit-dasein-migracion
+Jar Location: C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar
+Package: org.dasein.cloud.google.storage
+Compilation Unit: GoogleBlobStore
+Class Name: GoogleBlobStore
+Metodo: GoogleBlobStore
+MLOC: 1
+---------------------------------------------
+java : =aether-examples/neoedit-migraciones/neoedit-dasein-migracion/src/main/java/neoe/dasein&lt;{DaseinAdapter.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar&lt;org.dasein.cloud.google.storage(GoogleBlobStore.class[GoogleBlobStore~renameFile~Ljava.lang.String;~Ljava.lang.String;~Ljava.lang.String;
+Proyecto: neoedit-dasein-migracion
+Jar Location: C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar
+Package: org.dasein.cloud.google.storage
+Compilation Unit: GoogleBlobStore
+Class Name: GoogleBlobStore
+Metodo: renameFile
+MLOC: 29
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar&lt;org.dasein.cloud.google.storage(GoogleBlobStore.class[GoogleBlobStore~renameFile~Ljava.lang.String;~Ljava.lang.String;~Ljava.lang.String;
+Proyecto: neoedit-dasein-migracion
+Jar Location: C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar
+Package: org.dasein.cloud.google.storage
+Compilation Unit: GoogleBlobStore
+Class Name: GoogleBlobStore
+Metodo: renameFile
+MLOC: 29
+---------------------------------------------
+resource : /aether/aether-examples/neoedit-migraciones/neoedit-dasein-migracion/src/main
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit-migraciones/neoedit-dasein-migracion/target/classes/neoe/dasein&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-dasein-migracion/src/main/java/neoe/ne/Main.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;java.io(File.class
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;java.io(File.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar&lt;org.dasein.cloud.google
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-dasein-migracion/src/main/java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-migraciones/neoedit-dasein-migracion/src/main/java/neoe/ne/U.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar&lt;org.dasein.cloud.storage(BlobStoreSupport.class[BlobStoreSupport
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar&lt;org.dasein.cloud.storage(BlobStoreSupport.class[BlobStoreSupport
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar&lt;org.dasein.cloud.storage(BlobStoreSupport.class[BlobStoreSupport
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-migraciones/neoedit-dasein-migracion/src/main/java/neoe/ne/EditPanel.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/src/main/java&lt;neoe.dasein{DaseinAdapter.java[DaseinAdapter
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar&lt;org.dasein.cloud.google.storage(StorageMethod.class[StorageMethod
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit-migraciones/neoedit-dasein-migracion/target/classes/neoe/ne/EditPanel.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit-migraciones/neoedit-dasein-migracion/src/main/java/neoe
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-migraciones/neoedit-dasein-migracion/target/classes/neoe/ne/EditPanel.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-migraciones/neoedit-dasein-migracion/src/main/java/neoe/dasein
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/src/main/java&lt;neoe.dasein{DaseinAdapter.java[DaseinAdapter~DaseinAdapter
+Proyecto: neoedit-dasein-migracion
+Jar Location: src/main/java
+Package: neoe.dasein
+Compilation Unit: DaseinAdapter
+Class Name: DaseinAdapter
+Metodo: DaseinAdapter
+MLOC: 7
+---------------------------------------------
+java : =neoedit-dasein-migracion/src/main/java&lt;neoe.dasein{DaseinAdapter.java[DaseinAdapter~DaseinAdapter
+Proyecto: neoedit-dasein-migracion
+Jar Location: src/main/java
+Package: neoe.dasein
+Compilation Unit: DaseinAdapter
+Class Name: DaseinAdapter
+Metodo: DaseinAdapter
+MLOC: 7
+---------------------------------------------
+resource : /neoedit-jets3t-migracion
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit-migraciones/neoedit-dasein-migracion/target/classes/neoe
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar&lt;org.dasein.cloud.google.storage(GoogleBlobStore.class[GoogleBlobStore~loadDirectories~Ljava.lang.String;~Lorg.dasein.util.Jiterator\&lt;Lorg.dasein.cloud.storage.CloudStoreObject;&gt;;
+Proyecto: neoedit-dasein-migracion
+Jar Location: C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar
+Package: org.dasein.cloud.google.storage
+Compilation Unit: GoogleBlobStore
+Class Name: GoogleBlobStore
+Metodo: loadDirectories
+MLOC: 86
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar&lt;org.dasein.cloud.google.storage(GoogleBlobStore.class[GoogleBlobStore~loadDirectories~Ljava.lang.String;~Lorg.dasein.util.Jiterator\&lt;Lorg.dasein.cloud.storage.CloudStoreObject;&gt;;
+Proyecto: neoedit-dasein-migracion
+Jar Location: C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar
+Package: org.dasein.cloud.google.storage
+Compilation Unit: GoogleBlobStore
+Class Name: GoogleBlobStore
+Metodo: loadDirectories
+MLOC: 86
+---------------------------------------------
+resource : /aether-examples/neoedit-migraciones/neoedit-dasein-migracion/target/classes/neoe/ne
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit-migraciones/neoedit-dasein-migracion/target
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-migraciones/neoedit-dasein-migracion/src/main/java/neoe/ne&lt;{U.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/src/main/java&lt;neoe.dasein
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-dasein-migracion/src/main/java/neoe/ne
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar&lt;org.dasein.cloud.storage(BlobStoreSupport.class[BlobStoreSupport~listFiles~Ljava.lang.String;
+Proyecto: neoedit-dasein-migracion
+Jar Location: C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar
+Package: org.dasein.cloud.storage
+Compilation Unit: BlobStoreSupport
+Class Name: BlobStoreSupport
+Metodo: listFiles
+MLOC: 0
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar&lt;org.dasein.cloud.storage(BlobStoreSupport.class[BlobStoreSupport~listFiles~Ljava.lang.String;
+Proyecto: neoedit-dasein-migracion
+Jar Location: C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar
+Package: org.dasein.cloud.storage
+Compilation Unit: BlobStoreSupport
+Class Name: BlobStoreSupport
+Metodo: listFiles
+MLOC: 0
+---------------------------------------------
+resource : /aether-examples/neoedit-migraciones/neoedit-dasein-migracion/src/main
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar&lt;org.dasein.cloud.storage(BlobStoreSupport.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar&lt;org.dasein.cloud.storage(BlobStoreSupport.class
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-migraciones/neoedit-dasein-migracion
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit-migraciones/neoedit-dasein-migracion/target/classes/neoe/ne/EditPanel$1.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit-migraciones/neoedit-dasein-migracion/pom.xml
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar&lt;org.dasein.cloud(CloudProvider.class[CloudProvider~connect~Lorg.dasein.cloud.ProviderContext;
+Proyecto: neoedit-dasein-migracion
+Jar Location: C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar
+Package: org.dasein.cloud
+Compilation Unit: CloudProvider
+Class Name: CloudProvider
+Metodo: connect
+MLOC: 1
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar&lt;org.dasein.cloud(CloudProvider.class[CloudProvider~connect~Lorg.dasein.cloud.ProviderContext;
+Proyecto: neoedit-dasein-migracion
+Jar Location: C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar
+Package: org.dasein.cloud
+Compilation Unit: CloudProvider
+Class Name: CloudProvider
+Metodo: connect
+MLOC: 1
+---------------------------------------------
+java : =aether-examples/neoedit-migraciones/neoedit-dasein-migracion/src/main/java/neoe/ne&lt;{EditPanel.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar&lt;org.dasein.cloud.google.storage(GoogleStorageServices.class[GoogleStorageServices~GoogleStorageServices~Lorg.dasein.cloud.google.GoogleAppEngine;
+Proyecto: neoedit-dasein-migracion
+Jar Location: C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar
+Package: org.dasein.cloud.google.storage
+Compilation Unit: GoogleStorageServices
+Class Name: GoogleStorageServices
+Metodo: GoogleStorageServices
+MLOC: 1
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar&lt;org.dasein.cloud.google.storage(StorageMethod.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit-migraciones/neoedit-dasein-migracion/target/classes
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit-migraciones/neoedit-dasein-migracion/target/classes
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit-migraciones/neoedit-dasein-migracion/target/classes/neoe/ne/EditPanel$1.class
+REGEXP does not match
+---------------------------------------------
+resource : =aether
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar&lt;org.dasein.cloud.storage
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-dasein-migracion/src/main
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/src/main/resources
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit-migraciones/neoedit-dasein-migracion/src/main/resources
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-migraciones/neoedit-dasein-migracion/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit-migraciones/neoedit-dasein-migracion/src/main/java/neoe/ne&lt;{PlainPage.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit-migraciones/neoedit-dasein-migracion/src/main/java/neoe/dasein&lt;
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit-migraciones/neoedit-dasein-migracion/target/classes/neoe/ne&lt;(EditPanel$1.class
+REGEXP does not match
+---------------------------------------------
+resource : =neoedit-migraciones
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-migraciones/neoedit-dasein-migracion/src/main/resources
+REGEXP does not match
+---------------------------------------------
+resource : =aether-examples
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-migraciones
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-migraciones/neoedit-dasein-migracion/target/classes
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-migraciones/neoedit-dasein-migracion/target/classes/neoe/ne&lt;(EditPanel.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/src/main/java&lt;neoe.ne{Main.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-dasein-migracion/src/main/java/neoe
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit-migraciones/neoedit-dasein-migracion/target/classes/neoe/dasein&lt;(DaseinAdapter.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit-migraciones/neoedit-dasein-migracion/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-migraciones/neoedit-dasein-migracion/target/classes/neoe/ne&lt;(EditPanel$1.class
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-dasein-migracion/pom.xml
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-dasein-migracion/pom.xml
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit-migraciones/neoedit-dasein-migracion/src/main/java/neoe/ne
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-dasein-migracion/src/main/java/neoe/dasein/DaseinAdapter.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit-migraciones/neoedit-dasein-migracion/src/main/java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit-migraciones
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar&lt;org.dasein.cloud.google(GoogleAppEngine.class[GoogleAppEngine
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar&lt;org.dasein.cloud.google(GoogleAppEngine.class[GoogleAppEngine
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit-migraciones/neoedit-dasein-migracion/target/classes/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit-migraciones/neoedit-dasein-migracion/src/main/java/neoe/dasein
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit-migraciones/neoedit-dasein-migracion/src/main/java/neoe/ne
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit-migraciones/neoedit-dasein-migracion/target/classes/neoe/dasein/DaseinAdapter.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-migraciones/neoedit-dasein-migracion/target/classes/neoe/dasein&lt;
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar&lt;org.dasein.cloud.google.storage(GoogleStorageServices.class[GoogleStorageServices
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar&lt;org.dasein.cloud.google.storage(GoogleStorageServices.class[GoogleStorageServices
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-dasein-migracion/src/main/java/neoe/dasein
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-migraciones/neoedit-dasein-migracion/src/main/java/neoe
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/src/main/java&lt;neoe.dasein{DaseinAdapter.java[DaseinAdapter^blobStoreSupport
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/src/main/java&lt;neoe.dasein{DaseinAdapter.java[DaseinAdapter^blobStoreSupport
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/src/main/java&lt;neoe.ne{U.java[U|1
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/src/main/java&lt;neoe.ne{U.java[U|1
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar&lt;org.dasein.cloud(AbstractCloud.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-core/2011.08/dasein-cloud-core-2011.08.jar&lt;org.dasein.cloud(AbstractCloud.class
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-migraciones/neoedit-dasein-migracion/src/main
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-migraciones/neoedit-dasein-migracion/target/classes/neoe/dasein
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-migraciones/neoedit-dasein-migracion/src/main/java/neoe/ne/PlainPage.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/src/main/java&lt;neoe.ne{EditPanel.java[EditPanel~EditPanel
+Proyecto: neoedit-dasein-migracion
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: EditPanel
+Class Name: EditPanel
+Metodo: EditPanel
+MLOC: 2
+---------------------------------------------
+resource : /aether/aether-examples/neoedit-migraciones/neoedit-dasein-migracion/src/main/java/neoe/ne/PlainPage.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar&lt;org.dasein.cloud.google.storage(GoogleBlobStore.class[GoogleBlobStore~createDirectory~Ljava.lang.String;~Z
+Proyecto: neoedit-dasein-migracion
+Jar Location: C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar
+Package: org.dasein.cloud.google.storage
+Compilation Unit: GoogleBlobStore
+Class Name: GoogleBlobStore
+Metodo: createDirectory
+MLOC: 42
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar&lt;org.dasein.cloud.google.storage(GoogleBlobStore.class[GoogleBlobStore~moveFile~Ljava.lang.String;~Ljava.lang.String;~Ljava.lang.String;
+Proyecto: neoedit-dasein-migracion
+Jar Location: C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar
+Package: org.dasein.cloud.google.storage
+Compilation Unit: GoogleBlobStore
+Class Name: GoogleBlobStore
+Metodo: moveFile
+MLOC: 29
+---------------------------------------------
+resource : /aether/aether-examples/neoedit-migraciones/neoedit-dasein-migracion
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar&lt;org.dasein.cloud.google(GoogleAppEngine.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar&lt;org.dasein.cloud.google(GoogleAppEngine.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-google/2011.08/dasein-cloud-google-2011.08.jar&lt;org.dasein.cloud.google(GoogleAppEngine.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-aws/2011.08/dasein-cloud-aws-2011.08.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/src/main/java&lt;neoe.ne{U.java[U
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/src/main/java&lt;neoe.ne{U.java[U
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein-migracion/src/main/java&lt;neoe.ne{U.java[U
+REGEXP does not match
+---------------------------------------------
+FINAL ACCUMULATED RESULT: 598.0
+---------------------------------------------

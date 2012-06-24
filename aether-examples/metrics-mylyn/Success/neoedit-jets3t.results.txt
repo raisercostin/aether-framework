@@ -1,0 +1,1489 @@
+Loading metrics from: D:\Mylyn Metrics\Projects\neoedit-jets3t.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\aether-core.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\aether-loader.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\cloudloop-adapter.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\cloudloop-main.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\dasein-aws.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\dasein-core.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\dasein-google.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\jclouds-aws-common.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\jclouds-aws-s3.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\jclouds-blobstore.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\jclouds-core.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\jclouds-s3.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\jets3t.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\libcloud.xml
+java : 
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{U.java[U~runScript~QPlainPage;
+Proyecto: neoedit-jets3t
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: runScript
+MLOC: 51
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{EditPanel.java[EditPanel
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{EditPanel.java[EditPanel
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{EditPanel.java[EditPanel
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{Main.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{Main.java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-jets3t/src/main
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-jets3t/src/main/java/neoe/DirectoryRestrictedFileSystemView.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{U.java[U~saveFileHistory~QString;~I
+Proyecto: neoedit-jets3t
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: saveFileHistory
+MLOC: 6
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{U.java[U~saveFileHistory~QString;~I
+Proyecto: neoedit-jets3t
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: saveFileHistory
+MLOC: 6
+---------------------------------------------
+resource : /neoedit/neoedit-jets3t/target/classes/neoe/ne
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{PlainPage.java[PlainPage[Cursor
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{U.java[U~doFindInPage~QPlainPage;~QString;~Z
+Proyecto: neoedit-jets3t
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: doFindInPage
+MLOC: 19
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{U.java[U~doFindInPage~QPlainPage;~QString;~Z
+Proyecto: neoedit-jets3t
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: doFindInPage
+MLOC: 19
+---------------------------------------------
+java : =neoedit/neoedit-jets3t/target/classes/neoe/ne&lt;(EditPanel$1.class
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-jets3t/target/classes/neoe/ne&lt;(JetS3tAdapter.class
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jets3t/src/main/java/neoe/ne/EditPanel.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.jets3t{JetS3tAdapter.java[JetS3tAdapter~getInputStream~QFile;~QFile;
+Proyecto: neoedit-jets3t
+Jar Location: src/main/java
+Package: neoe.jets3t
+Compilation Unit: JetS3tAdapter
+Class Name: JetS3tAdapter
+Metodo: getInputStream
+MLOC: 9
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.jets3t{JetS3tAdapter.java[JetS3tAdapter~getInputStream~QFile;~QFile;
+Proyecto: neoedit-jets3t
+Jar Location: src/main/java
+Package: neoe.jets3t
+Compilation Unit: JetS3tAdapter
+Class Name: JetS3tAdapter
+Metodo: getInputStream
+MLOC: 9
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.jets3t{JetS3tAdapter.java[JetS3tAdapter~getInputStream~QFile;~QFile;
+Proyecto: neoedit-jets3t
+Jar Location: src/main/java
+Package: neoe.jets3t
+Compilation Unit: JetS3tAdapter
+Class Name: JetS3tAdapter
+Metodo: getInputStream
+MLOC: 9
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.jets3t{PropertiesProvider.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.jets3t{PropertiesProvider.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/C:/Users/Kireta/.m2/repository/net/java/dev/jets3t/jets3t/0.8.1/jets3t-0.8.1.jar&lt;org.jets3t.service(StorageService.class[StorageService^log
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-aws/2011.08/dasein-cloud-aws-2011.08.jar&lt;org.dasein.cloud.aws.storage(S3.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jets3t/src/main/java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jets3t/src/main/java/neoe/jets3t/JetS3tAdapter.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;javax.swing.filechooser
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jets3t/src/main/java/neoe/jets3t
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jets3t/pom.xml
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jets3t/target/classes
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{U.java[U~saveAs~QPlainPage;
+Proyecto: neoedit-jets3t
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: saveAs
+MLOC: 16
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{U.java[U~saveAs~QPlainPage;
+Proyecto: neoedit-jets3t
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: saveAs
+MLOC: 16
+---------------------------------------------
+resource : /neoedit-jets3t/src/main/java/neoe/ne/TopCoderEditorPlugin.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{PlainPage.java[PlainPage[Cursor~gotoLine
+Proyecto: neoedit-jets3t
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: PlainPage
+Class Name: PlainPage.Cursor
+Metodo: gotoLine
+MLOC: 17
+---------------------------------------------
+resource : /neoedit-jets3t/src/main/java/neoe/ne/EditPanel.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jets3t/src/main/java/neoe
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{FindReplaceWindow.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{FindReplaceWindow.java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-jets3t/src/main/resources
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/C:/Users/Kireta/.m2/repository/net/java/dev/jets3t/jets3t/0.8.1/jets3t-0.8.1.jar&lt;org.jets3t.service.impl.rest.httpclient(RestStorageService.class[RestStorageService
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-jets3t/target/classes/neoe/jets3t&lt;
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;javax.swing(JFileChooser.class[JFileChooser
+REGEXP does not match
+---------------------------------------------
+resource : /
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;java.awt(Graphics.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;java.awt(Graphics.class
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jets3t/src/main/java/neoe/jets3t
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-jets3t/target/classes/neoe/ne&lt;(U.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jets3t/target/classes/neoe/ne/EditPanel$1.class
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-jets3t/src/main/java/neoe/ne&lt;{PlainPage.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jets3t/src/main/java/neoe/jets3t
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jets3t/src/main/java/neoe/ne/JetS3tAdapter.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-aws/2011.08/dasein-cloud-aws-2011.08.jar&lt;org.dasein.cloud.aws.storage
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-jets3t/target/classes/neoe/jets3t&lt;(JetS3tAdapter.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jets3t/src/main/java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jets3t/src/main/java/neoe/ne
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-aws/2011.08/dasein-cloud-aws-2011.08.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.jets3t{JetS3tAdapter.java[JetS3tAdapter~updateCachedFile~QFile;~QFile;
+Proyecto: neoedit-jets3t
+Jar Location: src/main/java
+Package: neoe.jets3t
+Compilation Unit: JetS3tAdapter
+Class Name: JetS3tAdapter
+Metodo: updateCachedFile
+MLOC: 32
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.jets3t{JetS3tAdapter.java[JetS3tAdapter~updateCachedFile~QFile;~QFile;
+Proyecto: neoedit-jets3t
+Jar Location: src/main/java
+Package: neoe.jets3t
+Compilation Unit: JetS3tAdapter
+Class Name: JetS3tAdapter
+Metodo: updateCachedFile
+MLOC: 32
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.jets3t{JetS3tAdapter.java[JetS3tAdapter~updateCachedFile~QFile;~QFile;
+Proyecto: neoedit-jets3t
+Jar Location: src/main/java
+Package: neoe.jets3t
+Compilation Unit: JetS3tAdapter
+Class Name: JetS3tAdapter
+Metodo: updateCachedFile
+MLOC: 32
+---------------------------------------------
+java : =neoedit-jets3t/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;java.awt(Frame.class[Frame~setTitle~Ljava.lang.String;
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jets3t/target/classes/neoe/ne/FindReplaceWindow.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/C:/Users/Kireta/.m2/repository/net/java/dev/jets3t/jets3t/0.8.1/jets3t-0.8.1.jar&lt;org.jets3t.service.impl.rest.httpclient(RestStorageService.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/C:/Users/Kireta/.m2/repository/net/java/dev/jets3t/jets3t/0.8.1/jets3t-0.8.1.jar&lt;org.jets3t.service.impl.rest.httpclient(RestStorageService.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jets3t/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-jets3t/src/main/java/neoe/ne&lt;{PlainPage.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{U.java[U~doReplaceInDir~QPlainPage;~QString;~Z~QString;~Z~QString;
+Proyecto: neoedit-jets3t
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: doReplaceInDir
+MLOC: 25
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{U.java[U~doReplaceInDir~QPlainPage;~QString;~Z~QString;~Z~QString;
+Proyecto: neoedit-jets3t
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: doReplaceInDir
+MLOC: 25
+---------------------------------------------
+resource : /neoedit-jets3t/src/main/java/neoe/ne/PicView.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{U.java[U^th
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/C:/Users/Kireta/.m2/repository/net/java/dev/jets3t/jets3t/0.8.1/jets3t-0.8.1.jar&lt;org.jets3t.service(StorageService.class[StorageService
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/C:/Users/Kireta/.m2/repository/net/java/dev/jets3t/jets3t/0.8.1/jets3t-0.8.1.jar&lt;org.jets3t.service(StorageService.class[StorageService
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/C:/Users/Kireta/.m2/repository/net/java/dev/jets3t/jets3t/0.8.1/jets3t-0.8.1.jar&lt;org.jets3t.service(StorageService.class[StorageService
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;javax.swing.filechooser(FileSystemView.class[FileSystemView
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jets3t/target/classes/neoe/ne/U.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{U.java[U~doFindInDir~QEditPanel;~QString;~Z~Z~Z~QString;
+Proyecto: neoedit-jets3t
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: doFindInDir
+MLOC: 12
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{U.java[U~doFindInDir~QEditPanel;~QString;~Z~Z~Z~QString;
+Proyecto: neoedit-jets3t
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: doFindInDir
+MLOC: 12
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{U.java[U~doFindInDir~QEditPanel;~QString;~Z~Z~Z~QString;
+Proyecto: neoedit-jets3t
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: doFindInDir
+MLOC: 12
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-jets3t/target/classes/neoe/jets3t&lt;(PropertiesProvider.class
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-jets3t/src/main/java/neoe/ne
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-jets3t/target/classes/neoe/ne&lt;(EditPanel.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{EditPanel.java[EditPanel^cacheDirectory
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jets3t/src/main/java/neoe/jets3t/DirectoryRestrictedFileSystemView.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-jets3t/target/classes/neoe/ne&lt;(FindReplaceWindow.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/resources
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/resources
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jets3t
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jets3t/src/main/java/neoe/ne/FindReplaceWindow.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-jets3t/src/main/java/neoe/ne&lt;{EditPanel.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-jets3t/src/main/java/neoe/jets3t&lt;{DirectoryRestrictedFileSystemView.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{PlainPage.java[PlainPage[Paint~drawTextLines~QGraphics2D;~I
+Proyecto: neoedit-jets3t
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: PlainPage
+Class Name: PlainPage.Paint
+Metodo: drawTextLines
+MLOC: 19
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{PlainPage.java[PlainPage[Paint~drawTextLines~QGraphics2D;~I
+Proyecto: neoedit-jets3t
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: PlainPage
+Class Name: PlainPage.Paint
+Metodo: drawTextLines
+MLOC: 19
+---------------------------------------------
+resource : /neoedit/neoedit-jets3t/target/classes/neoe/ne/U.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-jets3t/src/main/java/neoe/jets3t&lt;
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-jets3t/src/main/java/neoe/ne&lt;{FindReplaceWindow.java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jets3t/target/classes/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jets3t/src/main/java/neoe/ne/EditPanel.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jets3t/target/classes/neoe/ne/EditPanel.class
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-jets3t/src/main/java/neoe/jets3t&lt;{JetS3tAdapter.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-jets3t/src/main/java/neoe/jets3t&lt;{JetS3tAdapter.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{PlainPage.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{PlainPage.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jets3t/target/classes/neoe/ne/JetS3tAdapter.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{EditPanel.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{EditPanel.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{EditPanel.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{EditPanel.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.jets3t{JetS3tAdapter.java[JetS3tAdapter
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.jets3t{JetS3tAdapter.java[JetS3tAdapter
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.jets3t{JetS3tAdapter.java[JetS3tAdapter
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;java.awt(Frame.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;java.awt(Frame.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jets3t/target/classes/neoe/ne
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.jets3t{DirectoryRestrictedFileSystemView.java[DirectoryRestrictedFileSystemView
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.jets3t{DirectoryRestrictedFileSystemView.java[DirectoryRestrictedFileSystemView
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jets3t/target
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-jets3t/src/main/java/neoe/ne&lt;{FindReplaceWindow.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-jets3t/src/main/java/neoe/jets3t&lt;{PropertiesProvider.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-jets3t/src/main/java/neoe/jets3t&lt;{JetS3tAdapter.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-jets3t/src/main/java/neoe/jets3t&lt;{JetS3tAdapter.java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-jets3t
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-jets3t/src/main/java/neoe/jets3t/DirectoryRestrictedFileSystemView.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-jets3t/src/main/java/neoe/ne&lt;{U.java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jets3t/src/main/java/neoe
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{EditPanel.java[EditPanel~changeTitle
+Proyecto: neoedit-jets3t
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: EditPanel
+Class Name: EditPanel
+Metodo: changeTitle
+MLOC: 8
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{EditPanel.java[EditPanel~changeTitle
+Proyecto: neoedit-jets3t
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: EditPanel
+Class Name: EditPanel
+Metodo: changeTitle
+MLOC: 8
+---------------------------------------------
+resource : =neoedit-jets3t
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jets3t/target/classes/neoe/ne/JetS3tAdapter.class
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jets3t/target/classes
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jets3t/target/classes/neoe
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{U.java[U
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{U.java[U
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{U.java[U
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/C:/Users/Kireta/.m2/repository/net/java/dev/jets3t/jets3t/0.8.1/jets3t-0.8.1.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-aws/2011.08/dasein-cloud-aws-2011.08.jar&lt;org.dasein.cloud.aws.storage(S3.class[S3
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jets3t/src/main/java/neoe/ne/JetS3tAdapter.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-jets3t/target/classes/neoe/ne&lt;(JetS3tAdapter.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-jets3t/target/classes/neoe/ne&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-jets3t/src/main/java/neoe/ne
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jets3t/target/classes/neoe/jets3t
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jets3t/src
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-jets3t/target/classes/neoe/jets3t&lt;(DirectoryRestrictedFileSystemView.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{TopCoderEditorPlugin.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-jets3t/target/classes/neoe/ne
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/C:/Users/Kireta/.m2/repository/net/java/dev/jets3t/jets3t/0.8.1/jets3t-0.8.1.jar&lt;org.jets3t.service(StorageService.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/C:/Users/Kireta/.m2/repository/net/java/dev/jets3t/jets3t/0.8.1/jets3t-0.8.1.jar&lt;org.jets3t.service(StorageService.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{U.java[U^jetS3tAdapter
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jets3t/src/main/java/neoe/ne/PlainPage.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-jets3t/src/main/java/neoe/ne&lt;{PlainPage.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jets3t/src/main/java/neoe/ne/EditPanel.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jets3t/target/classes/neoe/ne/EditPanel$1.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jets3t
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.jets3t{JetS3tAdapter.java[JetS3tAdapter~JetS3tAdapter
+Proyecto: neoedit-jets3t
+Jar Location: src/main/java
+Package: neoe.jets3t
+Compilation Unit: JetS3tAdapter
+Class Name: JetS3tAdapter
+Metodo: JetS3tAdapter
+MLOC: 7
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.jets3t{JetS3tAdapter.java[JetS3tAdapter~JetS3tAdapter
+Proyecto: neoedit-jets3t
+Jar Location: src/main/java
+Package: neoe.jets3t
+Compilation Unit: JetS3tAdapter
+Class Name: JetS3tAdapter
+Metodo: JetS3tAdapter
+MLOC: 7
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{PlainPage.java[PlainPage[Paint~drawToolbar~QGraphics2D;
+Proyecto: neoedit-jets3t
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: PlainPage
+Class Name: PlainPage.Paint
+Metodo: drawToolbar
+MLOC: 18
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{PlainPage.java[PlainPage[Paint~drawToolbar~QGraphics2D;
+Proyecto: neoedit-jets3t
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: PlainPage
+Class Name: PlainPage.Paint
+Metodo: drawToolbar
+MLOC: 18
+---------------------------------------------
+resource : /neoedit/neoedit-jets3t/src/main/java/neoe/ne/PlainPage.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-dasein/C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-aws/2011.08/dasein-cloud-aws-2011.08.jar&lt;org.dasein.cloud.aws.storage(S3.class[S3~put~Ljava.lang.String;~Ljava.lang.String;~Ljava.io.File;
+Proyecto: neoedit-dasein
+Jar Location: C:/Users/Kireta/.m2/repository/org/dasein/dasein-cloud-aws/2011.08/dasein-cloud-aws-2011.08.jar
+Package: org.dasein.cloud.aws.storage
+Compilation Unit: S3
+Class Name: S3
+Metodo: put
+MLOC: 14
+---------------------------------------------
+java : =neoedit-jets3t/C:/Users/Kireta/.m2/repository/net/java/dev/jets3t/jets3t/0.8.1/jets3t-0.8.1.jar&lt;org.jets3t.service(S3Service.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/C:/Users/Kireta/.m2/repository/net/java/dev/jets3t/jets3t/0.8.1/jets3t-0.8.1.jar&lt;org.jets3t.service(S3Service.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/C:/Users/Kireta/.m2/repository/net/java/dev/jets3t/jets3t/0.8.1/jets3t-0.8.1.jar&lt;org.jets3t.service(S3Service.class
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-jets3t/src/main/java/neoe/ne&lt;
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-jets3t/src/main/java/neoe/ne&lt;
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;javax.swing.filechooser(FileSystemView.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;javax.swing.filechooser(FileSystemView.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jets3t/target/classes/neoe/jets3t/DirectoryRestrictedFileSystemView.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jets3t/target/classes/neoe/jets3t/JetS3tAdapter.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jets3t/src
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{PlainPage.java[PlainPage^editRec
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{PlainPage.java[PlainPage^editRec
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{U.java[U~savePageToFile~QPlainPage;
+Proyecto: neoedit-jets3t
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: savePageToFile
+MLOC: 12
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{U.java[U~savePageToFile~QPlainPage;
+Proyecto: neoedit-jets3t
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: savePageToFile
+MLOC: 12
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jets3t/src/main
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-jets3t/target/classes/neoe/jets3t
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-jets3t/src/main/java/neoe/ne&lt;{JetS3tAdapter.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jets3t/target/classes/neoe/ne
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{U.java[U~showResult~QEditPanel;~QList\&lt;QString;&gt;;~QString;~QString;
+Proyecto: neoedit-jets3t
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: showResult
+MLOC: 12
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.jets3t{JetS3tAdapter.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.jets3t{JetS3tAdapter.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-jets3t/src/main/java/neoe/jets3t&lt;{DirectoryRestrictedFileSystemView.java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jets3t/target/classes/neoe/jets3t/PropertiesProvider.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;javax.swing(JFileChooser.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;javax.swing(JFileChooser.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{U.java[U^kws
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-jets3t/src/main/java/neoe/ne&lt;{JetS3tAdapter.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-jets3t/target/classes/neoe/ne&lt;(U.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;java.awt(Graphics.class[Graphics~fillRect~I~I~I~I
+---------------------------------------------
+java : =neoedit-dasein
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{PlainPage.java[PlainPage^cacheDirectory
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{PlainPage.java[PlainPage^cacheDirectory
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jets3t/src/main/java/neoe/ne
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/C:/Users/Kireta/.m2/repository/net/java/dev/jets3t/jets3t/0.8.1/jets3t-0.8.1.jar&lt;org.jets3t.service(StorageService.class[StorageService~listObjects~Ljava.lang.String;
+Proyecto: neoedit-jets3t
+Jar Location: C:/Users/Kireta/.m2/repository/net/java/dev/jets3t/jets3t/0.8.1/jets3t-0.8.1.jar
+Package: org.jets3t.service
+Compilation Unit: StorageService
+Class Name: StorageService
+Metodo: listObjects
+MLOC: 1
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jets3t/src/main/java/neoe
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jets3t/target/classes/neoe/ne/EditPanel.class
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-jets3t/src/main/java/neoe/ne/U.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{EditPanel.java[EditPanel^debugFPS
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-jets3t/target/classes/neoe/jets3t&lt;(JetS3tAdapter.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jets3t/src/main/resources
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{U.java[U~findInFile~QFile;~QString;~Z
+Proyecto: neoedit-jets3t
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: findInFile
+MLOC: 32
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{U.java[U~findInFile~QFile;~QString;~Z
+Proyecto: neoedit-jets3t
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: findInFile
+MLOC: 32
+---------------------------------------------
+resource : /neoedit/neoedit-jets3t/src/main/resources
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jets3t/src/main/java/neoe/ne/PlainPage.java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-jets3t/src/main/java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-dasein
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jets3t/target/classes/neoe/ne/EditPanel.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.jets3t{JetS3tAdapter.java[JetS3tAdapter~populateCache
+Proyecto: neoedit-jets3t
+Jar Location: src/main/java
+Package: neoe.jets3t
+Compilation Unit: JetS3tAdapter
+Class Name: JetS3tAdapter
+Metodo: populateCache
+MLOC: 18
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.jets3t{JetS3tAdapter.java[JetS3tAdapter~populateCache
+Proyecto: neoedit-jets3t
+Jar Location: src/main/java
+Package: neoe.jets3t
+Compilation Unit: JetS3tAdapter
+Class Name: JetS3tAdapter
+Metodo: populateCache
+MLOC: 18
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-jets3t/target/classes/neoe/jets3t
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-jets3t/target/classes/neoe/jets3t&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jets3t/src/main
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;javax.swing
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-jets3t/src/main/java/neoe/jets3t/JetS3tAdapter.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{U.java[U~repaintAfter~J~QJComponent;
+Proyecto: neoedit-jets3t
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: repaintAfter
+MLOC: 10
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-jets3t/target/classes/neoe/ne&lt;(FindReplaceWindow.class
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-jets3t/target/classes/neoe/ne&lt;(JetS3tAdapter.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{U.java[U~runScriptOnDir~QString;[!2
+Proyecto: neoedit-jets3t
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: runScriptOnDir
+MLOC: 51
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-jets3t/target/classes/neoe/jets3t&lt;(JetS3tAdapter.class
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-jets3t/src/main/java/neoe/jets3t&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-jets3t/src/main/java/neoe/ne
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jets3t/src/main/java/neoe/jets3t/JetS3tAdapter.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-jets3t/src/main/java/neoe/jets3t
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jets3t/src/main/java/neoe/ne/U.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.jets3t{DirectoryRestrictedFileSystemView.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.jets3t{DirectoryRestrictedFileSystemView.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jets3t/target
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-jets3t/src/main/java/neoe/ne&lt;{EditPanel.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-jets3t/target/classes/neoe/ne&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jets3t/target/classes/properties.properties
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;java.awt(Graphics.class[Graphics
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/C:/Users/Kireta/.m2/repository/net/java/dev/jets3t/jets3t/0.8.1/jets3t-0.8.1.jar&lt;org.jets3t.service(S3Service.class[S3Service~listObjects~Ljava.lang.String;
+Proyecto: neoedit-jets3t
+Jar Location: C:/Users/Kireta/.m2/repository/net/java/dev/jets3t/jets3t/0.8.1/jets3t-0.8.1.jar
+Package: org.jets3t.service
+Compilation Unit: S3Service
+Class Name: S3Service
+Metodo: listObjects
+MLOC: 5
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jets3t/target/classes/neoe/ne/U.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-jets3t/src/main/java/neoe/jets3t
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-jets3t/src/main/java/neoe/ne&lt;{FindReplaceWindow.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{FindReplaceWindow.java[FindReplaceWindow
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{FindReplaceWindow.java[FindReplaceWindow
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jets3t/target/classes/neoe/jets3t/PropertiesProvider.class
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-jets3t/src/main/java/neoe/ne/JetS3tAdapter.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{Main.java[Main
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jets3t/src/main/java/neoe/jets3t/DirectoryRestrictedFileSystemView.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jets3t/target/classes/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jets3t/target/classes/neoe/jets3t
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jets3t/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{U.java[U~doReplaceAll~QPlainPage;~QString;~Z~Z~QString;~Z~QString;
+Proyecto: neoedit-jets3t
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: doReplaceAll
+MLOC: 5
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{U.java[U~doReplaceAll~QPlainPage;~QString;~Z~Z~QString;~Z~QString;
+Proyecto: neoedit-jets3t
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: doReplaceAll
+MLOC: 5
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jets3t/src/main/resources
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-jets3t/target/classes/neoe/ne&lt;(EditPanel$1.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jets3t/target/classes/neoe/ne/JetS3tAdapter.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;javax.swing.filechooser(FileSystemView.class[FileSystemView~getHomeDirectory
+---------------------------------------------
+resource : /neoedit-jets3t/pom.xml
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-jets3t/pom.xml
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-jets3t/target/classes/neoe/jets3t&lt;(DirectoryRestrictedFileSystemView.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/C:/Users/Kireta/.m2/repository/net/java/dev/jets3t/jets3t/0.8.1/jets3t-0.8.1.jar&lt;org.jets3t.service
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;java.awt
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-jets3t/target/classes/neoe/ne&lt;
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{EditPanel.java[EditPanel~openWindow
+Proyecto: neoedit-jets3t
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: EditPanel
+Class Name: EditPanel
+Metodo: openWindow
+MLOC: 24
+---------------------------------------------
+resource : /neoedit-jets3t/src/main/java/neoe/ne/Main.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-jets3t/src/main/java/neoe/jets3t
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jets3t/pom.xml
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jets3t/target/classes/neoe/ne/FindReplaceWindow.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{PlainPage.java[PlainPage
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{PlainPage.java[PlainPage
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-jets3t/src/main/java/neoe/jets3t&lt;
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-jets3t/target/classes/neoe/ne&lt;(FindReplaceWindow.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.jets3t{JetS3tAdapter.java[JetS3tAdapter^bucket
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jets3t/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-jets3t/target/classes/neoe/jets3t&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jets3t/pom.xml
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-jets3t/target/classes/neoe/ne
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/C:/Users/Kireta/.m2/repository/net/java/dev/jets3t/jets3t/0.8.1/jets3t-0.8.1.jar&lt;org.jets3t.service.impl.rest.httpclient
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;java.awt(Frame.class[Frame
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-jets3t/src/main/java/neoe/ne&lt;{EditPanel.java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jets3t/src/main/java/neoe/jets3t/JetS3tAdapter.java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jets3t
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;javax.swing(JFileChooser.class[JFileChooser~JFileChooser~Ljava.io.File;~Ljavax.swing.filechooser.FileSystemView;
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-jets3t/target/classes/neoe/ne&lt;(EditPanel.class
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jets3t/target/test-classes
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-jets3t/src/main/java/neoe/jets3t&lt;{PropertiesProvider.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-jets3t/src/main/java/neoe/jets3t&lt;{PropertiesProvider.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/C:/Users/Kireta/.m2/repository/net/java/dev/jets3t/jets3t/0.8.1/jets3t-0.8.1.jar&lt;org.jets3t.service(StorageService.class[StorageService~listObjects~Ljava.lang.String;~Ljava.lang.String;~Ljava.lang.String;~J
+Proyecto: neoedit-jets3t
+Jar Location: C:/Users/Kireta/.m2/repository/net/java/dev/jets3t/jets3t/0.8.1/jets3t-0.8.1.jar
+Package: org.jets3t.service
+Compilation Unit: StorageService
+Class Name: StorageService
+Metodo: listObjects
+MLOC: 1
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jets3t/target
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-jets3t/src
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jets3t/target/classes/neoe
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jets3t/target/test-classes
+REGEXP does not match
+---------------------------------------------
+java : =aether
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-jets3t/src/main/java/neoe
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-jets3t/src/main/java/neoe/jets3t/PropertiesProvider.java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-jets3t/src/main/java/neoe/jets3t/PropertiesProvider.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{U.java[U~runScriptOnDir~QString;
+Proyecto: neoedit-jets3t
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: runScriptOnDir
+MLOC: 51
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{U.java[U~runScriptOnDir~QString;
+Proyecto: neoedit-jets3t
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: runScriptOnDir
+MLOC: 51
+---------------------------------------------
+resource : /neoedit/neoedit-jets3t/target/classes/neoe/jets3t/DirectoryRestrictedFileSystemView.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{FindReplaceWindow.java[FindReplaceWindow~FindReplaceWindow~QJFrame;~QPlainPage;
+Proyecto: neoedit-jets3t
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: FindReplaceWindow
+Class Name: FindReplaceWindow
+Metodo: FindReplaceWindow
+MLOC: 44
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{FindReplaceWindow.java[FindReplaceWindow~FindReplaceWindow~QJFrame;~QPlainPage;
+Proyecto: neoedit-jets3t
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: FindReplaceWindow
+Class Name: FindReplaceWindow
+Metodo: FindReplaceWindow
+MLOC: 44
+---------------------------------------------
+resource : =aether-examples
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jets3t/src/main/java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-jets3t/src/main/java/neoe/ne&lt;{JetS3tAdapter.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{U.java[U~openFile~QPlainPage;
+Proyecto: neoedit-jets3t
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: openFile
+MLOC: 5
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{U.java[U~openFile~QPlainPage;
+Proyecto: neoedit-jets3t
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: openFile
+MLOC: 5
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{FindReplaceWindow.java[FindReplaceWindow~main~\[QString;
+Proyecto: neoedit-jets3t
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: FindReplaceWindow
+Class Name: FindReplaceWindow
+Metodo: main
+MLOC: 4
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jets3t/target/classes/neoe
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jets3t/src/main/java/neoe/jets3t/PropertiesProvider.java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jets3t/target/classes/neoe/ne/FindReplaceWindow.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jets3t/target/classes/neoe/jets3t/JetS3tAdapter.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{FindReplaceWindow.java[FindReplaceWindow^jb3
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-jets3t/target/classes/neoe/ne
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jets3t/target/classes/neoe/jets3t/PropertiesProvider.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-jets3t/src/main/java/neoe/ne
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-jets3t/src/main/java/neoe/jets3t&lt;{JetS3tAdapter.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-jets3t/src/main/java/neoe/jets3t&lt;{JetS3tAdapter.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{PicView.java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jets3t/target/classes/neoe/ne/EditPanel$1.class
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-jets3t/src/main/java/neoe/ne/FindReplaceWindow.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jets3t/src/main/java/neoe/jets3t/PropertiesProvider.java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jets3t/src/main
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jets3t/src/main/java/neoe/jets3t/DirectoryRestrictedFileSystemView.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-jets3t/target/classes/neoe/ne&lt;(EditPanel$1.class
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-jets3t/target/classes/neoe/jets3t&lt;(DirectoryRestrictedFileSystemView.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jets3t/target/classes/neoe/jets3t/DirectoryRestrictedFileSystemView.class
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-jets3t/target/classes/neoe/ne&lt;(U.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{PlainPage.java[PlainPage[Paint
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-jets3t/src/main/java/neoe/ne/PlainPage.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jets3t/target/classes
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{U.java[U^cacheDirectory
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{U.java[U^cacheDirectory
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-jets3t/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-jets3t/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-jets3t/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jets3t/src/main/java/neoe/jets3t/PropertiesProvider.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-jets3t/target/classes/neoe/jets3t
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jets3t/src/main/java/neoe/ne
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{U.java[U^jCloudsAdapter
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jets3t/target/classes/neoe/jets3t/JetS3tAdapter.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-jets3t/target/classes/neoe/jets3t&lt;(PropertiesProvider.class
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-jets3t/src/main/java/neoe/ne&lt;{U.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{U.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{U.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{U.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jets3t/src/main/java/neoe/ne/FindReplaceWindow.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-jets3t/src/main/java/neoe/ne&lt;
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-jets3t/target/classes/neoe/jets3t&lt;(PropertiesProvider.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jets3t/target/classes/neoe/jets3t
+REGEXP does not match
+---------------------------------------------
+java : =neoedit
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{U.java[U~saveFile~QPlainPage;
+Proyecto: neoedit-jets3t
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: saveFile
+MLOC: 19
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{U.java[U~saveFile~QPlainPage;
+Proyecto: neoedit-jets3t
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: saveFile
+MLOC: 19
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{FindReplaceWindow.java[FindReplaceWindow~actionPerformed~QActionEvent;
+Proyecto: neoedit-jets3t
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: FindReplaceWindow
+Class Name: FindReplaceWindow
+Metodo: actionPerformed
+MLOC: 20
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{FindReplaceWindow.java[FindReplaceWindow~actionPerformed~QActionEvent;
+Proyecto: neoedit-jets3t
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: FindReplaceWindow
+Class Name: FindReplaceWindow
+Metodo: actionPerformed
+MLOC: 20
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-jets3t/src/main/java/neoe/jets3t&lt;{DirectoryRestrictedFileSystemView.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-jets3t/src/main/java/neoe/ne&lt;{U.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jets3t/src/main/java/neoe/ne/U.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jets3t/src
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jets3t/src/main/java/neoe/ne/FindReplaceWindow.java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jets3t/src/main/java/neoe/ne/U.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jets3t/target/test-classes
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-jets3t/src/main/java/neoe/jets3t
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/C:/Users/Kireta/.m2/repository/net/java/dev/jets3t/jets3t/0.8.1/jets3t-0.8.1.jar&lt;org.jets3t.service(S3Service.class[S3Service
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/C:/Users/Kireta/.m2/repository/net/java/dev/jets3t/jets3t/0.8.1/jets3t-0.8.1.jar&lt;org.jets3t.service(S3Service.class[S3Service
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{U.java[U^th[
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-jets3t/target/classes/neoe/ne&lt;(EditPanel.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{U.java[U~runScriptOnDir~QString;[!2~actionPerformed~QActionEvent;
+Proyecto: neoedit-jets3t
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: runScriptOnDir
+MLOC: 51
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.ne{Main.java[Main~main~\[QString;
+Proyecto: neoedit-jets3t
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: Main
+Class Name: Main
+Metodo: main
+MLOC: 8
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jets3t/src/main/java/neoe/ne/JetS3tAdapter.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.jets3t
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.jets3t
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.jets3t{JetS3tAdapter.java[JetS3tAdapter~uploadFile~QString;~QFile;
+Proyecto: neoedit-jets3t
+Jar Location: src/main/java
+Package: neoe.jets3t
+Compilation Unit: JetS3tAdapter
+Class Name: JetS3tAdapter
+Metodo: uploadFile
+MLOC: 14
+---------------------------------------------
+java : =neoedit-jets3t/src/main/java&lt;neoe.jets3t{JetS3tAdapter.java[JetS3tAdapter~uploadFile~QString;~QFile;
+Proyecto: neoedit-jets3t
+Jar Location: src/main/java
+Package: neoe.jets3t
+Compilation Unit: JetS3tAdapter
+Class Name: JetS3tAdapter
+Metodo: uploadFile
+MLOC: 14
+---------------------------------------------
+FINAL ACCUMULATED RESULT: 1084.0
+---------------------------------------------

@@ -1,0 +1,1835 @@
+Loading metrics from: D:\Mylyn Metrics\Projects\jfilesync-cloudloop.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\aether-core.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\aether-loader.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\cloudloop-adapter.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\cloudloop-main.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\dasein-aws.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\dasein-core.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\dasein-google.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\jclouds-aws-common.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\jclouds-aws-s3.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\jclouds-blobstore.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\jclouds-core.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\jclouds-s3.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\jets3t.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\libcloud.xml
+java : 
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop&lt;{PropertiesProvider.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/target/classes/jfs/sync
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.cloudloop{JFSCloudLoopFileProducer.java[JFSCloudLoopFileProducer^storage
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.cloudloop{JFSCloudLoopFile.java[JFSCloudLoopFile~delete
+Proyecto: jfilesync-cloudloop
+Jar Location: src/main/java
+Package: jfs.sync.cloudloop
+Compilation Unit: JFSCloudLoopFile
+Class Name: JFSCloudLoopFile
+Metodo: delete
+MLOC: 10
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.cloudloop{JFSCloudLoopFile.java[JFSCloudLoopFile~delete
+Proyecto: jfilesync-cloudloop
+Jar Location: src/main/java
+Package: jfs.sync.cloudloop
+Compilation Unit: JFSCloudLoopFile
+Class Name: JFSCloudLoopFile
+Metodo: delete
+MLOC: 10
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/conf&lt;
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-cloudloop/target/classes/jfs/gui&lt;(JFSConfigView.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop/JFSCloudLoopFile.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/JFSFileProducerManager.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop&lt;{JFSCloudLoopFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop&lt;{JFSCloudLoopFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/resources/conf/JFSTranslation.properties
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/util&lt;(CodecUtil.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-cloudloop/lib
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/local&lt;
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-cloudloop/src/main/java/jfs/conf&lt;{JFSConst.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-cloudloop/target/classes/jfs/gui
+REGEXP does not match
+---------------------------------------------
+resource : /
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop/JFSLibcloudFile.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop&lt;(JFSCloudLoopFile.class
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop&lt;(JFSCloudLoopFile.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-cloudloop/src/main/resources
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop&lt;{JFSLibcloudFileProducer.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/target/classes/cloudloop.xml
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/target/classes/cloudloop.xml
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop&lt;{JFSCloudLoopFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop&lt;{PropertiesProvider.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.conf{JFSConst.java[JFSConst
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.conf{JFSConst.java[JFSConst
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/src/main/java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/local
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/resources
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/sync
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.cloudloop{JFSCloudLoopFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.cloudloop{JFSCloudLoopFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.gui{JFSConfigView.java[JFSConfigView~createDirectoryDialog~QComponent;~QString;
+Proyecto: jfilesync-cloudloop
+Jar Location: src/main/java
+Package: jfs.gui
+Compilation Unit: JFSConfigView
+Class Name: JFSConfigView
+Metodo: createDirectoryDialog
+MLOC: 23
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.gui{JFSConfigView.java[JFSConfigView~createDirectoryDialog~QComponent;~QString;
+Proyecto: jfilesync-cloudloop
+Jar Location: src/main/java
+Package: jfs.gui
+Compilation Unit: JFSConfigView
+Class Name: JFSConfigView
+Metodo: createDirectoryDialog
+MLOC: 23
+---------------------------------------------
+resource : /jfilesync-cloudloop/src/main/java/jfs/util
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/gui&lt;
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.cloudloop{JFSCloudLoopFile.java[JFSCloudLoopFile~setLastModified~J
+Proyecto: jfilesync-cloudloop
+Jar Location: src/main/java
+Package: jfs.sync.cloudloop
+Compilation Unit: JFSCloudLoopFile
+Class Name: JFSCloudLoopFile
+Metodo: setLastModified
+MLOC: 1
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop/PropertiesProvider.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-cloudloop/pom.xml
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-cloudloop/pom.xml
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop&lt;(JFSCloudLoopFileProducerFactory.class
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.cloudloop{PropertiesProvider.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/JFSFileProducerManager.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/gui
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/target/classes/jfs
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop&lt;(JFSLibcloudFileProducerFactory.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/target/classes/jfs/gui
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop&lt;
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/external&lt;
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/D:/Tesis/aether/trunk/aether-examples/jfilesync/jfilesync-cloudloop/lib/cloudloop-main-1.1-SNAPSHOT.jar&lt;com.cloudloop.storage
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/resources/conf
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-cloudloop/src/main/java/jfs/resources/JFSServer.html
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/src/main/java/jfs/conf/JFSConst.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/local&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/gui/JFSConfigView$1.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/src/main/java/jfs/resources/conf
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/conf&lt;{JFSConst.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/gui&lt;{JFSConfigDirectoryView.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/gui
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop&lt;{JFSLibcloudFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.local
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.local
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop&lt;{JFSCloudLoopFileProducer.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop&lt;{JFSCloudLoopFileProducer.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop/JFSCloudLoopFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop/PropertiesProvider.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop/PropertiesProvider.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.util
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.util
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/target/classes
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/external
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop&lt;(JFSLibcloudFileProducer.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/src
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/JFSElement.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.conf
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.conf
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop/JFSLibcloudFileProducer.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/pom.xml
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/resources/xsd/config
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/resources/conf/JFSTranslation.properties
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop/JFSLibcloudFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/src/main/java/jfs/gui
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-cloudloop/target/classes/jfs/util&lt;
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-cloudloop/target/classes/jfs/sync
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-cloudloop/src/main/java/jfs/gui/JFSConfigDirectoryView.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-cloudloop/src/main/java/jfs/gui/JFSConfigView.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/src/main/java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/gui
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-cloudloop/src/main/java/jfs/sync
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync{JFSFileProducerManager.java[JFSFileProducerManager~JFSFileProducerManager
+Proyecto: jfilesync-cloudloop
+Jar Location: src/main/java
+Package: jfs.sync
+Compilation Unit: JFSFileProducerManager
+Class Name: JFSFileProducerManager
+Metodo: JFSFileProducerManager
+MLOC: 6
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync{JFSFileProducerManager.java[JFSFileProducerManager~JFSFileProducerManager
+Proyecto: jfilesync-cloudloop
+Jar Location: src/main/java
+Package: jfs.sync
+Compilation Unit: JFSFileProducerManager
+Class Name: JFSFileProducerManager
+Metodo: JFSFileProducerManager
+MLOC: 6
+---------------------------------------------
+resource : /jfilesync-cloudloop/src/main/java/jfs
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop/JFSCloudLoopFile.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/local&lt;{JFSLocalFile.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop&lt;(JFSLibcloudFile.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop/JFSLibcloudFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/util&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop/JFSLibcloudFileProducer.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop&lt;{JFSCloudLoopFile.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop&lt;{JFSCloudLoopFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/gui/JFSConfigView.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop/JFSLibcloudFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/local
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.external
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.external
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/util&lt;{CodecUtil.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-cloudloop/src/main/resources/xsd/config
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-cloudloop/src/main/resources/xsd/config
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-cloudloop/src/main/java/jfs/gui&lt;{JFSConfigDirectoryView.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-cloudloop/target/classes/jfs/sync&lt;
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/external&lt;{JFSExternalFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-cloudloop/src/main/java/jfs/sync/JFSElement.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/resources
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop/JFSCloudLoopFileProducer.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/D:/Tesis/aether/trunk/aether-examples/jfilesync/jfilesync-cloudloop/lib/cloudloop-main-1.1-SNAPSHOT.jar&lt;com.cloudloop.storage(CloudStoreDirectory.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/src/main/java/jfs/util
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop/JFSLibcloudFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-cloudloop/target/classes/jfs/gui&lt;
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/gui&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/target/classes/jfs/resources
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/src/main/java/jfs/resources
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop&lt;(PropertiesProvider.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/resources/conf/JFSTranslation.properties
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.cloudloop{JFSCloudLoopFile.java[JFSCloudLoopFile
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.cloudloop{JFSCloudLoopFile.java[JFSCloudLoopFile
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.cloudloop{JFSCloudLoopFile.java[JFSCloudLoopFile
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-cloudloop/src/main/java/jfs/resources/conf/JFSTranslation.properties
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-cloudloop/src/main/java/jfs/resources/conf/JFSTranslation.properties
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.conf{JFSConst.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.conf{JFSConst.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.conf{JFSConst.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/sync&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/JFSElement.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop/JFSCloudLoopFileProducer.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.cloudloop{JFSCloudLoopFile.java[JFSCloudLoopFile~getInputStream
+Proyecto: jfilesync-cloudloop
+Jar Location: src/main/java
+Package: jfs.sync.cloudloop
+Compilation Unit: JFSCloudLoopFile
+Class Name: JFSCloudLoopFile
+Metodo: getInputStream
+MLOC: 6
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.cloudloop{JFSCloudLoopFile.java[JFSCloudLoopFile~getInputStream
+Proyecto: jfilesync-cloudloop
+Jar Location: src/main/java
+Package: jfs.sync.cloudloop
+Compilation Unit: JFSCloudLoopFile
+Class Name: JFSCloudLoopFile
+Metodo: getInputStream
+MLOC: 6
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/src/main/java/jfs/gui/JFSConfigView.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/gui
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/gui/JFSConfigView.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop&lt;{JFSLibcloudFileProducer.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync{JFSFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync{JFSFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/target/classes/jfs/resources/conf/JFSTranslation.properties
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.cloudloop{JFSCloudLoopFile.java[JFSCloudLoopFile~getMD5
+Proyecto: jfilesync-cloudloop
+Jar Location: src/main/java
+Package: jfs.sync.cloudloop
+Compilation Unit: JFSCloudLoopFile
+Class Name: JFSCloudLoopFile
+Metodo: getMD5
+MLOC: 5
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.cloudloop{JFSCloudLoopFile.java[JFSCloudLoopFile~getMD5
+Proyecto: jfilesync-cloudloop
+Jar Location: src/main/java
+Package: jfs.sync.cloudloop
+Compilation Unit: JFSCloudLoopFile
+Class Name: JFSCloudLoopFile
+Metodo: getMD5
+MLOC: 5
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/external/JFSExternalFile.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/conf
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/src
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/util&lt;{CodecUtil.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop/JFSCloudLoopFile.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/util&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-cloudloop/src/main/java/jfs/gui/JFSConfigServerView.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop&lt;(JFSLibcloudFile.class
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop&lt;(JFSCloudLoopFileProducer.class
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop&lt;(JFSCloudLoopFileProducer.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-cloudloop/src/main/java/jfs/sync/local/JFSLocalFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/external
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-cloudloop/src/main/java/jfs/util&lt;{CodecUtil.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-cloudloop/src
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/pom.xml
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop&lt;{JFSLibcloudFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/resources/cloudloop.xml
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/resources/cloudloop.xml
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/src/main/resources/xsd/config/cloudloop-config.xsd
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync{JFSDeleteStatement.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/resources/xsd
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop&lt;(JFSLibcloudFileProducerFactory.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/util/CodecUtil.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop/JFSCloudLoopFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/D:/Tesis/aether/trunk/aether-examples/jfilesync/jfilesync-cloudloop/lib/cloudloop-main-1.1-SNAPSHOT.jar
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/gui&lt;(JFSConfigView.class
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/gui
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/local&lt;
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop&lt;
+REGEXP does not match
+---------------------------------------------
+java : =aether
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/src/main
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.conf{JFSConst.java[JFSConst^SCHEME_CLOUDLOOP
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.conf{JFSConst.java[JFSConst^SCHEME_CLOUDLOOP
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/target/classes
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/gui&lt;{JFSConfigView.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop&lt;{JFSLibcloudFileProducer.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop/PropertiesProvider.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.cloudloop{JFSCloudLoopFile.java[JFSCloudLoopFile~getList
+Proyecto: jfilesync-cloudloop
+Jar Location: src/main/java
+Package: jfs.sync.cloudloop
+Compilation Unit: JFSCloudLoopFile
+Class Name: JFSCloudLoopFile
+Metodo: getList
+MLOC: 25
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.cloudloop{JFSCloudLoopFile.java[JFSCloudLoopFile~getList
+Proyecto: jfilesync-cloudloop
+Jar Location: src/main/java
+Package: jfs.sync.cloudloop
+Compilation Unit: JFSCloudLoopFile
+Class Name: JFSCloudLoopFile
+Metodo: getList
+MLOC: 25
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.cloudloop{JFSCloudLoopFile.java[JFSCloudLoopFile~getList
+Proyecto: jfilesync-cloudloop
+Jar Location: src/main/java
+Package: jfs.sync.cloudloop
+Compilation Unit: JFSCloudLoopFile
+Class Name: JFSCloudLoopFile
+Metodo: getList
+MLOC: 25
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/local
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/gui&lt;
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-cloudloop/src/main/java/jfs/conf
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/resources/conf
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.cloudloop{JFSCloudLoopFile.java[JFSCloudLoopFile~upload~QFile;
+Proyecto: jfilesync-cloudloop
+Jar Location: src/main/java
+Package: jfs.sync.cloudloop
+Compilation Unit: JFSCloudLoopFile
+Class Name: JFSCloudLoopFile
+Metodo: upload
+MLOC: 10
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.cloudloop{JFSCloudLoopFile.java[JFSCloudLoopFile~upload~QFile;
+Proyecto: jfilesync-cloudloop
+Jar Location: src/main/java
+Package: jfs.sync.cloudloop
+Compilation Unit: JFSCloudLoopFile
+Class Name: JFSCloudLoopFile
+Metodo: upload
+MLOC: 10
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/resources
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/JFSFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-cloudloop/src/main/java/jfs/sync/local
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync{JFSFileProducerManager.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync{JFSFileProducerManager.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/target/classes/jfs/gui/JFSConfigView$1.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.cloudloop{JFSCloudLoopFile.java[JFSCloudLoopFile^list
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop&lt;{JFSCloudLoopFileProducer.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop&lt;{JFSCloudLoopFileProducer.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/sync
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.gui{JFSConfigView.java#
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.util{CodecUtil.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.local{JFSLocalFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.local{JFSLocalFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-cloudloop/src/main/resources/xsd/config/cloudloop-config.xsd
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-cloudloop/src/main/resources/xsd/config/cloudloop-config.xsd
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop/JFSCloudLoopFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop/JFSCloudLoopFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop/JFSCloudLoopFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/src/main/resources
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop&lt;{JFSLibcloudFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop/JFSCloudLoopFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/gui
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/src/main/resources/cloudloop.xml
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/src/main/resources/cloudloop.xml
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-cloudloop/src/main/java/jfs/JFileSync.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/resources
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/resources
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-cloudloop/src/main/java/jfs/gui
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.cloudloop{JFSCloudLoopFile.java[JFSCloudLoopFile^inputStream
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/resources/conf
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-cloudloop/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-cloudloop/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-cloudloop/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-cloudloop/src/main/resources/xsd
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-cloudloop/src/main/resources/xsd
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/sync
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/JFSFileProducerManager.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop/JFSCloudLoopFileProducer.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop/JFSCloudLoopFileProducerFactory.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/JFSFileProducerManager.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/JFSFileProducerManager.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.cloudloop{JFSCloudLoopFile.java[JFSCloudLoopFile~getLength
+Proyecto: jfilesync-cloudloop
+Jar Location: src/main/java
+Package: jfs.sync.cloudloop
+Compilation Unit: JFSCloudLoopFile
+Class Name: JFSCloudLoopFile
+Metodo: getLength
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.cloudloop{JFSCloudLoopFile.java[JFSCloudLoopFile~getLength
+Proyecto: jfilesync-cloudloop
+Jar Location: src/main/java
+Package: jfs.sync.cloudloop
+Compilation Unit: JFSCloudLoopFile
+Class Name: JFSCloudLoopFile
+Metodo: getLength
+MLOC: 1
+---------------------------------------------
+resource : /jfilesync-cloudloop/src/main/resources/cloudloop.xml
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-cloudloop/src/main/resources/cloudloop.xml
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-cloudloop/src/main/resources/cloudloop.xml
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop/JFSCloudLoopFileProducerFactory.class
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/gui
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/conf
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop/JFSLibcloudFileProducer.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/util
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/local&lt;{JFSLocalFile.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop&lt;(JFSCloudLoopFileProducer.class
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop&lt;(JFSCloudLoopFileProducer.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/external
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/src/main/java/jfs/util/CodecUtil.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.resources
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.resources
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop/JFSLibcloudFileProducer.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/target/classes/jfs/util
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/src/main/resources/xsd/config
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/gui/JFSConfigDirectoryView.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/util&lt;(CodecUtil.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.cloudloop{JFSCloudLoopFile.java[JFSCloudLoopFile~closeInputStream
+Proyecto: jfilesync-cloudloop
+Jar Location: src/main/java
+Package: jfs.sync.cloudloop
+Compilation Unit: JFSCloudLoopFile
+Class Name: JFSCloudLoopFile
+Metodo: closeInputStream
+MLOC: 5
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.cloudloop{JFSCloudLoopFile.java[JFSCloudLoopFile~closeInputStream
+Proyecto: jfilesync-cloudloop
+Jar Location: src/main/java
+Package: jfs.sync.cloudloop
+Compilation Unit: JFSCloudLoopFile
+Class Name: JFSCloudLoopFile
+Metodo: closeInputStream
+MLOC: 5
+---------------------------------------------
+resource : /jfilesync-cloudloop/src/main/java/jfs/sync/external
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/D:/Tesis/aether/trunk/aether-examples/jfilesync/jfilesync-cloudloop/lib/cloudloop-main-1.1-SNAPSHOT.jar&lt;com.cloudloop.storage.adapter
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/sync&lt;(JFSFileProducerManager.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/target/classes/cloudloop.xml
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/target/classes/cloudloop.xml
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/util/CodecUtil.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop/JFSCloudLoopFile.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/conf&lt;
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop&lt;{JFSCloudLoopFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/util&lt;
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/external&lt;
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/external
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/local&lt;{JFSLocalFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop&lt;
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-cloudloop/src/main/java/jfs/gui
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/target/classes/jfs/resources/conf
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/local/JFSLocalFile.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/conf
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.conf{JFSSyncModes.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/src
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop&lt;(JFSCloudLoopFile.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop&lt;(JFSCloudLoopFile.class
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop&lt;{JFSLibcloudFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop/JFSLibcloudFile.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/external
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-cloudloop/src/main/java/jfs/conf
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/sync&lt;(JFSFileProducerManager.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop/JFSCloudLoopFileProducerFactory.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop&lt;(PropertiesProvider.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/util/CodecUtil.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop/PropertiesProvider.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs{JFileSync.java[JFileSync
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/external/JFSExternalFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/src/main/resources/xsd/config
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/target/classes/properties.properties
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.resources.conf
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop/JFSCloudLoopFileProducer.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/util
+REGEXP does not match
+---------------------------------------------
+resource : /aether
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/external/JFSExternalFile.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/sync
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-cloudloop/src/main
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop/JFSLibcloudFileProducer.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.gui
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.gui
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/local
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/resources
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop&lt;(JFSCloudLoopFileProducer.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop&lt;(JFSCloudLoopFileProducer.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/target/classes/cloudloop.xml
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/target/classes/cloudloop.xml
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop&lt;(JFSCloudLoopFileProducerFactory.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.cloudloop{JFSCloudLoopFileProducer.java[JFSCloudLoopFileProducer~JFSCloudLoopFileProducer~QString;
+Proyecto: jfilesync-cloudloop
+Jar Location: src/main/java
+Package: jfs.sync.cloudloop
+Compilation Unit: JFSCloudLoopFileProducer
+Class Name: JFSCloudLoopFileProducer
+Metodo: JFSCloudLoopFileProducer
+MLOC: 10
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.cloudloop{JFSCloudLoopFileProducer.java[JFSCloudLoopFileProducer~JFSCloudLoopFileProducer~QString;
+Proyecto: jfilesync-cloudloop
+Jar Location: src/main/java
+Package: jfs.sync.cloudloop
+Compilation Unit: JFSCloudLoopFileProducer
+Class Name: JFSCloudLoopFileProducer
+Metodo: JFSCloudLoopFileProducer
+MLOC: 10
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop&lt;(JFSCloudLoopFileProducerFactory.class
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop&lt;(JFSCloudLoopFile.class
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop&lt;(JFSCloudLoopFile.class
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop&lt;{JFSCloudLoopFileProducer.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop&lt;{JFSCloudLoopFileProducer.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop/PropertiesProvider.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/resources/xsd/config/cloudloop-config.xsd
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/util
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-cloudloop/src/main/java/jfs/util&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop/JFSLibcloudFileProducer.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-cloudloop/src/main/java/jfs/sync/JFSDeleteStatement.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.gui{JFSConfigView.java#javax.swing.border.TitledBorder
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.external{JFSExternalFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.external{JFSExternalFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop/JFSLibcloudFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/JFSFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync{JFSElement.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync{JFSElement.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop/JFSLibcloudFile.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/src/main/resources/cloudloop.xml
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/src/main/resources/cloudloop.xml
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/gui&lt;(JFSConfigView$1.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-cloudloop/src/main/java/jfs/util
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync&lt;{JFSElement.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/conf&lt;{JFSConst.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-cloudloop/target/classes/jfs/util&lt;(CodecUtil.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/resources
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/util
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync{JFSFileProducerManager.java[JFSFileProducerManager
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/external
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync{JFSDeleteMonitor.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop&lt;{JFSLibcloudFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.cloudloop{JFSCloudLoopFile.java[JFSCloudLoopFile~mkdir
+Proyecto: jfilesync-cloudloop
+Jar Location: src/main/java
+Package: jfs.sync.cloudloop
+Compilation Unit: JFSCloudLoopFile
+Class Name: JFSCloudLoopFile
+Metodo: mkdir
+MLOC: 9
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.cloudloop{JFSCloudLoopFile.java[JFSCloudLoopFile~mkdir
+Proyecto: jfilesync-cloudloop
+Jar Location: src/main/java
+Package: jfs.sync.cloudloop
+Compilation Unit: JFSCloudLoopFile
+Class Name: JFSCloudLoopFile
+Metodo: mkdir
+MLOC: 9
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-cloudloop/target/classes/jfs/util
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/local/JFSLocalFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs{JFileSync.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs{JFileSync.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/local
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/util
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop/JFSCloudLoopFileProducer.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop&lt;{JFSLibcloudFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.cloudloop{JFSCloudLoopFileProducer.java[JFSCloudLoopFileProducer~getRootJfsFile
+Proyecto: jfilesync-cloudloop
+Jar Location: src/main/java
+Package: jfs.sync.cloudloop
+Compilation Unit: JFSCloudLoopFileProducer
+Class Name: JFSCloudLoopFileProducer
+Metodo: getRootJfsFile
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.cloudloop{JFSCloudLoopFileProducer.java[JFSCloudLoopFileProducer~getRootJfsFile
+Proyecto: jfilesync-cloudloop
+Jar Location: src/main/java
+Package: jfs.sync.cloudloop
+Compilation Unit: JFSCloudLoopFileProducer
+Class Name: JFSCloudLoopFileProducer
+Metodo: getRootJfsFile
+MLOC: 1
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop/JFSLibcloudFileProducerFactory.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-cloudloop/src/main/java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop&lt;
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/external&lt;{JFSExternalFile.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/conf
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-cloudloop/src/main/java/jfs/conf/JFSSyncModes.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/src/main/java/jfs/resources/conf/JFSTranslation.properties
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop&lt;(JFSLibcloudFileProducer.class
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/sync&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/gui/JFSConfigView.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop&lt;(JFSLibcloudFile.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-cloudloop
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop&lt;{JFSCloudLoopFile.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop&lt;{JFSCloudLoopFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-cloudloop/src/main/java/jfs/gui&lt;{JFSConfigView.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/resources/conf/JFSTranslation.properties
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/local
+REGEXP does not match
+---------------------------------------------
+resource : =jfilesync-cloudloop
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop&lt;(PropertiesProvider.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-cloudloop/src/main/java/jfs/conf/JFSConst.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/target
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/util/CodecUtil.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.gui{JFSConfigView.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.gui{JFSConfigView.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-cloudloop/src/main/java/jfs/resources/conf
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/gui&lt;{JFSConfigDirectoryView.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-cloudloop/target/classes/jfs/sync&lt;(JFSFileProducerManager.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop/JFSLibcloudFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/target
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/util
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-cloudloop/src/main/java/jfs/sync/JFSDeleteMonitor.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop/JFSLibcloudFileProducerFactory.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-cloudloop/src/main/java/jfs/resources
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/target/classes/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/target/classes/jfs/util/CodecUtil.class
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-cloudloop/src/main/java/jfs/gui&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/src/main/java/jfs
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.cloudloop{JFSCloudLoopFile.java[JFSCloudLoopFile~JFSCloudLoopFile~QJFSFileProducer;~QString;~QCloudStore;~QString;
+Proyecto: jfilesync-cloudloop
+Jar Location: src/main/java
+Package: jfs.sync.cloudloop
+Compilation Unit: JFSCloudLoopFile
+Class Name: JFSCloudLoopFile
+Metodo: JFSCloudLoopFile
+MLOC: 28
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.cloudloop{JFSCloudLoopFile.java[JFSCloudLoopFile~JFSCloudLoopFile~QJFSFileProducer;~QString;~QCloudStore;~QString;
+Proyecto: jfilesync-cloudloop
+Jar Location: src/main/java
+Package: jfs.sync.cloudloop
+Compilation Unit: JFSCloudLoopFile
+Class Name: JFSCloudLoopFile
+Metodo: JFSCloudLoopFile
+MLOC: 28
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/external&lt;{JFSExternalFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/conf/JFSConst.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync&lt;
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync&lt;{JFSFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync&lt;{JFSElement.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync&lt;{JFSFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/gui
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/external&lt;
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync&lt;{JFSFileProducerManager.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/resources/conf
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/target/classes/jfs/gui/JFSConfigView.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.gui{JFSConfigView.java[JFSConfigView
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync&lt;{JFSFileProducerManager.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/target
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync&lt;{JFSElement.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop/JFSLibcloudFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-cloudloop/src/main/java/jfs/sync/external/JFSExternalFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop/JFSCloudLoopFile.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.cloudloop{JFSCloudLoopFile.java[JFSCloudLoopFile^adapter
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.cloudloop{JFSCloudLoopFile.java[JFSCloudLoopFile^adapter
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.cloudloop{JFSCloudLoopFile.java[JFSCloudLoopFile^adapter
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/src/main/resources/xsd/config/cloudloop-config.xsd
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/util
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/JFSFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop/JFSLibcloudFileProducer.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/src/main/java/jfs/conf
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/util&lt;
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop/JFSLibcloudFileProducerFactory.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync&lt;{JFSFileProducerManager.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync&lt;{JFSFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-cloudloop/target/classes/jfs/gui&lt;(JFSConfigView$1.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-cloudloop/src/main/java/jfs/sync/JFSFileProducerManager.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.cloudloop{JFSCloudLoopFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.cloudloop{JFSCloudLoopFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/src/main/resources/xsd
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/JFSElement.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-cloudloop/src/main/java/jfs/sync/JFSFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.cloudloop
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.cloudloop
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop/JFSCloudLoopFileProducer.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/D:/Tesis/aether/trunk/aether-examples/jfilesync/jfilesync-cloudloop/lib/cloudloop-main-1.1-SNAPSHOT.jar&lt;com.cloudloop.storage(CloudStoreFile.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/src/main
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop&lt;{PropertiesProvider.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/gui&lt;{JFSConfigView.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/local/JFSLocalFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.gui{JFSConfigDirectoryView.java[JFSConfigDirectoryView~JFSConfigDirectoryView~QJDialog;~QJFSConfig;~QJFSDirectoryPair;
+Proyecto: jfilesync-cloudloop
+Jar Location: src/main/java
+Package: jfs.gui
+Compilation Unit: JFSConfigDirectoryView
+Class Name: JFSConfigDirectoryView
+Metodo: JFSConfigDirectoryView
+MLOC: 73
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.gui{JFSConfigDirectoryView.java[JFSConfigDirectoryView~JFSConfigDirectoryView~QJDialog;~QJFSConfig;~QJFSDirectoryPair;
+Proyecto: jfilesync-cloudloop
+Jar Location: src/main/java
+Package: jfs.gui
+Compilation Unit: JFSConfigDirectoryView
+Class Name: JFSConfigDirectoryView
+Metodo: JFSConfigDirectoryView
+MLOC: 73
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop/JFSCloudLoopFileProducer.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/gui/JFSConfigDirectoryView.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/target/classes
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop/PropertiesProvider.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop&lt;{JFSCloudLoopFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/gui/JFSConfigView$1.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-cloudloop/src/main/java/jfs/util/CodecUtil.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.cloudloop{JFSCloudLoopFile.java[JFSCloudLoopFile^item
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.cloudloop{JFSCloudLoopFile.java[JFSCloudLoopFile^item
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.cloudloop{JFSCloudLoopFile.java[JFSCloudLoopFile^item
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/conf/JFSConst.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.gui{JFSConfigServerView.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync{HeapSort.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/pom.xml
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/gui&lt;(JFSConfigView.class
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/util
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/src/main/resources/xsd
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/target/classes/properties.properties
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.cloudloop{JFSCloudLoopFileProducer.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.cloudloop{JFSCloudLoopFileProducer.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.cloudloop{JFSCloudLoopFileProducer.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-cloudloop/src/main/java/jfs/conf&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop/JFSLibcloudFile.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop&lt;(JFSLibcloudFileProducerFactory.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-cloudloop/src/main/java/jfs/sync/HeapSort.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.gui{JFSConfigDirectoryView.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.gui{JFSConfigDirectoryView.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.gui{JFSConfigDirectoryView.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/gui/JFSConfigView.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/gui&lt;(JFSConfigView$1.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.cloudloop{JFSCloudLoopFileProducer.java[JFSCloudLoopFileProducer~getJfsFile~QString;
+Proyecto: jfilesync-cloudloop
+Jar Location: src/main/java
+Package: jfs.sync.cloudloop
+Compilation Unit: JFSCloudLoopFileProducer
+Class Name: JFSCloudLoopFileProducer
+Metodo: getJfsFile
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-cloudloop/D:/Tesis/aether/trunk/aether-examples/jfilesync/jfilesync-cloudloop/lib/cloudloop-main-1.1-SNAPSHOT.jar&lt;com.cloudloop.storage.adapter(CloudStoreAdapterBase.class
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/gui&lt;
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop&lt;(JFSLibcloudFileProducer.class
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/JFSFileProducerManager.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/src/main/resources
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/src/main/java/jfs/gui/JFSConfigDirectoryView.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-cloudloop/target/classes/jfs/sync/cloudloop
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop/JFSCloudLoopFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.gui{JFSConfigDirectoryView.java[JFSConfigDirectoryView
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.cloudloop{JFSCloudLoopFileProducer.java[JFSCloudLoopFileProducer
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.cloudloop{JFSCloudLoopFileProducer.java[JFSCloudLoopFileProducer
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.cloudloop{JFSCloudLoopFile.java[JFSCloudLoopFile~getLastModified
+Proyecto: jfilesync-cloudloop
+Jar Location: src/main/java
+Package: jfs.sync.cloudloop
+Compilation Unit: JFSCloudLoopFile
+Class Name: JFSCloudLoopFile
+Metodo: getLastModified
+MLOC: 5
+---------------------------------------------
+java : =jfilesync-cloudloop/src/main/java&lt;jfs.sync.cloudloop{JFSCloudLoopFile.java[JFSCloudLoopFile~getLastModified
+Proyecto: jfilesync-cloudloop
+Jar Location: src/main/java
+Package: jfs.sync.cloudloop
+Compilation Unit: JFSCloudLoopFile
+Class Name: JFSCloudLoopFile
+Metodo: getLastModified
+MLOC: 5
+---------------------------------------------
+FINAL ACCUMULATED RESULT: 461.0
+---------------------------------------------
