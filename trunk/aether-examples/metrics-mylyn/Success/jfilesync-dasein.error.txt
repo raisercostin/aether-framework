@@ -1,0 +1,24 @@
+Proyecto: jfilesync-dasein
+Jar Location: src/main/java
+Package: jfs.sync.dasein
+Compilation Unit: JFSLibcloudFileProducerFactory
+Class Name: JFSLibcloudFileProducerFactory
+Metodo: createProducer
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: jfilesync-dasein
+Jar Location: src/main/java
+Package: jfs.sync.dasein
+Compilation Unit: JFSLibcloudFileProducerFactory
+Class Name: JFSDaseinFileProducerFactory
+Metodo: createProducer
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: jfilesync-dasein
+Jar Location: src/main/java
+Package: jfs.sync.dasein
+Compilation Unit: JFSLibcloudFileProducerFactory
+Class Name: JFSDaseinFileProducerFactory
+Metodo: createProducer
+MLOC: METRIC NOT FOUND
+---------------------------------------------

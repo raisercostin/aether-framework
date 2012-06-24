@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InteractionHistory Id="http://code.google.com/p/aether-framework-31"
+	Version="1">
+	<InteractionEvent Delta="null" EndDate="2012-02-04 16:37:52.307 ART"
+		Interest="7.5" Kind="propagation" Navigation="org.eclipse.mylyn.core.model.edges.containment"
+		OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-02-04 16:37:07.981 ART" StructureHandle=""
+		StructureKind="java" NumEvents="9" CreationCount="1" />
+	<InteractionEvent Delta="null" EndDate="2012-02-04 16:38:00.756 ART"
+		Interest="1.0" Kind="propagation" Navigation="org.eclipse.mylyn.core.model.edges.containment"
+		OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-02-04 16:38:00.756 ART"
+		StructureHandle="/aether/aether-examples/neoedit-migraciones-aether/neoedit-jets3t/src"
+		StructureKind="resource" />
+	<InteractionEvent Delta="null" EndDate="2012-02-04 16:38:00.755 ART"
+		Interest="1.0" Kind="propagation" Navigation="org.eclipse.mylyn.core.model.edges.containment"
+		OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-02-04 16:38:00.755 ART"
+		StructureHandle="/aether-examples/neoedit-migraciones-aether/neoedit-jets3t/src"
+		StructureKind="resource" />
+	<InteractionEvent Delta="null" EndDate="2012-02-04 16:38:00.755 ART"
+		Interest="1.0" Kind="propagation" Navigation="org.eclipse.mylyn.core.model.edges.containment"
+		OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-02-04 16:38:00.755 ART"
+		StructureHandle="/aether-examples/neoedit-migraciones-aether/neoedit-jets3t/src/main/resources"
+		StructureKind="resource" />
+	<InteractionEvent Delta="null" EndDate="2012-02-04 16:41:01.837 ART"
+		Interest="1.0" Kind="propagation" Navigation="null"
+		OriginId="org.eclipse.mylyn.resources.ui.interest.updater" StartDate="2012-02-04 16:41:01.837 ART"
+		StructureHandle="/aether/aether-examples/neoedit-migraciones-aether/neoedit-jets3t/target/test-classes"
+		StructureKind="resource" />
+	<InteractionEvent Delta="null" EndDate="2012-02-04 16:37:51.473 ART"
+		Interest="1.0" Kind="propagation" Navigation="null"
+		OriginId="org.eclipse.mylyn.resources.ui.interest.updater" StartDate="2012-02-04 16:37:51.473 ART"
+		StructureHandle="=aether-examples/neoedit-migraciones-aether\/neoedit-jets3t\/target\/classes\/neoe\/jets3t&amp;lt;(DirectoryRestrictedFileSystemView.class"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-02-04 16:38:00.756 ART"
+		Interest="1.085" Kind="propagation" Navigation="org.eclipse.mylyn.core.model.edges.containment"
+		OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-02-04 16:37:43.309 ART" StructureHandle="/aether/aether-examples/neoedit-migraciones-aether"
+		StructureKind="resource" NumEvents="3" CreationCount="6" />
+	<InteractionEvent Delta="null" EndDate="2012-02-04 16:37:51.474 ART"
+		Interest="1.0" Kind="propagation" Navigation="org.eclipse.mylyn.core.model.edges.containment"
+		OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-02-04 16:37:51.474 ART"
+		StructureHandle="/aether-examples/neoedit-migraciones-aether/neoedit-jets3t/target/classes/neoe/jets3t"
+		StructureKind="resource" />
+	<InteractionEvent Delta="null" EndDate="2012-02-04 16:38:00.756 ART"
+		Interest="1.0" Kind="propagation" Navigation="org.eclipse.mylyn.core.model.edges.containment"
+		OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-02-04 16:38:00.756 ART"
+		StructureHandle="/aether/aether-examples/neoedit-migraciones-aether/neoedit-jets3t/src/main/resources"
+		StructureKind="resource" />
+	<InteractionEvent Delta="null" EndDate="2012-02-04 16:37:43.308 ART"
+		Interest="1.0" Kind="prediction" Navigation="null"
+		OriginId="org.eclipse.mylyn.resources.ui.interest.updater" StartDate="2012-02-04 16:37:43.308 ART"
+		StructureHandle="/aether/aether-examples/neoedit-migraciones-aether/neoedit-jets3t/pom.xml"
+		StructureKind="resource" />
+	<InteractionEvent Delta="null" EndDate="2012-02-04 16:37:43.308 ART"
+		Interest="1.0" Kind="prediction" Navigation="null"
+		OriginId="org.eclipse.mylyn.resources.ui.interest.updater" StartDate="2012-02-04 16:37:43.308 ART"
+		StructureHandle="/aether-examples/neoedit-migraciones-aether/neoedit-jets3t/pom.xml"
+		StructureKind="resource" />
+	<InteractionEvent Delta="null" EndDate="2012-02-04 16:37:51.474 ART"
+		Interest="1.0" Kind="propagation" Navigation="org.eclipse.mylyn.core.model.edges.containment"
+		OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-02-04 16:37:51.474 ART"
+		StructureHandle="=aether/aether-examples\/neoedit-migraciones-aether\/neoedit-jets3t\/target\/classes\/neoe\/jets3t"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-02-04 16:37:51.473 ART"
+		Interest="1.0" Kind="propagation" Navigation="org.eclipse.mylyn.core.model.edges.containment"
+		OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-02-04 16:37:51.473 ART"
+		StructureHandle="=aether/aether-examples\/neoedit-migraciones-aether\/neoedit-jets3t\/target\/classes\/neoe\/jets3t&amp;lt;"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-02-04 16:37:51.474 ART"
+		Interest="1.0" Kind="propagation" Navigation="org.eclipse.mylyn.core.model.edges.containment"
+		OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-02-04 16:37:51.474 ART"
+		StructureHandle="/aether-examples/neoedit-migraciones-aether/neoedit-jets3t/target/classes"
+		StructureKind="resource" />
+	<InteractionEvent Delta="null" EndDate="2012-02-04 16:37:51.475 ART"
+		Interest="1.0" Kind="propagation" Navigation="org.eclipse.mylyn.core.model.edges.containment"
+		OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-02-04 16:37:51.475 ART"
+		StructureHandle="=aether-examples/neoedit-migraciones-aether\/neoedit-jets3t\/target\/classes\/neoe\/jets3t"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-02-04 16:38:00.750 ART"
+		Interest="1.0" Kind="propagation" Navigation="null"
+		OriginId="org.eclipse.mylyn.resources.ui.interest.updater" StartDate="2012-02-04 16:38:00.750 ART"
+		StructureHandle="/neoedit-jets3t-to-aether/src/main/resources/config.xml"
+		StructureKind="resource" />
+	<InteractionEvent Delta="null" EndDate="2012-02-04 16:38:00.756 ART"
+		Interest="1.085" Kind="propagation" Navigation="org.eclipse.mylyn.core.model.edges.containment"
+		OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-02-04 16:37:43.309 ART" StructureHandle="=aether"
+		StructureKind="java" NumEvents="3" CreationCount="6" />
+	<InteractionEvent Delta="null" EndDate="2012-02-04 16:37:51.473 ART"
+		Interest="1.0" Kind="propagation" Navigation="null"
+		OriginId="org.eclipse.mylyn.resources.ui.interest.updater" StartDate="2012-02-04 16:37:51.473 ART"
+		StructureHandle="=aether/aether-examples\/neoedit-migraciones-aether\/neoedit-jets3t\/target\/classes\/neoe\/jets3t&amp;lt;(DirectoryRestrictedFileSystemView.class"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-02-04 16:41:01.843 ART"
+		Interest="1.187" Kind="propagation" Navigation="org.eclipse.mylyn.core.model.edges.containment"
+		OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-02-04 16:37:51.474 ART"
+		StructureHandle="/aether-examples/neoedit-migraciones-aether/neoedit-jets3t/target"
+		StructureKind="resource" NumEvents="2" CreationCount="0" />
+	<InteractionEvent Delta="null" EndDate="2012-02-04 16:41:01.844 ART"
+		Interest="4.0" Kind="propagation" Navigation="null"
+		OriginId="org.eclipse.mylyn.resources.ui.interest.updater" StartDate="2012-02-04 16:37:43.310 ART"
+		StructureHandle="/aether-examples" StructureKind="resource" NumEvents="4"
+		CreationCount="6" />
+	<InteractionEvent Delta="null" EndDate="2012-02-04 16:38:00.756 ART"
+		Interest="1.085" Kind="propagation" Navigation="org.eclipse.mylyn.core.model.edges.containment"
+		OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-02-04 16:37:43.309 ART" StructureHandle="/aether/aether-examples"
+		StructureKind="resource" NumEvents="3" CreationCount="6" />
+	<InteractionEvent Delta="null" EndDate="2012-02-04 16:38:00.755 ART"
+		Interest="1.0" Kind="propagation" Navigation="org.eclipse.mylyn.core.model.edges.containment"
+		OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-02-04 16:38:00.755 ART"
+		StructureHandle="/aether-examples/neoedit-migraciones-aether/neoedit-jets3t/src/main"
+		StructureKind="resource" />
+	<InteractionEvent Delta="null" EndDate="2012-02-04 16:41:01.837 ART"
+		Interest="1.0" Kind="propagation" Navigation="null"
+		OriginId="org.eclipse.mylyn.resources.ui.interest.updater" StartDate="2012-02-04 16:41:01.837 ART"
+		StructureHandle="/aether-examples/neoedit-migraciones-aether/neoedit-jets3t/target/test-classes"
+		StructureKind="resource" />
+	<InteractionEvent Delta="null" EndDate="2012-02-04 16:38:00.755 ART"
+		Interest="1.085" Kind="propagation" Navigation="org.eclipse.mylyn.core.model.edges.containment"
+		OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-02-04 16:37:43.310 ART" StructureHandle="/aether-examples/neoedit-migraciones-aether/neoedit-jets3t"
+		StructureKind="resource" NumEvents="3" CreationCount="6" />
+	<InteractionEvent Delta="null" EndDate="2012-02-04 16:38:00.752 ART"
+		Interest="1.0" Kind="propagation" Navigation="null"
+		OriginId="org.eclipse.mylyn.resources.ui.interest.updater" StartDate="2012-02-04 16:38:00.752 ART"
+		StructureHandle="/aether-examples/neoedit-migraciones-aether/neoedit-jets3t/src/main/resources/config.xml"
+		StructureKind="resource" />
+	<InteractionEvent Delta="null" EndDate="2012-02-04 16:38:00.754 ART"
+		Interest="2.0" Kind="propagation" Navigation="null"
+		OriginId="org.eclipse.mylyn.resources.ui.interest.updater" StartDate="2012-02-04 16:37:58.219 ART"
+		StructureHandle="/neoedit-jets3t-to-aether/src/main/resources"
+		StructureKind="resource" NumEvents="2" CreationCount="11" />
+	<InteractionEvent Delta="null" EndDate="2012-02-04 16:37:51.475 ART"
+		Interest="1.0" Kind="propagation" Navigation="org.eclipse.mylyn.core.model.edges.containment"
+		OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-02-04 16:37:51.475 ART"
+		StructureHandle="=aether-examples/neoedit-migraciones-aether\/neoedit-jets3t\/target\/classes\/neoe\/jets3t&amp;lt;"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-02-04 16:38:00.755 ART"
+		Interest="1.085" Kind="propagation" Navigation="org.eclipse.mylyn.core.model.edges.containment"
+		OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-02-04 16:37:43.310 ART" StructureHandle="=aether-examples"
+		StructureKind="java" NumEvents="3" CreationCount="6" />
+	<InteractionEvent Delta="null" EndDate="2012-02-04 16:38:00.754 ART"
+		Interest="2.0" Kind="propagation" Navigation="org.eclipse.mylyn.core.model.edges.containment"
+		OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-02-04 16:37:58.219 ART" StructureHandle="/neoedit-jets3t-to-aether/src"
+		StructureKind="resource" NumEvents="2" CreationCount="11" />
+	<InteractionEvent Delta="null" EndDate="2012-02-04 16:38:00.756 ART"
+		Interest="1.0" Kind="propagation" Navigation="org.eclipse.mylyn.core.model.edges.containment"
+		OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-02-04 16:38:00.756 ART"
+		StructureHandle="/aether/aether-examples/neoedit-migraciones-aether/neoedit-jets3t/src/main"
+		StructureKind="resource" />
+	<InteractionEvent Delta="null" EndDate="2012-02-04 16:38:00.755 ART"
+		Interest="1.085" Kind="propagation" Navigation="org.eclipse.mylyn.core.model.edges.containment"
+		OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-02-04 16:37:43.310 ART" StructureHandle="/aether-examples/neoedit-migraciones-aether"
+		StructureKind="resource" NumEvents="3" CreationCount="6" />
+	<InteractionEvent Delta="null" EndDate="2012-02-04 16:41:01.842 ART"
+		Interest="1.187" Kind="propagation" Navigation="org.eclipse.mylyn.core.model.edges.containment"
+		OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-02-04 16:37:51.473 ART"
+		StructureHandle="/aether/aether-examples/neoedit-migraciones-aether/neoedit-jets3t/target"
+		StructureKind="resource" NumEvents="2" CreationCount="0" />
+	<InteractionEvent Delta="null" EndDate="2012-02-04 16:41:01.843 ART"
+		Interest="4.0" Kind="propagation" Navigation="null"
+		OriginId="org.eclipse.mylyn.resources.ui.interest.updater" StartDate="2012-02-04 16:37:43.309 ART"
+		StructureHandle="/aether" StructureKind="resource" NumEvents="4"
+		CreationCount="6" />
+	<InteractionEvent Delta="null" EndDate="2012-02-04 16:38:00.754 ART"
+		Interest="1.0" Kind="propagation" Navigation="null"
+		OriginId="org.eclipse.mylyn.resources.ui.interest.updater" StartDate="2012-02-04 16:38:00.754 ART"
+		StructureHandle="/aether/aether-examples/neoedit-migraciones-aether/neoedit-jets3t/src/main/resources/config.xml"
+		StructureKind="resource" />
+	<InteractionEvent Delta="null" EndDate="2012-02-04 16:37:51.473 ART"
+		Interest="1.0" Kind="propagation" Navigation="null"
+		OriginId="org.eclipse.mylyn.resources.ui.interest.updater" StartDate="2012-02-04 16:37:51.473 ART"
+		StructureHandle="/aether/aether-examples/neoedit-migraciones-aether/neoedit-jets3t/target/classes/neoe/jets3t/DirectoryRestrictedFileSystemView.class"
+		StructureKind="resource" />
+	<InteractionEvent Delta="null" EndDate="2012-02-04 16:38:00.756 ART"
+		Interest="1.085" Kind="propagation" Navigation="org.eclipse.mylyn.core.model.edges.containment"
+		OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-02-04 16:37:43.309 ART"
+		StructureHandle="/aether/aether-examples/neoedit-migraciones-aether/neoedit-jets3t"
+		StructureKind="resource" NumEvents="3" CreationCount="6" />
+	<InteractionEvent Delta="null" EndDate="2012-02-04 16:37:51.473 ART"
+		Interest="1.0" Kind="propagation" Navigation="org.eclipse.mylyn.core.model.edges.containment"
+		OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-02-04 16:37:51.473 ART"
+		StructureHandle="/aether/aether-examples/neoedit-migraciones-aether/neoedit-jets3t/target/classes/neoe/jets3t"
+		StructureKind="resource" />
+	<InteractionEvent Delta="null" EndDate="2012-02-04 16:41:01.844 ART"
+		Interest="20.0" Kind="propagation" Navigation="null"
+		OriginId="org.eclipse.mylyn.resources.ui.interest.updater" StartDate="2012-02-04 16:37:07.981 ART"
+		StructureHandle="/" StructureKind="resource" NumEvents="20"
+		CreationCount="1" />
+	<InteractionEvent Delta="null" EndDate="2012-02-04 16:37:52.306 ART"
+		Interest="6.5" Kind="propagation" Navigation="org.eclipse.mylyn.core.model.edges.containment"
+		OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-02-04 16:37:07.981 ART" StructureHandle="=neoedit-jets3t-to-aether"
+		StructureKind="java" NumEvents="8" CreationCount="1" />
+	<InteractionEvent Delta="null" EndDate="2012-02-04 16:37:40.553 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.PackageExplorer" StartDate="2012-02-04 16:37:40.553 ART"
+		StructureHandle="=neoedit-jets3t-to-aether" StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-02-04 16:38:00.754 ART"
+		Interest="12.0" Kind="propagation" Navigation="null"
+		OriginId="org.eclipse.mylyn.resources.ui.interest.updater" StartDate="2012-02-04 16:37:07.981 ART"
+		StructureHandle="/neoedit-jets3t-to-aether" StructureKind="resource"
+		NumEvents="12" CreationCount="1" />
+	<InteractionEvent Delta="null" EndDate="2012-02-04 16:38:00.754 ART"
+		Interest="2.0" Kind="propagation" Navigation="org.eclipse.mylyn.core.model.edges.containment"
+		OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-02-04 16:37:58.219 ART" StructureHandle="/neoedit-jets3t-to-aether/src/main"
+		StructureKind="resource" NumEvents="2" CreationCount="11" />
+	<InteractionEvent Delta="null" EndDate="2012-02-04 16:37:51.473 ART"
+		Interest="1.0" Kind="propagation" Navigation="org.eclipse.mylyn.core.model.edges.containment"
+		OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-02-04 16:37:51.473 ART"
+		StructureHandle="/aether/aether-examples/neoedit-migraciones-aether/neoedit-jets3t/target/classes"
+		StructureKind="resource" />
+	<InteractionEvent Delta="null" EndDate="2012-02-04 16:37:51.474 ART"
+		Interest="1.0" Kind="propagation" Navigation="null"
+		OriginId="org.eclipse.mylyn.resources.ui.interest.updater" StartDate="2012-02-04 16:37:51.474 ART"
+		StructureHandle="/aether-examples/neoedit-migraciones-aether/neoedit-jets3t/target/classes/neoe/jets3t/DirectoryRestrictedFileSystemView.class"
+		StructureKind="resource" />
+	<InteractionEvent Delta="null" EndDate="2012-02-04 16:37:52.306 ART"
+		Interest="4.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.PackageExplorer" StartDate="2012-02-04 16:37:24.757 ART"
+		StructureHandle="/neoedit-jets3t-to-aether/pom.xml" StructureKind="resource"
+		NumEvents="4" CreationCount="1" />
+	<InteractionEvent Delta="null" EndDate="2012-02-04 16:37:46.405 ART"
+		Interest="5.0" Kind="edit" Navigation="null"
+		OriginId="org.maven.ide.eclipse.editor.MavenPomEditor" StartDate="2012-02-04 16:37:07.979 ART"
+		StructureHandle="/neoedit-jets3t-to-aether/pom.xml" StructureKind="resource"
+		NumEvents="5" CreationCount="1" />
+	<InteractionEvent Delta="null" EndDate="2012-02-04 16:37:51.474 ART"
+		Interest="1.0" Kind="propagation" Navigation="org.eclipse.mylyn.core.model.edges.containment"
+		OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-02-04 16:37:51.474 ART"
+		StructureHandle="/aether-examples/neoedit-migraciones-aether/neoedit-jets3t/target/classes/neoe"
+		StructureKind="resource" />
+	<InteractionEvent Delta="null" EndDate="2012-02-04 16:37:51.473 ART"
+		Interest="1.0" Kind="propagation" Navigation="org.eclipse.mylyn.core.model.edges.containment"
+		OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-02-04 16:37:51.473 ART"
+		StructureHandle="/aether/aether-examples/neoedit-migraciones-aether/neoedit-jets3t/target/classes/neoe"
+		StructureKind="resource" />
+	<InteractionEvent Delta="null" EndDate="2012-02-04 16:37:58.218 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.PackageExplorer" StartDate="2012-02-04 16:37:58.218 ART"
+		StructureHandle="=neoedit-jets3t-to-aether/src\/main\/resources"
+		StructureKind="java" />
+</InteractionHistory>

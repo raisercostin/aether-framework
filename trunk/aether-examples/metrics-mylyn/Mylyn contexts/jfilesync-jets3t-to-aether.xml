@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InteractionHistory Id="http://code.google.com/p/aether-framework-36"
+	Version="1">
+	<InteractionEvent Delta="null" EndDate="2012-02-11 11:57:41.405 ART"
+		Interest="4.0" Kind="propagation" Navigation="org.eclipse.mylyn.core.model.edges.containment"
+		OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-02-11 11:57:37.236 ART" StructureHandle="/jfilesync-jets3t-migraciones-to-aether/src/main"
+		StructureKind="resource" NumEvents="4" CreationCount="1" />
+	<InteractionEvent Delta="null" EndDate="2012-02-11 11:57:41.405 ART"
+		Interest="4.0" Kind="propagation" Navigation="org.eclipse.mylyn.core.model.edges.containment"
+		OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-02-11 11:57:37.236 ART" StructureHandle="/jfilesync-jets3t-migraciones-to-aether/src"
+		StructureKind="resource" NumEvents="4" CreationCount="1" />
+	<InteractionEvent Delta="null" EndDate="2012-02-11 11:57:41.406 ART"
+		Interest="4.0" Kind="propagation" Navigation="org.eclipse.mylyn.core.model.edges.containment"
+		OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-02-11 11:57:37.236 ART" StructureHandle="=jfilesync-jets3t-migraciones-to-aether"
+		StructureKind="resource" NumEvents="6" CreationCount="1" />
+	<InteractionEvent Delta="null" EndDate="2012-02-11 11:57:41.400 ART"
+		Interest="2.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart"
+		StartDate="2012-02-11 11:57:40.826 ART"
+		StructureHandle="/jfilesync-jets3t-migraciones-to-aether/src/main/resources/config.xml"
+		StructureKind="resource" NumEvents="2" CreationCount="5" />
+	<InteractionEvent Delta="null" EndDate="2012-02-11 11:57:41.405 ART"
+		Interest="1.0" Kind="edit" Navigation="null"
+		OriginId="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart"
+		StartDate="2012-02-11 11:57:41.405 ART"
+		StructureHandle="/jfilesync-jets3t-migraciones-to-aether/src/main/resources/config.xml"
+		StructureKind="resource" />
+	<InteractionEvent Delta="null" EndDate="2012-02-11 11:57:41.406 ART"
+		Interest="4.0" Kind="propagation" Navigation="org.eclipse.mylyn.core.model.edges.containment"
+		OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-02-11 11:57:37.236 ART" StructureHandle="/"
+		StructureKind="resource" NumEvents="6" CreationCount="1" />
+	<InteractionEvent Delta="null" EndDate="2012-02-11 11:57:41.405 ART"
+		Interest="4.0" Kind="propagation" Navigation="null"
+		OriginId="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart"
+		StartDate="2012-02-11 11:57:37.236 ART" StructureHandle="/jfilesync-jets3t-migraciones-to-aether/src/main/resources"
+		StructureKind="resource" NumEvents="4" CreationCount="1" />
+	<InteractionEvent Delta="null" EndDate="2012-02-11 11:57:37.235 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.PackageExplorer" StartDate="2012-02-11 11:57:37.235 ART"
+		StructureHandle="=jfilesync-jets3t-migraciones-to-aether/src\/main\/resources"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-02-11 11:57:41.405 ART"
+		Interest="1.7680001" Kind="propagation"
+		Navigation="org.eclipse.mylyn.core.model.edges.containment" OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-02-11 11:57:40.827 ART"
+		StructureHandle="=jfilesync-jets3t-migraciones-to-aether/src\/main\/resources"
+		StructureKind="java" NumEvents="3" CreationCount="1" />
+	<InteractionEvent Delta="null" EndDate="2012-02-11 11:57:44.220 ART"
+		Interest="3.0" Kind="selection" Navigation="null"
+		OriginId="org.maven.ide.eclipse.editor.MavenPomEditor" StartDate="2012-02-11 11:57:37.291 ART"
+		StructureHandle="/jfilesync-jets3t-migraciones-to-aether/pom.xml"
+		StructureKind="resource" NumEvents="3" CreationCount="2" />
+	<InteractionEvent Delta="null" EndDate="2012-02-11 11:57:37.296 ART"
+		Interest="1.0" Kind="edit" Navigation="null"
+		OriginId="org.maven.ide.eclipse.editor.MavenPomEditor" StartDate="2012-02-11 11:57:37.296 ART"
+		StructureHandle="/jfilesync-jets3t-migraciones-to-aether/pom.xml"
+		StructureKind="resource" />
+</InteractionHistory>

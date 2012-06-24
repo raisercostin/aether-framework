@@ -1,0 +1,184 @@
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe
+Compilation Unit: DirectoryRestrictedFileSystemView
+Class Name: DirectoryRestrictedFileSystemView
+Metodo: createNewFolder
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe
+Compilation Unit: DirectoryRestrictedFileSystemView
+Class Name: DirectoryRestrictedFileSystemView
+Metodo: getParentDirectory
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe
+Compilation Unit: DirectoryRestrictedFileSystemView
+Class Name: DirectoryRestrictedFileSystemView
+Metodo: getParentDirectory
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: EditPanel
+Class Name: EditPanel
+Metodo: openWindow[
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe
+Compilation Unit: DirectoryRestrictedFileSystemView
+Class Name: DirectoryRestrictedFileSystemView
+Metodo: DirectoryRestrictedFileSystemView
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: JCloudsAdapter
+Class Name: JCloudsAdapter
+Metodo: uploadFile
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: JCloudsAdapter
+Class Name: JCloudsAdapter
+Metodo: uploadFile
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: neoedit-jclouds
+Jar Location: C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar
+Package: java.awt
+Compilation Unit: Component
+Class Name: Component
+Metodo: processKeyEvent
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: neoedit-jclouds
+Jar Location: C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar
+Package: java.awt
+Compilation Unit: Component
+Class Name: Component
+Metodo: processKeyEvent
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: JCloudsAdapter
+Class Name: JCloudsAdapter
+Metodo: populateCache
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: JCloudsAdapter
+Class Name: JCloudsAdapter
+Metodo: populateCache
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: neoedit-jclouds
+Jar Location: C:/Users/Kireta/.m2/repository/commons-io/commons-io/1.4/commons-io-1.4.jar
+Package: org.apache.commons.io
+Compilation Unit: FileUtils
+Class Name: FileUtils
+Metodo: cleanDirectory
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe
+Compilation Unit: DirectoryRestrictedFileSystemView
+Class Name: DirectoryRestrictedFileSystemView
+Metodo: getHomeDirectory
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe
+Compilation Unit: DirectoryRestrictedFileSystemView
+Class Name: DirectoryRestrictedFileSystemView
+Metodo: getHomeDirectory
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: neoedit-jclouds
+Jar Location: C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar
+Package: javax.swing.filechooser
+Compilation Unit: FileSystemView
+Class Name: FileSystemView
+Metodo: getParentDirectory
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: JCloudsAdapter
+Class Name: JCloudsAdapter
+Metodo: getInputStream
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: JCloudsAdapter
+Class Name: JCloudsAdapter
+Metodo: getInputStream
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: EditPanel
+Class Name: EditPanel
+Metodo: openWindow[
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: EditPanel
+Class Name: EditPanel
+Metodo: openWindow[
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: JCloudsAdapter
+Class Name: JCloudsAdapter
+Metodo: updateCachedFile
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: JCloudsAdapter
+Class Name: JCloudsAdapter
+Metodo: updateCachedFile
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: JCloudsAdapter
+Class Name: JCloudsAdapter
+Metodo: updateCachedFile
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U^th.
+Metodo: importData
+MLOC: METRIC NOT FOUND
+---------------------------------------------

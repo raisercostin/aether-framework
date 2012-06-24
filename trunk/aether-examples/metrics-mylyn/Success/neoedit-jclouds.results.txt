@@ -1,0 +1,1869 @@
+Loading metrics from: D:\Mylyn Metrics\Projects\neoedit-jclouds.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\aether-core.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\aether-loader.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\cloudloop-adapter.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\cloudloop-main.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\dasein-aws.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\dasein-core.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\dasein-google.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\jclouds-aws-common.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\jclouds-aws-s3.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\jclouds-blobstore.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\jclouds-core.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\jclouds-s3.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\jets3t.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\libcloud.xml
+java : 
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jclouds/src/main/java/neoe/jclouds/DirectoryRestrictedFileSystemView.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-jclouds/target/classes/neoe
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jclouds/target
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{EditPanel.java[EditPanel~keyPressed~QKeyEvent;
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: EditPanel
+Class Name: EditPanel
+Metodo: keyPressed
+MLOC: 5
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{EditPanel.java[EditPanel~keyPressed~QKeyEvent;
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: EditPanel
+Class Name: EditPanel
+Metodo: keyPressed
+MLOC: 5
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U~readFile~QPlainPage;~QString;
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: readFile
+MLOC: 6
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U~readFile~QPlainPage;~QString;
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: readFile
+MLOC: 6
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U~doReplaceAll~QPlainPage;~QString;~Z~Z~QString;~Z~QString;
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: doReplaceAll
+MLOC: 5
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U~doReplaceAll~QPlainPage;~QString;~Z~Z~QString;~Z~QString;
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: doReplaceAll
+MLOC: 5
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe{DirectoryRestrictedFileSystemView.java[DirectoryRestrictedFileSystemView~createNewFolder~QFile;
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.jclouds{DirectoryRestrictedFileSystemView.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/C:/Users/Kireta/.m2/repository/org/jclouds/jclouds-blobstore/1.2.1/jclouds-blobstore-1.2.1.jar&lt;org.jclouds.blobstore.domain
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe{DirectoryRestrictedFileSystemView.java[DirectoryRestrictedFileSystemView~getParentDirectory~QFile;
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe{DirectoryRestrictedFileSystemView.java[DirectoryRestrictedFileSystemView~getParentDirectory~QFile;
+---------------------------------------------
+resource : /java-storage-core
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-jclouds/target/classes/neoe/ne&lt;(EditPanel$1.class
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-jclouds/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{EditPanel.java[EditPanel^cacheDirectory!2
+REGEXP does not match
+---------------------------------------------
+java : =aether-core/src/main/java&lt;com.tesis.aether.core.factory{ServiceFactory.java[ServiceFactory^xmlParser
+REGEXP does not match
+---------------------------------------------
+java : =aether-core/src/main/java&lt;com.tesis.aether.core.services.storage
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe/jclouds&lt;
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-jclouds/target/classes/neoe/ne&lt;(EditPanel.class
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe/jclouds&lt;{JCloudsAdapter.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java#java.awt.Color
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U~savePageToFile~QPlainPage;
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: savePageToFile
+MLOC: 12
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U~savePageToFile~QPlainPage;
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: savePageToFile
+MLOC: 12
+---------------------------------------------
+java : =java-storage-core/C:/Users/Kireta/.m2/repository/commons-io/commons-io/1.4/commons-io-1.4.jar&lt;org.apache.commons.io
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{PlainPage.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{PlainPage.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-jclouds/target/classes/neoe/ne&lt;(U.class
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-jclouds/target/classes/neoe/ne&lt;(JCloudsAdapter.class
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-jclouds/target/classes/neoe/ne&lt;(JCloudsAdapter.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U~openFile~QString;~I
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: openFile
+MLOC: 5
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U~openFile~QString;~I
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: openFile
+MLOC: 5
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe/ne/PlainPage.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-core/src
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jclouds/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe&lt;{DirectoryRestrictedFileSystemView.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe/ne
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{PlainPage.java[PlainPage[Paint~drawToolbar~QGraphics2D;
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: PlainPage
+Class Name: PlainPage.Paint
+Metodo: drawToolbar
+MLOC: 18
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{PlainPage.java[PlainPage[Paint~drawToolbar~QGraphics2D;
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: PlainPage
+Class Name: PlainPage.Paint
+Metodo: drawToolbar
+MLOC: 18
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{FindReplaceWindow.java[FindReplaceWindow
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{FindReplaceWindow.java[FindReplaceWindow
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{FindReplaceWindow.java[FindReplaceWindow
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe/jclouds&lt;{JCloudsAdapter.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe/ne&lt;{FindReplaceWindow.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-jclouds/target/classes/neoe/ne
+REGEXP does not match
+---------------------------------------------
+resource : /
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-jclouds/src/main/java/neoe/ne/Main.java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-jclouds/src/main/java/neoe/ne/Main.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-core/src/main/java&lt;com.tesis.aether.core.factory
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jclouds/src/main/java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jclouds/src
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-jclouds/target/classes/neoe/ne&lt;(JCloudsAdapter.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-jclouds/target/classes/neoe/ne&lt;(JCloudsAdapter.class
+REGEXP does not match
+---------------------------------------------
+resource : =neoedit-jclouds
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U~runScriptOnDir~QString;
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: runScriptOnDir
+MLOC: 51
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U~runScriptOnDir~QString;
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: runScriptOnDir
+MLOC: 51
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jclouds/src/main/resources
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-jclouds/target/classes/neoe/ne&lt;(PropertiesProvider.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jclouds/target/classes
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-jclouds/target/classes/neoe/ne&lt;(FindReplaceWindow.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe/jclouds
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jclouds/pom.xml
+REGEXP does not match
+---------------------------------------------
+resource : /aether-core/src/main/java/com/tesis/aether/core/services
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe/DirectoryRestrictedFileSystemView.java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jclouds/src/main/java/neoe/DirectoryRestrictedFileSystemView.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/C:/Users/Kireta/.m2/repository/org/jclouds/jclouds-blobstore/1.2.1/jclouds-blobstore-1.2.1.jar&lt;org.jclouds.blobstore.domain(StorageType.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/C:/Users/Kireta/.m2/repository/org/jclouds/jclouds-blobstore/1.2.1/jclouds-blobstore-1.2.1.jar&lt;org.jclouds.blobstore.domain(StorageType.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{PlainPage.java[PlainPage~keyPressed~QKeyEvent;
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: PlainPage
+Class Name: PlainPage
+Metodo: keyPressed
+MLOC: 177
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{PlainPage.java[PlainPage~keyPressed~QKeyEvent;
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: PlainPage
+Class Name: PlainPage
+Metodo: keyPressed
+MLOC: 177
+---------------------------------------------
+resource : /neoedit-original/src/main/java/neoe/ne/U.java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-original/src/main/java/neoe/ne/U.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-jclouds/target/classes/neoe/ne
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe/ne/PlainPage.java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-original/src/main
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe{DirectoryRestrictedFileSystemView.java[DirectoryRestrictedFileSystemView
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe{DirectoryRestrictedFileSystemView.java[DirectoryRestrictedFileSystemView
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe{DirectoryRestrictedFileSystemView.java[DirectoryRestrictedFileSystemView
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-jclouds/src/main/java/neoe/ne/EditPanel.java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-jclouds/src/main/java/neoe/ne/EditPanel.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jclouds/target/classes/neoe
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;java.awt
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe/ne
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{PropertiesProvider.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{PropertiesProvider.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-jclouds/target/classes/neoe/ne&lt;(EditPanel$1.class
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-jclouds/src/main/java/neoe
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;java.awt(Component.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-core/src/main/java/com/tesis/aether
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-jclouds/src/main/java/neoe&lt;
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe/ne&lt;{EditPanel.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/C:/Users/Kireta/.m2/repository/org/jclouds/jclouds-blobstore/1.2.1/jclouds-blobstore-1.2.1.jar&lt;org.jclouds.blobstore.domain(StorageMetadata.class[StorageMetadata
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-jclouds/target/classes/neoe/ne&lt;(U.class
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jclouds/src/main/resources
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe/ne/EditPanel.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jclouds/src/main
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/C:/Users/Kireta/.m2/repository/org/jclouds/jclouds-blobstore/1.2.1/jclouds-blobstore-1.2.1.jar&lt;org.jclouds.blobstore(BlobStoreContextFactory.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/C:/Users/Kireta/.m2/repository/org/jclouds/jclouds-blobstore/1.2.1/jclouds-blobstore-1.2.1.jar&lt;org.jclouds.blobstore(BlobStoreContextFactory.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U~openFile~QFile;
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: openFile
+MLOC: 5
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U~openFile~QFile;
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: openFile
+MLOC: 5
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U~openFile~QFile;
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: openFile
+MLOC: 5
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe/jclouds
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-jclouds/src/main/java/neoe/ne/U.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne
+REGEXP does not match
+---------------------------------------------
+resource : /aether
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe/ne/EditPanel.java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-jclouds/src/main/java/neoe/jclouds/DirectoryRestrictedFileSystemView.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-core/src/main/java&lt;com.tesis.aether.core.services.storage.imp.s3
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jclouds/target/classes/neoe/ne/EditPanel$1.class
+REGEXP does not match
+---------------------------------------------
+java : =aether-core/src/main/java&lt;com.tesis.aether.core.factory.parser{AccountXmlParser.java[AccountXmlParser^INSTANCE
+REGEXP does not match
+---------------------------------------------
+resource : /aether-core/src/main/java/com/tesis/aether/core/factory/parser
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jclouds/target/classes/neoe/ne/U.class
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;java.awt
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jclouds/target/classes/neoe/ne/JCloudsAdapter.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/C:/Users/Kireta/.m2/repository/commons-io/commons-io/1.4/commons-io-1.4.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-jclouds/src/main/java/neoe/ne&lt;{JCloudsAdapter.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-jclouds/src/main/java/neoe/ne&lt;{JCloudsAdapter.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-jclouds/src/main/java/neoe/ne&lt;{U.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-jclouds/target/classes/neoe&lt;(DirectoryRestrictedFileSystemView.class
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-jclouds/src/main/java/neoe/jclouds
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jclouds/target/classes/neoe/ne/PropertiesProvider.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-core/src/main/java/com/tesis/aether/core/services/storage/imp/s3
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{EditPanel.java[EditPanel~openWindow[
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{JCloudsAdapter.java[JCloudsAdapter
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{JCloudsAdapter.java[JCloudsAdapter
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{JCloudsAdapter.java[JCloudsAdapter
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jclouds/target/classes/neoe/ne
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jclouds/target/classes/neoe/ne/FindReplaceWindow.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe/ne/PropertiesProvider.java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-jclouds/pom.xml
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-jclouds/pom.xml
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe/jclouds
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-jclouds/src/main/java/neoe/ne/PlainPage.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe/ne&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples
+REGEXP does not match
+---------------------------------------------
+java : =aether-core/src/main/java&lt;com.tesis.aether.core.factory{ServiceFactory.java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-jclouds/src/main/java/neoe/ne/FindReplaceWindow.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-core/src/main/java/com/tesis/aether/core/services/storage
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jclouds/src/main/resources
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe{DirectoryRestrictedFileSystemView.java[DirectoryRestrictedFileSystemView~DirectoryRestrictedFileSystemView~QFile;
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe/ne/FindReplaceWindow.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe/jclouds/JCloudsAdapter.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{JCloudsAdapter.java[JCloudsAdapter~uploadFile~QString;~QFile;
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{JCloudsAdapter.java[JCloudsAdapter~uploadFile~QString;~QFile;
+---------------------------------------------
+resource : /neoedit-jclouds/src/main/java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-core/src/main/java/com/tesis/aether/core/services/storage/imp
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jclouds/src/main/java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/C:/Users/Kireta/.m2/repository/org/jclouds/jclouds-blobstore/1.2.1/jclouds-blobstore-1.2.1.jar&lt;org.jclouds.blobstore.options(ListContainerOptions.class[ListContainerOptions
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/C:/Users/Kireta/.m2/repository/org/jclouds/jclouds-blobstore/1.2.1/jclouds-blobstore-1.2.1.jar&lt;org.jclouds.blobstore.options(ListContainerOptions.class[ListContainerOptions
+REGEXP does not match
+---------------------------------------------
+resource : /aether-core/src/main/java/com/tesis
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jclouds
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-jclouds/src/main/java/neoe/ne&lt;{PropertiesProvider.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/C:/Users/Kireta/.m2/repository/org/jclouds/jclouds-blobstore/1.2.1/jclouds-blobstore-1.2.1.jar&lt;org.jclouds.blobstore.domain(StorageMetadata.class[StorageMetadata~getType
+Proyecto: neoedit-jclouds
+Jar Location: C:/Users/Kireta/.m2/repository/org/jclouds/jclouds-blobstore/1.2.1/jclouds-blobstore-1.2.1.jar
+Package: org.jclouds.blobstore.domain
+Compilation Unit: StorageMetadata
+Class Name: StorageMetadata
+Metodo: getType
+MLOC: 0
+---------------------------------------------
+resource : /aether-core/src/main/java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-original/src/main/java&lt;neoe.ne
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{EditPanel.java[EditPanel
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{EditPanel.java[EditPanel
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jclouds/target/classes/neoe/DirectoryRestrictedFileSystemView.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{PlainPage.java[PlainPage[Paint
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{PlainPage.java[PlainPage[Paint
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-jclouds/src/main/java/neoe/jclouds/JCloudsAdapter.java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jclouds/src/main/java/neoe/ne/EditPanel.java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-jclouds/src/main/java/neoe/ne/JCloudsAdapter.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;java.awt(Component.class[Component~processKeyEvent~Ljava.awt.event.KeyEvent;
+---------------------------------------------
+java : =neoedit-jclouds/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;java.awt(Component.class[Component~processKeyEvent~Ljava.awt.event.KeyEvent;
+---------------------------------------------
+java : =neoedit/neoedit-jclouds/src/main/java/neoe/jclouds&lt;{JCloudsAdapter.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U~findInFile~QFile;~QString;~Z
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: findInFile
+MLOC: 32
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U~findInFile~QFile;~QString;~Z
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: findInFile
+MLOC: 32
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.jclouds{JCloudsAdapter.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U~saveAs~QPlainPage;
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: saveAs
+MLOC: 16
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U~saveAs~QPlainPage;
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: saveAs
+MLOC: 16
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U~saveAs~QPlainPage;
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: saveAs
+MLOC: 16
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{PropertiesProvider.java[PropertiesProvider^getPrope
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-jclouds/src/main
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jclouds/src/main/java/neoe/ne/U.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U[Print
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jclouds/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe/jclouds
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe/ne
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-jclouds/src/main/java/neoe/ne
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U~setEncodingByUser~QPlainPage;~QString;
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: setEncodingByUser
+MLOC: 11
+---------------------------------------------
+java : =java-storage-core
+REGEXP does not match
+---------------------------------------------
+resource : /aether-core/src/main/java/com/tesis/aether/core/services/storage/ExtendedStorageService.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-jclouds/target/classes/neoe/ne&lt;(FindReplaceWindow.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{JCloudsAdapter.java[JCloudsAdapter~populateCache
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{JCloudsAdapter.java[JCloudsAdapter~populateCache
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe&lt;{DirectoryRestrictedFileSystemView.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-core/src/main/java&lt;com.tesis.aether.core.services.storage{ExtendedStorageService.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-core/src/main/java&lt;com.tesis.aether.core.services.storage{ExtendedStorageService.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe/jclouds&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jclouds/target/classes/neoe/ne/JCloudsAdapter.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U[BasicEdit
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-jclouds/target/classes/neoe/ne&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jclouds/target/classes/neoe/ne/U.class
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe/ne&lt;{U.java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jclouds/target/classes/neoe/ne/EditPanel.class
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-jclouds/src/main/resources
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/C:/Users/Kireta/.m2/repository/commons-io/commons-io/1.4/commons-io-1.4.jar&lt;org.apache.commons.io
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/C:/Users/Kireta/.m2/repository/org/jclouds/jclouds-blobstore/1.2.1/jclouds-blobstore-1.2.1.jar&lt;org.jclouds.blobstore
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U~showResult~QEditPanel;~QList\&lt;QString;&gt;;~QString;~QString;
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: showResult
+MLOC: 12
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U~showResult~QEditPanel;~QList\&lt;QString;&gt;;~QString;~QString;
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: showResult
+MLOC: 12
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U~showResult~QEditPanel;~QList\&lt;QString;&gt;;~QString;~QString;
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: showResult
+MLOC: 12
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{EditPanel.java[EditPanel~EditPanel
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: EditPanel
+Class Name: EditPanel
+Metodo: EditPanel
+MLOC: 2
+---------------------------------------------
+java : =java-storage-core/C:/Users/Kireta/.m2/repository/commons-io/commons-io/1.4/commons-io-1.4.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/C:/Users/Kireta/.m2/repository/commons-io/commons-io/1.4/commons-io-1.4.jar&lt;org.apache.commons.io(FileUtils.class[FileUtils~cleanDirectory~Ljava.io.File;
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe{DirectoryRestrictedFileSystemView.java[DirectoryRestrictedFileSystemView~getHomeDirectory
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe{DirectoryRestrictedFileSystemView.java[DirectoryRestrictedFileSystemView~getHomeDirectory
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jclouds
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jclouds/target/classes/neoe/DirectoryRestrictedFileSystemView.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-core/src/main/java/com/tesis/aether/core/services/storage/imp/s3/S3StorageService.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/C:/Users/Kireta/.m2/repository/org/jclouds/jclouds-blobstore/1.2.1/jclouds-blobstore-1.2.1.jar&lt;org.jclouds.blobstore(BlobStore.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/C:/Users/Kireta/.m2/repository/org/jclouds/jclouds-blobstore/1.2.1/jclouds-blobstore-1.2.1.jar&lt;org.jclouds.blobstore(BlobStore.class
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jclouds/src/main/java/neoe
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jclouds/target/classes/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jclouds/target/classes/neoe/ne
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-jclouds/target/classes/neoe&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jclouds/src/main
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-jclouds/target/classes/neoe/ne&lt;(FindReplaceWindow.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java#
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe/jclouds/DirectoryRestrictedFileSystemView.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe/jclouds&lt;{DirectoryRestrictedFileSystemView.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-jclouds/target/classes/neoe/ne&lt;(JCloudsAdapter.class
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-jclouds/target/classes/neoe/ne&lt;(JCloudsAdapter.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-jclouds/target/classes/neoe
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jclouds/src/main/java/neoe/ne/JCloudsAdapter.java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-jclouds/src/main/java/neoe/DirectoryRestrictedFileSystemView.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-jclouds/target/classes/neoe/ne&lt;(PropertiesProvider.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jclouds/target/classes/neoe/ne/FindReplaceWindow.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{EditPanel.java[EditPanel~keyTyped~QKeyEvent;
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: EditPanel
+Class Name: EditPanel
+Metodo: keyTyped
+MLOC: 5
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{JCloudsAdapter.java[JCloudsAdapter^context
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{JCloudsAdapter.java[JCloudsAdapter^context
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-jclouds/src/main/java/neoe/ne/PropertiesProvider.java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jclouds/src/main/java/neoe/jclouds/JCloudsAdapter.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;javax.swing.filechooser(FileSystemView.class[FileSystemView~getParentDirectory~Ljava.io.File;
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe/ne&lt;{EditPanel.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;java.awt(Component.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-core/src/main/java/com/tesis/aether/core/factory/ServiceFactory.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U~runScriptOnDir~QString;[~actionPerformed~QActionEvent;
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: runScriptOnDir
+MLOC: 51
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{JCloudsAdapter.java[JCloudsAdapter~getInputStream~QFile;~QFile;
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{JCloudsAdapter.java[JCloudsAdapter~getInputStream~QFile;~QFile;
+---------------------------------------------
+resource : /MuCommanderApp
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-jclouds/src/main/java/neoe&lt;{DirectoryRestrictedFileSystemView.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/C:/Users/Kireta/.m2/repository/org/jclouds/jclouds-blobstore/1.2.1/jclouds-blobstore-1.2.1.jar&lt;org.jclouds.blobstore.domain(StorageMetadata.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/C:/Users/Kireta/.m2/repository/org/jclouds/jclouds-blobstore/1.2.1/jclouds-blobstore-1.2.1.jar&lt;org.jclouds.blobstore.domain(StorageMetadata.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-jclouds/src/main/java/neoe/ne&lt;
+REGEXP does not match
+---------------------------------------------
+java : =aether-core/src/main/java&lt;com.tesis.aether.core.services.storage{ExtendedStorageService.java[ExtendedStorageService
+REGEXP does not match
+---------------------------------------------
+java : =aether-core/src/main/java&lt;com.tesis.aether.core.services.storage{ExtendedStorageService.java[ExtendedStorageService
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-jclouds/src/main/java/neoe/jclouds
+REGEXP does not match
+---------------------------------------------
+java : =aether-core/src/main/java&lt;com.tesis.aether.core.factory.parser{AccountXmlParser.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-core/src/main/java&lt;com.tesis.aether.core.factory.parser{AccountXmlParser.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jclouds/target/classes/neoe/ne/FindReplaceWindow.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-jclouds/target/classes/neoe/ne&lt;(EditPanel$1.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jclouds/target/classes/neoe/ne/EditPanel.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-jclouds/src/main/java/neoe/jclouds&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe/ne/PropertiesProvider.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/C:/Users/Kireta/.m2/repository/org/jclouds/jclouds-blobstore/1.2.1/jclouds-blobstore-1.2.1.jar&lt;org.jclouds.blobstore(BlobStore.class[BlobStore
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/C:/Users/Kireta/.m2/repository/org/jclouds/jclouds-blobstore/1.2.1/jclouds-blobstore-1.2.1.jar&lt;org.jclouds.blobstore(BlobStore.class[BlobStore
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-jclouds/src/main/java/neoe/ne&lt;{EditPanel.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{FindReplaceWindow.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{FindReplaceWindow.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-original/src/main/java&lt;neoe.ne{U.java[U
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jclouds/target/classes/neoe/ne/U.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jclouds/target
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{EditPanel.java[EditPanel~EditPanel~QFile;
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: EditPanel
+Class Name: EditPanel
+Metodo: EditPanel
+MLOC: 2
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{EditPanel.java[EditPanel~openWindow[~windowClosing~QWindowEvent;
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{EditPanel.java[EditPanel~openWindow[~windowClosing~QWindowEvent;
+---------------------------------------------
+java : =neoedit/neoedit-jclouds/target/classes/neoe/ne&lt;(EditPanel.class
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-jclouds/target/classes/neoe/ne
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-jclouds/src/main/java/neoe/ne&lt;{FindReplaceWindow.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;javax.swing.filechooser
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U~guessComment~QPlainPage;
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: guessComment
+MLOC: 50
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U~guessComment~QPlainPage;
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: guessComment
+MLOC: 50
+---------------------------------------------
+java : =neoedit-jclouds/C:/Users/Kireta/.m2/repository/commons-io/commons-io/1.4/commons-io-1.4.jar&lt;org.apache.commons.io(FileUtils.class[FileUtils
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe/ne&lt;{JCloudsAdapter.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe/ne&lt;{JCloudsAdapter.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe/ne/FindReplaceWindow.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-jclouds/src/main/java/neoe/ne
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jclouds/target/classes
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-jclouds/target/classes/neoe/ne&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe/jclouds/JCloudsAdapter.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-core/src/main/java/com
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe/ne/JCloudsAdapter.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/C:/Users/Kireta/.m2/repository/org/jclouds/jclouds-blobstore/1.2.1/jclouds-blobstore-1.2.1.jar&lt;org.jclouds.blobstore.options
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe&lt;
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-jclouds/target/classes/neoe&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jclouds/src
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U~openFileHistory
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: openFileHistory
+MLOC: 6
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U~openFileHistory
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: openFileHistory
+MLOC: 6
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{PlainPage.java[PlainPage~PlainPage~QEditPanel;~QFile;
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: PlainPage
+Class Name: PlainPage
+Metodo: PlainPage
+MLOC: 4
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{PlainPage.java[PlainPage~PlainPage~QEditPanel;~QFile;
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: PlainPage
+Class Name: PlainPage
+Metodo: PlainPage
+MLOC: 4
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U~doReplaceInDir~QPlainPage;~QString;~Z~QString;~Z~QString;
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: doReplaceInDir
+MLOC: 25
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U~doReplaceInDir~QPlainPage;~QString;~Z~QString;~Z~QString;
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: doReplaceInDir
+MLOC: 25
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U~doReplaceInDir~QPlainPage;~QString;~Z~QString;~Z~QString;
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: doReplaceInDir
+MLOC: 25
+---------------------------------------------
+java : =neoedit-jclouds/C:/Users/Kireta/.m2/repository/org/jclouds/jclouds-blobstore/1.2.1/jclouds-blobstore-1.2.1.jar&lt;org.jclouds.blobstore.domain(StorageType.class[StorageType
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jclouds/target/classes/neoe/ne/EditPanel$1.class
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe/ne&lt;{PropertiesProvider.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U^fsv
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U^fsv
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;javax.swing.filechooser(FileSystemView.class[FileSystemView
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;javax.swing.filechooser(FileSystemView.class[FileSystemView
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe/ne&lt;{PlainPage.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-core/src/main/java/com/tesis/aether/core/factory
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{PropertiesProvider.java[PropertiesProvider
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{PropertiesProvider.java[PropertiesProvider
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{PropertiesProvider.java[PropertiesProvider
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jclouds/target/classes/neoe/jclouds
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-jclouds/target/classes/neoe/ne&lt;(EditPanel.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jclouds/target/classes/neoe/ne/EditPanel$1.class
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-original/src
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/resources
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-jclouds/target/classes/neoe&lt;(DirectoryRestrictedFileSystemView.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{EditPanel.java[EditPanel~changeTitle
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: EditPanel
+Class Name: EditPanel
+Metodo: changeTitle
+MLOC: 8
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{EditPanel.java[EditPanel~changeTitle
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: EditPanel
+Class Name: EditPanel
+Metodo: changeTitle
+MLOC: 8
+---------------------------------------------
+java : =neoedit-jclouds/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;javax.swing.filechooser(FileSystemView.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;javax.swing.filechooser(FileSystemView.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{EditPanel.java[EditPanel~mouseEntered~QMouseEvent;
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: EditPanel
+Class Name: EditPanel
+Metodo: mouseEntered
+MLOC: 0
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{EditPanel.java[EditPanel~mouseEntered~QMouseEvent;
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: EditPanel
+Class Name: EditPanel
+Metodo: mouseEntered
+MLOC: 0
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jclouds/target/classes/neoe/ne/PropertiesProvider.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{PlainPage.java[PlainPage^fn
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-jclouds/src/main/java/neoe/ne&lt;{PlainPage.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{EditPanel.java[EditPanel^cacheDirectory
+REGEXP does not match
+---------------------------------------------
+resource : /aether-core/src/main
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe/DirectoryRestrictedFileSystemView.java
+REGEXP does not match
+---------------------------------------------
+java : =java-storage-core/C:/Users/Kireta/.m2/repository/commons-io/commons-io/1.4/commons-io-1.4.jar&lt;org.apache.commons.io(FileUtils.class
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jclouds/src/main/java/neoe/ne/FindReplaceWindow.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U~gotoFileLine~QString;
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: gotoFileLine
+MLOC: 14
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U~gotoFileLine~QString;
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: gotoFileLine
+MLOC: 14
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jclouds/pom.xml
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jclouds/target/classes/neoe/jclouds
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jclouds/src
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe/ne&lt;{FindReplaceWindow.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{JCloudsAdapter.java[JCloudsAdapter~updateCachedFile~QFile;~QFile;
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{JCloudsAdapter.java[JCloudsAdapter~updateCachedFile~QFile;~QFile;
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{JCloudsAdapter.java[JCloudsAdapter~updateCachedFile~QFile;~QFile;
+---------------------------------------------
+resource : /aether-core/src/main/java/com/tesis/aether/core
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.jclouds
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.jclouds
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe/jclouds&lt;{DirectoryRestrictedFileSystemView.java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jclouds/pom.xml
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jclouds/target/classes/neoe
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jclouds/target/classes/properties.properties
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{PlainPage.java[PlainPage
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{PlainPage.java[PlainPage
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{EditPanel.java[EditPanel~openWindow
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: EditPanel
+Class Name: EditPanel
+Metodo: openWindow
+MLOC: 24
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{EditPanel.java[EditPanel~openWindow
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: EditPanel
+Class Name: EditPanel
+Metodo: openWindow
+MLOC: 24
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{EditPanel.java[EditPanel~openWindow
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: EditPanel
+Class Name: EditPanel
+Metodo: openWindow
+MLOC: 24
+---------------------------------------------
+java : =neoedit-jclouds/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-original/src/main/java&lt;neoe.ne{U.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-original/src/main/java&lt;neoe.ne{U.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-original/src/main/java&lt;neoe.ne{U.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U[Print~Print~QPlainPage;
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U.Print
+Metodo: Print
+MLOC: 4
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U[Print~Print~QPlainPage;
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U.Print
+Metodo: Print
+MLOC: 4
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe/ne/U.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-jclouds/target/classes/neoe&lt;(DirectoryRestrictedFileSystemView.class
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-jclouds/target/classes/neoe
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe/ne
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe/ne&lt;{PropertiesProvider.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe&lt;
+REGEXP does not match
+---------------------------------------------
+resource : =aether
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-jclouds/src/main/java/neoe
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U^jCloudsAdapter
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jclouds/target/classes/neoe/ne/EditPanel.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U^cacheDirectory
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U^cacheDirectory
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U^cacheDirectory
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jclouds/target/classes/neoe/ne
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jclouds/src/main/java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jclouds/src/main/java/neoe/ne/PropertiesProvider.java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-original/src/main/java
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-original/src/main/java/neoe/ne
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U~doFindInPage~QPlainPage;~QString;~Z
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: doFindInPage
+MLOC: 19
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U~doFindInPage~QPlainPage;~QString;~Z
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: doFindInPage
+MLOC: 19
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{PropertiesProvider.java[PropertiesProvider~getProperty~QString;
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: PropertiesProvider
+Class Name: PropertiesProvider
+Metodo: getProperty
+MLOC: 1
+---------------------------------------------
+java : =neoedit-jclouds/C:/Users/Kireta/.m2/repository/org/jclouds/jclouds-blobstore/1.2.1/jclouds-blobstore-1.2.1.jar&lt;org.jclouds.blobstore.options(ListContainerOptions.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/C:/Users/Kireta/.m2/repository/org/jclouds/jclouds-blobstore/1.2.1/jclouds-blobstore-1.2.1.jar&lt;org.jclouds.blobstore.options(ListContainerOptions.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{PlainPage.java[PlainPage[Cursor
+REGEXP does not match
+---------------------------------------------
+resource : =aether-examples
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jclouds/src/main/java/neoe/ne/PlainPage.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U~saveFile~QPlainPage;
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: saveFile
+MLOC: 19
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U~saveFile~QPlainPage;
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: saveFile
+MLOC: 19
+---------------------------------------------
+java : =MuCommanderApp/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jclouds/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe/ne&lt;{PlainPage.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{PlainPage.java[PlainPage[Paint^cacheDirectory
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{PlainPage.java[PlainPage[Paint^cacheDirectory
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-jclouds/src
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit/neoedit-jclouds/src/main/java/neoe/jclouds
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jclouds/target/classes
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe/ne/U.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U~openFile~QPlainPage;
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: openFile
+MLOC: 5
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U~openFile~QPlainPage;
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: openFile
+MLOC: 5
+---------------------------------------------
+resource : /neoedit/neoedit-jclouds/target/classes/neoe/ne/PropertiesProvider.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{EditPanel.java[EditPanel~mouseReleased~QMouseEvent;
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: EditPanel
+Class Name: EditPanel
+Metodo: mouseReleased
+MLOC: 0
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U^th[~importData~QTransferHandler.TransferSupport;
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{Main.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{Main.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{Main.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe/ne&lt;
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/C:/Users/Kireta/.m2/repository/org/jclouds/jclouds-blobstore/1.2.1/jclouds-blobstore-1.2.1.jar
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jclouds/target
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U~saveFileHistory~QString;~I
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: saveFileHistory
+MLOC: 6
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U~saveFileHistory~QString;~I
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: saveFileHistory
+MLOC: 6
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{JCloudsAdapter.java[JCloudsAdapter^properties
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{JCloudsAdapter.java[JCloudsAdapter^properties
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jclouds/target/classes/neoe/jclouds
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{EditPanel.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{EditPanel.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{EditPanel.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe
+REGEXP does not match
+---------------------------------------------
+resource : =aether-core
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jclouds/target/classes/neoe/ne/JCloudsAdapter.class
+REGEXP does not match
+---------------------------------------------
+resource : =neoedit-original
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jclouds/target/classes/properties.properties
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U~doFindInDir~QEditPanel;~QString;~Z~Z~Z~QString;
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: doFindInDir
+MLOC: 12
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U~doFindInDir~QEditPanel;~QString;~Z~Z~Z~QString;
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: doFindInDir
+MLOC: 12
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U~doFindInDir~QEditPanel;~QString;~Z~Z~Z~QString;
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: doFindInDir
+MLOC: 12
+---------------------------------------------
+java : =neoedit-original/src/main/java
+REGEXP does not match
+---------------------------------------------
+java : =aether-core/src/main/java&lt;com.tesis.aether.core.factory.parser{AccountXmlParser.java[AccountXmlParser
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-jclouds/target/classes/neoe/ne&lt;
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U~drawTwoColor~QGraphics2D;~QString;~I~I~QColor;~QColor;~I
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: drawTwoColor
+MLOC: 5
+---------------------------------------------
+resource : /aether-core/src/main/java/com/tesis/aether/core/factory/parser/AccountXmlParser.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-core/src/main/java&lt;com.tesis.aether.core.services.storage.imp.s3{S3StorageService.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-jclouds/target/classes/neoe&lt;
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe/ne&lt;{U.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U~runScriptOnDir~QString;[
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: runScriptOnDir
+MLOC: 51
+---------------------------------------------
+java : =aether/aether-examples/neoedit/neoedit-jclouds/target/classes/neoe/ne&lt;(U.class
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-jclouds/target/classes/neoe/ne&lt;(PropertiesProvider.class
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-original/src/main/java/neoe
+REGEXP does not match
+---------------------------------------------
+java : =aether-core/src/main/java&lt;com.tesis.aether.core.services.storage{ExtendedStorageService.java[ExtendedStorageService~downloadFileToDirectory~QString;~QString;~QFile;
+Proyecto: aether-core
+Jar Location: src/main/java
+Package: com.tesis.aether.core.services.storage
+Compilation Unit: ExtendedStorageService
+Class Name: ExtendedStorageService
+Metodo: downloadFileToDirectory
+MLOC: 28
+---------------------------------------------
+java : =aether-core/src/main/java&lt;com.tesis.aether.core.services.storage{ExtendedStorageService.java[ExtendedStorageService~downloadFileToDirectory~QString;~QString;~QFile;
+Proyecto: aether-core
+Jar Location: src/main/java
+Package: com.tesis.aether.core.services.storage
+Compilation Unit: ExtendedStorageService
+Class Name: ExtendedStorageService
+Metodo: downloadFileToDirectory
+MLOC: 28
+---------------------------------------------
+resource : /neoedit/neoedit-jclouds/src/main/java/neoe/ne
+REGEXP does not match
+---------------------------------------------
+resource : =neoedit
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;java.awt(Component.class[Component
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe/ne/JCloudsAdapter.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe/ne&lt;{JCloudsAdapter.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe/ne&lt;{JCloudsAdapter.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-core/src/main/java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/C:/Users/Kireta/.m2/repository/commons-io/commons-io/1.4/commons-io-1.4.jar&lt;org.apache.commons.io(FileUtils.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/C:/Users/Kireta/.m2/repository/commons-io/commons-io/1.4/commons-io-1.4.jar&lt;org.apache.commons.io(FileUtils.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/C:/Users/Kireta/.m2/repository/commons-io/commons-io/1.4/commons-io-1.4.jar&lt;org.apache.commons.io(FileUtils.class
+REGEXP does not match
+---------------------------------------------
+java : =neoedit/neoedit-jclouds/src/main/java/neoe/jclouds&lt;{DirectoryRestrictedFileSystemView.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jclouds
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jclouds/target/classes/neoe
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/C:/Users/Kireta/.m2/repository/org/jclouds/jclouds-blobstore/1.2.1/jclouds-blobstore-1.2.1.jar&lt;org.jclouds.blobstore(BlobStore.class[BlobStore~list~Ljava.lang.String;~Lorg.jclouds.blobstore.options.ListContainerOptions;
+Proyecto: neoedit-jclouds
+Jar Location: C:/Users/Kireta/.m2/repository/org/jclouds/jclouds-blobstore/1.2.1/jclouds-blobstore-1.2.1.jar
+Package: org.jclouds.blobstore
+Compilation Unit: BlobStore
+Class Name: BlobStore
+Metodo: list
+MLOC: 0
+---------------------------------------------
+resource : /aether/aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe/jclouds/DirectoryRestrictedFileSystemView.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jclouds/src/main/java/neoe
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-jclouds
+REGEXP does not match
+---------------------------------------------
+java : =aether-core/src/main/java&lt;com.tesis.aether.core.factory.parser
+REGEXP does not match
+---------------------------------------------
+java : =aether-core/src/main/java&lt;com.tesis.aether.core.factory{ServiceFactory.java[ServiceFactory
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-original/src/main/java&lt;neoe.ne{U.java[U~openFile~QPlainPage;
+Proyecto: neoedit-original
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: openFile
+MLOC: 5
+---------------------------------------------
+java : =neoedit-original/src/main/java&lt;neoe.ne{U.java[U~openFile~QPlainPage;
+Proyecto: neoedit-original
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: U
+Class Name: U
+Metodo: openFile
+MLOC: 5
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{U.java[U^th
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jclouds/target/classes/neoe/DirectoryRestrictedFileSystemView.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jclouds/src/main
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{FindReplaceWindow.java[FindReplaceWindow~FindReplaceWindow~QJFrame;~QPlainPage;
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: FindReplaceWindow
+Class Name: FindReplaceWindow
+Metodo: FindReplaceWindow
+MLOC: 44
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.ne{FindReplaceWindow.java[FindReplaceWindow~FindReplaceWindow~QJFrame;~QPlainPage;
+Proyecto: neoedit-jclouds
+Jar Location: src/main/java
+Package: neoe.ne
+Compilation Unit: FindReplaceWindow
+Class Name: FindReplaceWindow
+Metodo: FindReplaceWindow
+MLOC: 44
+---------------------------------------------
+FINAL ACCUMULATED RESULT: 1456.0
+---------------------------------------------

@@ -1,0 +1,24 @@
+Proyecto: MuCommanderApp
+Jar Location: C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar
+Package: java.lang
+Compilation Unit: ExceptionInInitializerError
+Class Name: ExceptionInInitializerError
+Metodo: ExceptionInInitializerError
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: neoedit-libcloud
+Jar Location: C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar
+Package: java.io
+Compilation Unit: File
+Class Name: File
+Metodo: getAbsolutePath
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: neoedit-libcloud
+Jar Location: C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar
+Package: java.awt
+Compilation Unit: Frame
+Class Name: Frame
+Metodo: setTitle
+MLOC: METRIC NOT FOUND
+---------------------------------------------

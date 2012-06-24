@@ -1,0 +1,575 @@
+Loading metrics from: D:\Mylyn Metrics\Projects\jfilesync-libcloud-migracion.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\aether-core.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\aether-loader.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\cloudloop-adapter.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\cloudloop-main.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\dasein-aws.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\dasein-core.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\dasein-google.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\jclouds-aws-common.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\jclouds-aws-s3.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\jclouds-blobstore.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\jclouds-core.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\jclouds-s3.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\jets3t.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\libcloud.xml
+java : 
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync-migraciones/jfilesync-libcloud/target/classes
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync-migraciones/jfilesync-libcloud/src/main/java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync-migraciones/jfilesync-libcloud/target/classes/jfs/sync/libcloud
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync-migraciones/jfilesync-libcloud/target/classes/jfs/sync/libcloud/JFSLibcloudFile.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-libcloud-migracion/src/main/java&lt;jfs.sync.libcloud{JFSLibcloudFile.java[JFSLibcloudFile~upload~QFile;
+Proyecto: jfilesync-libcloud-migracion
+Jar Location: src/main/java
+Package: jfs.sync.libcloud
+Compilation Unit: JFSLibcloudFile
+Class Name: JFSLibcloudFile
+Metodo: upload
+MLOC: 15
+---------------------------------------------
+java : =jfilesync-libcloud-migracion/src/main/java&lt;jfs.sync.libcloud{JFSLibcloudFile.java[JFSLibcloudFile~upload~QFile;
+Proyecto: jfilesync-libcloud-migracion
+Jar Location: src/main/java
+Package: jfs.sync.libcloud
+Compilation Unit: JFSLibcloudFile
+Class Name: JFSLibcloudFile
+Metodo: upload
+MLOC: 15
+---------------------------------------------
+java : =libcloud-java/src&lt;simplecloud.storage.providers.nirvanix{NirvanixAdapter.java[NirvanixAdapter~listItems~QString;~QMap\&lt;QObject;QObject;&gt;;
+Proyecto: libcloud-java
+Jar Location: src
+Package: simplecloud.storage.providers.nirvanix
+Compilation Unit: NirvanixAdapter
+Class Name: NirvanixAdapter
+Metodo: listItems
+MLOC: 8
+---------------------------------------------
+resource : /jfilesync-libcloud-migracion/src/main
+REGEXP does not match
+---------------------------------------------
+java : =libcloud-java/src&lt;simplecloud.storage.providers.nirvanix{NirvanixAdapter.java[NirvanixAdapter~fetchMetadata~QString;~QMap\&lt;QObject;QObject;&gt;;
+Proyecto: libcloud-java
+Jar Location: src
+Package: simplecloud.storage.providers.nirvanix
+Compilation Unit: NirvanixAdapter
+Class Name: NirvanixAdapter
+Metodo: fetchMetadata
+MLOC: 6
+---------------------------------------------
+java : =jfilesync-libcloud-migracion/src/main/java&lt;jfs.sync.libcloud
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-libcloud-migracion/src/main/java&lt;jfs.sync.libcloud{JFSLibcloudFile.java[JFSLibcloudFile^adapter
+REGEXP does not match
+---------------------------------------------
+java : =libcloud-java/src&lt;simplecloud.storage.providers.nirvanix{NirvanixAdapter.java[NirvanixAdapter~deleteMetadata~QString;~QMap\&lt;QObject;QObject;&gt;;
+Proyecto: libcloud-java
+Jar Location: src
+Package: simplecloud.storage.providers.nirvanix
+Compilation Unit: NirvanixAdapter
+Class Name: NirvanixAdapter
+Metodo: deleteMetadata
+MLOC: 5
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync-migraciones
+REGEXP does not match
+---------------------------------------------
+resource : /libcloud-java/src
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-libcloud-migracion/src/main/java&lt;jfs.sync.libcloud{JFSLibcloudFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-libcloud-migracion/src/main/java&lt;jfs.sync.libcloud{JFSLibcloudFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync-migraciones/jfilesync-libcloud/target/classes
+REGEXP does not match
+---------------------------------------------
+resource : /libcloud-java/src/simplecloud/storage/providers/nirvanix
+REGEXP does not match
+---------------------------------------------
+java : =libcloud-java/src&lt;simplecloud.storage.providers.nirvanix{NirvanixAdapter.java[NirvanixAdapter~fetchItem~QString;~QMap\&lt;QObject;QObject;&gt;;
+Proyecto: libcloud-java
+Jar Location: src
+Package: simplecloud.storage.providers.nirvanix
+Compilation Unit: NirvanixAdapter
+Class Name: NirvanixAdapter
+Metodo: fetchItem
+MLOC: 19
+---------------------------------------------
+java : =libcloud-java/src&lt;simplecloud.storage.providers.nirvanix{NirvanixAdapter.java[NirvanixAdapter~fetchItem~QString;~QMap\&lt;QObject;QObject;&gt;;
+Proyecto: libcloud-java
+Jar Location: src
+Package: simplecloud.storage.providers.nirvanix
+Compilation Unit: NirvanixAdapter
+Class Name: NirvanixAdapter
+Metodo: fetchItem
+MLOC: 19
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync-migraciones/jfilesync-libcloud/src/main/java/jfs/sync/libcloud
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync-migraciones/jfilesync-libcloud/target/classes/jfs
+REGEXP does not match
+---------------------------------------------
+resource : /
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync-migraciones/jfilesync-libcloud/target/classes/jfs/sync/libcloud&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-libcloud-migracion/src/main/java/jfs/sync/libcloud/JFSLibcloudFileProducer.java
+REGEXP does not match
+---------------------------------------------
+java : =libcloud-java/src&lt;simplecloud.storage.providers.nirvanix{NirvanixAdapter.java[NirvanixAdapter~storeItem~QString;~QIItem;~QMap\&lt;QString;QString;&gt;;~QMap\&lt;QObject;QObject;&gt;;
+Proyecto: libcloud-java
+Jar Location: src
+Package: simplecloud.storage.providers.nirvanix
+Compilation Unit: NirvanixAdapter
+Class Name: NirvanixAdapter
+Metodo: storeItem
+MLOC: 35
+---------------------------------------------
+java : =aether-examples/jfilesync-migraciones/jfilesync-libcloud/target/classes/jfs/sync/libcloud
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync-migraciones/jfilesync-libcloud/target/classes/jfs/sync/libcloud/JFSLibcloudFileProducer.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync-migraciones/jfilesync-libcloud/target/classes/jfs/sync
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync-migraciones/jfilesync-libcloud/target/test-classes
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-libcloud-migracion/src/main/java&lt;jfs.sync.libcloud{JFSLibcloudFile.java[JFSLibcloudFile~getList
+Proyecto: jfilesync-libcloud-migracion
+Jar Location: src/main/java
+Package: jfs.sync.libcloud
+Compilation Unit: JFSLibcloudFile
+Class Name: JFSLibcloudFile
+Metodo: getList
+MLOC: 30
+---------------------------------------------
+java : =jfilesync-libcloud-migracion/src/main/java&lt;jfs.sync.libcloud{JFSLibcloudFile.java[JFSLibcloudFile~getList
+Proyecto: jfilesync-libcloud-migracion
+Jar Location: src/main/java
+Package: jfs.sync.libcloud
+Compilation Unit: JFSLibcloudFile
+Class Name: JFSLibcloudFile
+Metodo: getList
+MLOC: 30
+---------------------------------------------
+java : =libcloud-java/src&lt;simplecloud.storage.providers.nirvanix{NirvanixAdapter.java[NirvanixAdapter~deleteItem~QString;~QMap\&lt;QObject;QObject;&gt;;
+Proyecto: libcloud-java
+Jar Location: src
+Package: simplecloud.storage.providers.nirvanix
+Compilation Unit: NirvanixAdapter
+Class Name: NirvanixAdapter
+Metodo: deleteItem
+MLOC: 12
+---------------------------------------------
+resource : /aether-examples/jfilesync-migraciones/jfilesync-libcloud
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync-migraciones/jfilesync-libcloud/target/classes/jfs/sync/libcloud&lt;(JFSLibcloudFile.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync-migraciones/jfilesync-libcloud/src/main/java/jfs/sync
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync-migraciones/jfilesync-libcloud/src/main/java/jfs/sync/libcloud&lt;{JFSLibcloudFileProducer.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync-migraciones/jfilesync-libcloud/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /libcloud-java/src/simplecloud/storage/providers/nirvanix/NirvanixAdapter.java
+REGEXP does not match
+---------------------------------------------
+resource : /libcloud-java/src/simplecloud
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-libcloud-migracion/src/main/java/jfs/sync/libcloud/JFSLibcloudFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync-migraciones/jfilesync-libcloud/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync-migraciones/jfilesync-libcloud/src/main/java/jfs/sync/libcloud&lt;{JFSLibcloudFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync-migraciones/jfilesync-libcloud/target/classes/jfs/sync/libcloud
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync-migraciones/jfilesync-libcloud/src
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync-migraciones/jfilesync-libcloud/src/main/java/jfs/sync/libcloud&lt;{JFSLibcloudFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-libcloud-migracion/src/main/java&lt;jfs.sync.libcloud{JFSLibcloudFileProducer.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-libcloud-migracion/src/main/java&lt;jfs.sync.libcloud{JFSLibcloudFileProducer.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-libcloud-migracion/src/main/java&lt;jfs.sync.libcloud{JFSLibcloudFileProducer.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync-migraciones/jfilesync-libcloud/src/main/java/jfs/sync/libcloud/JFSLibcloudFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-libcloud-migracion/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-libcloud-migracion/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : =libcloud-java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync-migraciones/jfilesync-libcloud/target/classes/jfs/sync/libcloud&lt;
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync-migraciones/jfilesync-libcloud/target/classes/jfs/sync/libcloud&lt;(JFSLibcloudFileProducer.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-libcloud-migracion/src
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync-migraciones/jfilesync-libcloud/target/classes/jfs/sync
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-libcloud-migracion/src/main/java/jfs/sync/libcloud
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync-migraciones/jfilesync-libcloud/src/main/java/jfs/sync/libcloud&lt;
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync-migraciones/jfilesync-libcloud/target/classes/jfs/sync/libcloud&lt;(JFSLibcloudFile.class
+REGEXP does not match
+---------------------------------------------
+java : =libcloud-java/src&lt;simplecloud.storage.providers.nirvanix{NirvanixConnection.java[NirvanixConnection~NirvanixConnection~QString;~QString;~QString;~QString;~QDriver;
+Proyecto: libcloud-java
+Jar Location: src
+Package: simplecloud.storage.providers.nirvanix
+Compilation Unit: NirvanixConnection
+Class Name: NirvanixConnection
+Metodo: NirvanixConnection
+MLOC: 4
+---------------------------------------------
+java : =aether-examples/jfilesync-migraciones/jfilesync-libcloud/src/main/java/jfs/sync/libcloud&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync-migraciones/jfilesync-libcloud/target/classes/jfs
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync-migraciones/jfilesync-libcloud/target/classes/jfs/sync/libcloud/JFSLibcloudFileProducer.class
+REGEXP does not match
+---------------------------------------------
+java : =libcloud-java/src&lt;simplecloud.storage.providers.nirvanix{NirvanixAdapter.java[NirvanixAdapter~storeMetadata~QString;~QMap\&lt;QString;QString;&gt;;~QMap\&lt;QObject;QObject;&gt;;
+Proyecto: libcloud-java
+Jar Location: src
+Package: simplecloud.storage.providers.nirvanix
+Compilation Unit: NirvanixAdapter
+Class Name: NirvanixAdapter
+Metodo: storeMetadata
+MLOC: 13
+---------------------------------------------
+java : =libcloud-java/src&lt;simplecloud.storage.providers.nirvanix{NirvanixAdapter.java[NirvanixAdapter~storeMetadata~QString;~QMap\&lt;QString;QString;&gt;;~QMap\&lt;QObject;QObject;&gt;;
+Proyecto: libcloud-java
+Jar Location: src
+Package: simplecloud.storage.providers.nirvanix
+Compilation Unit: NirvanixAdapter
+Class Name: NirvanixAdapter
+Metodo: storeMetadata
+MLOC: 13
+---------------------------------------------
+java : =aether/aether-examples/jfilesync-migraciones/jfilesync-libcloud/src/main/java/jfs/sync/libcloud
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync-migraciones/jfilesync-libcloud
+REGEXP does not match
+---------------------------------------------
+resource : =aether
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync-migraciones/jfilesync-libcloud/src/main/java/jfs/sync/libcloud
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync-migraciones/jfilesync-libcloud/src/main/resources
+REGEXP does not match
+---------------------------------------------
+java : =libcloud-java/src&lt;simplecloud.storage.providers.nirvanix{NirvanixAdapter.java[NirvanixAdapter
+REGEXP does not match
+---------------------------------------------
+java : =libcloud-java/src&lt;simplecloud.storage.providers.nirvanix{NirvanixAdapter.java[NirvanixAdapter
+REGEXP does not match
+---------------------------------------------
+resource : /libcloud-java/src/simplecloud/storage
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-libcloud-migracion/src/main/java&lt;jfs.sync.libcloud{JFSLibcloudFile.java#
+REGEXP does not match
+---------------------------------------------
+resource : =aether-examples
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync-migraciones/jfilesync-libcloud/src/main/java/jfs/sync/libcloud/JFSLibcloudFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-libcloud-migracion/src/main/java&lt;jfs.sync.libcloud{JFSLibcloudFileProducer.java[JFSLibcloudFileProducer~getJfsFile~QString;
+Proyecto: jfilesync-libcloud-migracion
+Jar Location: src/main/java
+Package: jfs.sync.libcloud
+Compilation Unit: JFSLibcloudFileProducer
+Class Name: JFSLibcloudFileProducer
+Metodo: getJfsFile
+MLOC: 1
+---------------------------------------------
+java : =libcloud-java/src&lt;simplecloud.storage.providers.nirvanix
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-libcloud-migracion/src/main/java&lt;jfs.sync.libcloud{JFSLibcloudFileProducer.java[JFSLibcloudFileProducer^nirvanix
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-libcloud-migracion/src/main/java&lt;jfs.sync.libcloud{JFSLibcloudFileProducer.java[JFSLibcloudFileProducer
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-libcloud-migracion/src/main/java&lt;jfs.sync.libcloud{JFSLibcloudFileProducer.java[JFSLibcloudFileProducer
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-libcloud-migracion/src/main/java&lt;jfs.sync.libcloud{JFSLibcloudFile.java[JFSLibcloudFile
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-libcloud-migracion/src/main/java&lt;jfs.sync.libcloud{JFSLibcloudFile.java[JFSLibcloudFile
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync-migraciones/jfilesync-libcloud/target/classes/jfs/sync/libcloud
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-libcloud-migracion/src/main/java/jfs/sync
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync-migraciones/jfilesync-libcloud/target/classes/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync-migraciones/jfilesync-libcloud/src/main
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync-migraciones/jfilesync-libcloud/src/main/java/jfs/sync/libcloud&lt;{JFSLibcloudFileProducer.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync-migraciones/jfilesync-libcloud/target/test-classes
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-libcloud-migracion/src/main/java&lt;jfs.sync.libcloud{JFSLibcloudFileProducer.java[JFSLibcloudFileProducer~JFSLibcloudFileProducer~QString;
+Proyecto: jfilesync-libcloud-migracion
+Jar Location: src/main/java
+Package: jfs.sync.libcloud
+Compilation Unit: JFSLibcloudFileProducer
+Class Name: JFSLibcloudFileProducer
+Metodo: JFSLibcloudFileProducer
+MLOC: 10
+---------------------------------------------
+java : =jfilesync-libcloud-migracion/src/main/java&lt;jfs.sync.libcloud{JFSLibcloudFileProducer.java[JFSLibcloudFileProducer~JFSLibcloudFileProducer~QString;
+Proyecto: jfilesync-libcloud-migracion
+Jar Location: src/main/java
+Package: jfs.sync.libcloud
+Compilation Unit: JFSLibcloudFileProducer
+Class Name: JFSLibcloudFileProducer
+Metodo: JFSLibcloudFileProducer
+MLOC: 10
+---------------------------------------------
+resource : /aether-examples/jfilesync-migraciones
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync-migraciones/jfilesync-libcloud/target
+REGEXP does not match
+---------------------------------------------
+resource : /libcloud-java/src/simplecloud/storage/providers/nirvanix/NirvanixConnection.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync-migraciones/jfilesync-libcloud/src/main/java/jfs/sync/libcloud
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync-migraciones/jfilesync-libcloud/target/classes/jfs/sync/libcloud&lt;(JFSLibcloudFileProducer.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync-migraciones/jfilesync-libcloud/src/main/java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-libcloud-migracion/src/main/java/jfs
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-libcloud-migracion/src/main/java&lt;jfs.sync.libcloud{JFSLibcloudFileProducer.java[JFSLibcloudFileProducer^amazon
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync-migraciones/jfilesync-libcloud/target/classes/jfs/sync/libcloud/JFSLibcloudFile.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync-migraciones/jfilesync-libcloud/src/main/resources
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-libcloud-migracion/src/main/java&lt;jfs.sync.libcloud{JFSLibcloudFile.java[JFSLibcloudFile^canRead
+REGEXP does not match
+---------------------------------------------
+resource : /libcloud-java/src/simplecloud/storage/providers
+REGEXP does not match
+---------------------------------------------
+java : =libcloud-java/src&lt;simplecloud.storage.providers.nirvanix{NirvanixConnection.java
+REGEXP does not match
+---------------------------------------------
+java : =libcloud-java/src&lt;simplecloud.storage.providers.nirvanix{NirvanixConnection.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-libcloud-migracion/src/main/java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync-migraciones/jfilesync-libcloud/src
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync-migraciones/jfilesync-libcloud/target/classes/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync-migraciones/jfilesync-libcloud/target
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-libcloud-migracion/src/main/java&lt;jfs.sync.libcloud{JFSLibcloudFileProducer.java[JFSLibcloudFileProducer~getRootJfsFile
+Proyecto: jfilesync-libcloud-migracion
+Jar Location: src/main/java
+Package: jfs.sync.libcloud
+Compilation Unit: JFSLibcloudFileProducer
+Class Name: JFSLibcloudFileProducer
+Metodo: getRootJfsFile
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-libcloud-migracion/src/main/java&lt;jfs.sync.libcloud{JFSLibcloudFileProducer.java[JFSLibcloudFileProducer~getRootJfsFile
+Proyecto: jfilesync-libcloud-migracion
+Jar Location: src/main/java
+Package: jfs.sync.libcloud
+Compilation Unit: JFSLibcloudFileProducer
+Class Name: JFSLibcloudFileProducer
+Metodo: getRootJfsFile
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-libcloud-migracion/src/main/resources
+REGEXP does not match
+---------------------------------------------
+java : =libcloud-java/src&lt;simplecloud.storage.providers.nirvanix{NirvanixAdapter.java[NirvanixAdapter~NirvanixAdapter~QString;~QString;~QString;~QString;
+Proyecto: libcloud-java
+Jar Location: src
+Package: simplecloud.storage.providers.nirvanix
+Compilation Unit: NirvanixAdapter
+Class Name: NirvanixAdapter
+Metodo: NirvanixAdapter
+MLOC: 4
+---------------------------------------------
+java : =libcloud-java/src&lt;simplecloud.storage.providers.nirvanix{NirvanixAdapter.java[NirvanixAdapter~NirvanixAdapter~QString;~QString;~QString;~QString;
+Proyecto: libcloud-java
+Jar Location: src
+Package: simplecloud.storage.providers.nirvanix
+Compilation Unit: NirvanixAdapter
+Class Name: NirvanixAdapter
+Metodo: NirvanixAdapter
+MLOC: 4
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync-migraciones/jfilesync-libcloud/src/main/java/jfs
+REGEXP does not match
+---------------------------------------------
+resource : =jfilesync-libcloud-migracion
+REGEXP does not match
+---------------------------------------------
+java : =libcloud-java/src&lt;simplecloud.storage.providers.nirvanix{NirvanixConnection.java[NirvanixConnection
+REGEXP does not match
+---------------------------------------------
+java : =libcloud-java/src&lt;simplecloud.storage.providers.nirvanix{NirvanixAdapter.java[NirvanixAdapter~copyItem~QString;~QString;~QMap\&lt;QObject;QObject;&gt;;
+Proyecto: libcloud-java
+Jar Location: src
+Package: simplecloud.storage.providers.nirvanix
+Compilation Unit: NirvanixAdapter
+Class Name: NirvanixAdapter
+Metodo: copyItem
+MLOC: 14
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync-migraciones/jfilesync-libcloud/src/main
+REGEXP does not match
+---------------------------------------------
+java : =libcloud-java/src&lt;simplecloud.storage.providers.nirvanix{NirvanixAdapter.java
+REGEXP does not match
+---------------------------------------------
+java : =libcloud-java/src&lt;simplecloud.storage.providers.nirvanix{NirvanixAdapter.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync-migraciones/jfilesync-libcloud/src/main/java/jfs
+REGEXP does not match
+---------------------------------------------
+java : =libcloud-java/src&lt;simplecloud.storage.providers.nirvanix{NirvanixAdapter.java[NirvanixAdapter~renameItem~QString;~QString;~QMap\&lt;QObject;QObject;&gt;;
+Proyecto: libcloud-java
+Jar Location: src
+Package: simplecloud.storage.providers.nirvanix
+Compilation Unit: NirvanixAdapter
+Class Name: NirvanixAdapter
+Metodo: renameItem
+MLOC: 14
+---------------------------------------------
+resource : /aether-examples/jfilesync-migraciones/jfilesync-libcloud/src/main/java/jfs/sync
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-libcloud-migracion/src/main/java
+REGEXP does not match
+---------------------------------------------
+java : =libcloud-java/src
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync-migraciones/jfilesync-libcloud/src/main/java/jfs/sync/libcloud/JFSLibcloudFileProducer.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-libcloud-migracion/src/main/resources
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync-migraciones/jfilesync-libcloud/src/main/java/jfs/sync/libcloud/JFSLibcloudFileProducer.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-libcloud-migracion/src/main/java&lt;jfs.sync.libcloud{JFSLibcloudFile.java[JFSLibcloudFile~JFSLibcloudFile~QJFSFileProducer;~QString;~QIStorageAdapter;
+Proyecto: jfilesync-libcloud-migracion
+Jar Location: src/main/java
+Package: jfs.sync.libcloud
+Compilation Unit: JFSLibcloudFile
+Class Name: JFSLibcloudFile
+Metodo: JFSLibcloudFile
+MLOC: 22
+---------------------------------------------
+java : =jfilesync-libcloud-migracion/src/main/java&lt;jfs.sync.libcloud{JFSLibcloudFile.java[JFSLibcloudFile~JFSLibcloudFile~QJFSFileProducer;~QString;~QIStorageAdapter;
+Proyecto: jfilesync-libcloud-migracion
+Jar Location: src/main/java
+Package: jfs.sync.libcloud
+Compilation Unit: JFSLibcloudFile
+Class Name: JFSLibcloudFile
+Metodo: JFSLibcloudFile
+MLOC: 22
+---------------------------------------------
+FINAL ACCUMULATED RESULT: 327.0
+---------------------------------------------

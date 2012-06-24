@@ -1,0 +1,3699 @@
+Loading metrics from: D:\Mylyn Metrics\Projects\jfilesync-jclouds.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\aether-core.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\aether-loader.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\cloudloop-adapter.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\cloudloop-main.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\dasein-aws.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\dasein-core.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\dasein-google.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\jclouds-aws-common.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\jclouds-aws-s3.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\jclouds-blobstore.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\jclouds-core.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\jclouds-s3.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\jets3t.xml
+Loading metrics from: D:\Mylyn Metrics\Frameworks\libcloud.xml
+java : 
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/jclouds/JFSLocalFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/resources
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~canRead
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: canRead
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~canRead
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: canRead
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~canRead
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: canRead
+MLOC: 1
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/local&lt;
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSElement.java[JFSElement~revalidate
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync
+Compilation Unit: JFSElement
+Class Name: JFSElement
+Metodo: revalidate
+MLOC: 36
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSElement.java[JFSElement~revalidate
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync
+Compilation Unit: JFSElement
+Class Name: JFSElement
+Metodo: revalidate
+MLOC: 36
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/external
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/external&lt;(JFSExternalFile.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/local
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/src/main/java/jfs/util&lt;
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/util&lt;(CodecUtil.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.gui{JFSConfigDirectoryView.java[JFSConfigDirectoryView
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs/util
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/jclouds&lt;{JFSLocalFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs/sync/JFSFileProducerManager.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/src/main/java/jfs/sync&lt;
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.local{JFSLocalFileProducer.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.local{JFSLocalFileProducer.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync&lt;{JFSFileProducerManager.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/jclouds&lt;{JFSJCloudsFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.util{CodecUtil.java[CodecUtil~getMd5FromFile~QFile;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.util
+Compilation Unit: CodecUtil
+Class Name: CodecUtil
+Metodo: getMd5FromFile
+MLOC: 38
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync&lt;(JFSElement$ElementState.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSElement.java[JFSElement
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/gui
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/conf
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/jclouds&lt;(JFSLocalFileProducer.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/jclouds/JFSLocalFileProducer.java
+REGEXP does not match
+---------------------------------------------
+resource : /
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~setLastModified~J
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: setLastModified
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~setLastModified~J
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: setLastModified
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~setLastModified~J
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: setLastModified
+MLOC: 1
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/jclouds&lt;{JFSLocalFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs/plugins
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/util
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs/sync/local
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.external
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs/resources/conf/JFSTranslation.properties
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs/resources/conf/JFSTranslation.properties
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/external/JFSExternalFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/jclouds/JFSLocalFileProducer.class
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync&lt;(JFSElement$ElementState.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSComparison.java[JFSComparison
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSComparison.java[JFSComparison
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/jclouds&lt;(JFSJCloudsFileProducerFactory.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/external&lt;{JFSExternalFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.conf{JFSText.java[JFSText~JFSText
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.conf
+Compilation Unit: JFSText
+Class Name: JFSText
+Metodo: JFSText
+MLOC: 2
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.conf{JFSText.java[JFSText~JFSText
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.conf
+Compilation Unit: JFSText
+Class Name: JFSText
+Metodo: JFSText
+MLOC: 2
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/resources/conf/JFSTranslation.properties
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/util&lt;{CodecUtil.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/gui
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/local/JFSLocalFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/local/JFSLocalFile.class
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/local&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-jclouds/src/main/java/neoe
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.conf{JFSHistoryManager.java[JFSHistoryManager~updateHistories
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.conf
+Compilation Unit: JFSHistoryManager
+Class Name: JFSHistoryManager
+Metodo: updateHistories
+MLOC: 38
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.conf{JFSHistoryManager.java[JFSHistoryManager~updateHistories
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.conf
+Compilation Unit: JFSHistoryManager
+Class Name: JFSHistoryManager
+Metodo: updateHistories
+MLOC: 38
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.conf{JFSHistoryManager.java[JFSHistoryManager~updateHistories
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.conf
+Compilation Unit: JFSHistoryManager
+Class Name: JFSHistoryManager
+Metodo: updateHistories
+MLOC: 38
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/src/main/java/jfs
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.conf{JFSConst.java[JFSConst~JFSConst
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.conf
+Compilation Unit: JFSConst
+Class Name: JFSConst
+Metodo: JFSConst
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.conf{JFSConst.java[JFSConst~JFSConst
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.conf
+Compilation Unit: JFSConst
+Class Name: JFSConst
+Metodo: JFSConst
+MLOC: 1
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/conf/JFSConst.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync&lt;(JFSFile.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/local&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/src/main/java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/src/main/java/jfs/util
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;java.lang
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSFile.java[JFSFile~getLastModified
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync
+Compilation Unit: JFSFile
+Class Name: JFSFile
+Metodo: getLastModified
+MLOC: 0
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/gui&lt;{JFSConfigView.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/target/classes/jfs/resources/conf/JFSTranslation.properties
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/local&lt;{JFSLocalFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/gui
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/util&lt;
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.conf{JFSConfig.java[JFSConfig^defaultFile
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/target/classes/jfs/sync/jclouds&lt;(JFSLocalFile.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.util{CodecUtil.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.util{CodecUtil.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSFileProducerManager.java[JFSFileProducerManager
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSFileProducerManager.java[JFSFileProducerManager
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/jclouds/JFSJCloudsFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/src/main/java/jfs/gui/JFSConfigView.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync&lt;(JFSElement.class
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/util
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs{JFileSync.java[JFileSync~getHome
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs
+Compilation Unit: JFileSync
+Class Name: JFileSync
+Metodo: getHome
+MLOC: 16
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/resources/conf
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.external{JFSExternalFileProducer.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.external{JFSExternalFileProducer.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.external{JFSExternalFileProducer.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/target/classes/jfs/util&lt;(CodecUtil.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/target/classes/jfs/sync&lt;(JFSFile.class
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/jclouds&lt;(JFSJCloudsFileProducer.class
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/jclouds&lt;(JFSJCloudsFileProducer.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/target/classes/jfs/sync/external&lt;
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;java.lang(Thread.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/properties.properties
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs{JFileSync.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs{JFileSync.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs/sync/JFSFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSFileProducer.java[JFSFileProducer~getScheme
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync
+Compilation Unit: JFSFileProducer
+Class Name: JFSFileProducer
+Metodo: getScheme
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSFileProducer.java[JFSFileProducer~getScheme
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync
+Compilation Unit: JFSFileProducer
+Class Name: JFSFileProducer
+Metodo: getScheme
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.local
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSFileProducerManager.java[JFSFileProducerManager~JFSFileProducerManager
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync
+Compilation Unit: JFSFileProducerManager
+Class Name: JFSFileProducerManager
+Metodo: JFSFileProducerManager
+MLOC: 6
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSFileProducerManager.java[JFSFileProducerManager~JFSFileProducerManager
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync
+Compilation Unit: JFSFileProducerManager
+Class Name: JFSFileProducerManager
+Metodo: JFSFileProducerManager
+MLOC: 6
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/jclouds/JFSLocalFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.plugins{JFSDateTimeModifier.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/jclouds/JFSLocalFileProducer.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile^canWrite
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile^canWrite
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/jclouds
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/gui&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/jclouds/JFSLocalFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSFile.java[JFSFile~upload~QFile;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync
+Compilation Unit: JFSFile
+Class Name: JFSFile
+Metodo: upload
+MLOC: 0
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSFile.java[JFSFile~upload~QFile;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync
+Compilation Unit: JFSFile
+Class Name: JFSFile
+Metodo: upload
+MLOC: 0
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs/sync/JFSSynchronization.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/target/classes/jfs/sync/jclouds/JFSLocalFileProducerFactory.class
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/conf
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/target/classes/jfs/sync/jclouds&lt;(JFSJCloudsFile.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs/sync/jclouds/JFSLocalFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/gui/JFSConfigView$1.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/target/classes/jfs/util&lt;
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/target/classes/jfs/gui&lt;(JFSConfigDirectoryView.class
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/jclouds&lt;{JFSLocalFileProducer.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs/sync/external/JFSExternalFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/jclouds/JFSJCloudsFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/gui/JFSConfigView$1.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/C:/Users/Kireta/.m2/repository/org/jclouds/jclouds-blobstore/1.2.1/jclouds-blobstore-1.2.1.jar&lt;org.jclouds.blobstore(BlobStore.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/C:/Users/Kireta/.m2/repository/org/jclouds/jclouds-blobstore/1.2.1/jclouds-blobstore-1.2.1.jar&lt;org.jclouds.blobstore(BlobStore.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/target/classes/jfs/sync
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.external{JFSExternalFileProducer.java[JFSExternalFileProducer~JFSExternalFileProducer~QString;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.external
+Compilation Unit: JFSExternalFileProducer
+Class Name: JFSExternalFileProducer
+Metodo: JFSExternalFileProducer
+MLOC: 4
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSElement.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSElement.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.conf{JFSHistoryManager.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.conf{JFSHistoryManager.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/gui/JFSConfigView.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/target/classes/jfs/gui
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs/conf/JFSConfig.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/jclouds/JFSJCloudsFile.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile^canRead
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/external
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/external&lt;{JFSExternalFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSFile.java[JFSFile~getDirectoryList
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync
+Compilation Unit: JFSFile
+Class Name: JFSFile
+Metodo: getDirectoryList
+MLOC: 14
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/target/classes/jfs/sync/jclouds
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.conf{JFSSyncMode.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.conf{JFSSyncMode.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync&lt;{JFSElement.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/target/test-classes
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/util
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/src/main/java/jfs/resources/conf
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs/conf/JFSSyncMode.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/gui/JFSConfigView.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/JFSFileProducerManager.java
+REGEXP does not match
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSFileProducer.java[JFSFileProducer~JFSFileProducer~QString;~QString;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync
+Compilation Unit: JFSFileProducer
+Class Name: JFSFileProducer
+Metodo: JFSFileProducer
+MLOC: 4
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSFileProducer.java[JFSFileProducer~JFSFileProducer~QString;~QString;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync
+Compilation Unit: JFSFileProducer
+Class Name: JFSFileProducer
+Metodo: JFSFileProducer
+MLOC: 4
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.external{JFSExternalFile.java[JFSExternalFile^info
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.local{JFSLocalFile.java[JFSLocalFile~preCopyTgt~QJFSFile;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.local
+Compilation Unit: JFSLocalFile
+Class Name: JFSLocalFile
+Metodo: preCopyTgt
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.local{JFSLocalFile.java[JFSLocalFile~preCopyTgt~QJFSFile;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.local
+Compilation Unit: JFSLocalFile
+Class Name: JFSLocalFile
+Metodo: preCopyTgt
+MLOC: 1
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/gui&lt;{JFSConfigDirectoryView.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs/plugins/JFSAttributeAnalyzer.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/local
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/conf/JFSConst.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~getPath
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: getPath
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~getPath
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: getPath
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~getPath
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: getPath
+MLOC: 1
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/jclouds/JFSJCloudsFile.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.util{CodecUtil.java[CodecUtil
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.conf{JFSConst.java[JFSConst^SCHEME_JCLOUDS
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.conf{JFSConst.java[JFSConst^SCHEME_JCLOUDS
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/gui/JFSConfigDirectoryView.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/jclouds
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/external&lt;(JFSExternalFile.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs/util/CodecUtil.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~getLastModified
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: getLastModified
+MLOC: 5
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~getLastModified
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: getLastModified
+MLOC: 5
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~getLastModified
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: getLastModified
+MLOC: 5
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/external
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/local
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/jclouds&lt;
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/local&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/src/main/resources
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSFileProducerFactory.java[JFSFileProducerFactory
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.local{JFSLocalFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.local{JFSLocalFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.local{JFSLocalFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.local{JFSLocalFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/local/JFSLocalFile.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~delete
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: delete
+MLOC: 10
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~delete
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: delete
+MLOC: 10
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~delete
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: delete
+MLOC: 10
+---------------------------------------------
+resource : /jfilesync-jclouds/src/test/java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/target/classes/jfs/gui&lt;(JFSConfigView$1.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/jclouds&lt;{JFSJCloudsFileProducer.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/jclouds&lt;{JFSJCloudsFileProducer.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync&lt;
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~preCopySrc~QJFSFile;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: preCopySrc
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~preCopySrc~QJFSFile;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: preCopySrc
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~preCopySrc~QJFSFile;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: preCopySrc
+MLOC: 1
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/target/classes/jfs/sync/jclouds/JFSLocalFile.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/gui
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/conf
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/target/test-classes
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs/resources/conf
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/util
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync&lt;
+REGEXP does not match
+---------------------------------------------
+resource : =jfilesync
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/external&lt;
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/util&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs/sync/JFSElement.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/external
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/conf
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/gui/JFSConfigDirectoryView.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/jclouds&lt;(JFSLocalFileProducerFactory.class
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/util&lt;{CodecUtil.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.gui{JFSDirectoryTable.java[JFSDirectoryTable~getTableCellRendererComponent~QJTable;~QObject;~Z~Z~I~I
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.gui
+Compilation Unit: JFSDirectoryTable
+Class Name: JFSDirectoryTable
+Metodo: getTableCellRendererComponent
+MLOC: 26
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.gui{JFSDirectoryTable.java[JFSDirectoryTable~getTableCellRendererComponent~QJTable;~QObject;~Z~Z~I~I
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.gui
+Compilation Unit: JFSDirectoryTable
+Class Name: JFSDirectoryTable
+Metodo: getTableCellRendererComponent
+MLOC: 26
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/jclouds/JFSLocalFileProducerFactory.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.gui{JFSConfigDirectoryView.java[JFSConfigDirectoryView~actionPerformed~QActionEvent;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.gui
+Compilation Unit: JFSConfigDirectoryView
+Class Name: JFSConfigDirectoryView
+Metodo: actionPerformed
+MLOC: 110
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.gui{JFSConfigDirectoryView.java[JFSConfigDirectoryView~actionPerformed~QActionEvent;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.gui
+Compilation Unit: JFSConfigDirectoryView
+Class Name: JFSConfigDirectoryView
+Metodo: actionPerformed
+MLOC: 110
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs/resources
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.conf{JFSConfig.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.conf{JFSConfig.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/local&lt;{JFSLocalFile.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/jclouds&lt;{JFSJCloudsFile.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/jclouds&lt;{JFSJCloudsFile.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/jclouds&lt;(JFSLocalFileProducerFactory.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~flush
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: flush
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~flush
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: flush
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~flush
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: flush
+MLOC: 1
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/jclouds&lt;(JFSJCloudsFile.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~getLength
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: getLength
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~getLength
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: getLength
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~getLength
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: getLength
+MLOC: 1
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/src/main/java/jfs/sync
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.gui
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.local{JFSLocalFile.java[JFSLocalFile~getLastModified
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.local
+Compilation Unit: JFSLocalFile
+Class Name: JFSLocalFile
+Metodo: getLastModified
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.local{JFSLocalFile.java[JFSLocalFile~getLastModified
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.local
+Compilation Unit: JFSLocalFile
+Class Name: JFSLocalFile
+Metodo: getLastModified
+MLOC: 1
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/gui&lt;(JFSConfigDirectoryView.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/JFSFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs/conf/JFSText.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/target/classes/jfs/sync/JFSFileProducerManager.class
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/jclouds&lt;(JFSLocalFile.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/jclouds/JFSJCloudsFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.conf{JFSSyncMode.java[JFSSyncMode
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/target/classes/jfs/sync/JFSElement$ElementState.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/external
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/resources/conf/JFSTranslation.properties
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFileProducer.java[JFSJCloudsFileProducer
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFileProducer.java[JFSJCloudsFileProducer
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFileProducer.java[JFSJCloudsFileProducer
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~closeInputStream
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: closeInputStream
+MLOC: 5
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~closeInputStream
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: closeInputStream
+MLOC: 5
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~closeInputStream
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: closeInputStream
+MLOC: 5
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFileProducer.java[JFSJCloudsFileProducer^blobStore
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFileProducer.java[JFSJCloudsFileProducer^blobStore
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/target/classes/jfs/gui
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/JFSFile.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/jclouds/JFSJCloudsFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.local{JFSLocalFile.java[JFSLocalFile~preCopySrc~QJFSFile;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.local
+Compilation Unit: JFSLocalFile
+Class Name: JFSLocalFile
+Metodo: preCopySrc
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.local{JFSLocalFile.java[JFSLocalFile~preCopySrc~QJFSFile;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.local
+Compilation Unit: JFSLocalFile
+Class Name: JFSLocalFile
+Metodo: preCopySrc
+MLOC: 1
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/JFSElement.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs/gui/JFSConfigDirectoryView.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSFile.java[JFSFile
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSFile.java[JFSFile
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSFile.java[JFSFile
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSFile.java[JFSFile
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/resources
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/jclouds/JFSLocalFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSComparison.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSComparison.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~getFile
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: getFile
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~getFile
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: getFile
+MLOC: 1
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/target/classes/jfs/util
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/target/classes/jfs/sync/external
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/gui/JFSConfigDirectoryView.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.plugins{JFSAttributeAnalyzer.java[JFSAttributeAnalyzer~traverse~QJFSFile;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.plugins
+Compilation Unit: JFSAttributeAnalyzer
+Class Name: JFSAttributeAnalyzer
+Metodo: traverse
+MLOC: 11
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.plugins{JFSAttributeAnalyzer.java[JFSAttributeAnalyzer~traverse~QJFSFile;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.plugins
+Compilation Unit: JFSAttributeAnalyzer
+Class Name: JFSAttributeAnalyzer
+Metodo: traverse
+MLOC: 11
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/jclouds&lt;
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/external&lt;{JFSExternalFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/local&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/local/JFSLocalFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/jclouds/JFSJCloudsFileProducer.class
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/local
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs{JFileSync.java[JFileSync
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/conf&lt;{JFSConst.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/jclouds&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/src/main/java/jfs/resources
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs/sync/JFSFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs/sync/JFSFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSFile.java[JFSFile~canWrite
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync
+Compilation Unit: JFSFile
+Class Name: JFSFile
+Metodo: canWrite
+MLOC: 0
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/external
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.local{JFSLocalFile.java[JFSLocalFile~setReadOnly
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.local
+Compilation Unit: JFSLocalFile
+Class Name: JFSLocalFile
+Metodo: setReadOnly
+MLOC: 7
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.local{JFSLocalFile.java[JFSLocalFile~setReadOnly
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.local
+Compilation Unit: JFSLocalFile
+Class Name: JFSLocalFile
+Metodo: setReadOnly
+MLOC: 7
+---------------------------------------------
+java : =neoedit-jclouds/src/main/java&lt;neoe.jclouds
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/JFSFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/target
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.conf{JFSConst.java[JFSConst^CONFIG_CLASS
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.conf{JFSConst.java[JFSConst^CONFIG_CLASS
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.external{JFSExternalFileProducer.java[JFSExternalFileProducer
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.plugins{JFSDateTimeModifier.java[JFSDateTimeModifier
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/resources/conf
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/src/main/java/jfs/util&lt;{CodecUtil.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.local{JFSLocalFile.java[JFSLocalFile~flush
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.local
+Compilation Unit: JFSLocalFile
+Class Name: JFSLocalFile
+Metodo: flush
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSFile.java[JFSFile~preCopySrc~QJFSFile;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync
+Compilation Unit: JFSFile
+Class Name: JFSFile
+Metodo: preCopySrc
+MLOC: 0
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.local{JFSLocalFileProducerFactory.java[JFSLocalFileProducerFactory
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.local{JFSLocalFileProducerFactory.java[JFSLocalFileProducerFactory
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;java.util(ResourceBundle.class[ResourceBundle
+REGEXP does not match
+---------------------------------------------
+resource : =jfilesync-jclouds
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs/sync/external/JFSExternalFileProducer.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.plugins{JFSDateTimeModifier.java[JFSDateTimeModifier~modifyDateTimeStamps~Z~J
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.plugins
+Compilation Unit: JFSDateTimeModifier
+Class Name: JFSDateTimeModifier
+Metodo: modifyDateTimeStamps
+MLOC: 15
+---------------------------------------------
+resource : =aether
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSComparison.java[JFSComparison~add~QJFSFile;~QJFSFile;~QJFSElement;~Z
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync
+Compilation Unit: JFSComparison
+Class Name: JFSComparison
+Metodo: add
+MLOC: 19
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSComparison.java[JFSComparison~add~QJFSFile;~QJFSFile;~QJFSElement;~Z
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync
+Compilation Unit: JFSComparison
+Class Name: JFSComparison
+Metodo: add
+MLOC: 19
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSComparison.java[JFSComparison~add~QJFSFile;~QJFSFile;~QJFSElement;~Z
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync
+Compilation Unit: JFSComparison
+Class Name: JFSComparison
+Metodo: add
+MLOC: 19
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.gui{JFSConfigDirectoryView.java[JFSConfigDirectoryView~JFSConfigDirectoryView~QJDialog;~QJFSConfig;~QJFSDirectoryPair;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.gui
+Compilation Unit: JFSConfigDirectoryView
+Class Name: JFSConfigDirectoryView
+Metodo: JFSConfigDirectoryView
+MLOC: 73
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.gui{JFSConfigDirectoryView.java[JFSConfigDirectoryView~JFSConfigDirectoryView~QJDialog;~QJFSConfig;~QJFSDirectoryPair;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.gui
+Compilation Unit: JFSConfigDirectoryView
+Class Name: JFSConfigDirectoryView
+Metodo: JFSConfigDirectoryView
+MLOC: 73
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.external{JFSExternalFile.java[JFSExternalFile~getLastModified
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.external
+Compilation Unit: JFSExternalFile
+Class Name: JFSExternalFile
+Metodo: getLastModified
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.external{JFSExternalFile.java[JFSExternalFile~getLastModified
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.external
+Compilation Unit: JFSExternalFile
+Class Name: JFSExternalFile
+Metodo: getLastModified
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~mkdir
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: mkdir
+MLOC: 8
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~mkdir
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: mkdir
+MLOC: 8
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~mkdir
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: mkdir
+MLOC: 8
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/util&lt;
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.conf{JFSConst.java[JFSConst^SCHEME_LOCAL
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.conf{JFSConst.java[JFSConst^SCHEME_LOCAL
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.conf{JFSConst.java[JFSConst^SCHEME_LOCAL
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/src/main/java/jfs/gui/JFSConfigDirectoryView.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSElement.java[JFSElement~JFSElement~QJFSFile;~QJFSFile;~QJFSElement;~Z
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync
+Compilation Unit: JFSElement
+Class Name: JFSElement
+Metodo: JFSElement
+MLOC: 0
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSElement.java[JFSElement~JFSElement~QJFSFile;~QJFSFile;~QJFSElement;~Z
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync
+Compilation Unit: JFSElement
+Class Name: JFSElement
+Metodo: JFSElement
+MLOC: 0
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.local{JFSLocalFile.java[JFSLocalFile~setLastModified~J
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.local
+Compilation Unit: JFSLocalFile
+Class Name: JFSLocalFile
+Metodo: setLastModified
+MLOC: 4
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs/JFileSync.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs/resources/conf/JFSTranslation_de.properties
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs/resources/conf/JFSTranslation_de.properties
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs/sync
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/pom.xml
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~exists
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: exists
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~exists
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: exists
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~exists
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: exists
+MLOC: 1
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/jclouds&lt;{JFSLocalFileProducer.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/src/main/java/jfs/conf/JFSConst.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs/plugins/JFSDateTimeModifier.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/jclouds/JFSJCloudsFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSLocalFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~closeOutputStream
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: closeOutputStream
+MLOC: 0
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/gui&lt;(JFSConfigDirectoryView.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.local{JFSLocalFile.java[JFSLocalFile~getFile
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.local
+Compilation Unit: JFSLocalFile
+Class Name: JFSLocalFile
+Metodo: getFile
+MLOC: 1
+---------------------------------------------
+java : =MuCommanderApp/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.conf
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/util/CodecUtil.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/local
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.local{JFSLocalFile.java[JFSLocalFile~closeOutputStream
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.local
+Compilation Unit: JFSLocalFile
+Class Name: JFSLocalFile
+Metodo: closeOutputStream
+MLOC: 9
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.local{JFSLocalFile.java[JFSLocalFile~closeOutputStream
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.local
+Compilation Unit: JFSLocalFile
+Class Name: JFSLocalFile
+Metodo: closeOutputStream
+MLOC: 9
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/target/classes/jfs/sync&lt;(JFSElement$ElementState.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/jclouds/JFSLocalFileProducer.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/resources
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.local{JFSLocalFile.java[JFSLocalFile~mkdir
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.local
+Compilation Unit: JFSLocalFile
+Class Name: JFSLocalFile
+Metodo: mkdir
+MLOC: 4
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs/sync/local/JFSLocalFileProducer.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.conf{JFSConst.java[JFSConst^SCHEME_LOCAL!2
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/src/main/java/jfs/sync&lt;{JFSFile.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/external
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/src/main
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.plugins{JFSAttributeAnalyzer.java[JFSAttributeAnalyzer
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/gui
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/gui
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSFormatter.java[JFSFormatter~getLastModified~QJFSFile;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync
+Compilation Unit: JFSFormatter
+Class Name: JFSFormatter
+Metodo: getLastModified
+MLOC: 5
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSFormatter.java[JFSFormatter~getLastModified~QJFSFile;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync
+Compilation Unit: JFSFormatter
+Class Name: JFSFormatter
+Metodo: getLastModified
+MLOC: 5
+---------------------------------------------
+java : =jfilesync-jclouds/src/test/java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/target/classes/jfs/sync/local&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/local
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs/conf
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/conf&lt;(JFSConst.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/jclouds&lt;{JFSJCloudsFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs/gui/JFSDirectoryTable.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/jclouds&lt;(JFSJCloudsFileProducerFactory.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.local{JFSLocalFile.java[JFSLocalFile^lastModified
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.local{JFSLocalFile.java[JFSLocalFile^lastModified
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.local{JFSLocalFile.java[JFSLocalFile~upload~QFile;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.local
+Compilation Unit: JFSLocalFile
+Class Name: JFSLocalFile
+Metodo: upload
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.local{JFSLocalFile.java[JFSLocalFile~upload~QFile;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.local
+Compilation Unit: JFSLocalFile
+Class Name: JFSLocalFile
+Metodo: upload
+MLOC: 1
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/target/classes/jfs/sync/jclouds&lt;(JFSJCloudsFileProducerFactory.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs/gui/JFSConfigView.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/src/main
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/target/classes/jfs/sync/jclouds/JFSJCloudsFileProducer.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs/conf/JFSConst.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/target/classes/jfs/sync/local/JFSLocalFile.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFileProducerFactory.java[JFSJCloudsFileProducerFactory
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFileProducerFactory.java[JFSJCloudsFileProducerFactory
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFileProducerFactory.java[JFSJCloudsFileProducerFactory
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFileProducer.java[JFSJCloudsFileProducer~getRootJfsFile
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFileProducer
+Class Name: JFSJCloudsFileProducer
+Metodo: getRootJfsFile
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFileProducer.java[JFSJCloudsFileProducer~getRootJfsFile
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFileProducer
+Class Name: JFSJCloudsFileProducer
+Metodo: getRootJfsFile
+MLOC: 1
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/resources
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/gui/JFSConfigView.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/resources
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/resources/conf
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/src/main/java/jfs/resources/conf/JFSTranslation.properties
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync&lt;{JFSFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/target/classes/jfs/gui/JFSConfigView.class
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync&lt;(JFSFileProducerManager.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/target/classes/jfs/sync&lt;(JFSFileProducerManager.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSSynchronization.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSSynchronization.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/jclouds&lt;{JFSJCloudsFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/jclouds&lt;{JFSJCloudsFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.resources.conf
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/util
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/jclouds&lt;{JFSLocalFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/conf/JFSConst.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/src/main/java/jfs/sync
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/JFSFileProducerManager.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile^isDirectory
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSLocalFileProducer.java[JFSLocalFileProducer~getRootJfsFile
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/src
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~getOutputStream
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: getOutputStream
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~getOutputStream
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: getOutputStream
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~getOutputStream
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: getOutputStream
+MLOC: 1
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/JFSFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~setFullPath
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: setFullPath
+MLOC: 5
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~setFullPath
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: setFullPath
+MLOC: 5
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/util/CodecUtil.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs/sync/external/JFSExternalFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs/sync/external/JFSExternalFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/conf
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~upload~QFile;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: upload
+MLOC: 11
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~upload~QFile;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: upload
+MLOC: 11
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.gui{JFSConfigView.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.gui{JFSConfigView.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/jclouds
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs/sync/jclouds/JFSJCloudsFileProducer.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSSynchronization.java[JFSSynchronization
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync&lt;(JFSFile.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/target/classes/jfs/sync/JFSElement.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/target/classes/jfs/conf
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSCopyStatement.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/conf
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.conf{JFSConst.java[JFSConst
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.conf{JFSConst.java[JFSConst
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.conf{JFSConst.java[JFSConst
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSSynchronization.java[JFSSynchronization~synchronize
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync
+Compilation Unit: JFSSynchronization
+Class Name: JFSSynchronization
+Metodo: synchronize
+MLOC: 76
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSSynchronization.java[JFSSynchronization~synchronize
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync
+Compilation Unit: JFSSynchronization
+Class Name: JFSSynchronization
+Metodo: synchronize
+MLOC: 76
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/target/classes/jfs/conf
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.local{JFSLocalFile.java[JFSLocalFile~JFSLocalFile~QJFSFileProducer;~QString;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.local
+Compilation Unit: JFSLocalFile
+Class Name: JFSLocalFile
+Metodo: JFSLocalFile
+MLOC: 14
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.local{JFSLocalFile.java[JFSLocalFile~JFSLocalFile~QJFSFileProducer;~QString;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.local
+Compilation Unit: JFSLocalFile
+Class Name: JFSLocalFile
+Metodo: JFSLocalFile
+MLOC: 14
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.local{JFSLocalFile.java[JFSLocalFile~JFSLocalFile~QJFSFileProducer;~QString;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.local
+Compilation Unit: JFSLocalFile
+Class Name: JFSLocalFile
+Metodo: JFSLocalFile
+MLOC: 14
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile^file
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/target/classes/jfs/sync/jclouds
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/src/test
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;java.util
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/target/classes/jfs/sync/jclouds&lt;(JFSJCloudsFileProducer.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/target/classes/jfs/sync/jclouds&lt;(JFSJCloudsFileProducer.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~postCopyTgt~QJFSFile;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: postCopyTgt
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~postCopyTgt~QJFSFile;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: postCopyTgt
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~postCopyTgt~QJFSFile;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: postCopyTgt
+MLOC: 1
+---------------------------------------------
+resource : =neoedit-jclouds
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.local{JFSLocalFile.java[JFSLocalFile~postCopyTgt~QJFSFile;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.local
+Compilation Unit: JFSLocalFile
+Class Name: JFSLocalFile
+Metodo: postCopyTgt
+MLOC: 9
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.local{JFSLocalFile.java[JFSLocalFile~postCopyTgt~QJFSFile;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.local
+Compilation Unit: JFSLocalFile
+Class Name: JFSLocalFile
+Metodo: postCopyTgt
+MLOC: 9
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.local{JFSLocalFile.java[JFSLocalFile~postCopyTgt~QJFSFile;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.local
+Compilation Unit: JFSLocalFile
+Class Name: JFSLocalFile
+Metodo: postCopyTgt
+MLOC: 9
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/jclouds
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.local{JFSLocalFile.java[JFSLocalFile~getMD5
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.local
+Compilation Unit: JFSLocalFile
+Class Name: JFSLocalFile
+Metodo: getMD5
+MLOC: 5
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.local{JFSLocalFile.java[JFSLocalFile~getMD5
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.local
+Compilation Unit: JFSLocalFile
+Class Name: JFSLocalFile
+Metodo: getMD5
+MLOC: 5
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/util/CodecUtil.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/target/classes/jfs/conf&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/target/classes/jfs/gui/JFSConfigView$1.class
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/jclouds&lt;{JFSJCloudsFile.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/jclouds&lt;{JFSJCloudsFile.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/external&lt;
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/target/classes/jfs/sync/jclouds&lt;(JFSLocalFileProducerFactory.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.local{JFSLocalFile.java[JFSLocalFile^out
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.local{JFSLocalFile.java[JFSLocalFile^out
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/local&lt;(JFSLocalFile.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/resources
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/resources
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.plugins{JFSAttributeAnalyzer.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/src/main/java/jfs/gui&lt;{JFSConfigDirectoryView.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/gui
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/target/classes/jfs/sync&lt;(JFSElement.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.external{JFSExternalFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.external{JFSExternalFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.external{JFSExternalFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.external{JFSExternalFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile^fullPath
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs/sync/JFSFormatter.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSFileProducerManager.java[JFSFileProducerManager~getFactory~QString;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync
+Compilation Unit: JFSFileProducerManager
+Class Name: JFSFileProducerManager
+Metodo: getFactory
+MLOC: 5
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.local{JFSLocalFile.java[JFSLocalFile~postCopySrc~QJFSFile;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.local
+Compilation Unit: JFSLocalFile
+Class Name: JFSLocalFile
+Metodo: postCopySrc
+MLOC: 1
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/target/classes/jfs/resources
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/conf&lt;(JFSConst.class
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/jclouds&lt;{JFSLocalFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~setReadOnly
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: setReadOnly
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~setReadOnly
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: setReadOnly
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~setReadOnly
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: setReadOnly
+MLOC: 1
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/JFSFileProducerManager.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/jclouds&lt;(JFSLocalFileProducer.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.conf{JFSConst.java[JFSConst^TRANSLATION_CLASS
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.conf{JFSConst.java[JFSConst^TRANSLATION_CLASS
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/JFSElement.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/jclouds/JFSLocalFileProducer.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs/sync/jclouds/JFSJCloudsFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/external&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/jclouds/JFSLocalFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSFileProducerManager.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSFileProducerManager.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/jclouds/JFSLocalFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/src/main/resources
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/external/JFSExternalFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/JFSFileProducerManager.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/gui&lt;{JFSConfigDirectoryView.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/util
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/gui&lt;(JFSConfigView.class
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/util
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/util/CodecUtil.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/JFSFile.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~getName
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: getName
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~getName
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: getName
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~getName
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: getName
+MLOC: 1
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/gui&lt;
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{PropertiesProvider.java[PropertiesProvider
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{PropertiesProvider.java[PropertiesProvider
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~getInputStream
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: getInputStream
+MLOC: 5
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~getInputStream
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: getInputStream
+MLOC: 5
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~getInputStream
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: getInputStream
+MLOC: 5
+---------------------------------------------
+resource : /neoedit-jclouds/src/main/java/neoe/jclouds
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/resources/conf/JFSTranslation.properties
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/target/classes/jfs/sync/external/JFSExternalFile.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.local{JFSLocalFile.java[JFSLocalFile
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.local{JFSLocalFile.java[JFSLocalFile
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.local{JFSLocalFile.java[JFSLocalFile
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/jclouds/JFSJCloudsFileProducer.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.external{JFSExternalFile.java[JFSExternalFile~flush
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.external
+Compilation Unit: JFSExternalFile
+Class Name: JFSExternalFile
+Metodo: flush
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFileProducer.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFileProducer.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync&lt;
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/jclouds&lt;{JFSJCloudsFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/JFSElement.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/jclouds/JFSJCloudsFileProducerFactory.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;java.lang(Thread.class[Thread~dispatchUncaughtException~Ljava.lang.Throwable;
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/external
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-jclouds/src/main/java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/jclouds/JFSJCloudsFileProducer.class
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/external&lt;
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~isDirectory
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: isDirectory
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~isDirectory
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: isDirectory
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~isDirectory
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: isDirectory
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSLocalFileProducer.java[JFSLocalFileProducer~JFSLocalFileProducer~QString;
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSLocalFileProducer.java[JFSLocalFileProducer~JFSLocalFileProducer~QString;
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs/sync/jclouds
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/JFSElement.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFileProducer.java[JFSJCloudsFileProducer~getJfsFile~QString;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFileProducer
+Class Name: JFSJCloudsFileProducer
+Metodo: getJfsFile
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFileProducer.java[JFSJCloudsFileProducer~getJfsFile~QString;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFileProducer
+Class Name: JFSJCloudsFileProducer
+Metodo: getJfsFile
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFileProducer.java[JFSJCloudsFileProducer~getJfsFile~QString;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFileProducer
+Class Name: JFSJCloudsFileProducer
+Metodo: getJfsFile
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.util
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.util
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.gui{JFSDirectoryTable.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/target/classes
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/conf
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~getList
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: getList
+MLOC: 20
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~getList
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: getList
+MLOC: 20
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~getList
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: getList
+MLOC: 20
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/target/classes/jfs/conf&lt;(JFSConst.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.gui{JFSConfigView.java[JFSConfigView
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/local&lt;{JFSLocalFile.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync&lt;{JFSElement.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/target/classes/jfs/resources/conf
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.conf{JFSHistoryManager.java[JFSHistoryManager
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/jclouds/JFSLocalFile.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/src/main
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/target/classes/jfs/sync/local&lt;(JFSLocalFile.class
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-jclouds/src/main
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;java.lang(Thread.class[Thread
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSFileProducer.java[JFSFileProducer~getRootPath
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync
+Compilation Unit: JFSFileProducer
+Class Name: JFSFileProducer
+Metodo: getRootPath
+MLOC: 1
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/gui&lt;(JFSConfigView.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.local{JFSLocalFileProducerFactory.java[JFSLocalFileProducerFactory~createProducer~QString;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.local
+Compilation Unit: JFSLocalFileProducerFactory
+Class Name: JFSLocalFileProducerFactory
+Metodo: createProducer
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.local{JFSLocalFileProducerFactory.java[JFSLocalFileProducerFactory~createProducer~QString;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.local
+Compilation Unit: JFSLocalFileProducerFactory
+Class Name: JFSLocalFileProducerFactory
+Metodo: createProducer
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSLocalFileProducer.java[JFSLocalFileProducer
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/conf&lt;
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSFormatter.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSFileProducerManager.java[JFSFileProducerManager~createProducer~QString;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync
+Compilation Unit: JFSFileProducerManager
+Class Name: JFSFileProducerManager
+Metodo: createProducer
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSFileProducerManager.java[JFSFileProducerManager~createProducer~QString;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync
+Compilation Unit: JFSFileProducerManager
+Class Name: JFSFileProducerManager
+Metodo: createProducer
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSFile.java[JFSFile~closeOutputStream
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync
+Compilation Unit: JFSFile
+Class Name: JFSFile
+Metodo: closeOutputStream
+MLOC: 0
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/conf&lt;{JFSConst.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;java.util(ResourceBundle.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;java.util(ResourceBundle.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.conf{JFSConst.java[JFSConst~getInstance
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.conf
+Compilation Unit: JFSConst
+Class Name: JFSConst
+Metodo: getInstance
+MLOC: 3
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/jclouds
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/src/main/java/jfs/sync&lt;{JFSElement.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/target/classes/jfs
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/conf/JFSConst.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/gui/JFSConfigDirectoryView.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/target
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.external{JFSExternalFile.java[JFSExternalFile~getMD5
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.external
+Compilation Unit: JFSExternalFile
+Class Name: JFSExternalFile
+Metodo: getMD5
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.external{JFSExternalFile.java[JFSExternalFile~getMD5
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.external
+Compilation Unit: JFSExternalFile
+Class Name: JFSExternalFile
+Metodo: getMD5
+MLOC: 1
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/pom.xml
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/jclouds&lt;{JFSJCloudsFileProducer.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/jclouds&lt;{JFSJCloudsFileProducer.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/conf&lt;
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/src/main/java/jfs/conf&lt;{JFSConst.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.external{JFSExternalFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.external{JFSExternalFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSFile.java[JFSFile~JFSFile~QJFSFileProducer;~QString;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync
+Compilation Unit: JFSFile
+Class Name: JFSFile
+Metodo: JFSFile
+MLOC: 2
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/gui&lt;
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;java.lang
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/src/main/java/jfs/gui
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.conf{JFSSyncMode.java[JFSSyncMode~useHistory~QJFSElement;~QJFSHistoryItem;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.conf
+Compilation Unit: JFSSyncMode
+Class Name: JFSSyncMode
+Metodo: useHistory
+MLOC: 32
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.conf{JFSSyncMode.java[JFSSyncMode~useHistory~QJFSElement;~QJFSHistoryItem;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.conf
+Compilation Unit: JFSSyncMode
+Class Name: JFSSyncMode
+Metodo: useHistory
+MLOC: 32
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs/sync/jclouds/JFSLocalFileProducer.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/src/main/java/jfs/conf
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync&lt;(JFSFileProducerManager.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.conf{JFSText.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.conf{JFSText.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs/sync/local/JFSLocalFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs/sync/jclouds/PropertiesProvider.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/jclouds/JFSJCloudsFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/conf
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/local/JFSLocalFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/target/classes/jfs/sync/jclouds&lt;(JFSLocalFileProducer.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/target/classes/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/jclouds/JFSJCloudsFileProducer.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~postCopySrc~QJFSFile;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: postCopySrc
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~postCopySrc~QJFSFile;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: postCopySrc
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~postCopySrc~QJFSFile;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: postCopySrc
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.conf{JFSText.java[JFSText~getInstance
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.conf
+Compilation Unit: JFSText
+Class Name: JFSText
+Metodo: getInstance
+MLOC: 3
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/target/classes/jfs/sync/external
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/jclouds&lt;(JFSLocalFile.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/util
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/jclouds&lt;{JFSJCloudsFileProducer.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/jclouds&lt;{JFSJCloudsFileProducer.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/jclouds&lt;{JFSLocalFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.gui{JFSDirectoryTable.java[JFSDirectoryTable
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile^bucket
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/target/classes/jfs/sync/local
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/C:/Users/Kireta/.m2/repository/org/jclouds/jclouds-blobstore/1.2.1/jclouds-blobstore-1.2.1.jar&lt;org.jclouds.blobstore
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFileProducer.java[JFSJCloudsFileProducer~JFSJCloudsFileProducer~QString;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFileProducer
+Class Name: JFSJCloudsFileProducer
+Metodo: JFSJCloudsFileProducer
+MLOC: 12
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFileProducer.java[JFSJCloudsFileProducer~JFSJCloudsFileProducer~QString;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFileProducer
+Class Name: JFSJCloudsFileProducer
+Metodo: JFSJCloudsFileProducer
+MLOC: 12
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.gui{JFSConfigDirectoryView.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.gui{JFSConfigDirectoryView.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.gui{JFSConfigDirectoryView.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/target
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~setIsDirectory
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: setIsDirectory
+MLOC: 5
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~setIsDirectory
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: setIsDirectory
+MLOC: 5
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSFile.java[JFSFile~copy~QJFSFile;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync
+Compilation Unit: JFSFile
+Class Name: JFSFile
+Metodo: copy
+MLOC: 31
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSFile.java[JFSFile~copy~QJFSFile;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync
+Compilation Unit: JFSFile
+Class Name: JFSFile
+Metodo: copy
+MLOC: 31
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSFile.java[JFSFile~copy~QJFSFile;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync
+Compilation Unit: JFSFile
+Class Name: JFSFile
+Metodo: copy
+MLOC: 31
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync&lt;{JFSFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/src/main/java/jfs/util/CodecUtil.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.local{JFSLocalFileProducer.java[JFSLocalFileProducer~JFSLocalFileProducer~QString;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.local
+Compilation Unit: JFSLocalFileProducer
+Class Name: JFSLocalFileProducer
+Metodo: JFSLocalFileProducer
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.local{JFSLocalFileProducer.java[JFSLocalFileProducer~JFSLocalFileProducer~QString;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.local
+Compilation Unit: JFSLocalFileProducer
+Class Name: JFSLocalFileProducer
+Metodo: JFSLocalFileProducer
+MLOC: 1
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/resources
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/target/classes/jfs/sync/JFSFile.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs/sync/jclouds/JFSJCloudsFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.conf{JFSText.java[JFSText
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/local
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/conf&lt;
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFileProducerFactory.java[JFSJCloudsFileProducerFactory~createProducer~QString;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFileProducerFactory
+Class Name: JFSJCloudsFileProducerFactory
+Metodo: createProducer
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFileProducerFactory.java[JFSJCloudsFileProducerFactory~createProducer~QString;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFileProducerFactory
+Class Name: JFSJCloudsFileProducerFactory
+Metodo: createProducer
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFileProducerFactory.java[JFSJCloudsFileProducerFactory~createProducer~QString;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFileProducerFactory
+Class Name: JFSJCloudsFileProducerFactory
+Metodo: createProducer
+MLOC: 1
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/local
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/jclouds
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/src/main/java/jfs/gui&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/jclouds
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/target/classes/jfs/sync/external&lt;(JFSExternalFile.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile^blobStore
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile^blobStore
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/target/classes/jfs/util/CodecUtil.class
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/gui
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/jclouds/JFSJCloudsFileProducer.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/src/main/java/jfs/conf&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/src
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.local{JFSLocalFile.java[JFSLocalFile^canWrite
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.gui{JFSConfigView.java[JFSConfigView~createDirectoryDialog~QComponent;~QString;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.gui
+Compilation Unit: JFSConfigView
+Class Name: JFSConfigView
+Metodo: createDirectoryDialog
+MLOC: 23
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.gui{JFSConfigView.java[JFSConfigView~createDirectoryDialog~QComponent;~QString;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.gui
+Compilation Unit: JFSConfigView
+Class Name: JFSConfigView
+Metodo: createDirectoryDialog
+MLOC: 23
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/jclouds&lt;(JFSJCloudsFile.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/C:/Users/Kireta/.m2/repository/org/jclouds/jclouds-blobstore/1.2.1/jclouds-blobstore-1.2.1.jar
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/JFSElement$ElementState.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/gui&lt;(JFSConfigView$1.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/target/test-classes
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.external{JFSExternalFile.java[JFSExternalFile
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.external{JFSExternalFile.java[JFSExternalFile
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.external{JFSExternalFile.java[JFSExternalFile
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/target/classes/jfs/sync&lt;
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.local{JFSLocalFileProducer.java[JFSLocalFileProducer~getJfsFile~QString;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.local
+Compilation Unit: JFSLocalFileProducer
+Class Name: JFSLocalFileProducer
+Metodo: getJfsFile
+MLOC: 1
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/conf&lt;
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/target/classes/jfs/util
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs/sync/local/JFSLocalFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.local{JFSLocalFile.java[JFSLocalFile~canRead
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.local
+Compilation Unit: JFSLocalFile
+Class Name: JFSLocalFile
+Metodo: canRead
+MLOC: 1
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/jclouds/JFSLocalFileProducerFactory.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/src
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs/resources/conf/JFSConfig.properties
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs/resources/conf/JFSConfig.properties
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs/conf/JFSHistoryManager.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs/conf/JFSHistoryManager.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/local
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/target/classes/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs/sync/JFSCopyStatement.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/JFSElement.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs/gui
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs/sync/JFSFileProducer.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs/sync/JFSFileProducer.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/util&lt;(CodecUtil.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSFormatter.java[JFSFormatter
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/JFSElement$ElementState.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/src/main/java/jfs/gui&lt;{JFSConfigView.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.local{JFSLocalFile.java[JFSLocalFile~getList
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.local
+Compilation Unit: JFSLocalFile
+Class Name: JFSLocalFile
+Metodo: getList
+MLOC: 12
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.local{JFSLocalFile.java[JFSLocalFile~getList
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.local
+Compilation Unit: JFSLocalFile
+Class Name: JFSLocalFile
+Metodo: getList
+MLOC: 12
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/src/main/java/jfs/sync&lt;{JFSFileProducerManager.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/local
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/external/JFSExternalFile.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~JFSJCloudsFile~QJFSFileProducer;~QString;~QBlobStore;~QString;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: JFSJCloudsFile
+MLOC: 9
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~JFSJCloudsFile~QJFSFileProducer;~QString;~QBlobStore;~QString;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: JFSJCloudsFile
+MLOC: 9
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs/sync/external
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/jclouds&lt;
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.local{JFSLocalFileProducer.java[JFSLocalFileProducer
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/target/classes/jfs/sync/jclouds/JFSJCloudsFileProducerFactory.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/target/classes/jfs/sync/jclouds/JFSLocalFileProducer.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/gui/JFSConfigView.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/target/classes/jfs/sync/jclouds&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~preCopyTgt~QJFSFile;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: preCopyTgt
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~preCopyTgt~QJFSFile;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: preCopyTgt
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.conf{JFSConfig.java[JFSConfig
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/jclouds/JFSLocalFile.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/target/classes
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~canWrite
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: canWrite
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~canWrite
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: canWrite
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~canWrite
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: canWrite
+MLOC: 1
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.external{JFSExternalFile.java[JFSExternalFile~preCopyTgt~QJFSFile;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.external
+Compilation Unit: JFSExternalFile
+Class Name: JFSExternalFile
+Metodo: preCopyTgt
+MLOC: 7
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.external{JFSExternalFile.java[JFSExternalFile~preCopyTgt~QJFSFile;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.external
+Compilation Unit: JFSExternalFile
+Class Name: JFSExternalFile
+Metodo: preCopyTgt
+MLOC: 7
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.external{JFSExternalFile.java[JFSExternalFile~preCopyTgt~QJFSFile;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.external
+Compilation Unit: JFSExternalFile
+Class Name: JFSExternalFile
+Metodo: preCopyTgt
+MLOC: 7
+---------------------------------------------
+resource : /aether/aether-examples
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.local{JFSLocalFile.java[JFSLocalFile~getName
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.local
+Compilation Unit: JFSLocalFile
+Class Name: JFSLocalFile
+Metodo: getName
+MLOC: 1
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/jclouds&lt;(JFSJCloudsFileProducer.class
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/jclouds&lt;(JFSJCloudsFileProducer.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/target/classes/jfs/sync/local
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/jclouds&lt;
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSLocalFileProducer.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/external/JFSExternalFile.java
+REGEXP does not match
+---------------------------------------------
+resource : =aether-examples
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/C:/Users/Kireta/.m2/repository/org/jclouds/jclouds-blobstore/1.2.1/jclouds-blobstore-1.2.1.jar&lt;org.jclouds.blobstore(BlobStore.class[BlobStore~newBlob~Ljava.lang.String;
+Proyecto: jfilesync-jclouds
+Jar Location: C:/Users/Kireta/.m2/repository/org/jclouds/jclouds-blobstore/1.2.1/jclouds-blobstore-1.2.1.jar
+Package: org.jclouds.blobstore
+Compilation Unit: BlobStore
+Class Name: BlobStore
+Metodo: newBlob
+MLOC: 0
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSFileProducer.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSFileProducer.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.local{JFSLocalFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.local{JFSLocalFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/external&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/jclouds
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync&lt;(JFSElement.class
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{PropertiesProvider.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/target/classes/jfs/gui/JFSConfigDirectoryView.class
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/external
+REGEXP does not match
+---------------------------------------------
+resource : /neoedit-jclouds/src
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/target/classes/jfs/gui&lt;(JFSConfigView.class
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/jclouds&lt;{JFSLocalFileProducer.java
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/gui&lt;(JFSConfigView$1.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/resources/conf
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSFile.java[JFSFile~copy~QInputStream;~QOutputStream;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync
+Compilation Unit: JFSFile
+Class Name: JFSFile
+Metodo: copy
+MLOC: 31
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSFile.java[JFSFile~copy~QInputStream;~QOutputStream;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync
+Compilation Unit: JFSFile
+Class Name: JFSFile
+Metodo: copy
+MLOC: 31
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSFile.java[JFSFile~getMD5
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync
+Compilation Unit: JFSFile
+Class Name: JFSFile
+Metodo: getMD5
+MLOC: 0
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSFile.java[JFSFile~getMD5
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync
+Compilation Unit: JFSFile
+Class Name: JFSFile
+Metodo: getMD5
+MLOC: 0
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync&lt;{JFSFileProducerManager.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/C:/Users/Kireta/.m2/repository/org/jclouds/jclouds-blobstore/1.2.1/jclouds-blobstore-1.2.1.jar&lt;org.jclouds.blobstore(BlobStore.class[BlobStore
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/target/classes/jfs/conf/JFSConst.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/jclouds/JFSJCloudsFileProducerFactory.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs/sync/JFSComparison.java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/target/classes/jfs/sync/jclouds/JFSJCloudsFile.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/src/main/java
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/src
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/pom.xml
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/jclouds
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/pom.xml
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/pom.xml
+REGEXP does not match
+---------------------------------------------
+java : =aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/external
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/src/main/java/jfs/util
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFileProducerFactory.java[JFSJCloudsFileProducerFactory~cancelProducer~QString;
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFileProducerFactory
+Class Name: JFSJCloudsFileProducerFactory
+Metodo: cancelProducer
+MLOC: 0
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.conf{JFSConst.java[JFSConst^SCHEME_EXTERNAL
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.conf{JFSConst.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.conf{JFSConst.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;java.lang(Thread.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/JFSFileProducerManager.class
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync-jclouds/src/main/java/jfs/sync/jclouds/JFSLocalFileProducerFactory.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/gui&lt;{JFSConfigView.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/src/main/java/jfs/sync/jclouds&lt;{JFSLocalFile.java
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSFileProducer.java[JFSFileProducer
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync{JFSFileProducer.java[JFSFileProducer
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile^list
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile^list
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile^list
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/target/classes/jfs/gui&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/target/classes/jfs/sync
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/local&lt;(JFSLocalFile.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/external/JFSExternalFile.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether/aether-examples/jfilesync/jfilesync-jclouds/src/main/java/jfs/resources/conf/JFSTranslation.properties
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar&lt;java.util(ResourceBundle.class[ResourceBundle~getBundle~Ljava.lang.String;
+---------------------------------------------
+resource : /jfilesync/jfilesync-jclouds/src/main/java/jfs/gui
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/sync/jclouds
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/gui&lt;
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync/jfilesync-jclouds/target/classes/jfs/util&lt;
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.plugins
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync/jfilesync-jclouds/src/main/java/jfs/conf
+REGEXP does not match
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~getMD5
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: getMD5
+MLOC: 5
+---------------------------------------------
+java : =jfilesync-jclouds/src/main/java&lt;jfs.sync.jclouds{JFSJCloudsFile.java[JFSJCloudsFile~getMD5
+Proyecto: jfilesync-jclouds
+Jar Location: src/main/java
+Package: jfs.sync.jclouds
+Compilation Unit: JFSJCloudsFile
+Class Name: JFSJCloudsFile
+Metodo: getMD5
+MLOC: 5
+---------------------------------------------
+FINAL ACCUMULATED RESULT: 1735.0
+---------------------------------------------
