@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NewDataSet" targetNamespace="http://metrics.sourceforge.net/2003/Metrics-First-Flat" xmlns:mstns="http://metrics.sourceforge.net/2003/Metrics-First-Flat" xmlns="http://metrics.sourceforge.net/2003/Metrics-First-Flat" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="Value">
+    <xs:complexType>
+      <xs:attribute name="value" form="unqualified" type="xs:string" />
+      <xs:attribute name="name" form="unqualified" type="xs:string" />
+      <xs:attribute name="source" form="unqualified" type="xs:string" />
+      <xs:attribute name="package" form="unqualified" type="xs:string" />
+      <xs:attribute name="inrange" form="unqualified" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Metrics">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Metric" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="Value" minOccurs="0" maxOccurs="unbounded" />
+              <xs:element name="Values" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element ref="Value" minOccurs="0" maxOccurs="unbounded" />
+                  </xs:sequence>
+                  <xs:attribute name="per" form="unqualified" type="xs:string" />
+                  <xs:attribute name="avg" form="unqualified" type="xs:string" />
+                  <xs:attribute name="stddev" form="unqualified" type="xs:string" />
+                  <xs:attribute name="max" form="unqualified" type="xs:string" />
+                  <xs:attribute name="maxinrange" form="unqualified" type="xs:string" />
+                  <xs:attribute name="total" form="unqualified" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="id" form="unqualified" type="xs:string" />
+            <xs:attribute name="description" form="unqualified" type="xs:string" />
+            <xs:attribute name="max" form="unqualified" type="xs:string" />
+            <xs:attribute name="hint" form="unqualified" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="scope" form="unqualified" type="xs:string" />
+      <xs:attribute name="type" form="unqualified" type="xs:string" />
+      <xs:attribute name="date" form="unqualified" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="Value" />
+        <xs:element ref="Metrics" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
