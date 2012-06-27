@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InteractionHistory Id="local-13" Version="1">
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:16:19.991 ART"
+		Interest="81.153" Kind="propagation"
+		Navigation="org.eclipse.mylyn.core.model.edges.containment" OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-06-26 23:11:16.259 ART" StructureHandle=""
+		StructureKind="java" NumEvents="84" CreationCount="1" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:12:46.583 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:12:46.583 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3Bucket.java#com.mucommander.file.FileAttributes"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:12:05.446 ART"
+		Interest="2.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:11:52.529 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3ProtocolProvider.java[S3ProtocolProvider~getFile~QFileURL;~\[QObject;"
+		StructureKind="java" NumEvents="2" CreationCount="32" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:12:28.471 ART"
+		Interest="7.0" Kind="edit" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:12:06.85 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3ProtocolProvider.java[S3ProtocolProvider~getFile~QFileURL;~\[QObject;"
+		StructureKind="java" NumEvents="7" CreationCount="32" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:16:19.991 ART"
+		Interest="82.017" Kind="propagation"
+		Navigation="org.eclipse.mylyn.core.model.edges.containment" OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-06-26 23:11:30.564 ART"
+		StructureHandle="/MuCommanderApp-libcloud-migracion/src/main/java/com/mucommander"
+		StructureKind="resource" NumEvents="83" CreationCount="9" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:12:03.418 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:12:03.418 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3ProtocolProvider.java#com.mucommander.auth.Credentials"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:16:07.371 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:16:07.371 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3File.java[S3File~getDirectory~QString;"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:14:51.258 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:14:51.258 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3File.java#java.util.Map"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:15:04.752 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:15:04.752 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3File.java[S3File"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:16:19.991 ART"
+		Interest="2.304" Kind="propagation" Navigation="org.eclipse.mylyn.core.model.edges.containment"
+		OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-06-26 23:14:59.807 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3File.java[S3File"
+		StructureKind="java" NumEvents="5" CreationCount="76" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:16:19.991 ART"
+		Interest="24.0" Kind="propagation" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:11:32.920 ART"
+		StructureHandle="/MuCommanderApp-libcloud-migracion/src/main/java/com/mucommander/file/impl/s3/S3File.java"
+		StructureKind="resource" NumEvents="24" CreationCount="14" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:16:19.991 ART"
+		Interest="82.017" Kind="propagation"
+		Navigation="org.eclipse.mylyn.core.model.edges.containment" OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-06-26 23:11:30.564 ART"
+		StructureHandle="/MuCommanderApp-libcloud-migracion/src/main/java/com/mucommander/file/impl"
+		StructureKind="resource" NumEvents="83" CreationCount="9" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:13:06.785 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:13:06.785 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket~S3Bucket~QFileURL;~QIStorageAdapter;~QString;~QMap\&amp;lt;QString;QString;&amp;gt;;"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:13:09.0 ART"
+		Interest="1.0" Kind="edit" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:13:09.0 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket~S3Bucket~QFileURL;~QIStorageAdapter;~QString;~QMap\&amp;lt;QString;QString;&amp;gt;;"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:13:03.634 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:13:03.634 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket~S3Bucket~QFileURL;~QIStorageAdapter;~QString;"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:13:06.52 ART"
+		Interest="1.0" Kind="edit" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:13:06.52 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket~S3Bucket~QFileURL;~QIStorageAdapter;~QString;"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:12:28.471 ART"
+		Interest="15.0" Kind="propagation" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:11:35.104 ART"
+		StructureHandle="/MuCommanderApp-libcloud-migracion/src/main/java/com/mucommander/file/impl/s3/S3ProtocolProvider.java"
+		StructureKind="resource" NumEvents="15" CreationCount="21" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:11:30.564 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.ui.navigator.ProjectExplorer" StartDate="2012-06-26 23:11:30.564 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:12:36.256 ART"
+		Interest="6.4170003" Kind="propagation"
+		Navigation="org.eclipse.mylyn.core.model.edges.containment" OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-06-26 23:11:31.952 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3"
+		StructureKind="java" NumEvents="12" CreationCount="9" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:13:35.801 ART"
+		Interest="1.017" Kind="propagation" Navigation="org.eclipse.mylyn.core.model.edges.containment"
+		OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-06-26 23:13:34.569 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3Object.java#"
+		StructureKind="java" NumEvents="2" CreationCount="54" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:14:52.23 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:14:52.23 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3File.java#com.mucommander.file.FileFactory"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:12:48.517 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:12:48.517 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3Bucket.java#simplecloud.storage.interfaces.IStorageAdapter"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:14:39.200 ART"
+		Interest="23.0" Kind="propagation" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:11:34.448 ART"
+		StructureHandle="/MuCommanderApp-libcloud-migracion/src/main/java/com/mucommander/file/impl/s3/S3Object.java"
+		StructureKind="resource" NumEvents="23" CreationCount="18" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:16:19.991 ART"
+		Interest="81.034004" Kind="propagation"
+		Navigation="org.eclipse.mylyn.core.model.edges.containment" OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-06-26 23:11:25.790 ART" StructureHandle="/MuCommanderApp-libcloud-migracion/src"
+		StructureKind="resource" NumEvents="84" CreationCount="8" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:16:19.991 ART"
+		Interest="91.0" Kind="propagation" Navigation="org.eclipse.mylyn.core.model.edges.containment"
+		OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-06-26 23:11:16.259 ART" StructureHandle="/"
+		StructureKind="resource" NumEvents="91" CreationCount="1" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:14:35.846 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:14:35.846 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~getInputStream~J"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:14:39.200 ART"
+		Interest="2.0" Kind="edit" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:14:38.513 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~getInputStream~J"
+		StructureKind="java" NumEvents="2" CreationCount="69" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:14:52.23 ART"
+		Interest="1.017" Kind="propagation" Navigation="org.eclipse.mylyn.core.model.edges.containment"
+		OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-06-26 23:14:51.258 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3File.java#"
+		StructureKind="java" NumEvents="2" CreationCount="74" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:12:28.471 ART"
+		Interest="6.9" Kind="propagation" Navigation="org.eclipse.mylyn.core.model.edges.containment"
+		OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-06-26 23:11:52.529 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3ProtocolProvider.java[S3ProtocolProvider"
+		StructureKind="java" NumEvents="9" CreationCount="32" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:11:41.500 ART"
+		Interest="4.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:11:35.104 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3ProtocolProvider.java"
+		StructureKind="java" NumEvents="4" CreationCount="21" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:12:28.471 ART"
+		Interest="2.3870006" Kind="propagation"
+		Navigation="org.eclipse.mylyn.core.model.edges.containment" OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-06-26 23:12:15.913 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3ProtocolProvider.java"
+		StructureKind="java" NumEvents="4" CreationCount="21" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:11:35.478 ART"
+		Interest="1.0" Kind="edit" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:11:35.478 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3ProtocolProvider.java"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:13:13.587 ART"
+		Interest="4.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:11:35.993 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3Root.java"
+		StructureKind="java" NumEvents="4" CreationCount="24" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:11:36.617 ART"
+		Interest="2.0" Kind="edit" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:11:36.180 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3Root.java"
+		StructureKind="java" NumEvents="2" CreationCount="24" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:13:23.305 ART"
+		Interest="4.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:11:34.448 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3Object.java"
+		StructureKind="java" NumEvents="4" CreationCount="18" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:11:34.714 ART"
+		Interest="1.0" Kind="edit" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:11:34.714 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3Object.java"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:11:25.790 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.ui.navigator.ProjectExplorer" StartDate="2012-06-26 23:11:25.790 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:12:36.256 ART"
+		Interest="6.4340005" Kind="propagation"
+		Navigation="org.eclipse.mylyn.core.model.edges.containment" OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-06-26 23:11:30.564 ART" StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java"
+		StructureKind="java" NumEvents="16" CreationCount="8" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:16:19.991 ART"
+		Interest="91.0" Kind="propagation" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:11:16.259 ART"
+		StructureHandle="/MuCommanderApp-libcloud-migracion" StructureKind="resource"
+		NumEvents="91" CreationCount="1" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:12:03.418 ART"
+		Interest="1.0" Kind="propagation" Navigation="org.eclipse.mylyn.core.model.edges.containment"
+		OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-06-26 23:12:03.418 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3ProtocolProvider.java#"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:11:16.259 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.ui.navigator.ProjectExplorer" StartDate="2012-06-26 23:11:16.259 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion" StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:16:19.991 ART"
+		Interest="80.153" Kind="propagation"
+		Navigation="org.eclipse.mylyn.core.model.edges.containment" OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-06-26 23:11:17.444 ART" StructureHandle="=MuCommanderApp-libcloud-migracion"
+		StructureKind="resource" NumEvents="83" CreationCount="1" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:12:48.517 ART"
+		Interest="1.017" Kind="propagation" Navigation="org.eclipse.mylyn.core.model.edges.containment"
+		OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-06-26 23:12:46.583 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3Bucket.java#"
+		StructureKind="java" NumEvents="2" CreationCount="44" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:13:52.493 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:13:52.493 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~S3Object~QFileURL;~QIStorageAdapter;~QString;~QString;"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:13:54.396 ART"
+		Interest="1.0" Kind="edit" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:13:54.396 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~S3Object~QFileURL;~QIStorageAdapter;~QString;~QString;"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:16:19.991 ART"
+		Interest="82.017" Kind="propagation" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:11:30.564 ART"
+		StructureHandle="/MuCommanderApp-libcloud-migracion/src/main/java/com/mucommander/file/impl/s3"
+		StructureKind="resource" NumEvents="83" CreationCount="9" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:16:19.991 ART"
+		Interest="81.034004" Kind="propagation"
+		Navigation="org.eclipse.mylyn.core.model.edges.containment" OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-06-26 23:11:25.790 ART" StructureHandle="/MuCommanderApp-libcloud-migracion/src/main"
+		StructureKind="resource" NumEvents="84" CreationCount="8" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:13:35.801 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:13:35.801 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3Object.java#com.mucommander.file.FileFactory"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:15:18.231 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:15:18.231 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3File.java[S3File~initializeOptions~QString;"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:15:49.743 ART"
+		Interest="1.0" Kind="edit" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:15:49.743 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3File.java[S3File~initializeOptions~QString;"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:11:24.730 ART"
+		Interest="5.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.ui.navigator.ProjectExplorer" StartDate="2012-06-26 23:11:17.444 ART"
+		StructureHandle="/MuCommanderApp-libcloud-migracion/pom.xml"
+		StructureKind="resource" NumEvents="5" CreationCount="2" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:11:22.390 ART"
+		Interest="1.0" Kind="edit" Navigation="null"
+		OriginId="org.maven.ide.eclipse.editor.MavenPomEditor" StartDate="2012-06-26 23:11:22.390 ART"
+		StructureHandle="/MuCommanderApp-libcloud-migracion/pom.xml"
+		StructureKind="resource" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:14:59.807 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:14:59.807 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3File.java[S3File^service"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:12:36.256 ART"
+		Interest="6.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:11:31.952 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3Bucket.java"
+		StructureKind="java" NumEvents="6" CreationCount="10" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:11:32.670 ART"
+		Interest="2.0" Kind="edit" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:11:32.342 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3Bucket.java"
+		StructureKind="java" NumEvents="2" CreationCount="10" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:13:34.569 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:13:34.569 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3Object.java#java.io.FileOutputStream"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:14:09.575 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:14:09.575 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~getObjectKey"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:14:18.888 ART"
+		Interest="4.0" Kind="edit" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:14:10.823 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~getObjectKey"
+		StructureKind="java" NumEvents="4" CreationCount="64" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:16:19.991 ART"
+		Interest="81.034004" Kind="propagation"
+		Navigation="org.eclipse.mylyn.core.model.edges.containment" OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-06-26 23:11:25.790 ART" StructureHandle="/MuCommanderApp-libcloud-migracion/src/main/java"
+		StructureKind="resource" NumEvents="84" CreationCount="8" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:13:57.610 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:13:57.610 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~S3Object~QFileURL;~QIStorageAdapter;~QString;~QMap\&amp;lt;QString;QString;&amp;gt;;"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:13:59.856 ART"
+		Interest="2.0" Kind="edit" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:13:58.858 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~S3Object~QFileURL;~QIStorageAdapter;~QString;~QMap\&amp;lt;QString;QString;&amp;gt;;"
+		StructureKind="java" NumEvents="2" CreationCount="61" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:13:45.192 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:13:45.192 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~S3Object~QFileURL;~QIStorageAdapter;~QString;"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:13:47.376 ART"
+		Interest="2.0" Kind="edit" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:13:46.206 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~S3Object~QFileURL;~QIStorageAdapter;~QString;"
+		StructureKind="java" NumEvents="2" CreationCount="56" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:16:19.991 ART"
+		Interest="82.017" Kind="propagation"
+		Navigation="org.eclipse.mylyn.core.model.edges.containment" OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-06-26 23:11:30.564 ART" StructureHandle="/MuCommanderApp-libcloud-migracion/src/main/java/com"
+		StructureKind="resource" NumEvents="83" CreationCount="9" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:13:09.0 ART"
+		Interest="14.0" Kind="propagation" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:11:31.952 ART"
+		StructureHandle="/MuCommanderApp-libcloud-migracion/src/main/java/com/mucommander/file/impl/s3/S3Bucket.java"
+		StructureKind="resource" NumEvents="14" CreationCount="10" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:13:13.587 ART"
+		Interest="6.0" Kind="propagation" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:11:35.993 ART"
+		StructureHandle="/MuCommanderApp-libcloud-migracion/src/main/java/com/mucommander/file/impl/s3/S3Root.java"
+		StructureKind="resource" NumEvents="6" CreationCount="24" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:13:09.0 ART"
+		Interest="1.7340001" Kind="propagation"
+		Navigation="org.eclipse.mylyn.core.model.edges.containment" OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-06-26 23:13:03.634 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket"
+		StructureKind="java" NumEvents="3" CreationCount="46" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:16:19.991 ART"
+		Interest="82.017" Kind="propagation"
+		Navigation="org.eclipse.mylyn.core.model.edges.containment" OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-06-26 23:11:30.564 ART"
+		StructureHandle="/MuCommanderApp-libcloud-migracion/src/main/java/com/mucommander/file"
+		StructureKind="resource" NumEvents="83" CreationCount="9" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:15:54.2 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:15:54.2 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3File.java[S3File~loadFileList~QString;"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:15:58.931 ART"
+		Interest="3.0" Kind="edit" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:15:55.141 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3File.java[S3File~loadFileList~QString;"
+		StructureKind="java" NumEvents="3" CreationCount="83" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:14:45.299 ART"
+		Interest="4.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:11:32.920 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3File.java"
+		StructureKind="java" NumEvents="4" CreationCount="14" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:11:33.559 ART"
+		Interest="2.0" Kind="edit" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:11:33.154 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3File.java"
+		StructureKind="java" NumEvents="2" CreationCount="14" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:15:05.345 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:15:05.345 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3File.java[S3File~S3File~QFileURL;~QIStorageAdapter;~QString;"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:15:10.899 ART"
+		Interest="2.0" Kind="edit" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:15:06.780 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3File.java[S3File~S3File~QFileURL;~QIStorageAdapter;~QString;"
+		StructureKind="java" NumEvents="2" CreationCount="78" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:14:18.888 ART"
+		Interest="3.9359999" Kind="propagation"
+		Navigation="org.eclipse.mylyn.core.model.edges.containment" OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-06-26 23:13:45.192 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3Object.java[S3Object"
+		StructureKind="java" NumEvents="7" CreationCount="56" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:16:08.853 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:16:08.853 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3File.java[S3File~getObjectMetadata~QString;~QString;~Z"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:16:19.991 ART"
+		Interest="3.0" Kind="edit" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:16:10.397 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3File.java[S3File~getObjectMetadata~QString;~QString;~Z"
+		StructureKind="java" NumEvents="3" CreationCount="88" />
+</InteractionHistory>

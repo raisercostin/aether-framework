@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InteractionHistory Id="local-10" Version="1">
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:43:01.519 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 22:43:01.519 ART"
+		StructureHandle="=MuCommanderApp-dasein-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3ProtocolProvider.java[S3ProtocolProvider~getFile~QFileURL;~\[QObject;"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:43:28.304 ART"
+		Interest="5.0" Kind="edit" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 22:43:13.892 ART"
+		StructureHandle="=MuCommanderApp-dasein-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3ProtocolProvider.java[S3ProtocolProvider~getFile~QFileURL;~\[QObject;"
+		StructureKind="java" NumEvents="5" CreationCount="39" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:43:35.46 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 22:43:35.46 ART"
+		StructureHandle="=MuCommanderApp-dasein-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3ProtocolProvider.java[S3ProtocolProvider"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:43:28.304 ART"
+		Interest="4.5" Kind="propagation" Navigation="org.eclipse.mylyn.core.model.edges.containment"
+		OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-06-26 22:43:01.519 ART"
+		StructureHandle="=MuCommanderApp-dasein-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3ProtocolProvider.java[S3ProtocolProvider"
+		StructureKind="java" NumEvents="6" CreationCount="39" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:45:12.516 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 22:45:12.516 ART"
+		StructureHandle="=MuCommanderApp-dasein-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3File.java[S3File~loadFileList~QString;"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:45:14.326 ART"
+		Interest="1.0" Kind="edit" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 22:45:14.326 ART"
+		StructureHandle="=MuCommanderApp-dasein-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3File.java[S3File~loadFileList~QString;"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:45:27.561 ART"
+		Interest="62.017" Kind="propagation"
+		Navigation="org.eclipse.mylyn.core.model.edges.containment" OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-06-26 22:41:42.109 ART"
+		StructureHandle="/MuCommanderApp-dasein-migracion/src/main/java/com/mucommander/file"
+		StructureKind="resource" NumEvents="63" CreationCount="2" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:45:27.561 ART"
+		Interest="61.033997" Kind="propagation"
+		Navigation="org.eclipse.mylyn.core.model.edges.containment" OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-06-26 22:41:08.579 ART" StructureHandle="/MuCommanderApp-dasein-migracion/src/main/java"
+		StructureKind="resource" NumEvents="64" CreationCount="1" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:43:49.164 ART"
+		Interest="6.0" Kind="propagation" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 22:42:09.488 ART"
+		StructureHandle="/MuCommanderApp-dasein-migracion/src/main/java/com/mucommander/file/impl/s3/S3Root.java"
+		StructureKind="resource" NumEvents="6" CreationCount="31" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:42:56.955 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 22:42:56.955 ART"
+		StructureHandle="=MuCommanderApp-dasein-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3ProtocolProvider.java#org.dasein.cloud.google.GoogleAppEngine"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:45:26.407 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 22:45:26.407 ART"
+		StructureHandle="=MuCommanderApp-dasein-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket~S3Bucket~QFileURL;~QBlobStoreSupport;~QCloudStoreObject;"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:45:10.42 ART"
+		Interest="6.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 22:41:53.977 ART"
+		StructureHandle="=MuCommanderApp-dasein-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3File.java"
+		StructureKind="java" NumEvents="6" CreationCount="7" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:41:54.915 ART"
+		Interest="2.0" Kind="edit" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 22:41:54.395 ART"
+		StructureHandle="=MuCommanderApp-dasein-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3File.java"
+		StructureKind="java" NumEvents="2" CreationCount="7" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:45:14.326 ART"
+		Interest="1.7" Kind="propagation" Navigation="org.eclipse.mylyn.core.model.edges.containment"
+		OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-06-26 22:45:12.516 ART"
+		StructureHandle="=MuCommanderApp-dasein-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3File.java[S3File"
+		StructureKind="java" NumEvents="2" CreationCount="59" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:45:27.561 ART"
+		Interest="61.033997" Kind="propagation"
+		Navigation="org.eclipse.mylyn.core.model.edges.containment" OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-06-26 22:41:08.579 ART" StructureHandle="/MuCommanderApp-dasein-migracion/src"
+		StructureKind="resource" NumEvents="64" CreationCount="1" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:44:11.445 ART"
+		Interest="1.717" Kind="propagation" Navigation="org.eclipse.mylyn.core.model.edges.containment"
+		OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-06-26 22:44:08.649 ART"
+		StructureHandle="=MuCommanderApp-dasein-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3Object.java[S3Object"
+		StructureKind="java" NumEvents="3" CreationCount="51" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:43:56.550 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 22:43:56.550 ART"
+		StructureHandle="=MuCommanderApp-dasein-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3Object.java#"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:41:08.579 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.ui.navigator.ProjectExplorer" StartDate="2012-06-26 22:41:08.579 ART"
+		StructureHandle="=MuCommanderApp-dasein-migracion/src\/main\/java"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:45:12.526 ART"
+		Interest="6.5020003" Kind="propagation"
+		Navigation="org.eclipse.mylyn.core.model.edges.containment" OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-06-26 22:41:42.109 ART" StructureHandle="=MuCommanderApp-dasein-migracion/src\/main\/java"
+		StructureKind="java" NumEvents="17" CreationCount="1" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:45:14.326 ART"
+		Interest="10.0" Kind="propagation" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 22:41:53.977 ART"
+		StructureHandle="/MuCommanderApp-dasein-migracion/src/main/java/com/mucommander/file/impl/s3/S3File.java"
+		StructureKind="resource" NumEvents="10" CreationCount="7" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:42:57.725 ART"
+		Interest="1.017" Kind="propagation" Navigation="org.eclipse.mylyn.core.model.edges.containment"
+		OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-06-26 22:42:56.955 ART"
+		StructureHandle="=MuCommanderApp-dasein-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3ProtocolProvider.java#"
+		StructureKind="java" NumEvents="2" CreationCount="37" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:41:59.671 ART"
+		Interest="4.0" Kind="propagation" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 22:41:58.951 ART"
+		StructureHandle="/MuCommanderApp-dasein-migracion/src/main/java/com/mucommander/file/impl/s3/S3FileURLTest.java"
+		StructureKind="resource" NumEvents="4" CreationCount="15" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:45:27.561 ART"
+		Interest="61.033997" Kind="propagation"
+		Navigation="org.eclipse.mylyn.core.model.edges.containment" OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-06-26 22:41:08.579 ART" StructureHandle="/MuCommanderApp-dasein-migracion/src/main"
+		StructureKind="resource" NumEvents="64" CreationCount="1" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:43:35.46 ART"
+		Interest="15.0" Kind="propagation" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 22:42:08.458 ART"
+		StructureHandle="/MuCommanderApp-dasein-migracion/src/main/java/com/mucommander/file/impl/s3/S3ProtocolProvider.java"
+		StructureKind="resource" NumEvents="15" CreationCount="27" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:43:50.769 ART"
+		Interest="4.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 22:42:04.534 ART"
+		StructureHandle="=MuCommanderApp-dasein-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3Object.java"
+		StructureKind="java" NumEvents="4" CreationCount="23" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:42:05.174 ART"
+		Interest="2.0" Kind="edit" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 22:42:04.754 ART"
+		StructureHandle="=MuCommanderApp-dasein-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3Object.java"
+		StructureKind="java" NumEvents="2" CreationCount="23" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:42:57.725 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 22:42:57.725 ART"
+		StructureHandle="=MuCommanderApp-dasein-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3ProtocolProvider.java#com.mucommander.auth.AuthException"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:44:17.993 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 22:44:17.993 ART"
+		StructureHandle="=MuCommanderApp-dasein-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~S3Object~QFileURL;~QBlobStoreSupport;~QString;~QCloudStoreObject;"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:44:21.194 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 22:44:21.194 ART"
+		StructureHandle="=MuCommanderApp-dasein-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~getFile~QInputStream;"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:45:27.561 ART"
+		Interest="1.017" Kind="propagation" Navigation="org.eclipse.mylyn.core.model.edges.containment"
+		OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-06-26 22:45:26.407 ART"
+		StructureHandle="=MuCommanderApp-dasein-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket"
+		StructureKind="java" NumEvents="2" CreationCount="63" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:44:21.194 ART"
+		Interest="13.0" Kind="propagation" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 22:42:04.534 ART"
+		StructureHandle="/MuCommanderApp-dasein-migracion/src/main/java/com/mucommander/file/impl/s3/S3Object.java"
+		StructureKind="resource" NumEvents="13" CreationCount="23" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:45:27.561 ART"
+		Interest="62.017" Kind="propagation"
+		Navigation="org.eclipse.mylyn.core.model.edges.containment" OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-06-26 22:41:42.109 ART" StructureHandle="/MuCommanderApp-dasein-migracion/src/main/java/com"
+		StructureKind="resource" NumEvents="63" CreationCount="2" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:45:27.561 ART"
+		Interest="61.033997" Kind="propagation"
+		Navigation="org.eclipse.mylyn.core.model.edges.containment" OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-06-26 22:41:08.579 ART" StructureHandle="=MuCommanderApp-dasein-migracion"
+		StructureKind="resource" NumEvents="64" CreationCount="1" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:44:08.649 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 22:44:08.649 ART"
+		StructureHandle="=MuCommanderApp-dasein-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3Object.java[S3Object^atts"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:44:15.215 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 22:44:15.215 ART"
+		StructureHandle="=MuCommanderApp-dasein-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~S3Object~QFileURL;~QBlobStoreSupport;~QString;"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:45:24.209 ART"
+		Interest="4.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 22:41:45.37 ART"
+		StructureHandle="=MuCommanderApp-dasein-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3Bucket.java"
+		StructureKind="java" NumEvents="4" CreationCount="3" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:41:50.495 ART"
+		Interest="2.0" Kind="edit" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 22:41:49.645 ART"
+		StructureHandle="=MuCommanderApp-dasein-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3Bucket.java"
+		StructureKind="java" NumEvents="2" CreationCount="3" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:45:27.561 ART"
+		Interest="8.0" Kind="propagation" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 22:41:45.37 ART"
+		StructureHandle="/MuCommanderApp-dasein-migracion/src/main/java/com/mucommander/file/impl/s3/S3Bucket.java"
+		StructureKind="resource" NumEvents="8" CreationCount="3" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:45:27.561 ART"
+		Interest="61.033997" Kind="propagation"
+		Navigation="org.eclipse.mylyn.core.model.edges.containment" OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-06-26 22:41:08.579 ART" StructureHandle="/"
+		StructureKind="resource" NumEvents="64" CreationCount="1" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:42:02.71 ART"
+		Interest="6.0" Kind="propagation" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 22:41:57.787 ART"
+		StructureHandle="/MuCommanderApp-dasein-migracion/src/main/java/com/mucommander/file/impl/s3/S3FileTest.java"
+		StructureKind="resource" NumEvents="6" CreationCount="11" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:41:59.101 ART"
+		Interest="2.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 22:41:58.951 ART"
+		StructureHandle="=MuCommanderApp-dasein-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3FileURLTest.java"
+		StructureKind="java" NumEvents="2" CreationCount="15" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:41:59.671 ART"
+		Interest="2.0" Kind="edit" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 22:41:59.171 ART"
+		StructureHandle="=MuCommanderApp-dasein-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3FileURLTest.java"
+		StructureKind="java" NumEvents="2" CreationCount="15" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:43:49.164 ART"
+		Interest="4.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 22:42:09.488 ART"
+		StructureHandle="=MuCommanderApp-dasein-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3Root.java"
+		StructureKind="java" NumEvents="4" CreationCount="31" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:42:10.118 ART"
+		Interest="2.0" Kind="edit" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 22:42:09.698 ART"
+		StructureHandle="=MuCommanderApp-dasein-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3Root.java"
+		StructureKind="java" NumEvents="2" CreationCount="31" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:42:02.71 ART"
+		Interest="4.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 22:41:57.787 ART"
+		StructureHandle="=MuCommanderApp-dasein-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3FileTest.java"
+		StructureKind="java" NumEvents="4" CreationCount="11" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:41:58.567 ART"
+		Interest="2.0" Kind="edit" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 22:41:58.52 ART"
+		StructureHandle="=MuCommanderApp-dasein-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3FileTest.java"
+		StructureKind="java" NumEvents="2" CreationCount="11" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:44:10.379 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 22:44:10.379 ART"
+		StructureHandle="=MuCommanderApp-dasein-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3Object.java[S3Object^DEFAULT_PERMISSIONS"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:44:11.445 ART"
+		Interest="1.0" Kind="edit" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 22:44:11.445 ART"
+		StructureHandle="=MuCommanderApp-dasein-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3Object.java[S3Object^DEFAULT_PERMISSIONS"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:42:52.291 ART"
+		Interest="4.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 22:42:08.458 ART"
+		StructureHandle="=MuCommanderApp-dasein-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3ProtocolProvider.java"
+		StructureKind="java" NumEvents="4" CreationCount="27" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:43:35.46 ART"
+		Interest="0.3039999" Kind="propagation"
+		Navigation="org.eclipse.mylyn.core.model.edges.containment" OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-06-26 22:43:35.46 ART"
+		StructureHandle="=MuCommanderApp-dasein-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3ProtocolProvider.java"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:42:09.68 ART"
+		Interest="2.0" Kind="edit" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 22:42:08.658 ART"
+		StructureHandle="=MuCommanderApp-dasein-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3ProtocolProvider.java"
+		StructureKind="java" NumEvents="2" CreationCount="27" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:41:42.94 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.ui.navigator.ProjectExplorer" StartDate="2012-06-26 22:41:42.94 ART"
+		StructureHandle="=MuCommanderApp-dasein-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:45:10.42 ART"
+		Interest="6.485" Kind="propagation" Navigation="org.eclipse.mylyn.core.model.edges.containment"
+		OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-06-26 22:41:45.37 ART"
+		StructureHandle="=MuCommanderApp-dasein-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3"
+		StructureKind="java" NumEvents="13" CreationCount="2" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:45:27.561 ART"
+		Interest="62.017" Kind="propagation"
+		Navigation="org.eclipse.mylyn.core.model.edges.containment" OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-06-26 22:41:42.109 ART"
+		StructureHandle="/MuCommanderApp-dasein-migracion/src/main/java/com/mucommander"
+		StructureKind="resource" NumEvents="63" CreationCount="2" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:45:27.561 ART"
+		Interest="62.017" Kind="propagation"
+		Navigation="org.eclipse.mylyn.core.model.edges.containment" OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-06-26 22:41:42.109 ART"
+		StructureHandle="/MuCommanderApp-dasein-migracion/src/main/java/com/mucommander/file/impl"
+		StructureKind="resource" NumEvents="63" CreationCount="2" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:45:27.561 ART"
+		Interest="62.017" Kind="propagation" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 22:41:42.109 ART"
+		StructureHandle="/MuCommanderApp-dasein-migracion/src/main/java/com/mucommander/file/impl/s3"
+		StructureKind="resource" NumEvents="63" CreationCount="2" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 22:45:27.551 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 22:45:27.551 ART"
+		StructureHandle="=MuCommanderApp-dasein-migracion/src\/main\/java&amp;lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket~S3Bucket~QFileURL;~QBlobStoreSupport;~QString;"
+		StructureKind="java" />
+</InteractionHistory>
