@@ -1,0 +1,186 @@
+Loading metrics from: D:\Tesis\aether\trunk\aether-examples\metrics-mylyn\Projects\MuCommanderApp-libcloud-to-aether.xml
+Loading metrics from: D:\Tesis\aether\trunk\aether-examples\metrics-mylyn\Frameworks\aether-core.xml
+Loading metrics from: D:\Tesis\aether\trunk\aether-examples\metrics-mylyn\Frameworks\aether-loader.xml
+Loading metrics from: D:\Tesis\aether\trunk\aether-examples\metrics-mylyn\Frameworks\cloudloop-adapter.xml
+Loading metrics from: D:\Tesis\aether\trunk\aether-examples\metrics-mylyn\Frameworks\cloudloop-main.xml
+Loading metrics from: D:\Tesis\aether\trunk\aether-examples\metrics-mylyn\Frameworks\dasein-aws.xml
+Loading metrics from: D:\Tesis\aether\trunk\aether-examples\metrics-mylyn\Frameworks\dasein-core.xml
+Loading metrics from: D:\Tesis\aether\trunk\aether-examples\metrics-mylyn\Frameworks\dasein-google.xml
+Loading metrics from: D:\Tesis\aether\trunk\aether-examples\metrics-mylyn\Frameworks\jclouds-aws-common.xml
+Loading metrics from: D:\Tesis\aether\trunk\aether-examples\metrics-mylyn\Frameworks\jclouds-aws-s3.xml
+Loading metrics from: D:\Tesis\aether\trunk\aether-examples\metrics-mylyn\Frameworks\jclouds-blobstore.xml
+Loading metrics from: D:\Tesis\aether\trunk\aether-examples\metrics-mylyn\Frameworks\jclouds-core.xml
+Loading metrics from: D:\Tesis\aether\trunk\aether-examples\metrics-mylyn\Frameworks\jclouds-s3.xml
+Loading metrics from: D:\Tesis\aether\trunk\aether-examples\metrics-mylyn\Frameworks\jets3t.xml
+Loading metrics from: D:\Tesis\aether\trunk\aether-examples\metrics-mylyn\Frameworks\libcloud.xml
+resource : /MuCommanderApp-libcloud-migraciones-to-aether/src/main
+REGEXP does not match
+---------------------------------------------
+java : 
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-libcloud-migraciones-to-aether/src/main/java/com/mucommander/desktop
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-libcloud-migraciones-to-aether/src/main/java&lt;com.mucommander.file{AbstractFileClassLoader.java#
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-libcloud-migraciones-to-aether/src/main/java&lt;com.mucommander.extension{ExtensionManager.java[ExtensionManager~addToClassPath~QAbstractFile;
+Proyecto: MuCommanderApp-libcloud-migraciones-to-aether
+Jar Location: src/main/java
+Package: com.mucommander.extension
+Compilation Unit: ExtensionManager
+Class Name: ExtensionManager
+Metodo: addToClassPath
+MLOC: 1
+---------------------------------------------
+java : =MuCommanderApp-libcloud-migraciones-to-aether/src/main/java&lt;com.mucommander.extension{ExtensionManager.java[ExtensionManager~addToClassPath~QAbstractFile;
+---------------------------------------------
+java : =MuCommanderApp-libcloud-migraciones-to-aether/src/main/java&lt;com.mucommander.file{AbstractFileClassLoader.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-libcloud-migraciones-to-aether/src/main/java&lt;com.mucommander.file{AbstractFileClassLoader.java
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-libcloud-migraciones-to-aether/src/main/java/com
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-libcloud-migraciones-to-aether/src/main/java&lt;com.mucommander.file{AbstractFileClassLoader.java#com.tesis.aether.loader.core.JavasistClassLoader
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-libcloud-migraciones-to-aether
+REGEXP does not match
+---------------------------------------------
+resource : =MuCommanderApp-libcloud-migraciones-to-aether
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-libcloud-migraciones-to-aether/src/main/java&lt;com.mucommander.desktop.kde
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-libcloud-migraciones-to-aether/src/main/java&lt;com.mucommander.extension{ExtensionManager.java[ExtensionManager~isInExtensionsPath~QAbstractFile;
+Proyecto: MuCommanderApp-libcloud-migraciones-to-aether
+Jar Location: src/main/java
+Package: com.mucommander.extension
+Compilation Unit: ExtensionManager
+Class Name: ExtensionManager
+Metodo: isInExtensionsPath
+MLOC: 1
+---------------------------------------------
+java : =MuCommanderApp-libcloud-migraciones-to-aether/src/main/java&lt;com.mucommander.extension{ExtensionManager.java[ExtensionManager~isInExtensionsPath~QAbstractFile;
+---------------------------------------------
+java : =MuCommanderApp-libcloud-migraciones-to-aether/src/main/java&lt;com.mucommander.extension{ExtensionManager.java[ExtensionManager~isInClasspath~QAbstractFile;
+Proyecto: MuCommanderApp-libcloud-migraciones-to-aether
+Jar Location: src/main/java
+Package: com.mucommander.extension
+Compilation Unit: ExtensionManager
+Class Name: ExtensionManager
+Metodo: isInClasspath
+MLOC: 8
+---------------------------------------------
+java : =MuCommanderApp-libcloud-migraciones-to-aether/src/main/java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-libcloud-migraciones-to-aether/src/main/java&lt;com.mucommander.file
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-libcloud-migraciones-to-aether/src/main/java&lt;com.mucommander.file
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-libcloud-migraciones-to-aether/src/main/java&lt;com.mucommander.extension
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-libcloud-migraciones-to-aether/src/main/java&lt;com.mucommander.extension
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-libcloud-migraciones-to-aether/pom.xml
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-libcloud-migraciones-to-aether/src/main/java&lt;com.mucommander.extension{ExtensionManager.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-libcloud-migraciones-to-aether/src/main/java&lt;com.mucommander.extension{ExtensionManager.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-libcloud-migraciones-to-aether/src/main/java&lt;com.mucommander.extension{ExtensionManager.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-libcloud-migraciones-to-aether/src/main/java&lt;com.mucommander.file{AbstractFile.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-libcloud-migraciones-to-aether/src/main/java&lt;com.mucommander.extension{ExtensionManager.java[ExtensionManager~getExtensionsFile~QString;
+Proyecto: MuCommanderApp-libcloud-migraciones-to-aether
+Jar Location: src/main/java
+Package: com.mucommander.extension
+Compilation Unit: ExtensionManager
+Class Name: ExtensionManager
+Metodo: getExtensionsFile
+MLOC: 2
+---------------------------------------------
+java : =MuCommanderApp-libcloud-migraciones-to-aether/src/main/java&lt;com.mucommander.extension{ExtensionManager.java[ExtensionManager|1
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-libcloud-migraciones-to-aether/src/main/java&lt;com.mucommander.extension{ExtensionManager.java[ExtensionManager|1
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-libcloud-migraciones-to-aether/src/main/java/com/mucommander/desktop/kde
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-libcloud-migraciones-to-aether/src/main/java&lt;com.mucommander.extension{ExtensionManager.java[ExtensionManager
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-libcloud-migraciones-to-aether/src/main/java&lt;com.mucommander.extension{ExtensionManager.java[ExtensionManager
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-libcloud-migraciones-to-aether/src
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-libcloud-migraciones-to-aether/src/main/resources
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-libcloud-migraciones-to-aether/src/main/resources
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-libcloud-migraciones-to-aether/src/main/java
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-libcloud-migraciones-to-aether/src/main/java/com/mucommander/extension
+REGEXP does not match
+---------------------------------------------
+resource : /
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-libcloud-migraciones-to-aether/src/main/java&lt;com.mucommander.file{AbstractFileClassLoader.java[AbstractFileClassLoader
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-libcloud-migraciones-to-aether/src/main/java/com/mucommander/file/AbstractFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-libcloud-migraciones-to-aether/src/main/java/com/mucommander/file/AbstractFileClassLoader.java
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-libcloud-migraciones-to-aether/src/main/resources
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-libcloud-migraciones-to-aether/src/main/java/com/mucommander/extension/ExtensionManager.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-libcloud-migraciones-to-aether/src/main/java&lt;com.mucommander.extension{ExtensionManager.java[ExtensionManager^loader
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-libcloud-migraciones-to-aether
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-libcloud-migraciones-to-aether/src/main/java/com/mucommander/file
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-libcloud-migraciones-to-aether/src/main/java/com/mucommander
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-libcloud-migraciones-to-aether/src/main/resources/config.xml
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-libcloud-migraciones-to-aether/src/main/resources/config.xml
+REGEXP does not match
+---------------------------------------------
+FINAL ACCUMULATED RESULT: 12.0
+---------------------------------------------

@@ -1,0 +1,2746 @@
+Loading metrics from: D:\Tesis\aether\trunk\aether-examples\metrics-mylyn\Projects\MuCommanderApp-dasein.xml
+Loading metrics from: D:\Tesis\aether\trunk\aether-examples\metrics-mylyn\Frameworks\aether-core.xml
+Loading metrics from: D:\Tesis\aether\trunk\aether-examples\metrics-mylyn\Frameworks\aether-loader.xml
+Loading metrics from: D:\Tesis\aether\trunk\aether-examples\metrics-mylyn\Frameworks\cloudloop-adapter.xml
+Loading metrics from: D:\Tesis\aether\trunk\aether-examples\metrics-mylyn\Frameworks\cloudloop-main.xml
+Loading metrics from: D:\Tesis\aether\trunk\aether-examples\metrics-mylyn\Frameworks\dasein-aws.xml
+Loading metrics from: D:\Tesis\aether\trunk\aether-examples\metrics-mylyn\Frameworks\dasein-core.xml
+Loading metrics from: D:\Tesis\aether\trunk\aether-examples\metrics-mylyn\Frameworks\dasein-google.xml
+Loading metrics from: D:\Tesis\aether\trunk\aether-examples\metrics-mylyn\Frameworks\jclouds-aws-common.xml
+Loading metrics from: D:\Tesis\aether\trunk\aether-examples\metrics-mylyn\Frameworks\jclouds-aws-s3.xml
+Loading metrics from: D:\Tesis\aether\trunk\aether-examples\metrics-mylyn\Frameworks\jclouds-blobstore.xml
+Loading metrics from: D:\Tesis\aether\trunk\aether-examples\metrics-mylyn\Frameworks\jclouds-core.xml
+Loading metrics from: D:\Tesis\aether\trunk\aether-examples\metrics-mylyn\Frameworks\jclouds-s3.xml
+Loading metrics from: D:\Tesis\aether\trunk\aether-examples\metrics-mylyn\Frameworks\jets3t.xml
+Loading metrics from: D:\Tesis\aether\trunk\aether-examples\metrics-mylyn\Frameworks\libcloud.xml
+resource : /aether-examples/mu-commander/mu-commander-dasein/target/classes/log4j.properties
+REGEXP does not match
+---------------------------------------------
+java : 
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File^load
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-original/src
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-dasein/src/main/java/com/mucommander/file/impl/s3/S3File.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.ui.main{FolderPanel.java[FolderPanel[ChangeFolderThread~run
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.ui.main
+Compilation Unit: FolderPanel
+Class Name: FolderPanel.ChangeFolderThread
+Metodo: run
+MLOC: 143
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.ui.main{FolderPanel.java[FolderPanel[ChangeFolderThread~run
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~S3Object~QFileURL;~QBlobStoreSupport;~QString;~QCloudStoreObject;
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Object
+Class Name: S3Object
+Metodo: S3Object
+MLOC: 3
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~S3Object~QFileURL;~QBlobStoreSupport;~QString;~QCloudStoreObject;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~S3Object~QFileURL;~QBlobStoreSupport;~QString;~QCloudStoreObject;
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/java/com/mucommander/ui/dialog/server
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.job{TransferFileJob.java[TransferFileJob~copyFile~QAbstractFile;~QAbstractFile;~Z
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.job
+Compilation Unit: TransferFileJob
+Class Name: TransferFileJob
+Metodo: copyFile
+MLOC: 95
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.job{TransferFileJob.java[TransferFileJob~copyFile~QAbstractFile;~QAbstractFile;~Z
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.text{Translator.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.text{Translator.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.text{Translator.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/jdk1.6.0_25/jre/lib/rt.jar&lt;java.lang(String.class[String
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/jdk1.6.0_25/jre/lib/rt.jar&lt;java.lang(String.class[String
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file{SyncedFileAttributes.java[SyncedFileAttributes
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-original
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/resources
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/resources
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/resources
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-core/2011.02/dasein-cloud-core-2011.02.jar&lt;org.dasein.cloud.storage(BlobStoreSupport.class[BlobStoreSupport~download~Lorg.dasein.cloud.storage.CloudStoreObject;~Ljava.io.File;
+Proyecto: MuCommanderApp-dasein
+Jar Location: C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-core/2011.02/dasein-cloud-core-2011.02.jar
+Package: org.dasein.cloud.storage
+Compilation Unit: BlobStoreSupport
+Class Name: BlobStoreSupport
+Metodo: download
+MLOC: 0
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws.platform(CloudFront.class[CloudFront
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws.platform(CloudFront.class[CloudFront
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws.platform(CloudFront.class[CloudFront
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws.platform(CloudFront.class[CloudFront
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/java/com/mucommander/ui/dialog/file/MkdirDialog.java
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/java/com/mucommander/file/impl/s3/S3Root.java
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/java/com/mucommander/file/impl/s3/S3Root.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jclouds/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object[S3ObjectFileAttributes~fetchAttributes
+Proyecto: MuCommanderApp-jclouds
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Object
+Class Name: S3Object.S3ObjectFileAttributes
+Metodo: fetchAttributes
+MLOC: 39
+---------------------------------------------
+java : =MuCommanderApp-jclouds/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object[S3ObjectFileAttributes~fetchAttributes
+---------------------------------------------
+java : =MuCommanderApp-jclouds/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object[S3ObjectFileAttributes~fetchAttributes
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-dasein/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /dasein-cloud-core/src
+REGEXP does not match
+---------------------------------------------
+resource : /dasein-cloud-core/src
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Root.java[S3Root[aaa~aaa~QAWScloud;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Root.java[S3Root[aaa~aaa~QAWScloud;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java#java.io.IOException
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jclouds/src/main/java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~processObject~QCloudStoreObject;~QList\&lt;QCloudStoreObject;&gt;;
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3File
+Class Name: S3File
+Metodo: processObject
+MLOC: 40
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~processObject~QCloudStoreObject;~QList\&lt;QCloudStoreObject;&gt;;
+---------------------------------------------
+java : =aether-examples/mu-commander/mu-commander-jclouds/src/main/java/com/mucommander/file/impl/s3&lt;{S3Object.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/mu-commander/mu-commander-dasein/src/main/java/com/mucommander/file/impl/s3&lt;{S3Root.java
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jclouds/src/main/java/com/mucommander/file/impl/s3
+REGEXP does not match
+---------------------------------------------
+resource : /
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-dasein/src/main/java/neoe
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-dasein/src/main/java/neoe
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-dasein/src/main/java/neoe
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file{FileURL.java[FileURL~setPath~QString;
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file
+Compilation Unit: FileURL
+Class Name: FileURL
+Metodo: setPath
+MLOC: 7
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-core/2011.02/dasein-cloud-core-2011.02.jar&lt;org.dasein.cloud.storage(CloudStoreObject.class[CloudStoreObject
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-core/2011.02/dasein-cloud-core-2011.02.jar&lt;org.dasein.cloud.storage(CloudStoreObject.class[CloudStoreObject
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-core/2011.02/dasein-cloud-core-2011.02.jar&lt;org.dasein.cloud.storage(CloudStoreObject.class[CloudStoreObject
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Root.java#org.dasein.cloud.platform.CDNSupport
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~existCloudStoreObject~QCloudStoreObject;
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3File
+Class Name: S3File
+Metodo: existCloudStoreObject
+MLOC: 5
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.ui.dialog.file{MkdirDialog.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.ui.dialog.file{MkdirDialog.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/java/dictionary.txt
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/java/dictionary.txt
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jclouds/src/main/java&lt;com.mucommander.ui.dialog.server{S3Panel.java[S3Panel~S3Panel~QServerConnectDialog;~QMainFrame;
+Proyecto: MuCommanderApp-jclouds
+Jar Location: src/main/java
+Package: com.mucommander.ui.dialog.server
+Compilation Unit: S3Panel
+Class Name: S3Panel
+Metodo: S3Panel
+MLOC: 18
+---------------------------------------------
+java : =MuCommanderApp-jclouds/src/main/java&lt;com.mucommander.ui.dialog.server{S3Panel.java[S3Panel~S3Panel~QServerConnectDialog;~QMainFrame;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java#com.mucommander.io.RandomAccessInputStream
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Root.java[S3Root[aaa~aaa~QAWSCloud;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Root.java[S3Root[aaa~aaa~QAWSCloud;
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-dasein/src/main/java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-dasein/src/main/java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-dasein/src/main/java
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jclouds/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jclouds/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-original/src/main
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~processObject~QString;~QTreeLoader;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~processObject~QString;~QTreeLoader;
+---------------------------------------------
+resource : /dasein-cloud-core/src/main/java/org/dasein/cloud
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jclouds/src/main/java&lt;com.mucommander.ui.action.impl{MkdirAction.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jclouds/src/main/java&lt;com.mucommander.ui.dialog.about{AboutDialog.java[AboutDialog
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/mu-commander/mu-commander-dasein/src/main/java/com/mucommander/file&lt;{AbstractFile.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File^l
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws.platform(CloudFront.class
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws.platform(CloudFront.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-dasein/src/main/java/neoe/dasein/DaseinAdapter.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-dasein/src/main/java/neoe/dasein/DaseinAdapter.java
+REGEXP does not match
+---------------------------------------------
+resource : /dasein-cloud-core
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jclouds/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object[S3ObjectFileAttributes
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-jclouds/src/main/java/com/mucommander/file/FileFactory.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~delete
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Object
+Class Name: S3Object
+Metodo: delete
+MLOC: 24
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~delete
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~delete
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object[S3ObjectFileAttributes~fetchAttributes
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Object
+Class Name: S3Object.S3ObjectFileAttributes
+Metodo: fetchAttributes
+MLOC: 39
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object[S3ObjectFileAttributes~fetchAttributes
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object[S3ObjectFileAttributes~fetchAttributes
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File^files
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File^files
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file{AbstractFile.java[AbstractFile~getInputStream
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file
+Compilation Unit: AbstractFile
+Class Name: AbstractFile
+Metodo: getInputStream
+MLOC: 2
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file{AbstractFile.java[AbstractFile~getInputStream
+---------------------------------------------
+java : =aether-examples/mu-commander/mu-commander-dasein/src/main/java/com/mucommander/file/impl/s3&lt;{S3ProtocolProvider.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws.storage(S3Method.class[S3Method~invoke~Ljava.lang.String;~Ljava.lang.String;
+Proyecto: MuCommanderApp-dasein
+Jar Location: C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar
+Package: org.dasein.cloud.aws.storage
+Compilation Unit: S3Method
+Class Name: S3Method
+Metodo: invoke
+MLOC: 1
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws.storage(S3Method.class[S3Method~invoke~Ljava.lang.String;~Ljava.lang.String;
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws.storage(S3Method.class[S3Method~invoke~Ljava.lang.String;~Ljava.lang.String;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Root.java[S3Root~mkdir
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Root
+Class Name: S3Root
+Metodo: mkdir
+MLOC: 6
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Root.java[S3Root~mkdir
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file{AbstractFile.java[AbstractFile
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file{AbstractFile.java[AbstractFile
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~RefreshFileList~QString;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~RefreshFileList~QString;
+---------------------------------------------
+java : =MuCommanderApp-jclouds/src/main/java&lt;com.mucommander.ui.dialog.about
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Root.java#com.mucommander.file.*
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.ui.main{FolderPanel.java[FolderPanel
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jclouds/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~getObjectKey~Z
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file{FileFactory.java[FileFactory
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~getInputStream
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Object
+Class Name: S3Object
+Metodo: getInputStream
+MLOC: 1
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander{AppLogger.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/mu-commander/mu-commander-jclouds/src/main/java/com/mucommander/conf&lt;{FileConfigurationSourceTest.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-core/2011.02/dasein-cloud-core-2011.02.jar&lt;org.dasein.cloud.storage(BlobStoreSupport.class[BlobStoreSupport~listFiles~Ljava.lang.String;
+Proyecto: MuCommanderApp-dasein
+Jar Location: C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-core/2011.02/dasein-cloud-core-2011.02.jar
+Package: org.dasein.cloud.storage
+Compilation Unit: BlobStoreSupport
+Class Name: BlobStoreSupport
+Metodo: listFiles
+MLOC: 0
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-core/2011.02/dasein-cloud-core-2011.02.jar&lt;org.dasein.cloud.storage(BlobStoreSupport.class[BlobStoreSupport~listFiles~Ljava.lang.String;
+---------------------------------------------
+resource : /aether-examples/neoedit
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-dasein/pom.xml
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Root.java[S3Root~S3Root~QFileURL;~QS3Service;
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Root
+Class Name: S3Root
+Metodo: S3Root
+MLOC: 10
+---------------------------------------------
+java : =aether-examples/mu-commander/mu-commander-dasein/src/main/java/com/mucommander/file/impl/s3&lt;{S3File.java
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/java/com/mucommander/ui/main/FolderPanel.java
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/java/com/mucommander/ui/main/FolderPanel.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/mu-commander/mu-commander-dasein/target/classes/com/mucommander/file/impl/s3&lt;(S3Object$S3ObjectFileAttributes.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-dasein/target/classes/com/mucommander/file/impl/s3/S3File.class
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/resources
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/resources
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-core/2011.02/dasein-cloud-core-2011.02.jar&lt;org.dasein.cloud.storage(CloudStoreObject.class
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-core/2011.02/dasein-cloud-core-2011.02.jar&lt;org.dasein.cloud.storage(CloudStoreObject.class
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-core/2011.02/dasein-cloud-core-2011.02.jar&lt;org.dasein.cloud.storage(CloudStoreObject.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-dasein/src/main/java/com/mucommander/file/impl/s3
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-dasein/target/classes/com/mucommander/file/impl
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~isDirectory
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3File
+Class Name: S3File
+Metodo: isDirectory
+MLOC: 1
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~isDirectory
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~isDirectory
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-core/2011.02/dasein-cloud-core-2011.02.jar&lt;org.dasein.cloud.storage(BlobStoreSupport.class[BlobStoreSupport~createDirectory~Ljava.lang.String;~Z
+Proyecto: MuCommanderApp-dasein
+Jar Location: C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-core/2011.02/dasein-cloud-core-2011.02.jar
+Package: org.dasein.cloud.storage
+Compilation Unit: BlobStoreSupport
+Class Name: BlobStoreSupport
+Metodo: createDirectory
+MLOC: 0
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-core/2011.02/dasein-cloud-core-2011.02.jar&lt;org.dasein.cloud.storage(BlobStoreSupport.class[BlobStoreSupport~createDirectory~Ljava.lang.String;~Z
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-core/2011.02/dasein-cloud-core-2011.02.jar&lt;org.dasein.cloud.storage(BlobStoreSupport.class[BlobStoreSupport~createDirectory~Ljava.lang.String;~Z
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/java/com/mucommander/conf
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-dasein
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-dasein
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-dasein
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-dasein/src/main/java/com/mucommander/file/AbstractFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jclouds/src/main/java/com/mucommander/ui/dialog
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.job{TransferFileJob.java[TransferFileJob
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file{ProtocolFile.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file{ProtocolFile.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws(AWSCloud.class
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws(AWSCloud.class
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket~ls
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Bucket
+Class Name: S3Bucket
+Metodo: ls
+MLOC: 1
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket~ls
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~processObject
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Root.java[S3Root[aaa~aaa
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Root.java[S3Root[aaa~aaa
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/java/com
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jclouds/src/main/java/com/mucommander/ui/dialog/server
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/mu-commander/mu-commander-jclouds/src/main/java/com/mucommander/file/impl/local
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/java/com/mucommander/job/DeleteJob.java
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/java/com/mucommander/job/DeleteJob.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-jclouds/src/main/java/com/mucommander/file/impl/local
+REGEXP does not match
+---------------------------------------------
+resource : /dasein-cloud-core/src/main/java/org/dasein/cloud/platform/CDNSupport.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object[S3ObjectFileAttributes~S3ObjectFileAttributes~QCloudStoreObject;
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Object
+Class Name: S3Object.S3ObjectFileAttributes
+Metodo: S3ObjectFileAttributes
+MLOC: 3
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~S3Object
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~getTotalSpace
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3File
+Class Name: S3File
+Metodo: getTotalSpace
+MLOC: 2
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java#com.mucommander.io.StreamUtils
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java#com.mucommander.io.StreamUtils
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync-migraciones/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop&lt;{JFSCloudLoopFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-dasein/src/main/java/com/mucommander/conf/impl/MuConfiguration.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~copyRemotelyTo~QAbstractFile;
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Object
+Class Name: S3Object
+Metodo: copyRemotelyTo
+MLOC: 25
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~copyRemotelyTo~QAbstractFile;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~copyRemotelyTo~QAbstractFile;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file{SimpleFileAttributes.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file{SimpleFileAttributes.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-dasein/src/main/java/com/mucommander/file
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jclouds/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~getObjectKey
+---------------------------------------------
+java : =MuCommanderApp-jclouds/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~getObjectKey
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/mu-commander/mu-commander-dasein/src/main/java/com/mucommander/conf/impl&lt;
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket[S3BucketFileAttributes
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket[S3BucketFileAttributes
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket[S3BucketFileAttributes
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-jclouds
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~getFile~QInputStream;
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Object
+Class Name: S3Object
+Metodo: getFile
+MLOC: 15
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~getFile~QInputStream;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~getFile~QInputStream;
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-dasein/target/classes/com/mucommander/file/impl/s3/S3Root.class
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~getIOException~QS3ServiceException;~QFileURL;
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3File
+Class Name: S3File
+Metodo: getIOException
+MLOC: 1
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~getIOException~QS3ServiceException;~QFileURL;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~listObjects~QString;~QString;~QS3File;
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3File
+Class Name: S3File
+Metodo: listObjects
+MLOC: 27
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~listObjects~QString;~QString;~QS3File;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~listObjects~QString;~QString;~QS3File;
+---------------------------------------------
+java : =MuCommanderApp-jclouds/src/main/java&lt;com.mucommander.file.impl.s3{S3Root.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jclouds/src/main/java&lt;com.mucommander.file.impl.s3{S3Root.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jclouds/src/main/java&lt;com.mucommander.file.impl.s3{S3Root.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket~S3Bucket~QFileURL;~QBlobStoreSupport;~Qorg.jets3t.service.model.S3Bucket;
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Bucket
+Class Name: S3Bucket
+Metodo: S3Bucket
+MLOC: 3
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket~S3Bucket~QFileURL;~QBlobStoreSupport;~Qorg.jets3t.service.model.S3Bucket;
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-original/src/main/java/com/mucommander/file
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jclouds/src/main/java/com/mucommander/ui/action/impl/MkdirAction.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/mu-commander/mu-commander-jclouds/src/main/java/com/mucommander/file/impl/s3&lt;
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java#java.io.OutputStream!2
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/java/com/mucommander/file/impl/s3/S3Object.java
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/java/com/mucommander/text
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~ls
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Object
+Class Name: S3Object
+Metodo: ls
+MLOC: 1
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~ls
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~ls
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/java/com/mucommander/file/impl/s3/S3Bucket.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object[S3ObjectFileAttributes~setAttributes~QString;
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Object
+Class Name: S3Object.S3ObjectFileAttributes
+Metodo: setAttributes
+MLOC: 5
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object[S3ObjectFileAttributes~setAttributes~QString;
+---------------------------------------------
+resource : /aether-examples/jfilesync-migraciones/jfilesync-cloudloop/src/main/java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file{SyncedFileAttributes.java[SyncedFileAttributes~exists
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file
+Compilation Unit: SyncedFileAttributes
+Class Name: SyncedFileAttributes
+Metodo: exists
+MLOC: 2
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~processObject~QCloudStoreObject;~QTreeLoader;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~processObject~QCloudStoreObject;~QTreeLoader;
+---------------------------------------------
+java : =MuCommanderApp-jclouds/src/main/java&lt;com.mucommander.file
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-dasein/src/main/java/neoe/dasein&lt;{DaseinAdapter.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-dasein/src/main/java/neoe/dasein&lt;{DaseinAdapter.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws.storage(S3.class[S3
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws.storage(S3.class[S3
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws.storage(S3.class[S3
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws.storage(S3.class[S3
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~getInputStream~J
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~getInputStream~J
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~getInputStream~J
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-dasein/target/classes/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-dasein/src/main/java/com/mucommander/file/impl
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket[S3BucketFileAttributes~setAttributes~QCloudStoreObject;
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Bucket
+Class Name: S3Bucket.S3BucketFileAttributes
+Metodo: setAttributes
+MLOC: 7
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket[S3BucketFileAttributes~setAttributes~QCloudStoreObject;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket[S3BucketFileAttributes~setAttributes~QCloudStoreObject;
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-dasein/src/main/resources/log4j.properties
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-dasein/src/main/java/neoe/dasein
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-dasein/pom.xml
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-dasein/pom.xml
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-dasein/pom.xml
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~getNameObject~QString;
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3File
+Class Name: S3File
+Metodo: getNameObject
+MLOC: 11
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~getNameObject~QString;
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-core/2011.02/dasein-cloud-core-2011.02.jar&lt;org.dasein.cloud.storage
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync-migraciones/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jclouds/src/main/java/com
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~voiprocessObject~QCloudStoreObject;~QList\&lt;QCloudStoreObject;&gt;;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Root.java[S3Root~getFileAttributes
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Root
+Class Name: S3Root
+Metodo: getFileAttributes
+MLOC: 1
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Root.java[S3Root~getFileAttributes
+---------------------------------------------
+java : =MuCommanderApp-jclouds/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~getDirectory~QString;
+---------------------------------------------
+java : =MuCommanderApp-jclouds/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~getDirectory~QString;
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-dasein/target/classes/com/mucommander
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws.storage(S3.class[S3~removeFile~Ljava.lang.String;~Ljava.lang.String;
+Proyecto: MuCommanderApp-dasein
+Jar Location: C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar
+Package: org.dasein.cloud.aws.storage
+Compilation Unit: S3
+Class Name: S3
+Metodo: removeFile
+MLOC: 6
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws.storage(S3.class[S3~removeFile~Ljava.lang.String;~Ljava.lang.String;
+---------------------------------------------
+java : =aether-examples/mu-commander/mu-commander-dasein/src/main/java/com/mucommander/file/impl/s3&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~getFileAttributes
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3File
+Class Name: S3File
+Metodo: getFileAttributes
+MLOC: 0
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~getFileAttributes
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~getFileAttributes
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Root.java[S3Root~S3Root~QFileURL;~QBlobStoreSupport;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Root.java[S3Root~S3Root~QFileURL;~QBlobStoreSupport;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Root.java[S3Root~S3Root~QFileURL;~QBlobStoreSupport;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java#com.mucommander.io.FileTransferException
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.conf.impl{MuConfiguration.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-original/src/main/java/com
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-core/2011.02/dasein-cloud-core-2011.02.jar&lt;org.dasein.cloud.storage(BlobStoreSupport.class[BlobStoreSupport~removeDirectory~Ljava.lang.String;
+Proyecto: MuCommanderApp-dasein
+Jar Location: C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-core/2011.02/dasein-cloud-core-2011.02.jar
+Package: org.dasein.cloud.storage
+Compilation Unit: BlobStoreSupport
+Class Name: BlobStoreSupport
+Metodo: removeDirectory
+MLOC: 0
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-core/2011.02/dasein-cloud-core-2011.02.jar&lt;org.dasein.cloud.storage(BlobStoreSupport.class[BlobStoreSupport~removeDirectory~Ljava.lang.String;
+---------------------------------------------
+java : =aether-examples/mu-commander/mu-commander-dasein/src/main/java/com/mucommander/file/impl/s3&lt;{S3Bucket.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.ui.dialog.server{S3Panel.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.ui.dialog.server{S3Panel.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.ui.dialog.server{S3Panel.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jclouds/src/main/java&lt;com.mucommander.ui.dialog.about{AboutDialog.java[AboutDialog~createCreditsPanel
+Proyecto: MuCommanderApp-jclouds
+Jar Location: src/main/java
+Package: com.mucommander.ui.dialog.about
+Compilation Unit: AboutDialog
+Class Name: AboutDialog
+Metodo: createCreditsPanel
+MLOC: 114
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-jclouds/src/main/java/com/mucommander/conf
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-jclouds/src/main
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object[S3ObjectFileAttributes
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object[S3ObjectFileAttributes
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-dasein/src/main/java/com/mucommander
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws.storage(S3Method.class
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws.storage(S3Method.class
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file{SyncedFileAttributes.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file{SyncedFileAttributes.java
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/resources/conf
+REGEXP does not match
+---------------------------------------------
+java : =dasein-cloud-core/src/main/java&lt;org.dasein.cloud.platform
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~getIOException~QS3ServiceException;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~getIOException~QS3ServiceException;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~getIOException~QS3ServiceException;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~existObject
+---------------------------------------------
+java : =aether-examples/mu-commander/mu-commander-dasein/src/main/java/com/mucommander/file/impl/s3&lt;{S3Object.java
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jclouds/src/main/java/com/mucommander/file/impl
+REGEXP does not match
+---------------------------------------------
+resource : /dasein-cloud-core/src/main/java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~processObjectd~QCloudStoreObject;~QHashMap\&lt;QString;QArrayList\&lt;QCloudStoreObject;&gt;;&gt;;
+---------------------------------------------
+java : =MuCommanderApp-jclouds/src/main/java&lt;com.mucommander.ui.dialog.server{S3Panel.java[S3Panel
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/jdk1.6.0_25/jre/lib/rt.jar&lt;javax.swing(ImageIcon.class[ImageIcon
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws(AWSCloud.class[AWSCloud
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Root.java#
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Root.java#
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Root.java#
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File^parentSet
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~getFileAttributes
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Object
+Class Name: S3Object
+Metodo: getFileAttributes
+MLOC: 1
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~getFileAttributes
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~getFileAttributes
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-jclouds/src/main/java/com/mucommander
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jclouds/src/main/java/com/mucommander/ui/dialog/about/AboutDialog.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-dasein/src/main/java/com/mucommander/file/impl/s3/S3Object.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~existCloudStoreObject~QCloudStoreObject;~QArrayList\&lt;QCloudStoreObject;&gt;;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~existCloudStoreObject~QCloudStoreObject;~QArrayList\&lt;QCloudStoreObject;&gt;;
+---------------------------------------------
+java : =aether-examples/mu-commander/mu-commander-jclouds/src/main/java/com/mucommander/conf
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync-migraciones/jfilesync-cloudloop/src/main
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~exists
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3File
+Class Name: S3File
+Metodo: exists
+MLOC: 1
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~exists
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~refreshFileList~QString;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~refreshFileList~QString;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~refreshFileList~QString;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket~S3Bucket~QFileURL;~QBlobStoreSupport;~QCloudStoreObject;!2
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket~S3Bucket~QFileURL;~QBlobStoreSupport;~QCloudStoreObject;!2
+---------------------------------------------
+java : =aether-examples/mu-commander/mu-commander-original/src/main/java/com/mucommander/file/impl/s3
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Root.java[S3Root[Clo
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jclouds/src/main/java&lt;com.mucommander.ui.action.impl
+REGEXP does not match
+---------------------------------------------
+resource : /dasein-cloud-core/src/main/java/org/dasein
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file{FileURL.java[FileURL
+REGEXP does not match
+---------------------------------------------
+resource : /dasein-cloud-core/src/main/java/org/dasein/cloud/platform
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~getDirectories~QString;
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3File
+Class Name: S3File
+Metodo: getDirectories
+MLOC: 9
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~getDirectories~QString;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~getDirectories~QString;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~getDirectory~QString;
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3File
+Class Name: S3File
+Metodo: getDirectory
+MLOC: 17
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~getDirectory~QString;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~handleAuthException~QS3ServiceException;~QFileURL;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Root.java[S3Root[C
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-core/2011.02/dasein-cloud-core-2011.02.jar&lt;org.dasein.cloud.storage(BlobStoreSupport.class[BlobStoreSupport~download~Ljava.lang.String;~Ljava.lang.String;~Ljava.io.File;~Lorg.dasein.cloud.encryption.Encryption;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~copyStream~QInputStream;~Z~J
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Object
+Class Name: S3Object
+Metodo: copyStream
+MLOC: 40
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/java/com/mucommander/file
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java#
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java#
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-dasein/target/test-classes
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~Re~QString;
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/java/com/mucommander/AppLogger.java
+REGEXP does not match
+---------------------------------------------
+resource : /dasein-cloud-core/src/main/java/org
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object[S3ObjectFileAttributes~setAttributes~Qorg.jets3t.service.model.S3Object;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object[S3ObjectFileAttributes~setAttributes~Qorg.jets3t.service.model.S3Object;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~getCloudStoreObject~QString;~QString;~Z
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3File
+Class Name: S3File
+Metodo: getCloudStoreObject
+MLOC: 28
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~getCloudStoreObject~QString;~QString;~Z
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/java/com/mucommander/runtime/RuntimeProperty.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Root.java[S3Root~ls
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Root
+Class Name: S3Root
+Metodo: ls
+MLOC: 16
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Root.java[S3Root~ls
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file{FileURL.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync-migraciones/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop/JFSCloudLoopFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/java/com/mucommander/conf/impl
+REGEXP does not match
+---------------------------------------------
+java : =dasein-cloud-core/src/main/java&lt;org.dasein.cloud.platform{CDNSupport.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~getObjectKey~Z~QString;
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3File
+Class Name: S3File
+Metodo: getObjectKey
+MLOC: 2
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~getObjectKey~Z~QString;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~getObjectKey~Z~QString;
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws.storage(S3.class[S3~put~Ljava.lang.String;~Ljava.lang.String;~Ljava.io.File;
+Proyecto: MuCommanderApp-dasein
+Jar Location: C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar
+Package: org.dasein.cloud.aws.storage
+Compilation Unit: S3
+Class Name: S3
+Metodo: put
+MLOC: 14
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws.storage(S3.class[S3~put~Ljava.lang.String;~Ljava.lang.String;~Ljava.io.File;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Root.java[S3Root[CloudFrontImpl
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Root.java[S3Root[CloudFrontImpl
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/mu-commander/mu-commander-dasein/src/main/java/com/mucommander/conf/impl&lt;{MuConfiguration.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/mu-commander/mu-commander-jclouds/src/main/java/com/mucommander/file&lt;
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Root.java#org.dasein.cloud.platform.Distribution
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.ui.main
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~S3Object~QFileURL;~QBlobStoreSupport;~QString;~Qorg.jets3t.service.model.S3Object;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~S3Object~QFileURL;~QBlobStoreSupport;~QString;~Qorg.jets3t.service.model.S3Object;
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/jdk1.6.0_25/jre/lib/rt.jar&lt;java.lang(String.class
+REGEXP does not match
+---------------------------------------------
+java : =dasein-cloud-core/src/main/java&lt;org.dasein.cloud.platform{CDNSupport.java[CDNSupport
+REGEXP does not match
+---------------------------------------------
+java : =dasein-cloud-core/src/main/java&lt;org.dasein.cloud.platform{CDNSupport.java[CDNSupport
+REGEXP does not match
+---------------------------------------------
+java : =dasein-cloud-core/src/main/java&lt;org.dasein.cloud.platform{CDNSupport.java[CDNSupport
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java#java.io.*
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync-migraciones/jfilesync-cloudloop/src/main/java/jfs/sync
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file{AbstractFile.java[AbstractFile~ls
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file
+Compilation Unit: AbstractFile
+Class Name: AbstractFile
+Metodo: ls
+MLOC: 5
+---------------------------------------------
+java : =MuCommanderApp-jclouds/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~putObject~QStr;~J
+Proyecto: MuCommanderApp-jclouds
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Object
+Class Name: S3Object
+Metodo: putObject
+MLOC: 15
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket~delete
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Bucket
+Class Name: S3Bucket
+Metodo: delete
+MLOC: 6
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket~delete
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/java/com/mucommander/file/impl/s3
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~RefreshFile~QString;
+---------------------------------------------
+resource : /MuCommanderApp-jclouds/src/main/java/com/mucommander/file/impl/s3/S3Object.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jclouds
+REGEXP does not match
+---------------------------------------------
+resource : =MuCommanderApp-jclouds
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jclouds
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Root.java[S3Root[aaa|1
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jclouds/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object[S3ObjectRandomAccessInputStream
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.ui.dialog.file
+REGEXP does not match
+---------------------------------------------
+resource : =dasein-cloud-core
+REGEXP does not match
+---------------------------------------------
+java : =dasein-cloud-core
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~processObject~QCloudStoreObject;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~processObject~QCloudStoreObject;
+---------------------------------------------
+resource : /aether-examples/jfilesync-migraciones/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jclouds/src/main/java/com/mucommander/ui/dialog/server/S3Panel.java
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jclouds/src/main/java/com/mucommander/ui/action/impl
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~processObject~QCloudStoreObject;~QHashMap\&lt;QCloudStoreObject;&gt;;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~processObject~QCloudStoreObject;~QHashMap\&lt;QCloudStoreObject;&gt;;
+---------------------------------------------
+java : =dasein-cloud-core/src/main/java&lt;org.dasein.cloud.platform{CDNSupport.java[CDNSupport^CREATE_DISTRIBUTION
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java#
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java#
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jclouds/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~putObject
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Root.java[S3Root
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Root.java[S3Root
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Root.java[S3Root
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-jclouds/src
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket[S3BucketFileAttributes~S3BucketFileAttributes~QCloudStoreObject;
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Bucket
+Class Name: S3Bucket.S3BucketFileAttributes
+Metodo: S3BucketFileAttributes
+MLOC: 3
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File^loadFiles
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/java/com/mucommander/file/SyncedFileAttributes.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-dasein/target/classes/com/mucommander/file/impl/s3/S3Object$S3ObjectRandomAccessInputStream.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-original/src/main/java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~getObjectKey~QString;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~getObjectKey~QString;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~getObjectKey~QString;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file{SimpleFileAttributes.java[SimpleFileAttributes~exists
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file
+Compilation Unit: SimpleFileAttributes
+Class Name: SimpleFileAttributes
+Metodo: exists
+MLOC: 1
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file{SimpleFileAttributes.java[SimpleFileAttributes~exists
+---------------------------------------------
+java : =MuCommanderApp-jclouds/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~putObject~QInputStream;~J
+---------------------------------------------
+java : =MuCommanderApp-jclouds/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~putObject~QInputStream;~J
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java#java.io.OutputStream
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket~S3Bucket~QFileURL;~QBlobStoreSupport;~QString;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket~S3Bucket~QFileURL;~QBlobStoreSupport;~QString;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket~S3Bucket~QFileURL;~QBlobStoreSupport;~QString;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.text{Translator.java[Translator~get~QString;~\[QString;
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.text
+Compilation Unit: Translator
+Class Name: Translator
+Metodo: get
+MLOC: 27
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.text{Translator.java[Translator~get~QString;~\[QString;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.text{Translator.java[Translator~get~QString;~\[QString;
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-core/2011.02/dasein-cloud-core-2011.02.jar&lt;org.dasein.cloud.storage(BlobStoreSupport.class[BlobStoreSupport~exists~Ljava.lang.String;
+Proyecto: MuCommanderApp-dasein
+Jar Location: C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-core/2011.02/dasein-cloud-core-2011.02.jar
+Package: org.dasein.cloud.storage
+Compilation Unit: BlobStoreSupport
+Class Name: BlobStoreSupport
+Metodo: exists
+MLOC: 0
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-core/2011.02/dasein-cloud-core-2011.02.jar&lt;org.dasein.cloud.storage(BlobStoreSupport.class[BlobStoreSupport~exists~Ljava.lang.String;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-dasein/target/classes/com
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.ui.dialog.file{MkdirDialog.java[MkdirDialog
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.runtime
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/java/com/mucommander/ui/dialog
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws.platform(CloudFront.class[CloudFront~CloudFront~Lorg.dasein.cloud.aws.AWSCloud;
+Proyecto: MuCommanderApp-dasein
+Jar Location: C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar
+Package: org.dasein.cloud.aws.platform
+Compilation Unit: CloudFront
+Class Name: CloudFront
+Metodo: CloudFront
+MLOC: 1
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws.platform(CloudFront.class[CloudFront~CloudFront~Lorg.dasein.cloud.aws.AWSCloud;
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws.platform(CloudFront.class[CloudFront~CloudFront~Lorg.dasein.cloud.aws.AWSCloud;
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/jdk1.6.0_25/jre/lib/rt.jar&lt;java.util
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object^getFile
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-jclouds/src/main/java/com/mucommander/file/impl/s3/S3Object.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jclouds/src/main/java&lt;com.mucommander.ui.dialog.server
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3ProtocolProvider.java#java.io.IOException
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file{ProtocolProvider.java[ProtocolProvider~getFile~QFileURL;~\[QObject;
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file
+Compilation Unit: ProtocolProvider
+Class Name: ProtocolProvider
+Metodo: getFile
+MLOC: 1
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File^existCloudStoreObject
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/resources/log4j.properties
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/java/com/mucommander/file/FileURL.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file{FileFactory.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file{FileFactory.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file{FileFactory.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File^parent
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-dasein/src/main/java/com/mucommander/file/impl/s3/S3ProtocolProvider.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.job{DeleteJob.java[DeleteJob~processFile~QAbstractFile;~QObject;
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.job
+Compilation Unit: DeleteJob
+Class Name: DeleteJob
+Metodo: processFile
+MLOC: 43
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.job{DeleteJob.java[DeleteJob~processFile~QAbstractFile;~QObject;
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-core/2011.02/dasein-cloud-core-2011.02.jar
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Root.java[S3Root~getOwner
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Root
+Class Name: S3Root
+Metodo: getOwner
+MLOC: 1
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Root.java[S3Root~getOwner
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/java/com/mucommander/ui
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file{ProtocolProvider.java[ProtocolProvider
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/mu-commander/mu-commander-dasein/target/classes/com/mucommander/file/impl/s3&lt;(S3Object.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-dasein/src/main
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-dasein/src/main
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-dasein/src/main
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-original/src/main/java/com/mucommander/file/impl/s3
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-jclouds/src/main/java/com/mucommander/file/impl/s3
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jclouds/src/main/java&lt;com.mucommander.ui.dialog.server{S3Panel.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jclouds/src/main/java&lt;com.mucommander.ui.dialog.server{S3Panel.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-dasein/target/classes/com/mucommander/file/impl/s3
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/mu-commander/mu-commander-dasein/src/main/java/com/mucommander/file
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-jclouds/src/main/java/com/mucommander/conf/FileConfigurationSourceTest.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-dasein/src/main/java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/mu-commander/mu-commander-dasein/target/classes/com/mucommander/file/impl/s3&lt;(S3Object$S3ObjectRandomAccessInputStream.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/mu-commander
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-jclouds/src/main/java/com/mucommander/file
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~Refre~QString;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object[S3ObjectFileAttributes~S3ObjectFileAttributes
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~S3Object~QFileURL;~QS3Service;~QString;
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/java
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/java/com/mucommander/file/ProtocolProvider.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/mu-commander/mu-commander-dasein/target/classes/com/mucommander/file/impl/s3
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-core/2011.02/dasein-cloud-core-2011.02.jar&lt;org.dasein.cloud.storage(BlobStoreSupport.class[BlobStoreSupport~upload~Ljava.io.File;~Ljava.lang.String;~Ljava.lang.String;~Z~Lorg.dasein.cloud.encryption.Encryption;
+Proyecto: MuCommanderApp-dasein
+Jar Location: C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-core/2011.02/dasein-cloud-core-2011.02.jar
+Package: org.dasein.cloud.storage
+Compilation Unit: BlobStoreSupport
+Class Name: BlobStoreSupport
+Metodo: upload
+MLOC: 0
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-core/2011.02/dasein-cloud-core-2011.02.jar&lt;org.dasein.cloud.storage(BlobStoreSupport.class[BlobStoreSupport~upload~Ljava.io.File;~Ljava.lang.String;~Ljava.lang.String;~Z~Lorg.dasein.cloud.encryption.Encryption;
+---------------------------------------------
+java : =aether-examples/mu-commander/mu-commander-original/src/main/java/com/mucommander/file/impl/s3&lt;
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-dasein
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~processObject~QString;~QHashMap\&lt;QString;QArrayList\&lt;QCloudStoreObject;&gt;;&gt;;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~processObject~QString;~QHashMap\&lt;QString;QArrayList\&lt;QCloudStoreObject;&gt;;&gt;;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3ProtocolProvider.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3ProtocolProvider.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3ProtocolProvider.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-dasein/src/main/java/com/mucommander/conf
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/java/com/mucommander/file/impl
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~loadFiles~QString;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~loadFiles~QString;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~loadFiles
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~loadFiles
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/java/com/mucommander/file/impl/s3/S3File.java
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/java/com/mucommander/file/ProtocolFile.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws.storage(S3Method.class[S3Method
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jclouds/src/main/java/com/mucommander/file/impl/s3/S3Root.java
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jclouds/src/main/java/com/mucommander/file/impl/s3/S3Root.java
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jclouds/src/main/java/com/mucommander/file
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jclouds/src/main/java&lt;com.mucommander.file{AbstractFile.java[AbstractFile
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~processObject~QCloudStoreObject;~QHashMap\&lt;QSCloudStoreObject;&gt;;
+---------------------------------------------
+java : =aether-examples/mu-commander/mu-commander-jclouds/src/main/java/com/mucommander/file&lt;{FileFactory.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jclouds/src/main/java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-dasein/target/classes
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.ui.main{FolderPanel.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.ui.main{FolderPanel.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3ProtocolProvider.java[S3ProtocolProvider
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3ProtocolProvider.java[S3ProtocolProvider
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3ProtocolProvider.java[S3ProtocolProvider
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~loadFileTree~QString;~QHashMap\&lt;QString;QArrayList\&lt;QCloudStoreObject;&gt;;&gt;;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~loadFileTree~QString;~QHashMap\&lt;QString;QArrayList\&lt;QCloudStoreObject;&gt;;&gt;;
+---------------------------------------------
+java : =MuCommanderApp-jclouds/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~copyStream~QInputStream;~Z~J
+Proyecto: MuCommanderApp-jclouds
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Object
+Class Name: S3Object
+Metodo: copyStream
+MLOC: 40
+---------------------------------------------
+java : =MuCommanderApp-jclouds/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~copyStream~QInputStream;~Z~J
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~loadFileTree~QString;~QString;~QString;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~loadFileTree~QString;~QString;~QString;
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-dasein/src
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file{FileFactory.java[FileFactory~createRawFile~QFileURL;~\[QObject;
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file
+Compilation Unit: FileFactory
+Class Name: FileFactory
+Metodo: createRawFile
+MLOC: 24
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file{FileFactory.java[FileFactory~createRawFile~QFileURL;~\[QObject;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file{FileFactory.java[FileFactory~createRawFile~QFileURL;~\[QObject;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File^existObject
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object[S3ObjectRandomAccessInputStream
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-original/src/main/java/com/mucommander
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/resources/properties.properties
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~putObject~QInputStream;~J
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Object
+Class Name: S3Object
+Metodo: putObject
+MLOC: 15
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~putObject~QInputStream;~J
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~putObject~QInputStream;~J
+---------------------------------------------
+java : =MuCommanderApp-jclouds/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object[S3ObjectRandomAccessInputStream~openStream~J
+Proyecto: MuCommanderApp-jclouds
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Object
+Class Name: S3Object.S3ObjectRandomAccessInputStream
+Metodo: openStream
+MLOC: 28
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~getFile
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~getFile
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object[S3ObjectFileAttributes~S3ObjectFileAttributes~QString;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object[S3ObjectFileAttributes~S3ObjectFileAttributes~QString;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java#java.io.File
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java#java.io.File
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/resources/dictionary.txt
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/resources/dictionary.txt
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit-migraciones-aether
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-original/src/main/java/com/mucommander/file/impl/s3/S3File.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object[S3ObjectFileAttributes~setAttributes~QCloudStoreObject;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object[S3ObjectFileAttributes~setAttributes~QCloudStoreObject;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object[S3ObjectFileAttributes~setAttributes~QCloudStoreObject;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.conf.impl
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket[S3BucketFileAttributes~fetchAttributes
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Bucket
+Class Name: S3Bucket.S3BucketFileAttributes
+Metodo: fetchAttributes
+MLOC: 21
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket[S3BucketFileAttributes~fetchAttributes
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket[S3BucketFileAttributes~fetchAttributes
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java#com.mucommander.io.*
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/mu-commander/mu-commander-dasein/src/main/java/com/mucommander/file&lt;
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3ProtocolProvider.java#org.dasein.cloud.storage.BlobStoreSupport
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3ProtocolProvider.java#
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3ProtocolProvider.java#
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws.storage
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket~S3Bucket~QFileURL;~QBlobStoreSupport;~QCloudStoreObject;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket~S3Bucket~QFileURL;~QBlobStoreSupport;~QCloudStoreObject;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket~S3Bucket~QFileURL;~QBlobStoreSupport;~QCloudStoreObject;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file{ProtocolProvider.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Root.java[S3Root~canGetOwner
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Root
+Class Name: S3Root
+Metodo: canGetOwner
+MLOC: 1
+---------------------------------------------
+resource : /aether-examples/jfilesync-migraciones
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws.storage(S3.class
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws.storage(S3.class
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws.storage(S3.class
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/jdk1.6.0_25/jre/lib/rt.jar&lt;javax.swing(ImageIcon.class
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/jdk1.6.0_25/jre/lib/rt.jar&lt;javax.swing(ImageIcon.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-original/src/main/java/com/mucommander/file/impl
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~processObject~QCloudStoreObject;~QHashMap\&lt;QString;QCloudStoreObject;&gt;;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~processObject~QCloudStoreObject;~QHashMap\&lt;QString;QCloudStoreObject;&gt;;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.text
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-dasein/src/main/java/neoe/dasein
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-dasein/src/main/java/neoe/dasein
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-dasein/src/main/java/neoe/dasein
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~getName~QString;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~getName~QString;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~getName~QString;
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-jclouds/src/main/java
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/java/com/mucommander/runtime
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object[S3ObjectFileAttributes~S3ObjectFileAttributes~Qorg.jets3t.service.model.S3Object;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object[S3ObjectFileAttributes~S3ObjectFileAttributes~Qorg.jets3t.service.model.S3Object;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket~S3Bucket~QFileURL;~QS3Service;~QString;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket~S3Bucket~QFileURL;~QS3Service;~QString;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket~S3Bucket~QFileURL;~QS3Service;~QString;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.job
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync-migraciones/jfilesync-cloudloop
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-jclouds
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Root.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Root.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Root.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Root.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/jdk1.6.0_25/jre/lib/rt.jar&lt;java.util(HashMap.class
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/jdk1.6.0_25/jre/lib/rt.jar&lt;java.util(HashMap.class
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws.storage(S3.class[S3~listFiles~Ljava.lang.String;
+Proyecto: MuCommanderApp-dasein
+Jar Location: C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar
+Package: org.dasein.cloud.aws.storage
+Compilation Unit: S3
+Class Name: S3
+Metodo: listFiles
+MLOC: 4
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws.storage(S3.class[S3~listFiles~Ljava.lang.String;
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/java/com/mucommander/ui/main
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.runtime{RuntimeProperty.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.runtime{RuntimeProperty.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws.storage(S3.class[S3~removeDirectory~Ljava.lang.String;
+Proyecto: MuCommanderApp-dasein
+Jar Location: C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar
+Package: org.dasein.cloud.aws.storage
+Compilation Unit: S3
+Class Name: S3
+Metodo: removeDirectory
+MLOC: 12
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws.storage(S3.class[S3~removeDirectory~Ljava.lang.String;
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-dasein/pom.xml
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-dasein/pom.xml
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java#com.mucommander.file.*
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~S3Object~QCloudProvider;
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-dasein/src/main/resources
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3ProtocolProvider.java#org.jets3t.service.Jets3tProperties
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-dasein/target/classes/com/mucommander/file/impl/s3/S3Object$S3ObjectFileAttributes.class
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File^service
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File^service
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File^service
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.ui.dialog.file{MkdirDialog.java[MkdirDialog~startJob
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.ui.dialog.file
+Compilation Unit: MkdirDialog
+Class Name: MkdirDialog
+Metodo: startJob
+MLOC: 1
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.ui.dialog.file{MkdirDialog.java[MkdirDialog~startJob
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~S3Object~QFileURL;~QBlobStoreSupport;~QString;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~S3Object~QFileURL;~QBlobStoreSupport;~QString;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~S3Object~QFileURL;~QBlobStoreSupport;~QString;
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-dasein/src/main/java/com
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-jclouds/src/main/java/com
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jclouds/src/main
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/java/com/mucommander/text/Translator.java
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/java/com/mucommander/text/Translator.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file{SimpleFileAttributes.java[SimpleFileAttributes
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file{SimpleFileAttributes.java[SimpleFileAttributes
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-core/2011.02/dasein-cloud-core-2011.02.jar&lt;org.dasein.cloud.storage(BlobStoreSupport.class
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-core/2011.02/dasein-cloud-core-2011.02.jar&lt;org.dasein.cloud.storage(BlobStoreSupport.class
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-core/2011.02/dasein-cloud-core-2011.02.jar&lt;org.dasein.cloud.storage(BlobStoreSupport.class
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-jclouds/src/main/java/com/mucommander/file/impl/local/LocalFileTest.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File^exist
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/java/com/mucommander/ui/dialog/file
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jclouds/src/main/resources
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/mu-commander/mu-commander-jclouds/src/main/java/com/mucommander/conf&lt;
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws.storage(S3.class[S3~createDirectory~Ljava.lang.String;~Z
+Proyecto: MuCommanderApp-dasein
+Jar Location: C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar
+Package: org.dasein.cloud.aws.storage
+Compilation Unit: S3
+Class Name: S3
+Metodo: createDirectory
+MLOC: 76
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws.storage(S3.class[S3~createDirectory~Ljava.lang.String;~Z
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws.storage(S3.class[S3~createDirectory~Ljava.lang.String;~Z
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java#java.io.FileOutputStream
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.ui.dialog.server{S3Panel.java[S3Panel
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/java/com/mucommander
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.ui.dialog.server{S3Panel.java[S3Panel~S3Panel~QServerConnectDialog;~QMainFrame;
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.ui.dialog.server
+Compilation Unit: S3Panel
+Class Name: S3Panel
+Metodo: S3Panel
+MLOC: 18
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.ui.dialog.server{S3Panel.java[S3Panel~S3Panel~QServerConnectDialog;~QMainFrame;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.job{TransferFileJob.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.job{TransferFileJob.java
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jclouds/src/main/java/com/mucommander/ui/dialog/about
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/mu-commander/mu-commander-jclouds/src/main/java/com/mucommander/file/impl/local&lt;
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~S3Object~QCloudProvider;~QFileURL;~QBlobStoreSupport;~QString;~QCloudStoreObject;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~S3Object~QCloudProvider;~QFileURL;~QBlobStoreSupport;~QString;~QCloudStoreObject;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket[S3BucketFileAttributes~S3BucketFileAttributes~Qorg.jets3t.service.model.S3Bucket;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket[S3BucketFileAttributes~S3BucketFileAttributes~Qorg.jets3t.service.model.S3Bucket;
+---------------------------------------------
+java : =MuCommanderApp-jclouds/src/main/java&lt;com.mucommander.file.impl.s3
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~processObject~QCloudStoreObject;~QHashMa\&lt;QCloudStoreObject;&gt;;
+---------------------------------------------
+java : =aether-examples/mu-commander/mu-commander-dasein/src/main/java/com/mucommander/conf/impl
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws.storage(S3.class[S3~exists~Ljava.lang.String;
+Proyecto: MuCommanderApp-dasein
+Jar Location: C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar
+Package: org.dasein.cloud.aws.storage
+Compilation Unit: S3
+Class Name: S3
+Metodo: exists
+MLOC: 18
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws.storage(S3.class[S3~exists~Ljava.lang.String;
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/jdk1.6.0_25/jre/lib/rt.jar&lt;java.lang(String.class[String~valueOf~Ljava.lang.Object;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file{AbstractFile.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file{AbstractFile.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~processObject~QCloudStoreObject;~QHa\&lt;QCloudStoreObject;&gt;;
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws.storage(S3Method.class[S3Method~invoke~Ljava.lang.String;~Ljava.lang.String;~Ljava.lang.String;
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws.storage(S3Method.class[S3Method~invoke~Ljava.lang.String;~Ljava.lang.String;~Ljava.lang.String;
+---------------------------------------------
+java : =aether-examples/mu-commander/mu-commander-jclouds/src/main/java/com/mucommander/file/impl/s3
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~S3File~QFileURL;~QBlobStoreSupport;
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3File
+Class Name: S3File
+Metodo: S3File
+MLOC: 2
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~S3File~QFileURL;~QBlobStoreSupport;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~S3File~QFileURL;~QBlobStoreSupport;
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/java/com/mucommander/ui/dialog/server/S3Panel.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/neoedit/neoedit-dasein/src/main/java/neoe/dasein&lt;
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket[S3BucketFileAttributes~setAttributes~Qorg.jets3t.service.model.S3Bucket;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket[S3BucketFileAttributes~setAttributes~Qorg.jets3t.service.model.S3Bucket;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket[S3BucketFileAttributes~setAttributes~Qorg.jets3t.service.model.S3Bucket;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~loadFileList~QString;
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3File
+Class Name: S3File
+Metodo: loadFileList
+MLOC: 13
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~loadFileList~QString;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~loadFileList~QString;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file{ProtocolFile.java[ProtocolFile
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file{ProtocolFile.java[ProtocolFile
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file{ProtocolFile.java[ProtocolFile
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~mkdir
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Object
+Class Name: S3Object
+Metodo: mkdir
+MLOC: 11
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~mkdir
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~mkdir
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.job{DeleteJob.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.job{DeleteJob.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-jclouds/src/main/java/com/mucommander/file/impl
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/mu-commander/mu-commander-dasein/src/main/java/com/mucommander/file/impl/s3
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file{FileFactory.java[FileFactory~getFile~QFileURL;~QAbstractFile;~\[QObject;
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file
+Compilation Unit: FileFactory
+Class Name: FileFactory
+Metodo: getFile
+MLOC: 5
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file{FileFactory.java[FileFactory~getFile~QFileURL;~QAbstractFile;~\[QObject;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file{FileFactory.java[FileFactory~getFile~QFileURL;~QAbstractFile;~\[QObject;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.ui.dialog.server
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/mu-commander/mu-commander-jclouds/src/main/java/com/mucommander/file/impl/local&lt;{LocalFileTest.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~getIOException~QException;~QFileURL;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~getIOException~QException;~QFileURL;
+---------------------------------------------
+java : =aether-examples/mu-commander/mu-commander-jclouds/src/main/java/com/mucommander/file
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jclouds/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~putObject~QString;~J
+---------------------------------------------
+java : =MuCommanderApp-jclouds/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~putObject~QString;~J
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/java/com/mucommander/file/AbstractFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/java/com/mucommander/file/AbstractFile.java
+REGEXP does not match
+---------------------------------------------
+java : =dasein-cloud-core/src/main/java
+REGEXP does not match
+---------------------------------------------
+java : =dasein-cloud-core/src/main/java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-dasein/target/classes/com/mucommander/file
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/jdk1.6.0_25/jre/lib/rt.jar&lt;javax.swing
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jclouds/src
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/jdk1.6.0_25/jre/lib/rt.jar&lt;java.lang
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync-migraciones/jfilesync-cloudloop/src/main/java/jfs
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Root.java[S3Root^DEFAULT_PERMISSIONS
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Root.java[S3Root^DEFAULT_PERMISSIONS
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jclouds/src/main/java/com/mucommander/ui
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/mu-commander/mu-commander-dasein/target/classes/com/mucommander/file/impl/s3&lt;
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~getObjectKey~Z
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~getObjectKey~Z
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~getObjectKey~Z
+---------------------------------------------
+resource : /MuCommanderApp-jclouds/src/main/java/com/mucommander
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-dasein
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-dasein/src
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-dasein/src
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/neoedit/neoedit-dasein/src
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Root.java[S3Root[C~aaa~QAWSCloud;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.job{DeleteJob.java[DeleteJob
+REGEXP does not match
+---------------------------------------------
+resource : =MuCommanderApp-dasein
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/mu-commander/mu-commander-original/src/main/java/com/mucommander/file/impl/s3&lt;{S3File.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws.storage(S3.class[S3~removeFile~Ljava.lang.String;~Ljava.lang.String;~Z
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws.storage(S3.class[S3~removeFile~Ljava.lang.String;~Ljava.lang.String;~Z
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws.storage(S3.class[S3~removeFile~Ljava.lang.String;~Ljava.lang.String;~Z
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws.storage(S3.class[S3~upload~Ljava.io.File;~Ljava.lang.String;~Ljava.lang.String;~Z~Lorg.dasein.cloud.encryption.Encryption;
+Proyecto: MuCommanderApp-dasein
+Jar Location: C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar
+Package: org.dasein.cloud.aws.storage
+Compilation Unit: S3
+Class Name: S3
+Metodo: upload
+MLOC: 19
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws.storage(S3.class[S3~upload~Ljava.io.File;~Ljava.lang.String;~Ljava.lang.String;~Z~Lorg.dasein.cloud.encryption.Encryption;
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws.storage(S3.class[S3~upload~Ljava.io.File;~Ljava.lang.String;~Ljava.lang.String;~Z~Lorg.dasein.cloud.encryption.Encryption;
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/java/com/mucommander/job/TransferFileJob.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws.storage(S3.class[S3~exists~Ljava.lang.String;~Ljava.lang.String;~Z
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws.storage(S3.class[S3~exists~Ljava.lang.String;~Ljava.lang.String;~Z
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws.storage(S3.class[S3~exists~Ljava.lang.String;~Ljava.lang.String;~Z
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/jdk1.6.0_25/jre/lib/rt.jar&lt;javax.swing(ImageIcon.class[ImageIcon~ImageIcon~Ljava.net.URL;
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/jdk1.6.0_25/jre/lib/rt.jar&lt;javax.swing(ImageIcon.class[ImageIcon~ImageIcon~Ljava.net.URL;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.ui.main{FolderPanel.java[FolderPanel[ChangeFolderThread
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jclouds/src/main/java&lt;com.mucommander.file{AbstractFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/jfilesync-migraciones/jfilesync-cloudloop/src
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jclouds/src/main/java&lt;com.mucommander.ui.dialog.about{AboutDialog.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~processObject~QCloudStoreObject;~QHashMap\&lt;QString;QArrayList\&lt;QCloudStoreObject;&gt;;&gt;;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~processObject~QCloudStoreObject;~QHashMap\&lt;QString;QArrayList\&lt;QCloudStoreObject;&gt;;&gt;;
+---------------------------------------------
+resource : /MuCommanderApp-jclouds
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jclouds
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~getIOException~QException;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~getIOException~QException;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~getIOException~QException;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~getOutputStream
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Object
+Class Name: S3Object
+Metodo: getOutputStream
+MLOC: 1
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~getOutputStream
+---------------------------------------------
+java : =MuCommanderApp-jclouds/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~putObject~QString;
+---------------------------------------------
+java : =aether-examples/mu-commander/mu-commander-dasein/target/classes/com/mucommander/file/impl/s3&lt;(S3Root.class
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file{SimpleFileAttributes.java[SimpleFileAttributes~getDate
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file
+Compilation Unit: SimpleFileAttributes
+Class Name: SimpleFileAttributes
+Metodo: getDate
+MLOC: 1
+---------------------------------------------
+java : =aether-examples
+REGEXP does not match
+---------------------------------------------
+resource : =aether-examples
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/java/com/mucommander/file/FileFactory.java
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/java/com/mucommander/file/FileFactory.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3ProtocolProvider.java[S3ProtocolProvider~getFile~QFileURL;~\[QObject;
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3ProtocolProvider
+Class Name: S3ProtocolProvider
+Metodo: getFile
+MLOC: 40
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3ProtocolProvider.java[S3ProtocolProvider~getFile~QFileURL;~\[QObject;
+---------------------------------------------
+resource : /dasein-cloud-core/src/main
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws.storage(S3.class[S3~download~Ljava.lang.String;~Ljava.lang.String;~Ljava.io.File;~Lorg.dasein.cloud.encryption.Encryption;
+Proyecto: MuCommanderApp-dasein
+Jar Location: C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar
+Package: org.dasein.cloud.aws.storage
+Compilation Unit: S3
+Class Name: S3
+Metodo: download
+MLOC: 46
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws.storage(S3.class[S3~download~Ljava.lang.String;~Ljava.lang.String;~Ljava.io.File;~Lorg.dasein.cloud.encryption.Encryption;
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws.storage(S3.class[S3~download~Ljava.lang.String;~Ljava.lang.String;~Ljava.io.File;~Lorg.dasein.cloud.encryption.Encryption;
+---------------------------------------------
+java : =MuCommanderApp-jclouds/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jclouds/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.text{Translator.java[Translator
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.text{Translator.java[Translator
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.text{Translator.java[Translator~loadDictionaryFile~QString;
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.text
+Compilation Unit: Translator
+Class Name: Translator
+Metodo: loadDictionaryFile
+MLOC: 1
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java#
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java#
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-dasein/src/main/java/com/mucommander/conf/impl
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jclouds/src/main/java/com/mucommander/ui/action
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/java/com/mucommander/file/impl/s3/S3ProtocolProvider.java
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/java/com/mucommander/job
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-dasein/target
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~getDirectories~QString;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~getDirectories~QString;
+---------------------------------------------
+resource : /MuCommanderApp-jclouds/src/main/java/com/mucommander/file/AbstractFile.java
+REGEXP does not match
+---------------------------------------------
+java : =dasein-cloud-core/src/main/java&lt;org.dasein.cloud.platform{CDNSupport.java[CDNSupport~create~QString;~QString;~Z~\[QString;
+Proyecto: dasein-cloud-core
+Jar Location: src/main/java
+Package: org.dasein.cloud.platform
+Compilation Unit: CDNSupport
+Class Name: CDNSupport
+Metodo: create
+MLOC: 0
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-dasein/src/main/java/com/mucommander/file/impl/s3/S3Bucket.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket~mkdir
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Bucket
+Class Name: S3Bucket
+Metodo: mkdir
+MLOC: 6
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket~mkdir
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket~mkdir
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-dasein/src/main/java/com/mucommander/file/impl/s3/S3Root.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Root.java[S3Root~S3Root~QFileURL;~QBlobStoreSupport;~QCloudProvider;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Root.java[S3Root~S3Root~QFileURL;~QBlobStoreSupport;~QCloudProvider;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Root.java[S3Root~S3Root~QFileURL;~QBlobStoreSupport;~QCloudProvider;
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-core/2011.02/dasein-cloud-core-2011.02.jar&lt;org.dasein.cloud.storage(CloudStoreObject.class[CloudStoreObject~isContainer
+Proyecto: MuCommanderApp-dasein
+Jar Location: C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-core/2011.02/dasein-cloud-core-2011.02.jar
+Package: org.dasein.cloud.storage
+Compilation Unit: CloudStoreObject
+Class Name: CloudStoreObject
+Metodo: isContainer
+MLOC: 1
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-core/2011.02/dasein-cloud-core-2011.02.jar&lt;org.dasein.cloud.storage(CloudStoreObject.class[CloudStoreObject~isContainer
+---------------------------------------------
+java : =MuCommanderApp-jclouds/src/main/resources
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/java/com/mucommander/file/SimpleFileAttributes.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~Refresh~QString;
+---------------------------------------------
+java : =MuCommanderApp-jclouds/src/main/java&lt;com.mucommander.file{AbstractFile.java[AbstractFile^fileURL
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-dasein/src/main
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~S3Object~QFileURL;~QBlobStoreSupport;~QString;~QString;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~S3Object~QFileURL;~QBlobStoreSupport;~QString;~QString;
+---------------------------------------------
+java : =MuCommanderApp-jclouds/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~copyRemotelyTo~QAbstractFile;
+Proyecto: MuCommanderApp-jclouds
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Object
+Class Name: S3Object
+Metodo: copyRemotelyTo
+MLOC: 25
+---------------------------------------------
+java : =MuCommanderApp-jclouds/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~copyRemotelyTo~QAbstractFile;
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object^get
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-dasein/target/classes/com/mucommander/file/impl/s3/S3Object.class
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Root.java#java.io.IOException
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/mu-commander/mu-commander-dasein/target/classes/com/mucommander/file/impl/s3&lt;(S3File.class
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-core/2011.02/dasein-cloud-core-2011.02.jar&lt;org.dasein.cloud.storage(BlobStoreSupport.class[BlobStoreSupport
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-core/2011.02/dasein-cloud-core-2011.02.jar&lt;org.dasein.cloud.storage(BlobStoreSupport.class[BlobStoreSupport
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~getFreeSpace
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3File
+Class Name: S3File
+Metodo: getFreeSpace
+MLOC: 2
+---------------------------------------------
+resource : /MuCommanderApp-dasein/src/main/java/com/mucommander/conf/impl/MuConfiguration.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws.storage(S3.class[S3~download~Lorg.dasein.cloud.storage.CloudStoreObject;~Ljava.io.File;
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/jdk1.6.0_25/jre/lib/rt.jar
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object[S3ObjectRandomAccessInputStream~openStream~J
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Object
+Class Name: S3Object.S3ObjectRandomAccessInputStream
+Metodo: openStream
+MLOC: 28
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object[S3ObjectRandomAccessInputStream~openStream~J
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-aws/2011.02/dasein-cloud-aws-2011.02.jar&lt;org.dasein.cloud.aws.platform
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples/jfilesync-migraciones/jfilesync-cloudloop/src/main/java/jfs/sync/cloudloop&lt;
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object^DEFAULT_PERMISSIONS
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java#org.dasein.cloud.storage.BlobStoreSupport
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-core/2011.02/dasein-cloud-core-2011.02.jar&lt;org.dasein.cloud.storage(CloudStoreObject.class[CloudStoreObject~setProviderRegionId~Ljava.lang.String;
+Proyecto: MuCommanderApp-dasein
+Jar Location: C:/Users/Marcos/.m2/repository/org/dasein/dasein-cloud-core/2011.02/dasein-cloud-core-2011.02.jar
+Package: org.dasein.cloud.storage
+Compilation Unit: CloudStoreObject
+Class Name: CloudStoreObject
+Metodo: setProviderRegionId
+MLOC: 1
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java
+REGEXP does not match
+---------------------------------------------
+FINAL ACCUMULATED RESULT: 1349.0
+---------------------------------------------
