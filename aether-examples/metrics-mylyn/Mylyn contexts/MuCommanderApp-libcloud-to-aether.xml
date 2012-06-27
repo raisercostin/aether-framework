@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InteractionHistory Id="local-6" Version="1">
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:23:58.691 ART"
+		Interest="26.204" Kind="propagation"
+		Navigation="org.eclipse.mylyn.core.model.edges.containment" OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-06-26 23:21:50.911 ART" StructureHandle="/MuCommanderApp-libcloud-migraciones-to-aether/src/main"
+		StructureKind="resource" NumEvents="28" CreationCount="8" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:29:45.308 ART"
+		Interest="26.323002" Kind="propagation"
+		Navigation="org.eclipse.mylyn.core.model.edges.containment" OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-06-26 23:21:44.47 ART" StructureHandle=""
+		StructureKind="java" NumEvents="31" CreationCount="1" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:22:26.916 ART"
+		Interest="1.0" Kind="propagation" Navigation="org.eclipse.mylyn.core.model.edges.containment"
+		OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-06-26 23:22:26.916 ART"
+		StructureHandle="/MuCommanderApp-libcloud-migraciones-to-aether/src/main/java/com/mucommander/desktop"
+		StructureKind="resource" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:23:58.691 ART"
+		Interest="1.0" Kind="propagation" Navigation="org.eclipse.mylyn.core.model.edges.containment"
+		OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-06-26 23:23:58.691 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migraciones-to-aether/src\/main\/java&amp;lt;com.mucommander.file{AbstractFileClassLoader.java#"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:23:21.735 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:23:21.735 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migraciones-to-aether/src\/main\/java&amp;lt;com.mucommander.extension{ExtensionManager.java[ExtensionManager~addToClassPath~QAbstractFile;"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:23:23.373 ART"
+		Interest="1.0" Kind="edit" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:23:23.373 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migraciones-to-aether/src\/main\/java&amp;lt;com.mucommander.extension{ExtensionManager.java[ExtensionManager~addToClassPath~QAbstractFile;"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:23:42.701 ART"
+		Interest="3.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.ui.navigator.ProjectExplorer" StartDate="2012-06-26 23:23:40.813 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migraciones-to-aether/src\/main\/java&amp;lt;com.mucommander.file{AbstractFileClassLoader.java"
+		StructureKind="java" NumEvents="3" CreationCount="41" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:23:44.277 ART"
+		Interest="3.0" Kind="edit" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:23:41.110 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migraciones-to-aether/src\/main\/java&amp;lt;com.mucommander.file{AbstractFileClassLoader.java"
+		StructureKind="java" NumEvents="3" CreationCount="41" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:23:23.373 ART"
+		Interest="17.034" Kind="propagation"
+		Navigation="org.eclipse.mylyn.core.model.edges.containment" OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-06-26 23:22:26.916 ART"
+		StructureHandle="/MuCommanderApp-libcloud-migraciones-to-aether/src/main/java/com"
+		StructureKind="resource" NumEvents="19" CreationCount="18" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:23:58.691 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:23:58.691 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migraciones-to-aether/src\/main\/java&amp;lt;com.mucommander.file{AbstractFileClassLoader.java#com.tesis.aether.loader.core.JavasistClassLoader"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:21:44.125 ART"
+		Interest="2.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.ui.navigator.ProjectExplorer" StartDate="2012-06-26 23:21:44.47 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migraciones-to-aether"
+		StructureKind="java" NumEvents="2" CreationCount="1" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:29:45.308 ART"
+		Interest="24.323002" Kind="propagation"
+		Navigation="org.eclipse.mylyn.core.model.edges.containment" OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-06-26 23:21:46.13 ART" StructureHandle="=MuCommanderApp-libcloud-migraciones-to-aether"
+		StructureKind="resource" NumEvents="29" CreationCount="1" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:22:26.916 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.ui.navigator.ProjectExplorer" StartDate="2012-06-26 23:22:26.916 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migraciones-to-aether/src\/main\/java&amp;lt;com.mucommander.desktop.kde"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:23:06.727 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:23:06.727 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migraciones-to-aether/src\/main\/java&amp;lt;com.mucommander.extension{ExtensionManager.java[ExtensionManager~isInExtensionsPath~QAbstractFile;"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:23:08.911 ART"
+		Interest="1.0" Kind="edit" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:23:08.911 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migraciones-to-aether/src\/main\/java&amp;lt;com.mucommander.extension{ExtensionManager.java[ExtensionManager~isInExtensionsPath~QAbstractFile;"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:23:12.593 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:23:12.593 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migraciones-to-aether/src\/main\/java&amp;lt;com.mucommander.extension{ExtensionManager.java[ExtensionManager~isInClasspath~QAbstractFile;"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:23:45.275 ART"
+		Interest="5.491" Kind="propagation" Navigation="org.eclipse.mylyn.core.model.edges.containment"
+		OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-06-26 23:22:26.916 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migraciones-to-aether/src\/main\/java"
+		StructureKind="java" NumEvents="14" CreationCount="18" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:23:37.584 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.ui.navigator.ProjectExplorer" StartDate="2012-06-26 23:23:37.584 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migraciones-to-aether/src\/main\/java&amp;lt;com.mucommander.file"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:23:45.275 ART"
+		Interest="4.117" Kind="propagation" Navigation="org.eclipse.mylyn.core.model.edges.containment"
+		OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-06-26 23:23:40.813 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migraciones-to-aether/src\/main\/java&amp;lt;com.mucommander.file"
+		StructureKind="java" NumEvents="7" CreationCount="40" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:22:30.816 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.ui.navigator.ProjectExplorer" StartDate="2012-06-26 23:22:30.816 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migraciones-to-aether/src\/main\/java&amp;lt;com.mucommander.extension"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:23:08.911 ART"
+		Interest="2.9190001" Kind="propagation"
+		Navigation="org.eclipse.mylyn.core.model.edges.containment" OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-06-26 23:22:33.702 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migraciones-to-aether/src\/main\/java&amp;lt;com.mucommander.extension"
+		StructureKind="java" NumEvents="8" CreationCount="19" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:23:29.722 ART"
+		Interest="6.0" Kind="selection" Navigation="null"
+		OriginId="org.maven.ide.eclipse.editor.MavenPomEditor" StartDate="2012-06-26 23:21:45.701 ART"
+		StructureHandle="/MuCommanderApp-libcloud-migraciones-to-aether/pom.xml"
+		StructureKind="resource" NumEvents="6" CreationCount="3" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:22:33.967 ART"
+		Interest="2.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:22:33.702 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migraciones-to-aether/src\/main\/java&amp;lt;com.mucommander.extension{ExtensionManager.java"
+		StructureKind="java" NumEvents="2" CreationCount="20" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:22:53.421 ART"
+		Interest="0.50199986" Kind="propagation"
+		Navigation="org.eclipse.mylyn.core.model.edges.containment" OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-06-26 23:22:53.421 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migraciones-to-aether/src\/main\/java&amp;lt;com.mucommander.extension{ExtensionManager.java"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:22:34.388 ART"
+		Interest="2.0" Kind="edit" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:22:34.123 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migraciones-to-aether/src\/main\/java&amp;lt;com.mucommander.extension{ExtensionManager.java"
+		StructureKind="java" NumEvents="2" CreationCount="20" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:23:42.108 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.ui.navigator.ProjectExplorer" StartDate="2012-06-26 23:23:42.108 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migraciones-to-aether/src\/main\/java&amp;lt;com.mucommander.file{AbstractFile.java"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:23:05.292 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:23:05.292 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migraciones-to-aether/src\/main\/java&amp;lt;com.mucommander.extension{ExtensionManager.java[ExtensionManager~getExtensionsFile~QString;"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:22:48.475 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:22:48.475 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migraciones-to-aether/src\/main\/java&amp;lt;com.mucommander.extension{ExtensionManager.java[ExtensionManager|1"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:22:53.421 ART"
+		Interest="4.0" Kind="edit" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:22:49.630 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migraciones-to-aether/src\/main\/java&amp;lt;com.mucommander.extension{ExtensionManager.java[ExtensionManager|1"
+		StructureKind="java" NumEvents="4" CreationCount="26" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:22:26.916 ART"
+		Interest="1.0" Kind="propagation" Navigation="null"
+		OriginId="org.eclipse.ui.navigator.ProjectExplorer" StartDate="2012-06-26 23:22:26.916 ART"
+		StructureHandle="/MuCommanderApp-libcloud-migraciones-to-aether/src/main/java/com/mucommander/desktop/kde"
+		StructureKind="resource" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:22:35.886 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:22:35.886 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migraciones-to-aether/src\/main\/java&amp;lt;com.mucommander.extension{ExtensionManager.java[ExtensionManager"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:22:53.421 ART"
+		Interest="2.8339999" Kind="propagation"
+		Navigation="org.eclipse.mylyn.core.model.edges.containment" OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-06-26 23:22:38.725 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migraciones-to-aether/src\/main\/java&amp;lt;com.mucommander.extension{ExtensionManager.java[ExtensionManager"
+		StructureKind="java" NumEvents="6" CreationCount="24" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:23:58.691 ART"
+		Interest="26.204" Kind="propagation"
+		Navigation="org.eclipse.mylyn.core.model.edges.containment" OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-06-26 23:21:50.911 ART" StructureHandle="/MuCommanderApp-libcloud-migraciones-to-aether/src"
+		StructureKind="resource" NumEvents="28" CreationCount="8" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:22:03.859 ART"
+		Interest="2.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.ui.navigator.ProjectExplorer" StartDate="2012-06-26 23:21:50.911 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migraciones-to-aether/src\/main\/resources"
+		StructureKind="java" NumEvents="2" CreationCount="8" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:30:03.560 ART"
+		Interest="13.634001" Kind="propagation"
+		Navigation="org.eclipse.mylyn.core.model.edges.containment" OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-06-26 23:22:04.15 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migraciones-to-aether/src\/main\/resources"
+		StructureKind="java" NumEvents="17" CreationCount="8" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:23:58.691 ART"
+		Interest="27.034" Kind="propagation" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:22:26.916 ART"
+		StructureHandle="/MuCommanderApp-libcloud-migraciones-to-aether/src/main/java"
+		StructureKind="resource" NumEvents="29" CreationCount="18" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:23:23.373 ART"
+		Interest="17.017" Kind="propagation"
+		Navigation="org.eclipse.mylyn.core.model.edges.containment" OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-06-26 23:22:30.816 ART"
+		StructureHandle="/MuCommanderApp-libcloud-migraciones-to-aether/src/main/java/com/mucommander/extension"
+		StructureKind="resource" NumEvents="18" CreationCount="19" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:30:03.560 ART"
+		Interest="57.0" Kind="propagation" Navigation="org.eclipse.mylyn.core.model.edges.containment"
+		OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-06-26 23:21:44.47 ART" StructureHandle="/"
+		StructureKind="resource" NumEvents="57" CreationCount="1" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:23:45.275 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:23:45.275 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migraciones-to-aether/src\/main\/java&amp;lt;com.mucommander.file{AbstractFileClassLoader.java[AbstractFileClassLoader"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:23:42.108 ART"
+		Interest="1.0" Kind="propagation" Navigation="null"
+		OriginId="org.eclipse.ui.navigator.ProjectExplorer" StartDate="2012-06-26 23:23:42.108 ART"
+		StructureHandle="/MuCommanderApp-libcloud-migraciones-to-aether/src/main/java/com/mucommander/file/AbstractFile.java"
+		StructureKind="resource" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:23:58.691 ART"
+		Interest="8.0" Kind="propagation" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:23:40.813 ART"
+		StructureHandle="/MuCommanderApp-libcloud-migraciones-to-aether/src/main/java/com/mucommander/file/AbstractFileClassLoader.java"
+		StructureKind="resource" NumEvents="8" CreationCount="41" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:30:03.560 ART"
+		Interest="20.0" Kind="propagation" Navigation="null"
+		OriginId="org.eclipse.ui.navigator.ProjectExplorer" StartDate="2012-06-26 23:21:50.911 ART"
+		StructureHandle="/MuCommanderApp-libcloud-migraciones-to-aether/src/main/resources"
+		StructureKind="resource" NumEvents="20" CreationCount="8" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:23:23.373 ART"
+		Interest="17.0" Kind="propagation" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:22:33.702 ART"
+		StructureHandle="/MuCommanderApp-libcloud-migraciones-to-aether/src/main/java/com/mucommander/extension/ExtensionManager.java"
+		StructureKind="resource" NumEvents="17" CreationCount="20" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:22:38.725 ART"
+		Interest="1.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:22:38.725 ART"
+		StructureHandle="=MuCommanderApp-libcloud-migraciones-to-aether/src\/main\/java&amp;lt;com.mucommander.extension{ExtensionManager.java[ExtensionManager^loader"
+		StructureKind="java" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:30:03.560 ART"
+		Interest="57.0" Kind="propagation" Navigation="null"
+		OriginId="org.eclipse.ui.navigator.ProjectExplorer" StartDate="2012-06-26 23:21:44.47 ART"
+		StructureHandle="/MuCommanderApp-libcloud-migraciones-to-aether"
+		StructureKind="resource" NumEvents="57" CreationCount="1" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:23:58.691 ART"
+		Interest="9.017" Kind="propagation" Navigation="null"
+		OriginId="org.eclipse.jdt.ui.CompilationUnitEditor" StartDate="2012-06-26 23:23:37.584 ART"
+		StructureHandle="/MuCommanderApp-libcloud-migraciones-to-aether/src/main/java/com/mucommander/file"
+		StructureKind="resource" NumEvents="10" CreationCount="40" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:23:23.373 ART"
+		Interest="17.034" Kind="propagation"
+		Navigation="org.eclipse.mylyn.core.model.edges.containment" OriginId="org.eclipse.mylyn.core.model.interest.propagation"
+		StartDate="2012-06-26 23:22:26.916 ART"
+		StructureHandle="/MuCommanderApp-libcloud-migraciones-to-aether/src/main/java/com/mucommander"
+		StructureKind="resource" NumEvents="19" CreationCount="18" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:30:03.560 ART"
+		Interest="10.0" Kind="selection" Navigation="null"
+		OriginId="org.eclipse.ui.navigator.ProjectExplorer" StartDate="2012-06-26 23:22:03.922 ART"
+		StructureHandle="/MuCommanderApp-libcloud-migraciones-to-aether/src/main/resources/config.xml"
+		StructureKind="resource" NumEvents="10" CreationCount="10" />
+	<InteractionEvent Delta="null" EndDate="2012-06-26 23:30:03.420 ART"
+		Interest="8.0" Kind="edit" Navigation="null"
+		OriginId="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart"
+		StartDate="2012-06-26 23:22:04.46 ART"
+		StructureHandle="/MuCommanderApp-libcloud-migraciones-to-aether/src/main/resources/config.xml"
+		StructureKind="resource" NumEvents="8" CreationCount="10" />
+</InteractionHistory>
