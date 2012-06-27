@@ -1,0 +1,400 @@
+Proyecto: MuCommanderApp-jclouds
+Jar Location: C:/Users/Marcos/.m2/repository/commons-httpclient/commons-httpclient/3.0.1/commons-httpclient-3.0.1.jar
+Package: org.apache.commons.httpclient
+Compilation Unit: HttpClient
+Class Name: HttpClient
+Metodo: setHttpConnectionManager
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: MuCommanderApp-jclouds
+Jar Location: src/main/java
+Package: com.mucommander.jclouds
+Compilation Unit: JcloudsAdapter
+Class Name: JcloudsAdapter
+Metodo: JcloudsAdapter
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: MuCommanderApp-jclouds
+Jar Location: src/main/java
+Package: com.mucommander.jclouds
+Compilation Unit: JcloudsAdapter
+Class Name: JcloudsAdapter
+Metodo: populateCache
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: MuCommanderApp-jclouds
+Jar Location: C:/jdk1.6.0_25/jre/lib/rt.jar
+Package: java.awt
+Compilation Unit: EventDispatchThread
+Class Name: EventDispatchThread
+Metodo: pumpEventsForFilter
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: MuCommanderApp-jclouds
+Jar Location: C:/jdk1.6.0_25/jre/lib/rt.jar
+Package: java.io
+Compilation Unit: File
+Class Name: File
+Metodo: isDirectory
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: MuCommanderApp-jclouds
+Jar Location: src/main/java
+Package: com.mucommander.jclouds
+Compilation Unit: JcloudsAdapter
+Class Name: JcloudsAdapter
+Metodo: connect
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: MuCommanderApp-jclouds
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Object
+Class Name: S3Object
+Metodo: setDirectory
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: MuCommanderApp-jclouds
+Jar Location: C:/jdk1.6.0_25/jre/lib/rt.jar
+Package: java.lang
+Compilation Unit: StringBuilder
+Class Name: StringBuilder
+Metodo: StringBuilder
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: MuCommanderApp-jclouds
+Jar Location: C:/jdk1.6.0_25/jre/lib/rt.jar
+Package: java.util.logging
+Compilation Unit: Logger
+Class Name: Logger
+Metodo: doLog
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: MuCommanderApp-jclouds
+Jar Location: src/main/java
+Package: com.mucommander.jclouds
+Compilation Unit: DirectoryRestrictedFileSystemView
+Class Name: DirectoryRestrictedFileSystemView
+Metodo: getHomeDirectory
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: MuCommanderApp-jclouds
+Jar Location: C:/jdk1.6.0_25/jre/lib/rt.jar
+Package: java.awt.event
+Compilation Unit: InvocationEvent
+Class Name: InvocationEvent
+Metodo: dispatch
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: MuCommanderApp-jclouds
+Jar Location: C:/jdk1.6.0_25/jre/lib/rt.jar
+Package: java.lang
+Compilation Unit: StringBuilder
+Class Name: StringBuilder
+Metodo: toString
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: MuCommanderApp-jclouds
+Jar Location: C:/jdk1.6.0_25/jre/lib/rt.jar
+Package: java.util.logging
+Compilation Unit: Logger
+Class Name: Logger
+Metodo: log
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: MuCommanderApp-jclouds
+Jar Location: src/main/java
+Package: com.mucommander.jclouds
+Compilation Unit: JcloudsAdapter
+Class Name: JcloudsAdapter
+Metodo: updateCachedFile
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: MuCommanderApp-jclouds
+Jar Location: src/main/java
+Package: com.mucommander.jclouds
+Compilation Unit: JcloudsAdapter
+Class Name: JcloudsAdapter
+Metodo: getFiles
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: MuCommanderApp-jclouds
+Jar Location: C:/jdk1.6.0_25/jre/lib/rt.jar
+Package: java.lang
+Compilation Unit: Thread
+Class Name: Thread
+Metodo: dispatchUncaughtException
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: MuCommanderApp-jclouds
+Jar Location: C:/Users/Marcos/.m2/repository/com/google/guava/guava/10.0.1/guava-10.0.1.jar
+Package: com.google.common.base
+Compilation Unit: Preconditions
+Class Name: Preconditions
+Metodo: checkNotNull
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: MuCommanderApp-jclouds
+Jar Location: C:/jdk1.6.0_25/jre/lib/rt.jar
+Package: javax.swing
+Compilation Unit: ImageIcon
+Class Name: ImageIcon
+Metodo: ImageIcon
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: MuCommanderApp-jclouds
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Object
+Class Name: S3Object
+Metodo: toAbstractFile
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: MuCommanderApp-jclouds
+Jar Location: C:/Users/Marcos/.m2/repository/commons-httpclient/commons-httpclient/3.0.1/commons-httpclient-3.0.1.jar
+Package: org.apache.commons.httpclient
+Compilation Unit: HttpMethodBase
+Class Name: HttpMethodBase
+Metodo: readStatusLine
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: MuCommanderApp-jclouds
+Jar Location: src/main/java
+Package: com.mucommander.jclouds
+Compilation Unit: JcloudsAdapter
+Class Name: JcloudsAdapter
+Metodo: getElements
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: MuCommanderApp-jclouds
+Jar Location: C:/jdk1.6.0_25/jre/lib/rt.jar
+Package: java.io
+Compilation Unit: File
+Class Name: File
+Metodo: isAbsolute
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: MuCommanderApp-jclouds
+Jar Location: C:/Users/Marcos/.m2/repository/org/jclouds/api/atmos/1.2.1/atmos-1.2.1.jar
+Package: org.jclouds.atmos.blobstore
+Compilation Unit: AtmosBlobStore
+Class Name: AtmosBlobStore
+Metodo: directoryExists
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: MuCommanderApp-jclouds
+Jar Location: C:/jdk1.6.0_25/jre/lib/rt.jar
+Package: java.awt
+Compilation Unit: EventQueue
+Class Name: EventQueue
+Metodo: dispatchEventImpl
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: aether-examples
+Jar Location: mu-commander/mu-commander-jclouds/src/main/java/com/mucommander/ui/dialog/server
+Package: 
+Compilation Unit: ServerConnectDialog
+Class Name: ServerConnectDialog
+Metodo: actionPerformed
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: MuCommanderApp-jclouds
+Jar Location: src/main/java
+Package: com.mucommander.jclouds
+Compilation Unit: JcloudsAdapter
+Class Name: JcloudsAdapter
+Metodo: download
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: MuCommanderApp-jclouds
+Jar Location: C:/jdk1.6.0_25/jre/lib/rt.jar
+Package: javax.swing
+Compilation Unit: AbstractAction
+Class Name: AbstractAction
+Metodo: setEnabled
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: MuCommanderApp-jclouds
+Jar Location: C:/jdk1.6.0_25/jre/lib/rt.jar
+Package: java.lang
+Compilation Unit: Thread
+Class Name: Thread
+Metodo: exit
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: MuCommanderApp-jclouds
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Object
+Class Name: S3Object
+Metodo: toStorageObjectMetadata
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: MuCommanderApp-jclouds
+Jar Location: C:/Users/Marcos/.m2/repository/org/jclouds/jclouds-aws/1.0-beta-8/jclouds-aws-1.0-beta-8.jar
+Package: org.jclouds.aws.s3.blobstore
+Compilation Unit: S3BlobStore
+Class Name: S3BlobStore
+Metodo: containerExists
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: MuCommanderApp-jclouds
+Jar Location: C:/jdk1.6.0_25/jre/lib/rt.jar
+Package: java.lang
+Compilation Unit: ClassLoader
+Class Name: ClassLoader
+Metodo: loadClass
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: MuCommanderApp-jclouds
+Jar Location: src/main/java
+Package: com.mucommander.jclouds
+Compilation Unit: JcloudsAdapter
+Class Name: JcloudsAdapter
+Metodo: loadFileTree
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: MuCommanderApp-jclouds
+Jar Location: src/main/java
+Package: com.mucommander.jclouds
+Compilation Unit: JcloudsAdapter
+Class Name: JcloudsAdapter
+Metodo: getInputStream
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: MuCommanderApp-jclouds
+Jar Location: src/main/java
+Package: com.mucommander.jclouds
+Compilation Unit: JcloudsAdapter
+Class Name: JcloudsAdapter
+Metodo: downloadFile
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: MuCommanderApp-jclouds
+Jar Location: C:/jdk1.6.0_25/jre/lib/rt.jar
+Package: java.lang
+Compilation Unit: StringBuilder
+Class Name: StringBuilder
+Metodo: append
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: MuCommanderApp-jclouds
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Object
+Class Name: S3Object
+Metodo: createFolder
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: MuCommanderApp-jclouds
+Jar Location: src/main/java
+Package: com.mucommander.jclouds
+Compilation Unit: JcloudsAdapter
+Class Name: JcloudsAdapter
+Metodo: uploadFile
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: MuCommanderApp-jclouds
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Object
+Class Name: S3Object
+Metodo: downloadFileToDirectory
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: MuCommanderApp-jclouds
+Jar Location: C:/Users/Marcos/.m2/repository/org/jclouds/api/s3/1.2.1/s3-1.2.1.jar
+Package: org.jclouds.s3.filters
+Compilation Unit: RequestAuthorizeSignature$1
+Class Name: 
+Metodo: apply
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: MuCommanderApp-jclouds
+Jar Location: C:/jdk1.6.0_25/jre/lib/rt.jar
+Package: java.awt
+Compilation Unit: EventQueue
+Class Name: EventQueue
+Metodo: dispatchEvent
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: MuCommanderApp-jclouds
+Jar Location: C:/jdk1.6.0_25/jre/lib/rt.jar
+Package: java.util.logging
+Compilation Unit: Logger
+Class Name: Logger
+Metodo: logp
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: MuCommanderApp-jclouds
+Jar Location: C:/Users/Marcos/.m2/repository/org/jclouds/api/atmos/1.2.1/atmos-1.2.1.jar
+Package: org.jclouds.atmos
+Compilation Unit: AtmosClient
+Class Name: AtmosClient
+Metodo: pathExists
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: MuCommanderApp-jclouds
+Jar Location: C:/Users/Marcos/.m2/repository/commons-httpclient/commons-httpclient/3.0.1/commons-httpclient-3.0.1.jar
+Package: org.apache.commons.httpclient
+Compilation Unit: HttpMethodDirector
+Class Name: HttpMethodDirector
+Metodo: cleanAuthHeaders
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: MuCommanderApp-jclouds
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Object
+Class Name: S3Object
+Metodo: sanitizeRemotePath
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: MuCommanderApp-jclouds
+Jar Location: src/main/java
+Package: com.mucommander.jclouds
+Compilation Unit: JcloudsAdapter
+Class Name: JcloudsAdapter
+Metodo: getEle
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: MuCommanderApp-jclouds
+Jar Location: C:/jdk1.6.0_25/jre/lib/rt.jar
+Package: java.lang
+Compilation Unit: Thread
+Class Name: Thread
+Metodo: run
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: MuCommanderApp-jclouds
+Jar Location: C:/Users/Marcos/.m2/repository/commons-httpclient/commons-httpclient/3.0.1/commons-httpclient-3.0.1.jar
+Package: org.apache.commons.httpclient
+Compilation Unit: HttpMethodDirector
+Class Name: HttpMethodDirector
+Metodo: executeConnect
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: MuCommanderApp-jclouds
+Jar Location: src/main/java
+Package: com.mucommander.jclouds
+Compilation Unit: JcloudsAdapter
+Class Name: JcloudsAdapter
+Metodo: upload
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: MuCommanderApp-jclouds
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Object
+Class Name: S3Object
+Metodo: getP
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: MuCommanderApp-jclouds
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Object
+Class Name: S3Object
+Metodo: getPath
+MLOC: METRIC NOT FOUND
+---------------------------------------------

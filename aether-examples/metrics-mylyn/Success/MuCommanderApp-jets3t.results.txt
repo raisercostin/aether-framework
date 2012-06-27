@@ -1,0 +1,530 @@
+Loading metrics from: D:\Tesis\aether\trunk\aether-examples\metrics-mylyn\Projects\MuCommanderApp-jets3t.xml
+Loading metrics from: D:\Tesis\aether\trunk\aether-examples\metrics-mylyn\Frameworks\aether-core.xml
+Loading metrics from: D:\Tesis\aether\trunk\aether-examples\metrics-mylyn\Frameworks\aether-loader.xml
+Loading metrics from: D:\Tesis\aether\trunk\aether-examples\metrics-mylyn\Frameworks\cloudloop-adapter.xml
+Loading metrics from: D:\Tesis\aether\trunk\aether-examples\metrics-mylyn\Frameworks\cloudloop-main.xml
+Loading metrics from: D:\Tesis\aether\trunk\aether-examples\metrics-mylyn\Frameworks\dasein-aws.xml
+Loading metrics from: D:\Tesis\aether\trunk\aether-examples\metrics-mylyn\Frameworks\dasein-core.xml
+Loading metrics from: D:\Tesis\aether\trunk\aether-examples\metrics-mylyn\Frameworks\dasein-google.xml
+Loading metrics from: D:\Tesis\aether\trunk\aether-examples\metrics-mylyn\Frameworks\jclouds-aws-common.xml
+Loading metrics from: D:\Tesis\aether\trunk\aether-examples\metrics-mylyn\Frameworks\jclouds-aws-s3.xml
+Loading metrics from: D:\Tesis\aether\trunk\aether-examples\metrics-mylyn\Frameworks\jclouds-blobstore.xml
+Loading metrics from: D:\Tesis\aether\trunk\aether-examples\metrics-mylyn\Frameworks\jclouds-core.xml
+Loading metrics from: D:\Tesis\aether\trunk\aether-examples\metrics-mylyn\Frameworks\jclouds-s3.xml
+Loading metrics from: D:\Tesis\aether\trunk\aether-examples\metrics-mylyn\Frameworks\jets3t.xml
+Loading metrics from: D:\Tesis\aether\trunk\aether-examples\metrics-mylyn\Frameworks\libcloud.xml
+java : 
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-aether
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jets3t/src/main/java/com/mucommander/file/impl/rar/provider/de
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl{CachedFile.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-cloudloop-migracion
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t-migraciones-to-aether
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jets3t/pom.xml
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jets3t/pom.xml
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file{FileOperation.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t-migracion
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-original
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket[S3BucketFileAttributes~fetchAttributes
+Proyecto: MuCommanderApp-jets3t
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Bucket
+Class Name: S3Bucket.S3BucketFileAttributes
+Metodo: fetchAttributes
+MLOC: 22
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket[S3BucketFileAttributes~fetchAttributes
+---------------------------------------------
+resource : /MuCommanderApp-jets3t/src/main/java/com/mucommander/ant
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jets3t/src/main/java/com/mucommander/ant/macosx
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jets3t/src/main/java/com/mucommander/file/impl/ProxyFile.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object^MAX_OBJECT_SIZE
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~getIOException~QServiceException;~QFileURL;
+Proyecto: MuCommanderApp-jets3t
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3File
+Class Name: S3File
+Metodo: getIOException
+MLOC: 1
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~getIOException~QServiceException;~QFileURL;
+---------------------------------------------
+resource : /aether-examples/mu-commander/mu-commander-jets3t
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jets3t/src/main/java/com/mucommander/file/impl
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl.s3
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl.s3
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file{FileOperation.java[FileOperation^READ_FILE
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jclouds-migracion
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~delete
+Proyecto: MuCommanderApp-jets3t
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Object
+Class Name: S3Object
+Metodo: delete
+MLOC: 11
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~delete
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~listObjects~QString;~QString;~QS3File;
+Proyecto: MuCommanderApp-jets3t
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3File
+Class Name: S3File
+Metodo: listObjects
+MLOC: 37
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~listObjects~QString;~QString;~QS3File;
+---------------------------------------------
+resource : /
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket[S3BucketFileAttributes~setAttributes~Qorg.jets3t.service.model.S3Bucket;
+Proyecto: MuCommanderApp-jets3t
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Bucket
+Class Name: S3Bucket.S3BucketFileAttributes
+Metodo: setAttributes
+MLOC: 4
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket[S3BucketFileAttributes~setAttributes~Qorg.jets3t.service.model.S3Bucket;
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl.s3{S3ProtocolProvider.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl.s3{S3ProtocolProvider.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl.s3{S3ProtocolProvider.java
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jets3t/src/main/java/com/mucommander/file/AbstractFile.java
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-libcloud-migracion
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file{FilePermissions.java[FilePermissions
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jets3t/src/main/java/com/mucommander/file/impl/rar/provider/de/innosystec/unrar/unsigned
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~getIOException~QServiceException;
+---------------------------------------------
+java : =MuCommanderApp-cloudloop-migraciones-to-aether
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jets3t/src/main/java/com/mucommander/file/impl/s3/S3Bucket.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file{FileFactory.java[FileFactory
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file{FilePermissions.java
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/mu-commander-migraciones
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/mu-commander
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/mu-commander
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-dasein-migracion
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket~copyRemotelyTo~QAbstractFile;
+Proyecto: MuCommanderApp-jets3t
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Bucket
+Class Name: S3Bucket
+Metodo: copyRemotelyTo
+MLOC: 1
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl.s3{S3Root.java[S3Root
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl.s3{S3Root.java[S3Root
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~copyStream~QInputStream;~Z~J
+Proyecto: MuCommanderApp-jets3t
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Object
+Class Name: S3Object
+Metodo: copyStream
+MLOC: 44
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object~copyStream~QInputStream;~Z~J
+---------------------------------------------
+java : =MuCommanderApp-dasein-migracion
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl.rar.provider.de.innosystec.unrar.unsigned
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object[S3ObjectRandomAccessInputStream
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jets3t/src/main/java/com/mucommander/file
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file{FileOperation.java[FileOperation
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file{FileOperation.java[FileOperation
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jets3t/src/main/java/com/mucommander/file/impl/s3/S3ProtocolProvider.java
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jclouds-migraciones-to-aether
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-cloudloop-migraciones-to-aether
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.io{FileTransferException.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object[S3ObjectRandomAccessInputStream~read
+Proyecto: MuCommanderApp-jets3t
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Object
+Class Name: S3Object.S3ObjectRandomAccessInputStream
+Metodo: read
+MLOC: 6
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file{AbstractFile.java[AbstractFile
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jets3t/src/main/java/com/mucommander/io
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file{AbstractFile.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.io{FileTransferException.java[FileTransferException
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-dasein-migraciones-to-aether
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object[S3ObjectFileAttributes
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket[S3BucketFileAttributes
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object[S3ObjectRandomAccessInputStream~read~\[B~I~I
+---------------------------------------------
+java : =MuCommanderApp-libcloud-migraciones-to-aether
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jclouds-migracion
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jets3t-migraciones-to-aether
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.ant.macosx
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.io
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jets3t/src/main
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jets3t
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jets3t/src/main/java/com/mucommander/file/FileFactory.java
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples
+REGEXP does not match
+---------------------------------------------
+java : =aether-examples
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-cloudloop-migracion
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jets3t/src/main/java/com/mucommander/file/impl/rar/provider/de/innosystec
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jets3t/src/main/java/com/mucommander/file/FilePermissions.java
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jets3t/src/main/java/com/mucommander/file/FileOperation.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-dasein-migraciones-to-aether
+REGEXP does not match
+---------------------------------------------
+resource : /aether-examples/text-editor
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl.s3{S3ProtocolProvider.java[S3ProtocolProvider~getFile~QFileURL;~\[QObject;
+Proyecto: MuCommanderApp-jets3t
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3ProtocolProvider
+Class Name: S3ProtocolProvider
+Metodo: getFile
+MLOC: 31
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl.s3{S3ProtocolProvider.java[S3ProtocolProvider~getFile~QFileURL;~\[QObject;
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file{FileFactory.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl.s3{S3ProtocolProvider.java[S3ProtocolProvider|1
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jets3t/src/main/java/com/mucommander/file/impl/rar/provider/de/innosystec/unrar
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-libcloud-migracion
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl.s3{S3ProtocolProvider.java[S3ProtocolProvider
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jets3t/src/main/java/com/mucommander/file/impl/s3/S3Object.java
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jets3t/src/main/java/com/mucommander/file/impl/rar
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object[S3ObjectFileAttributes~updateAttributes
+Proyecto: MuCommanderApp-jets3t
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Object
+Class Name: S3Object.S3ObjectFileAttributes
+Metodo: updateAttributes
+MLOC: 6
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl{ProxyFile.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jets3t/src/main/java/com/mucommander/io/FileTransferException.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl.s3{S3Root.java[S3Root~getRandomAccessInputStream
+Proyecto: MuCommanderApp-jets3t
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Root
+Class Name: S3Root
+Metodo: getRandomAccessInputStream
+MLOC: 6
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file{FileFactory.java[FileFactory~getFile~QFileURL;~QAbstractFile;~\[QObject;
+Proyecto: MuCommanderApp-jets3t
+Jar Location: src/main/java
+Package: com.mucommander.file
+Compilation Unit: FileFactory
+Class Name: FileFactory
+Metodo: getFile
+MLOC: 5
+---------------------------------------------
+resource : /MuCommanderApp-jets3t/src/main/java/com/mucommander/file/impl/s3/S3File.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl.s3{S3Root.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl.s3{S3Root.java
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jets3t-migracion
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jclouds-migraciones-to-aether
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jets3t/src/main/java/com/mucommander/file/impl/rar/provider
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jets3t/src/main/java/com/mucommander
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jets3t/src
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket~delete
+Proyecto: MuCommanderApp-jets3t
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Bucket
+Class Name: S3Bucket
+Metodo: delete
+MLOC: 6
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket~delete
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~getParent
+Proyecto: MuCommanderApp-jets3t
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3File
+Class Name: S3File
+Metodo: getParent
+MLOC: 12
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl.s3{S3File.java[S3File~getParent
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl.s3{S3Bucket.java[S3Bucket~ls
+Proyecto: MuCommanderApp-jets3t
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Bucket
+Class Name: S3Bucket
+Metodo: ls
+MLOC: 1
+---------------------------------------------
+resource : /aether-examples/mu-commander-migraciones-aether
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jets3t/src/main/java
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jets3t/src/main/java/com/mucommander/file/impl/s3
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jets3t/src/main/java/com/mucommander/file/impl/s3/S3Root.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object[S3ObjectFileAttributes~fetchAttributes
+Proyecto: MuCommanderApp-jets3t
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Object
+Class Name: S3Object.S3ObjectFileAttributes
+Metodo: fetchAttributes
+MLOC: 21
+---------------------------------------------
+java : =MuCommanderApp-jets3t/src/main/java&lt;com.mucommander.file.impl.s3{S3Object.java[S3Object[S3ObjectFileAttributes~fetchAttributes
+---------------------------------------------
+resource : /MuCommanderApp-libcloud-migraciones-to-aether
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jets3t/src/main/java/com
+REGEXP does not match
+---------------------------------------------
+resource : /MuCommanderApp-jets3t/src/main/java/com/mucommander/file/impl/CachedFile.java
+REGEXP does not match
+---------------------------------------------
+java : =MuCommanderApp-jets3t
+REGEXP does not match
+---------------------------------------------
+resource : =MuCommanderApp-jets3t
+REGEXP does not match
+---------------------------------------------
+FINAL ACCUMULATED RESULT: 214.0
+---------------------------------------------

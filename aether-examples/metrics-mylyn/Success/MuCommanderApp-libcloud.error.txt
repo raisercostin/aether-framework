@@ -1,0 +1,64 @@
+Proyecto: neoedit-libcloud
+Jar Location: src/main/java
+Package: neoe.libcloud
+Compilation Unit: LibCloudAdapter
+Class Name: LibCloudAdapter
+Metodo: uploadFile
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: neoedit-libcloud
+Jar Location: src/main/java
+Package: neoe.libcloud
+Compilation Unit: LibCloudAdapter
+Class Name: LibCloudAdapter
+Metodo: getInputStream
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: neoedit-libcloud
+Jar Location: src/main/java
+Package: neoe.libcloud
+Compilation Unit: LibCloudAdapter
+Class Name: LibCloudAdapter
+Metodo: LibCloudAdapter
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: neoedit-libcloud
+Jar Location: src/main/java
+Package: neoe.libcloud
+Compilation Unit: LibCloudAdapter
+Class Name: LibCloudAdapter
+Metodo: populateCache
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: MuCommanderApp-dasein
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Root
+Class Name: S3Root
+Metodo: ls
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: MuCommanderApp-libcloud
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Root
+Class Name: S3Root
+Metodo: S3Root
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: MuCommanderApp-libcloud
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Object
+Class Name: S3Object.S3ObjectFileAttributes
+Metodo: S3ObjectFileAttributes!2
+MLOC: METRIC NOT FOUND
+---------------------------------------------
+Proyecto: MuCommanderApp-libcloud
+Jar Location: src/main/java
+Package: com.mucommander.file.impl.s3
+Compilation Unit: S3Root
+Class Name: S3Root
+Metodo: ls
+MLOC: METRIC NOT FOUND
+---------------------------------------------
