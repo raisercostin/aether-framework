@@ -1,8 +1,0 @@
-Proyecto: MuCommanderApp
-Jar Location: C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar
-Package: java.lang
-Compilation Unit: Thread
-Class Name: Thread
-Metodo: dispatchUncaughtException
-MLOC: METRIC NOT FOUND
----------------------------------------------
