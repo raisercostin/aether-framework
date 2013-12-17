@@ -14,9 +14,22 @@
 	<artifactId>aether-examples</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
-
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+					<debug>true</debug>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 	<modules>
 		<module>mu-commander</module>
+		<module>mu-commander-migraciones</module>
+		<module>mu-commander-migraciones-aether</module>
 		<module>neoedit</module>
 		<module>neoedit-migraciones</module>
 		<module>neoedit-migraciones-aether</module>

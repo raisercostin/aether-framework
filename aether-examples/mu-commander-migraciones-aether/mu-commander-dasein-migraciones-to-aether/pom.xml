@@ -1,14 +1,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-	<!--
-		<parent> <artifactId>aether-examples</artifactId>
-		<groupId>com.tesis.aether.examples</groupId>
-		<version>0.0.1-SNAPSHOT</version> </parent>
-	-->
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.tesis.aether.examples.mucommander</groupId>
-	<artifactId>MuCommanderApp-dasein-migraciones-to-aether</artifactId>
-	<name>mu-commander-to-aether</name>
+	<artifactId>mucommander-dasein-migraciones-to-aether</artifactId>
+	<name>mucommander-dasein-migraciones-to-aether</name>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<properties>

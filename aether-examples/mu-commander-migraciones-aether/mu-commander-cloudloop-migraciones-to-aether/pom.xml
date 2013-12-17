@@ -3,8 +3,8 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.tesis.aether.examples.mucommander</groupId>
-	<artifactId>MuCommanderApp-cloudloop-migraciones-to-aether</artifactId>
-	<name>mu-commander-to-aether</name>
+	<artifactId>mucommander-cloudloop-migraciones-to-aether</artifactId>
+	<name>mucommander-cloudloop-migraciones-to-aether</name>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<properties>
