@@ -12,7 +12,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import javax.xml.parsers.ParserConfigurationException;
 
-import org.apache.commons.io.FilenameUtils;
 import org.xml.sax.SAXException;
 
 import com.tesis.aether.loader.classTools.ClassManipulator;
@@ -446,12 +445,13 @@ public class JavasistClassLoader extends ClassLoader {
 						if (retPath != null)
 							return retPath;
 					} else {
+						if (!path.endsWith("/"))
+							path = path.concat("/");
 						String fileName = path + fileStub + "." + extension;
-						path = path.concat("/");
 						if (existFile(fileName)) {
 							System.out.println("CARGANDO EL ARCHIVO DESDE: "
-									+ path);
-							return path;
+									+ fileName);
+							return fileName;
 						}
 					}
 				}
@@ -468,8 +468,8 @@ public class JavasistClassLoader extends ClassLoader {
 					String fileName = path + fileStub + "." + extension;
 					if (existFile(fileName)) {
 						System.out
-								.println("CARGANDO EL ARCHIVO DESDE: " + path);
-						return path;
+								.println("CARGANDO EL ARCHIVO DESDE: " + fileName);
+						return fileName;
 					}
 				}
 			}
@@ -580,7 +580,7 @@ public class JavasistClassLoader extends ClassLoader {
 				} catch (Exception e) {
 					System.out
 							.println("Error al cargar la configuracion de mapeo de clases y paquetes.");
-					System.out.println(e);
+					e.printStackTrace();
 				}
 			} else {
 				System.out
